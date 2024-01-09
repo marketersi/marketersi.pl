@@ -1,7 +1,10 @@
+import Hero from "@/components/organisms/main/Hero/Hero";
 import React from "react";
 
 const HomeScreen = () => {
-  return <div>Marketersi Home Page</div>;
+  return <div>
+    <Hero />
+  </div>;
 };
 
 export default HomeScreen;
