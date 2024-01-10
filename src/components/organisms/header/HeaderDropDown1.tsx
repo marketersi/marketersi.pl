@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Col, Row, Image, Nav } from "react-bootstrap";
 import style from "./header.module.css";
+import Link from "next/link";
 
 const HeaderDropDown1 = () => {
   return (
@@ -12,7 +13,7 @@ const HeaderDropDown1 = () => {
               <div className={style.headerMenu}>
                 <h3>Fajne marki</h3>
                 <a href="/">Nazwa dla firmy</a>
-                <a href="/">Projektowanie logo</a>
+                <Link href="/projektowanie-logo">Projektowanie logo</Link>
                 <a href="/">Identyfikacja spółki</a>
               </div>
             </Col>
