@@ -44,6 +44,7 @@ const Hero = () => {
             </a>
           </div>
           <div className={style.heroBottomImg}>
+            <div className={style.leftImg}>
             <Image
               src="/assets/images/Ania-Owocni.avif"
               alt="My Image"
@@ -58,6 +59,8 @@ const Hero = () => {
               height="auto"
               className={style.heroImg2}
             />
+            </div>
+            <div className={style.rightImg}>
             <Image
               src="/assets/images/Gandalf-Owocni.avif"
               alt="My Image"
@@ -72,6 +75,8 @@ const Hero = () => {
               height="auto"
               className={style.heroImg4}
             />
+            </div>
+            
           </div>
         </Container>
       </div>

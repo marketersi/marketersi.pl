@@ -42,12 +42,12 @@ const Header = () => {
           </Col>
           <Col sm={3}>
             <div className="logo">
-              <Image
+              <Link href="/"><Image
                 src="/assets/images/marketersi.PNG"
                 alt="My Image"
                 width={300}
                 height="auto"
-              />
+              /></Link>
             </div>
           </Col>
           <Col sm={5}>

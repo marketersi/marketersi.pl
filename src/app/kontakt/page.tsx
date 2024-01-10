@@ -2,6 +2,9 @@
 import React from "react";
 import "./contact.css";
 import ReactPlayer from "react-player";
+import { Button, Col, Row, Container, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const page = () => {
   return (
@@ -19,17 +22,6 @@ const page = () => {
                 style={{ aspectRatio: 235 / 235 }}
                 className="bg_video"
               />
-              {/* <video
-                playsinline=""
-                autoplay=""
-                loop=""
-                className="bg_video"
-                poster="image/Serce2_lpslwb.webm"
-                height="235"
-                width="235"
-                src="/assets/images/contact/Serce2_lpslwb.webm"
-                style={{ aspectRatio: 235 / 235 }}
-              ></video> */}
               <p className="first_sect_p">Razem jesteśmy Owocni.</p>
               <h1 className="first_heading_txt">
                 Stwórzmy <br /> razem coś <br /> fajnego!
@@ -41,7 +33,7 @@ const page = () => {
                   Napisz, jak możemy pomóc?
                 </p>
                 <p className="form_mail_content text-center">
-                  "studio@owocni.pl
+                  studio@owocni.pl
                 </p>
                 <textarea
                   name="message"
@@ -68,11 +60,11 @@ const page = () => {
                   />
                 </div>
 
-                <div className="btn_img">
+                <div className="btn_Image">
                   <div className="btn">
-                    <button>csds</button>
+                    <button>Wyślij wiadomość</button>
                   </div>
-                  <div className="sticker_img">
+                  <div className="sticker_Image">
                     <svg
                       width="66"
                       height="80"
@@ -103,93 +95,106 @@ const page = () => {
 
       {/* <!-- section_second --> */}
       <div className="card_section">
-        <div className="card">
-          <div className="tital">Nowe projekty</div>
-          <div className="name_img">
-            <div className="img">
-              <img src="/assets/images/contact/Gosia.avif" alt="" />
-            </div>
-          </div>
-          <div className="mail_id">
-            <a href="#">studio@owocni.pl</a>
-          </div>
-          <a href="#" id="card_btn_active" className="card_btn">
-            Zadzwoń <br /> 570-704-470
-          </a>
-        </div>
-        <div className="card">
-          <div className="tital">Nowe projekty</div>
-          <div className="name_img">
-            <div className="img">
-              <img src="/assets/images/contact/Marta.avif" alt="" />
-            </div>
-            <div className="name">
-              Małgosia <br /> Zielińska
-            </div>
-          </div>
-          <div className="mail_id">
-            <a href="#">studio@owocni.pl</a>
-            <p className="absolute-left">
-              Feel free to call or mail in English :).
-            </p>
-            <img
-              src="/assets/images/contact/English.avif"
-              className="absolute-left-img"
-              alt=""
-            />
-          </div>
-          <a href="#" className="card_btn">
-            Zadzwoń <br /> 660-970-980
-          </a>
-        </div>
-        <div className="card">
-          <div className="tital">Obsługa projektu</div>
-          <div className="name_img">
-            <div className="img">
-              <img src="/assets/images/contact/Kinga.avif" alt="" />
-            </div>
-            <div className="name">
-              Małgosia <br /> Zielińska
-            </div>
-          </div>
-          <div className="mail_id">
-            <a href="#">obsługa@owocni.pl</a>
-          </div>
-          <a href="#" className="card_btn">
-            Zadzwoń <br /> 535-009-444
-          </a>
-        </div>
+        <Container>
+          <Row>
+            <Col sm={4}>
+              <div className="card">
+                <div className="tital">Nowe projekty</div>
+                <div className="name_Image">
+                  <div className="Image">
+                    <Image src="/assets/images/contact/Gosia.avif" alt="" />
+                  </div>
+                  <div className="name">
+                    Małgosia <br /> Zielińska
+                  </div>
+                </div>
+                <div className="mail_id">
+                  <a href="#">studio@owocni.pl</a>
+                </div>
+                <a href="#" id="card_btn_active" className="card_btn">
+                  <span>Zadzwoń</span> <br /> 570-704-470
+                </a>
+              </div>
+            </Col>
+            <Col sm={4}>
+              <div className="card">
+                <div className="tital">Nowe projekty</div>
+                <div className="name_Image">
+                  <div className="Image">
+                    <Image src="/assets/images/contact/Marta.avif" alt="" />
+                  </div>
+                  <div className="name">
+                    <span>Marta</span> <br /> Słowik
+                  </div>
+                </div>
+                <div className="mail_id">
+                  <a href="#">studio@owocni.pl</a>
+                  <p className="absolute-left">
+                    Feel free to call or mail in English :).
+                  </p>
+                  <Image
+                    src="/assets/images/contact/English.avif"
+                    className="absolute-left-Image"
+                    alt=""
+                  />
+                </div>
+                <a href="#" className="card_btn">
+                  <span>Zadzwoń</span> <br /> 660-970-980
+                </a>
+              </div>
+            </Col>
+            <Col sm={4}>
+              <div className="card">
+                <div className="tital">Obsługa projektu</div>
+                <div className="name_Image">
+                  <div className="Image">
+                    <Image src="/assets/images/contact/Kinga.avif" alt="" />
+                  </div>
+                  <div className="name">
+                    Małgosia <br /> Zielińska
+                  </div>
+                </div>
+                <div className="mail_id">
+                  <a href="#">obsługa@owocni.pl</a>
+                </div>
+                <a href="#" className="card_btn">
+                  <span>Zadzwoń</span> <br /> 535-009-444
+                </a>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
 
       {/* <!-- section three --> */}
       <div className="section_logo">
-        <div className="container img_logos">
+        <div className="container Image_logos">
           <div className="logo">
-            <img
+            <Image
               src="/assets/images/contact/20latDzialalnosciPLbiel.svg"
               alt=""
-              width="200px"
+              width="220px"
             />
           </div>
           <div className="logo">
-            <img
+            <Image
               src="/assets/images/contact/Top10Poland.avif"
               alt=""
-              width="250px"
+              width="270px"
             />
           </div>
           <div className="logo">
-            <img
+            <Image
               src="/assets/images/contact/Made-in-poland.avif"
               alt=""
-              width="250px"
+              width="270px"
             />
           </div>
           <div className="logo">
-            <img
+            <Image
               src="/assets/images/contact/EU-logo.avif"
               alt=""
-              width="250px"
+              width="270px"
             />
           </div>
         </div>
@@ -210,9 +215,9 @@ const page = () => {
 
               <div className="icons">
                 <p className="left_icin_txt">
-                  Od 2021 <br /> działamy <br /> w 100% zdalnie.
+                  Od 2021 działamy <br /> w 100% zdalnie.
                 </p>
-                <img src="/assets/images/contact/1 614011205.avif" alt="" />
+                <Image src="/assets/images/contact/1 614011205.avif" alt="" />
               </div>
               <div className="botum">
                 <h3> OWOCNI.PL - Mariusz Słowik </h3>
@@ -234,7 +239,58 @@ const page = () => {
             </div>
             <div className="col-lg-6 col-sm-12">
               <div className="right_box_bottom">
-                <img src="/assets/images/contact/mapakontakt.avif" alt="" />
+                <Image src="/assets/images/contact/mapakontakt.avif" alt="" />
+                <div
+                  className="plus_icon_container icon1"
+                  onClick={() => console.log("btn one clicked")}
+                >
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon2">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon3">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon4">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon5">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon6">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon7">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon8">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon9">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon10">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon11">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon12">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon13">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon14">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon15">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon16">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
 
                 <div className="map_content">
                   <p>Województwo</p>
@@ -242,7 +298,18 @@ const page = () => {
                   <h4>
                     Tak można pracować! Wielka różnica na plus od konkurencji.
                   </h4>
-                  <p>Tomasz Kopacz, MoneyWell, Rzeszów</p>
+                  <p className="map_bottom_p">
+                    <span>Tomasz Kopacz,</span> MoneyWell, Rzeszów
+                  </p>
+                </div>
+                <div className="map_button">
+                  <button>Nasi klienci</button>
+                  <a href="/" className="map_play">
+                    <span>Następna opinia</span>
+                    <div className="play">
+                      <Image src="/assets/images/play_arrow.svg" />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

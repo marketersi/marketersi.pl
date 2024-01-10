@@ -86,6 +86,10 @@
   color: rgb(9, 9, 9);
   font-size: 18px;
 }
+.navbar:hover .navRightMenu a{
+  color: rgb(9, 9, 9);
+  font-size: 18px;
+}
 
 .dropMenu {
   display: none;
