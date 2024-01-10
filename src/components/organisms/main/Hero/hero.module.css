@@ -88,25 +88,25 @@
 .heroImg1{
     position: absolute;
     left: 70px;
-    bottom: -233px;
+    bottom: -175px;
     width: 350px;
 }
 .heroImg2{
     position: absolute;
     left: -320px;
-    bottom: -233px;
+    bottom: -175px;
     width: 650px;
 }
 .heroImg3{
     position: absolute;
     right: 20px;
-    bottom: -233px;
+    bottom: -175px;
     width: 450px;
 }
 .heroImg4{
     position: absolute;
     right: -180px;
-    bottom: -232px;
+    bottom: -175px;
     width: 500px;
 }
 
