@@ -4,7 +4,6 @@ import React from "react";
 import style from "./mark.module.css";
 import { Row, Col, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
-import MarkCard from "./MarkCard";
 import Link from "next/link";
 
 const MarkSide = () => {
@@ -41,8 +40,6 @@ const MarkSide = () => {
       link2: "https://owocni.pl/",
       link3: "https://owocni.pl/",
     },
-
-    // Add more data as needed
   ];
 
   return (
@@ -56,19 +53,18 @@ const MarkSide = () => {
               width="auto"
               height="auto"
             />
-            {/* <MarkCard data={data} /> */}
             <Card data={data[0]} />
           </div>
         </Col>
         <Col sm={4}>
           <ReactPlayer
             url="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
-            playing={true} // Set to true for autoplay
-            controls
-            loop={true} // Set to true for looping
+            playing={true}
+            loop={true}
             width="100%"
             height="auto"
             className={style.heroVideo}
+            autoplay={true}
           />
           <Card data={data[1]} />
         </Col>
@@ -101,7 +97,6 @@ const Card = ({ data }) => {
     link2,
     link3,
   } = data;
-  // console.log("link", link);
   return (
     <>
       <div className={style.markCard}>
@@ -111,34 +106,34 @@ const Card = ({ data }) => {
           <li>
             <Link href={link1}>{listItem1}</Link>
             <div className={style.playIcon}>
-            <Image
-              src="/assets/images/play_arrow.svg"
-              alt="rating image"
-              width="auto"
-              height="auto"
-            />
+              <Image
+                src="/assets/images/play_arrow.svg"
+                alt="rating image"
+                width="auto"
+                height="auto"
+              />
             </div>
           </li>
           <li>
             <Link href={link2}>{listItem2}</Link>
             <div className={style.playIcon}>
-            <Image
-              src="/assets/images/play_arrow.svg"
-              alt="rating image"
-              width="auto"
-              height="auto"
-            />
+              <Image
+                src="/assets/images/play_arrow.svg"
+                alt="rating image"
+                width="auto"
+                height="auto"
+              />
             </div>
           </li>
           <li>
             <Link href={link3}>{listItem3}</Link>
             <div className={style.playIcon}>
-            <Image
-              src="/assets/images/play_arrow.svg"
-              alt="rating image"
-              width="auto"
-              height="auto"
-            />
+              <Image
+                src="/assets/images/play_arrow.svg"
+                alt="rating image"
+                width="auto"
+                height="auto"
+              />
             </div>
           </li>
         </ul>
