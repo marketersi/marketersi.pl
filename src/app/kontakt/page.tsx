@@ -2,7 +2,9 @@
 import React from "react";
 import "./contact.css";
 import ReactPlayer from "react-player";
-import { Button, Col, Row, Container, Image, } from "react-bootstrap";
+import { Button, Col, Row, Container, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const page = () => {
   return (
@@ -103,7 +105,7 @@ const page = () => {
                     <Image src="/assets/images/contact/Gosia.avif" alt="" />
                   </div>
                   <div className="name">
-                  Małgosia <br /> Zielińska
+                    Małgosia <br /> Zielińska
                   </div>
                 </div>
                 <div className="mail_id">
@@ -122,7 +124,7 @@ const page = () => {
                     <Image src="/assets/images/contact/Marta.avif" alt="" />
                   </div>
                   <div className="name">
-                  <span>Marta</span> <br /> Słowik
+                    <span>Marta</span> <br /> Słowik
                   </div>
                 </div>
                 <div className="mail_id">
@@ -238,6 +240,57 @@ const page = () => {
             <div className="col-lg-6 col-sm-12">
               <div className="right_box_bottom">
                 <Image src="/assets/images/contact/mapakontakt.avif" alt="" />
+                <div
+                  className="plus_icon_container icon1"
+                  onClick={() => console.log("btn one clicked")}
+                >
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon2">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon3">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon4">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon5">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon6">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon7">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon8">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon9">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon10">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon11">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon12">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon13">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon14">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon15">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
+                <div className="plus_icon_container icon16">
+                  <FontAwesomeIcon icon={faPlus} />
+                </div>
 
                 <div className="map_content">
                   <p>Województwo</p>
@@ -245,13 +298,17 @@ const page = () => {
                   <h4>
                     Tak można pracować! Wielka różnica na plus od konkurencji.
                   </h4>
-                  <p className="map_bottom_p"><span>Tomasz Kopacz,</span> MoneyWell, Rzeszów</p>
+                  <p className="map_bottom_p">
+                    <span>Tomasz Kopacz,</span> MoneyWell, Rzeszów
+                  </p>
                 </div>
                 <div className="map_button">
                   <button>Nasi klienci</button>
                   <a href="/" className="map_play">
                     <span>Następna opinia</span>
-                    <div className="play"><Image src="/assets/images/play_arrow.svg"/></div>
+                    <div className="play">
+                      <Image src="/assets/images/play_arrow.svg" />
+                    </div>
                   </a>
                 </div>
               </div>

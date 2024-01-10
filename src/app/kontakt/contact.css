@@ -409,3 +409,78 @@ a.map_play:hover {
   justify-content: space-between;
   margin: 30px 0 0;
 }
+
+/* ==================================map plus===================== */
+.plus_icon_container  {
+  border: 1px solid red;
+  width: 25px;
+  border-radius: 100%;
+  text-align: center;
+  color: red;
+  position: absolute;
+}
+.icon1{
+  top: -40px;
+  left: 135px;
+}
+.icon2 {
+  top: -78px;
+  left: 245px;
+}
+.icon3 {
+  top: -52px;
+  left: 375px;
+}
+.icon4 {
+  top: 75px;
+  left: 115px;
+}
+.icon5 {
+  top: 72px;
+  left: 205px;
+}
+.icon6 {
+  top: 12px;
+  left: 265px;
+}
+.icon7 {
+  top: 62px;
+  left: 385px;
+}
+.icon8 {
+  top: 0px;
+  left: 472px;
+}
+.icon9 {
+  top: 156px;
+  left: 169px;
+}
+.icon10 {
+  top: 122px;
+  left: 313px;
+}
+.icon11 {
+  top: 195px;
+  left: 236px;
+}
+.icon12 {
+  top: 222px;
+  left: 285px;
+}
+.icon13 {
+  top: 258px;
+  left: 350px;
+}
+.icon14 {
+  top: 188px;
+  left: 375px;
+}
+.icon15 {
+  top: 145px;
+  left: 475px;
+}
+.icon16 {
+  top: 250px;
+  left: 440px;
+}
+
