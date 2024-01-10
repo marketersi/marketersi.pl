@@ -1,16 +1,11 @@
 "use client";
 
 import React from "react";
-import {
-  Button,
-  Col,
-  Row,
-  Image,
-  Nav,
-} from "react-bootstrap";
+import { Button, Col, Row, Image, Nav } from "react-bootstrap";
 import style from "./header.module.css";
 import HeaderDropDown1 from "./HeaderDropDown1";
 import HeaderDropDown2 from "./HeaderDropDown2";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -56,13 +51,19 @@ const Header = () => {
             </div>
           </Col>
           <Col sm={5}>
-          <div className={style.rightNav}>
-          <Nav className="">
-              <Nav.Link href="/" className={style.navRightMenu}>Zespół </Nav.Link>
-              <Nav.Link href="/" className={style.navRightMenu}>Kontakt</Nav.Link>
-            </Nav>
-            <Button className={style.headerRightBtn}>Zamów  bezpłatne  badanie</Button>
-          </div>
+            <div className={style.rightNav}>
+              <Nav className="">
+                <Nav.Link href="/" className={style.navRightMenu}>
+                  Zespół{" "}
+                </Nav.Link>
+                <Nav.Link href="/" className={style.navRightMenu}>
+                  <Link href="/kontakt">Kontakt</Link>
+                </Nav.Link>
+              </Nav>
+              <Button className={style.headerRightBtn}>
+                Zamów bezpłatne badanie
+              </Button>
+            </div>
           </Col>
         </Row>
       </div>

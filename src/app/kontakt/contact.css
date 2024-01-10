@@ -1,0 +1,305 @@
+* {
+  font-family: var(--font-roboto);
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200&display=swap");
+.first_form_container {
+  background-color: #e3e3e3;
+  padding: 5rem 0;
+}
+
+.bg_video {
+  position: absolute;
+  transform: translate(-20px, 0);
+}
+.first_sect_p {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  /* margin-left: 5rem; */
+
+  font-size: 2rem;
+}
+.first_heading_txt {
+  position: relative;
+  /* margin-left: 5rem; */
+  font-size: 6rem;
+  margin-top: -1rem;
+  font-weight: bold;
+  line-height: 0.8;
+  text-align: center;
+}
+
+.form_sect {
+  margin-left: 2rem;
+
+  width: 30rem;
+  padding: 2rem 3.2rem;
+  background-color: #f5f5f5;
+  border-radius: 0.9rem;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  --tw-shadow-colored: 4px 4px 15px 0px var(--tw-shadow-color),
+    0px 0px 0px 0px var(--tw-shadow-color),
+    inset 2px 2px 2px 0px var(--tw-shadow-color),
+    inset -2px -2px 2px 0px var(--tw-shadow-color);
+}
+
+.form_head_txt {
+  font-size: 24px;
+  margin-bottom: 0rem;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+}
+.form_mail_conten {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+}
+.form_text_area {
+  padding: 10px 0 0 20px;
+  width: 100%;
+  border-radius: 1rem;
+  height: 5rem;
+  font-size: 18px;
+}
+.small_forms {
+  width: 100%;
+  margin-top: 1.4rem;
+}
+.form_inputs {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  width: 35%;
+  border-radius: 1rem;
+  border: 1px solid rgb(36, 36, 36);
+  padding: 0 0 0 20px;
+  height: 2.6rem;
+  font-size: 18px;
+}
+.form_inputs:focus {
+  outline-color: #d21e00;
+}
+
+.btn_img {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn button {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #d21e00;
+  border: 4px solid #d21e00;
+  color: white;
+  font-size: 23px;
+  width: 15rem;
+  border-radius: 10em;
+  transition: background-color 0.2s;
+}
+.btn button:hover {
+  background-color: transparent;
+  color: #d21e00;
+}
+
+/* section_secound */
+
+.card_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  background-color: #e3e3e3;
+  padding: 0 5rem 5rem 5rem;
+}
+.card {
+  text-align: center;
+  padding: 2.23rem 3.23rem;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  --tw-shadow-colored: 4px 4px 15px 0px var(--tw-shadow-color),
+    0px 0px 0px 0px var(--tw-shadow-color),
+    inset 2px 2px 2px 0px var(--tw-shadow-color),
+    inset -2px -2px 2px 0px var(--tw-shadow-color);
+  border-radius: 1rem;
+  width: 30%;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.card .tital {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.name_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.name_img img {
+  width: 80px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.card .mail_id {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.card .mail_id a {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+}
+
+a.card_btn {
+  text-decoration: none;
+  background-color: transparent;
+  color: #25b16d;
+  border-radius: 1em;
+  padding: 10px;
+  border: 2px solid #25b16d;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.2;
+  transition: background-color 0.2s;
+}
+
+a.card_btn:hover {
+  background-color: #25b16d;
+  color: white;
+}
+
+.absolute-left {
+  position: absolute;
+  font-size: 15px;
+}
+
+.absolute-left-img {
+  position: absolute;
+  left: -16px;
+}
+
+#card_btn_active {
+  background-color: #25b16d;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+#card_btn_active:hover {
+  background-color: transparent;
+  color: #25b16d;
+}
+
+/* section three */
+
+.img_logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px;
+  align-items: center;
+}
+
+.section_logo {
+  background-color: #e3e3e3;
+  padding-bottom: 3rem;
+}
+
+/* section four  */
+
+.container_fluid_plus {
+  background-image: linear-gradient(173deg, #e3e3e3 53%, #fbb1b6);
+  padding-bottom: 3rem;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* height: 20vh; */
+}
+.solid_bolds_text {
+  line-height: 0.9;
+  margin-bottom: 30px;
+}
+
+.solid_bold {
+  font-size: 13rem;
+  font-weight: 900;
+  color: white;
+}
+
+.solid_tital {
+  font-size: 7rem;
+  font-weight: 900;
+  color: white;
+}
+
+.solid_bolld_botm_txt {
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+
+.icons {
+  min-width: 100%;
+}
+.left_icin_txt {
+  text-align: right;
+  font-size: 10px;
+  float: left;
+  width: 30%;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.icons img {
+  float: left;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.botum_contents {
+  clear: both;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-around;
+}
+
+.botum h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.botum {
+  margin: 2rem 0;
+}
+
+/* section :right */
+
+.right_box_bottom {
+  background-image: linear-gradient(132deg, #faaeb4 4%, #fd8a92 38%);
+  height: 30rem;
+  width: 90%;
+  border-radius: 4%;
+  margin-top: 9rem;
+  position: relative;
+}
+
+.right_box_bottom img {
+  position: absolute;
+  top: -7.6rem;
+  right: 0;
+}
+
+.right_box_content {
+  margin-top: 20rem;
+}
+
+.map_content {
+  padding: 250px 50px 30px;
+}
