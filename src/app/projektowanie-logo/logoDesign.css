@@ -491,11 +491,6 @@ h6 {
   object-fit: contain;
   max-width: 89%;
 }
-.img-background-logop {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
 
 .projects-theme-desc-p {
   margin-left: 0px;
@@ -542,11 +537,6 @@ h6 {
 
 .img-background-logop-rwd {
   display: none;
-}
-.img-background-logop {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
 }
 
 .projects-custom-container3 {
@@ -636,11 +626,6 @@ h6 {
 }
 .galeria-logo-style {
   margin-bottom: -20vw;
-}
-.img-background-logop {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
 }
 
 .project-pbottom-30 {
