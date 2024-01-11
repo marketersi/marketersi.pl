@@ -1,0 +1,49 @@
+.heading-style {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card-heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-subheading {
+  font-size: 18px;
+}
+
+.card-narrow {
+  width: 85%;
+  margin: auto;
+}
+
+.btn-text {
+  font-size: 18px;
+}
+
+.btns_container {
+  padding: 30px;
+}
+
+.selectInputStyle {
+  border-radius: 100px;
+  width: 75%;
+  border: "1px solid rgb(201, 201, 201)";
+  padding: 8px 12px;
+}
+
+.cennikBtn {
+  background-color: #d21e00;
+  padding: 8px 16px;
+  border-radius: 100px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-color: rgb(201, 201, 201);
+  outline-color: rgb(201, 201, 201);
+}
