@@ -1,3 +1,4 @@
+"use client";
 import Anatomy from "@/components/organisms/nazwa/anatomy/Anatomy";
 import Demo from "@/components/organisms/nazwa/demo/Demo";
 import FAQ from "@/components/organisms/nazwa/faq/FAQ";
@@ -9,34 +10,24 @@ import Quote from "@/components/organisms/nazwa/quote/Quote";
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./nazwa.css";
+import ReactPlayer from "react-player";
 
 const NazwaDlaFirmy = () => {
   return (
     <>
-      {/* <Hero />
-      <Anatomy />
-      <Impact />
-      <Quote />
-      <LaunchEssentials />
-      <FAQ />
-      <ProjectValues /> */}
-
-      <Container>
-        <Hero />
-      </Container>
-
       {/* section 1 */}
-      {/* <section>
-        <div className="container">
+      <section className="pnazw-page">
+        <div className="container ">
           <div className="top-section-banner names-top-section-banner naming-no-bg naming-no-after naming-top-section-banner">
-            <video
-              className="copywriter-mainlogo naming-mainlogo"
-              src="https://www.copywriting.pl/files/resources/Nazwy-landing.mp4"
-              autoplay=""
-              loop=""
-              muted=""
-              playsinline=""
-            ></video>
+            <ReactPlayer
+              url="https://www.copywriting.pl/files/resources/Nazwy-landing.mp4"
+              playing={true}
+              loop={true}
+              autoplay={true}
+              width="100%"
+              height="auto"
+              className="heroVideo"
+            />
           </div>
           <div className="top-section-banner-text">
             <div className="row">
@@ -61,10 +52,7 @@ const NazwaDlaFirmy = () => {
 
               <div className="col-md-12 part-sec">
                 <div className="catalog-submit-button text-left projects-catalog-submit-buttom">
-                  <button
-                    className="download-catalog-button projects-download-catalog-button red-download-button naming-main-btn send-offer-button  js--triggerAnimation"
-                    type="button"
-                  >
+                  <button className="download-catalog-button" type="button">
                     <strong>Wyślijcie mi niezobowiązującą ofertę</strong>
                   </button>
                 </div>
@@ -74,7 +62,7 @@ const NazwaDlaFirmy = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* section 2 */}
       <section className="top-section-ending projects-over-hid">
@@ -208,18 +196,6 @@ const NazwaDlaFirmy = () => {
                       alt="Książka przydatna przy tworzeniu nazwy"
                     />
                   </div>
-                  <div className="col-xs-12 p-0 projects-show-810">
-                    <p className="theme-desc projects-custom-gray-text projects-mq-book-fix">
-                      Jeśli chcesz możesz pobrać darmowy egzemplarz. <br />
-                      <a
-                        href="/files/resources/Broszura-NazwaB.pdf"
-                        className="red-link"
-                        target="_blank"
-                      >
-                        Kliknij tutaj (PDF)
-                      </a>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -228,47 +204,7 @@ const NazwaDlaFirmy = () => {
       </section>
 
       {/* section 4 */}
-      <section className="projects-gray-opinion-5">
-        <div className="container projects-opinion-box-container custom-opinion-1">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="opinion-box">
-                <div className="opinion-box-image">
-                  <img
-                    className="opinion-box-inside-image"
-                    src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/owocni-copywriter.png"
-                    title="Copywriter, którego zadaniem jest wymyślanie nazw"
-                    alt="Copywriter wie jak ważne jest odpowiednie tworzenie nazw marek "
-                  />
-                </div>
-                <div className="opinion-box-content rwd-opinion-image opinion-client-bg-bohemia naming-no-bg naming-opinion-img">
-                  <img
-                    className="opinion-box-inside-image"
-                    src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/owocni-copywriter.png"
-                    title="Copywriter, którego zadaniem jest wymyślanie nazw"
-                    alt="Copywriter wie jak ważne jest odpowiednie tworzenie nazw marek "
-                  />
-                </div>
-                <div className="opinion-box-content opinion-box-content-2 projects-opinion-4 naming-opinion-text">
-                  <div className="opinion-box-text-3">
-                    Świetna marka nie powstaje z szablonu, czy z automatycznego
-                    generatora przypadkowych liter.
-                  </div>
-                  <div className="opinion-box-text-2 naming-m-0">
-                    W Owocnych wierzymy, że warto się trochę wysilić. To właśnie
-                    indywidualne, sumienne podejście odróżnia nasze prace od
-                    całej tej “generycznej konkurencji”. Świetne nazwy słychać z
-                    daleka!
-                  </div>
-                </div>
-                <div className="clearfix"></div>
-              </div>
-            </div>
-
-            <div className="col-md-12 projects-empty-opinion-box"></div>
-          </div>
-        </div>
-      </section>
+      {/* option box  */}
 
       {/* section 5 */}
       <section className="menu-target  sec0" id="sec1">
@@ -320,7 +256,7 @@ const NazwaDlaFirmy = () => {
           />
         </div>
 
-        <div className="container custom-container1">
+        <div className="container custom-container1 pnazw-page">
           <div className="row">
             <div className="col-md-12">
               <div className="names-container-Litery">
@@ -339,53 +275,64 @@ const NazwaDlaFirmy = () => {
       </section>
 
       {/* section 6 */}
-      <section className="projects-thematic-section-gray projects-thematic-section-background-index">
-        <div className="container custom-container1">
-          <div className="row">
-            <div className="col-md-12">
-              <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
-                Cały proces zamkamy w rozsądnej cenie dla małych firm. <br />
-                Każdy projekt jest inny. Każdy wyceniamy indywidualnie, <br />
-                elastycznie i przyjaźnie. Tylko jakość nie podlega negocjacji.
-              </p>
+
+      <div className="pnazw-page">
+        <section className="projects-thematic-section-gray projects-thematic-section-background-index ">
+          <div className="container custom-container1">
+            <div className="row">
+              <div className="col-md-12">
+                <div
+                  className="projects-custom-container-gray menu-target"
+                  id="sec2"
+                >
+                  <h1 className="theme-title1 projects-big-header names-big-header naming-padding-valuation pnazw-custom-header">
+                    Jak wyceniamy projekty?
+                  </h1>
+                </div>
+                <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
+                  Cały proces zamkamy w rozsądnej cenie dla małych firm. <br />
+                  Każdy projekt jest inny. Każdy wyceniamy indywidualnie, <br />
+                  elastycznie i przyjaźnie. Tylko jakość nie podlega negocjacji.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="projects-custom-container-gray new-wierzymy">
-          <img
-            className="img-wierzymy"
-            src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/agencja-namingowa-wierzymy.jpg"
-            title="Agencja namingowa - wierzymy w małe firmy"
-            alt="Wierzymy, że dobry naming pomaga"
-          />
+          <div className="projects-custom-container-gray new-wierzymy">
+            <img
+              className="img-wierzymy"
+              src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/agencja-namingowa-wierzymy.jpg"
+              title="Agencja namingowa - wierzymy w małe firmy"
+              alt="Wierzymy, że dobry naming pomaga"
+            />
 
-          <p className="theme-desc text-center projects-gray-section-custom-font projects-gray-section-valuation projects-thematic-section-background-index projecs-big-wierzymy-label">
-            90% pracy wykonamy
-            <br /> za 50% ceny.
-          </p>
-        </div>
+            <p className="theme-desc text-center projects-gray-section-custom-font projects-gray-section-valuation projects-thematic-section-background-index projecs-big-wierzymy-label">
+              90% pracy wykonamy
+              <br /> za 50% ceny.
+            </p>
+          </div>
 
-        <div className="opinion-box-image projects-thematic-section-gray-background"></div>
+          <div className="opinion-box-image projects-thematic-section-gray-background"></div>
 
-        <div className="container custom-container1">
-          <div className="row">
-            <div className="col-md-12">
-              <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
-                Drugą połowę rozliczymy,
-                <br />
-                gdy będziesz w pełni zadowolony
-                <br />
-                ze wszystkich efektów naszej pracy.
-              </p>
+          <div className="container custom-container1">
+            <div className="row">
+              <div className="col-md-12">
+                <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
+                  Drugą połowę rozliczymy,
+                  <br />
+                  gdy będziesz w pełni zadowolony
+                  <br />
+                  ze wszystkich efektów naszej pracy.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="formulage">
-          <img src="form.png" alt="" />
-        </div>
-      </section>
+          <div className="formulage">
+            <img src="form.png" alt="" />
+          </div>
+        </section>
+      </div>
 
       {/* section 7 */}
       <section className="projects-thematic-section-gray menu-target" id="sec3">
@@ -490,6 +437,7 @@ const NazwaDlaFirmy = () => {
 
         <div className="clearfix"></div>
       </section>
+      
       <Demo />
     </>
   );
