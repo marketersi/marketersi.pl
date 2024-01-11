@@ -1,0 +1,31 @@
+.heading-style {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-subheading {
+  font-size: 18px;
+}
+
+.card-narrow {
+  width: 85%;
+  margin: auto;
+}
+
+.btn-text {
+  font-size: 18px;
+}
+
+.btns_container {
+  padding: 30px;
+}
