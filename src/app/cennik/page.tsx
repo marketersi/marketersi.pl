@@ -43,19 +43,19 @@ const PriceListScreen = () => {
               </div>
               <div className="btns_container mb-5">
                 <div className="row">
-                  <div className="col">
+                  <div className="col" style={{ textAlign: "right" }}>
                     <button style={buttonStyle}>Strona internetowa</button>
                   </div>
-                  <div className="col">
+                  <div className="col" style={{ textAlign: "left" }}>
                     <button style={buttonStyle}>Działania marketingowe</button>
                   </div>
                 </div>
 
                 <div className="row mt-3">
-                  <div className="col">
+                  <div className="col" style={{ textAlign: "right" }}>
                     <button style={buttonStyle}>Nazwa dla firmy</button>
                   </div>
-                  <div className="col">
+                  <div className="col" style={{ textAlign: "left" }}>
                     <button style={buttonStyle}>Logo lub identyfikacja</button>
                   </div>
                 </div>
