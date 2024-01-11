@@ -13,7 +13,7 @@ const HeaderDropDown1 = () => {
               <div className={style.headerMenu}>
                 <h3>Fajne marki</h3>
                 <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
-                <a href="/">Projektowanie logo</a>
+                <Link href="/projektowanie-logo">Projektowanie logo</Link>
                 <a href="/">Identyfikacja spółki</a>
               </div>
             </Col>

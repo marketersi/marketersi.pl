@@ -77,7 +77,16 @@
   font-size: 18px;
 }
 
+.navRightMenu a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar:hover .navRightMenu {
+  color: rgb(9, 9, 9);
+  font-size: 18px;
+}
+.navbar:hover .navRightMenu a{
   color: rgb(9, 9, 9);
   font-size: 18px;
 }
