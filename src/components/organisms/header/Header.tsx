@@ -15,7 +15,9 @@ const Header = () => {
         <Row className="align-items-center">
           <Col sm={4}>
             <div className={style.leftNav}>
-              <Button className={style.headerLeftBtn}>Cennik</Button>
+              <Button className={style.headerLeftBtn}>
+                <Link href="/cennik">Cennik</Link>
+              </Button>
               <div className={style.headerDrop1}>
                 <div className={style.dropBtn}>
                   Usługi i
@@ -42,12 +44,14 @@ const Header = () => {
           </Col>
           <Col sm={3}>
             <div className="logo">
-              <Link href="/"><Image
-                src="/assets/images/marketersi.PNG"
-                alt="My Image"
-                width={300}
-                height="auto"
-              /></Link>
+              <Link href="/">
+                <Image
+                  src="/assets/images/marketersi.PNG"
+                  alt="My Image"
+                  width={300}
+                  height="auto"
+                />
+              </Link>
             </div>
           </Col>
           <Col sm={5}>
