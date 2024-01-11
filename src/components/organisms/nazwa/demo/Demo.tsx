@@ -5,7 +5,7 @@ import "./demo.css";
 const Demo = () => {
   return (
     <>
-      <section>
+      {/* <section>
         <Row>
           <Col>
             <strong>
@@ -46,7 +46,7 @@ const Demo = () => {
             </div>
           </Col>
         </Row>
-      </section>
+      </section> */}
 
       {/* 2 */}
       <section className="projects-gray-opinion-1">
