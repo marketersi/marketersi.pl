@@ -57,15 +57,15 @@ const Header = () => {
           <Col sm={5}>
             <div className={style.rightNav}>
               <Nav className="">
-                <Nav.Link href="/" className={style.navRightMenu}>
-                  Zespół{" "}
+                <Nav.Link className={style.navRightMenu}>
+                  <Link href="#">Zespół </Link>
                 </Nav.Link>
-                <Nav.Link href="/" className={style.navRightMenu}>
+                <Nav.Link className={style.navRightMenu}>
                   <Link href="/kontakt">Kontakt</Link>
                 </Nav.Link>
               </Nav>
               <Button className={style.headerRightBtn}>
-                Zamów bezpłatne badanie
+                <Link href="#">Zamów bezpłatne badanie</Link>
               </Button>
             </div>
           </Col>
