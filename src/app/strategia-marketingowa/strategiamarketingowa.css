@@ -1,0 +1,229 @@
+/* 1. MainHeading */
+.MainHeading_container {
+  display: flex;
+  padding: 30px;
+}
+@media screen and (max-width: 799px) {
+  .MainHeading_container {
+    flex-direction: column-reverse;
+  }
+}
+.MainHeading_Title {
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 76.5px;
+}
+.MainHeading_SecondTitle {
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 76.5px;
+  margin-bottom: 30px;
+}
+.MainHeading_Content {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 60.8px;
+}
+
+/* 2. MainContentOne */
+.MainContentOne {
+  margin-bottom: 60px;
+}
+.MainContentOne_container {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+}
+
+/* 3. MainNumber */
+.MainNumber {
+  margin-bottom: 60px;
+}
+.MainNumber_container {
+  display: flex;
+  gap: 40px;
+}
+.MainNumber_one {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.MainNumber_one_content {
+  font-size: 18px;
+  line-height: 24.75px;
+  text-align: center;
+  color: #515151;
+}
+.MainNumber_two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.MainNumber_two_content {
+  font-size: 18px;
+  line-height: 24.75px;
+  text-align: center;
+  color: #515151;
+}
+
+/* 4. MainContentTwo */
+.MainContentTwo {
+  margin-bottom: 60px;
+}
+.MainContentTwo_container p {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+}
+
+/* 5. ResultTable */
+.ResultTable {
+  margin-bottom: 60px;
+}
+.ResultTable_title {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 55.8px;
+}
+.ResultTable_title {
+  margin-bottom: 90px;
+}
+.ResultTable_table {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.52) 0px 0px 28px 0px;
+  box-sizing: border-box;
+  margin: 0px 106.667px;
+  max-width: 1152px;
+  padding: 15px 65px;
+}
+.ResultTable_table_row {
+  display: flex;
+}
+.ResultTable_table_button {
+  align-items: flex-start;
+  appearance: button;
+  background-color: #282828;
+  border: 2px solid #282828;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  box-sizing: border-box;
+  color: #e3e3e3;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  place-items: flex-start normal;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+/* 6. Strategy */
+.Strategy {
+  display: none;
+}
+
+/* 7. Testimonial */
+.Testimonial {
+  display: none;
+}
+
+/* 8. ResultMax */
+.ResultMax {
+  display: none;
+}
+
+/* 9. Analysis */
+.Analysis {
+  display: none;
+}
+
+/* 10. WhatRecieve */
+.WhatRecieve {
+  display: none;
+}
+
+/* 11. ImageAdvantage */
+.ImageAdvantage {
+  display: none;
+}
+
+/* 12. InviteCustomer */
+.InviteCustomer {
+  display: none;
+}
+
+/* 13. QuoteOne */
+.QuoteOne {
+  display: none;
+}
+
+/* 14. Branding */
+.Branding {
+  display: none;
+}
+
+/* 15. QuoteTwo */
+.QuoteTwo {
+  display: none;
+}
+
+/* 16. OurClients */
+.OurClients {
+  display: none;
+}
+
+/* 17. Price */
+.Price {
+  display: none;
+}
+
+/* 18. StrategyAction */
+.StrategyAction {
+  display: none;
+}
+
+/* 19. AnswerAll */
+.AnswerAll {
+  display: none;
+}
+
+/* 20. Accordion */
+.Accordion {
+  display: none;
+}
+
+.content {
+  --gap: clamp(1rem, 6vw, 3rem);
+  --full: minmax(var(--gap), 1fr);
+  --content: min(75ch, 100% - var(--gap) * 2);
+  --popout: minmax(0, 2rem);
+  --feature: minmax(0, 5rem);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [feature-start] var(--feature)
+    [popout-start] var(--popout)
+    [content-start] var(--content) [content-end]
+    var(--popout) [popout-end]
+    var(--feature) [feature-end]
+    var(--full) [full-end];
+}
+
+.content > * {
+  grid-column: content;
+}
+
+.popout {
+  grid-column: popout;
+}
+
+.feature {
+  grid-column: feature;
+}
+
+.full {
+  grid-column: full;
+}
