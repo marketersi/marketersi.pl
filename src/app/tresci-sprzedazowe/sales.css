@@ -248,9 +248,7 @@ section.sales_option_box {
 .copywriter-standard-mb-40 {
     margin-bottom: 60px;
 }
-.copywriter-text-center {
-    text-align: center;
-}
+
 .copywriter-text-center img, .copywriter-text-left, .copywriter-text-right {
     max-width: 100%;
 }
@@ -337,10 +335,7 @@ strong {
     font-weight: 900;
     margin-bottom: 25px;
 }
-.copywriter-standard-mtb-40 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
+
 .copywriter-custom-container-2 {
     max-width: 900px;
     background-color: white;
@@ -435,4 +430,226 @@ img.copywriter-owocni {
     position: absolute;
     right: 147px;
     top: -130px;
+}
+.copywriter-cmargin-4 {
+    margin-top: 150px;
+}
+.copywriter-custom-header-2 {
+    font-family: 'Playfair Display';
+    font-size: 91px;
+    letter-spacing: -0.01em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 89px;
+}
+.copywriter-custom-subheader-2 {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    letter-spacing: -0.01em;
+}
+
+/* ==============================sales Orange========================== */
+.thematic-section-orange {
+    background-color: #f4be04;
+}
+.copywriter-orange-bg {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Reklama-hurum-tlo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 812px;
+    margin-top: -215px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriter-text-center {
+    text-align: center;
+}
+.custom-container2 {
+    max-width: 810px;
+    margin: auto;
+}
+.copywriter-cname {
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+.copywriter-white-text {
+    color: white;
+}
+.copywriter-black {
+    color: black;
+}
+.names-client-name {
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    letter-spacing: -0.025em;
+    color: #fff;
+    position: relative;
+}
+.copywriter-white-text {
+    color: white;
+}
+
+.copywriter-custom-mright-3 {
+    margin-right: -123px;
+    margin-left: -123px;
+}
+.copywriter-client-desc-margin {
+    margin-bottom: 60px;
+}
+.names-client-desc {
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    font-weight: 900 !important;
+    letter-spacing: -0.025em;
+    margin-bottom: 50px;
+    line-height: 60px;
+}
+.copywriter-orange-black-text {
+    color: #4e3c01;
+}
+
+.copywriter-custom-mright {
+    margin-right: -15px;
+}
+.copywriter-cname:after {
+    top: 91px;
+}
+.names-client-name:after {
+    background: linear-gradient(to right, #aa2e2d 0%, #aa2e2d 100%);
+    width: 168px;
+    height: 10px;
+    content: "";
+    position: absolute;
+    left: calc(50% - 84px);
+    bottom: 15px;
+    top: 50px;
+}
+
+.copywriter-green-underline:after {
+    background: linear-gradient(to right, #438d07 0%, #438d07 100%);
+}
+/* ==============================sales motus-section========================== */
+.copywriter-standard-pt-140 {
+    padding-top: 160px;
+}
+
+.motus-section {
+    padding-top: 100px;
+}
+.thematic-section {
+    background: #fff;
+}
+.copywriter-cname {
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+.copywriter-black {
+    color: black;
+}
+.copywriter-client-desc-margin {
+    margin-bottom: 60px;
+}
+
+.copywriter-bg-2 {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Motus-fotografia-reklamowa1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 933px;
+    margin-bottom: 50px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriting-text-right {
+    text-align: right;
+}
+.copywriting-custom-subcont {
+    display: inline-block;
+    text-align: left !important;
+    padding-left: 20px;
+}
+.copywriting-img-desc {
+    font-family: "Georgia";
+    font-size: 44px;
+    color: #353434;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    margin-bottom: 30px;
+}
+.copywriter-custom-red {
+    color: #b8412c;
+    font-weight: 600;
+}
+
+.copywriter-img-big-desc {
+    font-family: "Arial";
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 91px;
+    color: #0c0c0c;
+    margin-bottom: 40px;
+}
+.copywriter-custom-color {
+    color: #910d08;
+}
+.copywriter-cmargin-6 {
+    margin-bottom: 70px;
+}
+.copywriter-bg-3 {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Motus-fotografia-reklamowa2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1392px;
+    margin-top: -180px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriter-cname {
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+
+.copywriter-black {
+    color: black;
+}
+.projects-bow-1 {
+    width: 100%;
+    margin-bottom: -1px;
+}
+.projects-rotate-bow {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.copywriter-prawo-tekst-1 {
+    font-size: 39px;
+    font-family: "Georgia";
+    line-height: 38px;
+    margin-top: -90px;
+}
+.copywriter-prawo-tekst-2 {
+    margin-top: 40px;
+    font-size: 81px;
+    font-family: "Georgia";
+    line-height: 73px;
+    margin-bottom: 250px;
+}
+.download-catalog-button {
+    width: 415px;
+    background: #f2c22f;
+    border: transparent;
+    padding: 16px 3px;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    bottom: 4px;
+    left: 0;
+    z-index: 10;
+    display: inline;
+    letter-spacing: -0.025em;
 }

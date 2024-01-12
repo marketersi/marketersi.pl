@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Faq = () => {
+  
   return (
     <div>Faq</div>
   )
