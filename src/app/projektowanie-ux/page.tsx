@@ -2492,6 +2492,1158 @@ const UXDesignScreen = () => {
           </div>
         </div>
       </section>
+
+      {/* section 5 */}
+      <section>
+        <div id="maciej">
+          <div className="imgs">
+            <img
+              className="maciejImg1"
+              src="https://propozycje.owocni.pl/ux/Projektant-Aureola.3b8da20b.jpg"
+              alt=""
+              style={{
+                transform: "translate3d(0px, -94.2179px, 0px) scale(1.3, 1.3)",
+              }}
+            />
+            <picture className="maciejImg2">
+              <source
+                srcset="
+                https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.webp
+              "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.c342bc32.png
+              "
+                type="image/gif"
+              />
+              <img src="https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.webp" />
+            </picture>
+
+            <picture className="maciejImg3">
+              <source
+                srcset="
+                https://propozycje.owocni.pl/ux/Head-of-copywriting.f6360b28.webp
+              "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                https://propozycje.owocni.pl/ux/Head-of-copywriting.f6360b28.ef0edbaa.png
+              "
+                type="image/png"
+              />
+              <img src="https://propozycje.owocni.pl/ux/Head-of-copywriting.f6360b28.webp" />
+            </picture>
+          </div>
+          <div className="contentText">
+            <h2>
+              Ludzie ignorują strony, <br />
+              które ignorują ludzi...
+            </h2>
+            <p>
+              Przedsiębiorca dosłownie traci zyski, skupiając <br />
+              się na firmie zamiast na doświadczeniu
+              <br />
+              użytkownika. I tu pojawiamy się my...
+            </p>
+            <p>
+              Owocni są od tego, by myśleć <br />
+              tak, jak myślą Twoi klienci.
+            </p>
+            <a className="btn-neon send-offer-button js--triggerAnimation">
+              Zapytaj o makietę dla siebie
+              <div
+                className="light"
+                style={{ transform: "rotate(120deg) scale(0.7, 0.7)" }}
+              ></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* section 6 */}
+      <section>
+        <div id="textArrow">
+          <h2>
+            Przekształcamy złożone <br />
+            problemy biznesowe w proste,
+            <br />
+            intuicyjne i skuteczne interfejsy.
+          </h2>
+          <div className="rowD">
+            <div>
+              <p>
+                W agencji stronę projektuje grafik
+                <br />
+                <span className="underLine orange">
+                  <span>-</span>
+                  <span className="space"></span>
+                  <span>t</span>
+                  <span>o</span>
+                  <span className="space"></span>
+                  <span>b</span>
+                  <span>ł</span>
+                  <span>ą</span>
+                  <span>d</span>
+                  <span>!</span>
+                </span>
+                Takie strony ładnie
+                <br />
+                wyglądają, ale słabo działają.
+              </p>
+            </div>
+            <img
+              src="https://propozycje.owocni.pl/ux/Strzalka-Grafik-Marketer.f87779c7.jpg"
+              alt=""
+            />
+            <div>
+              <p>
+                U nas pracę rozpoczyna marketer, <br />
+                który ma
+                <span className="underLine green">
+                  <span>k</span>
+                  <span>o</span>
+                  <span>m</span>
+                  <span>p</span>
+                  <span>e</span>
+                  <span>t</span>
+                  <span>e</span>
+                  <span>n</span>
+                  <span>c</span>
+                  <span>j</span>
+                  <span>e</span>
+                </span>
+                by głęboko
+                <br />
+                analizować twarde dane z sieci
+              </p>
+            </div>
+          </div>
+          <div className="one">
+            <p>
+              Na bazie tych danych copywriter <br className="mobile" />
+              tworzy przekonującą narrację.
+              <br />
+              Grafik ma za zadanie wzmocnić <br className="mobile" />
+              ten przekaz na samym końcu.
+              <br />
+              <br className="mobile" />
+              Działa to tak dobrze, że możemy dać
+              <br className="mobile" />
+              <span className="underLine">
+                <span>z</span>
+                <span>u</span>
+                <span>c</span>
+                <span>h</span>
+                <span>w</span>
+                <span>a</span>
+                <span>ł</span>
+                <span>ą</span>
+                <span className="space"></span>
+                <span>g</span>
+                <span>w</span>
+                <span>a</span>
+                <span>r</span>
+                <span>a</span>
+                <span>n</span>
+                <span>c</span>
+                <span>j</span>
+                <span>ę</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* section 7 */}
+      <section>
+        <div id="guaranteeWrapper">
+          <div id="guarantee">
+            <div className="mobileImg">
+              <img
+                src="https://propozycje.owocni.pl/ux/Projektantka-UX.ae39040d.995c06ff.png"
+                alt=""
+              />
+              <img
+                className="hand1Img"
+                src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-PRAWA.10fe6d37.png"
+                alt=""
+                style={{ transform: "translate3d(10.0154px, -10.0154px, 0px)" }}
+              />
+              <img
+                className="hand2Img"
+                src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-LEWA.5795952e.3993493a.png"
+                alt=""
+                style={{ transform: "translate3d(10.0154px, -10.0154px, 0px)" }}
+              />
+            </div>
+            <img
+              src="https://propozycje.owocni.pl/ux/Gwarancja.e6e5fa2c.jpg"
+              alt=""
+              srcset="
+              https://propozycje.owocni.pl/ux/Gwarancja-650.5c4aedce.jpg  960w,
+              https://propozycje.owocni.pl/ux/Gwarancja.e6e5fa2c.jpg     1060w
+            "
+              sizes="(max-width: 900px) 650px, 1150px"
+            />
+            <div className="rowD">
+              <div>
+                <h2>
+                  Gwarantujemy dowieźć Ci
+                  <br />
+                  duużo wyższe wyniki niż <br />
+                  ma Twoja obecna strona, <br />
+                  albo nic nie zapłacisz.
+                </h2>
+                <p>
+                  <b>- zwrot 100% środków!</b>
+                  <br />
+                  Szczegółowy opis gwarancji znajdziesz <br />w sekcji pytania
+                  na dole strony.
+                </p>
+              </div>
+              <div className="imgs">
+                <img
+                  src="https://propozycje.owocni.pl/ux/Projektantka-UX.ae39040d.995c06ff.png"
+                  alt=""
+                />
+                <img
+                  className="hand1"
+                  src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-PRAWA.10fe6d37.png"
+                  alt=""
+                  style={{
+                    transform: "translate3d(-26.7078px, -26.7078px, 0px)",
+                  }}
+                />
+                <img
+                  className="hand2"
+                  src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-LEWA.5795952e.3993493a.png"
+                  alt=""
+                  style={{
+                    transform: "translate3d(-26.7078px, -26.7078px, 0px)",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 8 (--time)*/}
+      <section id="videoSection">
+        <div>
+          <h2
+            className="textAnimation titleAnimation"
+            style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+          >
+            Jeśli myślisz systemowo
+            <br />
+            <br className="mobile" />
+            możesz sięgać gwiazd!
+          </h2>
+          <p
+            className="textAnimation"
+            style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+          >
+            Miej na względzie realizację
+            <br className="mobile" />
+            ambitnych celów Twojej firmy,
+            <br className="mobile" />
+            <br />
+            ale koncentruj się na tym, jakie <br className="mobile" />
+            są cele Twoich klientów.
+          </p>
+          <p
+            className="textAnimation"
+            style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+          >
+            Makieta <span className="italy">user experience </span>to
+            <br className="mobile" />
+            narzędzie, które pozwoli <br />
+            <br className="mobile" />
+            Ci
+            <span className="underLine underLine2">
+              <span>u</span>
+              <span>p</span>
+              <span>o</span>
+              <span>r</span>
+              <span>z</span>
+              <span>ą</span>
+              <span>d</span>
+              <span>k</span>
+              <span>o</span>
+              <span>w</span>
+              <span>a</span>
+              <span>ć</span>
+              <span className="space"></span>
+              <span>o</span>
+              <span>f</span>
+              <span>e</span>
+              <span>r</span>
+              <span>t</span>
+              <span>ę</span>
+            </span>
+            <br className="mobile" />
+            firmy w internecie
+          </p>
+        </div>
+        <div>
+          <div id="videos">
+            <img
+              className="videoBg"
+              src="https://propozycje.owocni.pl/ux/VideoUX.98555e54.46666926.png"
+              srcset="https://propozycje.owocni.pl/ux/VideoUX-650.280ddf04.png 960w ./img/VideoUX.98555e54.png 1000w"
+            />
+            <video
+              data-time="180"
+              playsinline=""
+              autoplay="true"
+              loop=""
+              muted=""
+              data-vscid="d3xa7p0zx"
+              style={{ display: "none" }}
+            >
+              <source
+                src="https://propozycje.owocni.pl/ux/UX-JEDEN.4766b5b5.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <video
+              data-time="180"
+              playsinline=""
+              autoplay="true"
+              loop=""
+              muted=""
+              data-vscid="d3xa7p0zx"
+              style={{ display: "block" }}
+            >
+              <source
+                src="https://propozycje.owocni.pl/ux/UX-DWA.917254d4.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <video
+              data-time="180"
+              playsinline=""
+              autoplay="true"
+              loop=""
+              muted=""
+              data-vscid="d3xa7p0zx"
+              style={{ display: "none" }}
+            >
+              <source
+                src="https://propozycje.owocni.pl/ux/UX-TRZY.54e91b3f.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div className="textWithArrow">
+            <div className="textVideo">
+              <div className="">
+                <h3>
+                  CELE KLIENTÓW
+                  <br />I UŻYTKONIKÓW
+                </h3>
+              </div>
+              <div
+                style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+                className="active"
+              >
+                <h3>
+                  Twoje cele
+                  <br />
+                  biznesowe
+                </h3>
+              </div>
+              <div
+                style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+                className=""
+              >
+                <h3>
+                  Rezultaty
+                  <br />
+                  są tutaj
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="para">
+            <img
+              className="sp"
+              src="https://propozycje.owocni.pl/ux/sp.995a6077.webp"
+              alt=""
+              style={{ transform: "translate3d(0px, -2.9487px, 0px)" }}
+            />
+            <img
+              className="dot1"
+              src="https://propozycje.owocni.pl/ux/dot1.7781bcc1.webp"
+              alt=""
+              style={{ transform: "translate(0px, 0px)" }}
+            />
+            <img
+              className="dot2"
+              src="https://propozycje.owocni.pl/ux/dot2.e99cba48.webp"
+              alt=""
+              style={{ transform: "translate(0px, 0px)" }}
+            />
+            <img
+              className="dot3"
+              src="https://propozycje.owocni.pl/ux/dot3.1e955529.webp"
+              alt=""
+              style={{ transform: "translate(0px, 0px)" }}
+            />
+            <img
+              className="dot4"
+              src="https://propozycje.owocni.pl/ux/dot2.e99cba48.webp"
+              alt=""
+              style={{ transform: "scale(0.5, 0.5)" }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* section 9 */}
+      <section>
+        <div id="WhatGet">
+          <p className="textAnimation">
+            Prowadzimy odwiedzających przez proces sprzedaży tak,
+            <br />
+            aby nie byli znudzeni, zdezorientowani i nie odeszli.
+          </p>
+          <p className="textAnimation">
+            Kierujemy klientów do jednego produktu/usługi, <br />
+            której potrzebuje, by rozwiązać swój problem.
+          </p>
+          <p className="textAnimation">
+            Pozyskamy namiar, by móc się kontaktować
+            <br />
+            nawet, jeśli klient opuści Twoją stronę.
+          </p>
+          <a className="send-offer-button js--triggerAnimation">
+            <span>
+              <span>OK Wyślijcie mi niezobowiązującą ofertę </span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      {/* section 10 */}
+      <section id="stage">
+        <div>
+          <h2
+            className="textAnimation titleAnimation"
+            style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+          >
+            Wszystko zaczyna się
+            <br />
+            od dobrego procesu
+          </h2>
+          <p
+            className="textAnimation"
+            style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+          >
+            3 sprawdzone kroki do klikalnego prototypu <br />
+            Twojej nowej,
+            <span className="underLine underLine2">
+              <span>w</span>
+              <span>y</span>
+              <span>s</span>
+              <span>o</span>
+              <span>k</span>
+              <span>o</span>
+              <span>w</span>
+              <span>y</span>
+              <span>d</span>
+              <span>a</span>
+              <span>j</span>
+              <span>n</span>
+              <span>e</span>
+              <span>j</span>
+            </span>
+            strony
+          </p>
+        </div>
+        <div className="dots">
+          <div
+            className="number1 number"
+            style={{ left: "390.62px", top: "0.110352px" }}
+          >
+            <div>
+              <svg id="svg1"></svg>
+              <p
+                className="text"
+                id="text1"
+                style={{
+                  fontSize: "330px",
+                  height: "330px",
+                  lineHeight: "330px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "rgb(255, 255, 255)",
+                    transform: "translate(0px, 0px)",
+                    opacity: 1,
+                  }}
+                >
+                  1
+                </span>
+                <span
+                  style={{
+                    color: "rgb(255, 255, 255)",
+                    transform: "translate(0px, 0px)",
+                    opacity: 1,
+                  }}
+                >
+                  1
+                </span>
+              </p>
+              <input className="input" id="input1" type="text" />
+              <p
+                className="offscreen-text"
+                id="offscreen-text1"
+                style={{ fontSize: "330px" }}
+              >
+                <span>1</span>
+                <span>1</span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="number2 number"
+            style={{ left: "467.194px", top: "1685.24px" }}
+          >
+            <div>
+              <svg id="svg2"></svg>
+              <p
+                className="text"
+                id="text2"
+                style={{
+                  fontSize: "330px",
+                  height: "330px",
+                  lineHeight: "330px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "rgb(255, 255, 255)",
+                    transform: "translate(0px, 0px)",
+                    opacity: 1,
+                  }}
+                >
+                  2
+                </span>
+                <span
+                  style={{
+                    color: "rgb(255, 255, 255)",
+                    transform: "translate(0px, 0px)",
+                    opacity: 1,
+                  }}
+                >
+                  2
+                </span>
+              </p>
+              <input className="input" id="input2" type="text" />
+              <p
+                className="offscreen-text"
+                id="offscreen-text2"
+                style={{ fontSize: "330px" }}
+              >
+                <span>2</span>
+                <span>2</span>
+              </p>
+            </div>
+          </div>
+          <div
+            className="number3 number"
+            style={{ left: "241.131px", top: "3294.04px" }}
+          >
+            <div>
+              <svg id="svg3"></svg>
+              <p
+                className="text"
+                id="text3"
+                style={{
+                  fontSize: "330px",
+                  height: "330px",
+                  lineHeight: "330px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "rgb(255, 255, 255)",
+                    transform: "translate(0px, 0px)",
+                    opacity: 1,
+                  }}
+                >
+                  3
+                </span>
+                <span
+                  style={{
+                    color: "rgb(255, 255, 255)",
+                    transform: "translate(0px, 0px)",
+                    opacity: 1,
+                  }}
+                >
+                  3
+                </span>
+              </p>
+              <input className="input" id="input3" type="text" />
+              <p
+                className="offscreen-text"
+                id="offscreen-text3"
+                style={{ fontSize: "330px" }}
+              >
+                <span>3</span>
+                <span>3</span>
+              </p>
+            </div>
+          </div>
+
+          <img
+            className="dotEnd"
+            src="https://propozycje.owocni.pl/ux/monophy.e1100757.gif"
+            alt=""
+            style={{ left: "390.62px", top: "5487px" }}
+          />
+        </div>
+        <p className="mobilenumber">1</p>
+        <div className="stageD stage1">
+          <div className="right texts">
+            <video
+              data-time="180"
+              playsinline=""
+              autoplay="true"
+              loop=""
+              muted=""
+              data-vscid="d3xa7p0zx"
+            >
+              <source src="./img/Psychologia.3e94c83a.mp4" type="video/mp4" />
+            </video>
+
+            <h3>Badanie rynku</h3>
+            <p className="subtitle">
+              Badamy liderów rynku.
+              <br />
+              Diagnozujemy zasady <br />
+              konkurowania.
+            </p>
+            <p>
+              Jak wygrywają liderzy w tej branży?
+              <br />
+              Co możemy zrobić lepiej od nich?
+              <br />
+              Na czym zbudujemy przewagę?
+            </p>
+          </div>
+        </div>
+        <p className="mobilenumber">2</p>
+        <div className="stageD stage2">
+          <div className="texts">
+            <video
+              data-time="180"
+              playsinline=""
+              autoplay="true"
+              loop=""
+              muted=""
+              data-vscid="d3xa7p0zx"
+            >
+              <source
+                src="https://propozycje.owocni.pl/ux/Strategia-UX.79843a8b.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <h3>Budowanie wartości</h3>
+            <p className="subtitle">
+              Ustalamy biznesowe cele i planujemy
+              <br />
+              fundamenty propozycji wartości
+              <br />w ofercie nie do odrzucenia.
+            </p>
+            <p>
+              Od rozpoznania okazji do szybkiego rozwoju, <br />
+              aż po efektywny plan realizacji – strategia
+              <br />
+              to paliwo rakietowe nowoczesnej strony.
+            </p>
+          </div>
+        </div>
+        <p className="mobilenumber">3</p>
+        <div className="stageD stage3">
+          <div className="right texts">
+            <video
+              data-time="180"
+              playsinline=""
+              autoplay="true"
+              loop=""
+              muted=""
+              data-vscid="d3xa7p0zx"
+            >
+              <source
+                src="https://propozycje.owocni.pl/ux/Marketing-UX.7454d829.mp4"
+                type="video/mp4"
+              />
+            </video>
+
+            <h3>Makiety &amp; przepływy</h3>
+            <p className="subtitle">
+              Tworzymy unikalne prototypy dobrych
+              <br />
+              doświadczeń klienta i zmieniamy je <br />w topowe rezultaty
+              biznesowe.
+            </p>
+            <p>
+              Od pierwszego spojrzenia, przez głębokie
+              <br />
+              zainteresowanie aż do finalnej konwersji.
+              <br />
+              Twoja ofertam, tyle, że na sterydach.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* section 11 */}
+      <section>
+        <div id="ImageSection">
+          <div>
+            <h2>
+              PROTOTYP
+              <br />
+              STRONY
+            </h2>
+            <picture
+              className="img1"
+              style={{
+                clipPath: "polygon(0px 100%, 100% 100%, 100% 0px, 0px 0px)",
+                transform: "perspective(1298.7px) rotateX(70deg)",
+              }}
+            >
+              <source
+                srcset="https://propozycje.owocni.pl/ux/3dB.320568f9.png"
+                media="(max-width: 960px)"
+              />
+              <source
+                srcset="
+                https://propozycje.owocni.pl/ux/Makieta-UX-strony.4f281932.1365da9d.png
+              "
+                type="image/jpg"
+              />
+              <img src="https://propozycje.owocni.pl/ux/Makieta-UX-strony.4f281932.1365da9d.png" />
+            </picture>
+            <picture
+              className="img2"
+              style={{
+                clipPath: "polygon(0px 0px, 100% 0px, 100% 0px, 0px 0px)",
+                transform: "perspective(1298.7px) rotateX(70deg)",
+              }}
+            >
+              <source
+                srcset="https://propozycje.owocni.pl/ux/3dA.23d16a38.jpg"
+                media="(max-width: 960px)"
+              />
+              <source
+                srcset="
+                https://propozycje.owocni.pl/ux/Makieta-UX-strony.06297097.jpg
+              "
+                type="image/jpg"
+              />
+              <img src="https://propozycje.owocni.pl/ux/Makieta-UX-strony.06297097.jpg" />
+            </picture>
+            <div
+              className="shadow"
+              style={{ transform: "perspective(1298.7px) rotateX(70deg)" }}
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 12 */}
+      <section>
+        <div id="makiety" style={{ height: "3995px" }}>
+          <h2>
+            Funkcjonalna makieta <br />
+            <b>user experience</b>
+          </h2>
+          <div className="arrow">
+            <div className="next">dalej »</div>
+            <div className="prev">« cofnij</div>
+          </div>
+          <div className="mockupsWrapper" style={{ height: "3995px" }}>
+            <div className="mockups">
+              <img
+                src="https://propozycje.owocni.pl/ux/1.06f8af9e.png"
+                style={{ opacity: 0 }}
+              />
+              <img
+                src="https://propozycje.owocni.pl/ux/2.ec21867c.png"
+                style={{
+                  opacity: 0,
+                  transform: "translate(-1550px, 200px) scale(0.5, 0.7)",
+                  filter: "blur(5px)",
+                }}
+              />
+              <img
+                src="https://propozycje.owocni.pl/ux/4.defeea9e.png"
+                style={{
+                  opacity: 0.3,
+                  transform:
+                    "translate(-775px, 200px) rotateY(10deg) scale(0.5, 0.7)",
+                  filter: "blur(5px)",
+                }}
+              />
+              <img
+                src="https://propozycje.owocni.pl/ux/1.06f8af9e.png"
+                style={{
+                  opacity: 1,
+                  transform: "rotateY(360deg)",
+                  filter: "blur(0px)",
+                }}
+              />
+              <img
+                src="https://propozycje.owocni.pl/ux/2.ec21867c.png"
+                style={{
+                  opacity: 0.3,
+                  transform:
+                    "translate(775px, 200px) rotateY(350deg) scale(0.5, 0.7)",
+                  filter: "blur(5px)",
+                }}
+              />
+              <img
+                src="https://propozycje.owocni.pl/ux/4.defeea9e.png"
+                style={{ opacity: 0 }}
+              />
+              <img
+                src="https://propozycje.owocni.pl/ux/3.5d1f2f90.png"
+                style={{ opacity: 0 }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 13 */}
+      <section>
+        <div id="highResult">
+          <video
+            className="mobile"
+            data-time="180"
+            playsinline=""
+            autoplay="true"
+            loop=""
+            muted=""
+            data-vscid="d3xa7p0zx"
+          >
+            <source
+              src="https://propozycje.owocni.pl/ux/Co-otrzymam.3d0d4083.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <h2>
+            Zdobądź gwiazdorski
+            <br className="mobile" />
+            projekt wykonawczy
+            <br />
+            zorientowany na <br className="mobile" />
+            <span className="underLine">
+              <span>w</span>
+              <span>y</span>
+              <span>s</span>
+              <span>o</span>
+              <span>k</span>
+              <span>i</span>
+              <span>e</span>
+              <span className="space"></span>
+              <span>r</span>
+              <span>e</span>
+              <span>z</span>
+              <span>u</span>
+              <span>l</span>
+              <span>t</span>
+              <span>a</span> <span>t</span>
+              <span>y</span>
+            </span>
+          </h2>
+          <div className="row">
+            <div>
+              <p>
+                Przemyślana architektura informacji
+                <br />
+                uporządkuje ofertę firmy w internecie.
+              </p>
+              <p>
+                Modele szkieletowe podstron <br />
+                organizują całą zawartość.
+              </p>
+              <p>
+                Lista pomysłów oraz idei
+                <br />
+                na 2x wyższą skuteczność.
+              </p>
+              <p>
+                100% satysfakcji <br />
+                lub zwrot środków
+              </p>
+            </div>
+            <div>
+              <video
+                data-time="180"
+                playsinline=""
+                autoplay="true"
+                loop=""
+                muted=""
+                data-vscid="d3xa7p0zx"
+              >
+                <source
+                  src="https://propozycje.owocni.pl/ux/Co-otrzymam.3d0d4083.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 14 */}
+      <section className="section" id="faq" data-v-14d6d6bc="">
+        <div data-v-14d6d6bc="">
+          <div className="header" data-v-3721cfae="" data-v-14d6d6bc="">
+            <div className="header__top" data-v-3721cfae="">
+              <div className="header__top__left" data-v-3721cfae="">
+                <h2
+                  className="textAnimation"
+                  style={{
+                    fontWeight: 400,
+                    opacity: 1,
+                    transform: "translate(0px, 0px)",
+                  }}
+                >
+                  Na wszystkie pytania <br />
+                  odpowiedź brzmi TAK!
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className="section__content" data-v-14d6d6bc="">
+            <div className="faq-item" data-v-7b10b9fb="" data-v-14d6d6bc="">
+              <div
+                className="faq-item__header"
+                data-v-7b10b9fb=""
+                style={{ backgroundColor: "transparent" }}
+              >
+                <p className="h6" data-v-7b10b9fb="">
+                  Możemy pracować przez mail, telefon, video, zoom, skype?
+                </p>
+                <div className="faq-item__handle" data-v-7b10b9fb=""></div>
+              </div>
+              <div
+                className="faq-item__content"
+                data-v-7b10b9fb=""
+                style={{
+                  height: "0px",
+                  visibility: "hidden",
+                  overflow: "hidden",
+                  transition: "height 0.1s ease-in-out 0s",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <p data-v-7b10b9fb="">
+                  Jasne. Każdy z naszych klientów ma wyjątkowy styl pracy. Kim
+                  jesteśmy żeby temu przeszkodzić? <br />
+                  <br />
+                  Zamiast mówić ludziom jak pracować stworzyliśmy narzędzia
+                  wystarczająco uniwersalne, aby dodawać wartość do czyjegoś
+                  systemu pracy.
+                  <br />
+                  <br />
+                  Jedyna forma, której nie prowadzimy to głuchy telefon. Dlatego
+                  wszystkie osoby decyzyjne muszą być na pokładzie podczas
+                  ustalania wytycznych oraz celów projektowych.
+                  <br />
+                  <br />
+                  Pierwsza rozmowa odbywa się telefonicznie bądź w ramach
+                  konferencji (Jak Państwu wygodniej).
+                  <br />
+                  <br />
+                  Efekty prac i ich iteracje możemy prowadzić mailowo.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item" data-v-7b10b9fb="" data-v-14d6d6bc="">
+              <div
+                className="faq-item__header"
+                data-v-7b10b9fb=""
+                style={{ backgroundColor: "transparent" }}
+              >
+                <p className="h6" data-v-7b10b9fb="">
+                  Jak wygląda proces? Rozumiem, że działacie samodzielnie.
+                </p>
+                <div className="faq-item__handle" data-v-7b10b9fb=""></div>
+              </div>
+              <div
+                className="faq-item__content"
+                data-v-7b10b9fb=""
+                style={{
+                  height: "0px",
+                  visibility: "hidden",
+                  overflow: "hidden",
+                  transition: "height 0.1s ease-in-out 0s",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <p data-v-7b10b9fb="">
+                  Proces w pierwszej części polega na zdefiniowaniu konkretnych
+                  wytycznych I dających się zmierzyć celów, która będziemy
+                  realizować za pomocą strony. W kolejnych krokach ustalana jest
+                  najlepsza droga do realizacji tych celów. <br />
+                  <br />
+                  Jeśli po Państwa stronie model biznesowy jest znany to całość
+                  nie powinna zająć dłużej niż tydzień. <br />
+                  <br />
+                  Po zdefiniowaniu wytycznych w większości przypadków możemy
+                  działać samodzielnie. Kontaktując się tylko w celach
+                  akceptacji.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item" data-v-7b10b9fb="" data-v-14d6d6bc="">
+              <div
+                className="faq-item__header"
+                data-v-7b10b9fb=""
+                style={{ backgroundColor: "transparent" }}
+              >
+                <p className="h6" data-v-7b10b9fb="">
+                  Ile to trwa? Czy można przeprowadzić proces szybko?
+                </p>
+                <div className="faq-item__handle" data-v-7b10b9fb=""></div>
+              </div>
+              <div
+                className="faq-item__content"
+                data-v-7b10b9fb=""
+                style={{
+                  height: "0px",
+                  visibility: "hidden",
+                  overflow: "hidden",
+                  transition: "height 0.1s ease-in-out 0s",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <p data-v-7b10b9fb="">
+                  Jeśli po Państwa stronie model biznesowy jest znany to całość
+                  prac związana z opracowaniem makiety nie powinna zająć dłużej
+                  niż 7 - 14 dni. <br />
+                  <br />
+                  Następnie opracowanie treści i grafik to ok. 14-20 dni
+                  roboczych.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item" data-v-7b10b9fb="" data-v-14d6d6bc="">
+              <div
+                className="faq-item__header"
+                data-v-7b10b9fb=""
+                style={{ backgroundColor: "transparent" }}
+              >
+                <p className="h6" data-v-7b10b9fb="">
+                  Czy bierzecie pod uwagę wszystkie źródła ruchu?
+                </p>
+                <div className="faq-item__handle" data-v-7b10b9fb=""></div>
+              </div>
+              <div
+                className="faq-item__content"
+                data-v-7b10b9fb=""
+                style={{
+                  height: "0px",
+                  visibility: "hidden",
+                  overflow: "hidden",
+                  transition: "height 0.1s ease-in-out 0s",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <p data-v-7b10b9fb="">
+                  Oczywiście. Źródło ruchu to najważniejszy parametr podczas
+                  budowania wysokiego współczynnika konwersji. Skuteczna strona
+                  musi być dopasowana do prawdziwego świata.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item" data-v-7b10b9fb="" data-v-14d6d6bc="">
+              <div
+                className="faq-item__header"
+                data-v-7b10b9fb=""
+                style={{ backgroundColor: "transparent" }}
+              >
+                <p className="h6" data-v-7b10b9fb="">
+                  Czy mogę zobaczyć przykładowy prototyp UX?
+                </p>
+                <div className="faq-item__handle" data-v-7b10b9fb=""></div>
+              </div>
+              <div
+                className="faq-item__content"
+                data-v-7b10b9fb=""
+                style={{
+                  height: "0px",
+                  visibility: "hidden",
+                  overflow: "hidden",
+                  transition: "height 0.1s ease-in-out 0s",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <p data-v-7b10b9fb="">
+                  Oczywiście. Napisz na adres studio małpa owocni.pl lub użyj
+                  formularza na samym dole tej strony. Napisz kilka słów o swoim
+                  projekcie. Postaramy się wysłać Ci najbardziej zbliżony jaki
+                  mamy.
+                </p>
+              </div>
+            </div>
+            <div className="faq-item" data-v-7b10b9fb="" data-v-14d6d6bc="">
+              <div
+                className="faq-item__header"
+                data-v-7b10b9fb=""
+                style={{ backgroundColor: "transparent" }}
+              >
+                <p className="h6" data-v-7b10b9fb="">
+                  Czy dajecie na to 100% gwarancji satysfakcji?
+                </p>
+                <div className="faq-item__handle" data-v-7b10b9fb=""></div>
+              </div>
+              <div
+                className="faq-item__content"
+                data-v-7b10b9fb=""
+                style={{
+                  height: "0px",
+                  visibility: "hidden",
+                  overflow: "hidden",
+                  transition: "height 0.1s ease-in-out 0s",
+                  backgroundColor: "transparent",
+                }}
+              >
+                <p data-v-7b10b9fb="">
+                  Oczywiście. Pracujemy do skutku. Musisz być zadowolony. Masz
+                  czas na namysł. <br />
+                  <br />
+                  Natomiast 100% zwrot przysługuje nawet do 14 dni od otrzymania
+                  makiety. <br />
+                  <br />
+                  Natomiast jeśli chcesz przebić wyniki swojej obecnej strony
+                  koniecznie powiedz nam o tym przed realizacją. Dane z obecnej
+                  witryny są niezbędną częścią tworzenia lepszego modelu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a className="send-offer-button js--triggerAnimation">
+          <span>
+            <span>OK Wyślijcie mi niezobowiązującą ofertę </span>
+          </span>
+        </a>
+      </section>
     </>
   );
 };
