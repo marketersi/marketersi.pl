@@ -21,7 +21,7 @@ const HeaderDropDown1 = () => {
               <div className={style.headerMenu}>
                 <h3>Sprawne strony</h3>
                 <a href="/">Tworzenie stron</a>
-                <a href="/">Projektowanie UX</a>
+                <Link href="/projektowanie-ux">Projektowanie UX</Link>
               </div>
             </Col>
             <Col sm={4}>
