@@ -26,6 +26,16 @@
   font-weight: 500;
   font-size: 18px;
 }
+
+.headerLeftBtn a {
+  text-decoration: none;
+  color: white;
+}
+.headerLeftBtn:hover a,
+.navbar:hover a {
+  color: rgb(0, 0, 0);
+}
+
 .headerLeftBtn:hover {
   box-shadow: none;
   background: transparent;
@@ -57,6 +67,16 @@
     box-shadow 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s,
     border 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s;
 }
+
+.headerRightBtn a {
+  text-decoration: none;
+  color: white;
+}
+.headerRightBtn:hover a,
+.navbar:hover a {
+  color: rgb(0, 0, 0);
+}
+
 .headerRightBtn:hover {
   box-shadow: none;
 }
@@ -86,7 +106,7 @@
   color: rgb(9, 9, 9);
   font-size: 18px;
 }
-.navbar:hover .navRightMenu a{
+.navbar:hover .navRightMenu a {
   color: rgb(9, 9, 9);
   font-size: 18px;
 }
