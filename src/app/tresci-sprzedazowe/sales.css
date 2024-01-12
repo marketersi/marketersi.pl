@@ -1,0 +1,655 @@
+/* ==============================sales banner========================== */
+section.sales_banner {
+    padding: 50px 0;
+}
+.top-section.desktop > .container{
+    position: relative;
+}
+.copywriter-top-section-banner {
+    width: 910px;
+    height: 578px;
+    top: 160px;
+    right: 0px;
+    position: absolute;
+    background: none !important;
+    background-position: -1px 0px;
+    z-index: -1;
+}
+.copywriter-page .page-top .top-section-banner-text {
+    margin-left: -75px;
+}
+.names-top-banner-container {
+    width: 815px;
+}
+.copywriter-page section.page-top .projects-top-banner-text {
+    margin-top: 86px;
+}
+.projects-top-banner-text {
+    padding: 0px 0;
+}
+.top-banner-title {
+    display: block;
+    font-weight: 900;
+    margin: 20px 0px;
+    line-height: 67px;
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    color: #373737;
+    letter-spacing: -0.025em;
+}
+.copywriter-big {
+    font-size: 110px;
+}
+.copywriter-page br.dont-delete {
+    display: block !important;
+}
+.copywriter-green-number {
+    color: #438d07;
+    font-size: 100px;
+}
+.copywriter-page .copywriter-top-banner-long-text {
+    font-family: 'Georgia', serif;
+}
+.top-banner-long-text {
+    display: block;
+    color: #818181;
+    font-family: 'Georgia', serif;
+    line-height: 45px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #373737;
+}
+.top-banner-long-text {
+    display: block;
+    color: #818181;
+    font-family: 'Georgia', serif;
+    line-height: 45px;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: #373737;
+}
+.copywriter-page .part-sec {
+    margin-top: 20px;
+    margin-bottom: 29px;
+}
+.copywriter-page .old-btn .btn.btn-green {
+    background-color: #438d07;
+    border-color: #438d07;
+    box-shadow: 0 4px 0 0 #31600b;
+    color: #fff;
+}
+
+.copywriter-page .old-btn a.btn {
+    padding: 18px;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: inline-block;
+    width: 500px;
+    white-space: normal;
+    color: #fff;
+    border: 3px solid #fff;
+}
+.copywriter-page .old-btn .btn:hover, .copywriter-page .old-btn .btn:focus, .copywriter-page .old-btn .btn:focus:active {
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    top: 4px;
+}
+
+/* ==============================sales banner-bottom-text========================== */
+.copywriter-page .copyuwriter-custom-push-1 {
+    margin-top: 24px;
+}
+.copywriter-custom-margin-1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.copywriter-big-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 77px;
+    font-weight: 900;
+    line-height: 77px;
+    letter-spacing: -0.01em;
+    margin-bottom: 25px;
+}
+.copywriter-page .copywriter-big-subheader {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 33px;
+    margin-top: 25px;
+    letter-spacing: -0.01em;
+    color: #3e3e3e;
+}
+
+/* ==============================sales option box========================== */
+section.sales_option_box {
+    padding: 100px 0;
+}
+.opinion-box {
+    font-family: "Open Sans";
+    padding: 15px 0px;
+    position: relative;
+}
+.opinion-box:nth-child(odd) .opinion-box-image {
+    left: 0px;
+    right: auto;
+}
+.opinion-box-image {
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    /* width: 52%; */
+    width: 57%;
+}
+.opinion-box-inside-image {
+    height: auto;
+}
+.opinion-box:nth-child(odd) .opinion-box-content {
+    float: right;
+}
+.projects-opinion-2 {
+    margin: 55px 0px 50px 0px;
+}
+.opinion-box-content {
+    padding: 50px 25px;
+    /* width: 64%; */
+    width: 66%;
+    background-color: white;
+    float: right;
+    margin: 50px 0px 50px 0px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.38);
+    z-index: 2;
+    min-height: 440px;
+    text-align: center;
+    position: relative;
+}
+.opinion-box-text {
+    font-size: 40px;
+    font-family: "Georgia";
+    color: rgb(81, 81, 81);
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.025em;
+}
+.opinion-box-text {
+    font-size: 40px;
+    font-family: "Georgia";
+    color: rgb(81, 81, 81);
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.025em;
+}
+
+/* ==============================sales business tools========================== */
+
+.copywriter-cmargin-2 {
+    margin-top: 30px;
+}
+.copywriter-big-header-2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+    margin-bottom: 30px;
+}
+.copywriter-custom-container-1 {
+    margin-bottom: 40px;
+}
+.copywriter-image-box {
+    display: inline-block;
+    vertical-align: top;
+}
+.copywriter-image-label {
+    font-size: 22px;
+    line-height: 20px;
+    font-family: "Arial";
+}
+.copywriter-image-box-2, .copywriter-image-box-4 {
+    margin-top: 50px;
+}
+.copywriter-image-box-3 {
+    margin-top: 100px;
+}
+.copywriter-cmargin-3 {
+    margin: 35px 0px;
+}
+.copywriter-custom-text-1 {
+    font-size: 44px;
+    font-family: 'Playfair Display';
+    margin-bottom: 30px;
+}
+.copywriter-custom-text-2 {
+    font-size: 37px;
+    font-family: 'Playfair Display';
+}
+
+/* ==============================sales section5========================== */
+.copywriter-standard-mtb-40 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.copywriter-custom-gray-header-1 {
+    color: #cacaca;
+    font-size: 122px;
+    font-family: 'Playfair Display', Serif;
+    font-weight: 900;
+    margin: 60px 0;
+}
+.copywriter-standard-mb-40 {
+    margin-bottom: 60px;
+}
+
+.copywriter-text-center img, .copywriter-text-left, .copywriter-text-right {
+    max-width: 100%;
+}
+.copywriter-custom-text-2 {
+    font-size: 37px;
+    font-family: 'Playfair Display';
+}
+.copywriter-intro-whatwedo-container {
+    margin-top: 30px;
+}
+.copywriter-text-right {
+    max-width: 100%;
+}
+.copywriter-text-right {
+    text-align: right;
+}
+.copywriter-intro-box {
+    min-height: 269px;
+}
+.copywriter-intro-header-right {
+    font-size: 25px;
+    font-family: Arial;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.copywriter-intro-description-right {
+    font-size: 18px;
+    font-family: Arial;
+}
+.copywriter-intro-header-left {
+    font-size: 25px;
+    font-family: Arial;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-top: 50px;
+}
+strong {
+    font-weight: 700;
+}
+.copywriter-intro-description-left {
+    font-size: 18px;
+    font-family: Arial;
+    text-align: right;
+}
+.copywriter-container-custom {
+    margin-top: 235px;
+    margin-bottom: 70px;
+    max-width: 900px;
+}
+.copywriting-white-text-cont {
+    max-width: 404px;
+    text-align: center;
+    display: inline-block;
+}
+.copywriting-bg-white-header {
+    font-size: 37px;
+    letter-spacing: -0.01em;
+    line-height: 37px;
+    font-family: 'Playfair Display';
+    margin-bottom: 30px;
+}
+.copywriting-bg-white-subheader {
+    font-family: 'Georgia';
+    font-size: 26px;
+    letter-spacing: -0.0em;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.copywriting-bg-white-subheader-link {
+    color: #438d07;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.025em;
+}
+.copywriter-ksiazka-img {
+    margin-top: -200px;
+    max-width: 100%;
+}
+.copywriter-intro-bg-5-label {
+    font-family: 'Playfair Display';
+    font-size: 72px;
+    line-height: 70px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.copywriter-custom-container-2 {
+    max-width: 900px;
+    background-color: white;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.copywriter-custom-header {
+    font-family: 'Playfair Display';
+    font-size: 72px;
+    letter-spacing: -0.01em;
+    font-weight: 900;
+}
+.copywriter-custom-push-2 {
+    margin: 30px 0px;
+}
+.theme-desc {
+    margin-bottom: 40px;
+    color: #515151;
+    font-family: "Georgia";
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: -0.025em;
+}
+.copywriter-small-text {
+    font-family: "Arial";
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.theme-desc {
+    margin-bottom: 40px;
+    color: #515151;
+    font-family: "Georgia";
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: -0.025em;
+}
+.copywriter-custom-header {
+    font-family: 'Playfair Display';
+    font-size: 72px;
+    letter-spacing: -0.01em;
+    font-weight: 900;
+}
+.copywriter-custom-subheader {
+    font-family: 'Playfair Display';
+    font-size: 41px;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+}
+.copywriter-whatwedo-container {
+    max-width: 800px;
+    margin-bottom: 80px;
+}
+.copywriter-what-we-do {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.copywriter-intro-sm-text {
+    font-family: Arial;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    line-height: 29px;
+}
+.copywriter-intro-sm-mright {
+    margin-right: -50px;
+    margin-left: -50px;
+}
+.custom-container1 {
+    max-width: 810px;
+    margin: auto;
+}
+.theme-desc {
+    margin-bottom: 40px;
+    color: #515151;
+    font-family: "Georgia";
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: -0.025em;
+}
+img.copywriter-owocni {
+    position: relative;
+    z-index: 2;
+}
+
+.copywriter-wierzymy-container {
+    max-width: 1397px;
+    margin: 0 auto;
+    height: 432px;
+    position: relative;
+}
+.copywriter-wierzymy-container img {
+    position: absolute;
+    right: 147px;
+    top: -130px;
+}
+.copywriter-cmargin-4 {
+    margin-top: 150px;
+}
+.copywriter-custom-header-2 {
+    font-family: 'Playfair Display';
+    font-size: 91px;
+    letter-spacing: -0.01em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 89px;
+}
+.copywriter-custom-subheader-2 {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    letter-spacing: -0.01em;
+}
+
+/* ==============================sales Orange========================== */
+.thematic-section-orange {
+    background-color: #f4be04;
+}
+.copywriter-orange-bg {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Reklama-hurum-tlo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 812px;
+    margin-top: -215px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriter-text-center {
+    text-align: center;
+}
+.custom-container2 {
+    max-width: 810px;
+    margin: auto;
+}
+.copywriter-cname {
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+.copywriter-white-text {
+    color: white;
+}
+.copywriter-black {
+    color: black;
+}
+.names-client-name {
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 100px;
+    margin-top: 50px;
+    letter-spacing: -0.025em;
+    color: #fff;
+    position: relative;
+}
+.copywriter-white-text {
+    color: white;
+}
+
+.copywriter-custom-mright-3 {
+    margin-right: -123px;
+    margin-left: -123px;
+}
+.copywriter-client-desc-margin {
+    margin-bottom: 60px;
+}
+.names-client-desc {
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    font-weight: 900 !important;
+    letter-spacing: -0.025em;
+    margin-bottom: 50px;
+    line-height: 60px;
+}
+.copywriter-orange-black-text {
+    color: #4e3c01;
+}
+
+.copywriter-custom-mright {
+    margin-right: -15px;
+}
+.copywriter-cname:after {
+    top: 91px;
+}
+.names-client-name:after {
+    background: linear-gradient(to right, #aa2e2d 0%, #aa2e2d 100%);
+    width: 168px;
+    height: 10px;
+    content: "";
+    position: absolute;
+    left: calc(50% - 84px);
+    bottom: 15px;
+    top: 50px;
+}
+
+.copywriter-green-underline:after {
+    background: linear-gradient(to right, #438d07 0%, #438d07 100%);
+}
+/* ==============================sales motus-section========================== */
+.copywriter-standard-pt-140 {
+    padding-top: 160px;
+}
+
+.motus-section {
+    padding-top: 100px;
+}
+.thematic-section {
+    background: #fff;
+}
+.copywriter-cname {
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+.copywriter-black {
+    color: black;
+}
+.copywriter-client-desc-margin {
+    margin-bottom: 60px;
+}
+
+.copywriter-bg-2 {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Motus-fotografia-reklamowa1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 933px;
+    margin-bottom: 50px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriting-text-right {
+    text-align: right;
+}
+.copywriting-custom-subcont {
+    display: inline-block;
+    text-align: left !important;
+    padding-left: 20px;
+}
+.copywriting-img-desc {
+    font-family: "Georgia";
+    font-size: 44px;
+    color: #353434;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    margin-bottom: 30px;
+}
+.copywriter-custom-red {
+    color: #b8412c;
+    font-weight: 600;
+}
+
+.copywriter-img-big-desc {
+    font-family: "Arial";
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 91px;
+    color: #0c0c0c;
+    margin-bottom: 40px;
+}
+.copywriter-custom-color {
+    color: #910d08;
+}
+.copywriter-cmargin-6 {
+    margin-bottom: 70px;
+}
+.copywriter-bg-3 {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Motus-fotografia-reklamowa2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1392px;
+    margin-top: -180px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriter-cname {
+    margin-top: 40px;
+    padding-bottom: 55px;
+}
+
+.copywriter-black {
+    color: black;
+}
+.projects-bow-1 {
+    width: 100%;
+    margin-bottom: -1px;
+}
+.projects-rotate-bow {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.copywriter-prawo-tekst-1 {
+    font-size: 39px;
+    font-family: "Georgia";
+    line-height: 38px;
+    margin-top: -90px;
+}
+.copywriter-prawo-tekst-2 {
+    margin-top: 40px;
+    font-size: 81px;
+    font-family: "Georgia";
+    line-height: 73px;
+    margin-bottom: 250px;
+}
+.download-catalog-button {
+    width: 415px;
+    background: #f2c22f;
+    border: transparent;
+    padding: 16px 3px;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    bottom: 4px;
+    left: 0;
+    z-index: 10;
+    display: inline;
+    letter-spacing: -0.025em;
+}

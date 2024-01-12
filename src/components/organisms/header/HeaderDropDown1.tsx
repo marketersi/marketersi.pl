@@ -44,7 +44,7 @@ const HeaderDropDown1 = () => {
             <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Przekonujące treści</h3>
-                <a href="#">Treści sprzedażowe</a>
+                <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
                 {/* <a href="/">Jakościowe</a>
                 <a href="/">artykuły</a> */}
               </div>
