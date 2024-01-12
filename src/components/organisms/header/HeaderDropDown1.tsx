@@ -12,7 +12,7 @@ const HeaderDropDown1 = () => {
             <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Fajne marki</h3>
-                <a href="/">Nazwa dla firmy</a>
+                <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
                 <Link href="/projektowanie-logo">Projektowanie logo</Link>
                 <a href="/">Identyfikacja spółki</a>
               </div>
