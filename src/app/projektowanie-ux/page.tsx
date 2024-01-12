@@ -3255,7 +3255,7 @@ const UXDesignScreen = () => {
             </picture>
             <div
               className="shadow"
-              style={{ transform: "perspective(1298.7px) rotateX(70deg)" }}
+              // style={{ transform: "perspective(1298.7px) rotateX(70deg)" }}
             ></div>
           </div>
         </div>
