@@ -1,264 +1,95 @@
 "use client";
 import "./strategiamarketingowa.css";
-import Image from "next/image";
+import MainHeading from "../strategia-marketingowa/MainHeading";
+import MainContentOne from "../strategia-marketingowa/MainContentOne";
+import MainNumber from "../strategia-marketingowa/MainNumber";
+import MainContentTwo from "../strategia-marketingowa/MainContentTwo";
+import ResultTable from "../strategia-marketingowa/ResultTable";
+import Strategy from "../strategia-marketingowa/Strategy";
+import ResultMax from "../strategia-marketingowa/ResultMax";
+import Testimonial from "../strategia-marketingowa/Testimonial";
+import Analysis from "../strategia-marketingowa/Analysis";
+import WhatRecieve from "../strategia-marketingowa/WhatRecieve";
+import ImageAdvantage from "../strategia-marketingowa/ImageAdvantage";
+import InviteCustomer from "../strategia-marketingowa/InviteCustomer";
+import QuoteOne from "../strategia-marketingowa/QuoteOne";
+import Branding from "../strategia-marketingowa/Branding";
 
 const StrategiaMarketingowa = () => {
   return (
     <>
       <div>
-        {/* 👇****************************👇 */}
         {/* 1. MainHeading */}
-        <div className="MainHeading content">
-          <div className="MainHeading_container full">
-            <div>
-              <div className="MainHeading_Title">Strategia.</div>
-              <div className="MainHeading_SecondTitle">
-                Tak się tworzy,
-                <br /> prężną firmę.
-              </div>
-              <div className="MainHeading_Content">
-                Od rozpoznania okazji do szybkiego rozwoju firmy, po efektywny
-                plan realizacji - Strategia to paliwo rakietowe startującej
-                marki.
-              </div>
-            </div>
-            <div>
-              <Image
-                src={
-                  "/assets/images/strategiamarketingowa/MainHeadingImage.avif"
-                }
-                alt="MainHeadingImage"
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </div>
-          </div>
-        </div>
-        {/* 👆============================☝️ */}
+        <MainHeading />
 
-        {/* 👇****************************👇 */}
         {/* 2. MainContentOne */}
-        <div className="MainContentOne content">
-          <div className="MainContentOne_container">
-            Skuteczna strategia marketingowa to plan zorientowany na maksymalne
-            zyski. Jest to narzędzie, które pomaga przedsiębiorcom w wyborze,
-            ustaleniu priorytetów i planowaniu efektywnych działań
-            marketingowych.
-          </div>
-        </div>
-        {/* 👆============================☝️ */}
+        <MainContentOne />
 
-        {/* 👇****************************👇 */}
         {/* 3. MainNumber */}
-        <div className="MainNumber content">
-          <div className="MainNumber_container">
-            <div className="MainNumber_one">
-              <div className="MainNumber_one_content">
-                Szansa sukcesu marketera z udokumentowaną strategią zwiększa się
-                aż pięciokrotnie.
-              </div>
-              <div>
-                <Image
-                  src={
-                    "/assets/images/strategiamarketingowa/MainNumberImage1.avif"
-                  }
-                  alt="MainNumberOne"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </div>
-            </div>
-            <div className="MainNumber_two">
-              <div className="MainNumber_two_content">
-                Szansa sukcesu marketera z udokumentowaną strategią zwiększa się
-                aż pięciokrotnie.
-              </div>
-              <div>
-                <Image
-                  src={
-                    "/assets/images/strategiamarketingowa/MainNumberImage2.avif"
-                  }
-                  alt="MainNumberOne"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* 👆============================☝️ */}
+        <MainNumber />
 
-        {/* 👇****************************👇 */}
         {/* 4. MainContentTwo */}
-        <div className="MainContentTwo content">
-          <div className="MainContentTwo_container">
-            <p>
-              Tak jak dobrze napisany biznesplan, strategia staje się
-              drogowskazem. Mapą, będącą podstawowym narzędziem pracy
-              marketingu.
-            </p>
-            <p>
-              Strategia pozwala komunikować się spójnym głosem. Prostym,
-              zrozumiałym i przekonującym klienta.
-            </p>
-            <p>
-              To zbiór bardzo konkretnych wzorców i reguł tworzonych do
-              osiągania dużej efektywności.
-            </p>
-            <p>
-              Tonu głosu, sposób komunikacji marki. Styl prezentacji graficznej.
-            </p>
-            <p>Rodzaj i miejsce reklam. Do celu. Krok po kroku.</p>
-          </div>
-        </div>
-        {/* 👆============================☝️ */}
+        <MainContentTwo />
 
-        {/* 👇****************************👇 */}
         {/* 5. ResultTable */}
-        <div className="ResultTable">
-          <div className="ResultTable_container content">
-            <div className="ResultTable_title">
-              Rezultaty, które mówią same za siebie
-            </div>
-            <div className="ResultTable_table full">
-              <div className="ResultTable_table_row">
-                <div>Od 0 do 40zł milionów rocznego obrotu w 5 lat</div>
-                <div><Image
-                src={}
-                /></div>
-                <div>
-                  <button className="ResultTable_table_button">
-                    Zapytaj o szczegóły (Case study)
-                  </button>
-                </div>
-              </div>
-              <hr />
-              <div className="ResultTable_table_row">
-                <div>Od 10 do 26 milionów złotych rocznego obrotu</div>
-                <div>2</div>
-                <div>3</div>
-              </div>
-              <hr />
-              <div className="ResultTable_table_row">
-                <div>153 nowe spotkania biznesowe w 8 miesięcy</div>
-                <div>2</div>
-                <div>3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* 👆============================☝️ */}
+        <ResultTable />
 
-        {/* 👇****************************👇 */}
         {/* 6. Strategy */}
-        <div className="Strategy">
-          <div>Strategy</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <Strategy />
 
-        {/* 👇****************************👇 */}
         {/* 7. Testimonial */}
-        <div className="Testimonial">
-          <div>Testimonial</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <Testimonial />
 
-        {/* 👇****************************👇 */}
         {/* 8. ResultMax */}
-        <div className="ResultMax">
-          <div>ResultMax</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <ResultMax />
 
-        {/* 👇****************************👇 */}
         {/* 9. Analysis */}
-        <div className="Analysis">
-          <div>Analysis</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <Analysis />
 
-        {/* 👇****************************👇 */}
         {/* 10. WhatRecieve */}
-        <div className="WhatRecieve">
-          <div>WhatRecieve</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <WhatRecieve />
 
-        {/* 👇****************************👇 */}
         {/* 11. ImageAdvantage */}
-        <div className="ImageAdvantage">
-          <div>ImageAdvantage</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <ImageAdvantage />
 
-        {/* 👇****************************👇 */}
         {/* 12. InviteCustomer */}
-        <div className="ImageAdvantage">
-          <div>InviteCustomer</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <InviteCustomer />
 
-        {/* 👇****************************👇 */}
         {/* 13. QuoteOne */}
-        <div className="QuoteOne">
-          <div>QuoteOne</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <QuoteOne />
 
-        {/* 👇****************************👇 */}
         {/* 14. Branding */}
-        <div className="Branding">
-          <div>Branding</div>
-        </div>
-        {/* 👆============================☝️ */}
+        <Branding />
 
-        {/* 👇****************************👇 */}
         {/* 15. QuoteTwo */}
         <div className="QuoteTwo">
           <div>QuoteTwo</div>
         </div>
-        {/* 👆============================☝️ */}
 
-        {/* 👇****************************👇 */}
         {/* 16. OurClients */}
         <div className="OurClients">
           <div>OurClients</div>
         </div>
-        {/* 👆============================☝️ */}
 
-        {/* 👇****************************👇 */}
         {/* 17. Price */}
         <div className="Price">
           <div>Price</div>
         </div>
-        {/* 👆============================☝️ */}
 
-        {/* 👇****************************👇 */}
         {/* 18. StrategyAction */}
         <div className="StrategyAction">
           <div>StrategyAction</div>
         </div>
-        {/* 👆============================☝️ */}
 
-        {/* 👇****************************👇 */}
         {/* 19. AnswerAll */}
         <div className="AnswerAll">
           <div>AnswerAll</div>
         </div>
-        {/* 👆============================☝️ */}
 
-        {/* 👇****************************👇 */}
         {/* 20. Accordion */}
         <div className="Accordion">
           <div>Accordion</div>
         </div>
-        {/* 👆============================☝️ */}
       </div>
     </>
   );

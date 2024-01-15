@@ -1,20 +1,22 @@
 /* 1. MainHeading */
-.MainHeading_container {
-  display: flex;
-  padding: 30px;
+.MainHeading {
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 799px) {
-  .MainHeading_container {
-    flex-direction: column-reverse;
-  }
+.MainHeading_Container {
+  display: flex;
+  padding: 40px;
 }
 .MainHeading_Title {
   font-size: 120px;
   font-weight: 700;
   line-height: 76.5px;
+  background-image: linear-gradient(90deg, #b13a34, #e9a16d);
+  background-repeat: no-repeat;
+  background-size: 100% 28px;
+  background-position: 0px 60px;
 }
 .MainHeading_SecondTitle {
-  font-size: 85px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 76.5px;
   margin-bottom: 30px;
@@ -24,12 +26,21 @@
   font-weight: 300;
   line-height: 60.8px;
 }
+.MainHeading_Image {
+  margin-left: -100px;
+  z-index: -2;
+}
+@media screen and (max-width: 799px) {
+  .MainHeading_Container {
+    flex-direction: column-reverse;
+  }
+}
 
 /* 2. MainContentOne */
 .MainContentOne {
   margin-bottom: 60px;
 }
-.MainContentOne_container {
+.MainContentOne_Container {
   font-size: 28px;
   font-weight: 300;
   line-height: 53.2px;
@@ -39,27 +50,27 @@
 .MainNumber {
   margin-bottom: 60px;
 }
-.MainNumber_container {
+.MainNumber_Container {
   display: flex;
   gap: 40px;
 }
-.MainNumber_one {
+.MainNumber_One {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.MainNumber_one_content {
+.MainNumber_One_Content {
   font-size: 18px;
   line-height: 24.75px;
   text-align: center;
   color: #515151;
 }
-.MainNumber_two {
+.MainNumber_Two {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.MainNumber_two_content {
+.MainNumber_Two_Content {
   font-size: 18px;
   line-height: 24.75px;
   text-align: center;
@@ -70,7 +81,7 @@
 .MainContentTwo {
   margin-bottom: 60px;
 }
-.MainContentTwo_container p {
+.MainContentTwo_Container p {
   font-size: 28px;
   font-weight: 300;
   line-height: 53.2px;
@@ -80,88 +91,389 @@
 .ResultTable {
   margin-bottom: 60px;
 }
-.ResultTable_title {
+.ResultTable_Title {
   font-size: 62px;
   font-weight: 700;
   line-height: 55.8px;
-}
-.ResultTable_title {
   margin-bottom: 90px;
 }
-.ResultTable_table {
+.ResultTable_Table {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.52) 0px 0px 28px 0px;
-  box-sizing: border-box;
-  margin: 0px 106.667px;
   max-width: 1152px;
-  padding: 15px 65px;
+  padding: 40px 65px;
 }
-.ResultTable_table_row {
-  display: flex;
+.ResultTable_Table_Row {
+  padding-inline: 20px;
 }
-.ResultTable_table_button {
-  align-items: flex-start;
-  appearance: button;
-  background-color: #282828;
-  border: 2px solid #282828;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-  box-sizing: border-box;
-  color: #e3e3e3;
+.ResultTable_Table_Row_Content {
+  font-size: 26px;
+  line-height: 27px;
+  max-width: 17ch;
+  color: #515151;
+}
+.ResultTable_Table_Row_Button {
   cursor: pointer;
   font-weight: 700;
   line-height: 24px;
   padding: 10px 20px;
-  place-items: flex-start normal;
-  text-align: center;
   transition-duration: 0.15s;
   transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  background-color: white;
+}
+.ResultTable_Table_Row_Button:hover {
+  background-color: #282828;
+  color: #e3e3e3;
 }
 
 /* 6. Strategy */
 .Strategy {
-  display: none;
+  margin-bottom: 60px;
+}
+.Strategy_Title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 55.8px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 100px;
+}
+.Strategy_Cards {
+  display: flex;
+  gap: 5em;
+}
+.Strategy_Card {
+  display: flex;
+  flex-direction: column;
+}
+.Strategy_Card_Title {
+  color: #373737;
+  font-size: 33px;
+  line-height: 49.5px;
+  text-align: center;
+}
+.Strategy_Card_Title_Number {
+  font-weight: 900;
+  color: rgb(208 208 208);
+  font-size: 180px;
+}
+.Strategy_Card_Content_One {
+  color: #515151;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.Strategy_Card_Content_Two {
+  color: #515151;
+  line-height: 24px;
 }
 
 /* 7. Testimonial */
 .Testimonial {
-  display: none;
+  margin-bottom: 160px;
+}
+.Testimonial_Card {
+  display: flex;
+}
+.Testimonial_Card_Content {
+  background-color: white;
+  padding: 50px;
+  margin-left: -250px;
+  margin-block: 80px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.38) 0px 0px 50px 0px;
+}
+.Testimonial_Card_Content_Title {
+  color: #010101;
+  font-family: Georgia;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Testimonial_Card_Content_Button {
+  background-color: #ff9600;
+  color: #2b2b2b;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  padding: 25px 20px;
 }
 
 /* 8. ResultMax */
 .ResultMax {
-  display: none;
+}
+.ResultMax_Title {
+  color: #333333;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 55.8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ResultMax_Content_One {
+  color: #333333;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 28.8px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.ResultMax_Content_Two {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
 }
 
 /* 9. Analysis */
 .Analysis {
-  display: none;
+  margin-bottom: 60px;
+}
+.Analysis_Card {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.Analysis_Card_Content_Title {
+  color: #373737;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+.Analysis_Card_Content_Text {
+  color: #515151;
+  font-size: 26px;
+  line-height: 38px;
+  margin-bottom: 25px;
+}
+.Analysis_Card_Content_Table {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+}
+.Analysis_Card_Content_Table_Column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #515151;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.Analysis_Card_Content_Button {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  background-color: transparent;
+}
+.Analysis_Card_Content_Button:hover {
+  background-color: #282828;
+  color: #e3e3e3;
 }
 
 /* 10. WhatRecieve */
 .WhatRecieve {
-  display: none;
+  margin-bottom: 150px;
+}
+.WhatRecieve_Title_One {
+  color: #333333;
+  font-size: 115px;
+  font-weight: 700;
+  line-height: 103.5px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.WhatRecieve_Content_One {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+  margin-bottom: 60px;
+}
+.WhatRecieve_Title_Two {
+  color: #333333;
+  font-size: 32px;
+  line-height: 60.8px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.WhatRecieve_Content_Two {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.WhatRecieve_Title_Three {
+  color: #333333;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.WhatRecieve_Content_Three_One {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+  margin-bottom: 60px;
+}
+.WhatRecieve_Content_Three_Tow {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+  margin-bottom: 60px;
+}
+.Analysis_Card_Content_Button_Container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.WhatRecieve_Table {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.WhatRecieve_Table_Column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #515151;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
 }
 
 /* 11. ImageAdvantage */
 .ImageAdvantage {
-  display: none;
+  margin-bottom: 100px;
+}
+.ImageAdvantage_Title {
+  color: #333333;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 76.5px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.ImageAdvantage_Content {
+  color: #333333;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 60.8px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.ImageAdvantage_Table {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.ImageAdvantage_Table_Column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  color: #515151;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.ImageAdvantage_Button_Container {
+  text-align: center;
+}
+.ImageAdvantage_Button {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  background-color: transparent;
+}
+.ImageAdvantage_Button:hover {
+  background-color: #282828;
+  color: #e3e3e3;
 }
 
 /* 12. InviteCustomer */
 .InviteCustomer {
-  display: none;
+  margin-bottom: 60px;
+}
+.InviteCustomer_Title {
+  color: #333333;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 55.8px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.InviteCustomer_Content {
+  color: #333333;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 53.2px;
+  text-align: center;
 }
 
 /* 13. QuoteOne */
 .QuoteOne {
-  display: none;
+  margin-bottom: 100px;
+}
+.QuoteOne_Image {
+  text-align: center;
+  margin-bottom: 140px;
+}
+.QuoteOne_Text {
+  color: #454545;
+  font-size: 62px;
+  font-style: italic;
+  line-height: 55.8px;
+  text-align: center;
+  font-family: Georgia;
 }
 
 /* 14. Branding */
 .Branding {
-  display: none;
+  display: flex;
+}
+.Branding_Container {
+  display: flex;
+  padding-inline: 100px;
+  justify-content: center;
+}
+.Branding_Content_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Branding_Title {
+  color: #c6c6c6;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 55.8px;
+  margin-bottom: 50px;
+}
+.Branding_Text {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
 }
 
 /* 15. QuoteTwo */
@@ -196,10 +508,10 @@
 
 .content {
   --gap: clamp(1rem, 6vw, 3rem);
-  --full: minmax(var(--gap), 1fr);
-  --content: min(75ch, 100% - var(--gap) * 2);
+  --content: min(77ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
   --feature: minmax(0, 5rem);
+  --full: minmax(var(--gap), 1fr);
 
   display: grid;
   grid-template-columns:
