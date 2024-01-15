@@ -20,10 +20,11 @@
 }
 
 .first-card {
-  padding: 100px 50px;
+  padding: 115px 50px;
   margin-right: -28px;
   border-radius: 20px;
   border: none;
+  background-color: rgb(246, 246, 247);
 }
 
 .first-card p {
@@ -36,9 +37,14 @@
   border-radius: 10px;
 }
 
-.second-card h1 {
+.second-card h2 {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 50px;
+}
+
+.second-card h3 {
+  font-weight: 900;
+  font-size: 30px;
 }
 
 .second-card p {
@@ -50,10 +56,15 @@
 input {
   border: none;
   border-bottom: 1px dotted;
-  text-align: center;
-  font-size: 22px;
+  text-align: right;
+  font-size: 30px;
   font-weight: 700;
-  width: 16rem;
+  width: 11rem;
+  background: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 .custom-range {

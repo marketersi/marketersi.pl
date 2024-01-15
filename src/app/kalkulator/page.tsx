@@ -62,17 +62,17 @@ const CalculatorScreen = () => {
         </Col>
 
         <Col className="card text-center p-5 second-card shadow">
-          <h1>Dodatkowy zysk</h1>
+          <h2>Dodatkowy zysk</h2>
 
           <div className="my-3">
             <p>wzrost konwersji o 1%</p>
             <Row>
               <Col>
-                <h1>1.925zł</h1>
+                <h3>1.925zł</h3>
                 <p>Miesięcznie</p>
               </Col>
               <Col>
-                <h1>23.109zł</h1>
+                <h3>23.109zł</h3>
                 <p>Rocznie</p>
               </Col>
             </Row>
@@ -82,11 +82,11 @@ const CalculatorScreen = () => {
             <p>wzrost konwersji o 5%</p>
             <Row>
               <Col>
-                <h1>9.628zł</h1>
+                <h3>9.628zł</h3>
                 <p>Miesięcznie</p>
               </Col>
               <Col>
-                <h1>115.545zł</h1>
+                <h3>115.545zł</h3>
                 <p>Rocznie</p>
               </Col>
             </Row>
