@@ -1,0 +1,64 @@
+.first-row h1 {
+  font-weight: 900;
+}
+
+.first-row p {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.second-row h1 {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.second-row p {
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 28px;
+  text-align: justify;
+}
+
+.first-card {
+  padding: 100px 50px;
+  margin-right: -28px;
+  border-radius: 20px;
+  border: none;
+}
+
+.first-card p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.second-card {
+  border: none;
+  border-radius: 10px;
+}
+
+.second-card h1 {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.second-card p {
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+}
+
+input {
+  border: none;
+  border-bottom: 1px dotted;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  width: 16rem;
+}
+
+.custom-range {
+  height: 6px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
