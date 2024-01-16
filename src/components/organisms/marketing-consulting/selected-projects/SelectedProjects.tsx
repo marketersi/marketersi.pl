@@ -4,77 +4,25 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const SelectedProjects = () => {
   return (
-    <Container>
-      <div>
+    <Container className="sp_sec">
+      <div className="sp_header">
         <h2>
           Wybrane <br />
           realizacje
         </h2>
         <p>
-          Chcesz wiedzieć jak możemy pomóc? Najlepiej zobacz jak pomogliśmy
-          innym. The Book of Everyone Podwojenie obrotów do 26 000 000 PLN w
-          ciągu roku. eCommerce Wielka BrytaniaAustralia
+          <em>
+            Chcesz wiedzieć jak możemy pomóc? <br /> Najlepiej zobacz jak
+            pomogliśmy innym.
+          </em>
         </p>
       </div>
 
-      {/* 1 */}
-      <div>
-        <Row>
-          <Col>
-            <div>
-              <p>The Book of Everyone</p>
-              <h2>Podwojenie obrotów do 26 000 000 PLN w ciągu roku.</h2>
-              <div>
-                <p>eCommerce</p>
-                <div>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <img
-              src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fthe-book-of-everyone.92e58d1e.jpg&w=750&q=75"
-              alt=""
-            />
-          </Col>
-        </Row>
-      </div>
-
-      {/* 2 */}
-      <div>
-        <Row>
-          <Col>
-            <img
-              src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdlabs.3b6a1f2f.jpg&w=750&q=75"
-              alt=""
-            />
-          </Col>
-          <Col>
-            <div>
-              <p>D-labs</p>
-              <h2>
-                153 nowe spotkania biznesowe w 8 miesięcy? Normalnie było by ich
-                9.
-              </h2>
-              <div>
-                <p>Usługi IT / B2B</p>
-                <div>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </div>
-
       {/* 3 */}
-      <div>
+      <div className="sp_card_container">
         <Row>
-          <Col>
-            <div>
+          <Col className="d-flex justify-content-center align-items-center">
+            <div className="sp_card_left text-center">
               <p>XCEED</p>
               <h2>od zera do 40 000 000 PLN rocznego obrotu w 5 lat.</h2>
               <div>
@@ -96,7 +44,7 @@ const SelectedProjects = () => {
       </div>
 
       {/* 4 */}
-      <div>
+      <div className="my-5">
         <Row>
           <Col>
             <img
@@ -104,8 +52,8 @@ const SelectedProjects = () => {
               alt=""
             />
           </Col>
-          <Col>
-            <div>
+          <Col className="d-flex justify-content-center align-items-center">
+            <div className="sp_card_right text-center">
               <p>ClickSell</p>
               <h2>Sklep dla graczy od zera do 3 000 000 PLN w 2 lata.</h2>
               <div>

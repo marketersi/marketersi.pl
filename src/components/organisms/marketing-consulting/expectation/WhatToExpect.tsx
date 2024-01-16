@@ -1,24 +1,28 @@
 import React from "react";
 import "./expect.css";
 import { Container } from "react-bootstrap";
+import "./expect.css";
 
 const WhatToExpect = () => {
   return (
-    <Container>
-      <div>
-        <h2>Czego dokładnie możesz oczekiwać?</h2>
+    <Container className="text-center wte">
+      <div className="wte_header">
+        <h2>
+          Czego dokładnie <br /> możesz oczekiwać?
+        </h2>
         <p>
-          W Owocnych działamy zupełnie inaczej. Dlaczego? To proste. Nasze
-          wynagrodzenie jest związane z Twoim zyskiem, więc koncentrujemy się na
-          tym co ma prawdziwe znaczenie.
+          <strong>W Owocnych działamy zupełnie inaczej. Dlaczego?</strong>{" "}
+          <br /> To proste. Nasze wynagrodzenie jest związane z Twoim zyskiem,
+          więc koncentrujemy się na tym co ma prawdziwe znaczenie.
         </p>
       </div>
-      <div>
+
+      <div className="d-flex justify-content-center align-items-center">
         <img
           src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flaur-lewy.b7365a35.jpg&w=128&q=75"
           alt=""
         />
-        <div>
+        <div className="w-50 mx-5">
           <p>
             Nie rozliczamy pozycji w Google, czy wejść na stronę, bo ważna jest
             tylko ilość klientów.
@@ -33,7 +37,8 @@ const WhatToExpect = () => {
           alt=""
         />
       </div>
-      <div>
+
+      <div className="wte_end">
         <p>
           Klienci przychodzą do nas najczęściej właśnie dlatego, że zamiast
           zysków marketing przynosi same straty albo ledwie się opłaca.
@@ -43,8 +48,9 @@ const WhatToExpect = () => {
           precyzyjnie. Wyłącznie tam, gdzie ma to finansowy sens.Owocne
           podejście zakłada, że rośniemy razem z naszymi klientami.
         </p>
-        <p>
-          Nasze intencje są jasne i szczere. Szukamy partnerów na całe życie.
+        <p className="my-5">
+          <strong>Nasze intencje są jasne i szczere. </strong>
+          <br /> Szukamy partnerów na całe życie.
         </p>
         <img
           src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fowocni-nazwa-animowana.9707f9df.gif&w=640&q=75"
