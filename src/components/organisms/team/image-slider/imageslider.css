@@ -1,0 +1,27 @@
+.image-slider span.carousel-control-next-icon, .image-slider .carousel-control-prev-icon {
+    background: #ffc600;
+    border-radius: 100%;
+    color: black;
+    padding: 30px;
+    border: 2px solid black;
+    opacity: 1;
+    box-shadow: 0 0 0 0 #ffc600, 0em 0.2em 0 0 #ffc600;
+}
+.image-slider span.carousel-control-next-icon:hover {
+    box-shadow: none;
+}
+.image-slider .carousel-control-next:focus, .image-slider .carousel-control-next:hover, .image-slider .carousel-control-prev:focus, .image-slider .carousel-control-prev:hover{
+    opacity: 1 !important;
+}
+.image-slider .carousel-control-next, .image-slider .carousel-control-next, .image-slider .carousel-control-prev, .image-slider .carousel-control-prev{
+    opacity: 1 !important;
+}
+.image-slider .carousel-control-next {
+    right: 35px;
+}
+.image-slider .carousel-control-prev {
+    left: 35px;
+}
+/* .carousel-control-next-icon{
+    background-image: url('/public/assets/images/arrow.png');
+} */

@@ -1,0 +1,226 @@
+.bannerVideo {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.bannerHeading {
+    padding: 100px 100px 250px;
+}
+
+.bannerHeading h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.592);
+    text-align: center;
+}
+
+.img20 img {
+    /* position: absolute; */
+    bottom: -162px;
+    left: -120px;
+    width: 60%;
+    margin: -408px 0 0 -230px;
+}
+
+.teamContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bannerBottomContent {
+    padding: 0 0 50px;
+}
+
+.bannerBottomContent h4 {
+    font-size: 35px;
+    font-weight: normal;
+    margin: 25px 0;
+    color: #3e3e3e;
+}
+
+.bannerBottomContent img {
+    margin: -280px 0 0;
+
+}
+
+.bannerBottomContent h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #3e3e3e;
+    margin: 0 0 50px;
+
+}
+
+.bannerBottomContent h2 span {
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+    border-radius: 20px;
+    padding: 0 10px 0 0;
+    display: inline-block;
+}
+
+.teamContent p {
+    font-size: 28px;
+    font-weight: 300;
+    color: #3e3e3e;
+    margin: 0 0 30px;
+    line-height: 50px;
+}
+
+.bannerP {
+    background: red;
+}
+
+/* ============personal card============= */
+.personalCard {
+    background: #f6f6f6;
+    padding: 80px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 15px 0px #f6f6f6, 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+    margin: 0 auto 50px;
+    width: 1090px;
+}
+
+.personalCard img {
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.personalCard h4 {
+    color: #989898;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 0px;
+    text-align: center;
+}
+
+.personalCard p {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.personalCard h6 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #0a0a0a;
+    line-height: 55px;
+}
+
+.personalCard h6 span {
+    font-weight: 800;
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+    padding: 0 10px 0 0;
+    border-radius: 20px;
+}
+
+/* ====================free space============ */
+.free {
+    padding: 100px 0;
+    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFOTEL.1fb434f6.jpg&w=1080&q=75);
+    background-repeat: no-repeat;
+    background-position: -600px 0px;
+}
+
+.teamContent p span {
+    font-weight: 500;
+    display: block;
+}
+
+.mainHeading {
+    margin: 100px 0 0;
+}
+
+.mainHeading h2, .teamContent h2 {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.mainHeading h2 span, .teamContent h2 span {
+    font-weight: 800;
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+    padding: 0 10px 0 0;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.mainHeading button {
+    border: 3px solid #ffc600;
+    padding: 10px 50px;
+    border-radius: 100px;
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+    background: #ffc600;
+    margin: 50px auto 0;
+    display: block;
+    box-shadow: 0 0 0 0 black, 0em 0.2em 0 0 black;
+    border: 2px solid black;
+}
+
+.mainHeading button:hover {
+    box-shadow: none;
+}
+
+/* ==================support===================== */
+.Support {
+    padding: 0 0 100px;
+    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwierzymy.06ee3ca4.jpg&w=1080&q=75);
+    background-repeat: no-repeat;
+    background-position: 670px 0;
+}
+
+
+.Support h4 {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: normal;
+    margin: 0 0 0 -50px;
+}
+
+/* =========================Image slider ============================================= */
+.imageSlider{
+    padding: 50px 0 100px;
+}
+.imageSlider{
+    position: relative;
+}
+.slideAnimateImg{
+   margin: -100px 0 0 ;
+}
+ .teamContent h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 800;
+}
+
+ .teamContent h2 span {
+    font-weight: 800;
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+    padding: 0 10px 0 0;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* ==========================creative===================== */
+.creative h2{
+    font-size: 80px;
+}
+.CreativeOnar{
+    margin: -560px 0 0 270px;
+    width: 85%;
+}
+.CreativeHeart{
+    margin: -1200px 0 0 -260px;
+    width: 400px;
+}
+
+/* ========== */
+.caring img{
+width: 100%;
+}
