@@ -65,7 +65,7 @@ const Header = () => {
                 </Nav.Link>
               </Nav>
               <Button className={style.headerRightBtn}>
-                <Link href="#">Zamów bezpłatne badanie</Link>
+                <Link href="/zamow">Zamów bezpłatne badanie</Link>
               </Button>
             </div>
           </Col>

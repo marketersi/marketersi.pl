@@ -1,0 +1,53 @@
+.so_sec {
+  background-color: white;
+  padding: 100px 0;
+}
+
+.so_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  text-align: left;
+  gap: 60px;
+}
+
+.so_flex h2 {
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.so_flex p {
+  font-weight: 300;
+  font-size: 27px;
+  margin-top: 12px;
+}
+
+.so_header {
+  margin: 36px auto;
+}
+
+.so_header h1 {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.so_header p {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.so_paras {
+  width: 60%;
+  margin: 22px auto;
+}
+
+.so_paras p {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 28px auto;
+}
+
+.so_img {
+  margin: 50px auto;
+}

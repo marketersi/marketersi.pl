@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Col, Row, Image, Nav } from "react-bootstrap";
 import style from "./header.module.css";
+import Link from "next/link";
 
 const HeaderDropDown2 = () => {
   return (
@@ -19,9 +20,11 @@ const HeaderDropDown2 = () => {
             <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Narzędzia</h3>
-                <a href="#">Kalkulator zysku z nowej strony (ROI)</a>
+                <Link href="/kalkulator">
+                  Kalkulator zysku z nowej strony (ROI)
+                </Link>
                 {/* <a href="/">Test skuteczności strony (Krótki)</a> */}
-                <a href="#">Konsultacja marketingu</a>
+                <Link href="/konsultacje">Konsultacja marketingu</Link>
               </div>
             </Col>
             {/* <Col sm={4}>

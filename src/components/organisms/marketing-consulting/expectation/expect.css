@@ -1,0 +1,30 @@
+.wte {
+  padding: 90px 0;
+}
+
+.wte_header {
+  margin-bottom: 60px;
+}
+
+.wte_header h2 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 150px;
+}
+
+.wte_header p {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 25px;
+}
+
+.wte p {
+  font-size: 27px;
+  margin: 20px auto;
+  font-weight: 300;
+}
+
+.wte_end {
+  width: 65%;
+  margin: 0 auto;
+}
