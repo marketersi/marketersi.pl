@@ -51,7 +51,7 @@ export default function Analysis() {
             width={652}
           />
         </div>
-        <div className="Analysis_Card_Content">
+        <div className="Analysis_Card_Content_Odd">
           <div className="Analysis_Card_Content_Title">
             Analiza grupy docelowej
           </div>
@@ -59,7 +59,7 @@ export default function Analysis() {
             Tworzymy profile konsumenckie. Szukamy efektywnych dróg komunikacji
             i ustalamy, która grupa docelowa ma najwyższy priorytet dla zysku.
           </div>
-          <div className="Analysis_Card_Content_Table">
+          <div className="Analysis_Card_Content_Table_Odd">
             <div className="Analysis_Card_Content_Table_Column">
               <div>Demografia</div>
               <div>Cechy psychograficzne</div>
@@ -125,7 +125,7 @@ export default function Analysis() {
             width={652}
           />
         </div>
-        <div className="Analysis_Card_Content">
+        <div className="Analysis_Card_Content_Odd">
           <div className="Analysis_Card_Content_Title">
             Skalowalny lejek marketingowy
           </div>
@@ -134,7 +134,7 @@ export default function Analysis() {
             pierwszego kontaktu z Twoim biznesem do pierwszej transakcji. A
             potem do kolejnych.
           </div>
-          <div className="Analysis_Card_Content_Table">
+          <div className="Analysis_Card_Content_Table_Odd">
             <div className="Analysis_Card_Content_Table_Column">
               <div>Lejki sprzedażowe i pozakupowe</div>
               <div>Kanały efektywnej komunikacji</div>

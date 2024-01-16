@@ -14,6 +14,11 @@ import ImageAdvantage from "../strategia-marketingowa/ImageAdvantage";
 import InviteCustomer from "../strategia-marketingowa/InviteCustomer";
 import QuoteOne from "../strategia-marketingowa/QuoteOne";
 import Branding from "../strategia-marketingowa/Branding";
+import StrategyAction from "../strategia-marketingowa/StrategyAction";
+import AnswerAll from "../strategia-marketingowa/AnswerAll";
+import Price from "../strategia-marketingowa/Price";
+import QuoteTwo from "../strategia-marketingowa/QuoteTwo";
+import OurClients from "../strategia-marketingowa/OurClients";
 
 const StrategiaMarketingowa = () => {
   return (
@@ -62,29 +67,19 @@ const StrategiaMarketingowa = () => {
         <Branding />
 
         {/* 15. QuoteTwo */}
-        <div className="QuoteTwo">
-          <div>QuoteTwo</div>
-        </div>
+        <QuoteTwo />
 
         {/* 16. OurClients */}
-        <div className="OurClients">
-          <div>OurClients</div>
-        </div>
+        <OurClients />
 
         {/* 17. Price */}
-        <div className="Price">
-          <div>Price</div>
-        </div>
+        <Price />
 
         {/* 18. StrategyAction */}
-        <div className="StrategyAction">
-          <div>StrategyAction</div>
-        </div>
+        <StrategyAction />
 
         {/* 19. AnswerAll */}
-        <div className="AnswerAll">
-          <div>AnswerAll</div>
-        </div>
+        <AnswerAll />
 
         {/* 20. Accordion */}
         <div className="Accordion">
