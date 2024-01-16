@@ -24,7 +24,7 @@ const HeaderDropDown2 = () => {
                   Kalkulator zysku z nowej strony (ROI)
                 </Link>
                 {/* <a href="/">Test skuteczności strony (Krótki)</a> */}
-                <a href="#">Konsultacja marketingu</a>
+                <Link href="/konsultacje">Konsultacja marketingu</Link>
               </div>
             </Col>
             {/* <Col sm={4}>
