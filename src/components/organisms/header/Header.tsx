@@ -58,7 +58,7 @@ const Header = () => {
             <div className={style.rightNav}>
               <Nav className="">
                 <Nav.Link className={style.navRightMenu}>
-                  <Link href="#">Zespół </Link>
+                  <Link href="/o-nas">Zespół </Link>
                 </Nav.Link>
                 <Nav.Link className={style.navRightMenu}>
                   <Link href="/kontakt">Kontakt</Link>
