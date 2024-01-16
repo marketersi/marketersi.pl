@@ -64,7 +64,7 @@
     font-size: 28px;
     font-weight: 300;
     color: #3e3e3e;
-    margin: 0 0 30px;
+    margin: 0 0 50px;
     line-height: 50px;
 }
 
@@ -223,4 +223,167 @@
 /* ========== */
 .caring img{
 width: 100%;
+}
+
+.caringCard{
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+    width: 300px;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto 50px;
+    background: white;
+}
+.caringCard h4{
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+.caringCard p{
+    font-size: 21px;
+    font-weight: normal;
+    text-align: center;
+    color: #3e3e3e;
+    font-style: italic;
+    font-family: Georgia;
+    margin: 15px 0 0;
+}
+.cartTop{
+    margin: -50px 0 0 ;
+}
+.carRow{
+    padding: 50px 100px;
+}
+/* ===================Culture==================== */
+.cultureCard{
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15),0px 0px 0px 0px #fff,2px 2px 2px 0px #fff inset,-2px -2px 2px 0px #c7c7c7 inset;
+    width: 1000px;
+    margin: 200px auto 100px;
+    background: #f6f6f6;
+    border-radius: 30px;
+    padding: 30px;
+}
+.cultureCard img{
+    margin: -100px auto 20px;
+    display: block;
+}
+.cultureCard h2{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 30px;
+    
+}
+.cultureCard h2 span{
+    font-weight: 800;
+padding: 0 0 0 10px;
+border-radius: 20px;
+background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
+
+}
+.cultureImg{
+    margin: -600px 0 0 -160px;
+}
+/* =======================Good Time===================== */
+.goodHeadingMain{
+    margin: 100px 0 70px;
+}
+.cardDataSpace{
+    margin: 100px 0 80px;
+}
+.cardCup{
+    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75);
+    background-repeat: no-repeat;
+    background-position: 125% -50px;
+    padding: 100px 0;
+}
+.hardWorkBG{
+    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75);
+    background-repeat: no-repeat;
+    background-position: -190px 250px;
+    padding: 0px 0 2px;
+}
+
+/* ===============================people============================= */
+.peopleCard{
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15),0px 0px 0px 0px #fff,2px 2px 2px 0px #fff inset,-2px -2px 2px 0px #c7c7c7 inset;
+    width: 1000px;
+    margin: 200px auto 100px;
+    background: #f6f6f6;
+    border-radius: 30px;
+    padding: 70px;
+}
+.peopleCard h3{
+    font-size: 50px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 800;
+    color: #3e3e3e;
+    margin: 0 0 200px;
+}
+.dogImg{
+    padding: 0 0 0 200px;
+}
+.dogImg img{
+    margin: -300px auto 100px;
+    display: block;
+}
+.peopleVideo{
+    position: relative;
+}
+.peopleVideo svg{
+    position: absolute;
+    top: -3px !important;
+    width: 350px;
+    left: 39%;
+}
+.peopleVideoContent {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #00000069;
+    padding: 25% 0 0;
+    z-index: 0;
+}
+.peopleVideoContent .projectBtn{
+    border: 4px solid #ffc600;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+.peopleVideoContent .scheduleBtn{
+    display: grid;
+    gap: 10px;
+    padding: 0 0 0 10px;
+    width: 250px;
+    margin: 30px auto;
+    text-decoration: none;
+    font-size: 20px;
+    grid-template-columns: 85% 15%;
+    font-weight: 600;
+    color: white;
+}
+.peopleVideoContent .scheduleBtn:hover{
+  background: #ffc600;
+  border-radius: 100px;
+}
+.peopleVideoContent .scheduleBtn div{
+    padding: 2px;
+    background-color: #ffc600;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+
+}
+.peopleVideoContent .scheduleBtn img{
+    width: 20px;
+    margin: 4px auto;
+    display: block;
 }

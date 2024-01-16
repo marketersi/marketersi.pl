@@ -15,7 +15,7 @@ const Creative = () => {
           <img className={style.CreativeHeart} src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSerce.5c1a3248.png&w=640&q=75" alt="" />
           <img className={style.CreativeOnar} src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FO-Nas-Ania.3838a4a4.png&w=1080&q=75" alt="" />
 
-          <p>Dawno zrozumieliśmy, że najlepsze projekty nie powstają od 8 do 16. Supertalenty, to najczęściej cyfrowi nomadzi, którzy do twórczości <span style={{display: 'inline', margin: '100px 0'}}> potrzebują wolności.</span></p>
+          <p style={{margin: '100px 0'}}>Dawno zrozumieliśmy, że najlepsze projekty nie powstają od 8 do 16. Supertalenty, to najczęściej cyfrowi nomadzi, którzy do twórczości <span style={{display: 'inline', margin: '100px 0'}}> potrzebują wolności.</span></p>
         </div>
       </section>
     </>

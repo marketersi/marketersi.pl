@@ -1,13 +1,6 @@
-import Banner from "@/components/organisms/team/banner/Banner";
-import FreeSpace from "@/components/organisms/team/free-space/FreeSpace";
-import ImageSlider from "@/components/organisms/team/image-slider/ImageSlider";
-import Review from "@/components/organisms/team/review/Review";
-import PersonalCard from "@/components/organisms/team/personal/PersonalCard";
-import Support from "@/components/organisms/team/support/Support";
-import style from './team-page.module.css'
 import React from "react";
-import Creative from "@/components/organisms/team/creative/Creative";
-import Caring from "@/components/organisms/team/caring/Caring";
+import style from './team-page.module.css';
+import * as TeamComponents from "@/components/organisms/team/team-components/TeamComponents";
 
 const page = () => {
   const personalCardData1 = {
@@ -28,23 +21,27 @@ const page = () => {
   };
   return (
     <>
-      <Banner />
-      <PersonalCard {...personalCardData1} />
-      <FreeSpace />
-      <Support />
-      <ImageSlider />
-      <Review />
+    
+      <TeamComponents.Banner />
+      <TeamComponents.PersonalCard {...personalCardData1} />
+      <TeamComponents.FreeSpace />
+      <TeamComponents.Support />
+      <TeamComponents.ImageSlider />
+      <TeamComponents.Review />
       <section className={style.Customers }>
       <div className={style.teamContent}>
         <p style={{margin:'100px 0'}}><span>Customers often ask how good designs are created.</span> The answer lies in simplicity.Simple is smart!But turning complexity into simplicity is not easy at all.</p>
       </div>
-      <PersonalCard {...personalCardData2} />
+      <TeamComponents.PersonalCard {...personalCardData2} />
       <div className={style.teamContent}>
         <p style={{margin:'100px 0'}}><span>Tu nie ma drogi na skróty. </span> Sukces to ciężka praca. Jeśli tego nie kochasz, nie zarwiesz tych długich nocy.</p>
       </div>
       </section>
-      <Creative />
-      <Caring />
+      <TeamComponents.Creative />
+      <TeamComponents.Caring />
+      <TeamComponents.Culture />
+      <TeamComponents.GoodTime />
+      <TeamComponents.People />
     </>
   );
 };
