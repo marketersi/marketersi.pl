@@ -1,3 +1,7 @@
+.cal_sec {
+  padding: 70px 0;
+}
+
 .first-row h1 {
   font-weight: 900;
 }
@@ -114,4 +118,15 @@ input[type="range"]::-ms-fill-lower {
 }
 input[type="range"]::-ms-fill-upper {
   background-color: #b7e7ec;
+}
+
+/* custom input */
+input[type="number"].no-spinner {
+  -moz-appearance: textfield;
+}
+
+input[type="number"].no-spinner::-webkit-inner-spin-button,
+input[type="number"].no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
