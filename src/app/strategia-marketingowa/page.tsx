@@ -19,6 +19,8 @@ import AnswerAll from "../strategia-marketingowa/AnswerAll";
 import Price from "../strategia-marketingowa/Price";
 import QuoteTwo from "../strategia-marketingowa/QuoteTwo";
 import OurClients from "../strategia-marketingowa/OurClients";
+import YesAccordion from "../strategia-marketingowa/YesAccordion";
+import Image from "next/image";
 
 const StrategiaMarketingowa = () => {
   return (
@@ -82,9 +84,7 @@ const StrategiaMarketingowa = () => {
         <AnswerAll />
 
         {/* 20. Accordion */}
-        <div className="Accordion">
-          <div>Accordion</div>
-        </div>
+        <YesAccordion />
       </div>
     </>
   );

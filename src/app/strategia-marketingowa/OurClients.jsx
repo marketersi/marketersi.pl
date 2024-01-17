@@ -1,9 +1,41 @@
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
+
 export default function OurClients() {
   return (
     <div className="OurClients content">
       <div className="OurClients_Title">
         Pozwól naszym klientom opowiedzieć Ci o współpracy z nami
+      </div>
+      <div className="OurClients_Marquee full">
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
+        <Marquee>
+          I can be a React component, multiple React components, or just some
+          text.
+        </Marquee>
       </div>
       <div className="OurClients_Card_Container popout">
         <div className="OurClients_Card_One">

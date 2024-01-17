@@ -19,6 +19,9 @@ export default function QuoteTwo() {
           alt="QuoteTwoImage"
           width={2000}
           height={1044}
+          style={{
+            left: "50%",
+          }}
         />
       </div>
     </div>

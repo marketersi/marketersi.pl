@@ -27,7 +27,7 @@ export default function Analysis() {
           </div>
           <div>
             <button className="Analysis_Card_Content_Button">
-              Jak to wygląda w praktyce?
+              ▼ Jak to wygląda w praktyce?
             </button>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Analysis() {
           </div>
           <div>
             <button className="Analysis_Card_Content_Button">
-              Jak to wygląda w praktyce?
+              ▼ Jak to wygląda w praktyce?
             </button>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function Analysis() {
           </div>
           <div>
             <button className="Analysis_Card_Content_Button">
-              Jak to wygląda w praktyce?
+              ▼ Jak to wygląda w praktyce?
             </button>
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function Analysis() {
           </div>
           <div>
             <button className="Analysis_Card_Content_Button">
-              Jak to wygląda w praktyce?
+              ▼ Jak to wygląda w praktyce?
             </button>
           </div>
         </div>

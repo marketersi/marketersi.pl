@@ -1,4 +1,20 @@
+import { useState } from "react";
+import SurveyModal from "./SurveyModal";
+
 export default function Price() {
+  const [showModal, setShowModal] = useState(false);
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
+
   return (
     <div className="Price content">
       <div className="Price_Title popout">
@@ -33,7 +49,10 @@ export default function Price() {
                 </div>
               </div>
               <div>
-                <button className="Price_Card_Main_Button">
+                <button
+                  className="Price_Card_Main_Button"
+                  onClick={handleOpenModal}
+                >
                   Zaplanuj rozmowę
                 </button>
               </div>
@@ -66,7 +85,10 @@ export default function Price() {
                 </div>
               </div>
               <div>
-                <button className="Price_Card_Main_Button">
+                <button
+                  className="Price_Card_Main_Button"
+                  onClick={handleOpenModal}
+                >
                   Zaplanuj rozmowę
                 </button>
               </div>
@@ -97,7 +119,10 @@ export default function Price() {
                 </div>
               </div>
               <div>
-                <button className="Price_Card_Main_Button">
+                <button
+                  className="Price_Card_Main_Button"
+                  onClick={handleOpenModal}
+                >
                   Zaplanuj rozmowę
                 </button>
               </div>
@@ -105,6 +130,12 @@ export default function Price() {
           </div>
         </div>
       </div>
+      {/* Modal */}
+      <SurveyModal
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+        options={options}
+      />
     </div>
   );
 }

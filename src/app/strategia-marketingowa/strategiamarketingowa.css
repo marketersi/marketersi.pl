@@ -87,6 +87,16 @@
   font-weight: 300;
   line-height: 53.2px;
 }
+.MainNumber_Two_Footer {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  font-weight: 300;
+  line-height: 12px;
+  font-size: 12px;
+  color: #515151;
+  text-align: left;
+}
 
 /* 5. ResultTable */
 .ResultTable {
@@ -294,6 +304,19 @@
     rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   background-color: transparent;
 }
+.Analysis_Card_Content_Button_Clicked {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  color: #373737;
+  background-color: #00fe04;
+  border: 2px solid #00fe04;
+}
 .Analysis_Card_Content_Button:hover {
   background-color: #282828;
   color: #e3e3e3;
@@ -374,6 +397,39 @@
   font-weight: 300;
   line-height: 21px;
 }
+.WhatRecieve_Dropdown {
+  margin-top: -20px;
+}
+.WhatRecieve_Dropdown_TitleOne {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  padding-inline: 50px;
+  margin-bottom: 50px;
+}
+.WhatRecieve_Dropdown_TitleTwo {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  padding-inline: 50px;
+  margin-bottom: 50px;
+}
+.WhatRecieve_Dropdown_ContentOne {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+.WhatRecieve_Dropdown_ContentTwo {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 50px;
+}
 
 /* 11. ImageAdvantage */
 .ImageAdvantage {
@@ -426,9 +482,38 @@
     rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   background-color: transparent;
 }
+.ImageAdvantage_Button_Clicked {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 20px;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  color: #373737;
+  background-color: #00fe04;
+  border: 2px solid #00fe04;
+}
 .ImageAdvantage_Button:hover {
   background-color: #282828;
   color: #e3e3e3;
+}
+.ImageAdvantage_Dropdown {
+  margin-top: 20px;
+}
+.ImageAdvantage_Dropdown_ContentOne {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+.ImageAdvantage_Dropdown_ContentTwo {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
 }
 
 /* 12. InviteCustomer */
@@ -515,6 +600,7 @@
   font-size: 28px;
   font-weight: 300;
   line-height: 53.2px;
+  margin-bottom: 40px;
 }
 .QuoteTwo_TextTwo {
   color: #333333;
@@ -525,8 +611,9 @@
 .QuoteTwo_Image {
   overflow: hidden;
   max-width: 100%;
-  height: 1044;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 /* 16. OurClients */
@@ -539,7 +626,7 @@
   font-weight: 700;
   line-height: 55.8px;
   text-align: center;
-  margin-bottom: 250px;
+  margin-bottom: 60px;
 }
 .OurClients_Card_One {
   background-color: #ffffff;
@@ -564,7 +651,7 @@
   text-align: center;
   margin-bottom: 30px;
 }
-.OurClients_Card_One_Button_Container{
+.OurClients_Card_One_Button_Container {
   display: flex;
   justify-content: center;
 }
@@ -596,29 +683,35 @@
   padding-inline: 50px;
   padding-block: 30px;
 }
-.OurClients_Card_Two_Content{
-	color: #8F8F8F;
-	font-size: 23.04px;
-	line-height: 34.56px;
-	transform: matrix(1, 0, 0, 1, 38.4, 0);
+.OurClients_Card_Two_Content {
+  color: #8f8f8f;
+  font-size: 23.04px;
+  line-height: 34.56px;
+  transform: matrix(1, 0, 0, 1, 38.4, 0);
 }
-.YellowMark{
-  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #FFC602);
-	border-radius: 10.0147px;
-	display: inline-block;
-	font-size: 38.4px;
-	font-weight: 600;
-	line-height: 34.56px;
-	text-align: center;
+.YellowMark {
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+  border-radius: 10.0147px;
+  display: inline-block;
+  font-size: 38.4px;
+  font-weight: 600;
+  line-height: 34.56px;
+  text-align: center;
 }
-.YelloMarkReverse{
-  background-image: linear-gradient(90deg, #FFD042, #FFDC74);
-	border-radius: 6.00883px;
-	color: #EEEEEE;
-	display: inline-block;
-	font-size: 23.04px;
-	font-weight: 600;
-	line-height: 20.736px;
+.YelloMarkReverse {
+  background-image: linear-gradient(90deg, #ffd042, #ffdc74);
+  border-radius: 6.00883px;
+  color: #eeeeee;
+  display: inline-block;
+  font-size: 23.04px;
+  font-weight: 600;
+  line-height: 20.736px;
+}
+.OurClients_Card_Container{
+  margin-top: -70px;
+}
+.OurClients_Marquee{
+  z-index: -10;
 }
 
 /* 17. Price */
@@ -768,17 +861,62 @@
 
 /* 20. Accordion */
 .Accordion {
+  margin-bottom: 200px;
+}
+[hidden] {
   display: none;
 }
+.accordion {
+  padding: 20px;
+}
+.accordion__heading {
+  cursor: pointer;
+  font-size: 22.5px;
+  line-height: 33.75px;
+}
+.accordion__panel {
+  padding-inline: 30px;
+  animation: fadein 0.35s ease-in;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+.accordion__item + .accordion__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.accordion__button {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 20px;
+  padding-inline: 30px;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+.accordion__button:hover {
+  background-color: #ddd;
+}
+.accordion__button:before {
+  display: inline-block;
+  content: "+";
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+}
+.accordion__button[aria-expanded="true"]::before,
+.accordion__button[aria-selected="true"]::before {
+  content: "−";
+}
 
-/* My Custom */
+/* * */
 .content {
   --gap: clamp(1rem, 6vw, 3rem);
   --content: min(77ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
   --feature: minmax(0, 5rem);
   --full: minmax(var(--gap), 1fr);
-
   display: grid;
   grid-template-columns:
     [full-start] var(--full)
@@ -789,19 +927,123 @@
     var(--feature) [feature-end]
     var(--full) [full-end];
 }
-
 .content > * {
   grid-column: content;
 }
-
 .popout {
   grid-column: popout;
 }
-
 .feature {
   grid-column: feature;
 }
-
 .full {
   grid-column: full;
+}
+
+/* Modal */
+.Modal {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  right: 40px;
+  bottom: 20px;
+  background-color: #161616;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #161616;
+}
+.ModalTitle {
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 500;
+  letter-spacing: -1.15px;
+  line-height: 50.6px;
+  text-align: center;
+  padding-inline: 30px;
+  margin-top: 50px;
+}
+.ModalContent {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  padding-inline: 100px;
+  margin-top: -60px;
+}
+.ModalCard {
+  max-width: 1280px;
+  min-height: 100px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 15px 0px, #ffffff 0px 0px 0px 0px,
+    #ffffff 2px 2px 2px 0px inset, #c7c7c7 -2px -2px 2px 0px inset;
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ModalDropdownTitleOne {
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+.ModalDropdownTitleTwo {
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+.ModalDropdown {
+  margin-bottom: 10px;
+}
+.ModalSubmitButton {
+  font-size: 20px;
+  font-weight: normal;
+  padding-top: 0.3em;
+  padding: 6px 20px;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  transition: transform 0.05s cubic-bezier(0.5, 1, 0.7, 0.7),
+    box-shadow 0.05s cubic-bezier(0.5, 1, 0.7, 0.7),
+    border 0.05s cubic-bezier(0.5, 1, 0.7, 0.7);
+  border: 2px solid #981a04;
+  background-color: #d21e00;
+  display: inline-block;
+  border-radius: 20em;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(0.15em);
+  box-shadow: 0 0 0 0 #981a04, 0 0.2em 0 0 #981a04;
+  transform: matrix(1, 0, 0, 1, 0, 3);
+  transition-delay: 0s, 0s, 0s;
+  transition-duration: 0.05s, 0.05s, 0.05s;
+  transition-property: transform, box-shadow, border;
+  transition-timing-function: cubic-bezier(0.5, 1, 0.7, 0.7),
+    cubic-bezier(0.5, 1, 0.7, 0.7), cubic-bezier(0.5, 1, 0.7, 0.7);
+}
+.ModalSubmitButton:hover {
+  box-shadow: none;
+}
+.ModalCloseButton {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: x-large;
 }

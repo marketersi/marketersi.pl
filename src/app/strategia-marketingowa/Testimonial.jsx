@@ -1,6 +1,21 @@
 import Image from "next/image";
+import { useState } from "react";
+import SurveyModal from "./SurveyModal";
 
 export default function Testimonial() {
+  const [showModal, setShowModal] = useState(false);
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
+
   return (
     <div className="Testimonial content">
       <div className="Testimonial_Card feature">
@@ -19,12 +34,21 @@ export default function Testimonial() {
             prawdziwa magia.
           </div>
           <div>
-            <button className="Testimonial_Card_Content_Button">
+            <button
+              className="Testimonial_Card_Content_Button"
+              onClick={handleOpenModal}
+            >
               Podoba mi się ten pomyst. Wyślijcie mi niezobowiązującą ofertę
             </button>
           </div>
         </div>
       </div>
+      {/* Modal */}
+      <SurveyModal
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+        options={options}
+      />
     </div>
   );
 }

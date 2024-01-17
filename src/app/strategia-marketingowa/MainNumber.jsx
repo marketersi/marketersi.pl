@@ -41,6 +41,13 @@ export default function MainNumber() {
               }}
             />
           </div>
+          <div className="MainNumber_Two_Footer">
+            <div>* </div>
+            <div>
+              Badanie amerykańskich przedsiębiorstw <br />
+              Nathan Ellering 2019r.
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,21 @@
+import { useState } from "react";
+import SurveyModal from "./SurveyModal";
 import Image from "next/image";
 
 export default function ResultTable() {
+  const [showModal, setShowModal] = useState(false);
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const options = [
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
+
   return (
     <div className="ResultTable content">
       <div className="ResultTable_Title">
@@ -27,7 +42,10 @@ export default function ResultTable() {
             />
           </div>
           <div>
-            <button className="ResultTable_Table_Row_Button">
+            <button
+              className="ResultTable_Table_Row_Button"
+              onClick={handleOpenModal}
+            >
               Zapytaj o szczegóły (Case study)
             </button>
           </div>
@@ -53,7 +71,10 @@ export default function ResultTable() {
             />
           </div>
           <div>
-            <button className="ResultTable_Table_Row_Button">
+            <button
+              className="ResultTable_Table_Row_Button"
+              onClick={handleOpenModal}
+            >
               Zapytaj o szczegóły (Case study)
             </button>
           </div>
@@ -79,12 +100,21 @@ export default function ResultTable() {
             />
           </div>
           <div>
-            <button className="ResultTable_Table_Row_Button">
+            <button
+              className="ResultTable_Table_Row_Button"
+              onClick={handleOpenModal}
+            >
               Zapytaj o szczegóły (Case study)
             </button>
           </div>
         </div>
       </div>
+      {/* Modal */}
+      <SurveyModal
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
+        options={options}
+      />
     </div>
   );
 }
