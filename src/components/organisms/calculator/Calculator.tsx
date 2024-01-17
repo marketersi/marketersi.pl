@@ -6,12 +6,16 @@ const Calculator = () => {
   const [averageOrderValue, setAverageOrderValue] = useState(192);
 
   const handleVisitorsChange = (event) => {
-    const newValue = parseInt(event.target.value, 10);
+    let newValue = parseInt(event.target.value, 10);
+    newValue = Math.max(newValue, 0);
+    newValue = Math.min(newValue, 9999);
     setVisitors(newValue);
   };
 
   const handleOrderValueChange = (event) => {
-    const newValue = parseInt(event.target.value, 10);
+    let newValue = parseInt(event.target.value, 10);
+    newValue = Math.max(newValue, 0);
+    newValue = Math.min(newValue, 9999);
     setAverageOrderValue(newValue);
   };
 
@@ -20,7 +24,7 @@ const Calculator = () => {
       <Row className="p-5">
         <Col className="text-center d-flex flex-column align-items-center justify-content-center">
           <div className="first-card card shadow">
-            <Row className="mb-3">
+            <Row className="mb-5">
               <Col>
                 <p>Stronę odwiedza</p>
               </Col>
@@ -29,7 +33,7 @@ const Calculator = () => {
                   value={visitors}
                   onChange={handleVisitorsChange}
                   type="number"
-                  className="no-spinner"
+                  className="no-spinner calc_input"
                 />
 
                 <input
@@ -56,7 +60,7 @@ const Calculator = () => {
                   value={averageOrderValue}
                   onChange={handleOrderValueChange}
                   type="number"
-                  className="no-spinner"
+                  className="no-spinner calc_input"
                 />
                 <input
                   type="range"
