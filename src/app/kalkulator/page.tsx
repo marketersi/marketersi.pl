@@ -26,11 +26,11 @@ const CalculatorScreen = () => {
                 <p>Stronę odwiedza</p>
               </Col>
               <Col>
-                <input placeholder="442" />
+                <input value="442" />
                 <input
                   type="range"
-                  min="0"
-                  max="1000"
+                  min="10"
+                  max="9999"
                   step="1"
                   className="custom-range"
                 />
@@ -45,11 +45,11 @@ const CalculatorScreen = () => {
                 <p>Średni zysk z zamówienia to</p>
               </Col>
               <Col>
-                <input placeholder="192" />
+                <input value="192" />
                 <input
                   type="range"
-                  min="0"
-                  max="1000"
+                  min="1"
+                  max="99999"
                   step="1"
                   className="custom-range"
                 />
@@ -67,11 +67,11 @@ const CalculatorScreen = () => {
           <div className="my-3">
             <p>wzrost konwersji o 1%</p>
             <Row>
-              <Col>
+              <Col className="text-end">
                 <h3>1.925zł</h3>
                 <p>Miesięcznie</p>
               </Col>
-              <Col>
+              <Col className="text-start">
                 <h3>23.109zł</h3>
                 <p>Rocznie</p>
               </Col>
@@ -81,11 +81,11 @@ const CalculatorScreen = () => {
           <div>
             <p>wzrost konwersji o 5%</p>
             <Row>
-              <Col>
+              <Col className="text-end">
                 <h3>9.628zł</h3>
                 <p>Miesięcznie</p>
               </Col>
-              <Col>
+              <Col className="text-start">
                 <h3>115.545zł</h3>
                 <p>Rocznie</p>
               </Col>
@@ -108,9 +108,10 @@ const CalculatorScreen = () => {
             </p>
             <p>
               Nie ma znaczenia czy Twoja aktualna strona konwertuje na poziomie
-              0% czy 10%. Nasz uproszczony kalkulator pokazuje, ile dodatkowej
-              kasy zarobisz, jeśli sprawisz, że choć 1 dodatkowy procent
-              odwiedzających zostanie prawdziwymi klientami.
+              0% czy 10%. Nasz uproszczony kalkulator pokazuje,{" "}
+              <strong> ile dodatkowej kasy zarobisz</strong>, jeśli sprawisz, że
+              choć 1 dodatkowy procent odwiedzających zostanie prawdziwymi
+              klientami.
             </p>
           </div>
         </Col>
