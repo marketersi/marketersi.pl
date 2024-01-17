@@ -15,7 +15,7 @@ const FactsCard = ({ id, title, img, info }) => {
       <div>
         {info?.map((e, i) => {
           return (
-            <p key={i} style={{ fontWeight: i === 0 ? "400" : "" }}>
+            <p key={i} style={{ fontWeight: i === 0 ? "500" : "" }}>
               {e}
             </p>
           );

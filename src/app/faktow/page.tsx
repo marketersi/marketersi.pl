@@ -1,4 +1,4 @@
-import FactsContainer from "@/components/organisms/facts/facts-container/factsContainer";
+import FactsContainer from "@/components/organisms/facts/facts-container/FactsContainer";
 import Hero from "@/components/organisms/facts/hero/Hero";
 import React from "react";
 
