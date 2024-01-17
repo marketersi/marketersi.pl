@@ -1,0 +1,31 @@
+.facts_hero_sec {
+  padding: 20px 80px;
+  color: #3f3f3f;
+}
+
+.facts_hero_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facts_hero_container div {
+  width: 50%;
+}
+
+.facts_hero_container h1 span {
+  font-size: 120px;
+  text-shadow: 10px 0px rgba(255, 255, 255, 1);
+}
+
+.facts_hero_container h1 {
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 0.9;
+}
+
+.facts_hero_container p {
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 50px;
+}
