@@ -1,0 +1,42 @@
+.fc_sec {
+  padding: 100px;
+}
+
+.fact_container {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.facts_img_card {
+  padding: 20px;
+  border-radius: 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  margin-bottom: -60px;
+}
+
+.facts_title_card {
+  padding: 30px;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0 auto;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+.facts_title_card h2 {
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+.fact_container p {
+  font-size: 24px;
+  font-weight: 300;
+  width: 75%;
+  margin: 40px auto;
+  text-align: justify;
+}
