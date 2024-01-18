@@ -1,3 +1,11 @@
+.bg_sunset {
+  background: radial-gradient(70vw 70vw at top center, #f8c459 0, #eae6e0 41%);
+  min-height: 100vh;
+  padding-top: 200px;
+  position: relative;
+  top: -168px;
+  z-index: -1;
+}
 .btt_btn_container {
   margin: 100px auto;
   margin-bottom: 200px;
