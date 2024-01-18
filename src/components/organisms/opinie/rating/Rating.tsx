@@ -12,7 +12,7 @@ const Rating = () => {
             src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSmiley1.c4ad8d4d.png&w=640&q=100"
             alt=""
           />
-          <img className={style.eys}
+          <img className={style.eyes}
             src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSmiley-oczy.e0329c27.png&w=640&q=100"
             alt=""
           />

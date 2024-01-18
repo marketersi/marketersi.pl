@@ -264,46 +264,286 @@
     top: -68px;
     z-index: 1;
 }
-.faceMotion{
+
+.faceMotion {
     min-height: 150px;
     position: relative;
 }
-.eys{
+
+.eyes {
     position: absolute;
     z-index: 1;
     left: 90px;
     top: -50px;
 }
-.ratingBlackCard img{
+
+.ratingBlackCard img {
     width: 80%;
     margin: 50px auto 0;
     display: block;
 }
-.ratingBlackCard h6{
+
+.ratingBlackCard h6 {
     font-size: 26px;
     color: #fbbe01;
     margin: 50px 0 25px;
 }
-.ratingBlackCard p{
+
+.ratingBlackCard p {
     font-size: 28px;
     color: #ffffffc9;
     font-weight: 300;
 }
-.topBtn{
+
+.topBtn {
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.topBtn h4{
+
+.topBtn h4 {
     color: white;
     font-weight: 900;
     font-size: 30px;
 }
-.topBtn p{
+
+.topBtn p {
     color: white;
     background: #fbbe01;
     font-weight: 500;
     font-size: 28px;
     padding: 10px 20px;
     border-radius: 100px;
+}
+
+.accordion {
+    background-color: white;
+    padding: 50px 0;
+}
+
+/* ================google review==================================== */
+.google {
+    background: white;
+}
+
+.google h2 {
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0 0 50px;
+    color: #3e3e3e;
+}
+
+.google h2 span {
+    background-image: linear-gradient(90deg, #ffd042, #ffdc74);
+    border-radius: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.googleMenu ul {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.googleMenu ul li {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.googleMenu ul li .playBG {
+    width: 40px;
+    height: 40px;
+    background-color: #fbbe01;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.googleMenu ul li .playBG img {
+    width: 70%;
+}
+
+.hoverMenu {
+    display: none;
+}
+
+.googleHover:hover .hoverMenu {
+    display: block;
+}
+
+
+.googleCard {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px 30px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.googleCard .profile {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.googleCard .profile h6{
+    font-size: 15px;
+    margin: 0;
+}
+.googleCard .profile p{
+    font-size: 14px;
+    margin: 0;
+}
+.googleCard .comment p{
+    font-size: 16px;
+    margin: 15px 0 20px;
+}
+.googleCard .comment button{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background: white;
+}
+/* ====================reference===================== */
+.opinionContent h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fbbe01;
+
+}
+.opinionContent h4{
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+    line-height: 55px;
+    padding: 0 0 50px;
+}
+.opinionContent h4 span{
+    background: #fbbe01;
+    font-weight: 800;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+.tesco{
+    padding: 40px 0;
+}
+.tesco h4{
+    text-align: center;
+    font-size: 30px;
+}
+.tesco p{
+    text-align: center;
+    font-size: 18px;
+}
+.tesco img{
+    width: 85%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.referenceCard{
+    width: 90%;
+    margin: 0 auto;
+}
+.referenceCard .cardTop{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.referenceCard .cardTop h6{
+   font-size: 15px;
+   margin: 0;
+}
+.referenceCard .cardTop p{
+    font-size: 13px;
+}
+.referenceCard p{
+    font-size: 16px;
+}
+.referenceCard p span{
+    background: #fbbe01;
+    padding: 0 10px;
+    border-radius: 20px;
+    display: block;
+    font-weight: 600;
+}
+.referenceCardSec{
+    margin: 40px 0 0;
+    padding: 0 0 40px;
+}
+/* ======================personally===================== */
+.Personally{
+    background: white;
+    padding: 50px 0;
+    position: relative;
+}
+.personallyContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.personallyCard{
+    width: 100%;
+    background-color: black;
+    border-radius: 30px;
+    padding: 50px;
+}
+.personallyCard h2{
+    font-size: 65px;
+    font-weight: 800;
+    color: white;
+    margin: 0 0 50px;
+}
+.personallyCard p{
+    font-size: 28px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.608);
+    margin: 0 0 50px;
+}
+.personallyCard .contact h4{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+.personallyCard .contact p{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 10px;
+}
+.personallyCard .contact a{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fbbe01;
+}
+.personallMan {
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    left: 0;
+}
+.personallHand{
+    position: absolute;
+    width: 400px;
+    bottom: 160px;
+    z-index: 0;
+    left: 0;
+}
+/* ==========================expert=============================== */
+.expert{
+    background: white;
+    padding: 100px 0;
+}
+.expertContent h2{
+font-size: 50px;
+font-weight: 300;
+color: #3e3e3e;
+text-align: center;
+}
+.expertLogo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
 }
