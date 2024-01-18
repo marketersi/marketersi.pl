@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./zamow-hero.css";
+import { motion } from "framer-motion";
 
 const ZamowHero = () => {
   return (
@@ -22,7 +23,13 @@ const ZamowHero = () => {
               placeholder="Wpisz tu adres strony www."
               className="zemow-hero-input"
             />
-            <button className="zamow-hero-btn">Rozpocznij.</button>
+            <motion.button
+              className="zamow-hero-btn"
+              whileHover={{ scale: 0.97 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Rozpocznij.
+            </motion.button>
           </div>
         </Col>
       </Row>

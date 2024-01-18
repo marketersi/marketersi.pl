@@ -6,6 +6,7 @@ import Accordion from "@/components/organisms/zamow/accordion/Accordion";
 import { Container } from "react-bootstrap";
 import Results from "@/components/organisms/zamow/results/Results";
 import "./zamow.css";
+import { motion } from "framer-motion";
 
 const BookExamination = () => {
   const handleBackToTop = () => {
@@ -20,9 +21,14 @@ const BookExamination = () => {
         <Results />
         <Accordion />
         <div className="btt_btn_container">
-          <button onClick={handleBackToTop} className="btt_btn">
+          <motion.button
+            onClick={handleBackToTop}
+            className="btt_btn"
+            whileHover={{ scale: 0.97 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Powrót na górę
-          </button>
+          </motion.button>
         </div>
       </Container>
     </>
