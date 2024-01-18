@@ -25,8 +25,7 @@ const BookExamination = () => {
           <motion.button
             onClick={handleBackToTop}
             className="btt_btn"
-            whileHover={{ scale: 0.97 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ translateY: 5 }}
           >
             Powrót na górę
           </motion.button>

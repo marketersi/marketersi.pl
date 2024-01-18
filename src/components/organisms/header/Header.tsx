@@ -6,6 +6,7 @@ import style from "./header.module.css";
 import HeaderDropDown1 from "./HeaderDropDown1";
 import HeaderDropDown2 from "./HeaderDropDown2";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
@@ -64,9 +65,11 @@ const Header = () => {
                   <Link href="/kontakt">Kontakt</Link>
                 </Nav.Link>
               </Nav>
-              <Button className={style.headerRightBtn}>
-                <Link href="/zamow">Zamów bezpłatne badanie</Link>
-              </Button>
+              <motion.div whileHover={{ translateY: 5 }}>
+                <Button className={style.headerRightBtn}>
+                  <Link href="/zamow">Zamów bezpłatne badanie</Link>
+                </Button>
+              </motion.div>
             </div>
           </Col>
         </Row>

@@ -66,6 +66,8 @@
   transition: transform 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s,
     box-shadow 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s,
     border 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s;
+
+  /* box-shadow: 0px 3px 0px #181818; */
 }
 
 .headerRightBtn a {
@@ -77,15 +79,15 @@
   color: rgb(0, 0, 0);
 }
 
-.headerRightBtn:hover {
-  box-shadow: none;
-}
+
 .navbar:hover .headerRightBtn {
   box-shadow: 0px 3px 0px #181818;
   background: #ffc600;
   color: black;
 }
-
+.headerRightBtn:hover {
+  box-shadow: none !important;
+}
 .rightNav {
   display: flex;
   gap: 10px;

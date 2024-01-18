@@ -1,9 +1,15 @@
-import React from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Col, Row } from "react-bootstrap";
 import "./zamow-hero.css";
 import { motion } from "framer-motion";
 
 const ZamowHero = () => {
+  const [progress, setProgress] = useState(0);
+
+  const handleClick = () => {
+    setProgress((prevProgress) => prevProgress + 20);
+  };
+
   return (
     <section>
       <Row>
@@ -26,11 +32,22 @@ const ZamowHero = () => {
             <motion.button
               className="zamow-hero-btn"
               whileHover={{ scale: 0.97 }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={handleClick}
             >
               Rozpocznij.
             </motion.button>
           </div>
+          {progress && (
+            <div className="progress-bar-container">
+              <motion.div
+                className="progress-bar"
+                initial={{ width: 0 }}
+                animate={{ width: `${progress}%` }}
+                transition={{ duration: 0.5 }}
+              ></motion.div>
+            </div>
+          )}
         </Col>
       </Row>
       <div className="line-container">
