@@ -8,6 +8,10 @@ import Results from "@/components/organisms/zamow/results/Results";
 import "./zamow.css";
 
 const BookExamination = () => {
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <Container>
@@ -16,10 +20,7 @@ const BookExamination = () => {
         <Results />
         <Accordion />
         <div className="btt_btn_container">
-          <button
-            onClick={() => console.log("back to top")}
-            className="btt_btn"
-          >
+          <button onClick={handleBackToTop} className="btt_btn">
             Powrót na górę
           </button>
         </div>
