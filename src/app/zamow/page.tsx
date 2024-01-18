@@ -14,8 +14,9 @@ const BookExamination = () => {
   };
 
   return (
-    <div className="bg_sunset">
-      <Container>
+    <>
+      <div className="bg_sunset"></div>
+      <Container className="zamow-container">
         <ZamowHero />
         <CustomerRating />
         <Results />
@@ -31,7 +32,7 @@ const BookExamination = () => {
           </motion.button>
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 
