@@ -1,0 +1,33 @@
+.sp_header {
+  text-align: center;
+}
+.sp_header h2 {
+  font-weight: 800;
+  font-size: 120px;
+  margin-top: 150px;
+  margin-bottom: 35px;
+}
+
+.sp_header p {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.sp_card_right {
+  background-color: white;
+  padding: 50px;
+  width: 450px;
+  margin-left: -320px;
+}
+
+.sp_card_left {
+  background-color: white;
+  padding: 50px;
+  width: 450px;
+  margin-right: -300px;
+  z-index: 1;
+}
+
+.sp_card_container {
+  margin: 150px 0;
+}

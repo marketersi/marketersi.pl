@@ -1,0 +1,124 @@
+.cal_sec {
+  padding: 70px 0;
+}
+
+.first-row h1 {
+  font-weight: 900;
+}
+
+.first-row p {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.second-row h1 {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.second-row p {
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 28px;
+  text-align: left;
+}
+
+.first-card {
+  padding: 115px 50px;
+  margin-right: -28px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(246, 246, 247);
+}
+
+.first-card p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.second-card {
+  border: none;
+  border-radius: 10px;
+}
+
+.second-card h2 {
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.second-card h3 {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.second-card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  margin-top: 16px;
+}
+
+.calc_input {
+  border: none;
+  border-bottom: 1px dotted;
+  text-align: right;
+  font-size: 45px;
+  font-weight: 900;
+  width: 11rem;
+  background: none;
+  color: #038fa5;
+}
+
+.calc_input:focus {
+  outline: none;
+}
+
+.custom-range {
+  height: 8px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* custom range styles */
+input[type="range"] {
+  overflow: hidden;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #b7e7ec;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  cursor: pointer;
+  background: #0091a2;
+  box-shadow: -100px 0 0 100px #3f4b5c;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #3f4b5c;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #b7e7ec;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #3f4b5c;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #b7e7ec;
+}
+
+/* custom input */
+input[type="number"].no-spinner {
+  -moz-appearance: textfield;
+}
+
+input[type="number"].no-spinner::-webkit-inner-spin-button,
+input[type="number"].no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

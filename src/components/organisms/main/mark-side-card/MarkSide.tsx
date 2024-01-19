@@ -5,8 +5,12 @@ import style from "./mark.module.css";
 import { Row, Col, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import Link from "next/link";
+import { Variants, motion } from "framer-motion";
 
 const MarkSide = () => {
+
+  
+
   const data = [
     {
       title: "Marka",
@@ -27,7 +31,7 @@ const MarkSide = () => {
       listItem2: "Projektowanie UX",
       link1: "https://owocni.pl/",
       link2: "https://owocni.pl/",
-      link3: "https://owocni.pl/",
+      // link3: "https://owocni.pl/",
     },
     {
       title: "Marketing",
@@ -44,7 +48,7 @@ const MarkSide = () => {
 
   return (
     <div>
-      <Row>
+      <Row className="m-0">
         <Col sm={4}>
           <div className={style.mark}>
             <Image
@@ -87,6 +91,25 @@ const MarkSide = () => {
 export default MarkSide;
 
 const Card = ({ data }) => {
+
+  const slideAnimationTop: Variants = {
+    offscreen: {
+      y: 100,
+      opacity: 0,
+    },
+    onscreen: {
+     y: 0,
+     opacity: 1,
+      transition: {
+        type: "ease",
+        bounce: 0.4,
+        // damping: 25,
+        // stiffness: 70,
+        duration: 2,
+      },
+    },
+  };
+
   const {
     title,
     description,
@@ -99,7 +122,11 @@ const Card = ({ data }) => {
   } = data;
   return (
     <>
-      <div className={style.markCard}>
+      <motion.div className={style.markCard}
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={slideAnimationTop}
+      >
         <h3>{title}</h3>
         <p>{description}</p>
         <ul>
@@ -125,19 +152,21 @@ const Card = ({ data }) => {
               />
             </div>
           </li>
-          <li>
-            <Link href={link3}>{listItem3}</Link>
-            <div className={style.playIcon}>
-              <Image
-                src="/assets/images/play_arrow.svg"
-                alt="rating image"
-                width="auto"
-                height="auto"
-              />
-            </div>
-          </li>
+          {link3 && (
+            <li>
+              <Link href={link3}>{listItem3}</Link>
+              <div className={style.playIcon}>
+                <Image
+                  src="/assets/images/play_arrow.svg"
+                  alt="rating image"
+                  width="auto"
+                  height="auto"
+                />
+              </div>
+            </li>
+          )}
         </ul>
-      </div>
+      </motion.div>
     </>
   );
 };

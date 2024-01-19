@@ -2,6 +2,8 @@
   background: transparent;
   padding: 50px 0 168px;
   /* position: relative; */
+  overflow: hidden;
+    max-height: 685px;
 }
 .hero h1 {
   text-align: center;
@@ -85,29 +87,21 @@
 }
 
 .heroImg1 {
-  position: absolute;
-  left: 70px;
-  bottom: -175px;
+  /* position: absolute; */
+  margin: -270px 0 0 0px;
   width: 350px;
 }
 .heroImg2 {
-  position: absolute;
-  left: -320px;
-  bottom: -175px;
+  margin: -390px 0 0 -750px;
   width: 650px;
 }
 .heroImg3 {
-  position: absolute;
-  right: 20px;
-  bottom: -175px;
+  margin: -399px 0 0 900px;
   width: 450px;
 }
 .heroImg4 {
-  position: absolute;
-  right: -180px;
-  bottom: -175px;
+ margin: -530px 0 0 1060px;
   width: 500px;
-  display: none;
 }
 
 .heroVideo {
@@ -116,4 +110,8 @@
   position: absolute;
   z-index: -1;
   top: 0;
+}
+.orangeBG img{
+  margin: -50px 0 0 570px;
+  opacity: 0.5;
 }

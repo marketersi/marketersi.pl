@@ -1,0 +1,497 @@
+.copywriter-page .copywriter-form-div {
+    text-align: center;
+}
+.names-container-form:not(.names-container-form-btn) {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.names-container-form:not(.names-container-form-btn) {
+    margin-top: 130px;
+}
+.names-container-form {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    padding: 42px 35px;
+    margin: 0 auto;
+    width: 590px;
+}
+.form-container {
+    height: 100%;
+}
+.contact-form-2020 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.contact-form-2020 .header-text {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.025em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #0d0701;
+    text-align: left;
+    margin-bottom: 45px;
+}
+.texts-green-color {
+    color: #438d07;
+}
+.texts-green-bold {
+    font-weight: 900;
+}
+.contact-input {
+    width: calc((100% / 3) - 20px);
+    float: left;
+    position: relative;
+}
+.input-parent-new-form {
+    color: #919191;
+}
+.contact-input2 {
+    margin-right: 30px;
+}
+.contact-inputs input, contact-inputs textarea {
+    caret-color: #438d07;
+}
+.input-parent-new-form .prog-bar-bg {
+    height: 1px;
+    background: #a4a4a4;
+}
+
+.prog-bar-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #e0e0e0;
+    z-index: 5;
+}
+.input-parent-new-form input, .input-parent-new-form textarea {
+    border-top: 2px solid #a4a4a4;
+    border-right: 2px solid #a4a4a4;
+    border-left: 2px solid #a4a4a4;
+    border-bottom: 2px solid #a4a4a4;
+}
+.input-parent-new-form .input-placeholder {
+    position: absolute;
+    pointer-events: none;
+    background-color: #fff;
+    width: calc(100% - 2px);
+    left: 1px;
+    height: calc(100% - 2px);
+    top: 1px;
+    text-align: left;
+    padding: 8px 0 5px 8px;
+    z-index: 2;
+}
+.contact-input input, .contact-input textarea {
+    /* border: transparent; */
+    padding: 8px;
+    padding-right: 32px;
+    width: 100%;
+}
+.contact-inputs {
+    margin-bottom: 30px;
+}
+
+.contact-input-textarea {
+    width: 100%;
+}
+.contact-input textarea {
+    height: 40px;
+    padding: 10px 15px;
+}
+.contact-submit-button {
+    position: relative;
+    width: 100%;
+    height: 66px;
+    margin-top: 15px;
+}
+.contact-form-btn {
+    width: calc(100% - 80px);
+    background: #438d07;
+    border: transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    z-index: 10;
+}
+.contact-form-btn-bg {
+    width: calc(100% - 80px);
+    background: #31600b;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+.contact-submit-button-shield {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 70px;
+    background: url(https://form2020.owocni.pl/img/shield.svg) no-repeat;
+}
+.contact-submit-button-shield:after {
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(https://form2020.owocni.pl/img/check.svg) no-repeat;
+    content: '';
+    background-size: 100%;
+}
+.contact-form-btn:hover, .contact-form-btn.active {
+    bottom: 0;
+}
+/* =============optios============== */
+.opinion-box {
+    margin-top: 85px;
+}
+.projects-empty-opinion-box {
+    height: 120px;
+}
+.projects-client-opinion-p {
+    font-family: "Arial";
+    color: #e3e3e3;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+ .copywriter-green-background {
+    background-color: #438d07 !important;
+    color: white !important;
+}
+
+/* =============concept 366============== */
+.projects-bow-2 {
+    width: 100%;
+    margin-top: -1px;
+}
+.copywriter-standard-mt-80 {
+    margin-top: 100px;
+}
+
+.copywriter-standard-mtb-40 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.copywriter-ikony-subtheme {
+    font-size: 36px;
+    letter-spacing: -0.01em;
+    line-height: 40px;
+    font-family: "RobotoLight";
+}
+.copywriter-ikony-theme {
+    font-size: 76px;
+    letter-spacing: -0.01em;
+    line-height: 76px;
+    margin-bottom: 30px;
+    font-family: "RobotoLight";
+    text-align: center;
+}
+.copywriter-standard-mt-80 {
+    margin-top: 100px;
+}
+.copywriter-custom-img-text {
+    letter-spacing: -0.01em;
+    font-size: 99px;
+    font-family: "RobotoLight";
+    line-height: 99px;
+}
+.copywriter-custom-img-text-sm {
+    letter-spacing: -0.01em;
+    font-size: 36px;
+}
+.copywriter-bg-10 .copywriter-fotel {
+    position: absolute;
+    right: 0px;
+    top: -250px;
+}
+.copywriter-standard-mt-40 {
+    margin-top: 60px;
+}
+.copywriter-bg-10  {
+    background: none;
+    margin-top: 0px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1310px;
+}
+.copywriter-page .copywriter-bg-10 .copywriter-fotel-rwd {
+    display: none;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.copywriter-custom-text-akuku {
+    font-family: "Georgia";
+    font-size: 69px;
+    line-height: 77px;
+}
+.copywriter-custom-subtext-akuku {
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.copywriter-standard-mb-80 {
+    margin-bottom: 100px;
+}
+.copywriter-page .new-mt-2 {
+    margin-top: 20px;
+}
+
+.copywriter-standard-mt-m80 {
+    margin-top: -80px;
+}
+.copywriter-custom-text-akuku-2 {
+    font-family: "Georgia";
+    font-size: 57px;
+    line-height: 55px;
+    text-align: right;
+}
+.copywriter-custom-subtext-akuku-2 {
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 31px;
+    line-height: 34px;
+    text-align: right;
+    margin-bottom: 50px;
+}
+.copywriter-custom-margin {
+    margin-right: -30px;
+}
+.copywriter-bg-16 {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Pisanie-tekstow-reklamowych.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1422px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.copywriter-seo-img-dnone {
+    display: none;
+}
+.copywriter-inside-img-text {
+    padding-top: 400px;
+    color: #373737;
+    font-size: 85px;
+    font-family: 'Roboto';
+    line-height: 90px;
+    letter-spacing: -0.025em;
+}
+.copywriter-roboty-img-810 {
+    display: none;
+    margin-top: 50px;
+}
+
+.copywriter-standard-mb-m100 {
+    margin-bottom: -100px;
+}
+.copywriter-custom-text-turbokids-1 {
+    color: #373737;
+    text-align: right;
+    font-family: 'Roboto', serif;
+    font-size: 47px;
+    letter-spacing: -0.025em;
+    line-height: 56px;
+    margin-bottom: 30px;
+}
+.copywriter-custom-subtext-turbokids-1 {
+    color: #373737;
+    text-align: right;
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    letter-spacing: -0.025em;
+    line-height: 36px;
+}
+.copywriter-after-img-1 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 283px;
+    margin-top: 100px;
+}
+.copywriter-text-left {
+    text-align: left;
+}
+.roboafter-rwd {
+    display: none;
+}
+.copywriter-after-img-1:after {
+    content: '';
+    width: 596px;
+    height: 620px;
+    position: absolute;
+    right: -175px;
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Teksty-reklamowe-roboty3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -113px;
+    background-position: left;
+    z-index: -1;
+}
+
+.copywriter-border-870 {
+    border-top: 2px solid #373737;
+    border-bottom: 2px solid #373737;
+    max-width: 870px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.copywriter-custom-text-3 {
+    font-size: 45px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+    font-family: "Georgia";
+}
+.copywriter-after-img-2 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 100px;
+}
+.copywriter-custom-text-4 {
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 58px;
+    color: #373737;
+    line-height: 63px;
+    letter-spacing: -0.01em;
+    margin-bottom: 160px;
+}
+.copywriter-custom-subtext-4 {
+    color: #373737;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    text-align: right;
+    max-width: 315px;
+}
+.copywriter-after-img-2:after {
+    content: '';
+    width: 769px;
+    height: 620px;
+    position: absolute;
+    right: -315px;
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/Content-marketing-MAKO.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -80px;
+    background-position: left;
+    z-index: -1;
+}
+.copywriter-custom-header-3 {
+    font-family: "Georgia";
+    font-size: 78px;
+    letter-spacing: -0.01em;
+    line-height: 82px;
+    color: #353434;
+    margin-bottom: 50px;
+}
+ .mako-big-img {
+    background-image: url(https://cdn.owocni.pl/img/single-copywriter/seo-images/Pisanie-tekstow-reklamowych-MAKO.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1638px;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+/* =============Ink book============== */
+.copywriter-custom-header-4 {
+    font-family: "Georgia";
+    font-size: 88px;
+    letter-spacing: -0.01em;
+    line-height: 74px;
+    color: #353434;
+    margin-top: 30px;
+}
+.copywriter-custom-subheader-4 {
+    font-family: "Georgia";
+    font-size: 61px;
+    letter-spacing: -0.01em;
+    line-height: 74px;
+    color: #353434;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.copywriter-reading-container {
+    max-width: 800px;
+}
+.copywriter-standard-pb-80 {
+    padding-bottom: 100px;
+}
+
+/* ===========================profit slider=============== */
+.copywriter-ending-white-bg {
+    background-color: white;
+}
+.thematic-bg-section img.white-bg {
+    width: 100%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    height: 70px;
+}
+.copywriter-ending-padding {
+    padding-top: 100px !important;
+}
+.names-thematic-section-black {
+    background-color: #000000;
+}
+.copywriter-ending-big {
+    color: white;
+    font-size: 188px;
+    line-height: 191px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+.copywriter-ending-big-2 {
+    color: white;
+    font-size: 63px;
+    line-height: 71px;
+    font-family: 'Playfair Display';
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.copywriter-ending-white {
+    color: white;
+}
+section.profit-sec {
+    background: black;
+    padding: 50px 0 100px;
+}
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators{
+bottom: -70px;
+}
+.copywriter-ending-1 {
+    font-size: 129px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 123px;
+    letter-spacing: -0.025em;
+    color: white;
+}
+section.black-sec-form {
+    background: black;
+    padding: 100px 0;
+}
