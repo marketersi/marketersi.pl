@@ -32,9 +32,13 @@
   font-size: 22px;
 }
 
+.zemow-hero-input:focus {
+  outline: 2px solid #981a05;
+}
+
 .zamow-hero-btn {
   position: absolute;
-  padding: 12px 18px;
+  padding: 11px 18px;
   font-size: 22px;
   border-radius: 30px;
   right: 0;
@@ -44,7 +48,9 @@
   background: #d21e00;
   border: 2px solid #981a05;
   box-shadow: 0 0 0 0 #981a05, 0 4px 0 0 #981a05;
-  transform: translateY(calc(-1 * 3px));
+}
+.zamow-hero-btn:hover {
+  box-shadow: 0 2px 0 0 #981a05;
 }
 
 .line-container {
@@ -59,4 +65,24 @@
   height: 1px;
   background-color: #000;
   margin-left: 10px;
+}
+
+/* progress bar */
+.progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  background: transparent;
+  z-index: 1000;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(249, 146, 23) 0%,
+    rgb(249, 54, 0) 100%
+  );
 }

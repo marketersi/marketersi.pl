@@ -1,7 +1,25 @@
 import React from "react";
 import "./customer-rating.css";
+import { Variants, motion } from "framer-motion";
 
 const CustomerRating = () => {
+  const slideAnimationTop: Variants = {
+    offscreen: {
+      y: -100,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "ease",
+        bounce: 0.4,
+        damping: 25,
+        stiffness: 70,
+        duration: 0.9,
+      },
+    },
+  };
   return (
     <section className="container">
       <div className="brand-img-container">
@@ -39,10 +57,13 @@ const CustomerRating = () => {
           src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpercent.5bb59584.gif&w=384&q=75"
           alt=""
         />
-        <img
+        <motion.img
           src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTak.1d7786af.png&w=384&q=75"
           alt=""
           className="img-left-merge"
+          initial="offscreen"
+          whileInView="onscreen"
+          variants={slideAnimationTop}
         />
       </div>
 

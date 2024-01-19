@@ -1,0 +1,39 @@
+.zh_question {
+  padding: 170px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.zh_question h2 {
+  font-size: 38px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.zh_question input {
+  border: none;
+  border-bottom: 1px solid #d21e00;
+  background-color: transparent;
+  padding: 8px 16px;
+  width: 100%;
+}
+.zh_question input:focus {
+  outline: none;
+}
+
+.zh_next_btn_container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.zh_next_btn {
+  padding: 10px 20px;
+  border-radius: 28px;
+  background-color: #d21e00;
+  box-shadow: 0 0 0 0 #981a05, 0 4px 0 0 #981a05;
+  border: 2px solid #981a05;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
