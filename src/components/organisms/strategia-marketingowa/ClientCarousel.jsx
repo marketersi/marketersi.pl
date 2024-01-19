@@ -1,6 +1,5 @@
 import React, { createContext } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-// import { CarouselContext } from "./CarouselContext";
 
 const CarouselContext = createContext({
   handleNext: () => {},
