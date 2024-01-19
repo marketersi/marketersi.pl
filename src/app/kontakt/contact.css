@@ -98,7 +98,6 @@
   padding: 10px;
 }
 
-
 /* section_secound */
 .btn button:hover {
   background-color: transparent;
@@ -356,7 +355,7 @@ a.card_btn:hover {
   font-weight: 500;
   color: white !important;
 }
-.map_bottom_p span{
+.map_bottom_p span {
   font-weight: 600;
   display: block;
 }
@@ -400,9 +399,9 @@ a.map_play:hover {
 }
 
 .map_button .play img {
-    width: 20px !important;
-    height: auto;
-    margin: 0 0 0 10px;
+  width: 20px !important;
+  height: auto;
+  margin: 0 0 0 10px;
 }
 .btn_Image {
   display: flex;
@@ -411,7 +410,7 @@ a.map_play:hover {
 }
 
 /* ==================================map plus===================== */
-.plus_icon_container  {
+.plus_icon_container {
   border: 1px solid red;
   width: 25px;
   border-radius: 100%;
@@ -419,7 +418,7 @@ a.map_play:hover {
   color: red;
   position: absolute;
 }
-.icon1{
+.icon1 {
   top: -40px;
   left: 135px;
 }
@@ -484,3 +483,16 @@ a.map_play:hover {
   left: 440px;
 }
 
+/* mod styles after dynamic data */
+.project_dp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.loader_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
