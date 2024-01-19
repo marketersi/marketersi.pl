@@ -36,7 +36,10 @@ const HeaderDropDown1 = () => {
             <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Wydajny marketing</h3>
-                <a href="#">Strategia marketingowa</a>
+                {/* <a href="#">Strategia marketingowa</a> */}
+                <Link href="/strategia-marketingowa">
+                  Strategia marketingowa
+                </Link>
                 {/* <a href="/">Działania marketingowe</a> */}
                 {/* <a href="/">Konsultacja marketingu HIT</a> */}
               </div>

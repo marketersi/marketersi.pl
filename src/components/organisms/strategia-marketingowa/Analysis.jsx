@@ -25,6 +25,7 @@ export default function Analysis() {
               <div>Analiza sytuacji rynkowej</div>
             </div>
           </div>
+
           <div>
             <button className="Analysis_Card_Content_Button">
               ▼ Jak to wygląda w praktyce?

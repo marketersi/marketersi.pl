@@ -66,6 +66,8 @@ export default function WhatRecieve() {
         krótkoterminowym zamiast na planie 12-miesięcznym.
       </div>
       {/* Button */}
+
+
       <div className="Analysis_Card_Content_Button_Container">
         <button
           className={`${
@@ -80,6 +82,8 @@ export default function WhatRecieve() {
           ▼ Jak taki plan wygląda w praktyce?
         </button>
       </div>
+
+      
       {/* WhatRecieve_Dropdown */}
       <div className="WhatRecieve_Dropdown" hidden={WhatRecieve_Dropdown_Show}>
         <div className="WhatRecieve_Dropdown_TitleOne">
