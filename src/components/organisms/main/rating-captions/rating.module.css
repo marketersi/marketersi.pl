@@ -21,6 +21,8 @@ width: 300px;
 }
 .ratingMainImg{
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 .ratingMainImg img{
     width: 85%;
