@@ -1,0 +1,12 @@
+.mainVideoDiv {
+    position: relative;
+}
+
+.mainVideoDiv video {
+    position: absolute;
+    left: 10%;
+    top: -180px;
+    border-radius: 50px;
+    width: 80% !important;
+    z-index: 0;
+}
