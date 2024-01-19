@@ -1,26 +1,25 @@
 "use client";
-import "./strategiamarketingowa.css";
-import MainHeading from "../strategia-marketingowa/MainHeading";
-import MainContentOne from "../strategia-marketingowa/MainContentOne";
-import MainNumber from "../strategia-marketingowa/MainNumber";
-import MainContentTwo from "../strategia-marketingowa/MainContentTwo";
-import ResultTable from "../strategia-marketingowa/ResultTable";
-import Strategy from "../strategia-marketingowa/Strategy";
-import ResultMax from "../strategia-marketingowa/ResultMax";
-import Testimonial from "../strategia-marketingowa/Testimonial";
 import Analysis from "../strategia-marketingowa/Analysis";
-import WhatRecieve from "../strategia-marketingowa/WhatRecieve";
+import AnswerAll from "../strategia-marketingowa/AnswerAll";
+import Branding from "../strategia-marketingowa/Branding";
 import ImageAdvantage from "../strategia-marketingowa/ImageAdvantage";
 import InviteCustomer from "../strategia-marketingowa/InviteCustomer";
-import QuoteOne from "../strategia-marketingowa/QuoteOne";
-import Branding from "../strategia-marketingowa/Branding";
-import StrategyAction from "../strategia-marketingowa/StrategyAction";
-import AnswerAll from "../strategia-marketingowa/AnswerAll";
-import Price from "../strategia-marketingowa/Price";
-import QuoteTwo from "../strategia-marketingowa/QuoteTwo";
+import MainContentOne from "../strategia-marketingowa/MainContentOne";
+import MainContentTwo from "../strategia-marketingowa/MainContentTwo";
+import MainHeading from "../strategia-marketingowa/MainHeading";
+import MainNumber from "../strategia-marketingowa/MainNumber";
 import OurClients from "../strategia-marketingowa/OurClients";
+import Price from "../strategia-marketingowa/Price";
+import QuoteOne from "../strategia-marketingowa/QuoteOne";
+import QuoteTwo from "../strategia-marketingowa/QuoteTwo";
+import ResultMax from "../strategia-marketingowa/ResultMax";
+import ResultTable from "../strategia-marketingowa/ResultTable";
+import Strategy from "../strategia-marketingowa/Strategy";
+import StrategyAction from "../strategia-marketingowa/StrategyAction";
+import Testimonial from "../strategia-marketingowa/Testimonial";
+import WhatRecieve from "../strategia-marketingowa/WhatRecieve";
 import YesAccordion from "../strategia-marketingowa/YesAccordion";
-import Image from "next/image";
+import "./strategiamarketingowa.css";
 
 const StrategiaMarketingowa = () => {
   return (
