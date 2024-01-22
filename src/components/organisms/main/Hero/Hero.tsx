@@ -6,6 +6,7 @@ import { Container, Image } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const Hero = () => {
   const controls = useAnimation();
@@ -52,8 +53,10 @@ const Hero = () => {
             Z Owocnymi jest łatwiej. <br /> Przyjemnie i przewidywalnie.
           </p>
           <div className={style.heroBtn}>
-            <button>Wyceń projekt</button>
-            <a href="/">
+            <Link href="/cennik">
+              <button>Wyceń projekt</button>
+            </Link>
+            <Link href="/zamow">
               <span>Umów konsultację</span>
               <motion.div
                 className={style.heroPlay}
@@ -68,7 +71,7 @@ const Hero = () => {
                   height="auto"
                 />
               </motion.div>
-            </a>
+            </Link>
           </div>
           <div className={style.heroBottomImg}>
             <div className={style.leftImg} ref={ref}>
@@ -129,7 +132,6 @@ const Hero = () => {
           </div>
         </Container>
       </div>
-      
     </div>
   );
 };
