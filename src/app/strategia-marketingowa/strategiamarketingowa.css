@@ -321,6 +321,234 @@
   background-color: #282828;
   color: #e3e3e3;
 }
+/* Analysis Dropdown */
+.Analysis1_Dropdown_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Analysis1_Dropdown_Image {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.Analysis1_Dropdown_Text1 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis1_Dropdown_Text2 {
+  color: #333333;
+  display: inline;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  max-width: 800px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.Analysis1_Dropdown_Text3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+.Analysis1_Grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+}
+.Analysis1_GridItem1 {
+  flex: 0 0 calc(50% - 10px);
+  background-color: #feaf4a;
+  padding: 75px;
+  color: white;
+}
+.Analysis1_GridItem2 {
+  flex: 0 0 calc(50% - 10px);
+  background-color: #f78061;
+  padding: 75px;
+  color: white;
+}
+.Analysis1_GridItem3 {
+  flex: 0 0 calc(50% - 10px);
+  background-color: #57becb;
+  padding: 75px;
+  color: white;
+}
+.Analysis1_GridItem4 {
+  flex: 0 0 calc(50% - 10px);
+  background-color: #8e86ad;
+  padding: 75px;
+  color: white;
+}
+
+.Analysis2_Dropdown_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Analysis2_Dropdown_Text1 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis2_Dropdown_Text2 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis2_Dropdown_Text3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis2_Dropdown_Text4 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis2_Dropdown_Image1 {
+  overflow: hidden;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+.Analysis2_Dropdown_Image2 {
+  overflow: hidden;
+  margin-bottom: 30px;
+  align-self: flex-end;
+}
+
+.Analysis3_Dropdown_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Analysis3_Dropdown_Text1 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis3_Dropdown_Text2 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis3_Dropdown_Text3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.Analysis3_Dropdown_Image1 {
+  overflow: hidden;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+.Analysis3_Grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Analysis3_GridItem1 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.Analysis3_GridItem2 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.Analysis3_GridItem3 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.Analysis3_GridItemNumber {
+  color: #b6b6b6;
+  font-size: 127px;
+  font-weight: 900;
+  line-height: 127px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Analysis3_GridItemTitle {
+  color: #333333;
+  font-size: 28px;
+  line-height: 53.2px;
+  max-width: 1088px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.Analysis3_GridItemContent {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  max-width: 400px;
+}
+
+.Analysis4_Dropdown_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 30px;
+}
+.Analysis4_Panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.Analysis4_PanelImage {
+  overflow: hidden;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+.Analysis4_PanelTextTitle{
+	color: #333333;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 60.8px;
+	max-width: 1088px;
+  margin-bottom: 30px;
+}
+.Analysis4_PanelTextContent{
+	color: #333333;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 27px;
+	max-width: 1088px;
+}
 
 /* 10. WhatRecieve */
 .WhatRecieve {
