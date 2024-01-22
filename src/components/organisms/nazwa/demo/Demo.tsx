@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./demo.css";
+import Profit from "../../tresci-sprzedazowe/profit-slider/Profit";
+import Form from "../../tresci-sprzedazowe/form/Form";
 
 const Demo = () => {
   return (
@@ -1226,6 +1228,18 @@ const Demo = () => {
             alt="Tworzenie nazw firm na przykładzie Victoria Coburg"
           />
         </div>
+      </section>
+
+      {/* section 11 */}
+      <Profit />
+
+      {/* section 12 */}
+      <section className="black-sec-form">
+        <div className="copywriter-ending-1 text-center">
+          Zróbmy razem <br />
+          coś fajnego
+        </div>
+        <Form />
       </section>
     </>
   );
