@@ -6,8 +6,8 @@ const CarouselContext = createContext({
   handlePrev: () => {},
 });
 
-const ClientCarousel = ({ slides }) => {
-  const [emblaRef, embla] = useEmblaCarousel();
+const ClientCarousel = ({ slides, options }) => {
+  const [emblaRef, embla] = useEmblaCarousel(options);
   const handleNext = () => {
     embla.scrollNext();
   };
