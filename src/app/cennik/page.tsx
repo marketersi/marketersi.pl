@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./cennik.css";
 
 const PriceListScreen = () => {
@@ -104,9 +105,12 @@ const PriceListScreen = () => {
                       <option value="option3">Opcja 3</option>
                     </select>
 
-                    <button className="cennikBtn mt-5">
+                    <motion.button
+                      className="cennikBtn mt-5"
+                      whileHover={{ translateY: 5 }}
+                    >
                       Rozpocznij kalkulację
-                    </button>
+                    </motion.button>
                   </div>
                 </>
               )}
@@ -128,9 +132,12 @@ const PriceListScreen = () => {
                       <option value="option2">Opcja 2</option>
                       <option value="option3">Opcja 3</option>
                     </select>
-                    <button className="cennikBtn mt-5">
+                    <motion.button
+                      className="cennikBtn mt-5"
+                      whileHover={{ translateY: 5 }}
+                    >
                       Rozpocznij kalkulację
-                    </button>
+                    </motion.button>
                   </div>
                 </>
               )}
@@ -147,9 +154,12 @@ const PriceListScreen = () => {
                       <option value="option2">Opcja 2</option>
                       <option value="option3">Opcja 3</option>
                     </select>
-                    <button className="cennikBtn mt-5">
+                    <motion.button
+                      className="cennikBtn mt-5"
+                      whileHover={{ translateY: 5 }}
+                    >
                       Rozpocznij kalkulację
-                    </button>
+                    </motion.button>
                   </div>
                 </>
               )}
@@ -166,9 +176,12 @@ const PriceListScreen = () => {
                       <option value="option2">Opcja 2</option>
                       <option value="option3">Opcja 3</option>
                     </select>
-                    <button className="cennikBtn mt-5">
+                    <motion.button
+                      className="cennikBtn mt-5"
+                      whileHover={{ translateY: 5 }}
+                    >
                       Rozpocznij kalkulację
-                    </button>
+                    </motion.button>
                   </div>
                 </>
               )}
