@@ -5,8 +5,28 @@ import style from "../team.module.css";
 import Carousel from "react-bootstrap/Carousel";
 import ExampleCarouselImage from "./carouselImageSlider";
 import "./imageslider.css";
+import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 const ImageSlider = () => {
+
+  const springUp: Variants = {
+    offscreen: {
+      y: 100,
+    },
+    onscreen: {
+      y: -100,
+      transition: {
+        type: "ease",
+        bounce: 1,
+        damping: 10,
+        stiffness: 200,
+        duration: 2,
+      },
+    },
+  };
+
+  
   return (
     <>
       <section className={style.imageSlider}>
@@ -89,21 +109,29 @@ const ImageSlider = () => {
             <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <img
+        <motion.img
           className={style.slideAnimateImg}
           src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FOwocni-Film.4c8c215f.png&w=640&q=75"
           alt=""
+          initial="offscreen"
+          whileInView="onscreen"
+          variants={springUp}
         />
         <div className={style.teamContent}>
           <h2>
             No więc, <span> jak to jest</span>
             współpracować z nami?
           </h2>
-          <p style={{textAlign: 'center', marginTop: '30px'}}>Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co odpowiedzieli:</p>
+          <p style={{ textAlign: "center", marginTop: "30px" }}>
+            Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co
+            odpowiedzieli:
+          </p>
         </div>
       </section>
     </>
   );
 };
+
+
 
 export default ImageSlider;

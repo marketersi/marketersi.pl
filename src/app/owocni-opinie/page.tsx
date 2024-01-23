@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./opinion.css";
 import Banner from "@/components/organisms/opinie/banner/Banner";
@@ -11,11 +12,14 @@ import GoogleReview from "@/components/organisms/opinie/google-review/GoogleRevi
 import References from "@/components/organisms/opinie/references/References";
 import Personally from "@/components/organisms/opinie/personally/Personally";
 import Experts from "@/components/organisms/opinie/expert/Experts";
+import OurClients from "@/components/organisms/strategia-marketingowa/OurClients";
+import './opinion.css'
 
 const CustomersOpinion = () => {
   return (
     <>
     <Banner />
+    <OurClients />
     <BrilliantJob />
     <Review />
     <Teams />
