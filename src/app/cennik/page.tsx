@@ -1,5 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import CardOne from "@/components/organisms/cennik/CardOne";
+import CardTwo from "@/components/organisms/cennik/CardTwo";
+import CardThree from "@/components/organisms/cennik/CardThree";
+import CardFour from "@/components/organisms/cennik/CardFour";
 import "./cennik.css";
 
 const PriceListScreen = () => {
@@ -93,83 +98,25 @@ const PriceListScreen = () => {
               )}
               {selectedOption == 1 && (
                 <>
-                  <div>
-                    <h2 className="card-heading">
-                      Dla jakiej firmy jest ta strona?
-                    </h2>
-                    <p className="card-subheading">Wybierz jedną z opcji.</p>
-                    <select className="selectInputStyle">
-                      <option value="option1">Opcja 1</option>
-                      <option value="option2">Opcja 2</option>
-                      <option value="option3">Opcja 3</option>
-                    </select>
-
-                    <button className="cennikBtn mt-5">
-                      Rozpocznij kalkulację
-                    </button>
-                  </div>
+                  <CardOne />
                 </>
               )}
 
               {selectedOption == 2 && (
                 <>
-                  <div>
-                    <h2 className="card-heading mb-3">
-                      Jaki cel stawiasz przed swoją firmą?
-                    </h2>
-                    <select className="selectInputStyle mb-4">
-                      <option value="option1">Opcja 1</option>
-                      <option value="option2">Opcja 2</option>
-                      <option value="option3">Opcja 3</option>
-                    </select>
-                    <h2 className="card-heading">Jak się reklamujesz?</h2>
-                    <select className="selectInputStyle">
-                      <option value="option1">Opcja 1</option>
-                      <option value="option2">Opcja 2</option>
-                      <option value="option3">Opcja 3</option>
-                    </select>
-                    <button className="cennikBtn mt-5">
-                      Rozpocznij kalkulację
-                    </button>
-                  </div>
+                  <CardTwo />
                 </>
               )}
 
               {selectedOption == 3 && (
                 <>
-                  <div>
-                    <h2 className="card-heading">
-                      Dla jakiej firmy jest ta strona?
-                    </h2>
-                    <p className="card-subheading">Wybierz jedną z opcji.</p>
-                    <select className="selectInputStyle">
-                      <option value="option1">Opcja 1</option>
-                      <option value="option2">Opcja 2</option>
-                      <option value="option3">Opcja 3</option>
-                    </select>
-                    <button className="cennikBtn mt-5">
-                      Rozpocznij kalkulację
-                    </button>
-                  </div>
+                  <CardThree />
                 </>
               )}
 
               {selectedOption == 4 && (
                 <>
-                  <div>
-                    <h2 className="card-heading">
-                      Dla jakiej firmy jest ta strona?
-                    </h2>
-                    <p className="card-subheading">Wybierz jedną z opcji.</p>
-                    <select className="selectInputStyle">
-                      <option value="option1">Opcja 1</option>
-                      <option value="option2">Opcja 2</option>
-                      <option value="option3">Opcja 3</option>
-                    </select>
-                    <button className="cennikBtn mt-5">
-                      Rozpocznij kalkulację
-                    </button>
-                  </div>
+                  <CardFour />
                 </>
               )}
             </div>
