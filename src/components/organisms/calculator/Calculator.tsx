@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 
 const Calculator = () => {
-  const [visitors, setVisitors] = useState(442);
-  const [averageOrderValue, setAverageOrderValue] = useState(192);
+  const [visitors, setVisitors] = useState(10);
+  const [averageOrderValue, setAverageOrderValue] = useState(1);
+  const [conversionIncrease1, setConversionIncrease1] = useState(0);
+  const [conversionIncrease5, setConversionIncrease5] = useState(0);
+
+  useEffect(() => {
+    // Calculate additional revenue for a 1% increase in conversion
+    const additionalRevenue1 = visitors * 0.01 * averageOrderValue;
+    setConversionIncrease1(additionalRevenue1);
+
+    // Calculate additional revenue for a 5% increase in conversion
+    const additionalRevenue5 = visitors * 0.05 * averageOrderValue;
+    setConversionIncrease5(additionalRevenue5);
+  }, [visitors, averageOrderValue]);
 
   const handleVisitorsChange = (event) => {
     let newValue = parseInt(event.target.value, 10);
@@ -86,11 +98,11 @@ const Calculator = () => {
             <p>wzrost konwersji o 1%</p>
             <Row>
               <Col className="text-end">
-                <h3>1.925zł</h3>
+                <h3>{conversionIncrease1.toLocaleString()}zł</h3>
                 <p>Miesięcznie</p>
               </Col>
               <Col className="text-start">
-                <h3>23.109zł</h3>
+                <h3>{(conversionIncrease1 * 12).toLocaleString()}zł</h3>
                 <p>Rocznie</p>
               </Col>
             </Row>
@@ -100,11 +112,11 @@ const Calculator = () => {
             <p>wzrost konwersji o 5%</p>
             <Row>
               <Col className="text-end">
-                <h3>9.628zł</h3>
+                <h3>{conversionIncrease5.toLocaleString()}zł</h3>
                 <p>Miesięcznie</p>
               </Col>
               <Col className="text-start">
-                <h3>115.545zł</h3>
+                <h3>{(conversionIncrease5 * 12).toLocaleString()}zł</h3>
                 <p>Rocznie</p>
               </Col>
             </Row>
