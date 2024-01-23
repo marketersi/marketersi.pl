@@ -9,8 +9,8 @@ const ZamowHero = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const handleNextQuestion = () => {
-    // Assuming we have 13 questions
-    const totalQuestions = 13;
+    // Assuming we have 14 questions
+    const totalQuestions = 14;
     setProgress((prevProgress) => prevProgress + 100 / totalQuestions);
     setCurrentQuestion((prevQuestion) => prevQuestion + 1);
   };

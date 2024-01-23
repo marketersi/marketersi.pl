@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Question3 = ({ handleNext }) => {
   return (
     <div className="zh_question">
-      <h2>Jak masz na imię? 3</h2>
+      <h2>Jak nazywa się Twoja firma?</h2>
       <input />
       <div className="zh_next_btn_container">
         <motion.button

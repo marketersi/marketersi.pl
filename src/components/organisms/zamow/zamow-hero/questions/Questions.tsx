@@ -1,8 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./questions.css";
-
-// Import all your question components
 import Question1 from "./Question1";
 import Question2 from "./Question2";
 import Question3 from "./Question3";
@@ -16,6 +13,7 @@ import Question10 from "./Question10";
 import Question11 from "./Question11";
 import Question12 from "./Question12";
 import Question13 from "./Question13";
+import Question14 from "./Question14";
 
 const Questions = ({ handleNext, currentQuestion }) => {
   let questionComponent;
@@ -60,8 +58,11 @@ const Questions = ({ handleNext, currentQuestion }) => {
     case 13:
       questionComponent = <Question13 handleNext={handleNext} />;
       break;
+    case 14:
+      questionComponent = <Question14 />;
+      break;
     default:
-      questionComponent = <div className="zh_question">No more questions</div>;
+      return;
   }
 
   return <>{questionComponent}</>;

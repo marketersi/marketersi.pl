@@ -4,15 +4,18 @@ import { motion } from "framer-motion";
 const Question6 = ({ handleNext }) => {
   return (
     <div className="zh_question">
-      <h2>Jak masz na imię? 6</h2>
-      <input />
+      <h2>Dzięki</h2>
+      <p>
+        Mamy jeszcze kilka ostatnich pytań, które pomogą nam dobrać odpowiednią
+        strategię dla Ciebie.
+      </p>
       <div className="zh_next_btn_container">
         <motion.button
           onClick={handleNext}
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-          OK
+          Okej, lecimy
         </motion.button>
       </div>
     </div>
