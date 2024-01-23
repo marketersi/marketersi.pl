@@ -4,7 +4,7 @@ import style from "../main.module.css";
 
 const Order = () => {
   return (
-    <div>
+    <div className={style.pinkBG}>
       <Container>
         <div className={style.order}>
           <div className={style.orderContent}>

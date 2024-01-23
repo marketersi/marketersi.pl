@@ -582,3 +582,26 @@
   right: 0;
   bottom: 0;
 }
+.OurClients_Slide_ButtonNext {
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+  font-size: 25.6px;
+  font-weight: 600;
+  line-height: 34.432px;
+  text-align: center;
+  justify-content: end;
+  padding-bottom: 40px;
+  padding-inline: 50px;
+  margin: 50px 0 0;
+}
+/* -------------- */
+.review {
+  background: white;
+  padding: 100px 0;
+}
+.brandSlide .OurClients_Slide_ButtonNext {
+  margin: -140px 0 0;
+}

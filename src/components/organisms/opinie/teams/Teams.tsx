@@ -75,7 +75,7 @@ const Teams = () => {
             </Row>
           </div>
           <motion.img
-            style={{ margin: "-160px 0 0 -160px", width: "450px" }}
+            style={{ margin: "-500px 0 0 -160px", width: "450px" }}
             src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbottom.eef04a74.png&w=750&q=75"
             alt=""
             initial="offscreen"

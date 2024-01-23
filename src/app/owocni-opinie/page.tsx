@@ -14,6 +14,7 @@ import Personally from "@/components/organisms/opinie/personally/Personally";
 import Experts from "@/components/organisms/opinie/expert/Experts";
 import OurClients from "@/components/organisms/strategia-marketingowa/OurClients";
 import './opinion.css'
+import Order from "@/components/organisms/main/order/Order";
 
 const CustomersOpinion = () => {
   return (
@@ -21,7 +22,9 @@ const CustomersOpinion = () => {
     <Banner />
     <OurClients />
     <BrilliantJob />
+    <div className='review'>
     <Review />
+     </div>
     <Teams />
     <Brands />
     <Rating />
@@ -31,7 +34,7 @@ const CustomersOpinion = () => {
     <References />
     <Personally />
     <Experts />
-    {/* TO ADD: Review section (already created) */}
+    <Order />
     </>
   );
 };
