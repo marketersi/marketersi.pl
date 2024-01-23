@@ -110,6 +110,15 @@
 }
 
 /* ================================================== hard Result================================= */
+.orderContainer {
+  padding: 100px;
+  background: linear-gradient(
+    173deg,
+    rgba(227, 227, 227, 1) 53%,
+    rgba(251, 177, 182, 1) 100%
+  );
+}
+
 .order {
   border-radius: 30px;
   display: grid;

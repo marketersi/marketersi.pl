@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Order = () => {
   return (
-    <div>
+    <div className={style.orderContainer}>
       <Container>
         <div className={style.order}>
           <div className={style.orderContent}>
