@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import style from "../main.module.css";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Order = () => {
   return (
-    <div>
+    <div className={style.orderContainer}>
       <Container>
         <div className={style.order}>
           <div className={style.orderContent}>
@@ -15,7 +18,12 @@ const Order = () => {
               Usprawnij to na stronie firmy <br /> i przygotuj więcej miejsca na
               nowych klientów.
             </p>
-            <button>Zamów badanie teraz</button>
+
+            <Link href="/zamow">
+              <motion.button whileHover={{ translateY: 5 }}>
+                Zamów badanie teraz
+              </motion.button>
+            </Link>
           </div>
           <div className={style.orderImg}>
             <Image
@@ -31,36 +39,36 @@ const Order = () => {
               </p>
               <div className={style.rating}>
                 <div className={style.star}>
-                <Image
-              src="/assets/images/star.avif"
-              alt="My Image"
-              width="auto"
-              height="auto"
-            />
-                <Image
-              src="/assets/images/star.avif"
-              alt="My Image"
-              width="auto"
-              height="auto"
-            />
-                <Image
-              src="/assets/images/star.avif"
-              alt="My Image"
-              width="auto"
-              height="auto"
-            />
-                <Image
-              src="/assets/images/star.avif"
-              alt="My Image"
-              width="auto"
-              height="auto"
-            />
-                <Image
-              src="/assets/images/star.avif"
-              alt="My Image"
-              width="auto"
-              height="auto"
-            />
+                  <Image
+                    src="/assets/images/star.avif"
+                    alt="My Image"
+                    width="auto"
+                    height="auto"
+                  />
+                  <Image
+                    src="/assets/images/star.avif"
+                    alt="My Image"
+                    width="auto"
+                    height="auto"
+                  />
+                  <Image
+                    src="/assets/images/star.avif"
+                    alt="My Image"
+                    width="auto"
+                    height="auto"
+                  />
+                  <Image
+                    src="/assets/images/star.avif"
+                    alt="My Image"
+                    width="auto"
+                    height="auto"
+                  />
+                  <Image
+                    src="/assets/images/star.avif"
+                    alt="My Image"
+                    width="auto"
+                    height="auto"
+                  />
                 </div>
                 <div className={style.ratingNumber}>
                   <p>
