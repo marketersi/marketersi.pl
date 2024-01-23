@@ -2,8 +2,11 @@
 import React from "react";
 import "./hero.css";
 import ReactPlayer from "react-player";
+import { useSelector } from "react-redux";
 
 const Hero = () => {
+  const { isLoading, screenData } = useSelector((state) => state.facts);
+
   return (
     <section className="facts_hero_sec">
       <div className="facts_hero_container">

@@ -3,7 +3,7 @@
   padding: 50px 0 168px;
   /* position: relative; */
   overflow: hidden;
-    max-height: 685px;
+  max-height: 685px;
 }
 .hero h1 {
   text-align: center;
@@ -100,7 +100,7 @@
   width: 450px;
 }
 .heroImg4 {
- margin: -530px 0 0 1060px;
+  margin: -530px 0 0 1060px;
   width: 500px;
 }
 
@@ -111,7 +111,7 @@
   z-index: -1;
   top: 0;
 }
-.orangeBG img{
+.orangeBG img {
   margin: -50px 0 0 570px;
   opacity: 0.5;
 }
