@@ -92,7 +92,7 @@ export default function Analysis() {
             />
           </div>
           <div className="Analysis1_Grid">
-            <div class="Analysis1_GridItem1">
+            <div className="Analysis1_GridItem1">
               <div>
                 Analizujemy Twoją obecną lub potencjalną grupę odbiorców przez
                 pryzmat Twojej oferty w celu ustalenia, gdzie leżą Twoje mocne
@@ -104,7 +104,7 @@ export default function Analysis() {
                 cele.
               </div>
             </div>
-            <div class="Analysis1_GridItem2">
+            <div className="Analysis1_GridItem2">
               <div>
                 Oceniamy również Twoje rzeczywiste i postrzegane słabości.
               </div>
@@ -115,7 +115,7 @@ export default function Analysis() {
                 wpływu słabości na sprzedaż.
               </div>
             </div>
-            <div class="Analysis1_GridItem3">
+            <div className="Analysis1_GridItem3">
               <div>
                 Oceniamy jakie możliwości posiadasz na dzień dzisiejszy.
               </div>
@@ -124,7 +124,7 @@ export default function Analysis() {
                 czasie.
               </div>
             </div>
-            <div class="Analysis1_GridItem4">
+            <div className="Analysis1_GridItem4">
               <div>
                 Wskazujemy krytyczne zagrożenia, które mogą zagrozić rozwojowi
                 Twojej firmy.

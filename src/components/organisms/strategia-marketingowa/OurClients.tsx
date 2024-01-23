@@ -60,8 +60,8 @@ const SlideOne = () => {
         </div>
         <div className="OurClients_Slide_Button">
           <div className="OurClients_Slide_Button_Text">Następna</div>
-          <div class="ArrowButton" onMouseEnter={handleNext}>
-            <span class="ArrowButton_Arrow">&gt;</span>
+          <div className="ArrowButton" onMouseEnter={handleNext}>
+            <span className="ArrowButton_Arrow">&gt;</span>
           </div>
         </div>
       </div>
@@ -125,8 +125,8 @@ const SlideTwo = () => {
         </div>
         <div className="OurClients_Slide_Button">
           <div className="OurClients_Slide_Button_Text">Następna</div>
-          <div class="ArrowButton" onMouseEnter={handleNext}>
-            <span class="ArrowButton_Arrow">&gt;</span>
+          <div className="ArrowButton" onMouseEnter={handleNext}>
+            <span className="ArrowButton_Arrow">&gt;</span>
           </div>
         </div>
       </div>
@@ -162,6 +162,7 @@ const SlideThree = () => {
                   src={
                     "/assets/images/strategiamarketingowa/OurClientsVideo3.avif"
                   }
+                  alt="OurClientsVideo3"
                   width={241 * 0.5}
                   height={34 * 0.5}
                   style={{ marginRight: "70px" }}
@@ -190,8 +191,8 @@ const SlideThree = () => {
         </div>
         <div className="OurClients_Slide_Button">
           <div className="OurClients_Slide_Button_Text">Następna</div>
-          <div class="ArrowButton" onMouseEnter={handleNext}>
-            <span class="ArrowButton_Arrow">&gt;</span>
+          <div className="ArrowButton" onMouseEnter={handleNext}>
+            <span className="ArrowButton_Arrow">&gt;</span>
           </div>
         </div>
       </div>
