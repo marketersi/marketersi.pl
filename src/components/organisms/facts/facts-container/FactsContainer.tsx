@@ -11,7 +11,7 @@ const FactsContainer = () => {
   return (
     <section className="fc_sec">
       <Row>
-        {FACTS_DATA.map((e, i) => {
+        {screenData?.factoCard?.map((e, i) => {
           return (
             <Col key={e.id} md={6}>
               <FactsCard {...e} />

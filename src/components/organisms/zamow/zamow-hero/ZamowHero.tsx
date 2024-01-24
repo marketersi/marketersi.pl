@@ -6,9 +6,13 @@ import Questions from "./questions/Questions";
 
 const ZamowHero = () => {
   const [progress, setProgress] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
-  const handleClick = () => {
-    setProgress((prevProgress) => prevProgress + 20);
+  const handleNextQuestion = () => {
+    // Assuming we have 14 questions
+    const totalQuestions = 14;
+    setProgress((prevProgress) => prevProgress + 100 / totalQuestions);
+    setCurrentQuestion((prevQuestion) => prevQuestion + 1);
   };
 
   return (
@@ -17,7 +21,10 @@ const ZamowHero = () => {
         <Col className="text-center zamow-hero">
           {progress ? (
             <>
-              <Questions handleNext={handleClick} />
+              <Questions
+                handleNext={handleNextQuestion}
+                currentQuestion={currentQuestion}
+              />
               {progress && (
                 <div className="progress-bar-container">
                   <motion.div
@@ -50,7 +57,7 @@ const ZamowHero = () => {
                   className="zamow-hero-btn"
                   whileHover={{ scale: 0.97 }}
                   whileTap={{ scale: 0.9 }}
-                  onClick={handleClick}
+                  onClick={handleNextQuestion}
                 >
                   Rozpocznij.
                 </motion.button>
