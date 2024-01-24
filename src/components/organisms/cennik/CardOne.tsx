@@ -11,15 +11,26 @@ const CardOne = () => {
   ];
 
   const DropdownIndicator = (props) => {
+    const { selectProps } = props;
+    const { value } = selectProps;
+
     return (
-      <components.DropdownIndicator {...props}>
-        <Image
-          src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
-          alt="arrow"
-          width={20}
-          height={20}
-        />
-      </components.DropdownIndicator>
+      <>
+        <components.DropdownIndicator {...props}>
+          {value ? (
+            <span role="img" aria-label="selected-emoji">
+              🆗
+            </span>
+          ) : (
+            <Image
+              src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+              alt="arrow"
+              width={20}
+              height={20}
+            />
+          )}
+        </components.DropdownIndicator>
+      </>
     );
   };
 
