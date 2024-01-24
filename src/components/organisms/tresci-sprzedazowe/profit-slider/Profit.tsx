@@ -5,11 +5,11 @@ const Profit = () => {
   return (
     <div>
       <section className="thematic-nr-section thematic-bg-section copywriter-ending-white-bg copywriter-standard-pt-40">
-        <img
+        {/* <img
           src="https://cdn.owocni.pl/img/copywriting-main-img/bg-black-top.png"
           alt="Image"
           className="white-bg"
-        />
+        /> */}
       </section>
       <section className="names-thematic-section-black names-thematic-section-black-fix copywriter-ending-padding copywriter-standard-pt-40">
         <div className="copywriter-ending-big text-center">
