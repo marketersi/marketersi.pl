@@ -1,4 +1,5 @@
 "use client";
+import Loader from "@/components/organisms/animation/Loader";
 import FactsContainer from "@/components/organisms/facts/facts-container/FactsContainer";
 import Hero from "@/components/organisms/facts/hero/Hero";
 import { FETCH_FACTS_SCREEN_DATA } from "@/redux/faktow/factActions";
@@ -19,8 +20,14 @@ const FactsOfPsychology = () => {
 
   return (
     <>
-      <Hero />
-      <FactsContainer />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <Hero />
+          <FactsContainer />
+        </>
+      )}
     </>
   );
 };
