@@ -56,6 +56,7 @@ const Calculator = () => {
                   value={visitors}
                   onChange={handleVisitorsChange}
                   className="custom-range"
+                  style={{ "--value": visitors }}
                 />
               </Col>
               <Col>
@@ -82,6 +83,7 @@ const Calculator = () => {
                   value={averageOrderValue}
                   onChange={handleOrderValueChange}
                   className="custom-range"
+                  style={{ "--value": averageOrderValue }}
                 />
               </Col>
               <Col>
