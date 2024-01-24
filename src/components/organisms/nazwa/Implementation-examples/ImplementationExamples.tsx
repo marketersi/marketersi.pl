@@ -46,7 +46,7 @@ const ImplementationExamples = () => {
       <img
         src="https://cdn.owocni.pl/img/single-projektowanie-nazw/luk-black.png"
         className="projects-bow-1 names-bow-bgcolor-purple"
-        style={{ marginBottom: "-2px" }}
+        style={{ marginTop: "-127px" }}
         alt=""
       ></img>
 
