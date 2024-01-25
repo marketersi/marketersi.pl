@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Select, { components } from "react-select";
 import Image from "next/image";
+import Modal from "react-modal";
+import CennikModal from "../modals/CennikModal";
 
 const CardOne = () => {
   const options = [
-    { value: "chocolate", label: "Chocolate" },
-    { value: "strawberry", label: "Strawberry" },
-    { value: "vanilla", label: "Vanilla" },
+    {
+      value: "Rozwijamy biznes i zmieniamy stronę.",
+      label: "Rozwijamy biznes i zmieniamy stronę.",
+    },
+    {
+      value: "To nowa strona, ale firma jest dojrzała.",
+      label: "To nowa strona, ale firma jest dojrzała.",
+    },
+    {
+      value: "To nowa strona i mój pierwszy biznes.",
+      label: "To nowa strona i mój pierwszy biznes.",
+    },
+    {
+      value: "Bez planu. Pytam z ciekawości.",
+      label: "Bez planu. Pytam z ciekawości.",
+    },
   ];
+
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const DropdownIndicator = (props) => {
     return (
@@ -23,6 +41,20 @@ const CardOne = () => {
     );
   };
 
+  const handleSelectChange = (selectedOption) => {
+    setSelectedOption(selectedOption);
+    if (
+      selectedOption &&
+      selectedOption.value === options[options.length - 1].value
+    ) {
+      setIsModalOpen(true);
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
@@ -33,6 +65,7 @@ const CardOne = () => {
           placeholder="Wybierz"
           isSearchable={false}
           components={{ DropdownIndicator }}
+          onChange={handleSelectChange}
           styles={{
             clearIndicator: (baseStyles, state) => ({
               ...baseStyles,
@@ -51,9 +84,20 @@ const CardOne = () => {
           }}
         />
       </div>
+
+      {selectedOption && selectedOption.value === options[0].value && (
+        <div className="additional-input-container">
+          <h2>Podaj adres strony:</h2>
+          <input type="text" />
+        </div>
+      )}
+
       <motion.button className="cennikBtn mt-5" whileHover={{ translateY: 5 }}>
         Rozpocznij kalkulację
       </motion.button>
+
+      {/* Modal */}
+      <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
     </div>
   );
 };
