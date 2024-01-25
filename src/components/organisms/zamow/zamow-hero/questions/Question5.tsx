@@ -3,16 +3,18 @@ import { motion } from "framer-motion";
 
 const Question5 = ({ handleNext }) => {
   return (
-    <div className="zh_question">
+    <div className="zh_question question_container">
       <h2>Jakiej pomocy szukasz?</h2>
-      <p>Może to być tak ogólne jak: "Pomocy w budowaniu marki"</p>
-      <ul>
-        <li>"Reklamy Facebook nie przynoszą rezultatów"</li>
-        <li>"Potrzebuję więcej zapytań / wyższej sprzedaży. "</li>
-        <li>etc</li>
-      </ul>
-      <input />
-      <p>Shift + Enter aby przejść do następnej linii</p>
+      <p className="question_description">Może to być tak ogólne jak: "Pomocy w budowaniu marki"</p>
+        <div className="list_p">
+        <p>- "Reklamy Facebook nie przynoszą rezultatów"</p>
+        <p>- "Potrzebuję więcej zapytań / wyższej sprzedaży. "</p>
+        <p>- etc</p>
+        </div>
+      <textarea rows={1}
+      placeholder="Wpisz tu swoją odpowiedź"
+    />
+      <p className="input_bottom_content">Shift + Enter aby przejść do następnej linii</p>
       <div className="zh_next_btn_container">
         <motion.button
           onClick={handleNext}
@@ -21,6 +23,7 @@ const Question5 = ({ handleNext }) => {
         >
           OK
         </motion.button>
+        <p>Wciśnij Enter</p>
       </div>
     </div>
   );

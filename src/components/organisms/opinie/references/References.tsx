@@ -2,8 +2,61 @@ import React from "react";
 import style from "../opinie.module.css";
 import { Row, Col } from "react-bootstrap";
 import ReferenceCard from "./ReferenceCard";
+import {
+  ClientCarousel,
+  CarouselContext,
+} from "../../strategia-marketingowa/ClientCarouselNext";
+import { useContext } from "react";
 
-const References = () => {
+const SlideOne = () => {
+  const { handleNext } = useContext(CarouselContext);
+  return (
+    <>
+       <div className={style.referenceCardSec}>
+            <Row>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+            </Row>
+          </div>
+          <div className={style.referenceCardSec}>
+            <Row>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+            </Row>
+          </div>
+    </>
+  );
+};
+const SlideTwo = () => {
+  const { handleNext } = useContext(CarouselContext);
+  return (
+    <>
+       <div className={style.referenceCardSec}>
+            <Row>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+            </Row>
+          </div>
+          <div className={style.referenceCardSec}>
+            <Row>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+              <Col sm={4}><ReferenceCard /></Col>
+            </Row>
+          </div>
+    </>
+  );
+};
+
+
+
+export default function References(){
+
+  const slides = [SlideOne, SlideTwo];
+  const { handleNext } = useContext(CarouselContext);
   return (
     <>
       <div className={style.google}>
@@ -41,24 +94,10 @@ const References = () => {
               </div>
             </Col>
           </Row>
-          <div className={style.referenceCardSec}>
-            <Row>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-            </Row>
-          </div>
-          <div className={style.referenceCardSec}>
-            <Row>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-            </Row>
-          </div>
+          <ClientCarousel slides={slides} options={{ loop: true }} />
         </div>
       </div>
     </>
   );
 };
 
-export default References;

@@ -14,6 +14,7 @@ const ClientCarousel = ({ slides, options }) => {
   const handlePrev = () => {
     embla.scrollPrev();
   };
+  
 
   return (
     <CarouselContext.Provider value={{ handleNext, handlePrev }}>

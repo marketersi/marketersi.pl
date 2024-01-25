@@ -2,9 +2,7 @@
 
 import React from "react";
 import "./sales.css";
-// import { Form } from "react-bootstrap";
 import Image from "next/image";
-// import Faq from "@/components/organisms/tresci-sprzedazowe/faq/Faq";
 import Form from "@/components/organisms/tresci-sprzedazowe/form/Form";
 import OptionBox2 from "@/components/organisms/tresci-sprzedazowe/options-box2/OptionBox2";
 import Concept366 from "@/components/organisms/tresci-sprzedazowe/366-concept/Concept366";
@@ -17,8 +15,15 @@ import Orange from "@/components/organisms/tresci-sprzedazowe/orange/Orange";
 import Section5 from "@/components/organisms/tresci-sprzedazowe/section5/Section5";
 import BusinessTools from "@/components/organisms/tresci-sprzedazowe/business_tools/BusinessTools";
 import SalesBanner from "@/components/organisms/tresci-sprzedazowe/sales_banner/SalesBanner";
+import FAQ from "@/components/organisms/tresci-sprzedazowe/faq/Faq";
+import items from "@/components/organisms/tresci-sprzedazowe/faq/Data";
+import Guarantee from "@/components/organisms/tresci-sprzedazowe/guarantee/Guarantee";
+import PriceList from "@/components/organisms/tresci-sprzedazowe/price-list/PriceList";
+
 
 const page = () => {
+
+  
   return (
     <>
 
@@ -45,6 +50,25 @@ const page = () => {
       <OptionBox2 />
       <BusinessTools />
       <Section5 />
+      <FAQ items={items}/>
+      <Guarantee />
+      <PriceList />
+      <Form />
+
+
+      <div
+          className="copywriter-custom-header-2 text-center copywriter-cmargin-4 menu-target"
+          id="sec2"
+        >
+          Wybrane fragmenty <br />
+          naszych realizacji
+        </div>
+        <div className="copywriter-custom-subheader-2 text-center">
+          Oferty handlowe, strony sprzedażowe, maile. <br />
+          Sprawdź, jakiej jakości możesz oczekiwać <br />
+          po współpracy znami.
+        </div>
+
       <Orange />
       <Motus />
       <OptionBox2 />
@@ -55,6 +79,7 @@ const page = () => {
       <OptionBox2 />
       <InkBook />
       <Profit />
+      
 
       <section className="black-sec-form">
         <div className="copywriter-ending-1 text-center">

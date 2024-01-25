@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Question6 = ({ handleNext }) => {
   return (
-    <div className="zh_question">
+    <div className="zh_question Thanks">
       <h2>Dzięki</h2>
       <p>
         Mamy jeszcze kilka ostatnich pytań, które pomogą nam dobrać odpowiednią
@@ -17,6 +17,7 @@ const Question6 = ({ handleNext }) => {
         >
           Okej, lecimy
         </motion.button>
+        <p>Wciśnij Enter</p>
       </div>
     </div>
   );

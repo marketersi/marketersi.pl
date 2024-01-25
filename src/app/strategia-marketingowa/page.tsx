@@ -84,6 +84,7 @@ const StrategiaMarketingowa = () => {
 
         {/* 20. Accordion */}
         <YesAccordion />
+        
       </div>
     </>
   );

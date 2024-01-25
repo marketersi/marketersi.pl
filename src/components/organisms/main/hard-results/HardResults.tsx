@@ -16,6 +16,7 @@ const Entrepreneur = () => {
               jest prosty
             </h2>
             <h3 className={style.gradientBG}>- dostarczyć twarde rezultaty</h3>
+            <img style={{margin: '0 0 50px'}} src="/assets/images/name.svg" alt="" />
             <p>
               Stworzyć skuteczne kampanie reklamowe i pokazać je właściwym
               ludziom we właściwym czasie. Proste?
