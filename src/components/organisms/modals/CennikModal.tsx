@@ -16,17 +16,17 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
           color: "white",
           borderRadius: "30px",
           border: "none",
-          width: "50%",
-          margin: "0 auto",
-          maxHeight: "350px",
-          padding: " 70px 50px",
+          width: "40%",
+          margin: "50px auto",
+          maxHeight: "450px",
+          padding: " 90px 50px",
           backgroundColor: "rgb(12 12 12)",
           overflow: "hidden",
         },
       }}
     >
       <div className="cennik-modal-content">
-        <h2>Cennik jest indywidualny.</h2>
+        <h2 className="cennik-modal-title">Cennik jest indywidualny.</h2>
         <p>
           Potrzebujemy wielu szczegółowych odpowiedzi, aby sporządzić precyzyjny
           cennik projektu.
@@ -35,8 +35,16 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
           Jeśli Twoje plany nie są jeszcze precyzyjne, to ustalenie ceny nie
           będzie możliwe.
         </p>
-        <p>Wracam. Strona główna Rozumiem. Chcę kontynuować.</p>
+        <div>
+          <button className="cennik-modal-btn">
+            Wracam. <br /> Strona główna
+          </button>
+          <button className="cennik-modal-btn">
+            Rozumiem. <br /> Chcę kontynuować.
+          </button>
+        </div>
       </div>
+
       <button onClick={onRequestClose} className="cennik-modal-close">
         x
       </button>
