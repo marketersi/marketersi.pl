@@ -1,6 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
-import "./cennik-modal-content.css";
+import "./cennik-modal.css";
 
 const CennikModal = ({ isOpen, onRequestClose }) => {
   return (
@@ -14,13 +14,14 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
         },
         content: {
           color: "white",
-          backgroundColor: "black",
           borderRadius: "30px",
-          padding: "20px",
           border: "none",
           width: "50%",
           margin: "0 auto",
-          height: "auto",
+          maxHeight: "350px",
+          padding: " 70px 50px",
+          backgroundColor: "rgb(12 12 12)",
+          overflow: "hidden",
         },
       }}
     >
@@ -36,7 +37,9 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
         </p>
         <p>Wracam. Strona główna Rozumiem. Chcę kontynuować.</p>
       </div>
-      <button onClick={onRequestClose}>Close Modal</button>
+      <button onClick={onRequestClose} className="cennik-modal-close">
+        x
+      </button>
     </Modal>
   );
 };
