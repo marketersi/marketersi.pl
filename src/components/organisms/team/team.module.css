@@ -208,15 +208,18 @@
 }
 
 /* ==========================creative===================== */
+.creative {
+    position: relative;
+}
 .creative h2{
     font-size: 80px;
 }
 .CreativeOnar{
-    margin: -560px 0 0 270px;
-    width: 85%;
+    margin: -550px 0 0 270px;
+    width: 100%;
 }
 .CreativeHeart{
-    margin: -1200px 0 0 -260px;
+    margin: -1200px 0 0 -150px;
     width: 400px;
 }
 
@@ -253,6 +256,12 @@ width: 100%;
 .carRow{
     padding: 50px 100px;
 }
+.creative .orangeBG{
+    position: relative;
+    z-index: -6;
+    margin: -150px 0 0 -100px;
+}
+
 /* ===================Culture==================== */
 .cultureCard{
     box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15),0px 0px 0px 0px #fff,2px 2px 2px 0px #fff inset,-2px -2px 2px 0px #c7c7c7 inset;
@@ -283,6 +292,7 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
 .cultureImg{
     margin: -600px 0 0 -160px;
 }
+
 /* =======================Good Time===================== */
 .goodHeadingMain{
     margin: 100px 0 70px;

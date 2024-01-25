@@ -5,7 +5,9 @@ const Question3 = ({ handleNext }) => {
   return (
     <div className="zh_question">
       <h2>Jak nazywa się Twoja firma?</h2>
-      <input />
+      <textarea rows={1}
+      placeholder="Wpisz tu swoją odpowiedź"
+    />
       <div className="zh_next_btn_container">
         <motion.button
           onClick={handleNext}
@@ -14,6 +16,7 @@ const Question3 = ({ handleNext }) => {
         >
           OK
         </motion.button>
+        <p>Wciśnij Enter</p>
       </div>
     </div>
   );

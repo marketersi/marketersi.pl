@@ -2,8 +2,78 @@ import React from "react";
 import style from "../opinie.module.css";
 import { Row, Col } from "react-bootstrap";
 import GoogleCard from "./GoogleCard";
+import {
+  ClientCarousel,
+  CarouselContext,
+} from "../../strategia-marketingowa/ClientCarouselNext";
+import { useContext } from "react";
 
-const GoogleReview = () => {
+const SlideOne = () => {
+  const { handleNext } = useContext(CarouselContext);
+  return (
+    <>
+      <div className={style.googleReview}>
+        <Row>
+          <Col sm={8}>
+            <img
+              src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75"
+              alt=""
+            />
+          </Col>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+        </Row>
+      </div>
+    </>
+  );
+};
+const SlideTwo = () => {
+  const { handleNext } = useContext(CarouselContext);
+  return (
+    <>
+      <div className={style.googleReview}>
+        <Row>
+          <Col sm={8}>
+            <img
+              src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75"
+              alt=""
+            />
+          </Col>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+          <Col sm={4}>
+            <GoogleCard />
+          </Col>
+        </Row>
+      </div>
+    </>
+  );
+};
+
+export default function GoogleReview() {
+  const slides = [SlideOne, SlideTwo];
+  const { handleNext } = useContext(CarouselContext);
   return (
     <>
       <div className={style.google}>
@@ -21,42 +91,18 @@ const GoogleReview = () => {
                   </div>
                 </li>
                 <li className={style.googleHover}>
-                    <p>Najnowsze</p>
-                    <div className={style.hoverMenu}> 
-                        <p>
-                        Najwyżej oceniane
-                        </p>
-                        <p>Najniżej oceniane</p>
-                    </div>
+                  <p>Najnowsze</p>
+                  <div className={style.hoverMenu}>
+                    <p>Najwyżej oceniane</p>
+                    <p>Najniżej oceniane</p>
+                  </div>
                 </li>
               </ul>
             </div>
-            <div className={style.googleReview}>
-                <Row>
-                    <Col sm={8}>
-                        <img src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75" alt="" />
-                    </Col>
-                    <Col sm={4}>
-                    <GoogleCard />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={4}>
-                        <GoogleCard />
-                    </Col>
-                    <Col sm={4}>
-                        <GoogleCard />
-                    </Col>
-                    <Col sm={4}>
-                        <GoogleCard />
-                    </Col>
-                </Row>
-            </div>
+            <ClientCarousel slides={slides} options={{ loop: true }} />
           </div>
         </div>
       </div>
     </>
   );
-};
-
-export default GoogleReview;
+}

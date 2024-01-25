@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const Question4 = ({ handleNext }) => {
   return (
-    <div className="zh_question">
+    <div className="zh_question question_container">
       <h2>
-        asd, zanim zdecydujesz się kontynuować, prosimy pamiętaj o tym, że:
+        <span>ftghjk,</span> zanim zdecydujesz się kontynuować, <br /> prosimy pamiętaj o tym, że:
       </h2>
 
       <p>
@@ -25,6 +25,7 @@ const Question4 = ({ handleNext }) => {
         >
           Wporządku. Rozumiem i chcę kontynuować.
         </motion.button>
+        <p>Wciśnij Enter</p>
       </div>
     </div>
   );
