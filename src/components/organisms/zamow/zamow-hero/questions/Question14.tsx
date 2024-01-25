@@ -1,57 +1,61 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Col, Row } from "react-bootstrap";
 
 const Question14 = () => {
   return (
-    <div className="zh_question">
+    <>
+    <div className="question_14">
       <h2>Mamy to!</h2>
       <p>
         Zapoznamy się z Twoją sprawą i odezwiemy się. Wierzymy, że będziemy
         dobrym partnerem dla sytuacji w której znajduje się Twoja firma
       </p>
-      <p>
-        Jeśli tak. Zarezerwujemy dla Ciebie godzinę pracy wysokiej klasy
-        specjalisty.
-        <br /> Jeśli nie. Wyślemy Ci wartościowe materiały do realizacji we
-        własnym zakresie.
-      </p>
-
+      
+       <h6> <span>Jeśli tak.</span> Zarezerwujemy dla Ciebie godzinę pracy wysokiej klasy
+        specjalisty.</h6>
+        <h6> <span>Jeśli nie.</span> Wyślemy Ci wartościowe materiały do realizacji we
+        własnym zakresie.</h6>
+    </div>
+    <div className="marketing_book">
+    <Row>
+    <Col sm={6}>
+      <img
+        src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMarketing-cyfrowy.c1c3e39a.jpg&w=750&q=75"
+        alt=""
+      />
+    </Col>
+    <Col>
+      <h3>
+        W ramach podziękowań mamy dla Ciebie przewodnik pełen
+        najefektywniejszych strategii reklamowych dla firm.
+      </h3>
       <div>
-        <div>
-          <img
-            src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMarketing-cyfrowy.c1c3e39a.jpg&w=750&q=75"
-            alt=""
-          />
+        <div className="zh_next_btn_container">
+          <motion.button
+            className="zh_next_btn"
+            whileHover={{ translateY: 5 }}
+          >
+            Pobierz teraz
+          </motion.button>
+          <Link href="/">
+            <motion.button
+              className="zh_preview_btn"
+              whileHover={{ translateY: 5 }}
+            >
+              Poznaj Owocnych
+            </motion.button>
+          </Link>
         </div>
-        <div>
-          <h3>
-            W ramach podziękowań mamy dla Ciebie przewodnik pełen
-            najefektywniejszych strategii reklamowych dla firm.
-          </h3>
-          <div>
-            <div className="zh_next_btn_container">
-              <motion.button
-                className="zh_next_btn"
-                whileHover={{ translateY: 5 }}
-              >
-                Pobierz teraz
-              </motion.button>
-            </div>
-            <div className="zh_next_btn_container">
-              <Link href="/">
-                <motion.button
-                  className="zh_next_btn"
-                  whileHover={{ translateY: 5 }}
-                >
-                  Poznaj Owocnych
-                </motion.button>
-              </Link>
-            </div>
-          </div>
+        <div className="zh_next_btn_container">
+          
         </div>
       </div>
+    </Col>
+  </Row>
     </div>
+    </>
   );
 };
 
