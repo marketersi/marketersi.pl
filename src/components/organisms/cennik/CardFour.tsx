@@ -21,16 +21,16 @@ const CardFour = () => {
             <Image
               src={"/assets/images/strategiamarketingowa/dropdownok.png"}
               alt="arrow"
-              width={20}
-              height={20}
+              width={30}
+              height={30}
             />
           </span>
         ) : (
           <Image
             src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
             alt="arrow"
-            width={20}
-            height={20}
+            width={30}
+            height={30}
           />
         )}
       </components.DropdownIndicator>
@@ -61,6 +61,12 @@ const CardFour = () => {
               paddingLeft: "10px",
               borderRadius: "20px",
               paddingBlock: "3px",
+            }),
+            dropdownIndicator: (provided, state) => ({
+              ...provided,
+              padding: "0",
+              paddingLeft: "3px",
+              paddingRight: "3px",
             }),
           }}
         />
