@@ -16,14 +16,26 @@ const CardTwo = () => {
   ];
 
   const DropdownIndicator = (props) => {
+    const { selectProps } = props;
+    const { value } = selectProps;
+
     return (
       <components.DropdownIndicator {...props}>
-        <Image
-          src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
-          alt="arrow"
-          width={20}
-          height={20}
-        />
+        {value ? (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownok.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        )}
       </components.DropdownIndicator>
     );
   };
@@ -54,6 +66,12 @@ const CardTwo = () => {
               borderRadius: "20px",
               paddingBlock: "3px",
             }),
+            dropdownIndicator: (provided, state) => ({
+              ...provided,
+              padding: "0",
+              paddingLeft: "3px",
+              paddingRight: "3px",
+            }),
           }}
         />
       </div>
@@ -78,6 +96,12 @@ const CardTwo = () => {
               paddingLeft: "10px",
               borderRadius: "20px",
               paddingBlock: "3px",
+            }),
+            dropdownIndicator: (provided, state) => ({
+              ...provided,
+              padding: "0",
+              paddingLeft: "3px",
+              paddingRight: "3px",
             }),
           }}
         />
