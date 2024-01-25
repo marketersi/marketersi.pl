@@ -11,14 +11,26 @@ const CardThree = () => {
   ];
 
   const DropdownIndicator = (props) => {
+    const { selectProps } = props;
+    const { value } = selectProps;
+
     return (
       <components.DropdownIndicator {...props}>
-        <Image
-          src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
-          alt="arrow"
-          width={20}
-          height={20}
-        />
+        {value ? (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownok.png"}
+            alt="arrow"
+            width={20}
+            height={20}
+          />
+        ) : (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+            alt="arrow"
+            width={20}
+            height={20}
+          />
+        )}
       </components.DropdownIndicator>
     );
   };

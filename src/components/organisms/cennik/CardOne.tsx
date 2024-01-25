@@ -15,22 +15,23 @@ const CardOne = () => {
     const { value } = selectProps;
 
     return (
-      <>
-        <components.DropdownIndicator {...props}>
-          {value ? (
-            <span role="img" aria-label="selected-emoji">
-              🆗
-            </span>
-          ) : (
-            <Image
-              src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
-              alt="arrow"
-              width={20}
-              height={20}
-            />
-          )}
-        </components.DropdownIndicator>
-      </>
+      <components.DropdownIndicator {...props}>
+        {value ? (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownok.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        )}
+      </components.DropdownIndicator>
     );
   };
 
@@ -58,6 +59,12 @@ const CardOne = () => {
               paddingLeft: "10px",
               borderRadius: "20px",
               paddingBlock: "3px",
+            }),
+            dropdownIndicator: (provided, state) => ({
+              ...provided,
+              padding: "0",
+              paddingLeft: "3px",
+              paddingRight: "3px",
             }),
           }}
         />
