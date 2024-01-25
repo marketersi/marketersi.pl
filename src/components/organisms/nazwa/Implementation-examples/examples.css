@@ -472,6 +472,7 @@
 /* 9 */
 .names-thematic-section-purple {
   background-color: #160209;
+  padding-bottom: 200px;
 }
 
 .pnazw-page .custom-cname-small-margin {
@@ -573,6 +574,7 @@
 /* 10 */
 .names-thematic-section-black {
   background-color: #000000;
+  margin-top: -50px;
 }
 .pnazw-page .custom-cname-small-margin {
   margin-top: 70px;

@@ -15,6 +15,8 @@ const ContactScreen = () => {
   const { project, contact_us, feedback } = screenData || {};
   const modifiedManual = contact_us?.manual.split(" ");
 
+  const reversedProject = project?.slice().reverse();
+
   const brandImagesArray = [
     contact_us?.first_image,
     contact_us?.second_image,
@@ -69,7 +71,7 @@ const ContactScreen = () => {
             <Container>
               <Row>
                 {project &&
-                  project.map((item, index) => {
+                  reversedProject?.map((item, index) => {
                     return (
                       <Col key={index}>
                         <Card {...item} />
