@@ -176,31 +176,42 @@ const SliderSection = ({ setCurrentComponent }) => {
 
 const FeedbackSection = ({ setCurrentComponent }) => {
   return (
-    <>
+    <div className="feedback_section">
       <h2>Na koniec, napisz coś o tym biznesie.</h2>
-      <p>Czego oczekujesz po zmianie? Jaki masz na to pomysł?</p>
-      <textarea rows="4" cols="50"></textarea>
-      <p>Ważne: Wymień produkty/usługi w ofercie. Od najważniejszej.</p>
-      <input type="text" />
-      <button onClick={() => setCurrentComponent(3)}>Ostatnie pytanie</button>
-    </>
+      <p>Jaki masz na to pomysł? Co chcesz umieścić na stronie?</p>
+      <textarea rows="5" cols="50" className="fs_textarea"></textarea>
+      <p className="mt-2">
+        Ważne: Wymień produkty/usługi w ofercie. Od najważniejszej.
+      </p>
+      <input type="text" className="fs_input" />
+      <button onClick={() => setCurrentComponent(3)} className="cennikBtn">
+        Ostatnie pytanie
+      </button>
+    </div>
   );
 };
 
 const UserDetailsSection = () => {
   return (
-    <>
+    <div className="user-details_section">
       <h2>Zaczynamy składać opcje cenowe.</h2>
       <p>Komu mamy je wysłać?</p>
-      <input type="text" placeholder="Imię" />
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Tel: (Opcjonalnie)" />
-      <button onClick={() => console.log("cennik form submitted")}>
-        <span>
-          Wyślijcie mi <br /> 3 propozycje cenowe
-        </span>
-      </button>
-    </>
+      <div className="uds_input-container">
+        <input type="text" placeholder="Imię" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Tel: (Opcjonalnie)" />
+      </div>
+      <div>
+        <button
+          onClick={() => console.log("cennik form submitted")}
+          className="cennikBtn"
+        >
+          <span>
+            Wyślijcie mi <br /> 3 propozycje cenowe
+          </span>
+        </button>
+      </div>
+    </div>
   );
 };
 

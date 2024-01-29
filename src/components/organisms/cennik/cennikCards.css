@@ -44,3 +44,67 @@
 }
 
 /* Slider section */
+
+/* feedback section */
+.feedback_section h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(45, 45, 45);
+}
+
+.feedback_section p {
+  font-size: 16px;
+  color: rgb(45, 45, 45);
+}
+
+.fs_textarea,
+.fs_input {
+  border-radius: 20px;
+  border-color: #cecece;
+  width: 90%;
+}
+
+.fs_input {
+  border-top: none;
+  border-left: none;
+  border-color: #cecece;
+  padding: 8px 16px;
+  margin-bottom: 18px;
+}
+
+/* feedback section */
+
+/* user details section */
+.user-details_section h2 {
+  color: rgb(45, 45, 45);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.user-details_section p {
+  font-size: 18px;
+  color: rgb(45, 45, 45);
+}
+
+.uds_input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.uds_input-container input {
+  border: none;
+  border-color: #cecece;
+  padding: 8px 16px;
+  margin: 0 auto 18px auto;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.user-details_section button {
+  font-size: 18px;
+  line-height: normal;
+  margin-top: 8px;
+  padding: 8px 30px;
+}
+
+/* user details section */
