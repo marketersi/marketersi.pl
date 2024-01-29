@@ -12,9 +12,10 @@ import OurClients from "@/components/organisms/main/ourclients/OurClients";
 import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
+import Loader from "@/components/organisms/animation/Loader";
 
 const HomeScreen = () => {
-  const { isLoading, screenData } = useSelector((state) => state.calculator);
+  const { isLoading, screenData } = useSelector((state) => state.home);
   const dispatch = useDispatch();
 
   if (screenData) {
@@ -26,18 +27,24 @@ const HomeScreen = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <Hero />
-      <Video />
-      <RatingCaption />
-      <MarkSide />
-      {/* <Reviews /> */}
-      <OurClients />
-      <Entrepreneur />
-      <Numbers />
-      <HardResult />
-      <Order />
-    </div>
+    <>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div>
+          <Hero />
+          <Video />
+          <RatingCaption />
+          <MarkSide />
+          {/* <Reviews /> */}
+          <OurClients />
+          <Entrepreneur />
+          <Numbers />
+          <HardResult />
+          <Order />
+        </div>
+      )}
+    </>
   );
 };
 

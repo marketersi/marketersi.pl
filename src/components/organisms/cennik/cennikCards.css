@@ -65,11 +65,9 @@
 }
 
 .fs_input {
-  border-top: none;
-  border-left: none;
-  border-color: #cecece;
   padding: 8px 16px;
   margin-bottom: 18px;
+  border: 1px solid rgb(201, 201, 201);
 }
 
 /* feedback section */
@@ -92,12 +90,11 @@
 }
 
 .uds_input-container input {
-  border: none;
-  border-color: #cecece;
   padding: 8px 16px;
   margin: 0 auto 18px auto;
   border-radius: 20px;
   width: 50%;
+  border: 1px solid rgb(201, 201, 201);
 }
 
 .user-details_section button {
