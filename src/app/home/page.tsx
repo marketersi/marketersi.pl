@@ -5,13 +5,26 @@ import MarkSide from "@/components/organisms/main/mark-side-card/MarkSide";
 import RatingCaption from "@/components/organisms/main/rating-captions/RatingCaption";
 import Numbers from "@/components/organisms/main/numbers/Numbers";
 import HardResult from "@/components/organisms/main/hard-results/HardResults";
-import React from "react";
+import React, { useEffect } from "react";
 import Order from "@/components/organisms/main/order/Order";
 import Video from "@/components/organisms/main/video/Video";
 import OurClients from "@/components/organisms/main/ourclients/OurClients";
 import "./home.css";
+import { useDispatch, useSelector } from "react-redux";
+import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 
 const HomeScreen = () => {
+  const { isLoading, screenData } = useSelector((state) => state.calculator);
+  const dispatch = useDispatch();
+
+  if (screenData) {
+    console.log("home screen data from UI => ", screenData);
+  }
+
+  useEffect(() => {
+    dispatch({ type: FETCH_HOME_SCREEN_DATA });
+  }, [dispatch]);
+
   return (
     <div>
       <Hero />
