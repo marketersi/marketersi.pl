@@ -1,3 +1,4 @@
+/* Card one */
 /* slider section */
 
 .slider_Section {
@@ -105,3 +106,49 @@
 }
 
 /* user details section */
+
+/* card two */
+/* component one */
+
+/* component one */
+
+/* component two */
+.component-two_section h2 {
+  color: rgb(45, 45, 45);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.component-two_section p {
+  font-size: 16px;
+  color: rgb(45, 45, 45);
+}
+
+.component-two_section textarea {
+  border-radius: 20px;
+  border-color: #cecece;
+  width: 90%;
+}
+
+/* component two */
+
+/* component three */
+.componentThree_section h2 {
+  color: rgb(45, 45, 45);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.componentThree_input-container {
+  padding: 20px;
+}
+
+.componentThree_input-container input {
+  padding: 8px 16px;
+  margin: 0 10px 18px auto;
+  border-radius: 20px;
+  width: 45%;
+  border: 1px solid rgb(201, 201, 201);
+}
+
+/* component three */
