@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Select, { components } from "react-select";
 import Image from "next/image";
-import Modal from "react-modal";
 import CennikModal from "../modals/CennikModal";
+import Link from "next/link";
+import "./cennikCards.css";
 
 const CardOne = () => {
+  const [currentComponent, setCurrentComponent] = useState(0);
+
   const options = [
     {
       value: "Rozwijamy biznes i zmieniamy stronę.",
@@ -68,56 +71,159 @@ const CardOne = () => {
   };
 
   return (
-    <div>
-      <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
-      <p className="card-subheading">Wybierz jedną z opcji.</p>
-      <div style={{ textAlign: "left" }}>
-        <Select
-          options={options}
-          placeholder="Wybierz"
-          isSearchable={false}
-          components={{ DropdownIndicator }}
-          onChange={handleSelectChange}
-          styles={{
-            clearIndicator: (baseStyles, state) => ({
-              ...baseStyles,
-              display: "none",
-            }),
-            indicatorSeparator: (baseStyles, state) => ({
-              ...baseStyles,
-              display: "none",
-            }),
-            control: (baseStyles, state) => ({
-              ...baseStyles,
-              paddingLeft: "10px",
-              borderRadius: "20px",
-              paddingBlock: "3px",
-            }),
-            dropdownIndicator: (provided, state) => ({
-              ...provided,
-              padding: "0",
-              paddingLeft: "3px",
-              paddingRight: "3px",
-            }),
-          }}
-        />
-      </div>
+    <>
+      {currentComponent === 0 && (
+        <div>
+          <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
+          <p className="card-subheading">Wybierz jedną z opcji.</p>
+          <div style={{ textAlign: "left" }}>
+            <Select
+              options={options}
+              placeholder="Wybierz"
+              isSearchable={false}
+              components={{ DropdownIndicator }}
+              onChange={handleSelectChange}
+              styles={{
+                clearIndicator: (baseStyles, state) => ({
+                  ...baseStyles,
+                  display: "none",
+                }),
+                indicatorSeparator: (baseStyles, state) => ({
+                  ...baseStyles,
+                  display: "none",
+                }),
+                control: (baseStyles, state) => ({
+                  ...baseStyles,
+                  paddingLeft: "10px",
+                  borderRadius: "20px",
+                  paddingBlock: "3px",
+                }),
+                dropdownIndicator: (provided, state) => ({
+                  ...provided,
+                  padding: "0",
+                  paddingLeft: "3px",
+                  paddingRight: "3px",
+                }),
+              }}
+            />
+          </div>
 
-      {selectedOption && selectedOption.value === options[0].value && (
-        <div className="additional-input-container">
-          <h2>Podaj adres strony:</h2>
-          <input type="text" />
+          {selectedOption && selectedOption.value === options[0].value && (
+            <div className="additional-input-container">
+              <h2>Podaj adres strony:</h2>
+              <input type="text" />
+            </div>
+          )}
+
+          <motion.button
+            className="cennikBtn mt-5"
+            whileHover={{ translateY: 5 }}
+            onClick={() => setCurrentComponent(1)}
+          >
+            Rozpocznij kalkulację
+          </motion.button>
+
+          {/* Modal */}
+          <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
         </div>
       )}
-
-      <motion.button className="cennikBtn mt-5" whileHover={{ translateY: 5 }}>
-        Rozpocznij kalkulację
-      </motion.button>
-
-      {/* Modal */}
-      <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
-    </div>
+      {currentComponent === 1 && (
+        <SliderSection setCurrentComponent={setCurrentComponent} />
+      )}
+      {currentComponent === 2 && (
+        <FeedbackSection setCurrentComponent={setCurrentComponent} />
+      )}
+      {currentComponent === 3 && (
+        <UserDetailsSection setCurrentComponent={setCurrentComponent} />
+      )}
+    </>
   );
 };
 
 export default CardOne;
+
+// Nested components for card one
+const SliderSection = ({ setCurrentComponent }) => {
+  return (
+    <div className="slider_section">
+      <div>
+        <h2>Jakiej propozycji oczekujesz?</h2>
+        <p>Przesuń suwak blisko potrzeb</p>
+      </div>
+
+      <div className="space-between"></div>
+      <div>
+        <div className="ss_input-container">
+          <img
+            src="https://www.owocni.pl/_next/static/media/persons.6bff2827.png"
+            alt=""
+          />
+          <input type="range" />
+          <img
+            src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
+            alt=""
+          />
+        </div>
+        <div className="ss_btn-container">
+          <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
+            Dalej (Prawie koniec)
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const FeedbackSection = ({ setCurrentComponent }) => {
+  return (
+    <>
+      <h2>Na koniec, napisz coś o tym biznesie.</h2>
+      <p>Czego oczekujesz po zmianie? Jaki masz na to pomysł?</p>
+      <textarea rows="4" cols="50"></textarea>
+      <p>Ważne: Wymień produkty/usługi w ofercie. Od najważniejszej.</p>
+      <input type="text" />
+      <button onClick={() => setCurrentComponent(3)}>Ostatnie pytanie</button>
+    </>
+  );
+};
+
+const UserDetailsSection = () => {
+  return (
+    <>
+      <h2>Zaczynamy składać opcje cenowe.</h2>
+      <p>Komu mamy je wysłać?</p>
+      <input type="text" placeholder="Imię" />
+      <input type="text" placeholder="Email" />
+      <input type="text" placeholder="Tel: (Opcjonalnie)" />
+      <button onClick={() => console.log("cennik form submitted")}>
+        <span>
+          Wyślijcie mi <br /> 3 propozycje cenowe
+        </span>
+      </button>
+    </>
+  );
+};
+
+// This will not be inside this card one component
+const MessageSection = () => {
+  return (
+    <div className="message_section">
+      <div>
+        <img src="" alt="" />
+      </div>
+      <h1>Dzięki za wiadomość</h1>
+      <p>
+        Hej tu Marta. O ile nie jest to weekend i jest przed godziną 16, odpiszę
+        na Twoją wiadomość jeszcze dziś.
+      </p>
+
+      <p>
+        Tymczasem kliknij “lubię to”. Warto mieć fajne towarzystwo na fejsie.
+      </p>
+
+      <button>
+        <Link href="">Wróć na poprzednią stronę</Link>
+      </button>
+    </div>
+  );
+};

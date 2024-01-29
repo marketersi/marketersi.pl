@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import "./cennik-modal.css";
+import Link from "next/link";
 
 const CennikModal = ({ isOpen, onRequestClose }) => {
   return (
@@ -37,9 +38,11 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
         </p>
         <div>
           <button className="cennik-modal-btn">
-            Wracam. <br /> Strona główna
+            <Link href="/">
+              Wracam. <br /> Strona główna
+            </Link>
           </button>
-          <button className="cennik-modal-btn">
+          <button className="cennik-modal-btn" onClick={onRequestClose}>
             Rozumiem. <br /> Chcę kontynuować.
           </button>
         </div>

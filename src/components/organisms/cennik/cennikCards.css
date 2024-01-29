@@ -1,0 +1,46 @@
+/* slider section */
+
+.slider_Section {
+}
+
+.space-between {
+  margin: 100px 0px;
+}
+
+.slider_section h2 {
+  color: rgb(45, 45, 45);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.slider_section p {
+  font-size: 18px;
+  background: rgb(121, 97, 111);
+  padding: 3px 32px;
+  color: rgb(255 255 255);
+  border-radius: 4px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.ss_input-container input {
+  margin: 0 10px;
+  width: 50%;
+}
+
+.ss_btn-container {
+  margin-top: 32px;
+}
+
+.cennikBtn {
+  padding: 8px 16px;
+  background: #d21e00;
+  font-size: 18px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 6px 0px #981a04;
+}
+
+/* Slider section */
