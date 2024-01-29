@@ -133,9 +133,7 @@ const CardOne = () => {
       {currentComponent === 2 && (
         <FeedbackSection setCurrentComponent={setCurrentComponent} />
       )}
-      {currentComponent === 3 && (
-        <UserDetailsSection setCurrentComponent={setCurrentComponent} />
-      )}
+      {currentComponent === 3 && <UserDetailsSection />}
     </>
   );
 };
