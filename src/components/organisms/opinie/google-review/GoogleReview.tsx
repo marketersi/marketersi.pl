@@ -93,8 +93,8 @@ export default function GoogleReview() {
                 <li className={style.googleHover}>
                   <p>Najnowsze</p>
                   <div className={style.hoverMenu}>
-                    <p>Najwyżej oceniane</p>
-                    <p>Najniżej oceniane</p>
+                    <a href="#">Najwyżej oceniane</a>
+                    <a href="#">Najniżej oceniane</a>
                   </div>
                 </li>
               </ul>
