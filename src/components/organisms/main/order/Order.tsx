@@ -5,6 +5,7 @@ import style from "../main.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
+import Stars from "@/components/molecules/Ratings";
 
 const Order = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -47,36 +48,7 @@ const Order = () => {
               </p>
               <div className={style.rating}>
                 <div className={style.star}>
-                  <Image
-                    src="/assets/images/star.avif"
-                    alt="My Image"
-                    width="auto"
-                    height="auto"
-                  />
-                  <Image
-                    src="/assets/images/star.avif"
-                    alt="My Image"
-                    width="auto"
-                    height="auto"
-                  />
-                  <Image
-                    src="/assets/images/star.avif"
-                    alt="My Image"
-                    width="auto"
-                    height="auto"
-                  />
-                  <Image
-                    src="/assets/images/star.avif"
-                    alt="My Image"
-                    width="auto"
-                    height="auto"
-                  />
-                  <Image
-                    src="/assets/images/star.avif"
-                    alt="My Image"
-                    width="auto"
-                    height="auto"
-                  />
+                  <Stars rating={ratingSection?.rating_no} />
                 </div>
                 <div className={style.ratingNumber}>
                   <p>
