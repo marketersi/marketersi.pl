@@ -1,0 +1,107 @@
+import React from "react";
+
+const Restaurant = () => {
+  return (
+    <>
+      <section className="thematic-section projects-gray-background">
+        <div className="container custom-container1">
+          <div className="row">
+            <div className="col-md-12 projects-custom-espace"></div>
+            <div className="col-md-12">
+              <h5 className="theme-subtitle projects-clients-theme-subtitle">
+                BOHEMIA <br />
+                <strong>GDAŃSK</strong>
+              </h5>
+
+              <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
+                Logo mojej knajpy musi być w starym <br />
+                klimacie. Tak, by chciało się przy nim <br />
+                posiedzieć z przyjaciółmi.
+              </h3>
+              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc">
+                Bohemia to autentyczny gdański browar rzemieślniczy. <br />
+                Choć w lokalu znajduje się kuchnia, to chmiel gra pierwsze
+                skrzypce.
+              </p>
+              <p className="theme-desc projects-theme-desc-p">
+                Kraftowe piwo bazuje na starej recepturze, stąd pomysł pieczęci.
+                <br />
+                Chmielowe szyszki będą przyjemną częścią rozpoznawalności.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="image-810-container">
+          <div className="image-810">
+            <img
+              className="desktop-810 position-relative"
+              src="https://www.logofirmowe.pl/files/multimedias/527/Pomysl-na-logo-gastronomii.jpg"
+              title="Projektowanie logo - cena nie musi być wysoka, a pomysł jest dobry"
+              alt="Projektowanie logo - cena w ogólnym ujęciu"
+              style={{ left: "-65px", position: "relative", maxWidth: "none" }}
+            />
+            <img
+              src="/files/multimedias/528/Projektowanie-logo-cena.jpg.webp"
+              className="mobile-810"
+              alt="Projektowanie logo - cena w ogólnym ujęciu"
+              title="Projektowanie logo - cena nie musi być wysoka, a pomysł jest dobry"
+            />
+          </div>
+        </div>
+
+        <div className="container custom-container1">
+          <div className="row">
+            <div className="col-md-12">
+              <p className="theme-desc projects-theme-desc-p projects-custom-m0-top">
+                Jednak prawdziwy sekret drzemie w zapisie typograficznym. <br />
+                Wyrafinowany, elegancki, nadaje całości legendarnego wydźwięku
+              </p>
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
+                Żaden fan rzemieślniczego browaru nie przechodzi obok tego
+                obojętnie.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="image-810-container position-relative">
+          <div className="image-810">
+            <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
+              <img
+                className="desktop-810 position-relative"
+                src="https://www.logofirmowe.pl/files/multimedias/529/Przyklad-przy-projektowaniu-logo-Bohemia.jpg"
+                title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
+                alt="Profesjonalny znak wyróżni Twoją markę "
+                style={{ left: "-75px" }}
+              />
+            </a>
+            <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
+              <img
+                src="/files/multimedias/530/Przyklad-przy-projektowaniu-logo-Bohemia-MOB.jpg.webp"
+                className="mobile-810"
+                alt="Profesjonalny znak wyróżni Twoją markę "
+                title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h5 className="theme-quote signed-quote signed-quote-image">
+                “Idealne! Czuć, że was to obchodzi.
+                <br />
+                <strong>Z wami naprawdę chce się pracować</strong>.”
+              </h5>
+              <p className="signature">Tomasz Salawa - Właściciel</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Restaurant;
