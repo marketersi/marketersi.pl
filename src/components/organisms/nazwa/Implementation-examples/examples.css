@@ -678,3 +678,21 @@
 .names-color-grey-dark {
   color: #515151;
 }
+
+/* .underline-down {
+  text-decoration: underline solid #aa2e2d 6px;
+  text-underline-offset: 50px;
+} */
+
+.underline-down {
+  position: relative;
+}
+
+.underline-down:after {
+  content: "";
+  position: absolute;
+  bottom: 55px;
+  left: 40%;
+  width: 170px;
+  border-bottom: 6px solid #aa2e2d;
+}

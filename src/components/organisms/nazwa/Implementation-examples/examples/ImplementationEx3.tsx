@@ -6,7 +6,7 @@ const ImplementationEx3 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="underline-down names-client-name copywriter-cname cname-big-mtop">
               KOMORNIKI
             </div>
 
@@ -62,7 +62,7 @@ const ImplementationEx3 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               GDYNIA
             </div>
 

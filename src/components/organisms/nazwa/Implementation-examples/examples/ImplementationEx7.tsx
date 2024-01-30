@@ -6,7 +6,7 @@ const ImplementationEx7 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin">
+            <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin underline-down">
               WARSZAWA
             </div>
 
