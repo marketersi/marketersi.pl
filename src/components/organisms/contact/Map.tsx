@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Image } from "react-bootstrap";
@@ -7,6 +7,12 @@ import { useSelector } from "react-redux";
 const ContactMap = () => {
   const { isLoading, screenData } = useSelector((state) => state.contact);
   const { feedback } = screenData || {};
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const showNextFeedback = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+  };
 
   return (
     <>
@@ -22,23 +28,31 @@ const ContactMap = () => {
 
       {feedback &&
         feedback.map((item, index) => {
+          const isCurrent = index === currentIndex;
           return (
-            <div className="map_content" key={index}>
-              <p>Województwo</p>
-              <h3>{item.feedback_title}</h3>
-              <h4>{item.feedback_content}</h4>
-              <p>{item.feedback_subtitle}</p>
-              <p className="map_bottom_p">
-                {/* <span>Tomasz Kopacz,</span> MoneyWell, Rzeszów */}
-                {item.feedback_address}
-              </p>
+            <div
+              className={`map_content ${isCurrent ? "visible" : "hidden"}`}
+              key={index}
+            >
+              {isCurrent && (
+                <>
+                  <p>Województwo</p>
+                  <h3>{item.feedback_title}</h3>
+                  <h4>{item.feedback_content}</h4>
+                  <p>{item.feedback_subtitle}</p>
+                  <p className="map_bottom_p">
+                    {/* <span>Tomasz Kopacz,</span> MoneyWell, Rzeszów */}
+                    {item.feedback_address}
+                  </p>
+                </>
+              )}
             </div>
           );
         })}
 
       <div className="map_button">
         <button>Nasi klienci</button>
-        <a href="/" className="map_play">
+        <a className="map_play" onClick={showNextFeedback}>
           <span>Następna opinia</span>
           <div className="play">
             <Image src="/assets/images/play_arrow.svg" />

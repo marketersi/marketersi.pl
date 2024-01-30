@@ -3,7 +3,7 @@
 import React from "react";
 import style from "../team.module.css";
 import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "./carouselImageSlider";
+import ExampleCarouselImage from "./CarouselImageSlider";
 import "./imageslider.css";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
@@ -27,6 +27,13 @@ const ImageSlider = () => {
   };
 
   
+  // const images = [
+  //   'https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.95c40610.jpg&w=1920&q=75',
+  //   'https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.b7a94977.jpg&w=1920&q=75',
+  //   'https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.aa0277f1.jpg&w=1920&q=75',
+   
+  // ];
+
   return (
     <>
       <section className={style.imageSlider}>
@@ -109,6 +116,7 @@ const ImageSlider = () => {
             <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        {/* <ImageSlider images={images} /> */}
         <motion.img
           className={style.slideAnimateImg}
           src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FOwocni-Film.4c8c215f.png&w=640&q=75"
