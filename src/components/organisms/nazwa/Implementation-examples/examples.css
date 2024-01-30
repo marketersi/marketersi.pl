@@ -679,11 +679,6 @@
   color: #515151;
 }
 
-/* .underline-down {
-  text-decoration: underline solid #aa2e2d 6px;
-  text-underline-offset: 50px;
-} */
-
 .underline-down {
   position: relative;
 }
@@ -695,4 +690,27 @@
   left: 40%;
   width: 170px;
   border-bottom: 6px solid #aa2e2d;
+}
+.nazwa_cardone_color {
+  color: #75133d;
+}
+
+.theme-desc.names-color-light-dark.names-color-purple.names-custom-font-2.text-center.pnazw-custom-margin-3.nazwa_cardone_color {
+  color: #75133d;
+}
+
+.nazwa_cardtwo_quote {
+  color: #747474;
+}
+
+.nazwa_cardtwo_quoteauthor {
+  color: #515151;
+}
+
+.theme-desc.names-color-light-dark.names-color-grey.nazwa_cardtwo_text {
+  color: #b7bcc1;
+}
+
+.nazwa_cardtwo_text{
+  color: #b7bcc1;
 }
