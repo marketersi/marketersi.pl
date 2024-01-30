@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import "./pricing-option.css";
 import { Container } from "react-bootstrap";
+import CardTwo from "../../cennik/CardTwo";
 
 const PricingOption = () => {
   return (
@@ -19,7 +21,7 @@ const PricingOption = () => {
             </div>
 
             <div className="po_card_custom">
-              <div>
+              {/* <div>
                 <h2>Jaki cel stawiasz przed swoją firmą?</h2>
                 <select className="po_input">
                   <option value="option1">Opcja 1</option>
@@ -37,7 +39,9 @@ const PricingOption = () => {
                 <div className="po_btn_container">
                   <button>Rozpocznij kalkulację</button>
                 </div>
-              </div>
+              
+              </div> */}
+              <CardTwo />
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Select, { components } from "react-select";
 import Image from "next/image";
+import "./cennikCards.css";
 
 const CardTwo = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
