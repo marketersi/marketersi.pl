@@ -7,6 +7,7 @@ import LaunchEssentials from "@/components/organisms/nazwa/launch-essentials/Lau
 import ProjectValue from "@/components/organisms/nazwa/project-value/ProjectValue";
 import ImplementationExamples from "@/components/organisms/nazwa/Implementation-examples/ImplementationExamples";
 import "./nazwa.css";
+import NazwaFooter from "@/components/organisms/nazwa/nazwa-footer/NazwaFooter";
 
 const NazwaDlaFirmy = () => {
   return (
@@ -33,6 +34,8 @@ const NazwaDlaFirmy = () => {
       <ProjectValue />
 
       <ImplementationExamples />
+
+      <NazwaFooter />
     </>
   );
 };

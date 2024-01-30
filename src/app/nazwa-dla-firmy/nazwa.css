@@ -18,7 +18,7 @@
   margin: 20px 0px;
   line-height: 67px;
   font-size: 85px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #373737;
   letter-spacing: -0.025em;
 }
@@ -30,7 +30,7 @@
   margin-top: 30px;
 }
 .pnazw-page .catalog-submit-button .download-catalog-button {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-weight: 600;
   letter-spacing: -0.025em;
   font-size: 22px;
@@ -43,7 +43,7 @@
   color: white;
 }
 
- /* section 2 */
+/* section 2 */
 
 .projects-over-hid {
   overflow: hidden;
@@ -55,12 +55,11 @@
   margin-top: 0px;
 }
 
-
 .theme-title1 {
   padding: 0 15px;
   padding-bottom: 50px;
   font-size: 51px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #373737;
   font-weight: 900;
   text-align: center;
@@ -108,7 +107,7 @@
   padding: 0 15px;
   padding-bottom: 50px;
   font-size: 75px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #373737;
   font-weight: 900;
   text-align: center;
@@ -126,7 +125,7 @@
 .projects-theme-subtitle1 {
   display: block;
   color: #818181;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: italic;
   line-height: 42px;
   font-size: 40px;
@@ -150,7 +149,6 @@
 .pnazw-page .names-list-info {
   font-family: "Arial";
 }
-
 
 .names-list-info {
   list-style-type: disc !important;
@@ -184,7 +182,7 @@
 }
 
 .names-client-desc {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 48px;
   font-weight: 900 !important;
   letter-spacing: -0.025em;
@@ -244,7 +242,7 @@
 
 .projects-gray-section-custom-font {
   font-size: 45px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-style: italic;
 }
 .pnazw-page .new-wierzymy .img-wierzymy {
@@ -262,10 +260,10 @@
   z-index: 1;
   position: relative;
   overflow: hidden;
-  text-align:left;
+  text-align: left;
 }
 
- .new-wierzymy {
+.new-wierzymy {
   position: relative;
   height: 510px;
   max-width: 783px;
@@ -280,7 +278,7 @@
   line-height: 48px;
   margin-top: 35px;
 }
- .iglarki-section-main-header {
+.iglarki-section-main-header {
   font-family: "Playfair Display Black", serif;
   line-height: 85px;
   margin-top: 150px;
@@ -292,7 +290,7 @@
   line-height: 93px;
   padding: 0 15px;
   padding-bottom: 50px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #373737;
   text-align: center;
   position: relative;
@@ -317,7 +315,7 @@
   padding-bottom: 60px;
 }
 .names-client-name {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 100px;
@@ -336,7 +334,7 @@
   top: 75px;
 }
 .names-client-desc {
-  font-family: 'Playfair Display';
+  font-family: "Playfair Display";
   font-size: 48px;
   font-weight: 900 !important;
   letter-spacing: -0.025em;
