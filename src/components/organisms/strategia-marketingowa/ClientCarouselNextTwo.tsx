@@ -43,7 +43,7 @@ const ClientCarousel = ({ slides, options }) => {
             }}
           >
             <div className="OurClients_Slide_ButtonNextTwo_Text">Więcej</div>
-            <div className="NextTwo_ArrowButton" onMouseEnter={handleNext}>
+            <div className="NextTwo_ArrowButton" onClick={handleNext}>
               <span className="NextTwo_ArrowButton_Arrow">&gt;</span>
             </div>
           </div>
