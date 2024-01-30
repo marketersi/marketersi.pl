@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import style from './team-page.module.css';
 import * as TeamComponents from "@/components/organisms/team/team-components/TeamComponents";
+import OurClients from "@/components/organisms/strategia-marketingowa/OurClients";
 
 const page = () => {
   const personalCardData1 = {
@@ -27,6 +29,7 @@ const page = () => {
       <TeamComponents.FreeSpace />
       <TeamComponents.Support />
       <TeamComponents.ImageSlider />
+      <OurClients />
       <TeamComponents.Review />
       <section className={style.Customers }>
       <div className={style.teamContent}>

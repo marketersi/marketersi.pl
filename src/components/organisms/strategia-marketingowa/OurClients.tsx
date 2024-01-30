@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import ReactPlayer from "react-player/file";
 import { ClientCarousel, CarouselContext } from "./ClientCarousel";
 
+
 const SlideOne = () => {
   const { handleNext } = useContext(CarouselContext);
   return (

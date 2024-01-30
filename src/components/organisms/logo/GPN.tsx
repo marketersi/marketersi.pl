@@ -1,0 +1,108 @@
+import React from 'react'
+
+const GPN = () => {
+  return (
+    <>
+    <section className="projects-thematic-section-blue">
+        <div className="container custom-container-blue projects-over-hid">
+          <div className="row">
+            <div className="col-md-12 projects-h-100"></div>
+            <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text2">
+              <p className="theme-desc text-center projects-blue-text2">
+                Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
+                stanowiło całości. Logo wymaga <br />
+                zapisów międzynarodowych, a dzięki takiemu zabiegowi będzie
+                można eksponować je <br />
+                w zależności od kontekstu w pionie i w poziomie. <br />
+              </p>
+            </div>
+
+            <div className="col-md-4 text-center projects-rwd-hide-img1">
+              <img
+                src="/assets/images/logo-design/cennik-logo-gpnt.jpg.webp"
+                alt="Wycena projektu logo na przykładzie profesjonalnej realizacji dla GPNT"
+                title="Cennik logo na przykładzie logo GPNT"
+              />
+            </div>
+
+            <div className="col-md-4 text-center">
+              <img
+                src="/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp"
+                alt="Profesjonalny projekt logo wykonany przez specjalistów"
+                title="Projekt logo na przykładzie GPN-T"
+              />
+            </div>
+
+            <div className="col-md-4 text-center">
+              <img
+                src="/assets/images/logo-design/projekty-loga-gpnt3.jpg.webp"
+                alt="Dwa szczegółowe przykłady projektu logo na przykładzie GPN-T"
+                title="Projekty loga na przykładzie GPN-T"
+              />
+            </div>
+
+            <div className="col-xs-12 text-center projects-rwd-hide-img2">
+              <img
+                src="/assets/images/logo-design/cennik-logo-gpnt.jpg.webp"
+                alt="Wycena projektu logo na przykładzie profesjonalnej realizacji dla GPNT"
+                title="Cennik logo na przykładzie logo GPNT"
+              />
+            </div>
+
+            <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text1">
+              <p className="theme-desc text-center projects-blue-text2">
+                Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
+                stanowiło całości. Logo wymaga <br />
+                zapisów międzynarodowych, a dzięki takiemu zabiegowi będzie
+                można eksponować je <br />
+                w zależności od kontekstu w pionie i w poziomie. <br />
+              </p>
+            </div>
+
+            <div className="col-md-3 col-sm-6 col-xs-12 projects-blue-img-rwd z-index-2">
+              <a
+                href=" https://www.youtube.com/watch?v=a6h9eJTJmCw"
+                data-lity=""
+              >
+                <div className="projects-blue-video">
+                  <div className="projects-blue-video-desc">
+                    <strong>Zobacz krótkie video</strong> <br />
+                    <p className="projects-blue-video-desc2">
+                      <strong>Mniej niż 30 sekund</strong>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div className="col-md-2 col-sm-6 col-xs-12 projects-blue-img-rwd">
+              <div className="projects-blue-cont-image1">
+                <img
+                  src="/assets/images/logo-design/Identyfikacja-wizualna-firmy.jpg.webp"
+                  className="projects-blue-image1"
+                  alt="Identyfikacja wizualna stworzona za pomocą tego, co stworzył grafik logo"
+                  title="Grafik logo prezentuje czcionki, których można użyć w logo"
+                />
+              </div>
+            </div>
+
+            <div className="col-md-6 projects-blue-img-rwd">
+              <div className="">
+                <img
+                  src="/assets/images/logo-design/Wizytowki-papier-firmowy.jpg.webp"
+                  className="projects-blue-cont-image2 z-index-1"
+                  alt="Materiały firmowe z przykładami identyfikacji wizualnej"
+                  title="Przykładowe loga do których użyty został papier firmowy"
+                />
+              </div>
+            </div>
+
+            <div className="col-md-12 projects-h-50"></div>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default GPN
