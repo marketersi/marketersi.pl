@@ -61,7 +61,7 @@ const CardTwo = () => {
           <h2 className="card-heading mb-3">
             Jaki cel stawiasz przed swoją firmą?
           </h2>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "left" }} className="select-input">
             <Select
               options={options1}
               placeholder="Wybierz"

@@ -76,7 +76,7 @@ const CardOne = () => {
         <div>
           <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
           <p className="card-subheading">Wybierz jedną z opcji.</p>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "left" }} className="select-input">
             <Select
               options={options}
               placeholder="Wybierz"
