@@ -275,6 +275,11 @@ const ComponentTwo = ({ setCurrentComponent }) => {
         <div>
           <button onClick={closeModal}>Rozumiem</button>
         </div>
+
+        {/* x btn */}
+        <div className="close" onClick={closeModal}>
+          x
+        </div>
       </Modal>
     </div>
   );

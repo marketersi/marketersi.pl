@@ -239,10 +239,19 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .Modal div {
   margin-top: 32px;
 }
+
 .Modal div button {
   padding: 8px 16px;
   border-radius: 12px;
   border-color: #d21e00;
   background-color: transparent;
   color: white;
+}
+
+.Modal .close {
+  position: absolute;
+  top: -40px;
+  right: -35px;
+  font-size: 30px;
+  cursor: pointer;
 }
