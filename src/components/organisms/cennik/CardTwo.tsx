@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Select, { components } from "react-select";
 import Image from "next/image";
 import "./cennikCards.css";
+import CennikModal from "../modals/CennikModal";
+import Modal from "react-modal";
 
 const CardTwo = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
@@ -229,16 +231,51 @@ const ComponentOne = ({ setCurrentComponent }) => {
 };
 
 const ComponentTwo = ({ setCurrentComponent }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [projectDescription, setProjectDescription] = useState("");
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleNext = () => {
+    if (!projectDescription) {
+      setIsModalOpen(true);
+      console.log("no project description");
+      console.log("modal", isModalOpen);
+    } else {
+      setCurrentComponent(3);
+    }
+  };
+
   return (
     <div className="component-two_section">
       <h2>Napisz kilka stów o tym projekcie i swoim pomyśle</h2>
       <p>Im więcej wiemy, tym lepiej się dopasujemy.</p>
       <textarea rows="5" cols="50"></textarea>
       <div className="mt-5">
-        <button className="cennikBtn" onClick={() => setCurrentComponent(3)}>
+        <button className="cennikBtn" onClick={handleNext}>
           Ostatnie pytanie
         </button>
       </div>
+
+      {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        className="Modal"
+        overlayClassName="Overlay"
+      >
+        <p>
+          Przepraszamy, nie jesteśmy w stanie przedstawić sensownej oferty na
+          bazie tak znikomych informacji. Napisz ciut więcej. Dzięki temu
+          będziemy mogli pomóc Ci lepiej.
+        </p>
+        <div>
+          <button onClick={closeModal}>Rozumiem</button>
+        </div>
+      </Modal>
     </div>
   );
 };
