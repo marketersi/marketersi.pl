@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const PDFCopy = () => {
   return (
     <>
-     <section className="thematic-section projects-gray-background" id="sec0">
+      <section className="thematic-section projects-gray-background" id="sec0">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12 projects-push-content-top">
@@ -44,7 +44,10 @@ const PDFCopy = () => {
               </p>
               <p className="theme-desc projects-custom-lineheight">
                 Możesz pobrać darmowy egzemplarz. <br />
-                <a href="https://drive.google.com/uc?authuser=0&amp;id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&amp;export=download">
+                <a
+                  href="https://drive.google.com/uc?authuser=0&amp;id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&amp;export=download"
+                  style={{ textDecoration: "none" }}
+                >
                   <span className="orange-link">
                     <strong>Kliknij tutaj</strong>
                     <span className="projects-custom-italic">(PDF)</span>
@@ -56,7 +59,7 @@ const PDFCopy = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default PDFCopy
+export default PDFCopy;
