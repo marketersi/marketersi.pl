@@ -97,6 +97,10 @@ const CardOne = () => {
                   paddingLeft: "10px",
                   borderRadius: "20px",
                   paddingBlock: "3px",
+                  backgroundColor: selectedOption
+                    ? "#effeeb"
+                    : baseStyles.backgroundColor,
+                  outline: selectedOption ? "2px solid #effeeb" : "none",
                 }),
                 dropdownIndicator: (provided, state) => ({
                   ...provided,
