@@ -678,3 +678,39 @@
 .names-color-grey-dark {
   color: #515151;
 }
+
+.underline-down {
+  position: relative;
+}
+
+.underline-down:after {
+  content: "";
+  position: absolute;
+  bottom: 55px;
+  left: 40%;
+  width: 170px;
+  border-bottom: 6px solid #aa2e2d;
+}
+.nazwa_cardone_color {
+  color: #75133d;
+}
+
+.theme-desc.names-color-light-dark.names-color-purple.names-custom-font-2.text-center.pnazw-custom-margin-3.nazwa_cardone_color {
+  color: #75133d;
+}
+
+.nazwa_cardtwo_quote {
+  color: #747474;
+}
+
+.nazwa_cardtwo_quoteauthor {
+  color: #515151;
+}
+
+.theme-desc.names-color-light-dark.names-color-grey.nazwa_cardtwo_text {
+  color: #b7bcc1;
+}
+
+.nazwa_cardtwo_text{
+  color: #b7bcc1;
+}

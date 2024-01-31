@@ -6,7 +6,7 @@ const ImplementationEx7 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin">
+            <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin underline-down">
               WARSZAWA
             </div>
 
@@ -29,15 +29,15 @@ const ImplementationEx7 = () => {
       <div className="container names-custom-container margin-bottom-whitespace-fix">
         <div className="row">
           <div className="col-md-12">
-            <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-color-light-dark names-custom-gray-text names-color-purple-med">
+            <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-color-light-dark names-custom-gray-text names-color-purple-med nazwa_cardone_color">
               „Dokładnie tego potrzebowaliśmy!”
             </h5>
 
-            <p className="signature projects-gray-color-signature names-color-purple-dark">
+            <p className="signature projects-gray-color-signature names-color-purple-dark nazwa_cardone_color">
               — Łukasz Błażejewski, dyrektor zarządzający
             </p>
 
-            <p className="theme-desc names-color-light-dark names-color-purple names-custom-font-2 text-center pnazw-custom-margin-3">
+            <p className="theme-desc names-color-light-dark names-color-purple names-custom-font-2 text-center pnazw-custom-margin-3 nazwa_cardone_color">
               Razem z menedżerami Gold Finance zbudowaliśmy wizerunek nowej
               gwiazdy na zatłoczonym rynku finansów. Marka, skierowana jest do
               mieszkańców małych miast i obszarów wiejskich. Jednak miała

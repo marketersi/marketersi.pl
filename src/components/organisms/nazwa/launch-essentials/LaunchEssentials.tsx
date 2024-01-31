@@ -5,7 +5,7 @@ const LaunchEssentials = () => {
     <section className="menu-target  sec0" id="sec1">
       <div className="container projects-custom-container1">
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12" id="sec1">
             <h3 className="projects-theme-title2 no-after p-bottom-10 naming-what-you-get-header">
               Co dokładnie otrzymasz?
             </h3>

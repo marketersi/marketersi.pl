@@ -6,7 +6,7 @@ const ImplementationEx6 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               BYSTRA
             </div>
 
@@ -54,7 +54,7 @@ const ImplementationEx6 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               LUBLIN
             </div>
 
@@ -105,7 +105,7 @@ const ImplementationEx6 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               OLSZTYN
             </div>
 
