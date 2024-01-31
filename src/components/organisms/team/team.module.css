@@ -26,7 +26,7 @@
 
 .teamContent {
     max-width: 800px;
-    margin: 0 auto;
+    margin: -50px auto 50px;
 }
 
 .bannerBottomContent {
@@ -71,6 +71,15 @@
 .bannerP {
     background: red;
 }
+.overlay{
+    height: 855px;
+    width: 100%;
+    position: absolute;
+    background-color: #00000026;
+    top: 0;
+    z-index: -1;
+}
+
 
 /* ============personal card============= */
 .personalCard {
@@ -166,6 +175,9 @@
 .mainHeading button:hover {
     box-shadow: none;
 }
+.mainHeading a {
+    text-decoration: none;
+}
 
 /* ==================support===================== */
 .Support {
@@ -191,7 +203,7 @@
     position: relative;
 }
 .slideAnimateImg{
-   margin: -100px 0 0 ;
+    margin: -200px 0 0 200px
 }
  .teamContent h2 {
     font-size: 60px;
@@ -367,6 +379,10 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
     text-align: center;
     color: white;
     margin: 0 auto;
+}
+.peopleVideoContent .projectBtn:hover{
+  background: #ffc600;
+  color: black;
 }
 .peopleVideoContent .scheduleBtn{
     display: grid;
