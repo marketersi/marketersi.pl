@@ -1118,3 +1118,11 @@ contact-inputs textarea {
   border-bottom: 2px #e0ab06 dotted;
   cursor: pointer;
 }
+
+.download-catalog-button-2:hover {
+  background: #d9ad29;
+}
+
+.download-catalog-button:hover {
+  background: #d9ad29;
+}
