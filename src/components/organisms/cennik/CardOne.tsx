@@ -152,18 +152,22 @@ const SliderSection = ({ setCurrentComponent }) => {
     {
       main: "Strategiczna - Duża marka",
       additional: "programista + projektant UX",
+      backgroundColor: "#7e9680",
     },
     {
       main: "Wiodąca - Pod marketing.",
       additional: "programista + projektant UX",
+      backgroundColor: "#eab595",
     },
     {
       main: "Klasyczna - Firmowa. Fajna.",
       additional: "programista + projektant ",
+      backgroundColor: "#d87f81",
     },
     {
       main: "Najtańsza – bardzo prosta",
       additional: "programista + projektant",
+      backgroundColor: "#ae6378",
     },
   ];
 
@@ -179,7 +183,14 @@ const SliderSection = ({ setCurrentComponent }) => {
     <div className="slider_section">
       <div>
         <h2>Jakiej propozycji oczekujesz?</h2>
-        <p>{sectionDescriptions[currentSection]?.main}</p>
+        <p
+          style={{
+            backgroundColor:
+              sectionDescriptions[currentSection]?.backgroundColor,
+          }}
+        >
+          {sectionDescriptions[currentSection]?.main}
+        </p>
         <div>{sectionDescriptions[currentSection]?.additional}</div>
       </div>
 
@@ -194,6 +205,7 @@ const SliderSection = ({ setCurrentComponent }) => {
             type="range"
             onChange={handleSliderChange}
             value={(currentSection / (totalSections - 1)) * 100}
+            className="slider-input"
           />
           <img
             src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
