@@ -7,7 +7,8 @@ const ImplementationEx4 = () => {
         <div className="row">
           <div className="col-md-12 text-center">
             <div className="names-client-name copywriter-cname custom-after-top-line cname-big-mtop">
-              MIŃSK <br className="dont-delete" /> MAZOWIECKI
+              MIŃSK <br className="dont-delete" />{" "}
+              <div className="underline-down">MAZOWIECKI</div>
             </div>
 
             <div className="names-client-desc">
@@ -58,7 +59,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               WARSZAWA
             </div>
 
@@ -109,7 +110,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               LEGIONOWO
             </div>
 
@@ -142,9 +143,8 @@ const ImplementationEx4 = () => {
 
             <p className="theme-desc">
               Nazwa odwołuje się do szlachetnego aromatu. Cynamon to egzotyka{" "}
-              <br />
-              i smak. Biel to czystość, wyjątkowość. Każde ze słów jest znajome,{" "}
-              <br />
+              <br />i smak. Biel to czystość, wyjątkowość. Każde ze słów jest
+              znajome, <br />
               ale razem są oryginalne i niespotykane. Jak w dobrym przepisie.
             </p>
           </div>
@@ -162,7 +162,9 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname">GDAŃSK</div>
+            <div className="names-client-name copywriter-cname underline-down">
+              GDAŃSK
+            </div>
 
             <div className="names-client-desc">
               Jeśli uwielbiasz sushi, to na pewno <br />
@@ -206,7 +208,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               WROCŁAW
             </div>
 
@@ -254,7 +256,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               KRAKÓW
             </div>
 
@@ -299,7 +301,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               DĄBROWA SZLACHECKA
             </div>
 
@@ -358,7 +360,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               STARY SĄCZ
             </div>
 
@@ -404,7 +406,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               LONDYN
             </div>
 
@@ -451,7 +453,7 @@ const ImplementationEx4 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop">
+            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
               ŚWIDNICA
             </div>
 

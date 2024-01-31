@@ -6,11 +6,11 @@ const ImplementationEx8 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin">
+            <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin underline-down">
               RYMANÓW
             </div>
 
-            <div className="names-client-desc names-color-dark names-custom-gray-text names-color-grey new-margin-gray">
+            <div className="names-client-desc names-color-dark names-custom-gray-text names-color-grey new-margin-gray nazwa_cardtwo_text">
               Nazwa luksusowej marki <br />
               w kategorii mody ślubnej <br />o międzynarodowych aspiracjach.
             </div>
@@ -29,22 +29,22 @@ const ImplementationEx8 = () => {
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12">
-            <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-color-light-dark names-custom-gray-text names-color-grey-med pnazw-new-custom-margin">
+            <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-color-light-dark names-custom-gray-text names-color-grey-med pnazw-new-custom-margin nazwa_cardtwo_quote">
               Ta nazwa jest magiczna. Klientkom błyszczą oczy, <br />
               gdy mówię o jej znaczeniu.
             </h5>
 
-            <p className="signature projects-gray-color-signature names-color-grey-dark newsignmargin">
+            <p className="signature projects-gray-color-signature names-color-grey-dark newsignmargin nazwa_cardtwo_quoteauthor">
               Andrzej O. - Wspólnik
             </p>
 
-            <p className="theme-desc names-color-light-dark names-color-grey">
+            <p className="theme-desc names-color-light-dark names-color-grey nazwa_cardtwo_text">
               <strong>Czy wiesz, że:</strong> Marsz Mendelssohna odgrywany w
               kościele na każdej <br />
               ceremonii ślubnej został napisany dla księżniczki Victorii Coburg?
             </p>
 
-            <p className="theme-desc names-color-light-dark names-color-grey">
+            <p className="theme-desc names-color-light-dark names-color-grey nazwa_cardtwo_text">
               To nazwa z królewskim rodowodem! To pochodzenie jest skazane{" "}
               <br />
               na sukces. W 2018 roku marka obchodziła swoje dziesięciolecie.{" "}
