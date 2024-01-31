@@ -92,7 +92,7 @@ const CardTwo = () => {
             />
           </div>
           <h2 className="card-heading mt-5">Jak się reklamujesz?</h2>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "left" }} className="select-input">
             <Select
               options={options2}
               placeholder="Wybierz"
@@ -152,7 +152,7 @@ const ComponentOne = ({ setCurrentComponent }) => {
     <>
       <div>
         <h2 className="card-heading mb-3">Na jakim etapie jest Twój biznes?</h2>
-        <div style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={[]}
             placeholder="Wybierz"
@@ -186,7 +186,7 @@ const ComponentOne = ({ setCurrentComponent }) => {
           Ile miesięcznie inwestujesz w marketing?
         </h2>
         <p>Lub ile planujesz inwestować?</p>
-        <div style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={[]}
             placeholder="Wybierz"
