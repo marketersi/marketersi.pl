@@ -148,6 +148,7 @@ const SliderSection = ({ setCurrentComponent }) => {
     {
       main: "Przesuń suwak blisko potrzeb",
       additional: "",
+      backgroundColor: "#9b8993",
     },
     {
       main: "Strategiczna - Duża marka",
@@ -206,6 +207,10 @@ const SliderSection = ({ setCurrentComponent }) => {
             onChange={handleSliderChange}
             value={(currentSection / (totalSections - 1)) * 100}
             className="slider-input"
+            style={{
+              backgroundColor:
+                sectionDescriptions[currentSection]?.backgroundColor,
+            }}
           />
           <img
             src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
