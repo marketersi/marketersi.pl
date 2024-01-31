@@ -18,11 +18,11 @@ const MarkSide = () => {
   const links1 = [
     {
       label: "Nazwa dla firmy",
-      path: "/",
+      path: "/nazwa-dla-firmy",
     },
     {
       label: "Projektowanie logo",
-      path: "/",
+      path: "/projektowanie-logo",
     },
     {
       label: "Identyfikacja spółki",
@@ -32,7 +32,7 @@ const MarkSide = () => {
   const links2 = [
     {
       label: "Projektowanie UX",
-      path: "/",
+      path: "/projektowanie-ux",
     },
     {
       label: "Tworzenie stron",
@@ -46,7 +46,7 @@ const MarkSide = () => {
   const links3 = [
     {
       label: "Strategia marketingowa",
-      path: "/",
+      path: "/strategia-marketingowa",
     },
     {
       label: "Działania marketingowe",
@@ -54,7 +54,7 @@ const MarkSide = () => {
     },
     {
       label: "Konsultacja marketingu",
-      path: "/",
+      path: "/konsultacje",
     },
   ];
 
