@@ -23,8 +23,8 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
   };
 
   return (
-    <div>
-      <div className="copywriter-intro-bg-5-label text-center" id="sec2">
+    <div id="sec2">
+      <div className="copywriter-intro-bg-5-label text-center" >
           Na wszystkie pytania <br />
           odpowiedź brzmi:
         </div>

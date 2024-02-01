@@ -8,6 +8,10 @@ import ProjectValue from "@/components/organisms/nazwa/project-value/ProjectValu
 import ImplementationExamples from "@/components/organisms/nazwa/Implementation-examples/ImplementationExamples";
 import "./nazwa.css";
 import NazwaFooter from "@/components/organisms/nazwa/nazwa-footer/NazwaFooter";
+import Accordion from "@/components/organisms/opinie/accordion/Accordion";
+import YesAccordion from "@/components/organisms/strategia-marketingowa/accordion/YesAccordion";
+import items from "@/components/organisms/strategia-marketingowa/accordion/Data"
+import LogoAccordion from "@/components/organisms/logo/accordion/LogoAccordion";
 
 const NazwaDlaFirmy = () => {
   return (
@@ -29,6 +33,7 @@ const NazwaDlaFirmy = () => {
 
       {/* section 6 */}
       {/* TO ADD: ACCORDION */}
+      <LogoAccordion items={items}/>
 
       {/* section 7 */}
       <ProjectValue />

@@ -24,6 +24,7 @@ import Park from "@/components/organisms/logo/Park";
 import GPN from "@/components/organisms/logo/GPN";
 import NewCompany from "@/components/organisms/logo/NewCompany";
 import Form from "@/components/organisms/tresci-sprzedazowe/form/Form";
+import LogoFooter from "@/components/organisms/logo/logo-footer/LogoFooter";
 
 
 const LogoDesignScreen = () => {
@@ -46,7 +47,7 @@ const LogoDesignScreen = () => {
       {/* section 7 */}
       <Guarantee />
       {/* section 8 */}
-      <LogoAccordion items={items}/>
+      <LogoAccordion items={items} />
 
       {/* section 9 */}
       <ProjectValue />
@@ -92,6 +93,8 @@ const LogoDesignScreen = () => {
         </div>
         <Form />
       </section>
+
+      <LogoFooter />
     </>
   );
 };

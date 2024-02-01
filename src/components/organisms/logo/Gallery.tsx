@@ -3,7 +3,7 @@ import React from 'react'
 const Gallery = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background menu-target">
+    <section className="thematic-section projects-gray-background menu-target" id='sec3'>
         <div className="catalog-submit-button projects-catalog-submit-buttom logo-button-box during-page-offer">
           <button
             className="download-catalog-button projects-download-catalog-button send-offer-button rwd-logo-button-box js--triggerAnimation"
