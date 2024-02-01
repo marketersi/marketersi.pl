@@ -47,6 +47,7 @@
   transition: width 0.3s ease-in-out;
 }
 
+/* unwanted css */
 .faqContainer a > span > span {
   background: white;
   padding: 30px;

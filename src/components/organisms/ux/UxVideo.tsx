@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from "react";
+import ReactPlayer from "react-player";
 
 const UxVideo = () => {
+  const [selectedTab, setSelectedTab] = useState(1);
   return (
     <>
-    <section id="videoSection">
+      <section id="videoSection">
         <div>
           <h2
             className="textAnimation titleAnimation"
@@ -65,62 +67,60 @@ const UxVideo = () => {
             <img
               className="videoBg"
               src="https://propozycje.owocni.pl/ux/VideoUX.98555e54.46666926.png"
-              srcset="https://propozycje.owocni.pl/ux/VideoUX-650.280ddf04.png 960w ./img/VideoUX.98555e54.png 1000w"
+              // srcset="https://propozycje.owocni.pl/ux/VideoUX-650.280ddf04.png 960w ./img/VideoUX.98555e54.png 1000w"
             />
-            <video
-              data-time="180"
-              playsinline=""
-              autoplay="true"
-              loop=""
-              muted=""
-              data-vscid="d3xa7p0zx"
-              style={{ display: "none" }}
-            >
-              <source
-                src="https://propozycje.owocni.pl/ux/UX-JEDEN.4766b5b5.mp4"
-                type="video/mp4"
+
+            {selectedTab == 1 && (
+              <ReactPlayer
+                url="https://propozycje.owocni.pl/ux/UX-JEDEN.4766b5b5.mp4"
+                playing={true}
+                loop={true}
+                autoplay={true}
+                width="100%"
+                height="auto"
+                muted
               />
-            </video>
-            <video
-              data-time="180"
-              playsinline=""
-              autoplay="true"
-              loop=""
-              muted=""
-              data-vscid="d3xa7p0zx"
-              style={{ display: "block" }}
-            >
-              <source
-                src="https://propozycje.owocni.pl/ux/UX-DWA.917254d4.mp4"
-                type="video/mp4"
+            )}
+
+            {selectedTab == 2 && (
+              <ReactPlayer
+                playing={true}
+                loop={true}
+                autoplay={true}
+                width="100%"
+                height="auto"
+                muted
+                url="https://propozycje.owocni.pl/ux/UX-DWA.917254d4.mp4"
               />
-            </video>
-            <video
-              data-time="180"
-              playsinline=""
-              autoplay="true"
-              loop=""
-              muted=""
-              data-vscid="d3xa7p0zx"
-              style={{ display: "none" }}
-            >
-              <source
-                src="https://propozycje.owocni.pl/ux/UX-TRZY.54e91b3f.mp4"
-                type="video/mp4"
+            )}
+
+            {selectedTab == 3 && (
+              <ReactPlayer
+                playing={true}
+                loop={true}
+                autoplay={true}
+                width="100%"
+                height="auto"
+                muted
+                url="https://propozycje.owocni.pl/ux/UX-TRZY.54e91b3f.mp4"
               />
-            </video>
+            )}
           </div>
           <div className="textWithArrow">
             <div className="textVideo">
-              <div className="">
+              <div
+                className={selectedTab == 1 ? "active" : ""}
+                onClick={() => setSelectedTab(1)}
+              >
                 <h3>
                   CELE KLIENTÓW
                   <br />I UŻYTKONIKÓW
                 </h3>
               </div>
               <div
-                style={{ opacity: 1, transform: "translate(0px, 0px)" }}
-                className="active"
+                // style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+                className={selectedTab == 2 ? "active" : ""}
+                onClick={() => setSelectedTab(2)}
               >
                 <h3>
                   Twoje cele
@@ -129,8 +129,10 @@ const UxVideo = () => {
                 </h3>
               </div>
               <div
-                style={{ opacity: 1, transform: "translate(0px, 0px)" }}
-                className=""
+                // style={{ opacity: 1, transform: "translate(0px, 0px)" }}
+                // className=""
+                className={selectedTab == 3 ? "active" : ""}
+                onClick={() => setSelectedTab(3)}
               >
                 <h3>
                   Rezultaty
@@ -174,7 +176,7 @@ const UxVideo = () => {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div id="WhatGet">
           <p className="textAnimation">
             Prowadzimy odwiedzających przez proces sprzedaży tak,
@@ -196,9 +198,9 @@ const UxVideo = () => {
             </span>
           </a>
         </div>
-      </section>
+      </section> */}
     </>
-  )
-}
+  );
+};
 
-export default UxVideo
+export default UxVideo;
