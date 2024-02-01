@@ -136,6 +136,8 @@
   border-radius: 20px;
   border-color: #cecece;
   width: 90%;
+  padding: 12px;
+  outline: none;
 }
 
 /* component two */
@@ -212,7 +214,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #0c0c0c;
   width: auto;
   max-width: 80%;
   height: auto;
@@ -233,25 +235,27 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 
 .Modal p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
+  line-height: normal;
 }
 .Modal div {
   margin-top: 32px;
 }
 
 .Modal div button {
-  padding: 8px 16px;
-  border-radius: 12px;
+  padding: 7px 28px;
+  border-radius: 18px;
   border-color: #d21e00;
   background-color: transparent;
   color: white;
+  font-size: 18px;
 }
 
 .Modal .close {
   position: absolute;
-  top: -40px;
-  right: -35px;
-  font-size: 30px;
+  top: -42px;
+  right: -38px;
+  font-size: 40px;
   cursor: pointer;
 }

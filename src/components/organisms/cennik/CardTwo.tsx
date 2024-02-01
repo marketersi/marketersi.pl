@@ -5,6 +5,8 @@ import Image from "next/image";
 import "./cennikCards.css";
 import CennikModal from "../modals/CennikModal";
 import Modal from "react-modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const CardTwo = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
@@ -367,7 +369,7 @@ const ComponentTwo = ({ setCurrentComponent }) => {
 
         {/* x btn */}
         <div className="close" onClick={closeModal}>
-          x
+          <FontAwesomeIcon icon={faXmark} />
         </div>
       </Modal>
     </div>
