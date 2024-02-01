@@ -9,9 +9,13 @@
   text-align: center;
   font-size: 5.4rem;
   font-weight: 900;
-  line-height: 100px;
+  line-height: 80px;
   margin: 0 0 30px;
   color: white;
+
+  /* mods after api */
+  width: 79%;
+  margin: 0 auto;
 }
 
 .hero h6 {
@@ -114,4 +118,9 @@
 .orangeBG img {
   margin: -50px 0 0 570px;
   opacity: 0.5;
+}
+
+.subtitleContainer {
+  width: 42%;
+  margin: 10px auto 0 auto;
 }

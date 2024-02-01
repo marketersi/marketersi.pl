@@ -13,7 +13,7 @@
 }
 
 .po_card_custom {
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff,
+  /* box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff,
     2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset;
   border-radius: 30px;
   min-height: 400px;
@@ -22,7 +22,16 @@
   width: 60%;
   margin: 30px auto;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
+
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff,
+    2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset;
+  border-radius: 30px;
+  padding: 36px 0;
+  background-color: rgba(247, 247, 247, 1);
+  width: 75%;
+  width: 60%;
+  margin: auto;
 }
 
 .po_card_custom h2 {

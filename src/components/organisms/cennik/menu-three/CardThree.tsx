@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import Select, { components } from "react-select";
 import Image from "next/image";
 import Link from "next/link";
+import FeedbackSection from "./nested-forms/FormTwo";
+import SliderSection from "./nested-forms/FormOne";
+import UserDetailsSection from "./nested-forms/FormThree";
 
 const CardThree = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
@@ -44,7 +47,7 @@ const CardThree = () => {
         <div>
           <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
           <p className="card-subheading">Wybierz jedną z opcji.</p>
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "left" }} className="select-input">
             <Select
               options={options}
               placeholder="Wybierz"
@@ -98,98 +101,74 @@ const CardThree = () => {
 export default CardThree;
 
 // Nested components for card one
-const SliderSection = ({ setCurrentComponent }) => {
-  return (
-    <div className="slider_section">
-      <div>
-        <h2>Jakiej propozycji oczekujesz?</h2>
-        <p>Przesuń suwak blisko potrzeb</p>
-      </div>
+// const SliderSection = ({ setCurrentComponent }) => {
+//   return (
+//     <div className="slider_section">
+//       <div>
+//         <h2>Jakiej propozycji oczekujesz?</h2>
+//         <p>Przesuń suwak blisko potrzeb</p>
+//       </div>
 
-      <div className="space-between"></div>
-      <div>
-        <div className="ss_input-container">
-          <img
-            src="https://www.owocni.pl/_next/static/media/persons.6bff2827.png"
-            alt=""
-          />
-          <input type="range" />
-          <img
-            src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
-            alt=""
-          />
-        </div>
-        <div className="ss_btn-container">
-          <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
-            Dalej (Prawie koniec)
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+//       <div className="space-between"></div>
+//       <div>
+//         <div className="ss_input-container">
+//           <img
+//             src="https://www.owocni.pl/_next/static/media/persons.6bff2827.png"
+//             alt=""
+//           />
+//           <input type="range" />
+//           <img
+//             src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
+//             alt=""
+//           />
+//         </div>
+//         <div className="ss_btn-container">
+//           <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
+//             Dalej (Prawie koniec)
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-const FeedbackSection = ({ setCurrentComponent }) => {
-  return (
-    <div className="feedback_section">
-      <h2>Na koniec, napisz coś o tym biznesie.</h2>
-      <p>Jaki masz na to pomysł? Co chcesz umieścić na stronie?</p>
-      <textarea rows="5" cols="50" className="fs_textarea"></textarea>
-      <p className="mt-2">
-        Ważne: Wymień produkty/usługi w ofercie. Od najważniejszej.
-      </p>
-      <input type="text" className="fs_input" />
-      <button onClick={() => setCurrentComponent(3)} className="cennikBtn">
-        Ostatnie pytanie
-      </button>
-    </div>
-  );
-};
+// const FeedbackSection = ({ setCurrentComponent }) => {
+//   return (
+//     <div className="feedback_section">
+//       <h2>Na koniec, napisz coś o tym biznesie.</h2>
+//       <p>Jaki masz na to pomysł? Co chcesz umieścić na stronie?</p>
+//       <textarea rows="5" cols="50" className="fs_textarea"></textarea>
+//       <p className="mt-2">
+//         Ważne: Wymień produkty/usługi w ofercie. Od najważniejszej.
+//       </p>
+//       <input type="text" className="fs_input" />
+//       <button onClick={() => setCurrentComponent(3)} className="cennikBtn">
+//         Ostatnie pytanie
+//       </button>
+//     </div>
+//   );
+// };
 
-const UserDetailsSection = () => {
-  return (
-    <div className="user-details_section">
-      <h2>Zaczynamy składać opcje cenowe.</h2>
-      <p>Komu mamy je wysłać?</p>
-      <div className="uds_input-container">
-        <input type="text" placeholder="Imię" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Tel: (Opcjonalnie)" />
-      </div>
-      <div>
-        <button
-          onClick={() => console.log("cennik form submitted")}
-          className="cennikBtn"
-        >
-          <span>
-            Wyślijcie mi <br /> 3 propozycje cenowe
-          </span>
-        </button>
-      </div>
-    </div>
-  );
-};
-
-// This will not be inside this card one component
-const MessageSection = () => {
-  return (
-    <div className="message_section">
-      <div>
-        <img src="" alt="" />
-      </div>
-      <h1>Dzięki za wiadomość</h1>
-      <p>
-        Hej tu Marta. O ile nie jest to weekend i jest przed godziną 16, odpiszę
-        na Twoją wiadomość jeszcze dziś.
-      </p>
-
-      <p>
-        Tymczasem kliknij “lubię to”. Warto mieć fajne towarzystwo na fejsie.
-      </p>
-
-      <button>
-        <Link href="">Wróć na poprzednią stronę</Link>
-      </button>
-    </div>
-  );
-};
+// const UserDetailsSection = () => {
+//   return (
+//     <div className="user-details_section">
+//       <h2>Zaczynamy składać opcje cenowe.</h2>
+//       <p>Komu mamy je wysłać?</p>
+//       <div className="uds_input-container">
+//         <input type="text" placeholder="Imię" />
+//         <input type="text" placeholder="Email" />
+//         <input type="text" placeholder="Tel: (Opcjonalnie)" />
+//       </div>
+//       <div>
+//         <button
+//           onClick={() => console.log("cennik form submitted")}
+//           className="cennikBtn"
+//         >
+//           <span>
+//             Wyślijcie mi <br /> 3 propozycje cenowe
+//           </span>
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };

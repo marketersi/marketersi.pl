@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 const RatingCaption = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
-  const { brandSection } = screenData;
+  const { brandSection, companySection } = screenData;
 
   return (
     <div className={style.rating}>
@@ -60,16 +60,19 @@ const RatingCaption = () => {
         </div>
         <div className={style.ratingCOntent}>
           <h2>
-            Wszystko, czego potrzebujesz, <br /> by <span>rozwijać firmę</span>{" "}
-            szybciej
+            {/* Wszystko, czego potrzebujesz, <br /> by <span>rozwijać firmę</span>{" "}
+            szybciej */}
+            {companySection?.main_title}
           </h2>
           <p>
-            To nie tylko zestaw świetnych kampanii reklamowych, <br />
-            przyciągających obrazów i przekonujących treści.
+            {/* To nie tylko zestaw świetnych kampanii reklamowych, <br />
+            przyciągających obrazów i przekonujących treści. */}
+            {companySection?.subtitle1}
           </p>
           <p>
-            Wszystko, czego potrzebujesz, <br />
-            by <span>rozwijać firmę</span> szybciej
+            {/* Wszystko, czego potrzebujesz, <br />
+            by <span>rozwijać firmę</span> szybciej */}
+            {companySection?.subtitle2}
           </p>
         </div>
       </Container>

@@ -51,7 +51,7 @@ const Video = () => {
           autoplay={true}
           width="100%"
           height="auto"
-          volume={0}
+          muted
         />
         <div className={style.youtubeIcon} onClick={openPopup}>
           <svg
