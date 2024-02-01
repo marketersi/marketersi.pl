@@ -9,6 +9,9 @@ import Modal from "react-modal";
 const CardTwo = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
 
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption2, setSelectedOption2] = useState(null);
+
   const options1 = [
     { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
     { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
@@ -56,6 +59,13 @@ const CardTwo = () => {
     );
   };
 
+  const handleSelectChange = (selectedOption) => {
+    setSelectedOption(selectedOption);
+  };
+  const handleSelectChange2 = (selectedOption) => {
+    setSelectedOption2(selectedOption);
+  };
+
   return (
     <>
       {currentComponent === 0 && (
@@ -69,6 +79,7 @@ const CardTwo = () => {
               placeholder="Wybierz"
               isSearchable={false}
               components={{ DropdownIndicator }}
+              onChange={handleSelectChange}
               styles={{
                 clearIndicator: (baseStyles, state) => ({
                   ...baseStyles,
@@ -83,6 +94,10 @@ const CardTwo = () => {
                   paddingLeft: "10px",
                   borderRadius: "20px",
                   paddingBlock: "3px",
+                  backgroundColor: selectedOption
+                    ? "#effeeb"
+                    : baseStyles.backgroundColor,
+                  outline: selectedOption ? "2px solid #effeeb" : "none",
                 }),
                 dropdownIndicator: (provided, state) => ({
                   ...provided,
@@ -100,6 +115,7 @@ const CardTwo = () => {
               placeholder="Wybierz"
               isSearchable={false}
               components={{ DropdownIndicator }}
+              onChange={handleSelectChange2}
               styles={{
                 clearIndicator: (baseStyles, state) => ({
                   ...baseStyles,
@@ -114,6 +130,10 @@ const CardTwo = () => {
                   paddingLeft: "10px",
                   borderRadius: "20px",
                   paddingBlock: "3px",
+                  backgroundColor: selectedOption2
+                    ? "#effeeb"
+                    : baseStyles.backgroundColor,
+                  outline: selectedOption2 ? "2px solid #effeeb" : "none",
                 }),
                 dropdownIndicator: (provided, state) => ({
                   ...provided,
@@ -148,18 +168,78 @@ const CardTwo = () => {
 export default CardTwo;
 
 // nested components/cards
-
 const ComponentOne = ({ setCurrentComponent }) => {
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption2, setSelectedOption2] = useState(null);
+
+  const options1 = [
+    { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
+    { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
+    {
+      value: "Obniżyć koszty pozyskania klienta",
+      label: "Obniżyć koszty pozyskania klienta",
+    },
+    {
+      value: "Zwiększyć ilość rozmów handlowych",
+      label: "Zwiększyć ilość rozmów handlowych",
+    },
+  ];
+
+  const options2 = [
+    { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
+    { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
+    {
+      value: "Obniżyć koszty pozyskania klienta",
+      label: "Obniżyć koszty pozyskania klienta",
+    },
+    {
+      value: "Zwiększyć ilość rozmów handlowych",
+      label: "Zwiększyć ilość rozmów handlowych",
+    },
+  ];
+
+  const handleSelectChange = (selectedOption) => {
+    setSelectedOption(selectedOption);
+  };
+  const handleSelectChange2 = (selectedOption) => {
+    setSelectedOption2(selectedOption);
+  };
+
+  const DropdownIndicator = (props) => {
+    const { selectProps } = props;
+    const { value } = selectProps;
+
+    return (
+      <components.DropdownIndicator {...props}>
+        {value ? (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownok.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        ) : (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        )}
+      </components.DropdownIndicator>
+    );
+  };
   return (
     <>
       <div>
         <h2 className="card-heading mb-3">Na jakim etapie jest Twój biznes?</h2>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
-            options={[]}
+            options={options1}
             placeholder="Wybierz"
             isSearchable={false}
-            // components={}
+            components={{ DropdownIndicator }}
+            onChange={handleSelectChange}
             styles={{
               clearIndicator: (baseStyles, state) => ({
                 ...baseStyles,
@@ -174,6 +254,10 @@ const ComponentOne = ({ setCurrentComponent }) => {
                 paddingLeft: "10px",
                 borderRadius: "20px",
                 paddingBlock: "3px",
+                backgroundColor: selectedOption
+                  ? "#effeeb"
+                  : baseStyles.backgroundColor,
+                outline: selectedOption ? "2px solid #effeeb" : "none",
               }),
               dropdownIndicator: (provided, state) => ({
                 ...provided,
@@ -190,10 +274,11 @@ const ComponentOne = ({ setCurrentComponent }) => {
         <p>Lub ile planujesz inwestować?</p>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
-            options={[]}
+            options={options2}
             placeholder="Wybierz"
             isSearchable={false}
-            // components={{}}
+            components={{ DropdownIndicator }}
+            onChange={handleSelectChange2}
             styles={{
               clearIndicator: (baseStyles, state) => ({
                 ...baseStyles,
@@ -208,6 +293,10 @@ const ComponentOne = ({ setCurrentComponent }) => {
                 paddingLeft: "10px",
                 borderRadius: "20px",
                 paddingBlock: "3px",
+                backgroundColor: selectedOption2
+                  ? "#effeeb"
+                  : baseStyles.backgroundColor,
+                outline: selectedOption2 ? "2px solid #effeeb" : "none",
               }),
               dropdownIndicator: (provided, state) => ({
                 ...provided,
