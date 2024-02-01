@@ -20,6 +20,8 @@ const PriceListScreen = () => {
     borderRadius: "30px",
     padding: "36px 0",
     backgroundColor: "rgba(247, 247, 247, 1)",
+    width: "85%",
+    margin: "24px auto",
   };
 
   const buttonStyle = {
