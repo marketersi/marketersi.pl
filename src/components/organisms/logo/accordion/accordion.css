@@ -5,15 +5,15 @@
 }
 .accordion-item {
     border-bottom: 2px solid #b9b9b9;
-    padding: 15px 20px 15px 0;
+    padding: 10px 20px 0px 0 !important;
 }
+
 .accordion-title {
     display: flex;
     justify-content: space-between;
-}
-.accordion-title {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    border-bottom: 2px solid gray;
+    background: transparent !important;
+    padding: 15px 20px 15px 0 !important;
 }

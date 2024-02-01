@@ -24,7 +24,9 @@ const FreeSpace = () => {
               <span>wolne miejsce</span>
             </h2>
             <motion.div whileHover={{ translateY: 5 }}>
-            <button>Rekrutacja</button>
+            <a target="_blank" href="https://docs.google.com/document/d/1xMLse-SaH8O0qUs4j3S7JlEbR2YGRhsUO6Dgt7_DC2U/edit">
+            <button >Rekrutacja</button>
+            </a>
             </motion.div>
           </div>
           <p style={{marginTop: '150px'}}>Większość z nas zdobywała doświadczenie w pracy dla korporacji. Dziś wiedzą od największych często służymy tym najmniejszym. To bardzo wdzięczna robota.</p>

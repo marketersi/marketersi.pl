@@ -4,6 +4,7 @@ import React from "react";
 import style from "../team.module.css";
 import ReactPlayer from "react-player";
 import { Container, Image, Row, Col } from "react-bootstrap";
+import { motion } from 'framer-motion';
 
 const Banner = () => {
   return (
@@ -17,6 +18,16 @@ const Banner = () => {
         height="auto"
         className={style.bannerVideo}
       />
+      <div className={style.overlay}></div>
+      <motion.button
+      className="arrowAnimation"
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <motion.span className="arrow arrow-1" animate={{ opacity: [0, 1, 0], rotate: -45 }} transition={{ duration: 2, repeat: Infinity }}></motion.span>
+      <motion.span className="arrow arrow-2" animate={{ opacity: [0, 1, 0], rotate: -45 }} transition={{ duration: 2, repeat: Infinity, delay: 0.15 }}></motion.span>
+      <motion.span className="arrow arrow-3" animate={{ opacity: [0, 1, 0], rotate: -45 }} transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}></motion.span>
+    </motion.button>
       <Container>
         <div className={style.bannerHeading}>
           <h1>

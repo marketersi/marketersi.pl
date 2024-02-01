@@ -18,7 +18,7 @@ const PriceListScreen = () => {
     boxShadow:
       "4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff, 2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset",
     borderRadius: "30px",
-    padding: "22px 0",
+    padding: "36px 0",
     backgroundColor: "rgba(247, 247, 247, 1)",
   };
 
