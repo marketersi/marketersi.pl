@@ -3,7 +3,7 @@ import React from 'react'
 const Receive = () => {
   return (
     <>
-    <section className='receive'>
+    <section className='receive' id='sec1'>
         <div className="container projects-custom-container1">
           <div className="row">
             <div className="col-md-12">

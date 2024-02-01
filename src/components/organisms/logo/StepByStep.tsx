@@ -3,9 +3,9 @@ import React from 'react'
 const StepByStep = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background">
+    <section className="thematic-section projects-gray-background" id="sec4">
     <div
-          id="sec4"
+          
           className="container projects-custom-container1 menu-target"
         >
           <div className="row">

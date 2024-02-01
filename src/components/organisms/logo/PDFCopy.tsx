@@ -3,7 +3,7 @@ import React from 'react'
 const PDFCopy = () => {
   return (
     <>
-     <section className="thematic-section projects-gray-background" id="sec0">
+     <section className="thematic-section projects-gray-background" >
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12 projects-push-content-top">
