@@ -1,72 +1,70 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Slider = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentImage(
+      (prevImage) => (prevImage - 1 + images.length) % images.length
+    );
+  };
+
+  const images = [
+    { img: "https://propozycje.owocni.pl/ux/1.06f8af9e.png" },
+    {
+      img: "https://propozycje.owocni.pl/ux/3.5d1f2f90.png",
+    },
+    { img: "https://propozycje.owocni.pl/ux/1.06f8af9e.png" },
+  ];
+
+  const imageStyle = (index) => {
+    const translateX = `translateX(${(index - currentImage) * 100}%)`;
+    return {
+      display: currentImage === index ? "block" : "none",
+      transform: translateX,
+      transition: "transform 0.5s ease-in-out",
+    };
+  };
+
   return (
     <>
-    <section>
+      <section>
         <div id="makiety" style={{ height: "3995px" }}>
           <h2>
             Funkcjonalna makieta <br />
             <b>user experience</b>
           </h2>
           <div className="arrow">
-            <div className="next">dalej »</div>
-            <div className="prev">« cofnij</div>
+            <div className="next" onClick={nextSlide}>
+              dalej »
+            </div>
+            <div className="prev" onClick={prevSlide}>
+              « cofnij
+            </div>
           </div>
-          <div className="mockupsWrapper" style={{ height: "3995px" }}>
-            <div className="mockups">
-              <img
-                src="https://propozycje.owocni.pl/ux/1.06f8af9e.png"
-                style={{ opacity: 0 }}
-              />
-              <img
-                src="https://propozycje.owocni.pl/ux/2.ec21867c.png"
-                style={{
-                  opacity: 0,
-                  transform: "translate(-1550px, 200px) scale(0.5, 0.7)",
-                  filter: "blur(5px)",
-                }}
-              />
-              <img
-                src="https://propozycje.owocni.pl/ux/4.defeea9e.png"
-                style={{
-                  opacity: 0.3,
-                  transform:
-                    "translate(-775px, 200px) rotateY(10deg) scale(0.5, 0.7)",
-                  filter: "blur(5px)",
-                }}
-              />
-              <img
-                src="https://propozycje.owocni.pl/ux/1.06f8af9e.png"
-                style={{
-                  opacity: 1,
-                  transform: "rotateY(360deg)",
-                  filter: "blur(0px)",
-                }}
-              />
-              <img
-                src="https://propozycje.owocni.pl/ux/2.ec21867c.png"
-                style={{
-                  opacity: 0.3,
-                  transform:
-                    "translate(775px, 200px) rotateY(350deg) scale(0.5, 0.7)",
-                  filter: "blur(5px)",
-                }}
-              />
-              <img
-                src="https://propozycje.owocni.pl/ux/4.defeea9e.png"
-                style={{ opacity: 0 }}
-              />
-              <img
-                src="https://propozycje.owocni.pl/ux/3.5d1f2f90.png"
-                style={{ opacity: 0 }}
-              />
+          <div
+            className="mockupsWrapper"
+            style={{ height: "3995px", overflow: "hidden" }}
+          >
+            <div className="mockups" style={{ display: "flex" }}>
+              {images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image.img}
+                  alt={`Slide ${index + 1}`}
+                  style={imageStyle(index)}
+                />
+              ))}
             </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;
