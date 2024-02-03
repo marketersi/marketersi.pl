@@ -1,19 +1,37 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Row, Image, Nav } from "react-bootstrap";
 import style from "./header.module.css";
 import HeaderDropDown1 from "./HeaderDropDown1";
 import HeaderDropDown2 from "./HeaderDropDown2";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+  const [isOpen2, setIsOpen2] = useState(false);
+
+  const toggleDropdown2 = () => {
+    setIsOpen2(!isOpen2);
+  };
   return (
-    <div>
-      <div className={style.navbar}>
+    <>
+      <header className={`${style.navbar}, ${style.desktop}`}>
         <div className={style.navOverly}> </div>
-        <Row className="align-items-center">
+        <Row className="align-items-center w-100">
           <Col sm={4}>
             <div className={style.leftNav}>
               <Button className={style.headerLeftBtn}>
@@ -73,8 +91,116 @@ const Header = () => {
             </div>
           </Col>
         </Row>
+      </header>
+      {/* --------------------------------mobile header-------------------------- */}
+      <div className={style.mobileHeader}>
+      <header className={style.header}>
+        <Button className={style.mobileLeftBtn}>
+          <Link href="/cennik">Cennik</Link>
+        </Button>
+        <div className={style.mobileLogo}>
+          <Link href="/">
+            <Image
+              src="/assets/images/marketersi.PNG"
+              alt="My Image"
+              width={150}
+              height="auto"
+            />
+          </Link>
+        </div>
+        <nav className={`${style.nav} ${isMenuOpen ? style.open : ""}`}>
+          <ul className={style.mobileMenuList}>
+            <li>
+              <div className="dropdown">
+                <button
+                  onClick={toggleDropdown}
+                  className={style.MobileDropdownBtn}
+                >
+                  Usługi
+                  <span>
+                    {isOpen ? (
+                      <FontAwesomeIcon icon={faAngleDown} />
+                    ) : (
+                      <FontAwesomeIcon icon={faAngleRight} />
+                    )}
+                  </span>
+                </button>
+                {isOpen && (
+                  <div className="dropdown-content">
+                    <div className={style.menuItem}>
+                      <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
+                      <Link href="/projektowanie-logo">Projektowanie logo</Link>
+                    </div>
+                    <div className={style.menuItem}>
+                      <Link href="/projektowanie-ux">Projektowanie UX</Link>
+                    </div>
+                    <div className={style.menuItem}>
+                      <Link href="/strategia-marketingowa">
+                        Strategia marketingowa
+                      </Link>
+                    </div>
+                    <div className={style.menuItem}>
+                      <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
+                    </div>
+                    <div className={style.menuItem}>
+                      <Link href="/owocni-opinie">Opinie klientów</Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </li>
+            <li>
+              <Link href="/o-nas">Zespół </Link>
+            </li>
+            <li>
+              <Link href="/kontakt">Kontakt</Link>
+            </li>
+            <li>
+              <div className="dropdown">
+                <button
+                  onClick={toggleDropdown2}
+                  className={style.MobileDropdownBtn}
+                >
+                  Przydatne rzeczy
+                  <span>
+                    {isOpen2 ? (
+                      <FontAwesomeIcon icon={faAngleDown} />
+                    ) : (
+                      <FontAwesomeIcon icon={faAngleRight} />
+                    )}
+                  </span>
+                </button>
+                {isOpen2 && (
+                  <div className="dropdown-content">
+                    <div className={style.menuItem}>
+                      <Link href="/kalkulator">
+                        Kalkulator zysku z nowej strony (ROI)
+                      </Link>
+                      <Link href="/konsultacje">Konsultacja marketingu</Link>
+                    </div>
+                    <div className={style.menuItem}>
+                      <Link href="/faktow">
+                        50 Faktów psychologii: Strony www
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </li>
+            <li>
+              <Link href="/owocni-opinie">Klienci i opinie</Link>
+            </li>
+            <li>
+              <Link href="/cennik">Cennik</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={style.menuIcon} onClick={toggleMenu}>
+          <span>Menu</span> {isMenuOpen ? "✖" : "☰"}
+        </div>
+      </header>
       </div>
-    </div>
+    </>
   );
 };
 
