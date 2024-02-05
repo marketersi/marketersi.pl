@@ -24,10 +24,10 @@ const Entrepreneur = () => {
             </h2>
             <h3 className={style.gradientBG}>- {section4?.subtitle}</h3>
             <img
-              style={{ margin: "0 0 50px" }}
               // src="/assets/images/name.svg"
               src={section4?.image_url}
               alt=""
+              className={style.hardImg}
             />
             <p>
               {/* Stworzyć skuteczne kampanie reklamowe i pokazać je właściwym
@@ -41,7 +41,7 @@ const Entrepreneur = () => {
           </div>
 
           <Row className="mb-5">
-            <Col sm={6}>
+            <Col lg={6} className="order-lg-1 order-2" >
               <h4>
                 {/* Możesz mieć dobrą firmę, fajne produkty i świetne usługi, ale
                 jeśli nie przekonasz ludzi, by <span>kupili od Ciebie</span>-
@@ -49,7 +49,7 @@ const Entrepreneur = () => {
                 {section5?.quote}
               </h4>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} className="order-lg-2 order-1">
               <ReactPlayer
                 // url="/assets/videos/Copywriting_f9kslo_1_vm8ypc.webm"
                 url={section5?.video_url}
@@ -76,7 +76,7 @@ const Entrepreneur = () => {
             </p>
           </div>
           <Row className="mt-5 pt-5 mb-5 pb-5">
-            <Col sm={7}>
+            <Col lg={7} >
               <ReactPlayer
                 // url="/assets/videos/Konwersja_dvdhzl.webm"
                 url={section6?.video_url}
@@ -86,7 +86,7 @@ const Entrepreneur = () => {
                 height="auto"
               />
             </Col>
-            <Col sm={5}>
+            <Col lg={5}>
               <h4 className="text-end">
                 {/* Poprawa konwersji to
                 <span>najszybszy sposób,</span> <br />

@@ -10,7 +10,7 @@ const ContactForm = () => {
         placeholder="Wiadomość"
         className="form_text_area"
       ></textarea>
-      <div className=" small_forms d-flex gap-1">
+      <div className=" small_forms d-sm-flex gap-1">
         <input placeholder="Imię" className=" form_inputs" name="name" />
         <input
           placeholder="Mail"

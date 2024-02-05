@@ -49,3 +49,27 @@
     text-decoration: none;
     color: #e74a50;
 }
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+    .footerRow{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .footerLogo img{
+        width: 80%;
+        margin: 0 auto 40px;
+        display: block;
+    }
+    .footerBrandLogo{
+    margin: 0 0 60px;
+    }
+    .footerRightMenu{
+        margin: 0 0 40px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footerRightMenu{
+        margin: 0 0 40px;
+    }
+}

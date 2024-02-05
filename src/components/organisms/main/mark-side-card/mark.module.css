@@ -6,6 +6,7 @@
     border-radius: 20px;
     box-shadow: 4px 0px 10px lightgray;
 }
+
 .markCard h3{
     font-size: 50px;
     text-align: center;
@@ -53,4 +54,36 @@
     width: 15px;
     margin: 3px auto;
     display: block;
+}
+.mark img{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+    .mark img{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .markVideo video {
+        margin: 40px auto 0;
+        display: block;
+    }
+}
+@media screen and (max-width: 767px) {
+    .mark img{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    .markVideo video {
+        margin: 40px auto 0;
+        display: block;
+        width: 80% !important;
+    }
+    .markCard{
+        width: 100%;
+    }
 }

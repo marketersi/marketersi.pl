@@ -27,23 +27,10 @@ const Footer = () => {
                   height="auto"
                 />
               </div>
-              <div className={style.copyright}>
-                <div className={style.copyrightText}>
-                  <p>
-                    &copy; {currentYear} - Owocni.pl | Tak się robi marketing!
-                  </p>
-                </div>
-                <div className={style.copyrightMenu}>
-                  <p>
-                    <a href="/#">Regulamin |</a>
-                    <a href="/#"> Polityka prywatnosci | </a>
-                    <a href="/#">Mapav</a>
-                  </p>
-                </div>
-              </div>
+              
             </div>
             <div className={style.footerCol}>
-              <Row className="mb-5">
+              <Row className="mb-sm-5">
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Fajne marki</h3>
@@ -102,6 +89,20 @@ const Footer = () => {
               </Row>
             </div>
           </div>
+          <div className={style.copyright}>
+                <div className={style.copyrightText}>
+                  <p>
+                    &copy; {currentYear} - Owocni.pl | Tak się robi marketing!
+                  </p>
+                </div>
+                <div className={style.copyrightMenu}>
+                  <p>
+                    <a href="/#">Regulamin |</a>
+                    <a href="/#"> Polityka prywatnosci | </a>
+                    <a href="/#">Mapav</a>
+                  </p>
+                </div>
+              </div>
         </Container>
       </div>
     </div>

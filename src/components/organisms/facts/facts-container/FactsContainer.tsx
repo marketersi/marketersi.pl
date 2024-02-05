@@ -8,13 +8,13 @@ import { useSelector } from "react-redux";
 const FactsContainer = () => {
   const { isLoading, screenData } = useSelector((state) => state.facts);
 
-  const reversedFactoCard = screenData?.factoCard?.slice().reverse();
+  const reversedFactoCard = screenData?.factocard?.slice().reverse();
   return (
     <section className="fc_sec">
       <Row>
         {reversedFactoCard?.map((e, i) => {
           return (
-            <Col key={e.id} md={6}>
+            <Col key={e.id} lg={6}>
               <FactsCard {...e} />
             </Col>
           );

@@ -3,7 +3,7 @@ import "./accordion.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 
-const SingleQuestion = ({ id, question, answer, isOpen, onQuestionClick }) => {
+const SingleQuestion = ({ question, answer, isOpen, onQuestionClick }) => {
   return (
     <article className={`question ${isOpen ? "showBorder" : ""}`}>
       <header>

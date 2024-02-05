@@ -38,7 +38,7 @@ const HomeScreen = () => {
           <RatingCaption />
           <MarkSide />
           {/* <Reviews /> */}
-          <OurClients />
+          {/* <OurClients /> */}
           <Entrepreneur />
           <Numbers />
           <HardResult />
