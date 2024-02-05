@@ -33,14 +33,14 @@ const Calculator = () => {
 
   return (
     <>
-      <Row className="p-5">
-        <Col className="text-center d-flex flex-column align-items-center justify-content-center">
+      <Row className="p-lg-5">
+        <Col lg={6} className="text-center d-flex flex-column align-items-center justify-content-center">
           <div className="first-card card shadow">
             <Row className="mb-5">
-              <Col>
+              <Col sm={4}>
                 <p>Stronę odwiedza</p>
               </Col>
-              <Col>
+              <Col sm={4}>
                 <input
                   value={visitors}
                   onChange={handleVisitorsChange}
@@ -59,16 +59,16 @@ const Calculator = () => {
                   style={{ "--value": visitors }}
                 />
               </Col>
-              <Col>
+              <Col sm={4}>
                 <p>osób w miesiącu</p>
               </Col>
             </Row>
 
             <Row>
-              <Col>
-                <p>Średni zysk z zamówienia to</p>
+              <Col sm={4}>
+                <p className="inputHeading">Średni zysk z zamówienia to</p>
               </Col>
-              <Col>
+              <Col sm={4}>
                 <input
                   value={averageOrderValue}
                   onChange={handleOrderValueChange}
@@ -86,14 +86,14 @@ const Calculator = () => {
                   style={{ "--value": averageOrderValue }}
                 />
               </Col>
-              <Col>
+              <Col sm={4}>
                 <p>złotych</p>
               </Col>
             </Row>
           </div>
         </Col>
 
-        <Col className="card text-center p-5 second-card shadow">
+        <Col lg={6} className="card text-center p-5 second-card shadow">
           <h2>Dodatkowy zysk</h2>
 
           <div className="my-3">
