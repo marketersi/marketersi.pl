@@ -29,7 +29,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className={`${style.navbar}, ${style.desktop}`}>
+      <header className={style.navbar}>
         <div className={style.navOverly}> </div>
         <Row className="align-items-center w-100">
           <Col sm={4}>

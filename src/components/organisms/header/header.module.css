@@ -3,6 +3,7 @@
   background: transparent;
   -webkit-transition: background 2s;
   transition: background 2s;
+  display: block;
 }
 .navbar:hover {
   background: rgb(255, 255, 255);
@@ -134,7 +135,7 @@
   position: absolute;
   left: 100px;
   z-index: 1111;
-  top: -46px;
+  top: -66px;
 }
 .headerMenu h3 {
   font-size: 28px;
@@ -267,7 +268,7 @@ text-decoration: none;
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .desktop{
+  .navbar{
    display: none;
   }
   .dropBtn {
