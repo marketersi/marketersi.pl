@@ -19,7 +19,7 @@ import StrategyAction from "../../components/organisms/strategia-marketingowa/St
 import Testimonial from "../../components/organisms/strategia-marketingowa/Testimonial";
 import WhatRecieve from "../../components/organisms/strategia-marketingowa/WhatRecieve";
 import YesAccordion from "../../components/organisms/strategia-marketingowa/accordion/YesAccordion";
-import items from "@/components/organisms/strategia-marketingowa/accordion/Data"
+import items from "@/components/organisms/strategia-marketingowa/accordion/Data";
 import "./strategiamarketingowa.css";
 
 const StrategiaMarketingowa = () => {
@@ -85,7 +85,6 @@ const StrategiaMarketingowa = () => {
 
         {/* 20. Accordion */}
         <YesAccordion items={items} />
-        
       </div>
     </>
   );

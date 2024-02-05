@@ -3,20 +3,25 @@ import React from "react";
 import "./pricing-option.css";
 import { Container } from "react-bootstrap";
 import CardTwo from "../../cennik/menu-two/CardTwo";
+import { useSelector } from "react-redux";
 
 const PricingOption = () => {
+  const { isLoading, screenData } = useSelector((state) => state.consulting);
+
   return (
     <section>
       <div className="container po_pricing_sec">
         <div className="row justify-content-center">
           <div>
             <h2 className="po_title">
-              Zdobądź 3 różne opcje cenowe <br /> na marketing swojej firmy.
+              {/* Zdobądź 3 różne opcje cenowe <br /> na marketing swojej firmy. */}
+              {screenData?.title}
             </h2>
             <div className="mt-3">
               <p className="po_subtitle">
-                Przejdź krótki formularz. Zobacz co dla Ciebie zrobimy, <br />{" "}
-                ile za to policzymy i jak szybko Ci się to zwróci.
+                {/* Przejdź krótki formularz. Zobacz co dla Ciebie zrobimy, <br />{" "}
+                ile za to policzymy i jak szybko Ci się to zwróci. */}
+                {screenData?.subtitle}
               </p>
             </div>
 
@@ -49,11 +54,13 @@ const PricingOption = () => {
 
       <div className="po_brands">
         <p>
-          Nasi eksperci cytowani <br />
-          są przez największe <br /> media w branży
+          {/* Nasi eksperci cytowani <br />
+          są przez największe <br /> media w branży */}
+          {screenData?.brand_quote}
         </p>
         <img
-          src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogotypy.eed9b686.png&w=1080&q=75"
+          // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogotypy.eed9b686.png&w=1080&q=75"
+          src={screenData?.brand_image}
           alt="experts"
         />
       </div>
