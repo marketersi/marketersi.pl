@@ -1,5 +1,6 @@
 import React, { createContext } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { SlideFour, SlideOne } from "./OurClients";
 
 const CarouselContext = createContext({
   handleNext: () => {},
@@ -20,9 +21,20 @@ const ClientCarousel = ({ slides, options }) => {
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-            {slides.map((SlideComponent, index) => (
+            {/* {slides?.map((e, index) => (
               <div className="embla__slide" key={index}>
                 <SlideComponent />
+                <SlideOne {...e} />
+              </div>
+            ))} */}
+
+            {slides?.map((e, index) => (
+              <div className="embla__slide" key={index}>
+                {index === slides.length - 1 ? (
+                  <SlideFour />
+                ) : (
+                  <SlideOne {...e} />
+                )}
               </div>
             ))}
           </div>

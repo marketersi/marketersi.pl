@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const BusinessTools = () => {
   return (
     <>
-    
-    <section className="business_tools">
+      <section className="business_tools">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center copywriter-cmargin-2">
@@ -114,8 +113,9 @@ const BusinessTools = () => {
             </div>
           </div>
         </div>
-      </section></>
-  )
-}
+      </section>
+    </>
+  );
+};
 
-export default BusinessTools
+export default BusinessTools;
