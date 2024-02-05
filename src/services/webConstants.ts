@@ -4,5 +4,5 @@ export const API_ENDPOINTS = {
   CALCULATOR_SCREEN: "api/get_calculator",
   HOME_SCREEN: "api/get-home-screen-setting",
   CONSULTING_SCREEN: "",
-  EXAMINATION_SCREEN:""
+  EXAMINATION_SCREEN:"api/examination"
 };

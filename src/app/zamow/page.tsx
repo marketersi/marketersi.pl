@@ -9,6 +9,7 @@ import "./zamow.css";
 import { motion } from "framer-motion";
 import { FETCH_EXAMINATION_SCREEN_DATA } from "@/redux/zamow/zamowAction";
 import { useDispatch, useSelector } from "react-redux";
+import Loader from "@/components/organisms/animation/Loader";
 
 const BookExamination = () => {
   const { isLoading, screenData } = useSelector((state) => state.examination);
@@ -29,22 +30,28 @@ const BookExamination = () => {
 
   return (
     <>
-      <div className="bg_sunset"></div>
-      <Container className="zamow-container">
-        <ZamowHero />
-        <CustomerRating />
-        <Results />
-        <Accordion />
-        <div className="btt_btn_container">
-          <motion.button
-            onClick={handleBackToTop}
-            className="btt_btn"
-            whileHover={{ translateY: 5 }}
-          >
-            Powrót na górę
-          </motion.button>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <div>
+          <div className="bg_sunset"></div>
+          <Container className="zamow-container">
+            <ZamowHero />
+            <CustomerRating />
+            <Results />
+            <Accordion />
+            <div className="btt_btn_container">
+              <motion.button
+                onClick={handleBackToTop}
+                className="btt_btn"
+                whileHover={{ translateY: 5 }}
+              >
+                Powrót na górę
+              </motion.button>
+            </div>
+          </Container>
         </div>
-      </Container>
+      )}
     </>
   );
 };
