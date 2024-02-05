@@ -28,3 +28,41 @@
 
 
 /* ------------------------- */
+
+.slick-slide img{
+    margin: 0 auto;
+}
+.slick-next {
+    right: 120px;
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    box-shadow: 0px 7px 0px black;
+    transition: transform 0s ease;
+}
+.slick-next:hover {
+    box-shadow: none;
+    /* transform: translateY(0.5px); */
+}
+.slick-prev:hover {
+    box-shadow: none;
+    /* transform: translateY(0.5px); */
+}
+.slick-prev {
+    left: 120px;
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    z-index: 1111;
+    box-shadow: 0px 7px 0px black;
+    /* transition: transform 0.3s ease; */
+}
+.slick-slider{
+    padding: 50px 0;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 70px;
+    opacity: 1;
+    color: var(--bs-yellow);
+    margin-left: -4px;
+}

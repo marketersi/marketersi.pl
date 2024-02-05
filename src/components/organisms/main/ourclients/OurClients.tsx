@@ -228,10 +228,10 @@ export default function OurClients() {
   const slides = [SlideOne, SlideTwo, SlideThree, SlideFour];
 
   return (
-    <div className="OurClients content">
-      <div className="OurClients_Title">
+    <div className="OurClients content mt-5">
+      {/* <div className="OurClients_Title">
         Pozwól naszym klientom opowiedzieć Ci o współpracy z nami
-      </div>
+      </div> */}
       <div className="OurClients_Marquee full">
         {/* Marquee 1 */}
         <Marquee autoFill speed={175}>

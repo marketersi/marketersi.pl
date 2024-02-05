@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import CardOne from "@/components/organisms/cennik/CardOne";
-import CardTwo from "@/components/organisms/cennik/CardTwo";
-import CardThree from "@/components/organisms/cennik/CardThree";
-import CardFour from "@/components/organisms/cennik/CardFour";
+import CardOne from "@/components/organisms/cennik/menu-one/CardOne";
+import CardTwo from "@/components/organisms/cennik/menu-two/CardTwo";
+import CardThree from "@/components/organisms/cennik/menu-three/CardThree";
+import CardFour from "@/components/organisms/cennik/menu-four/CardFour";
 import "./cennik.css";
 
 const PriceListScreen = () => {
@@ -18,9 +18,10 @@ const PriceListScreen = () => {
     boxShadow:
       "4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff, 2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset",
     borderRadius: "30px",
-    minHeight: "400px",
-    padding: "20px",
+    padding: "36px 0",
     backgroundColor: "rgba(247, 247, 247, 1)",
+    width: "85%",
+    margin: "24px auto",
   };
 
   const buttonStyle = {
@@ -47,7 +48,7 @@ const PriceListScreen = () => {
             </p>
           </div>
 
-          <div className="card mt-4 card-narrow" style={cardStyle}>
+          <div className="card mt-4" style={cardStyle}>
             <div className="card-body">
               {selectedOption == null && (
                 <div>

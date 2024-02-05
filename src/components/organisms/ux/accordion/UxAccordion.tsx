@@ -24,19 +24,17 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
 
   return (
     <>
-      
       <div className="faqContainer">
-        <div className="header__top__left" >
-        <h2
-          className="textAnimation"
-          style={{
-            opacity: 1,
-            transform: "translate(0px, 0px)",
-          }}
-        >
-          Na wszystkie pytania 
-          odpowiedź brzmi TAK!
-        </h2>
+        <div className="header__top__left">
+          <h2
+            className="textAnimation"
+            style={{
+              opacity: 1,
+              transform: "translate(0px, 0px)",
+            }}
+          >
+            Na wszystkie pytania odpowiedź brzmi TAK!
+          </h2>
         </div>
         {items &&
           items.map((item, index) => (

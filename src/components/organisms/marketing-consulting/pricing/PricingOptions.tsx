@@ -2,7 +2,7 @@
 import React from "react";
 import "./pricing-option.css";
 import { Container } from "react-bootstrap";
-import CardTwo from "../../cennik/CardTwo";
+import CardTwo from "../../cennik/menu-two/CardTwo";
 
 const PricingOption = () => {
   return (

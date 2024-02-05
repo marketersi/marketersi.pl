@@ -330,3 +330,36 @@ body {
   /* box-shadow: 0 0 10px lightgray; */
   border-radius: 30px;
 }
+
+/* star */
+.star {
+  color: #fdc818;
+  margin-right: 5px;
+  font-size: 24px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.empty {
+  /* filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); */
+  color: #855214;
+  font-size: 24px;
+}
+/* star */
+
+/* select */
+.select-input {
+  width: 75%;
+}
+
+/* -------------------------Accordion------------------------ */
+.copywriter-intro-bg-5-label {
+  font-family: "Playfair Display";
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+.img-background-logop {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

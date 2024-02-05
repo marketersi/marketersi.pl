@@ -3,4 +3,5 @@ export const API_ENDPOINTS = {
   FACTS_SCREEN: "api/get_factow-setting",
   CALCULATOR_SCREEN: "api/get_calculator",
   HOME_SCREEN: "api/get-home-screen-setting",
+  CONSULTING_SCREEN: "",
 };

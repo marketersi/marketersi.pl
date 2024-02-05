@@ -58,11 +58,13 @@ const Hero = () => {
             która robi robotę */}
             {heroSection?.title}
           </h1>
-          <h6>Rozwijanie biznesu jest trudne.</h6>
-          <p>
-            {/* Z Owocnymi jest łatwiej. <br /> Przyjemnie i przewidywalnie. */}
-            {heroSection?.subtitle}
-          </p>
+          <div className={style.subtitleContainer}>
+            <h6>Rozwijanie biznesu jest trudne.</h6>
+            <p>
+              {/* Z Owocnymi jest łatwiej. <br /> Przyjemnie i przewidywalnie. */}
+              {heroSection?.subtitle}
+            </p>
+          </div>
           <div className={style.heroBtn}>
             <Link href="/cennik">
               <button>Wyceń projekt</button>
