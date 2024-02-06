@@ -4,7 +4,7 @@ import { Form } from 'react-bootstrap'
 const Section5 = () => {
   return (
     <>
-    <section className="section5">
+    <section className="section5" id='sec1'>
         <div className="container copywriter-standard-mtb-40">
           <div className="row">
             <div className="col-md-12 text-center">

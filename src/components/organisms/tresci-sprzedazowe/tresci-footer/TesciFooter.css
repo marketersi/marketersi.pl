@@ -26,9 +26,9 @@
   line-height: 31.2px;
   text-align: left;
 }
-.nazwa_footer_bottom_btn {
-  background-color: #aa2e2d;
-  border: 0.666667px solid #aa2e2d;
+.tersci_footer_bottom_btn {
+  background-color: #438d07;
+  border: 0.666667px solid #438d07;
   box-shadow: #c1c1c1 5px 5px 0px -1px;
   cursor: pointer;
   padding: 4px 15px;
@@ -37,4 +37,37 @@
   font-weight: 700;
   line-height: 31.2px;
   text-align: center;
+}
+a.activeLink{
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+/* ----------------------------------modal--------------------------- */
+.ReactModal__Content.ReactModal__Content--after-open {
+  background-color: transparent !important;
+  padding: 0 !important;
+  inset: 0 !important;
+  border: none !important;
+  z-index: 11111111 !important;
+}
+.ReactModalPortal {
+  position: relative;
+  z-index: 1111;
+}
+.ReactModalPortal .modalCloseBtn {
+  position: absolute;
+  right: 50px;
+  top: -10px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 26px;
+}
+.logo-form-container {
+  width: 750px;
+  margin: 0 auto;
+  /* background: gray; */
+  position: relative;
 }
