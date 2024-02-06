@@ -4,7 +4,11 @@
   line-height: 60px;
   margin: 0 0 40px;
 }
-
+.zamow-hero.col {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 0px 30px;
+}
 .zamow-hero p {
   line-height: 1.4;
   font-weight: 300;
@@ -20,7 +24,7 @@
 
 .input-container {
   position: relative;
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -88,4 +92,16 @@
     rgb(249, 146, 23) 0%,
     rgb(249, 54, 0) 100%
   );
+}
+@media only screen and (max-width: 767px){
+  .zamow-hero h1 {
+    font-size: 50px;
+}
+.zamow-hero p {
+  font-size: 24px;
+}
+.input-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 }
