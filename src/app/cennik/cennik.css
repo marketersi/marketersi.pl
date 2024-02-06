@@ -1,0 +1,99 @@
+.heading-style {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.card-heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-subheading {
+  font-size: 18px;
+}
+
+.card-narrow {
+  width: 85%;
+  margin: auto;
+}
+
+.btn-text {
+  font-size: 18px;
+}
+
+.btns_container {
+  padding: 30px;
+}
+
+.selectInputStyle {
+  border-radius: 100px;
+  width: 75%;
+  border: "1px solid rgb(201, 201, 201)";
+  padding: 8px 12px;
+}
+
+.cennikBtn {
+  padding: 8px 16px;
+  background: #d21e00;
+  font-size: 18px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 6px 0px #981a04;
+}
+
+.cennikBtn:hover {
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-out;
+}
+
+/* additional input */
+.additional-input-container {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+
+.additional-input-container h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 18px;
+}
+
+.additional-input-container input {
+  padding: 8px 16px;
+  outline-color: rgb(210, 30, 0);
+  border: none;
+  border-color: hsl(0, 0%, 80%);
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 30px;
+}
+
+.po_card_custom {
+  /* box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff,
+    2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset;
+  border-radius: 30px;
+  min-height: 400px;
+  padding: 30px;
+  background-color: rgba(247, 247, 247, 1);
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center; */
+
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff,
+    2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset;
+  border-radius: 30px;
+  padding: 36px 0;
+  background-color: rgba(247, 247, 247, 1);
+  width: 75%;
+  width: 60%;
+  margin: auto;
+}

@@ -1,0 +1,131 @@
+"use client";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import CardOne from "@/components/organisms/cennik/menu-one/CardOne";
+import CardTwo from "@/components/organisms/cennik/menu-two/CardTwo";
+import CardThree from "@/components/organisms/cennik/menu-three/CardThree";
+import CardFour from "@/components/organisms/cennik/menu-four/CardFour";
+import "./cennik.css";
+
+const PriceListScreen = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleBtnClick = (value) => {
+    setSelectedOption(value);
+  };
+
+  const cardStyle = {
+    boxShadow:
+      "4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff, 2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset",
+    borderRadius: "30px",
+    padding: "36px 0",
+    backgroundColor: "rgba(247, 247, 247, 1)",
+    width: "85%",
+    margin: "24px auto",
+  };
+
+  const buttonStyle = {
+    margin: "5px",
+    padding: "10px 25px 10px 25px",
+    borderRadius: "100px",
+    backgroundColor: "rgb(255, 255, 255)",
+    border: "1px solid rgb(201, 201, 201)",
+    fontSize: "18px",
+  };
+
+  return (
+    <section className="container pb-5">
+      <div className="row justify-content-center">
+        <div className="col-md-8 text-center">
+          <h2 className="mt-5 heading-style">Zdobądź 3 różne opcje cenowe</h2>
+          <div className="mt-3">
+            <p className="subheading">
+              <span>
+                Przejdź krótki formularz. Zobacz co dla Ciebie zrobimy,
+                <br />
+                ile za to policzymy i jak szybko Ci się to zwróci.
+              </span>
+            </p>
+          </div>
+
+          <div className="card mt-4" style={cardStyle}>
+            <div className="card-body">
+              {selectedOption == null && (
+                <div>
+                  <div>
+                    <h2 className="card-heading">Na co chcesz wycenę?</h2>
+                    <p className="card-subheading">Wybierz jedną z opcji.</p>
+                  </div>
+                  <div className="btns_container mb-5">
+                    <div className="row">
+                      <div
+                        className="col"
+                        style={{ textAlign: "right" }}
+                        onClick={() => handleBtnClick(1)}
+                      >
+                        <button style={buttonStyle}>Strona internetowa</button>
+                      </div>
+                      <div
+                        className="col"
+                        style={{ textAlign: "left" }}
+                        onClick={() => handleBtnClick(2)}
+                      >
+                        <button style={buttonStyle}>
+                          Działania marketingowe
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="row mt-3">
+                      <div
+                        className="col"
+                        style={{ textAlign: "right" }}
+                        onClick={() => handleBtnClick(3)}
+                      >
+                        <button style={buttonStyle}>Nazwa dla firmy</button>
+                      </div>
+                      <div
+                        className="col"
+                        style={{ textAlign: "left" }}
+                        onClick={() => handleBtnClick(4)}
+                      >
+                        <button style={buttonStyle}>
+                          Logo lub identyfikacja
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {selectedOption == 1 && (
+                <>
+                  <CardOne />
+                </>
+              )}
+
+              {selectedOption == 2 && (
+                <>
+                  <CardTwo />
+                </>
+              )}
+
+              {selectedOption == 3 && (
+                <>
+                  <CardThree />
+                </>
+              )}
+
+              {selectedOption == 4 && (
+                <>
+                  <CardFour />
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PriceListScreen;

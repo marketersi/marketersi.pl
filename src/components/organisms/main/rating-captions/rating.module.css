@@ -1,0 +1,135 @@
+.rating {
+    background: #e3e3e3;
+    padding: 100px 0;
+}
+
+.ratingImg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratingImg img {
+    width: 250px;
+}
+
+.ratingImg :nth-child(2) {
+    width: 300px;
+}
+
+.ratingLogoImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 0 0px;
+}
+
+.ratingMainImg {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.ratingMainImg img {
+    width: 85%;
+    height: auto;
+    margin: -100px auto 0;
+    display: block;
+}
+
+.ratingMainImg p {
+    text-align: center;
+}
+
+.ratingMainImg p span {
+    background: #6d7278;
+    color: #ffc600;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+
+.ratingCOntent {
+    margin: 50px 0 35px;
+}
+
+.ratingCOntent h2 {
+    font-size: 65px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 40px;
+    color: #333333;
+    line-height: 60px;
+}
+
+.ratingCOntent h2 span {
+    font-weight: 800;
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+    padding: 0 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.ratingCOntent p {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+    color: #333333;
+    line-height: 50px;
+    margin: 0 0 40px;
+}
+
+.ratingCOntent p span {
+    font-weight: 500;
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+    padding: 0 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+    .ratingImg img {
+        width: 200px;
+    }
+
+    .ratingImg :nth-child(2) {
+        width: 250px;
+    }
+
+    .ratingLogoImg img {
+        width: 35%;
+    }
+    .ratingMainImg img {
+        width: 100%;
+    }
+    .ratingCOntent p {
+        font-size: 28px;
+        /* text-align: left; */
+    }
+    .rating {
+        background: #e3e3e3;
+        padding: 100px 0 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .ratingImg img {
+        width: 100px;
+    }
+
+    .ratingImg :nth-child(2) {
+        width: 150px;
+    }
+
+    .ratingLogoImg {
+        display: block;
+    }
+    .ratingLogoImg img {
+        width: 65%;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .ratingCOntent h2 {
+        font-size: 45px;
+    }
+}

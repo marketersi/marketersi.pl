@@ -1,0 +1,180 @@
+.cal_sec {
+  padding: 70px 0;
+}
+
+.first-row h1 {
+  font-weight: 900;
+}
+
+.first-row p {
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.second-row h1 {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.second-row p {
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 28px;
+  text-align: left;
+}
+
+.first-card {
+  padding: 115px 50px;
+  margin-right: -28px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(246, 246, 247);
+}
+
+.first-card p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.second-card {
+  border: none;
+  border-radius: 10px;
+}
+
+.second-card h2 {
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.second-card h3 {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.second-card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  margin-top: 16px;
+}
+
+.calc_input {
+  border: none;
+  border-bottom: 1px dotted;
+  text-align: right;
+  font-size: 45px;
+  font-weight: 900;
+  width: 9rem;
+  background: none;
+  color: #038fa5;
+}
+
+.calc_input:focus {
+  outline: none;
+}
+
+input[type="range"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc((var(--value) - 10) / (9999 - 10) * 100%);
+  height: 8px;
+  background-color: #003366;
+  border-radius: 5px;
+}
+
+.custom-range {
+  height: 8px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #b7e7ec;
+  z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 999999px;
+  background: #0091a2;
+  cursor: pointer;
+  position: relative;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #3f4b5c;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #b7e7ec;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #3f4b5c;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #b7e7ec;
+}
+
+/* custom input */
+input[type="number"].no-spinner {
+  -moz-appearance: textfield;
+}
+
+input[type="number"].no-spinner::-webkit-inner-spin-button,
+input[type="number"].no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+  .first-card {
+    margin-right: 0px;
+    width: 100%;
+}
+.second-card {
+  border-radius: 30px;
+  width: 85%;
+  margin: -60px auto 50px;
+}
+.second-card h2 {
+  font-size: 55px;
+}
+.second-row h1 {
+  font-weight: 700;
+  font-size: 70px;
+}
+}
+@media screen and (max-width: 767px) {
+  .first-card {
+    padding: 50px 30px;
+}
+.calc_input {
+  width: 100%;
+}
+p.inputHeading {
+  font-size: 22px !important;
+  font-weight: 600;
+}
+.second-card h2 {
+  font-size: 35px;
+}
+.second-row h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.second-row p {
+  font-size: 22px;
+}
+}
