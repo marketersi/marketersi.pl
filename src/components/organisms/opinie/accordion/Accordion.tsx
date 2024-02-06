@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import style from "../opinie.module.css";
 import { Row, Col } from "react-bootstrap";
-import { accordionData } from "./data";
+import { accordionData } from "./Data.js";
 import SingleQuestion from "./Question";
 import "./accordion.css";
 // import Accordion from "react-bootstrap/Accordion";
