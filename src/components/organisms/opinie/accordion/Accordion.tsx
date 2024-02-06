@@ -1,14 +1,14 @@
 "use client";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import style from "../opinie.module.css";
 import { Row, Col } from "react-bootstrap";
-import { accordionData } from "./data";
+import { accordionData } from "./Data.js";
 import SingleQuestion from "./Question";
-import "./accordion.css"
+import "./accordion.css";
 // import Accordion from "react-bootstrap/Accordion";
 
 const Accordion = () => {
-    const [questions, setQuestions] = useState(accordionData);
+  const [questions, setQuestions] = useState(accordionData);
   return (
     <>
       <div className={style.accordion}>
