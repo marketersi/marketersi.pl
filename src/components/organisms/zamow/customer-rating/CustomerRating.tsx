@@ -35,8 +35,8 @@ const CustomerRating = () => {
         <img src={ratingSection?.barnd_image_2} alt="" />
       </div>
       <p
-        className="text-center my-5"
-        style={{ fontSize: "24px", fontWeight: 300 }}
+        className=" brand-description"
+        
       >
         {/* Ta usługa jest oceniana średnio na <br />
         przez firmy, które mówią takie rzeczy jak: */}
@@ -44,7 +44,7 @@ const CustomerRating = () => {
         {<Stars rating={ratingSection?.rating} />}
       </p>
 
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="d-sm-flex justify-content-center align-items-center">
         <p className="emphasized-text">
           <em>
             {/* “poziom szczegółowości <br />
@@ -52,7 +52,7 @@ const CustomerRating = () => {
             {CustomerReview?.review}
           </em>
         </p>
-        <div className="mx-5">
+        <div className="mx-sm-5">
           <p>
             <strong className="text-color">
               {/* Monika Marchewka  */}
@@ -87,8 +87,7 @@ const CustomerRating = () => {
       </div>
 
       <p
-        className="text-center my-5"
-        style={{ fontSize: "24px", fontWeight: 300 }}
+        className=" brand-description"
       >
         {/* Na pytanie: Czy po wdrożeniu wskazówek od naszego <br />
         eksperta wzrost wyników był zauważalny/mierzalny?*/}

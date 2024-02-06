@@ -3,7 +3,7 @@ import React from 'react'
 const Orange = () => {
   return (
     <>
-<section className="thematic-section-orange">
+<section className="thematic-section-orange" id='sec2'>
         <div className="copywriter-orange-bg">
           <img
             className="copywriter-seo-img-dnone"
