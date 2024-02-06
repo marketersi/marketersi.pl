@@ -23,7 +23,7 @@ const Accordion = () => {
         {/* Odpowiedzi na częste pytania: */}
         {FAQ_Section?.title}
       </h3>
-      <section className="accordion-container w-75">
+      <section className="accordion-container w-lg-75 w-100">
         {FAQ?.map((question, index) => {
           return (
             <SingleQuestion

@@ -49,7 +49,7 @@ const Results = () => {
       <Row>
         {PercentageCard?.map((e, i) => {
           return (
-            <Col key={i}>
+            <Col lg={3} sm={6} key={i}>
               <ResultsCard {...e} />
             </Col>
           );
@@ -119,7 +119,7 @@ const ResultsCard = ({ Percentage_value, title, website, category }) => {
         <h2>{Percentage_value}%</h2>
         <p>{title}</p>
       </Card>
-      <div className="mt-3 text-center">
+      <div className="mt-3 text-center mb-lg-0  mb-5">
         <p>
           {website}
           <br />

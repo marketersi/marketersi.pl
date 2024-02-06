@@ -87,7 +87,7 @@ const LogoFooter = () => {
           </button>
         </div>
       </div>
-
+      {/*    ------------ modal------------ */}
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

@@ -499,33 +499,37 @@ section.black-sec-form {
 /* ===================================faq==================================== */
 
 .accordion-item {
-    border: 1px solid #ddd;
     margin-bottom: 5px;
   }
   
   .accordion-title {
-    padding: 15px 20px;
+    padding: 15px 0px;
     cursor: pointer;
-    background-color: #f5f5f5;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid lightgray;
 }
   
   .accordion-title.active {
-    background-color: #f5f5f5;
+    background-color: transparent;
   }
   
   .accordion-content {
-    padding: 20px;
+    padding: 20px 0;
     font-size: 18px;
-    line-height: 30px;
-    background: #f5f5f5;
-    border-top: 3px solid lightgray;
+    background: transparent;
+    border-top: 1px solid lightgray;
+    line-height: 35px;
+    font-weight: 300;
 }
-  .faqContainer {
-    max-width: 900px;
+.faqContainer {
+    max-width: 700px;
     margin: 0 auto;
+}
+.faqContainer .accordion-item:before{
+    background-color: transparent;
 }
