@@ -11,7 +11,7 @@ const PricingOption = () => {
   return (
     <section>
       <div className="container po_pricing_sec">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center m-0">
           <div>
             <h2 className="po_title">
               {/* Zdobądź 3 różne opcje cenowe <br /> na marketing swojej firmy. */}
@@ -57,6 +57,7 @@ const PricingOption = () => {
           {/* Nasi eksperci cytowani <br />
           są przez największe <br /> media w branży */}
           {screenData?.brand_quote}
+          sdfas
         </p>
         <img
           // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogotypy.eed9b686.png&w=1080&q=75"

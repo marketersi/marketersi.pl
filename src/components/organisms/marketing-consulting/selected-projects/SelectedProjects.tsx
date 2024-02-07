@@ -44,10 +44,10 @@ const SelectedProjects = () => {
           return (
             <div className="my-5" key={index}>
               <Row>
-                <Col>
-                  <img src={banner_image} alt="project-banner-image" />
+                <Col lg={6}>
+                  <img src={banner_image} alt="project-banner-image"  className="left-card-img"/>
                 </Col>
-                <Col className="d-flex justify-content-center align-items-center">
+                <Col lg={6} className="d-flex justify-content-center align-items-center">
                   <div className="sp_card_right text-center">
                     <p>{title}</p>
                     <h2>{info}</h2>
@@ -71,7 +71,7 @@ const SelectedProjects = () => {
           return (
             <div className="sp_card_container" key={index}>
               <Row>
-                <Col className="d-flex justify-content-center align-items-center">
+                <Col lg={6} className="d-flex justify-content-center align-items-center">
                   <div className="sp_card_left text-center">
                     <p>{title}</p>
                     <h2>{info}</h2>
@@ -84,8 +84,8 @@ const SelectedProjects = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
-                  <img src={banner_image} alt="project-banner-image" />
+                <Col lg={6}>
+                  <img src={banner_image} alt="project-banner-image" className="left-card-img"/>
                 </Col>
               </Row>
             </div>
