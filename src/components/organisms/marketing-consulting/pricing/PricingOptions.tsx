@@ -7,6 +7,9 @@ import { useSelector } from "react-redux";
 
 const PricingOption = () => {
   const { isLoading, screenData } = useSelector((state) => state.consulting);
+  const { FormData } = screenData || {};
+
+  console.log("form data ===>", FormData);
 
   return (
     <section>
@@ -46,7 +49,7 @@ const PricingOption = () => {
                 </div>
               
               </div> */}
-              <CardTwo />
+              <CardTwo formData={FormData} />
             </div>
           </div>
         </div>

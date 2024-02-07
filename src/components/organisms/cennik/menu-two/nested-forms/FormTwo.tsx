@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
 
-const FormTwo = ({ setCurrentComponent }) => {
+const FormTwo = ({ setCurrentComponent, form }) => {
+  console.log("form three", form);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [projectDescription, setProjectDescription] = useState("");
 
@@ -23,9 +25,19 @@ const FormTwo = ({ setCurrentComponent }) => {
 
   return (
     <div className="component-two_section">
-      <h2>Napisz kilka stów o tym projekcie i swoim pomyśle</h2>
-      <p>Im więcej wiemy, tym lepiej się dopasujemy.</p>
-      <textarea rows="5" cols="50"></textarea>
+      <h2>
+        {/* Napisz kilka stów o tym projekcie i swoim pomyśle */}
+        {form?.title}
+      </h2>
+      <p>
+        {/* Im więcej wiemy, tym lepiej się dopasujemy. */}
+        {form?.subtitle}
+      </p>
+      <textarea
+        rows="5"
+        cols="50"
+        onChange={(e) => setProjectDescription(e.target.value)}
+      ></textarea>
       <div className="mt-5">
         <button className="cennikBtn" onClick={handleNext}>
           Ostatnie pytanie
