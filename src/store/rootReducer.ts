@@ -5,6 +5,13 @@ import calculatorReducer from "@/redux/kalkulator/calculatorSlice";
 import homeReducer from "@/redux/home/homeSlice";
 import examinationReducer from "@/redux/zamow/zamowSlice";
 import consultingReducer from "@/redux/konsultacje/consultingSlice";
+import uxReducer from "@/redux/ux/uxDesignSlice";
+import salesReducer from "@/redux/tresci/salescontentSlice";
+import strategyReducer from "@/redux/strategia/strategySlice";
+import opinionReducer from "@/redux/opinie/opinionSlice";
+import priceListReducer from "@/redux/cennik/pricelistSlice";
+import anatomyReducer from "@/redux/nazwa-dla-firmy/anatomySlice";
+import teamReducer from "@/redux/zespol/teamSlice";
 
 const rootReducer = combineReducers({
   home: homeReducer,
@@ -13,6 +20,13 @@ const rootReducer = combineReducers({
   calculator: calculatorReducer,
   examination: examinationReducer,
   consulting: consultingReducer,
+  ux: uxReducer,
+  team: teamReducer,
+  strategy: strategyReducer,
+  opinion: opinionReducer,
+  priceList: priceListReducer,
+  sales: salesReducer,
+  anatomy: anatomyReducer,
 });
 
 export default rootReducer;

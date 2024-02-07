@@ -3,15 +3,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Image } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ContactMap = () => {
   const { isLoading, screenData } = useSelector((state) => state.contact);
   const { feedback } = screenData || {};
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const showNextFeedback = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % feedback.length);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const settings = {
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    afterChange: (current) => setCurrentSlide(current),
   };
 
   return (
@@ -26,33 +34,23 @@ const ContactMap = () => {
         />
       ))}
 
-      {feedback &&
-        feedback.map((item, index) => {
-          const isCurrent = index === currentIndex;
-          return (
-            <div
-              className={`map_content ${isCurrent ? "visible" : "hidden"}`}
-              key={index}
-            >
-              {isCurrent && (
-                <>
-                  <p>Województwo</p>
-                  <h3>{item.feedback_title}</h3>
-                  <h4>{item.feedback_content}</h4>
-                  <p>{item.feedback_subtitle}</p>
-                  <p className="map_bottom_p">
-                    {/* <span>Tomasz Kopacz,</span> MoneyWell, Rzeszów */}
-                    {item.feedback_address}
-                  </p>
-                </>
-              )}
+      {feedback && (
+        <Slider {...settings} initialSlide={currentSlide}>
+          {feedback.map((item, index) => (
+            <div className="map_content" key={index}>
+              <p>Województwo</p>
+              <h3>{item.feedback_title}</h3>
+              <h4>{item.feedback_content}</h4>
+              <p>{item.feedback_subtitle}</p>
+              <p className="map_bottom_p">{item.feedback_address}</p>
             </div>
-          );
-        })}
+          ))}
+        </Slider>
+      )}
 
       <div className="map_button">
         <button>Nasi klienci</button>
-        <a className="map_play" onClick={showNextFeedback}>
+        <a href="/" className="map_play">
           <span>Następna opinia</span>
           <div className="play">
             <Image src="/assets/images/play_arrow.svg" />
