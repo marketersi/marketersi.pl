@@ -4,5 +4,12 @@ export const API_ENDPOINTS = {
   CALCULATOR_SCREEN: "api/get_calculator",
   HOME_SCREEN: "api/get-home-screen-setting",
   CONSULTING_SCREEN: "api/get-konsultacja-setting",
-  EXAMINATION_SCREEN:"api/examination"
+  EXAMINATION_SCREEN: "api/examination",
+  TEAM_SCREEN: "",
+  UX_SCREEN: "",
+  SALES_SCREEN: "",
+  STRATEGY_SCREEN: "",
+  OPINION_SCREEN: "",
+  ANATOMY_SCREEN: "",
+  PRICE_LIST_SCREEN: "",
 };
