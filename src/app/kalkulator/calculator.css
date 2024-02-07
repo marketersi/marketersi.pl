@@ -64,7 +64,7 @@
   text-align: right;
   font-size: 45px;
   font-weight: 900;
-  width: 11rem;
+  width: 9rem;
   background: none;
   color: #038fa5;
 }
@@ -134,4 +134,47 @@ input[type="number"].no-spinner::-webkit-inner-spin-button,
 input[type="number"].no-spinner::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+  .first-card {
+    margin-right: 0px;
+    width: 100%;
+}
+.second-card {
+  border-radius: 30px;
+  width: 85%;
+  margin: -60px auto 50px;
+}
+.second-card h2 {
+  font-size: 55px;
+}
+.second-row h1 {
+  font-weight: 700;
+  font-size: 70px;
+}
+}
+@media screen and (max-width: 767px) {
+  .first-card {
+    padding: 50px 30px;
+}
+.calc_input {
+  width: 100%;
+}
+p.inputHeading {
+  font-size: 22px !important;
+  font-weight: 600;
+}
+.second-card h2 {
+  font-size: 35px;
+}
+.second-row h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.second-row p {
+  font-size: 22px;
+}
 }

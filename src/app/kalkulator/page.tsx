@@ -45,12 +45,12 @@ const CalculatorScreen = () => {
             <Calculator />
 
             <Row className="second-row">
-              <Col className="text-center p-5">
+              <Col className="text-center p-sm-5 p-4">
                 <h1>
                   {/* Co tu się wylicza? <br /> To proste */}
                   {screenData?.second_heading}
                 </h1>
-                <div className="w-75" style={{ margin: "auto" }}>
+                <div className="w-lg-75" style={{ margin: "auto" }}>
                   <p className="mt-5">
                     {/* W tym przypadku 'Konwersja' to tylko skomplikowane słowo na
                     to, ile osób, które wchodzą na stronę, zostaje płacącymi

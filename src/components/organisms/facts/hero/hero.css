@@ -29,3 +29,37 @@
   font-weight: 400;
   margin-top: 50px;
 }
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+  .facts_hero_container{
+    flex-direction: column;
+  }
+  .facts_hero_container > div:nth-child(1) {
+    width: 100%;
+    order: 2;
+}
+.facts_hero_container > div:nth-child(2) {
+    width: 100%;
+    order: 1;
+}
+.facts_hero_container h1 {
+  text-align: center;
+}
+.facts_hero_container p {
+  text-align: center;
+}
+.fc_sec {
+  padding: 50px 30px;
+  color: #3f3f3f;
+}
+}
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 767px) {
+  .facts_hero_sec {
+    padding: 20px 20px;
+}
+.facts_hero_container h1 {
+  font-size: 60px;
+}
+}

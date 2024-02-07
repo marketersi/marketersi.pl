@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import "./results.css";
+import { useSelector } from "react-redux";
 
 const cardData = [
   {
@@ -30,27 +31,40 @@ const cardData = [
 ];
 
 const Results = () => {
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { ResearchResult, howTestWorks } = screenData || {};
+  const { PercentageCard } = ResearchResult || [];
+
   return (
     <section className="results-section">
-      <h2 className="result-title">Rezultaty badań</h2>
+      <h2 className="result-title">
+        {/* Rezultaty badań */}
+        {ResearchResult?.title}
+      </h2>
       <p className="result-subtitle">
-        Klika wyników, które osiągnęli przedsiębiorcy na podstawie wniosków z
-        naszych badań.
+        {/* Klika wyników, które osiągnęli przedsiębiorcy na podstawie wniosków z
+        naszych badań. */}
+        {ResearchResult?.sub_title}
       </p>
       <Row>
-        {cardData.map((e, i) => {
+        {PercentageCard?.map((e, i) => {
           return (
-            <Col key={i}>
+            <Col lg={3} sm={6} key={i}>
               <ResultsCard {...e} />
             </Col>
           );
         })}
       </Row>
 
+      {/* how test works */}
+
       <div className="text-center free-test">
-        <h2>Jak działa bezpłatne badanie?</h2>
+        <h2>
+          {/* Jak działa bezpłatne badanie? */}
+          {howTestWorks?.title}
+        </h2>
         <div className="p-container ">
-          <p>
+          {/* <p>
             Zadamy Ci kilka pytań na temat Twojej działalności, celów
             biznesowych i budżety marketingowe, aby dowiedzieć się czy nasza
             współpraca ma sens.
@@ -86,7 +100,10 @@ const Results = () => {
             Jeśli nie zdecydujesz się na skorzystanie z naszych usług, ale
             będziesz w pełni zadowolony ze swojej recenzji, możesz jej używać
             tak jak sobie zażyczysz.
-          </p>
+          </p> */}
+
+          <p>{howTestWorks?.para1}</p>
+          <p>{howTestWorks?.para2}</p>
         </div>
       </div>
     </section>
@@ -95,18 +112,18 @@ const Results = () => {
 
 export default Results;
 
-const ResultsCard = ({ text, value, name, type }) => {
+const ResultsCard = ({ Percentage_value, title, website, category }) => {
   return (
     <>
       <Card className="results-card shadow">
-        <h2>{value}%</h2>
-        <p>{text}</p>
+        <h2>{Percentage_value}%</h2>
+        <p>{title}</p>
       </Card>
-      <div className="mt-3 text-center">
+      <div className="mt-3 text-center mb-lg-0  mb-5">
         <p>
-          {name}
+          {website}
           <br />
-          {type}
+          {category}
         </p>
       </div>
     </>

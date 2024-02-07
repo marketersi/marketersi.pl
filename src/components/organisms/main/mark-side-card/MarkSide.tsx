@@ -61,7 +61,7 @@ const MarkSide = () => {
   return (
     <div>
       <Row className="m-0">
-        <Col sm={4}>
+        <Col lg={4}>
           <div className={style.mark}>
             <Image
               // src="/assets/images/Projektowanie-logo.avif"
@@ -73,20 +73,20 @@ const MarkSide = () => {
             <Card data={companyCard[0]} links={links1} />
           </div>
         </Col>
-        <Col sm={4}>
+        <Col lg={4}>
           <ReactPlayer
             // url="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
             url={companySection?.image_2}
             playing={true}
             loop={true}
-            width="100%"
+            width="auto"
             height="auto"
-            className={style.heroVideo}
+            className={style.markVideo}
             autoplay={true}
           />
           <Card data={companyCard[1]} links={links2} />
         </Col>
-        <Col sm={4}>
+        <Col lg={4}>
           <div className={style.mark}>
             <Image
               // src="/assets/images/Agencja-marketingowa.avif"

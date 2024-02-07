@@ -3,6 +3,7 @@
   background: transparent;
   -webkit-transition: background 2s;
   transition: background 2s;
+  display: block;
 }
 .navbar:hover {
   background: rgb(255, 255, 255);
@@ -134,7 +135,7 @@
   position: absolute;
   left: 100px;
   z-index: 1111;
-  top: -46px;
+  top: -66px;
 }
 .headerMenu h3 {
   font-size: 28px;
@@ -159,3 +160,142 @@
   background: #f6f6f6;
   padding: 40px 0;
 }
+
+
+
+.mobileMenuToggle {
+  display: none;
+}
+
+
+/* ------------------- */
+/* styles/Header.module.css */
+.mobileLeftBtn{
+  border-radius: 50px;
+  padding: 5px 15px;
+  background: transparent;
+  color: white;
+  box-shadow: 0px 3px 0px #c1c1c1;
+  border: 2px solid #eaeaea;
+  font-weight: 500;
+  font-size: 14px;
+}
+.mobileLeftBtn a{
+  color: white;
+text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: none;
+  flex-direction: column;
+}
+.dropMenu{
+  display: none;
+}
+.dropMenu.dropOpen{
+  display: block;
+}
+
+.nav.open {
+  display: flex;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.menuIcon span {
+  font-size: 14px;
+}
+.mobileMenuList li{
+  background: #f7fafd;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #d1e6fc;
+    margin: 0 0 20px;
+}
+.mobileMenuList li a{
+  color: #202020;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.mobileDropBtn{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ======= */
+.MobileDropdownBtn{
+  display: flex;
+  border: navajowhite;
+  background: transparent;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.menuItem {
+  margin-top: 20px;
+}
+.menuItem a{
+  display: block;
+  background: white;
+  margin: 0 0 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+.mobileHeader{
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .navbar{
+   display: none;
+  }
+  .dropBtn {
+    color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 11111;
+  }
+  .mobileHeader{
+    display: block;
+  }
+  
+ }
+
+@media (max-width: 768px) {
+  
+}
+

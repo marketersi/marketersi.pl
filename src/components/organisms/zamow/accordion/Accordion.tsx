@@ -3,8 +3,13 @@ import React, { useState } from "react";
 import { accordionData } from "./data";
 import SingleQuestion from "./SingleQuestion";
 import "./accordion.css";
+import { useSelector } from "react-redux";
 
 const Accordion = () => {
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { FAQ_Section } = screenData || {};
+  const { FAQ } = FAQ_Section || [];
+
   const [questions, setQuestions] = useState(accordionData);
   const [openQuestionId, setOpenQuestionId] = useState(null);
 
@@ -14,15 +19,18 @@ const Accordion = () => {
 
   return (
     <div className="container mb-5">
-      <h3 className="accordion-heading">Odpowiedzi na częste pytania:</h3>
-      <section className="accordion-container w-75">
-        {questions.map((question) => {
+      <h3 className="accordion-heading">
+        {/* Odpowiedzi na częste pytania: */}
+        {FAQ_Section?.title}
+      </h3>
+      <section className="accordion-container w-lg-75 w-100">
+        {FAQ?.map((question, index) => {
           return (
             <SingleQuestion
-              key={question.id}
+              key={index}
               {...question}
-              isOpen={question.id === openQuestionId}
-              onQuestionClick={() => handleQuestionClick(question.id)}
+              isOpen={index === openQuestionId}
+              onQuestionClick={() => handleQuestionClick(index)}
             ></SingleQuestion>
           );
         })}

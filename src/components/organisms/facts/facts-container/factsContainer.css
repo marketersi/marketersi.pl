@@ -16,6 +16,8 @@
   background-color: white;
   position: relative;
   margin-bottom: -70px;
+  overflow: hidden;
+  object-fit: contain;
 }
 
 .facts_title_card {
@@ -40,4 +42,27 @@
   width: 75%;
   margin: 40px auto;
   text-align: left;
+}
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+.fc_sec {
+  padding: 50px 30px;
+  color: #3f3f3f;
+}
+}
+
+@media screen and (max-width: 767px) {
+.facts_title_card {
+  width: 100%;
+}
+.facts_img_card {
+  width: 90%;
+}
+.facts_title_card h2 {
+  font-size: 32px;
+}
+.fact_container p {
+  width: 100%;
+}
 }
