@@ -428,6 +428,7 @@ a.map_play:hover {
   text-align: center;
   color: red;
   position: absolute;
+  display: none;
 }
 
 .icon1 {
@@ -511,6 +512,14 @@ a.map_play:hover {
 }
 
 /* mod styles after dynamic data */
+.slick-next {
+  right: 10px !important;
+}
+
+.slick-prev {
+  left: 10px !important;
+}
+
 .project_dp {
   width: 100px;
   height: 100px;
