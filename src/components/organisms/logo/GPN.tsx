@@ -1,12 +1,32 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
+
+const GPNData = {
+  title:
+    "Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie stanowiło całości. Logo wymaga stanowiło całości. Logo wymaga zapisów międzynarodowych, a dzięki takiemu zabiegowi będziemożna eksponować jew zależności od kontekstu w pionie i w poziomie.",
+  companyLogo: [
+    "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
+    "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
+    "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
+  ],
+  productLogo: [
+    "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
+    "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
+    "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
+  ],
+};
 
 const GPN = () => {
+  const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { title, companyLogo, productLogo } = screenData;
+
   return (
     <>
-    <section className="projects-thematic-section-blue">
+      <section className="projects-thematic-section-blue">
         <div className="container custom-container-blue projects-over-hid">
           <div className="row">
             <div className="col-md-12 projects-h-100"></div>
+            {/* ignore */}
             <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text2">
               <p className="theme-desc text-center projects-blue-text2">
                 Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
@@ -51,11 +71,12 @@ const GPN = () => {
 
             <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text1">
               <p className="theme-desc text-center projects-blue-text2">
-                Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
+                {/* Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
                 stanowiło całości. Logo wymaga <br />
                 zapisów międzynarodowych, a dzięki takiemu zabiegowi będzie
                 można eksponować je <br />
-                w zależności od kontekstu w pionie i w poziomie. <br />
+                w zależności od kontekstu w pionie i w poziomie. <br /> */}
+                {title && title}
               </p>
             </div>
 
@@ -102,7 +123,7 @@ const GPN = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default GPN
+export default GPN;

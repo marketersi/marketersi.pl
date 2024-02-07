@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+
+const ZooGardenData = {
+  title: "OGRÓD ZOOBOTANICZNY TORUŃ",
+  subtitle:
+    "Chcemy stworzyć ikonę wizualny pomnik upamiętniający uwielbianego niedźwiedzia Nufi.",
+  text: "To profesjonalna instytucja. Niestety, wygląda niedbale, ciut śmiesznie. Stare logo ogrodu łamie praktyki projektowe w nieumiejętny sposób. Kolorystyka odbiera marce klasę. Ogromna ilość detali rozprasza uwagę, a duch niedźwiedzia „Nufi” o białych ślepiach udaje, że tego nie widzi. Zadanie było jasne. Przywrócić marce styl i klasę na jaką zasługuje, stawiając przy tym godny pomnik Nufiemu, który był ikoną ogrodu. Wykonaliśmy masę pracy szukając jego najbardziej „dostojnej” formy. Nowe logo symbolizuje pomnik oparty na typograficznych stopniach. Ikona jest spójna z liternictwem. Prosta, ale jednocześnie dostojna. Symbol (grafika) i sygnatura (podpis) mogą funkcjonować niezależnie. Tak powstały wariacje dla pionowej ekspozycji ze starą grą słów ZOO. Jesteśmy wam wdzięczni za tę wzruszającą projektową przygodę.",
+  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
+  image: "/assets/images/logo-design/daco-logo.webp",
+  quote:
+    "o jest po prostu świetne! Całe szczęście, że zdecydowaliśmy się na wasze studio!",
+  quoteAuthor: "Iwona i Andrzej Ziółkowscy - właściciele.",
+  quoteText:
+    "DACO błyskawicznie zdobyła sympatię docelowej grupy klientów. Dziś jest już rozpoznawalna w Anglii, Danii, Czechach, Słowacji i Rosji.",
+};
 
 const ZooGarden = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background">
+      <section className="thematic-section projects-gray-background">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12 projects-custom-espace"></div>
@@ -100,7 +114,7 @@ const ZooGarden = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default ZooGarden
+export default ZooGarden;

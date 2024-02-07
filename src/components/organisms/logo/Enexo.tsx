@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+
+const EnexoData = {
+  title: "ENEXO WROCŁAW",
+  subtitle:
+    "Historia logo konsultantów budowlanych. Marki, która ma wygrywać dzięki ludziom.",
+  text: "Od początku było jasne, że stawiamy na korporacyjną przejrzystość. Marka miała być postrzegana na równi z międzynarodowymi gigantami. Charakterystyczny czynnik X znaleźliśmy w postaci gestu zwycięzcy. To był strzał w dziesiątkę! Byliśmy bardzo zadowoleni z tego efektu. Ostre wierzchołki ikony podkreślone zostały przez, litery. Wygląda to naprawdę świetnie na każdym firmowym materiale.",
+  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
+  image: "/assets/images/logo-design/Enexo-logo.jpg.webp",
+  quote:
+    "Super! Wyglądamy teraz lepiej niż duże zachodnie marki w naszej branży",
+  quoteAuthor: "Michał Zaborowski - Właściciel",
+  quoteText:
+    "DACO błyskawicznie zdobyła sympatię docelowej grupy klientów. Dziś jest już rozpoznawalna w Anglii, Danii, Czechach, Słowacji i Rosji.",
+};
 
 const Enexo = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background">
+      <section className="thematic-section projects-gray-background">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12">
@@ -78,7 +92,7 @@ const Enexo = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Enexo
+export default Enexo;

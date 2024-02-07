@@ -1,15 +1,28 @@
-import React from 'react'
+import React from "react";
+
+const FreeShopsData = {
+  title: "SKLEPY WOLNE OD FUTER EUROPA",
+  subtitle: "Zwiększmy efektywność logo kampanii Sklepy Wolne Od Futer",
+  mainImageText:
+    "Kampania wspiera wysiłki zmierzające do zakazania hodowli zwierząt na futro poprzez promowanie firm, które nie sprzedają naturalnych futer.. Obecne logo ma postać emblematu, a to mocno redukuje czytelność. Wizerunek lisa jest skomplikowany, a gdy logo jest małe - tekst znika. Nasza propozycja uproszczenia tego rozwiązania powoduje, że tekst jest 8 razy większy podczas ekspozycji na powierzchni o tej samej wysokości.",
+  mainImage: "/assets/images/logo-design/FreeShopsLogo.webp",
+  bannerImageTextAbove:
+    "Logo jest teraz dobrze widoczne z daleka. Ma 8 razy mniej linii i przynajmniej 2 razy więcej miłości. Prosta, piękna forma sprawia, że dużo łatwiej zapadnie w pamięć. Mały, słodki, śpiący lisek budzi więcej empatii niż przestraszony lis.",
+  bannerimage:
+    "/assets/images/logo-design/Studio-graficzne-sklepy-MOB.jpg.webp",
+  bannerImageTextBelow:
+    "Forma zapisu symbolizuje „ruch społeczny”. Sprzeciw - wypisany farbą. Tak mocny emocjonalnie krzyk świetnie rezonuje ze śpiącym liskiem. Aktualnie logo jest w procesie konsultacji z fundacją Otwarte Klatki.",
+};
 
 const FreeShops = () => {
   return (
     <>
-     <section className="thematic-section projects-gray-background">
+      <section className="thematic-section projects-gray-background">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle projects-theme-subtitle-rwd projects-custom-mtop-0">
-                SKLEPY WOLNE 
-                OD FUTER <br />
+                SKLEPY WOLNE OD FUTER <br />
                 <strong>EUROPA</strong>
               </h5>
               <h3 className="projects-theme-title-2 text-left">
@@ -100,7 +113,7 @@ const FreeShops = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default FreeShops
+export default FreeShops;

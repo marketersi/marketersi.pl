@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+
+const ParkData = {
+  title: "GPNT GDAŃSK",
+  subtitle: "Odświeżyliśmy wizerunek Gdańskiego Parku Naukowo-Technologicznego",
+  text: "Praca nad nowym wizerunkiem Parku Naukowo-Technologicznego polegała na przeniesieniu logo z poprzedniej epoki do technologicznej współczesności. Wyglądać nowocześnie, ale zachowując ciągłość i spójność.",
+  logoImage: "/assets/images/logo-design/daco-logo.webp",
+  bannerImage:
+    "/assets/images/logo-design/Projektowanie-graficzne-Park-Naukowo-Technologicznego.jpg.webp",
+};
 
 const Park = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background">
+      <section className="thematic-section projects-gray-background">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12 projects-custom-espace"></div>
@@ -57,7 +66,7 @@ const Park = () => {
         title="Nowy logotyp dla firmy na przykładzie nowego logo Gdańskiego Parku"
       />
     </>
-  )
-}
+  );
+};
 
-export default Park
+export default Park;

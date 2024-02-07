@@ -7,6 +7,18 @@ import Form from "../../tresci-sprzedazowe/form/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { motion, Variants } from "framer-motion";
+import { useSelector } from "react-redux";
+
+const LogoFooterData = {
+  pagesLinks: [
+    { id: 1, label: "1", content: "Co otrzymam" },
+    { id: 2, label: "2", content: "Jak to działa" },
+    { id: 3, label: "3", content: "Galeria" },
+    { id: 4, label: "4", content: "Przykłady realizacji" },
+  ],
+  downloadButtonText: "Pobierz wersję PDF",
+  formButtonText: "Otrzymaj ofertę",
+};
 
 const LogoFooter = () => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
@@ -45,9 +57,9 @@ const LogoFooter = () => {
   const animateDown: Variants = {
     offscreen: {
       y: -180,
-      z: -100, 
+      z: -100,
       opacity: 0,
-      scale: 0.5, 
+      scale: 0.5,
     },
     onscreen: {
       y: 0,
@@ -61,6 +73,9 @@ const LogoFooter = () => {
       },
     },
   };
+
+  const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { pagesLinks, downloadButtonText, formButtonText } = screenData;
 
   return (
     <>
