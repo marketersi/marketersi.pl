@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Market = () => {
   return (
     <>
-    <section>
+      <section>
         <div id="boxySection">
           <div className="hiddenOverflow">
             <h1
@@ -2284,7 +2284,7 @@ const Market = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Market
+export default Market;

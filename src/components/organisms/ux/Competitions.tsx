@@ -1,6 +1,17 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
+const CompetitionsData = {
+  title: "Konkurencja w wersji ",
+  titleStyle: "hiper",
+  image:
+    "https://propozycje.owocni.pl/ux/Podkreslenie-konkurencja.0db36d83.png",
+    description1: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+    description2: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+    description3: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+    description4: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+};
+
 const Competitions = () => {
   const [count, setCount] = useState(0);
 
@@ -13,16 +24,15 @@ const Competitions = () => {
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, []);
 
-
-  const words = ['Netflix', 'Spotify', 'Philips', 'Adidas'];
+  const words = ["Netflix", "Spotify", "Philips", "Adidas"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2000); 
-     return () => clearInterval(interval);
-  }, []); 
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -34,33 +44,25 @@ const Competitions = () => {
             transform: "translate(0px, 0px)",
           }}
         >
-          Konkurencja
-          <br />w wersji
+          {CompetitionsData.title}
           <span>
-            hiper
-            <img
-              src="https://propozycje.owocni.pl/ux/Podkreslenie-konkurencja.0db36d83.png"
-              alt=""
-            />
+            {CompetitionsData.titleStyle}
+            <img src={CompetitionsData.image} alt="" />
           </span>
         </h2>
         <div className="text2">
           <div>
-            Oto internet.
-            <br className="mobile" />
-            Tu walutą jest ludzka uwaga.
-            <br />
-            Walczy o nią
+            {CompetitionsData.description1}
             <span className="slotContainer ani1">
               <span className="animated-words">
                 <span className="word">{words[currentWordIndex]}</span>
               </span>
             </span>
-            i  <br className="mobile" />
+            i <br className="mobile" />
             <div className="timer timerNumber">
               <div className="cell"> {count} </div>
             </div>
-            twoich konkurentów.
+            {CompetitionsData.description2}
           </div>
           <p>
             Łatwo jest być innym,
