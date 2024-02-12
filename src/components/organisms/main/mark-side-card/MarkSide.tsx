@@ -38,10 +38,7 @@ const MarkSide = () => {
       label: "Tworzenie stron",
       path: "/",
     },
-    {
-      label: "Identyfikacja spółki",
-      path: "/",
-    },
+    
   ];
   const links3 = [
     {
@@ -82,7 +79,7 @@ const MarkSide = () => {
             width="auto"
             height="auto"
             className={style.markVideo}
-            autoplay={true}
+            muted={true}
           />
           <Card data={companyCard[1]} links={links2} />
         </Col>

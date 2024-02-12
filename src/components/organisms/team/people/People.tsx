@@ -58,7 +58,7 @@ const People = () => {
           url="https://res.cloudinary.com/ddctmb3dk/video/upload/f_auto:video,q_auto/v1696941680/shnudykmh6eudqczxjav"
           playing={true}
           loop={true}
-          autoplay={true}
+          muted={true}
           width="100%"
           height="auto"
           className={style.heroVideo}

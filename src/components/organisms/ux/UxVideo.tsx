@@ -96,10 +96,9 @@ const UxVideo = () => {
                 url="https://propozycje.owocni.pl/ux/UX-JEDEN.4766b5b5.mp4"
                 playing={true}
                 loop={true}
-                autoplay={true}
+                muted={true}
                 width="100%"
                 height="auto"
-                muted
               />
             )}
 
@@ -107,7 +106,7 @@ const UxVideo = () => {
               <ReactPlayer
                 playing={true}
                 loop={true}
-                autoplay={true}
+                muted={true}
                 width="100%"
                 height="auto"
                 muted
@@ -122,7 +121,7 @@ const UxVideo = () => {
                 autoplay={true}
                 width="100%"
                 height="auto"
-                muted
+                muted={true}
                 url="https://propozycje.owocni.pl/ux/UX-TRZY.54e91b3f.mp4"
               />
             )}

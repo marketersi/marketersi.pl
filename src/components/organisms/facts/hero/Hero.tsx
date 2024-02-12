@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="factowBannerVideo">
           <ReactPlayer
-            autoplay={true}
+            muted={true}
             playing={true}
             loop={true}
             width="100%"

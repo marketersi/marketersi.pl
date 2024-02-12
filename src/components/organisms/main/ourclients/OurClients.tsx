@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import ReactPlayer from "react-player/file";
 import { ClientCarousel, CarouselContext } from "./ClientCarousel";
+import { Variants, motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Stars from "@/components/molecules/Ratings";
+import "./our-clients.css"
 
 export default function OurClients() {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -16,6 +18,26 @@ export default function OurClients() {
 
   console.log("client feedback", ClientFeedback);
   // const slides = [SlideOne, SlideTwo, SlideThree, SlideFour];
+
+  const slideAnimationLeft: Variants = {
+    offscreen: {
+      x: -100,
+      opacity: 0,
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "ease",
+        bounce: 0.4,
+        // damping: 25,
+        // stiffness: 70,
+        duration: 2,
+      },
+    },
+  };
+
+
 
   return (
     <div className="OurClients content mt-5">
@@ -411,8 +433,17 @@ export default function OurClients() {
             Polsce. (Na podstawie realnych opinii) */}
             {RatingCard?.rating_description}
           </div>
+          
         </div>
       </div>
+      <motion.div
+         initial="offscreen"
+         whileInView="onscreen"
+         variants={slideAnimationLeft}
+         className="cartAnimation"
+          >
+            <img src={RatingCard?.left_animated_image} alt="" />
+          </motion.div>
     </div>
   );
 }
@@ -460,6 +491,7 @@ export const SlideOne = (props) => {
                   loop
                   width="60%"
                   height="auto"
+                  muted={true}
                 />
               </div>
               <div className="OurClients_Slide_Media_Rating">
@@ -560,6 +592,7 @@ const SlideTwo = () => {
                   loop
                   width="60%"
                   height="auto"
+                  muted={true}
                 />
               </div>
               <div className="OurClients_Slide_Media_Rating">
@@ -659,3 +692,4 @@ const SlideThree = () => {
     </>
   );
 };
+
