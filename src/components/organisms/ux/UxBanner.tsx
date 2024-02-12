@@ -1,5 +1,16 @@
 import React from 'react'
 
+const UxBannerData = {
+  title1: "Makieta",
+  titleStyle: "UX",
+  title2: "wykonawcza",
+  description1: "To klikalny prototyp projektu strony.",
+  description2: "Przemyślany, by wygrać konkurencję.",
+  description3: ["Dla tych, co","myślą", "przyszłościowo"],
+  description4: "na temat obecności firmy w internecie.",
+  video:"https://copywriting.pl/files/resources/Projekt-Makiety-UX.mp4",
+}
+
 const UxBanner = () => {
   return (
     <>
@@ -10,13 +21,13 @@ const UxBanner = () => {
               <h1 className="titleHead">
                 {" "}
                 <span>
-                  Makieta<span className="UX">UX</span>
+                {UxBannerData.title1}<span className="UX">{UxBannerData.titleStyle}</span>
                 </span>
                 <br />
-                wykonawcza
+                {UxBannerData.title2}
               </h1>
-              <p className="subitle">To klikalny prototyp projektu strony.</p>
-              <p className="subitle">Przemyślany, by wygrać konkurencję. </p>
+              <p className="subitle">{UxBannerData.description1}</p>
+              <p className="subitle">{UxBannerData.description2} </p>
               <p className="subitle">
                 Dla tych, co
                 <span className="underLine">
@@ -42,7 +53,7 @@ const UxBanner = () => {
                   <span>o</span>
                 </span>
               </p>
-              <p className="subitle">na temat obecności firmy w internecie.</p>
+              <p className="subitle">{UxBannerData.description4}</p>
             </div>
             <video
               playsinline=""
@@ -52,7 +63,7 @@ const UxBanner = () => {
               data-vscid="d3xa7p0zx"
             >
               <source
-                src="	https://copywriting.pl/files/resources/Projekt-Makiety-UX.mp4"
+                src={UxBannerData.video}
                 type="video/mp4"
               />
             </video>

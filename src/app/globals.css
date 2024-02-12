@@ -363,3 +363,52 @@ body {
   margin: 0 auto;
   max-width: 100%;
 }
+
+
+/* ------------------media screen ---------------------------------------------------- */
+@media only screen and (max-width: 1024px){
+  .OurClients_Slide {
+    padding-top: 40px !important;
+}
+.embla__slide {
+  max-height: 550px;
+}
+.OurClients_Slide_Title {
+  font-size: 30px !important;
+}
+.star {
+  font-size: 15px;
+}
+
+}
+@media only screen and (max-width: 767px){
+  .OurClients_Slide_Container {
+    display: block !important;
+}
+.OurClients_Slide_Image img {
+  width: 100%;
+}
+.embla__slide {
+  max-height: 100%;
+}
+.OurClients_Slide_Button {
+  margin: 10px 0 0 0;
+}
+.OurClients_Slide_Media {
+  display: block !important;
+}
+.OurClients_Slide_Media_Rating {
+  display: block !important;
+  margin: 20px auto !important;
+}
+.OurClients_Card_Two {
+  display: block !important;
+}
+.cartAnimation {
+  margin: -130px 0 0 -50px !important;
+}
+.cartAnimation img {
+  width: 150px !important;
+}
+
+}

@@ -1,5 +1,22 @@
 import React from "react";
 
+const GoodProcessData = {
+  title:"Good Process",
+  description: ["Good Process", "Good Process", "Good Process"],
+  proVideo1: "goodProcess",
+  proTitle1: "Good Process",
+  proSubTitle1: "Good Process",
+  proDescription1: "Good Process",
+  proVideo2: "goodProcess",
+  proTitle2: "Good Process",
+  proSubTitle2: "Good Process",
+  proDescription2: "Good Process",
+  proVideo3: "goodProcess",
+  proTitle3: "Good Process",
+  proSubTitle3: "Good Process",
+  proDescription3: "Good Process",
+}
+
 const GoodProcess = () => {
   return (
     <>

@@ -48,7 +48,7 @@ const Video = () => {
           url={brandSection?.banner_video}
           playing={true}
           loop={true}
-          autoplay={true}
+          muted={true}
           width="100%"
           height="auto"
           muted
@@ -76,7 +76,7 @@ const Video = () => {
               url={brandSection?.banner_video}
               playing={true}
               loop={true}
-              autoplay={true}
+              muted={true}
               width="100%"
               height="auto"
               className="popupVideo"

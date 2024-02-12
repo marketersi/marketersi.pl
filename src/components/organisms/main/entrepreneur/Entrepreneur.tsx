@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../main.module.css";
+import ReactPlayer from "react-player";
 import { Container, Image } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
@@ -14,13 +15,23 @@ const Entrepreneur = () => {
     <div>
       <Container>
         <div className={style.enter}>
-          <Image
+          {/* <Image
             // src="/assets/images/Kurs-na-social-media.avif"
             src={section1?.image_url}
             alt="rating image"
             width="auto"
             height="auto"
-          />
+          /> */}
+          <ReactPlayer
+        // url="/assets/videos/desktopTop.mp4"
+        url={section1?.image_url}
+        playing={true}
+        loop={true}
+        muted={true}
+        width="100%"
+        height="auto"
+        className={style.socialVideo}
+      />
           <div className={style.Content}>
             <h2>
               {/* Drogi <br /> Przedsiębiorco! */}

@@ -36,7 +36,7 @@ const SlideOne = () => {
                     url="https://owocni.pl/assets/nasi-klienci/video/Iglarki-logo.mp4"
                     playing={true}
                     loop={true}
-                    autoplay={true}
+                    muted={true}
                     width="100%"
                     height="auto"
                     className={style.heroVideo}
@@ -88,7 +88,7 @@ const SlideTwo = () => {
                     url="https://owocni.pl/assets/nasi-klienci/video/Iglarki-logo.mp4"
                     playing={true}
                     loop={true}
-                    autoplay={true}
+                    muted={true}
                     width="100%"
                     height="auto"
                     className={style.heroVideo}

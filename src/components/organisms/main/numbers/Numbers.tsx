@@ -69,6 +69,7 @@ const Entrepreneur = () => {
               loop={true}
               width="100%"
               height="auto"
+              muted={true}
               className={style.numberVideo}
             />
             <p>

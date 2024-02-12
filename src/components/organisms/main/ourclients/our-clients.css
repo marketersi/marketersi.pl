@@ -1,0 +1,16 @@
+.OurClients_Slide_Title {
+    font-size: 34.28px;
+    font-weight: 800;
+    line-height: 39.936px;
+    padding-block: 30px;
+}
+.OurClients_Slide:hover .OurClients_Slide_Image img{
+    filter: grayscale(0%);
+    
+}
+.cartAnimation {
+    margin: -390px 0 0 -320px;
+}
+.cartAnimation img {
+    width: 350px;
+}

@@ -8,7 +8,7 @@ import HeaderDropDown2 from "./HeaderDropDown2";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleRight, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,8 @@ const Header = () => {
   return (
     <>
       <header className={style.navbar}>
-        <div className={style.navOverly}> </div>
+        <div className={style.hover}></div>
+        <div className={style.navigation}>
         <Row className="align-items-center w-100">
           <Col sm={4}>
             <div className={style.leftNav}>
@@ -38,11 +39,13 @@ const Header = () => {
                 <Link href="/cennik">Cennik</Link>
               </Button>
               <div className={style.headerDrop1}>
+                <div className={style.DropHover}></div>
                 <div className={style.dropBtn}>
                   Usługi i
                   <br />
                   realizacje
                   <span></span>
+                  <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <div className={style.dropMenu}>
                   <HeaderDropDown1 />
@@ -54,6 +57,7 @@ const Header = () => {
                   <br />
                   rzeczy
                   <span></span>
+                  <FontAwesomeIcon icon={faAngleDown} />
                 </div>
                 <div className={style.dropMenu}>
                   <HeaderDropDown2 />
@@ -77,7 +81,7 @@ const Header = () => {
             <div className={style.rightNav}>
               <Nav className="">
                 <Nav.Link className={style.navRightMenu}>
-                  <Link href="/o-nas">Zespół </Link>
+                  <Link href="/Zespol">Zespół </Link>
                 </Nav.Link>
                 <Nav.Link className={style.navRightMenu}>
                   <Link href="/kontakt">Kontakt</Link>
@@ -91,6 +95,7 @@ const Header = () => {
             </div>
           </Col>
         </Row>
+        </div>
       </header>
       {/* --------------------------------mobile header-------------------------- */}
       <div className={style.mobileHeader}>

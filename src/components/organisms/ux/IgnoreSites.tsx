@@ -1,5 +1,12 @@
 import React from "react";
 
+const IgnoreSitesData ={
+  image: "https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.webp",
+  title: "Ludzie ignorują strony, które ignorują ludzi...",
+  description1: "descriptions",
+  description2: "descriptions",
+}
+
 const IgnoreSites = () => {
   return (
     <>
@@ -8,7 +15,8 @@ const IgnoreSites = () => {
           <div className="imgs">
             <img
               className="maciejImg1"
-              src="https://propozycje.owocni.pl/ux/Projektant-Aureola.3b8da20b.jpg"
+              // src="https://propozycje.owocni.pl/ux/Projektant-Aureola.3b8da20b.jpg"
+              // src={IgnoreSitesData.image}
               alt=""
               style={{
                 transform: "translate3d(0px, -94.2179px, 0px) scale(1.3, 1.3)",
@@ -27,24 +35,10 @@ const IgnoreSites = () => {
               "
                 type="image/gif"
               />
-              <img src="https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.webp" />
+              <img src={IgnoreSitesData.image}/>
             </picture>
 
-            <picture className="maciejImg3">
-              <source
-                srcset="
-                https://propozycje.owocni.pl/ux/Head-of-copywriting.f6360b28.webp
-              "
-                type="image/webp"
-              />
-              <source
-                srcset="
-                https://propozycje.owocni.pl/ux/Head-of-copywriting.f6360b28.ef0edbaa.png
-              "
-                type="image/png"
-              />
-              <img src="https://propozycje.owocni.pl/ux/Head-of-copywriting.f6360b28.webp" />
-            </picture>
+            
           </div>
           <div className="contentText">
             <h2>

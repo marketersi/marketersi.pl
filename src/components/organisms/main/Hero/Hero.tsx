@@ -44,11 +44,12 @@ const Hero = () => {
         url={heroSection?.background_video}
         playing={true}
         loop={true}
-        autoplay={true}
         width="100%"
         height="auto"
         className={style.heroVideo}
+        muted={true}
       />
+      
       <div className={style.hero}>
         <Container>
           <h1>
@@ -77,12 +78,12 @@ const Hero = () => {
                 animate="animate"
                 variants={animationVariantsLeft}
               >
-                <Image
+                {/* <Image
                   src="/assets/images/play_arrow.svg"
                   alt="My Image"
                   width="auto"
                   height="auto"
-                />
+                /> */}
               </motion.div>
             </Link>
           </div>

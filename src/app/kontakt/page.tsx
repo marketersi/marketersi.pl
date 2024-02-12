@@ -49,8 +49,7 @@ const ContactScreen = () => {
                     url="/assets/images/contact/Serce2_lpslwb.webm"
                     playing={true}
                     loop={true}
-                    // width="100%"
-                    // height="auto"
+                    muted={true}
                     style={{ aspectRatio: 235 / 235 }}
                     className="bg_video"
                   />
