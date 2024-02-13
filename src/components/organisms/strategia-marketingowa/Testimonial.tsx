@@ -1,8 +1,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import SurveyModal from "./SurveyModal";
+import { useSelector } from "react-redux";
 
 export default function Testimonial() {
+
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+  const { testimonial } = screenData;
+
   const [showModal, setShowModal] = useState(false);
   const handleOpenModal = () => {
     setShowModal(true);
@@ -21,7 +26,7 @@ export default function Testimonial() {
       <div className="Testimonial_Card feature">
         <div>
           <Image
-            src={"/assets/images/strategiamarketingowa/TestimonialImage.avif"}
+            src={testimonial?.image_url}
             alt="TestimonialImage"
             width={700}
             height={640}
@@ -29,16 +34,14 @@ export default function Testimonial() {
         </div>
         <div className="Testimonial_Card_Content">
           <div className="Testimonial_Card_Content_Title">
-            Gdy przedsiębiorca zaczyna sobie zdawać sprawę z całego potencjału
-            wzrostu, jaki posiada jego biznes, w firmie zaczyna się dziać
-            prawdziwa magia.
+            {testimonial?.opinion}
           </div>
           <div>
             <button
               className="Testimonial_Card_Content_Button"
               onClick={handleOpenModal}
             >
-              Podoba mi się ten pomyst. Wyślijcie mi niezobowiązującą ofertę
+              {testimonial?.button_text}
             </button>
           </div>
         </div>
