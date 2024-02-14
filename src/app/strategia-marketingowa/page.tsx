@@ -21,8 +21,17 @@ import WhatRecieve from "../../components/organisms/strategia-marketingowa/WhatR
 import YesAccordion from "../../components/organisms/strategia-marketingowa/accordion/YesAccordion";
 import items from "@/components/organisms/strategia-marketingowa/accordion/Data";
 import "./strategiamarketingowa.css";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { FETCH_STRATEGY_SCREEN_DATA } from "@/redux/strategia/strategyAction";
 
 const StrategiaMarketingowa = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: FETCH_STRATEGY_SCREEN_DATA });
+  }, [dispatch]);
+
   return (
     <>
       <div>

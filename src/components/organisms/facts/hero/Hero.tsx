@@ -12,7 +12,8 @@ const Hero = () => {
       <div className="facts_hero_container">
         <div>
           <h1>
-            {screenData?.title}
+            <span>{screenData?.title && screenData.title.split(" ")[0]}</span>  
+             {screenData?.title  && screenData.title.split(" ").slice(1).join(" ")}
           </h1>
           <p>
             {screenData?.subtitle}

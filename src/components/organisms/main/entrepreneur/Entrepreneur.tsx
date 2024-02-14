@@ -61,7 +61,7 @@ const Entrepreneur = () => {
               Wszyscy o niej mówią. Spróbuję. */}
               {section1?.paragraph_3}
             </p>
-            <p>{section1?.subtitle_2}</p>
+            <h4>{section1?.subtitle_2}</h4>
             <p>
               {/* Większość przedsiębiorców skupia się na nowościach. <br />
               Kończą robiąc trochę tego... trochę tamtego. Bez efektów. */}

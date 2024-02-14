@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const ContactMap = () => {
   const { isLoading, screenData } = useSelector((state) => state.contact);
@@ -49,13 +50,13 @@ const ContactMap = () => {
       )}
 
       <div className="map_button">
-        <button>Nasi klienci</button>
-        <a href="/" className="map_play">
+        <Link className="nasiBtn" href="/owocni-opinie">Nasi klienci</Link>
+        <Link href="" className="map_play">
           <span>Następna opinia</span>
           <div className="play">
             <Image src="/assets/images/play_arrow.svg" />
           </div>
-        </a>
+        </Link>
       </div>
     </>
   );
