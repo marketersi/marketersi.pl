@@ -11,8 +11,15 @@ const Video = () => {
 
   const slideAnimationTop: Variants = {
     offscreen: {
-      scale: 0.5,
+      scale: 0.7,
       rotate: -10,
+      transition: {
+        type: "ease",
+        // bounce: 0.4,
+        damping: 25,
+        stiffness: 70,
+        duration: 3,
+      },
     },
     onscreen: {
       scale: 1,
@@ -43,6 +50,7 @@ const Video = () => {
         whileInView="onscreen"
         variants={slideAnimationTop}
       >
+        
         <ReactPlayer
           // url="https://owocni.pl/assets/homepage/video/popupVideo.mp4"
           url={brandSection?.banner_video}
@@ -51,7 +59,6 @@ const Video = () => {
           muted={true}
           width="100%"
           height="auto"
-          muted
         />
         <div className={style.youtubeIcon} onClick={openPopup}>
           <svg

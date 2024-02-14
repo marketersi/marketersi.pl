@@ -39,8 +39,8 @@ const Hero = () => {
 
   return (
     <div>
+      <div className={style.HerVideoOverlay}></div>
       <ReactPlayer
-        // url="/assets/videos/desktopTop.mp4"
         url={heroSection?.background_video}
         playing={true}
         loop={true}
@@ -49,48 +49,35 @@ const Hero = () => {
         className={style.heroVideo}
         muted={true}
       />
-      
+
       <div className={style.hero}>
         <Container>
-          <h1>
-            {/* Agencja <br />
-            marketingowa,
-            <br />
-            która robi robotę */}
-            {heroSection?.title}
-          </h1>
+          <h1>{heroSection?.title}</h1>
           <div className={style.subtitleContainer}>
-            <h6>Rozwijanie biznesu jest trudne.</h6>
+            <h6>{heroSection?.subtitle}</h6>
             <p>
-              {/* Z Owocnymi jest łatwiej. <br /> Przyjemnie i przewidywalnie. */}
-              {heroSection?.subtitle}
+            Z Marketersami jest łatwiej. <br />
+Przyjemnie i przewidywalnie.
             </p>
+            <p></p>
           </div>
           <div className={style.heroBtn}>
             <Link href="/cennik">
               <button>Wyceń projekt</button>
             </Link>
-            <Link href="/zamow">
+            <Link href="/konsultacje">
               <span>Umów konsultację</span>
               <motion.div
                 className={style.heroPlay}
                 initial="initial"
                 animate="animate"
                 variants={animationVariantsLeft}
-              >
-                {/* <Image
-                  src="/assets/images/play_arrow.svg"
-                  alt="My Image"
-                  width="auto"
-                  height="auto"
-                /> */}
-              </motion.div>
+              ></motion.div>
             </Link>
           </div>
           <div className={style.heroBottomImg}>
             <div className={style.leftImg} ref={ref}>
               <motion.img
-                // src="/assets/images/Ania-Owocni.avif"
                 src={heroSection?.image_left1}
                 alt="My Image"
                 width="auto"
@@ -101,7 +88,6 @@ const Hero = () => {
                 animate={controls}
               />
               <motion.img
-                // src="/assets/images/Fredi-Owocni.avif"
                 src={heroSection?.image_left2}
                 alt="My Image"
                 width="auto"
@@ -114,7 +100,6 @@ const Hero = () => {
             </div>
             <div className={style.rightImg}>
               <motion.img
-                // src="/assets/images/Gandalf-Owocni.avif"
                 src={heroSection?.image_right1}
                 alt="My Image"
                 width="auto"
@@ -125,7 +110,6 @@ const Hero = () => {
                 animate={controls}
               />
               <motion.img
-                // src="/assets/images/Strony-Owocni.avif"
                 src={heroSection?.image_right2}
                 alt="My Image"
                 width="auto"
@@ -136,17 +120,6 @@ const Hero = () => {
                 animate={controls}
               />
             </div>
-            {/* <motion.div
-              className={style.orangeBG}
-              initial={{ scale: 1 }}
-              animate={{ scale: [10, 1.2, 10] }}
-              transition={{ duration: 5, repeat: Infinity }}
-            >
-              <img
-                src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FObraz-tla.917e6d2f.png&w=256&q=75"
-                alt=""
-              />
-            </motion.div> */}
           </div>
         </Container>
       </div>

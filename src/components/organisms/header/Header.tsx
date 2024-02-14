@@ -66,10 +66,10 @@ const Header = () => {
             </div>
           </Col>
           <Col sm={3}>
-            <div className="logo">
+            <div className={style.logo}>
               <Link href="/">
                 <Image
-                  src="/assets/images/marketersi.PNG"
+                  src="https://images.prismic.io/marketersi/984f6871-6a21-41ee-b875-ebac79cfec29_marketersi_logo.png?auto=compress,format"
                   alt="My Image"
                   width={300}
                   height="auto"
@@ -106,7 +106,7 @@ const Header = () => {
         <div className={style.mobileLogo}>
           <Link href="/">
             <Image
-              src="/assets/images/marketersi.PNG"
+              src="https://images.prismic.io/marketersi/984f6871-6a21-41ee-b875-ebac79cfec29_marketersi_logo.png?auto=compress,format"
               alt="My Image"
               width={150}
               height="auto"

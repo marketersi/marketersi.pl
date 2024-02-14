@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <form action="" className="form_sect">
       <p className="form_head_txt text-center">Napisz, jak możemy pomóc?</p>
-      <p className="form_mail_content text-center">studio@owocni.pl</p>
+      <p className="form_mail_content text-center">studio@marketersi.pl</p>
       <textarea
         name="message"
         placeholder="Wiadomość"

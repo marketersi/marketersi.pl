@@ -28,7 +28,6 @@ const Footer = () => {
                   height="auto"
                 />
               </div>
-              
             </div>
             <div className={style.footerCol}>
               <Row className="mb-sm-5">
@@ -51,7 +50,9 @@ const Footer = () => {
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Wydajny marketing</h3>
-                    <Link href="/strategia-marketingowa">Strategia marketingowa</Link>
+                    <Link href="/strategia-marketingowa">
+                      Strategia marketingowa
+                    </Link>
                     {/* <Link href="/#">Działania marketingowe</Link> */}
                     <Link href="/konsultacje">Konsultacja marketingu</Link>
                   </div>
@@ -67,7 +68,7 @@ const Footer = () => {
               <Row>
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
-                    <h3>Owocni</h3>
+                    <h3>Marketersi</h3>
                     <Link href="/Zespol">Zespół</Link>
                     {/* <Link href="/#">Klienci</Link> */}
                     {/* <Link href="/#">Kariera</Link> */}
@@ -82,7 +83,9 @@ const Footer = () => {
                     {/* <Link href="/#">
                       Badanie strony i marketingu przez ekspertów [Bezpłatne]
                     </Link> */}
-                    <Link href="/kalkulator">Kalkulator zysku z nowej strony (ROI)</Link>
+                    <Link href="/kalkulator">
+                      Kalkulator zysku z nowej strony (ROI)
+                    </Link>
                     {/* <Link href="/#">Test skuteczności strony (Krótki)</Link> */}
                     {/* <Link href="/#">Konsultacja marketingu</Link> */}
                   </div>
@@ -91,19 +94,19 @@ const Footer = () => {
             </div>
           </div>
           <div className={style.copyright}>
-                <div className={style.copyrightText}>
-                  <p>
-                    &copy; {currentYear} - Owocni.pl | Tak się robi marketing!
-                  </p>
-                </div>
-                <div className={style.copyrightMenu}>
-                  <p>
-                    <Link href="/#">Regulamin |</Link>
-                    <Link href="/#"> Polityka prywatnosci | </Link>
-                    <Link href="/#">Mapav</Link>
-                  </p>
-                </div>
-              </div>
+            <div className={style.copyrightText}>
+              <p>
+                &copy; {currentYear} - marketersi.pl | Tak się robi marketing!
+              </p>
+            </div>
+            <div className={style.copyrightMenu}>
+              <p>
+                <Link href="/#">Regulamin |</Link>
+                <Link href="/#"> Polityka prywatnosci | </Link>
+                <Link href="/#">Mapav</Link>
+              </p>
+            </div>
+          </div>
         </Container>
       </div>
     </div>
