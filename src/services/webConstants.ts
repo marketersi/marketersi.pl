@@ -13,3 +13,7 @@ export const API_ENDPOINTS = {
   ANATOMY_SCREEN: "",
   PRICE_LIST_SCREEN: "",
 };
+
+export const API_ENDPOINTS_POST = {
+  CONTACT_US: "api/contactMail",
+};
