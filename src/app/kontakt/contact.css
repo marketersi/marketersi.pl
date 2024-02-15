@@ -793,4 +793,8 @@ a.map_play:hover {
   a.map_play {
     justify-content: center;
   }
+  .map_button .nasiBtn{
+    display: block;
+    margin: 0 0 30px;
+  }
 }
