@@ -280,7 +280,7 @@ img.hardImg {
 
 @media screen and (max-width: 767px) {
   .Content h2 {
-    font-size: 35px;
+    font-size: 35px !important;
     margin: 0 0 40px 0px;
   }
 
