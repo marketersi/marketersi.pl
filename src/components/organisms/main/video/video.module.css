@@ -4,10 +4,10 @@
 
 .mainVideoDiv video {
   position: absolute;
-  left: 18%;
+  left: 12%;
   top: -120px;
   border-radius: 50px;
-  width: 65% !important;
+  width: 75% !important;
   z-index: 0;
 
 }

@@ -55,7 +55,7 @@ const HeaderDropDown1 = () => {
             <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Klienci i opinie</h3>
-                <Link href="/owocni-opinie">Opinie klientów</Link>
+                <Link href="/marketersi-opinie">Opinie klientów</Link>
                 {/* <a href="/">Nasi klienci</a> */}
               </div>
             </Col>

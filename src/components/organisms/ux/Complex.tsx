@@ -1,5 +1,16 @@
 import React from 'react'
 
+const ComplexData = {
+  title: "title",
+  description1: "description",
+  DStyle1:["description", "description"],
+  description2: "description",
+  DStyle2:["description", "description","description"],
+  description3: "description",
+  DStyle3:["description", "description"],
+
+}
+
 const Complex = () => {
   return (
     <>

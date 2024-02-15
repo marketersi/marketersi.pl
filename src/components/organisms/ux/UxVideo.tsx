@@ -1,6 +1,27 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 
+
+const UXVideoData = {
+  title: "UX Video",
+  description1: "UX Video",
+  description2: ["firmy", "firmy","firmy", "dfghjk"],
+  image: "images/",
+  tabVideo1: "video/",
+  tabVideo2: "video/",
+  tabVideo3: "video/",
+  tabTitle1: "title1",
+  tabTitle2: "title2",
+  tabTitle3: "title3",
+  imgSprings:"http",
+  dotImg1: "http://",
+  dotImg2: "http://",
+  dotImg3: "http://",
+  dotImg4: "http://",
+  description4: "http://",
+  description5: "http://",
+  description6: "http://",
+}
 const UxVideo = () => {
   const [selectedTab, setSelectedTab] = useState(1);
   return (
@@ -75,10 +96,9 @@ const UxVideo = () => {
                 url="https://propozycje.owocni.pl/ux/UX-JEDEN.4766b5b5.mp4"
                 playing={true}
                 loop={true}
-                autoplay={true}
+                muted={true}
                 width="100%"
                 height="auto"
-                muted
               />
             )}
 
@@ -86,7 +106,7 @@ const UxVideo = () => {
               <ReactPlayer
                 playing={true}
                 loop={true}
-                autoplay={true}
+                muted={true}
                 width="100%"
                 height="auto"
                 muted
@@ -101,7 +121,7 @@ const UxVideo = () => {
                 autoplay={true}
                 width="100%"
                 height="auto"
-                muted
+                muted={true}
                 url="https://propozycje.owocni.pl/ux/UX-TRZY.54e91b3f.mp4"
               />
             )}
@@ -176,7 +196,7 @@ const UxVideo = () => {
           </div>
         </div>
       </section>
-      {/* <section>
+      <section>
         <div id="WhatGet">
           <p className="textAnimation">
             Prowadzimy odwiedzających przez proces sprzedaży tak,
@@ -198,7 +218,7 @@ const UxVideo = () => {
             </span>
           </a>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };

@@ -1,10 +1,15 @@
+import { useSelector } from "react-redux";
+
 export default function MainContentOne() {
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+
+  console.log("screen data strategia", screenData);
+  const { MainContentOne } = screenData.MainContent || {};
+
   return (
     <div className="MainContentOne content">
       <div className="MainContentOne_Container">
-        Skuteczna strategia marketingowa to plan zorientowany na maksymalne
-        zyski. Jest to narzędzie, które pomaga przedsiębiorcom w wyborze,
-        ustaleniu priorytetów i planowaniu efektywnych działań marketingowych.
+        {MainContentOne?.description}
       </div>
     </div>
   );
