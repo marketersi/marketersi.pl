@@ -13,6 +13,17 @@ const ContactMap = () => {
   const [selectedFeedback, setSelectedFeedback] = useState(null);
   const [activeFeedback, setActiveFeedback] = useState(null);
 
+  const [glowIndex, setGlowIndex] = useState(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomGlowIndex = Math.floor(Math.random() * 16) + 1;
+      setGlowIndex(randomGlowIndex);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   useEffect(() => {
     if (feedback && feedback.length > 0) {
       setSelectedFeedback(feedback[0]);
@@ -31,6 +42,10 @@ const ContactMap = () => {
     }
   };
 
+  // --------------------
+
+  // ----------------------------------------------------------------
+
   return (
     <div className="map_container">
       <Image src="/assets/images/contact/mapakontakt.avif" alt="" />
@@ -40,145 +55,145 @@ const ContactMap = () => {
         <div
           className={`icon1 plus_icon_container ${
             activeFeedback === "Zachodniopomorskie" ? "active" : ""
-          }`}
+          }  ${glowIndex === 1 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Zachodniopomorskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon2 plus_icon_container ${
             activeFeedback === "Pomorskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 2 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Pomorskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon3 plus_icon_container ${
             activeFeedback === "Warmińsko-Mazurskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 3 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Warmińsko-Mazurskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon4 plus_icon_container ${
             activeFeedback === "Lubuskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 4 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Lubuskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon5 plus_icon_container ${
             activeFeedback === "Wielkopolskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 5 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Wielkopolskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon6 plus_icon_container ${
             activeFeedback === "Kujawsko-Pomorskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 6 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Kujawsko-Pomorskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon7 plus_icon_container ${
             activeFeedback === "Mazowieckie" ? "active" : ""
-          }`}
+          } ${glowIndex === 7 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Mazowieckie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon8 plus_icon_container ${
             activeFeedback === "Podlaskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 8 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Podlaskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon9 plus_icon_container ${
             activeFeedback === "Dolnośląskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 9 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Dolnośląskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon10 plus_icon_container ${
             activeFeedback === "Łódzkie" ? "active" : ""
-          }`}
+          } ${glowIndex === 10 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Łódzkie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon11 plus_icon_container ${
             activeFeedback === "Opolskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 11 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Opolskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon12 plus_icon_container ${
             activeFeedback === "Śląskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 12 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Śląskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon13 plus_icon_container ${
             activeFeedback === "Małopolskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 13 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Małopolskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon14 plus_icon_container ${
             activeFeedback === "Świętokrzyskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 14 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Świętokrzyskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon15 plus_icon_container ${
             activeFeedback === "Lubelskie" ? "active" : ""
-          }`}
+          } ${glowIndex === 15 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Lubelskie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
 
         <div
           className={`icon16 plus_icon_container ${
             activeFeedback === "Podkarpackie" ? "active" : ""
-          }`}
+          } ${glowIndex === 16 ? "glow" : ""}`}
           onClick={() => handleShowFeedback("Podkarpackie")}
         >
-          <FontAwesomeIcon icon={faPlus} />
+          <span>+</span>
         </div>
       </>
       {/* Icon container ends */}
