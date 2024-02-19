@@ -419,7 +419,7 @@ a.card_btn:hover {
   border-radius: 100%;
 }
 
-a.map_play {
+.map_play {
   display: flex;
   gap: 15px;
   align-items: center;
@@ -428,9 +428,10 @@ a.map_play {
   font-weight: 500;
   font-size: 20px;
   color: white;
+  cursor: pointer;
 }
 
-a.map_play:hover {
+.map_play:hover {
   background: #ffc600;
   border-radius: 50px;
 }
@@ -449,7 +450,7 @@ a.map_play:hover {
 
 /* ==================================map plus===================== */
 .plus_icon_container {
-  border: 1px solid #d21e00;
+  /* border: 1px solid #d21e00; */
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -461,43 +462,61 @@ a.map_play:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 11;
 }
 
-.glow {
-  animation: mymove 1s infinite;
+/* .glow {
+  animation: mymove 2s infinite;
   animation-delay: 1s;
-}
+} */
 
-.plus_icon_container::before {
+/* .glow::before {
   content: "";
-  height: 100%;
-  width: 100%;
+  height: 20px;
+  width: 20px;
   background: #ff000070;
-  /* animation: mymove 2s infinite; */
-  /* animation-delay: 1s; */
+  animation: mymove 2s infinite;
+  animation-delay: 1s;
   position: absolute;
   border-radius: 100%;
-}
-
+  z-index: -1;
+} */
 .plus_icon_container span {
   font-size: 18px;
   font-weight: 700;
+  background: white;
+  border-radius: 100%;
+  padding: 0 8px;
+  border: 1px solid #d21e00;
+  cursor: pointer;
+}
+
+div.glow {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background: #d21e00;
+  border-radius: 100%;
+  z-index: -1;
+  animation: mymove 1s infinite;
+  animation-delay: 1s;
 }
 
 @keyframes mymove {
   0% {
     transform: scale(1);
-    /* Initial scale */
+    opacity: 0;
   }
 
-  50% {
-    transform: scale(1.2);
-    /* Scale to 120% of the original size */
-  }
+  /* 50% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  } */
 
   100% {
-    transform: scale(1);
-    /* Return to original scale */
+    transform: scale(1.8);
+    opacity: 0.2;
+
   }
 }
 
@@ -514,7 +533,7 @@ a.map_play:hover {
 } */
 
 
-.plus_icon_container.active {
+.plus_icon_container.active span {
   background: red;
   color: white;
 }
@@ -525,28 +544,38 @@ a.map_play:hover {
 }
 
 .icon2 {
-  top: -14%;
-  left: 46%;
+  /* top: -14%;
+  left: 46%; */
+  top: -98px;
+  left: 45%;
 }
 
 .icon3 {
-  top: -8%;
-  left: 63%;
+  /* top: -8%;
+  left: 63%; */
+  top: -47px;
+  left: 364px;
 }
 
 .icon4 {
-  top: 15%;
-  left: 24%;
+  /* top: 15%;
+  left: 24%; */
+  top: 100px;
+  left: 145px;
 }
 
 .icon5 {
-  top: 10%;
-  left: 28%;
+  /* top: 10%;
+  left: 28%; */
+  top: 69px;
+  left: 169px;
 }
 
 .icon6 {
-  top: 0%;
-  left: 43%;
+  /* top: 0%;
+  left: 43%; */
+  top: 2px;
+  left: 260px;
 }
 
 .icon7 {
@@ -1043,8 +1072,9 @@ a.map_play:hover {
     display: block;
   }
 
-  a.map_play {
+  .map_play {
     justify-content: center;
+
   }
 
   .map_button .nasiBtn {
