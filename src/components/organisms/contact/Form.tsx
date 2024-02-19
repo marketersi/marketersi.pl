@@ -24,17 +24,20 @@ const ContactForm = () => {
       <p className="form_head_txt text-center">Napisz, jak możemy pomóc?</p>
       <p className="form_mail_content text-center">studio@marketersi.pl</p>
       <textarea
+        required
         placeholder="Wiadomość"
         className="form_text_area"
         {...register("message", { required: true })}
       ></textarea>
       <div className=" small_forms d-sm-flex gap-1">
         <input
+          required
           placeholder="Imię"
           className=" form_inputs"
           {...register("name", { required: true })}
         />
         <input
+          required
           placeholder="Mail"
           className="form_inputs"
           type="email"

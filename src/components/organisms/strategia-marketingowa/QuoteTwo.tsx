@@ -1,21 +1,25 @@
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 export default function QuoteTwo() {
+
+const {isLoading, screenData} = useSelector((state) => state.strategy);
+const {quoteTwo} = screenData ;
+
   return (
     <div className="QuoteTwo content">
       <div className="QuoteTwo_Title feature">
-        Marka bez osobowości, jest jak piosenka bez melodii.
+        {quoteTwo?.title}
       </div>
       <div className="QuoteTwo_TextOne">
-        W jaki sposób sprawimy, że klienci będą rozpoznawać markę nawet wtedy
-        gdy nie będą widzieć jej logotypu?
+        {quoteTwo?.description_1}
       </div>
       <div className="QuoteTwo_TextTwo">
-        To tylko niektóre z wielu zagadnień, które pomożemy Ci rozwiązać.
+        {quoteTwo?.description_2}
       </div>
       <div className="QuoteTwo_Image full">
         <Image
-          src={"/assets/images/strategiamarketingowa/QuoteTwoImage.avif"}
+          src={quoteTwo?.image}
           alt="QuoteTwoImage"
           width={2000}
           height={1044}

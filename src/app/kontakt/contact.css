@@ -25,15 +25,18 @@
   text-align: center;
   color: #3e3e3e;
 }
+
 .name_Image {
   display: flex;
   align-items: center;
   margin: 0 0 30px;
   gap: 20px;
 }
+
 .logo img {
   width: 250px;
 }
+
 .form_sect {
   margin: 0 23px 0 auto;
   width: 36rem;
@@ -71,8 +74,9 @@
   color: #333333;
 }
 
-.form_text_area:active {
-  outline: #d21e00;
+.form_text_area:active,
+.form_text_area:focus {
+  outline: 2px solid #d21e00;
 }
 
 .small_forms {
@@ -401,6 +405,7 @@ a.card_btn:hover {
   text-decoration: none;
   border: 2px solid #931500;
 }
+
 .map_button .nasiBtn:hover {
   transform: translateY(5px);
   box-shadow: none;
@@ -589,6 +594,7 @@ a.map_play:hover {
   .icons img {
     margin-bottom: 3rem;
   }
+
   .first_sect_p {
     margin: 0 0 40px;
   }
@@ -796,6 +802,7 @@ a.map_play:hover {
   a.map_play {
     justify-content: center;
   }
+
   .map_button .nasiBtn {
     display: block;
     margin: 0 0 30px;
