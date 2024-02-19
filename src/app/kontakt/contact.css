@@ -341,7 +341,7 @@ a.card_btn:hover {
 }
 
 .right_box_bottom img {
-  width: 90%;
+  width: 34rem;
   margin: -150px 0 0 40px;
 }
 
@@ -449,13 +449,31 @@ a.map_play:hover {
 
 /* ==================================map plus===================== */
 .plus_icon_container {
-  border: 1px solid red;
+  border: 1px solid #d21e00;
   width: 25px;
   border-radius: 100%;
   text-align: center;
-  color: red;
+  color: #d21e00;
   position: absolute;
-  display: none;
+  /* box-shadow: 0 0 10px rgba(210, 22, 0, 0.3);
+  animation: blink 1s infinite alternate; */
+}
+
+.plus_icon_container svg {
+  font-size: 14px;
+}
+
+/* @keyframes blink {
+  0% {
+    box-shadow: 0 0 10px rgba(210, 22, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(210, 22, 0, 1);
+  }
+} */
+.plus_icon_container.active {
+  background: red;
+  color: white;
 }
 
 .icon1 {
@@ -558,6 +576,9 @@ a.map_play:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+.map_container {
+  position: relative;
 }
 
 /* -------------------------------media screen---------------------- */
