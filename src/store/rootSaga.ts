@@ -18,6 +18,8 @@ import { FETCH_STRATEGY_SCREEN_DATA } from "@/redux/strategia/strategyAction";
 import { strategyScreenSaga } from "@/redux/strategia/strategySaga";
 import { FETCH_EXAMINATION_SCREEN_DATA } from "@/redux/zamow/zamowAction";
 import { examinationScreenSaga } from "@/redux/zamow/zamowSagas";
+import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
+import { teamScreenSaga } from "@/redux/zespol/teamSaga";
 import { all, takeLatest } from "redux-saga/effects";
 
 export default function* rootSaga() {
@@ -29,6 +31,7 @@ export default function* rootSaga() {
     takeLatest(FETCH_CONSULTING_SCREEN_DATA, consultingScreenSaga),
     takeLatest(FETCH_EXAMINATION_SCREEN_DATA, examinationScreenSaga),
     takeLatest(FETCH_STRATEGY_SCREEN_DATA, strategyScreenSaga),
+    takeLatest(FETCH_TEAM_SCREEN_DATA, teamScreenSaga),
 
     takeLatest(POST_CONTACT, postContactSaga),
   ]);
