@@ -21,11 +21,19 @@
   font-size: 6rem;
   margin-top: -1rem;
   font-weight: 900;
-  line-height: 0.8;
+  line-height: 5.8rem;
   text-align: center;
   color: #3e3e3e;
 }
-
+.name_Image {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+  gap: 20px;
+}
+.logo img {
+  width: 250px;
+}
 .form_sect {
   margin: 0 23px 0 auto;
   width: 36rem;
@@ -92,10 +100,11 @@
   border: 3px solid #d21e00;
   color: white;
   font-size: 23px;
-  width: 15rem;
+  width: 280px;
   border-radius: 10em;
   transition: background-color 0.2s;
   padding: 10px;
+
 }
 
 /* section_secound */
@@ -141,10 +150,10 @@
 }
 
 .card .tital {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 1.5rem;
   font-weight: 300;
-  color: #333333;
+  color: #3e3e3e;
 }
 
 .name_img {
@@ -160,9 +169,10 @@
 }
 
 .name {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 300;
   color: #3e3e3e;
+  text-align: left;
 }
 
 .card .mail_id {
@@ -255,7 +265,7 @@ a.card_btn:hover {
 }
 
 .solid_bold {
-  font-size: 13rem;
+  font-size: 12.5rem;
   font-weight: 900;
   color: white;
 }
@@ -263,7 +273,7 @@ a.card_btn:hover {
 .solid_tital {
   font-weight: 900;
   color: white;
-  font-size: 150px;
+  font-size: 130px;
   text-align: center;
   display: block;
 }
@@ -352,6 +362,8 @@ a.card_btn:hover {
 .map_content h4 {
   font-size: 22px;
   color: #fbfbfb;
+  font-family: Georgia;
+  font-style: italic;
 }
 
 .map_bottom_p {
@@ -368,20 +380,27 @@ a.card_btn:hover {
 .map_button {
   display: flex;
   align-items: center;
-  padding: 20px 60px 40px;
-  justify-content: center;
+  padding: 20px 40px 40px;
+  justify-content: spa;
 }
 
-.map_button button {
+.map_button .nasiBtn {
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 30px;
+  padding: 10px 0px;
   border: none;
   border-radius: 50px;
-  min-width: 200px;
+  min-width: 180px;
   background: #d21e00;
   color: white;
   box-shadow: 0 5px 0 #931500;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #931500;
+}
+.map_button .nasiBtn:hover {
+  transform: translateY(5px);
+  box-shadow: none;
 }
 
 .map_button .play {
@@ -619,7 +638,7 @@ a.map_play:hover {
   }
 
   .logo img {
-    width: 150px;
+    width: 150px !important;
   }
 
   .solid_bold {
@@ -773,5 +792,9 @@ a.map_play:hover {
 
   a.map_play {
     justify-content: center;
+  }
+  .map_button .nasiBtn{
+    display: block;
+    margin: 0 0 30px;
   }
 }

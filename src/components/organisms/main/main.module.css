@@ -1,6 +1,6 @@
 /* ================================================== enter================================= */
 .enter {
-  padding: 100px 0;
+  padding: 0px 0 100px;
 }
 
 .Content {
@@ -225,7 +225,14 @@ img.hardImg {
   padding: 50px 0;
   background-image: linear-gradient(173deg, #e3e3e3 53%, #fbb1b6);
 }
-
+.socialVideo video{
+  width: 800px !important;
+  margin: 0 auto;
+  display: block;
+}
+.brandingHeading{
+  font-size: 55px !important;
+}
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
   .enter img {
@@ -266,11 +273,14 @@ img.hardImg {
     border-radius: 0px 0px 50px 50px;
     overflow: hidden;
   }
+  .socialVideo video{
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .Content h2 {
-    font-size: 35px;
+    font-size: 35px !important;
     margin: 0 0 40px 0px;
   }
 

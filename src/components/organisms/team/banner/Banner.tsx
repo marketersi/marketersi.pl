@@ -23,7 +23,7 @@ const Banner = () => {
         url="https://res.cloudinary.com/ddctmb3dk/video/upload/v1698077578/zxcacvh2xxu6vj3nbe1j.webm"
         playing={true}
         loop={true}
-        autoplay={true}
+        muted={true}
         width="100%"
         height="auto"
         className={style.bannerVideo}

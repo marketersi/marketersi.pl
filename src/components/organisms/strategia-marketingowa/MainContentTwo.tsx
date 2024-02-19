@@ -1,23 +1,27 @@
+import {useSelector} from 'react-redux'
+
 export default function MainContentTwo() {
+
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+
+  const { MainContentTwo } = screenData.MainContent || {};
+
   return (
     <div className="MainContentTwo content">
       <div className="MainContentTwo_Container">
         <p>
-          Tak jak dobrze napisany biznesplan, strategia staje się drogowskazem.
-          Mapą, będącą podstawowym narzędziem pracy marketingu.
+          {MainContentTwo?.paragraph_1}
         </p>
         <p>
-          Strategia pozwala komunikować się spójnym głosem. Prostym, zrozumiałym
-          i przekonującym klienta.
+          {MainContentTwo?.paragraph_2}
         </p>
         <p>
-          To zbiór bardzo konkretnych wzorców i reguł tworzonych do osiągania
-          dużej efektywności.
+          {MainContentTwo?.paragraph_3}
         </p>
         <p>
-          Tonu głosu, sposób komunikacji marki. Styl prezentacji graficznej.
+        {MainContentTwo?.paragraph_4}
         </p>
-        <p>Rodzaj i miejsce reklam. Do celu. Krok po kroku.</p>
+        <p>{MainContentTwo?.paragraph_5}</p>
       </div>
     </div>
   );

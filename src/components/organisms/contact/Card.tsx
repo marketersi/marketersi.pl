@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 
-const ContactCard = ({ title, name, phone, email, image }) => {
+const ContactCard = ({ title, name, phone, email, image, id }) => {
   return (
     <div className="card">
       <div className="tital">{title}</div>
@@ -14,7 +14,7 @@ const ContactCard = ({ title, name, phone, email, image }) => {
       <div className="mail_id">
         <a href="#">{email}</a>
       </div>
-      <a href="#" id="card_btn_active" className="card_btn">
+      <a href="tel:" id={id === 1 ? "card_btn_active" : ""} className="card_btn">
         <span>Zadzwoń</span> <br /> {phone}
       </a>
     </div>

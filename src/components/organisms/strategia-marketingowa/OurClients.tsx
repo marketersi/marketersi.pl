@@ -36,6 +36,7 @@ const SlideOne = () => {
                   loop
                   width="60%"
                   height="auto"
+                  muted={true}
                 />
               </div>
               <div className="OurClients_Slide_Media_Rating">
@@ -101,6 +102,7 @@ const SlideTwo = () => {
                   loop
                   width="60%"
                   height="auto"
+                  muted={true}
                 />
               </div>
               <div className="OurClients_Slide_Media_Rating">

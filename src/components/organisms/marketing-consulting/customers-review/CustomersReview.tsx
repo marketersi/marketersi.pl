@@ -8,6 +8,7 @@ const CustomersReview = () => {
 
   const { CustomeReview } = screenData || {};
   const { image_url, subtitle, title } = CustomeReview || {};
+  
 
   return (
     <Container className="cr_sec">

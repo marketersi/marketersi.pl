@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import style from "./footer.module.css";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,82 +28,85 @@ const Footer = () => {
                   height="auto"
                 />
               </div>
-              
             </div>
             <div className={style.footerCol}>
               <Row className="mb-sm-5">
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Fajne marki</h3>
-                    <a href="/#">Nazwa dla firmy</a>
-                    <a href="/#">Projektowanie logo</a>
-                    {/* <a href="/#">Identyfikacja spółki</a> */}
+                    <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
+                    <Link href="/projektowanie-logo">Projektowanie logo</Link>
+                    {/* <Link href="/#">Identyfikacja spółki</Link> */}
                   </div>
                 </Col>
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Sprawne strony</h3>
-                    {/* <a href="/#">Tworzenie stron</a> */}
-                    <a href="/#">Projektowanie UX</a>
-                    {/* <a href="/#">Audyt strony www</a> */}
+                    {/* <Link href="/#">Tworzenie stron</Link> */}
+                    <Link href="/projektowanie-ux">Projektowanie UX</Link>
+                    {/* <Link href="/#">Audyt strony www</Link> */}
                   </div>
                 </Col>
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Wydajny marketing</h3>
-                    <a href="/#">Strategia marketingowa</a>
-                    {/* <a href="/#">Działania marketingowe</a> */}
-                    <a href="/#">Konsultacja marketingu</a>
+                    <Link href="/strategia-marketingowa">
+                      Strategia marketingowa
+                    </Link>
+                    {/* <Link href="/#">Działania marketingowe</Link> */}
+                    <Link href="/konsultacje">Konsultacja marketingu</Link>
                   </div>
                 </Col>
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Przekonujące treści</h3>
-                    <a href="/#">Treści sprzedażowe</a>
-                    {/* <a href="/#">Jakościowe artykuły</a> */}
+                    <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
+                    {/* <Link href="/#">Jakościowe artykuły</Link> */}
                   </div>
                 </Col>
               </Row>
               <Row>
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
-                    <h3>Owocni</h3>
-                    <a href="/#">Zespół</a>
-                    {/* <a href="/#">Klienci</a> */}
-                    {/* <a href="/#">Kariera</a> */}
-                    <a href="/#">Kontakt</a>
-                    <a href="/#">Cennik</a>
-                    {/* <a href="/#">Realizacje</a> */}
+                    <h3>Marketersi</h3>
+                    <Link href="/Zespol">Zespół</Link>
+                    {/* <Link href="/#">Klienci</Link> */}
+                    {/* <Link href="/#">Kariera</Link> */}
+                    <Link href="/kontakt">Kontakt</Link>
+                    <Link href="/cennik">Cennik</Link>
+                    {/* <Link href="/#">Realizacje</Link> */}
                   </div>
                 </Col>
                 <Col sm={9}>
                   <div className={style.footerRightMenu}>
                     <h3>Przydatne rzeczy</h3>
-                    {/* <a href="/#">
+                    {/* <Link href="/#">
                       Badanie strony i marketingu przez ekspertów [Bezpłatne]
-                    </a> */}
-                    <a href="/#">Kalkulator zysku z nowej strony (ROI)</a>
-                    {/* <a href="/#">Test skuteczności strony (Krótki)</a> */}
-                    {/* <a href="/#">Konsultacja marketingu</a> */}
+                    </Link> */}
+                    <Link href="/kalkulator">
+                      Kalkulator zysku z nowej strony (ROI)
+                    </Link>
+                    {/* <Link href="/#">Test skuteczności strony (Krótki)</Link> */}
+                    {/* <Link href="/#">Konsultacja marketingu</Link> */}
                   </div>
                 </Col>
               </Row>
             </div>
           </div>
           <div className={style.copyright}>
-                <div className={style.copyrightText}>
-                  <p>
-                    &copy; {currentYear} - Owocni.pl | Tak się robi marketing!
-                  </p>
-                </div>
-                <div className={style.copyrightMenu}>
-                  <p>
-                    <a href="/#">Regulamin |</a>
-                    <a href="/#"> Polityka prywatnosci | </a>
-                    <a href="/#">Mapav</a>
-                  </p>
-                </div>
-              </div>
+            <div className={style.copyrightText}>
+              <p>
+                &copy; {currentYear} - marketersi.pl | Tak się robi marketing!
+              </p>
+            </div>
+            <div className={style.copyrightMenu}>
+              <p>
+                <Link href="/#">Regulamin |</Link>
+                <Link href="/#"> Polityka prywatnosci | </Link>
+                <Link href="/#">Mapav</Link>
+              </p>
+            </div>
+          </div>
         </Container>
       </div>
     </div>

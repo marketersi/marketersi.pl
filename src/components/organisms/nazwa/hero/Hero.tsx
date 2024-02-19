@@ -11,7 +11,7 @@ const NazwaHero = () => {
             url="https://www.copywriting.pl/files/resources/Nazwy-landing.mp4"
             playing={true}
             loop={true}
-            autoplay={true}
+            muted={true}
             width="100%"
             height="auto"
             className="heroVideo"

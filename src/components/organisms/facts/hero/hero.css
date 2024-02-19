@@ -14,13 +14,14 @@
 }
 
 .facts_hero_container h1 span {
-  font-size: 120px;
-  text-shadow: 10px 0px rgba(255, 255, 255, 1);
+  font-size: 140px;
+  text-shadow: 8px 0px rgba(255, 255, 255, 1);
+  margin-right: 15px;
 }
 
 .facts_hero_container h1 {
-  font-weight: 900;
-  font-size: 90px;
+  font-weight: 800;
+  font-size: 80px;
   line-height: 0.9;
 }
 
@@ -61,5 +62,17 @@
 }
 .facts_hero_container h1 {
   font-size: 60px;
+}
+}
+@media screen and (max-width: 400px) {
+ 
+.facts_hero_container h1 {
+  font-size: 40px;
+}
+.facts_hero_container h1 span {
+  font-size: 100px;
+}
+.facts_hero_container p {
+  font-size: 30px;
 }
 }

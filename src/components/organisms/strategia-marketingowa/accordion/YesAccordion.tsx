@@ -1,11 +1,9 @@
-// components/Accordion.js
-
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "./yes.css";
+import { useSelector } from "react-redux";
 
-// Define a type for the items prop
 type AccordionItem = {
   title: string;
   content: string;
@@ -16,6 +14,10 @@ type AccordionProps = {
 };
 
 const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+  const { FAQsection } = screenData;
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
@@ -38,8 +40,7 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
           odpowiedź brzmi TAK!
         </h2>
         </div>
-        {items &&
-          items.map((item, index) => (
+        {FAQsection?.FAQcard.map((item, index) => (
             <div key={index} className="accordion-item">
               <div
                 className={`accordion-title ${
@@ -47,7 +48,7 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
                 }`}
                 onClick={() => handleClick(index)}
               >
-                {item.title}
+                {item.question}
                 {index === activeIndex ? (
                   <FontAwesomeIcon icon={faMinus} className="icon" />
                 ) : (
@@ -55,7 +56,7 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
                 )}
               </div>
               {index === activeIndex && (
-                <div className="accordion-content">{item.content}</div>
+                <div className="accordion-content">{item.answer}</div>
               )}
             </div>
           ))}

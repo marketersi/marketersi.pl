@@ -26,6 +26,7 @@
   font-size: 32px;
   font-weight: 300;
   line-height: 60.8px;
+  width: 600px;
 }
 .MainHeading_Image {
   margin-left: -150px;
@@ -86,6 +87,7 @@
   font-size: 28px;
   font-weight: 300;
   line-height: 53.2px;
+  margin: 0 0 30px;
 }
 .MainNumber_Two_Footer {
   display: flex;
@@ -113,12 +115,22 @@
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.52) 0px 0px 28px 0px;
   max-width: 1152px;
-  padding: 40px 65px;
+  padding: 40px 40px;
 }
 .ResultTable_Table_Row {
   padding-inline: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  padding: 0 0px 20px;
+}
+.ResultTable_Table_Row:nth-child(1) {
+  border-bottom: 1.5px solid black;
+  margin: 0 0 30px;
+}
+.ResultTable_Table_Row:nth-child(2) {
+  border-bottom: 1.5px solid black;
+  margin: 0 0 30px;
 }
 .ResultTable_Table_Row_Content {
   font-size: 26px;
@@ -967,6 +979,7 @@
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
 }
 .Price_Card_Number {
   color: #b6b6b6;

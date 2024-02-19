@@ -57,8 +57,7 @@ const Entrepreneur = () => {
                 loop={true}
                 width="100%"
                 height="auto"
-                autoplay={true}
-              />
+                muted={true}              />
             </Col>
           </Row>
           <div className={style.Content}>
@@ -84,6 +83,7 @@ const Entrepreneur = () => {
                 loop={true}
                 width="100%"
                 height="auto"
+                muted={true}
               />
             </Col>
             <Col lg={5}>
@@ -99,7 +99,7 @@ const Entrepreneur = () => {
 
           <div className={style.Content}>
             <p>
-              <span>{section6?.subtitle}</span>
+              <span>{section6?.subtitle}</span> <br />
               {/* I nie chodzi tu o poprawę
               prędkości ładowania strony internetowej. Chodzi o rzetelne
               testowanie każdej obiecującej hipotezy testem A/B. */}
@@ -123,9 +123,9 @@ const Entrepreneur = () => {
               loop={true}
               width="100%"
               height="auto"
-              autoplay={true}
+              muted={true}
             />
-            <h2>
+            <h2 className={style.brandingHeading}>
               {/* Projektujemy marki, o których ludzie nie mogą przestać myśleć! */}
               {section7?.title}
             </h2>
@@ -141,7 +141,7 @@ const Entrepreneur = () => {
               loop={true}
               width="100%"
               height="auto"
-              autoplay={true}
+              muted={true}
             />
             <p>
               {/* Kim jesteśmy, by mówić te rzeczy? Jesteśmy Owocni. Nasze kampanie
@@ -160,7 +160,7 @@ const Entrepreneur = () => {
               loop={true}
               width="100%"
               height="auto"
-              autoplay={true}
+              muted={true}
             />
             <p>
               {/* Gdy masz doświadczenie z obserwacji tysięcy kampanii, wiesz co
@@ -177,7 +177,7 @@ const Entrepreneur = () => {
               loop={true}
               width="100%"
               height="auto"
-              autoplay={true}
+              muted={true}
             />
             <h3>
               {/* Nasze wysokowydajne materiały edukacyjne cytowane są przez

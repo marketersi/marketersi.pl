@@ -1,5 +1,11 @@
 import React from 'react'
 
+const SystemicallyData = {
+  hand1Img: "images",
+  title: "title",
+  description: "description",
+  hand2Img: "images",  
+}
 const Systemically = () => {
   return (
     <>

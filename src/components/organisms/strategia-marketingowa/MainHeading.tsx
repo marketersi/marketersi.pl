@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const MainHeadingData = {
   title: "Strategia.",
@@ -8,23 +9,27 @@ const MainHeadingData = {
 };
 
 export default function MainHeading() {
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+
+  const { hero } = screenData;
+
   return (
     <div className="MainHeading content">
       <div className="MainHeading_Container full">
         <div>
-          <div className="MainHeading_Title">Strategia.</div>
+          <div className="MainHeading_Title">
+            {hero?.title && hero.title.split(" ")[0]}
+          </div>
           <div className="MainHeading_SecondTitle">
-            Tak się tworzy,
-            <br /> prężną firmę.
+            {hero?.title && hero.title.split(" ").slice(1).join(" ")}
           </div>
           <div className="MainHeading_Content">
-            Od rozpoznania okazji do szybkiego rozwoju firmy, po efektywny plan
-            realizacji - Strategia to paliwo rakietowe startującej marki.
+            {hero?.subtitle}
           </div>
         </div>
         <div className="MainHeading_Image">
           <Image
-            src={"/assets/images/strategiamarketingowa/MainHeadingImage.avif"}
+            src={hero?.image_url}
             alt="MainHeadingImage"
             width={755}
             height={512}

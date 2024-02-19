@@ -41,8 +41,9 @@ const WhatToExpect = () => {
           // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flaur-lewy.b7365a35.jpg&w=128&q=75"
           src={image_url_left}
           alt="feather image left"
+          className="leaf_img"
         />
-        <div className="w-50 mx-5">
+        <div className="w-sm-50 mx-5">
           <p>
             {/* Nie rozliczamy pozycji w Google, czy wejść na stronę, bo ważna jest
             tylko ilość klientów. */}
@@ -58,6 +59,7 @@ const WhatToExpect = () => {
           // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flaur-prawy.27b40e46.jpg&w=128&q=75"
           src={image_url_right}
           alt="feather image right"
+          className="leaf_img"
         />
       </div>
 
@@ -83,6 +85,7 @@ const WhatToExpect = () => {
           // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fowocni-nazwa-animowana.9707f9df.gif&w=640&q=75"
           src={brand_logo}
           alt="brand logo"
+          className="logoImg"
         />
       </div>
     </Container>
