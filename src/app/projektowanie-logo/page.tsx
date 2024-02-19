@@ -77,15 +77,21 @@ const LogoAccordionData = {
 const LogoDesignScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const dispatch = useDispatch();
+
   if (screenData) {
     console.warn("🟢logo screen data ui 👉👉👉", screenData);
   }
 
-  const { accordionData } = screenData;
+  const { LogoAccordionData } = screenData || {};
+  const { accordionData } = LogoAccordionData || {};
 
   useEffect(() => {
     dispatch({ type: FETCH_LOGO_SCREEN_DATA });
   }, [dispatch]);
+
+  useEffect(() => {
+    console.warn("accordionData👉✅", accordionData);
+  }, [accordionData]);
 
   return (
     <>
@@ -114,36 +120,36 @@ const LogoDesignScreen = () => {
           {/* section 10 */}
           <Gallery />
           {/* section 11 */}
-          <StepByStep />
+          {/* <StepByStep /> */}
           {/* section 12 */}
-          <FreeShops />
+          {/* <FreeShops /> */}
           {/* section 13 */}
-          <Enexo />
+          {/* <Enexo /> */}
           {/* section 14 */}
-          <Daco />
+          {/* <Daco /> */}
           {/* section 15 */}
-          <Aico />
+          {/* <Aico /> */}
           {/* section 16 */}
-          <ZooGarden />
+          {/* <ZooGarden /> */}
           {/* section 17 */}
-          <Construction />
+          {/* <Construction /> */}
           {/* section 18 */}
-          <Restaurant />
+          {/* <Restaurant /> */}
           {/* section 19 */}
-          <Park />
+          {/* <Park /> */}
           {/* section 20 */}
-          <GPN />
+          {/* <GPN /> */}
           {/* section 21 */}
-          <NewCompany />
+          {/* <NewCompany /> */}
           {/* section 22 */}
-          <section className="black-sec-form">
+          {/* <section className="black-sec-form">
             <div className="copywriter-ending-1 text-center">
               Zróbmy razem <br />
               coś fajnego
             </div>
             <Form />
-          </section>
-          <LogoFooter />
+          </section> */}
+          {/* <LogoFooter /> */}
         </>
       )}
     </>

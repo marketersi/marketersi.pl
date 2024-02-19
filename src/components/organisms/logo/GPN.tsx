@@ -18,7 +18,9 @@ const GPNData = {
 
 const GPN = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { title, companyLogo, productLogo } = screenData;
+  const { GPNData } = screenData || {};
+
+  const { title, companyLogo, productLogo } = GPNData || {};
 
   return (
     <>

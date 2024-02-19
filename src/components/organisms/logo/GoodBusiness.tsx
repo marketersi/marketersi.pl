@@ -11,7 +11,8 @@ const GoodBusinessData = {
 
 const GoodBusiness = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { title, subtitle, text, image } = screenData;
+  const { GoodBusinessData } = screenData || {};
+  const { title, subtitle, text, image } = GoodBusinessData || {};
 
   return (
     <>

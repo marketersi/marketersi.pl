@@ -18,7 +18,8 @@ const NewCompanyProfitSliderData = {
 
 const ProfitSlider = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { sliderImages } = screenData;
+  const { NewCompanyProfitSliderData } = screenData || {};
+  const { sliderImages } = NewCompanyProfitSliderData || {};
 
   return (
     <>
@@ -73,7 +74,7 @@ const ProfitSlider = () => {
             />
             <Carousel.Caption></Carousel.Caption>
           </Carousel.Item> */}
-          {sliderImages.map((image, index) => (
+          {sliderImages?.map((image, index) => (
             <Carousel.Item>
               <ExampleCarouselImage src={image} alt="Second slide" />
               <Carousel.Caption></Carousel.Caption>

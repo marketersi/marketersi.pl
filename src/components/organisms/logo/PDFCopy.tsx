@@ -15,6 +15,7 @@ const PDFCopyData = {
 
 const PDFCopy = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { PDFCopyData } = screenData || {};
   const {
     normalText,
     image,
@@ -22,7 +23,7 @@ const PDFCopy = () => {
     imageSubtitle,
     imageLinkText,
     imageLink,
-  } = screenData;
+  } = PDFCopyData || {};
 
   return (
     <>

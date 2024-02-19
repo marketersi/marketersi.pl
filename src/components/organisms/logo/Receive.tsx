@@ -18,7 +18,8 @@ const ReceiveData = {
 
 const Receive = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { title, subtitle, image, points } = screenData;
+  const { ReceiveData } = screenData || {};
+  const { title, subtitle, image, points } = ReceiveData || {};
 
   return (
     <>
@@ -53,20 +54,6 @@ const Receive = () => {
         </div>
 
         <div className="projects-oferta-veggo-cont">
-          {/* <img
-            src="/assets/images/logo-design/Oferta-projektowania-logo-cennik.jpg.webp"
-            className="projects-oferta-veggo-bg"
-            alt="Znak Veggo na materiałach drukowanych"
-            title="Znak Veggo na materiałach drukowanych"
-          /> */}
-          {image && (
-            <img
-              src={image}
-              className="projects-oferta-veggo-bg"
-              alt="Znak Veggo na materiałach drukowanych"
-              title="Znak Veggo na materiałach drukowanych"
-            />
-          )}
           <div className="container custom-container2">
             <div className="row">
               <div className="col-md-12 projects-theme-desc-p">
@@ -108,7 +95,7 @@ const Receive = () => {
                           Grafikę firmową na Facebook <br />
                           lub do innej społeczności.
                         </li> */}
-                        {points.map((point) => (
+                        {points?.map((point) => (
                           <li className="projects-includes-li">{point}</li>
                         ))}
                       </ul>
@@ -119,6 +106,20 @@ const Receive = () => {
               <div className="col-md-12 projects-custom-espace"></div>
             </div>
           </div>
+          {/* <img
+            src="/assets/images/logo-design/Oferta-projektowania-logo-cennik.jpg.webp"
+            className="projects-oferta-veggo-bg"
+            alt="Znak Veggo na materiałach drukowanych"
+            title="Znak Veggo na materiałach drukowanych"
+          /> */}
+          {image && (
+            <img
+              src={image}
+              className="projects-oferta-veggo-bg"
+              alt="Znak Veggo na materiałach drukowanych"
+              title="Znak Veggo na materiałach drukowanych"
+            />
+          )}
         </div>
       </section>
     </>

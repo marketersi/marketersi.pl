@@ -21,6 +21,7 @@ const StepBystepData = {
 
 const StepByStep = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { StepBystepData } = screenData || {};
   const {
     title,
     subtitle,
@@ -33,7 +34,7 @@ const StepByStep = () => {
     bannerImage,
     bannerImageTitle,
     bannerImageSubtitle,
-  } = screenData;
+  } = StepBystepData || {};
 
   return (
     <>
@@ -104,7 +105,7 @@ const StepByStep = () => {
                 <br /> */}
                 {secondaryImageTitle && secondaryImageTitle}
               </p>
-              <div>
+              <div className="mb-4">
                 {/* <img
                   src="./img/Projektowanie-graficzne-logo.jpg.webp"
                   className="appetime-img-p appetime-img"

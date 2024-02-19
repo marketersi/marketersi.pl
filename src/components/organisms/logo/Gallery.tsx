@@ -21,7 +21,8 @@ const GalleryData = {
 
 const Gallery = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { buttonText, image, title, subtitle, imageGroup } = screenData;
+  const { GalleryData } = screenData || {};
+  const { buttonText, image, title, subtitle, imageGroup } = GalleryData || {};
 
   return (
     <>

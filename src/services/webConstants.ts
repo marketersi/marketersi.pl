@@ -12,5 +12,5 @@ export const API_ENDPOINTS = {
   OPINION_SCREEN: "",
   ANATOMY_SCREEN: "",
   PRICE_LIST_SCREEN: "",
-  LOGO_SCREEN: "api/logo-screen-setting",
+  LOGO_SCREEN: "api/projektowanie",
 };

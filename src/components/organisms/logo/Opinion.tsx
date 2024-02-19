@@ -9,7 +9,8 @@ const OpinionData = {
 
 const Opinion = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { image, imageText } = screenData;
+  const { OpinionData } = screenData || {};
+  const { image, imageText } = OpinionData || {};
 
   return (
     <>

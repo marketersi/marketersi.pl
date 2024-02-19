@@ -15,6 +15,7 @@ const ProjectValueData = {
 
 const ProjectsValue = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { ProjectValueData } = screenData || {};
   const {
     title,
     subtitle,
@@ -23,7 +24,7 @@ const ProjectsValue = () => {
     imageSubtitle,
     galleryTitle,
     galleryImage,
-  } = screenData;
+  } = ProjectValueData || {};
 
   return (
     <>

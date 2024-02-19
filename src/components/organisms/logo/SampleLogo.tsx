@@ -25,7 +25,8 @@ const SampleLogoData = {
 
 const SampleLogo = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { imageGroup1, imageGroup2, imageGroup3 } = screenData;
+  const { SampleLogoData } = screenData || {};
+  const { imageGroup1, imageGroup2, imageGroup3 } = SampleLogoData || {};
 
   return (
     <>

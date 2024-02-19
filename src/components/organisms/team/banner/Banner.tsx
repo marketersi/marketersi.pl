@@ -6,6 +6,16 @@ import ReactPlayer from "react-player";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 
+const BannerData = {
+  video: "",
+  videoOverlaytext: "",
+  title: "",
+  subtitle: "",
+  text: "",
+  imageLeft: "",
+  imageRight: "",
+};
+
 const Banner = () => {
   return (
     <>

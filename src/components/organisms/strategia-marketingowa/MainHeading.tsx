@@ -1,5 +1,12 @@
 import Image from "next/image";
 
+const MainHeadingData = {
+  title: "Strategia.",
+  subtitle: "Tak się tworzy, prężną firmę.",
+  text: "Od rozpoznania okazji do szybkiego rozwoju firmy, po efektywny plan realizacji - Strategia to paliwo rakietowe startującej marki.",
+  image: "/assets/images/strategiamarketingowa/MainHeadingImage.avif",
+};
+
 export default function MainHeading() {
   return (
     <div className="MainHeading content">

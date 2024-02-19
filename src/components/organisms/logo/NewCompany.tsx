@@ -11,7 +11,8 @@ const NewCompanyData = {
 
 const NewCompany = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { title, subtitle, cursorChangingText } = screenData;
+  const { NewCompanyData } = screenData || {};
+  const { title, subtitle, cursorChangingText } = NewCompanyData || {};
 
   return (
     <>

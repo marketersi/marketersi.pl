@@ -11,10 +11,9 @@ const LogoBannerData = {
 };
 
 const LogoBanner = () => {
-  const { isLoading, LogoBannerData } = useSelector(
-    (state) => state.logo.LogoBannerData
-  );
-  const { image, title, subtitle, text, buttontext } = LogoBannerData;
+  const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { LogoBannerData } = screenData || {};
+  const { image, title, subtitle, text, buttontext } = LogoBannerData || {};
 
   return (
     <>
