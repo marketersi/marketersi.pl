@@ -1,10 +1,24 @@
 "use client";
-import React from "react";
-import style from './team-page.module.css';
+import React, { useEffect } from "react";
+import style from "./team-page.module.css";
 import * as TeamComponents from "@/components/organisms/team/team-components/TeamComponents";
 import OurClients from "@/components/organisms/strategia-marketingowa/OurClients";
+import { useDispatch, useSelector } from "react-redux";
+import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
 
-const page = () => {
+const Team = () => {
+  const { isLoading, screenData } = useSelector((state) => state.team);
+
+  if (screenData) {
+    console.log("Team screen data from UI => ", screenData);
+  }
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: FETCH_TEAM_SCREEN_DATA });
+  }, []);
+
   const personalCardData1 = {
     imageSrc:
       "https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmariusz.jpg.9f5b45ad.webp&w=128&q=75",
@@ -23,7 +37,6 @@ const page = () => {
   };
   return (
     <>
-    
       <TeamComponents.Banner />
       <TeamComponents.PersonalCard {...personalCardData1} />
       <TeamComponents.FreeSpace />
@@ -31,14 +44,21 @@ const page = () => {
       <TeamComponents.ImageSlider />
       <OurClients />
       <TeamComponents.Review />
-      <section className={style.Customers }>
-      <div className={style.teamContent}>
-        <p style={{margin:'100px 0'}}><span>Customers often ask how good designs are created.</span> The answer lies in simplicity.Simple is smart!But turning complexity into simplicity is not easy at all.</p>
-      </div>
-      <TeamComponents.PersonalCard {...personalCardData2} />
-      <div className={style.teamContent}>
-        <p style={{margin:'100px 0'}}><span>Tu nie ma drogi na skróty. </span> Sukces to ciężka praca. Jeśli tego nie kochasz, nie zarwiesz tych długich nocy.</p>
-      </div>
+      <section className={style.Customers}>
+        <div className={style.teamContent}>
+          <p style={{ margin: "100px 0" }}>
+            <span>Customers often ask how good designs are created.</span> The
+            answer lies in simplicity.Simple is smart!But turning complexity
+            into simplicity is not easy at all.
+          </p>
+        </div>
+        <TeamComponents.PersonalCard {...personalCardData2} />
+        <div className={style.teamContent}>
+          <p style={{ margin: "100px 0" }}>
+            <span>Tu nie ma drogi na skróty. </span> Sukces to ciężka praca.
+            Jeśli tego nie kochasz, nie zarwiesz tych długich nocy.
+          </p>
+        </div>
       </section>
       <TeamComponents.Creative />
       <TeamComponents.Caring />
@@ -49,4 +69,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Team;

@@ -1,28 +1,53 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { useForm } from "react-hook-form";
+import { POST_CONTACT } from "@/redux/kontakt/contactActions";
 
 const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const dispatch = useDispatch();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    dispatch({ type: POST_CONTACT, payload: data });
+    reset();
+  };
+
   return (
-    <form action="" className="form_sect">
+    <form action="" className="form_sect" onSubmit={handleSubmit(onSubmit)}>
       <p className="form_head_txt text-center">Napisz, jak możemy pomóc?</p>
       <p className="form_mail_content text-center">studio@marketersi.pl</p>
       <textarea
-        name="message"
+        required
         placeholder="Wiadomość"
         className="form_text_area"
+        {...register("message", { required: true })}
       ></textarea>
       <div className=" small_forms d-sm-flex gap-1">
-        <input placeholder="Imię" className=" form_inputs" name="name" />
         <input
+          required
+          placeholder="Imię"
+          className=" form_inputs"
+          {...register("name", { required: true })}
+        />
+        <input
+          required
           placeholder="Mail"
           className="form_inputs"
           type="email"
-          name="mail"
+          {...register("email", { required: true })}
         />
         <input
           placeholder="Telefon"
           className="form_inputs"
           pattern="\d{7,15}"
-          name="phone"
+          {...register("telephone")}
         />
       </div>
 

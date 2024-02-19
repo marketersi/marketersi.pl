@@ -5,11 +5,15 @@ export const API_ENDPOINTS = {
   HOME_SCREEN: "api/get-home-screen-setting",
   CONSULTING_SCREEN: "api/get-konsultacja-setting",
   EXAMINATION_SCREEN: "api/examination",
-  TEAM_SCREEN: "",
+  TEAM_SCREEN: "api/teamsearch-section",
   UX_SCREEN: "",
   SALES_SCREEN: "",
   STRATEGY_SCREEN: "api/get-marketing-strategy",
   OPINION_SCREEN: "",
   ANATOMY_SCREEN: "",
   PRICE_LIST_SCREEN: "",
+};
+
+export const API_ENDPOINTS_POST = {
+  CONTACT_US: "api/contactMail",
 };

@@ -3,9 +3,21 @@ import Select, { components } from "react-select";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const FormOne = ({ setCurrentComponent }) => {
+const FormOne = ({ setCurrentComponent, form }) => {
+  console.log("form two", form);
+
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
+
+  const optionsOne = form?.dropdown1?.map((option) => ({
+    value: option,
+    label: option,
+  }));
+
+  const optionsTwo = form?.dropdown2?.map((option) => ({
+    value: option,
+    label: option,
+  }));
 
   const options1 = [
     { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
@@ -67,10 +79,13 @@ const FormOne = ({ setCurrentComponent }) => {
   return (
     <>
       <div>
-        <h2 className="card-heading mb-3">Na jakim etapie jest Twój biznes?</h2>
+        <h2 className="card-heading mb-3">
+          {/* Na jakim etapie jest Twój biznes? */}
+          {form?.select_lable_1}
+        </h2>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
-            options={options1}
+            options={optionsOne}
             placeholder="Wybierz"
             isSearchable={false}
             components={{ DropdownIndicator }}
@@ -104,12 +119,16 @@ const FormOne = ({ setCurrentComponent }) => {
           />
         </div>
         <h2 className="card-heading mt-5">
-          Ile miesięcznie inwestujesz w marketing?
+          {/* Ile miesięcznie inwestujesz w marketing? */}
+          {form?.select_lable_2}
         </h2>
-        <p>Lub ile planujesz inwestować?</p>
+        <p>
+          {/* Lub ile planujesz inwestować? */}
+          {form?.subtitle}
+        </p>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
-            options={options2}
+            options={optionsTwo}
             placeholder="Wybierz"
             isSearchable={false}
             components={{ DropdownIndicator }}

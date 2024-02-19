@@ -1,12 +1,17 @@
+import { useSelector } from "react-redux";
+
 export default function InviteCustomer() {
+
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+  const {quoteOne } = screenData;
+
   return (
     <div className="InviteCustomer content">
       <div className="InviteCustomer_Title feature">
-        Do jakiego świata zaprosisz swoich nowych klientów?
+        {quoteOne?.title}
       </div>
       <div className="InviteCustomer_Content">
-        Czy opowieść Twojej firmy jest ciekawa? Czy jest wiarygodna? Czy ta
-        narracja skutecznie motywuje do współpracy z Tobą?
+        {quoteOne?.description}
       </div>
     </div>
   );
