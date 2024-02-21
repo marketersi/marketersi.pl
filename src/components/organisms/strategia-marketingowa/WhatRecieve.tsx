@@ -38,7 +38,7 @@ export default function WhatRecieve() {
       </div>
       {/* Image 1 */}
       <div
-        className="full"
+        className="full WhatRecieveImage1"
         style={{ marginBottom: "30px", textAlign: "center" }}
       >
         <Image

@@ -49,7 +49,7 @@ export default function Analysis() {
           </div>
         </div>
 
-        <div>
+        <div className="Analysis_Card_img_order">
           <Image
             src={Card1?.main_image}
             alt="AnalysisImage1"
@@ -107,7 +107,7 @@ export default function Analysis() {
 
       {/* Card 2 */}
       <div className="Analysis_Card full">
-        <div>
+        <div className="analysis_card_img2">
           <Image
             src={Card2?.main_image}
             alt="AnalysisImage2"
@@ -131,7 +131,7 @@ export default function Analysis() {
             </div>
           </div>
 
-          <div className="ImageAdvantage_Button_Container">
+          <div className="ImageAdvantage_Button_Container text-xl-end">
             <button
               className={`${
                 Analysis2_Dropdown_Show
@@ -258,7 +258,7 @@ export default function Analysis() {
       </div>
 
       {/* Card 4 */}
-      <div className="Analysis_Card full">
+      <div className="Analysis_Card full mt-5">
         <div>
           <Image
             src={Card4?.main_image}
