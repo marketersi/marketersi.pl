@@ -67,21 +67,17 @@ const Banner = () => {
             </Col>
             <Col sm={6}>
               <img
-                src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flampa.75f3a55b.png&w=750&q=75"
+                src={herosection?.right_image}
                 alt=""
               />
             </Col>
           </Row>
           <div className={style.teamContent} style={{ marginTop: "-60px" }}>
             <p>
-              Owszem, robimy fajne rzeczy, ale tym, co naprawdę nas wyróżnia,
-              jest sposób, w jaki to robimy. Tworzymy dobrą atmosferę:
-              wyrozumiałą, serdeczną i troskliwą.
+              {herosection?.para_one}
             </p>
             <p>
-              Wierzymy, że troszcząc się o interesy klientów lepiej niż
-              ktokolwiek inny, zawsze będziemy mieli kolejne zlecenia. - Ta
-              wiara przynosi świetne rezultaty już od 20 lat!
+            {herosection?.para_two}
             </p>
           </div>
         </div>

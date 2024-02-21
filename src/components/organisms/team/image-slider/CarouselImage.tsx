@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./imageslider.css";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const CustomPrevArrow = (props) => {
-
   const buttonVariants = {
     initial: { y: 0 },
     hover: { y: 3 },
@@ -19,7 +19,7 @@ const CustomPrevArrow = (props) => {
       className={className}
       style={{ ...style, display: "block", background: "black" }}
       onClick={onClick}
-      whileHover={{ translateY: 5}}
+      whileHover={{ translateY: 5 }}
       variants={buttonVariants}
       initial="initial"
     >
@@ -40,7 +40,7 @@ const CustomNextArrow = (props) => {
       className={className}
       style={{ ...style, display: "block", background: "black" }}
       onClick={onClick}
-      whileHover={{ translateY: 5}}
+      whileHover={{ translateY: 5 }}
       variants={buttonVariants}
       initial="initial"
     >
@@ -50,6 +50,8 @@ const CustomNextArrow = (props) => {
 };
 
 const ImageCarousel = ({ images }) => {
+
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -69,7 +71,6 @@ const ImageCarousel = ({ images }) => {
         </div>
       ))}
     </Slider>
-    
   );
 };
 

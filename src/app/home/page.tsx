@@ -29,7 +29,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      {isLoading ? (
+      {false ? (
         <Loader />
       ) : (
         <div>

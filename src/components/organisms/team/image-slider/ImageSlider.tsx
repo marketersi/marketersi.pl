@@ -1,18 +1,16 @@
-
-import ImageSlider from './CarouselImage';
-import {motion, Variants} from 'framer-motion'
+import ImageSlider from "./CarouselImage";
+import { motion, Variants } from "framer-motion";
 import React from "react";
 import style from "../team.module.css";
+import { useSelector } from "react-redux";
 
 
-const images = [
-    'https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.95c40610.jpg&w=1920&q=75',
-    'https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F3.b7a94977.jpg&w=1920&q=75',
-    'https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.aa0277f1.jpg&w=1920&q=75',
-   
-  ];
 
 const Home = () => {
+  const { isLoading, screenData } = useSelector((state) => state.team);
+  const { section2 } = screenData;
+  const Team_image = screenData?.section2?.image.Team_image || [];
+  console.log("array imahes", Team_image);
 
   const springUp: Variants = {
     offscreen: {
@@ -31,25 +29,24 @@ const Home = () => {
   };
   return (
     <div>
-      <ImageSlider images={images} />
+      <ImageSlider images={Team_image} />
       <motion.img
-          className={style.slideAnimateImg}
-          src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FOwocni-Film.4c8c215f.png&w=640&q=75"
-          alt=""
-          initial="offscreen"
-          whileInView="onscreen"
-          variants={springUp}
-        />
-        <div className={style.teamContent}>
-          <h2>
-            No więc, <span> jak to jest</span>
-            współpracować z nami?
-          </h2>
-          <p style={{ textAlign: "center", marginTop: "30px" }}>
-            Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co
-            odpowiedzieli:
-          </p>
-        </div>
+        className={style.slideAnimateImg}
+        src={section2?.animated_small_image}
+        alt=""
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={springUp}
+      />
+      <div className={style.teamContent}>
+        <h2>
+          No więc, <span> jak to jest</span>
+          współpracować z nami?
+        </h2>
+        <p style={{ textAlign: "center", marginTop: "30px" }}>
+          Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co odpowiedzieli:
+        </p>
+      </div>
     </div>
   );
 };

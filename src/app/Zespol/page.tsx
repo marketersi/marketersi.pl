@@ -8,6 +8,7 @@ import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
 
 const Team = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
+  const {card1, card2, section3, section4} =screenData ;
 
   if (screenData) {
     console.log("Team screen data from UI => ", screenData);
@@ -19,14 +20,7 @@ const Team = () => {
     dispatch({ type: FETCH_TEAM_SCREEN_DATA });
   }, []);
 
-  const personalCardData1 = {
-    imageSrc:
-      "https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmariusz.jpg.9f5b45ad.webp&w=128&q=75",
-    name: "Mariusz Słowik",
-    role: "Założyciel",
-    description:
-      "Jeśli lubisz ten specyficzny klimat osobistego zrozumienia panujący w małym zespole, to w Owocnych poczujesz się jak w domu.",
-  };
+ 
   const personalCardData2 = {
     imageSrc:
       "https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjakub.88638b87.jpg&w=256&q=75",
@@ -38,7 +32,7 @@ const Team = () => {
   return (
     <>
       <TeamComponents.Banner />
-      <TeamComponents.PersonalCard {...personalCardData1} />
+      <TeamComponents.PersonalCard {...card1} />
       <TeamComponents.FreeSpace />
       <TeamComponents.Support />
       <TeamComponents.ImageSlider />
@@ -47,16 +41,14 @@ const Team = () => {
       <section className={style.Customers}>
         <div className={style.teamContent}>
           <p style={{ margin: "100px 0" }}>
-            <span>Customers often ask how good designs are created.</span> The
-            answer lies in simplicity.Simple is smart!But turning complexity
-            into simplicity is not easy at all.
+            <span>{section3?.section_three_header}</span>
+            {section3?.section_three_subheader}
           </p>
         </div>
-        <TeamComponents.PersonalCard {...personalCardData2} />
+        <TeamComponents.PersonalCard {...card2} />
         <div className={style.teamContent}>
           <p style={{ margin: "100px 0" }}>
-            <span>Tu nie ma drogi na skróty. </span> Sukces to ciężka praca.
-            Jeśli tego nie kochasz, nie zarwiesz tych długich nocy.
+            {section4?.section_four_para}
           </p>
         </div>
       </section>
