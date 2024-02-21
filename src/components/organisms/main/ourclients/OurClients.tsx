@@ -5,9 +5,10 @@ import Marquee from "react-fast-marquee";
 import ReactPlayer from "react-player/file";
 import { ClientCarousel, CarouselContext } from "./ClientCarousel";
 import { Variants, motion } from "framer-motion";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Stars from "@/components/molecules/Ratings";
-import "./our-clients.css"
+import "./our-clients.css";
+import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 
 export default function OurClients() {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -36,8 +37,6 @@ export default function OurClients() {
       },
     },
   };
-
-
 
   return (
     <div className="OurClients content mt-5">
@@ -433,17 +432,16 @@ export default function OurClients() {
             Polsce. (Na podstawie realnych opinii) */}
             {RatingCard?.rating_description}
           </div>
-          
         </div>
       </div>
       <motion.div
-         initial="offscreen"
-         whileInView="onscreen"
-         variants={slideAnimationLeft}
-         className="cartAnimation"
-          >
-            <img src={RatingCard?.left_animated_image} alt="" />
-          </motion.div>
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={slideAnimationLeft}
+        className="cartAnimation"
+      >
+        <img src={RatingCard?.left_animated_image} alt="" />
+      </motion.div>
     </div>
   );
 }
@@ -692,4 +690,3 @@ const SlideThree = () => {
     </>
   );
 };
-

@@ -8,7 +8,7 @@ import MainContentOne from "../../components/organisms/strategia-marketingowa/Ma
 import MainContentTwo from "../../components/organisms/strategia-marketingowa/MainContentTwo";
 import MainHeading from "../../components/organisms/strategia-marketingowa/MainHeading";
 import MainNumber from "../../components/organisms/strategia-marketingowa/MainNumber";
-import OurClients from "../../components/organisms/strategia-marketingowa/OurClients";
+// import OurClients from "../../components/organisms/strategia-marketingowa/OurClients";
 import Price from "../../components/organisms/strategia-marketingowa/Price";
 import QuoteOne from "../../components/organisms/strategia-marketingowa/QuoteOne";
 import QuoteTwo from "../../components/organisms/strategia-marketingowa/QuoteTwo";
@@ -20,16 +20,19 @@ import Testimonial from "../../components/organisms/strategia-marketingowa/Testi
 import WhatRecieve from "../../components/organisms/strategia-marketingowa/WhatRecieve";
 import YesAccordion from "../../components/organisms/strategia-marketingowa/accordion/YesAccordion";
 import items from "@/components/organisms/strategia-marketingowa/accordion/Data";
-import "./strategiamarketingowa.css";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { FETCH_STRATEGY_SCREEN_DATA } from "@/redux/strategia/strategyAction";
+import OurClients from "../../components/organisms/main/ourclients/OurClients";
+import "./strategiamarketingowa.css";
+import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 
 const StrategiaMarketingowa = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_STRATEGY_SCREEN_DATA });
+    dispatch({ type: FETCH_HOME_SCREEN_DATA });
   }, [dispatch]);
 
   return (
@@ -81,6 +84,7 @@ const StrategiaMarketingowa = () => {
         <QuoteTwo />
 
         {/* 16. OurClients */}
+        {/* <OurClients /> */}
         <OurClients />
 
         {/* 17. Price */}

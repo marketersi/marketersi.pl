@@ -32,7 +32,7 @@ const ThanksMessage = () => {
           <p>11 tys. użytkowników obserwuje to. <br />
           Wyprzedź swoich znajomych i obserwuj to.
           </p>
-          <button>Wróć na poprzednią stronę</button>
+          <a href="/kontakt">Wróć na poprzednią stronę</a>
            
         </div>
       </div>
