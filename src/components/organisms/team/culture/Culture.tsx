@@ -1,43 +1,44 @@
 import React from "react";
 import style from "../team.module.css";
 import { Container } from "react-bootstrap";
+import { useSelector } from "react-redux";
+import Section5 from "../../tresci-sprzedazowe/section5/Section5";
 
 const Culture = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.team);
+  const { section6, section7 } = screenData;
+
   return (
     <>
       <div className={style.teamContent}>
         <p>
-          <span>Doskonalenie umiejętności to część owocnej kultury.</span>Nasi
-          ludzie są regularnie cytowani przez najważniejsze tytuły: Forbes, Puls
-          Biznesu czy Marketing w praktyce.
+          <span>{section6?.sub_title_6}</span>{section6?.sub_title_discription_6}
         </p>
       </div>
       <Container>
         <div className={style.cultureCard}>
           <img
-            src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmedia-transformed.8980c418.png&w=640&q=75"
+            src={section7?.card7_image_1}
             alt=""
           />
           <h2>
-            Chyba robimy coś <br />
-            <span>naprawdę dobrze,</span> <br />
-            skoro media uznają <br />
-            nas za ekspertów.
+            {section7?.card_title_7}
           </h2>
         </div>
-        <img className={style.cultureImg} src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMedia-owocni.a90ca738.png&w=640&q=75" alt="" />
+        <img className={style.cultureImg} src={section7?.card7_image_2} alt="" />
       </Container>
       <div className={style.teamContent}>
         <p>
-          <span>Oczywiście mamy słabości.</span>
-          Choć każdemu zdarza się spóźnić do pracy, to raczej nie spóźniamy się z pracą.
+          <span>{section7?.subtitle_1}</span>
+          {section7?.paragraph_1}
         </p>
         <p>
-          <span>esteśmy sumienni. </span>
-          Nawet jeśli oznacza to, że nie możemy przyjąć wszystkich proponowanych zleceń.
+          <span>{section7?.subtitle_2}</span>
+          {section7?.paragraph_2}
         </p>
         <p>
-        Niemal 30 osób, codziennie włącza komputer w innym miejscu. O innej godzinie. A jak jest w studio?
+        {section7?.paragraph_3}
         </p>
       </div>
     </>
