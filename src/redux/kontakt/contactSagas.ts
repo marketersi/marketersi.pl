@@ -46,8 +46,8 @@ export function* postContactSaga(action) {
     );
 
     if (responseData) {
-      console.log("contact screen post data saga ==>", responseData.data);
-      yield put(postContactSuccess({ response: responseData.data }));
+      console.log("contact screen post data saga ==>", responseData);
+      yield put(postContactSuccess({ response: responseData }));
     } else {
       yield put(postContactFail());
     }

@@ -4,13 +4,15 @@ import { useSelector } from "react-redux";
 export default function Strategy() {
 
   const { isLoading, screenData } = useSelector((state) => state.strategy);
-  const { strategy, featureList } = screenData;
+  const { strategy } = screenData;
+  // console.log(featureList);
 
   return (
     <div className="Strategy content">
       <p className="Strategy_Title">{strategy?.title}</p>
       <div className="Strategy_Cards feature">
-      {featureList?.map((item) => (
+      {strategy?.featureList?.map((item) => (
+        
         <div className="Strategy_Card" key={item.id}>
           <div className="Strategy_Card_Title">
             <div className="Strategy_Card_Title_Number">{item.item_number}</div>
@@ -18,8 +20,9 @@ export default function Strategy() {
           </div>
           <div>
             <img
+             className="strategyImg"
               src={item.image_url}
-              alt={item.title}
+              alt="Dopasowana"
               style={{
                 width: '100%',
                 height: 'auto',

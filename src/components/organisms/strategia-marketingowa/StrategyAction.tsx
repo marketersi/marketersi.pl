@@ -20,7 +20,7 @@ export default function StrategyAction() {
             {StrategyAction?.description_2}
           </div>
         </div>
-        <div>
+        <div className="StrategyActionImage">
           <Image
             src={StrategyAction?.image_url}
             alt="StrategyActionImage"
