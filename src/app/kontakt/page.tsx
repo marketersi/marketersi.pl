@@ -47,7 +47,7 @@ const ContactScreen = () => {
 
   return (
     <>
-      {isLoading ? (
+      {isContactUsLoading || isLoading ? (
         <Loader />
       ) : (
         <section>

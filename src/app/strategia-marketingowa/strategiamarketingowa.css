@@ -2150,4 +2150,33 @@
   .StrategyAction {
     margin-bottom: 70px;
   }
+
+  .MainHeading_Container {
+    padding-inline: 20px;
+  }
+
+  .Analysis {
+    padding: 0 20px;
+  }
+
+  .Analysis4_Dropdown_Container {
+    padding-inline: 0px;
+  }
+
+  .ImageAdvantage_Table {
+    align-items: start;
+  }
+
+  .WhatRecieve_Dropdown_TitleTwo {
+    padding-inline: 0px;
+
+  }
+
+  .WhatRecieve_Dropdown_TitleOne {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    padding-inline: 0px;
+  }
 }
