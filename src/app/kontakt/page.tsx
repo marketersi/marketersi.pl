@@ -9,9 +9,11 @@ import Card from "@/components/organisms/contact/Card";
 import ContactForm from "@/components/organisms/contact/Form";
 import ContactMap from "@/components/organisms/contact/Map";
 import Loader from "@/components/organisms/animation/Loader";
+import { useRouter } from "next/navigation";
 
 const ContactScreen = () => {
-  const { isLoading, screenData } = useSelector((state) => state.contact);
+  const { isLoading, screenData, contactUsResponse, isContactUsLoading } =
+    useSelector((state) => state.contact);
   const { project, contact_us, feedback } = screenData || {};
   const modifiedManual = contact_us?.manual.split(" ");
 
@@ -25,6 +27,9 @@ const ContactScreen = () => {
   ];
 
   const dispatch = useDispatch();
+  const router = useRouter();
+
+  console.log("post response", contactUsResponse);
 
   if (screenData) {
     console.log("contact screen data from UI => ", project);
@@ -34,9 +39,15 @@ const ContactScreen = () => {
     dispatch({ type: FETCH_CONTACT_SCREEN_DATA });
   }, [dispatch]);
 
+  useEffect(() => {
+    if (contactUsResponse?.status) {
+      router.push("/dziekujemy");
+    }
+  }, [contactUsResponse?.status]);
+
   return (
     <>
-      {isLoading ? (
+      {isContactUsLoading || isLoading ? (
         <Loader />
       ) : (
         <section>

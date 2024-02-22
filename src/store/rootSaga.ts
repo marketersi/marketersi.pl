@@ -6,12 +6,20 @@ import { FETCH_CALCULATOR_SCREEN_DATA } from "@/redux/kalkulator/calculatorActio
 import { calculatorScreenSaga } from "@/redux/kalkulator/calculatorSaga";
 import { FETCH_CONSULTING_SCREEN_DATA } from "@/redux/konsultacje/consultingAction";
 import { consultingScreenSaga } from "@/redux/konsultacje/consultingSaga";
-import { FETCH_CONTACT_SCREEN_DATA } from "@/redux/kontakt/contactActions";
-import { contactScreenSaga } from "@/redux/kontakt/contactSagas";
+import {
+  FETCH_CONTACT_SCREEN_DATA,
+  POST_CONTACT,
+} from "@/redux/kontakt/contactActions";
+import {
+  contactScreenSaga,
+  postContactSaga,
+} from "@/redux/kontakt/contactSagas";
 import { FETCH_STRATEGY_SCREEN_DATA } from "@/redux/strategia/strategyAction";
 import { strategyScreenSaga } from "@/redux/strategia/strategySaga";
 import { FETCH_EXAMINATION_SCREEN_DATA } from "@/redux/zamow/zamowAction";
 import { examinationScreenSaga } from "@/redux/zamow/zamowSagas";
+import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
+import { teamScreenSaga } from "@/redux/zespol/teamSaga";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
 import { logoScreenSaga } from "@/redux/projektowanie-logo/logoSaga";
 import { all, takeLatest } from "redux-saga/effects";
@@ -25,6 +33,9 @@ export default function* rootSaga() {
     takeLatest(FETCH_CONSULTING_SCREEN_DATA, consultingScreenSaga),
     takeLatest(FETCH_EXAMINATION_SCREEN_DATA, examinationScreenSaga),
     takeLatest(FETCH_STRATEGY_SCREEN_DATA, strategyScreenSaga),
+    takeLatest(FETCH_TEAM_SCREEN_DATA, teamScreenSaga),
+
+    takeLatest(POST_CONTACT, postContactSaga),
     takeLatest(FETCH_LOGO_SCREEN_DATA, logoScreenSaga),
   ]);
 }

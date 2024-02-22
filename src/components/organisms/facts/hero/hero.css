@@ -31,19 +31,37 @@
   margin-top: 50px;
 }
 
-/* -------------------------------media screen---------------------- */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1360px) {
   .facts_hero_container{
     flex-direction: column;
   }
   .facts_hero_container > div:nth-child(1) {
-    width: 100%;
+    width: 70%;
     order: 2;
 }
 .facts_hero_container > div:nth-child(2) {
-    width: 100%;
+    width: 70%;
     order: 1;
 }
+.facts_hero_container h1 {
+  text-align: center;
+}
+.facts_hero_container p {
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 50px;
+  text-align: center;
+}
+}
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1024px) {
+  .facts_hero_container > div:nth-child(1) {
+    width: 70%;
+}
+.facts_hero_container > div:nth-child(2) {
+    width: 70%;
+}
+ 
 .facts_hero_container h1 {
   text-align: center;
 }

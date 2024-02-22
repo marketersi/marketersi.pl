@@ -456,6 +456,16 @@
 }  */
 
 /* ------------------------------------media screen-------------------------------------------------------- */
+@media screen and (max-width: 1360px) {
+  .logo img {
+    margin-left: auto;
+    display: block;
+    width: 300px;
+}
+.dropMenu{
+top: 130px
+}
+}
 @media screen and (max-width: 1024px) {
   .navbar {
     display: none;

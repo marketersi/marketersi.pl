@@ -16,9 +16,9 @@ export default function MainHeading() {
   return (
     <div className="MainHeading content">
       <div className="MainHeading_Container full">
-        <div>
+        <div className="mainHeadingContent">
           <div className="MainHeading_Title">
-            {hero?.title && hero.title.split(" ")[0]}
+            <span>{hero?.title && hero.title.split(" ")[0]}</span>
           </div>
           <div className="MainHeading_SecondTitle">
             {hero?.title && hero.title.split(" ").slice(1).join(" ")}

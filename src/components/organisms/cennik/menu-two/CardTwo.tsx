@@ -7,7 +7,24 @@ import FormTwo from "./nested-forms/FormTwo";
 import FormThree from "./nested-forms/FormThree";
 import "../cennikCards.css";
 
-const CardTwo = () => {
+const CardTwo = ({ formData }) => {
+  const {
+    FormOne: formOne,
+    FormTwo: formTwo,
+    FormThree: formThree,
+    FormFour: formFour,
+  } = formData || {};
+
+  const optionsOne = formOne?.dropdown1?.map((option) => ({
+    value: option,
+    label: option,
+  }));
+
+  const optionsTwo = formOne?.dropdown2?.map((option) => ({
+    value: option,
+    label: option,
+  }));
+
   const [currentComponent, setCurrentComponent] = useState(0);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -25,6 +42,7 @@ const CardTwo = () => {
       label: "Zwiększyć ilość rozmów handlowych",
     },
   ];
+
   const options2 = [
     { value: "Międzynarodowo", label: "Międzynarodowo" },
     { value: "Na terenie kraju", label: "Na terenie kraju" },
@@ -72,11 +90,12 @@ const CardTwo = () => {
       {currentComponent === 0 && (
         <div>
           <h2 className="card-heading mb-3">
-            Jaki cel stawiasz przed swoją firmą?
+            {/* Jaki cel stawiasz przed swoją firmą? */}
+            {formOne?.select_lable_1}
           </h2>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
-              options={options1}
+              options={optionsOne}
               placeholder="Wybierz"
               isSearchable={false}
               components={{ DropdownIndicator }}
@@ -109,10 +128,13 @@ const CardTwo = () => {
               }}
             />
           </div>
-          <h2 className="card-heading mt-5">Jak się reklamujesz?</h2>
+          <h2 className="card-heading mt-5">
+            {/* Jak się reklamujesz? */}
+            {formOne?.select_lable_2}
+          </h2>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
-              options={options2}
+              options={optionsTwo}
               placeholder="Wybierz"
               isSearchable={false}
               components={{ DropdownIndicator }}
@@ -156,12 +178,12 @@ const CardTwo = () => {
       )}
 
       {currentComponent === 1 && (
-        <FormOne setCurrentComponent={setCurrentComponent} />
+        <FormOne setCurrentComponent={setCurrentComponent} form={formTwo} />
       )}
       {currentComponent === 2 && (
-        <FormTwo setCurrentComponent={setCurrentComponent} />
+        <FormTwo setCurrentComponent={setCurrentComponent} form={formThree} />
       )}
-      {currentComponent === 3 && <FormThree />}
+      {currentComponent === 3 && <FormThree form={formFour} />}
     </>
   );
 };

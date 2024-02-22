@@ -5,6 +5,7 @@ import style from "../team.module.css";
 import ReactPlayer from "react-player";
 import { Container, Image, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const BannerData = {
   video: "",
@@ -17,10 +18,13 @@ const BannerData = {
 };
 
 const Banner = () => {
+  const { isLoading, screenData } = useSelector((state) => state.team);
+  const { herosection } = screenData;
+
   return (
     <>
       <ReactPlayer
-        url="https://res.cloudinary.com/ddctmb3dk/video/upload/v1698077578/zxcacvh2xxu6vj3nbe1j.webm"
+        url={herosection?.background_video}
         playing={true}
         loop={true}
         muted={true}
@@ -53,22 +57,22 @@ const Banner = () => {
       <Container>
         <div className={style.bannerHeading}>
           <h1>
-            Jak to jest współpracować <br /> z nami?
+            {herosection?.main_title}
+            {/* Jak to jest współpracować <br /> z nami? */}
           </h1>
         </div>
         <div className={style.img20}>
           <img
-            src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20LAT-Dzialalnosci-Onas.ed8a06d9.svg&w=1080&q=75"
+            src={herosection?.left_image}
             alt=""
           />
         </div>
         <div className={style.bannerBottomContent}>
           <Row>
             <Col sm={6}>
-              <h4>Mamy prostą misję:</h4>
+              <h4>{herosection?.sub_title}</h4>
               <h2>
-                Pomagamy <br /> dobrym ludziom <br />
-                <span> robićdobry biznes</span>
+                {herosection?.title_2}
               </h2>
             </Col>
             <Col sm={6}>
