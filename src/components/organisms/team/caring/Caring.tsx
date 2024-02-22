@@ -15,7 +15,7 @@ const Caring = () => {
   const slideAnimationTop: Variants = {
     offscreen: {
       y: 100,
-      opacity: 0.5,
+      opacity: 0,
     },
     onscreen: {
      y: 0,
@@ -38,7 +38,7 @@ const Caring = () => {
         />
         <Container>
           <Row className={style.cartRow}>
-            <Col sm={4}>
+            <Col lg={4}>
               <motion.div
                 className={style.caringCard}
                 initial="offscreen"
@@ -50,7 +50,7 @@ const Caring = () => {
                 <p>{Card1?.card1_text}</p>
               </motion.div>
             </Col>
-            <Col sm={4} className={style.cartTop}>
+            <Col lg={4} className={style.cartTop}>
             <motion.div
                 className={style.caringCard}
                 initial="offscreen"
@@ -62,7 +62,7 @@ const Caring = () => {
                 <p>{Card2?.card2_text}</p>
               </motion.div>
             </Col>
-            <Col sm={4}>
+            <Col lg={4}>
             <motion.div
                 className={style.caringCard}
                 initial="offscreen"

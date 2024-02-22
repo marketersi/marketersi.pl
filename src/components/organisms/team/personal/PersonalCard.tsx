@@ -11,12 +11,12 @@ const PersonalCard = (props) => {
         <Col>
           <div className={style.personalCard}>
             <Row>
-              <Col sm={3}>
+              <Col lg={3}>
                 <img src={image} alt={name} />
                 <h4>{name}</h4>
                 <p>{designation}</p>
               </Col>
-              <Col sm={9}>
+              <Col lg={9}>
                 <h6>
                   {quate_one}
                 </h6>

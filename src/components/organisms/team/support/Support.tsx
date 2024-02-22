@@ -9,7 +9,7 @@ const Support = () => {
 
   return (
     <>
-      <div className={style.Support}>
+      <div className={style.Support}  style={{ backgroundImage: `url(${section2?.section_two_image})` }}>
         <div className={style.teamContent}>
           <h4>
           {section2?.section_two_title}

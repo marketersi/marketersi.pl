@@ -15,10 +15,10 @@ const People = () => {
   return (
     <>
       <div className={style.teamContent}>
-        <h2 style={{ margin: "0 0 100px" }}>
+        <h2 className={style.peopleTitle}>
           {section10?.section10_title}
         </h2>
-        <p style={{ margin: "0 0 100px" }}>
+        <p className={style.peoplePara}>
           {section10?.section10_subtitle}
         </p>
       </div>

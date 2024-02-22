@@ -40,11 +40,13 @@ const Home = () => {
       />
       <div className={style.teamContent}>
         <h2>
-          No więc, <span> jak to jest</span>
-          współpracować z nami?
+          {/* No więc, <span> jak to jest</span>
+          współpracować z nami? */}
+          {section2?.section_two_title_2}
         </h2>
         <p style={{ textAlign: "center", marginTop: "30px" }}>
-          Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co odpowiedzieli:
+          {/* Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co odpowiedzieli: */}
+          {section2?.description}
         </p>
       </div>
     </div>

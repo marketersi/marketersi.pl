@@ -10,7 +10,7 @@ const FreeSpace = () => {
 
   return (
     <>
-      <div className={style.free}>
+      <div className={style.free} style={{ backgroundImage: `url(${section1?.section_one_img})` }}>
         <div className={style.teamContent}>
           <p >
             <span>{section1?.section_subtitle_one}</span>
@@ -30,7 +30,7 @@ const FreeSpace = () => {
             </a>
             </motion.div>
           </div>
-          <p style={{marginTop: '150px'}}>{section2?.sub_title_discription}</p>
+          <p className={style.freePara}>{section2?.sub_title_discription}</p>
         </div>
       </div>
     </>

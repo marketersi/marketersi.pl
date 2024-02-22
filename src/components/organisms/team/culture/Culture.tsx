@@ -28,7 +28,7 @@ const Culture = () => {
         </div>
         <img className={style.cultureImg} src={section7?.card7_image_2} alt="" />
       </Container>
-      <div className={style.teamContent}>
+      <div className={`${style.teamContent} ${style.culturedContent}`}>
         <p>
           <span>{section7?.subtitle_1}</span>
           {section7?.paragraph_1}

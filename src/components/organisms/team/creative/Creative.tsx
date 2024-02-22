@@ -58,7 +58,7 @@ const Creative = () => {
             alt=""
           />
 
-          <p style={{ margin: "100px 0" }}>
+          <p className={style.creativePara}>
             {section5?.section_five_para}
             <span style={{ display: "inline", margin: "100px 0" }}>
               {" "}

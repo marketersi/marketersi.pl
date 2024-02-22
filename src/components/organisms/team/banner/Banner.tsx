@@ -59,20 +59,21 @@ const Banner = () => {
         </div>
         <div className={style.bannerBottomContent}>
           <Row>
-            <Col sm={6}>
+            <Col lg={6} className="order-lg-1 order-2">
               <h4>{herosection?.sub_title}</h4>
               <h2>
                 {herosection?.title_2}
+                
               </h2>
             </Col>
-            <Col sm={6}>
+            <Col lg={6} className="order-lg-2 order-1">
               <img
                 src={herosection?.right_image}
                 alt=""
               />
             </Col>
           </Row>
-          <div className={style.teamContent} style={{ marginTop: "-60px" }}>
+          <div className={`${style.teamContent} ${style.bannerContent}`} >
             <p>
               {herosection?.para_one}
             </p>
