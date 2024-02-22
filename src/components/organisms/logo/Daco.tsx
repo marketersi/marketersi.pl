@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+
+const DacoData = {
+  title: "DACO KRAKÓW",
+  subtitle:
+    "Widać różnicę w pracy kogoś, kto ma praktykę od lat.Dokładnie o to nam chodziło. Dzięki",
+  text: "Prezes firmy rzucił naszym projektantom oryginalne zadanie marka od początku kojarzona miała być ze sportami motorowymi. DACO jest marką budżetową i musi prezentować się przystępnie. Jednocześnie zależało mu, by wyglądała przy tym bardzo dynamiczne. Finalna konstrukcja wprowadza idealną harmonię do przeciwieństw. Zieleń studzi czerwień, a energiczny symbol tonuje stabilna typografia.",
+  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
+  image: "/assets/images/logo-design/daco-logo.webp",
+  quote:
+    "Widać różnicę w pracy kogoś, kto ma praktykę od lat. Dokładnie o to nam chodziło. Dzięki",
+  quoteAuthor: "Wojciech Rzepka - właściciel.",
+  quoteText:
+    "DACO błyskawicznie zdobyła sympatię docelowej grupy klientów. Dziś jest już rozpoznawalna w Anglii, Danii, Czechach, Słowacji i Rosji.",
+};
 
 const Daco = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background">
+      <section className="thematic-section projects-gray-background">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12">
@@ -81,7 +95,7 @@ const Daco = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Daco
+export default Daco;

@@ -222,9 +222,6 @@ h6 {
   margin-top: 90px;
 }
 
-
-
-
 .projects-lprasa-container {
   text-align: right;
 }
@@ -386,7 +383,6 @@ h6 {
   margin-right: 0px;
 }
 
-
 .projects-includes-ul {
   list-style-type: disc !important;
 }
@@ -398,6 +394,7 @@ h6 {
 }
 
 .projects-oferta-veggo-cont {
+  display: flex;
   position: relative;
   max-width: 762px;
   margin: 0 auto;
@@ -409,7 +406,7 @@ h6 {
 
 .projects-oferta-veggo-bg {
   height: 550px;
-  position: absolute;
+  /* position: absolute; */
   top: -3%;
   right: 0px;
 }
@@ -522,7 +519,6 @@ h6 {
   color: #515151;
 }
 
-
 .projects-happy-clients-margin {
   margin-top: 250px;
 }
@@ -587,7 +583,6 @@ h6 {
   max-width: inherit;
   font-size: 26px;
 }
-
 
 .download-catalog-button {
   width: 415px;
@@ -672,9 +667,6 @@ h6 {
   position: relative;
   margin-bottom: 30px;
 }
-
-
-
 
 .z-index-2 {
   z-index: 2 !important;
@@ -1120,4 +1112,18 @@ contact-inputs textarea {
 
 .texts-green-color {
   color: #438d07;
+}
+
+.orange-link:hover {
+  color: #e0ab06;
+  border-bottom: 2px #e0ab06 dotted;
+  cursor: pointer;
+}
+
+.download-catalog-button-2:hover {
+  background: #d9ad29;
+}
+
+.download-catalog-button:hover {
+  background: #d9ad29;
 }

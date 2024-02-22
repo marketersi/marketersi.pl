@@ -7,6 +7,16 @@ import { Container, Image, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
+const BannerData = {
+  video: "",
+  videoOverlaytext: "",
+  title: "",
+  subtitle: "",
+  text: "",
+  imageLeft: "",
+  imageRight: "",
+};
+
 const Banner = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { herosection } = screenData;

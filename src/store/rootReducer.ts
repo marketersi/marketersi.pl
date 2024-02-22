@@ -12,6 +12,7 @@ import opinionReducer from "@/redux/opinie/opinionSlice";
 import priceListReducer from "@/redux/cennik/pricelistSlice";
 import anatomyReducer from "@/redux/nazwa-dla-firmy/anatomySlice";
 import teamReducer from "@/redux/zespol/teamSlice";
+import logoReducer from "@/redux/projektowanie-logo/logoSlice";
 
 const rootReducer = combineReducers({
   home: homeReducer,
@@ -27,6 +28,7 @@ const rootReducer = combineReducers({
   priceList: priceListReducer,
   sales: salesReducer,
   anatomy: anatomyReducer,
+  logo: logoReducer,
 });
 
 export default rootReducer;

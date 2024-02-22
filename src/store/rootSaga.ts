@@ -20,6 +20,8 @@ import { FETCH_EXAMINATION_SCREEN_DATA } from "@/redux/zamow/zamowAction";
 import { examinationScreenSaga } from "@/redux/zamow/zamowSagas";
 import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
 import { teamScreenSaga } from "@/redux/zespol/teamSaga";
+import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
+import { logoScreenSaga } from "@/redux/projektowanie-logo/logoSaga";
 import { all, takeLatest } from "redux-saga/effects";
 
 export default function* rootSaga() {
@@ -34,5 +36,6 @@ export default function* rootSaga() {
     takeLatest(FETCH_TEAM_SCREEN_DATA, teamScreenSaga),
 
     takeLatest(POST_CONTACT, postContactSaga),
+    takeLatest(FETCH_LOGO_SCREEN_DATA, logoScreenSaga),
   ]);
 }
