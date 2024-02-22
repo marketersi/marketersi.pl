@@ -5,6 +5,10 @@
     top: 0;
 }
 
+.bannerContent {
+    margin-top: -60px;
+}
+
 .bannerHeading {
     padding: 100px 100px 250px;
 }
@@ -21,16 +25,16 @@
     bottom: -162px;
     left: -120px;
     width: 60%;
-    margin: -408px 0 0 -230px;
+    margin: -458px 0 0 -230px;
 }
 
 .teamContent {
     max-width: 800px;
-    margin: -50px auto 50px;
+    margin: 0px auto 50px;
 }
 
 .bannerBottomContent {
-    padding: 0 0 50px;
+    padding: 0 0 70px;
 }
 
 .bannerBottomContent h4 {
@@ -71,7 +75,8 @@
 .bannerP {
     background: red;
 }
-.overlay{
+
+.overlay {
     height: 855px;
     width: 100%;
     position: absolute;
@@ -130,7 +135,6 @@
 /* ====================free space============ */
 .free {
     padding: 100px 0;
-    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFOTEL.1fb434f6.jpg&w=1080&q=75);
     background-repeat: no-repeat;
     background-position: -600px 0px;
 }
@@ -144,13 +148,15 @@
     margin: 100px 0 0;
 }
 
-.mainHeading h2, .teamContent h2 {
+.mainHeading h2,
+.teamContent h2 {
     font-size: 80px;
     text-align: center;
     font-weight: 800;
 }
 
-.mainHeading h2 span, .teamContent h2 span {
+.mainHeading h2 span,
+.teamContent h2 span {
     font-weight: 800;
     background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
     padding: 0 10px 0 0;
@@ -175,6 +181,7 @@
 .mainHeading button:hover {
     box-shadow: none;
 }
+
 .mainHeading a {
     text-decoration: none;
 }
@@ -182,7 +189,7 @@
 /* ==================support===================== */
 .Support {
     padding: 0 0 100px;
-    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwierzymy.06ee3ca4.jpg&w=1080&q=75);
+    /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwierzymy.06ee3ca4.jpg&w=1080&q=75); */
     background-repeat: no-repeat;
     background-position: 670px 0;
 }
@@ -193,25 +200,33 @@
     line-height: 70px;
     font-weight: normal;
     margin: 0 0 0 -50px;
+    max-width: 610px;
+}
+
+.Support p {
+    max-width: 500px;
 }
 
 /* =========================Image slider ============================================= */
-.imageSlider{
+.imageSlider {
     padding: 50px 0 100px;
 }
-.imageSlider{
+
+.imageSlider {
     position: relative;
 }
-.slideAnimateImg{
+
+.slideAnimateImg {
     margin: -200px 0 0 200px
 }
- .teamContent h2 {
+
+.teamContent h2 {
     font-size: 60px;
     text-align: center;
     font-weight: 800;
 }
 
- .teamContent h2 span {
+.teamContent h2 span {
     font-weight: 800;
     background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
     padding: 0 10px 0 0;
@@ -222,38 +237,50 @@
 /* ==========================creative===================== */
 .creative {
     position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
-.creative h2{
+
+.creative h2 {
     font-size: 80px;
 }
-.CreativeOnar{
+
+.CreativeOnar {
     margin: -550px 0 0 270px;
     width: 100%;
 }
-.CreativeHeart{
+
+.CreativeHeart {
     margin: -1200px 0 0 -150px;
     width: 400px;
 }
 
 /* ========== */
-.caring img{
-width: 100%;
+.caring img {
+    width: 100%;
 }
 
-.caringCard{
-    box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+.caring {
+    padding: 0 0 150px;
+}
+
+.caringCard {
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
     width: 300px;
     border-radius: 20px;
     padding: 30px;
     margin: 0 auto 50px;
     background: white;
 }
-.caringCard h4{
+
+.caringCard h4 {
     font-size: 26px;
     font-weight: 700;
     text-align: center;
 }
-.caringCard p{
+
+.caringCard p {
     font-size: 21px;
     font-weight: normal;
     text-align: center;
@@ -262,79 +289,100 @@ width: 100%;
     font-family: Georgia;
     margin: 15px 0 0;
 }
-.cartTop{
-    margin: -50px 0 0 ;
+
+.cartTop {
+    margin: -50px 0 0;
 }
-.carRow{
+
+.carRow {
     padding: 50px 100px;
 }
-.creative .orangeBG{
+
+.creative .orangeBG {
     position: relative;
     z-index: -6;
     margin: -150px 0 0 -100px;
 }
 
+.creativePara {
+    margin: 100px 0;
+}
+
 /* ===================Culture==================== */
-.cultureCard{
-    box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15),0px 0px 0px 0px #fff,2px 2px 2px 0px #fff inset,-2px -2px 2px 0px #c7c7c7 inset;
+.cultureCard {
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
     width: 1000px;
     margin: 200px auto 100px;
     background: #f6f6f6;
     border-radius: 30px;
     padding: 30px;
 }
-.cultureCard img{
+
+.culturedContent {
+    margin-top: -200px;
+}
+
+.cultureCard img {
     margin: -100px auto 20px;
     display: block;
 }
-.cultureCard h2{
+
+.cultureCard h2 {
     font-size: 45px;
     font-weight: 600;
     text-align: center;
     margin: 0 0 30px;
-    
-}
-.cultureCard h2 span{
-    font-weight: 800;
-padding: 0 0 0 10px;
-border-radius: 20px;
-background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
+    max-width: 600px;
+    margin: 0 auto 30px;
 
 }
-.cultureImg{
+
+.cultureCard h2 span {
+    font-weight: 800;
+    padding: 0 0 0 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+
+}
+
+.cultureImg {
     margin: -600px 0 0 -160px;
 }
 
 /* =======================Good Time===================== */
-.goodHeadingMain{
+.goodHeadingMain {
     margin: 100px 0 70px;
 }
-.cardDataSpace{
+
+.cardDataSpace {
     margin: 100px 0 80px;
 }
-.cardCup{
-    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75);
+
+.cardCup {
+    /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75); */
     background-repeat: no-repeat;
     background-position: 125% -50px;
     padding: 100px 0;
 }
-.hardWorkBG{
-    background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75);
+
+.hardWorkBG {
+    /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75); */
     background-repeat: no-repeat;
-    background-position: -190px 250px;
+    background-position: -190px 160px;
     padding: 0px 0 2px;
 }
 
 /* ===============================people============================= */
-.peopleCard{
-    box-shadow: 4px 4px 15px 0px rgba(0,0,0,.15),0px 0px 0px 0px #fff,2px 2px 2px 0px #fff inset,-2px -2px 2px 0px #c7c7c7 inset;
+.peopleCard {
+    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
     width: 1000px;
     margin: 200px auto 100px;
     background: #f6f6f6;
     border-radius: 30px;
     padding: 70px;
 }
-.peopleCard h3{
+
+.peopleCard h3 {
     font-size: 50px;
     text-align: center;
     line-height: 70px;
@@ -342,22 +390,27 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
     color: #3e3e3e;
     margin: 0 0 200px;
 }
-.dogImg{
+
+.dogImg {
     padding: 0 0 0 200px;
 }
-.dogImg img{
+
+.dogImg img {
     margin: -300px auto 100px;
     display: block;
 }
-.peopleVideo{
+
+.peopleVideo {
     position: relative;
 }
-.peopleVideo svg{
+
+.peopleVideo svg {
     position: absolute;
     top: -3px !important;
     width: 350px;
     left: 39%;
 }
+
 .peopleVideoContent {
     position: absolute;
     top: 0;
@@ -367,7 +420,8 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
     padding: 25% 0 0;
     z-index: 0;
 }
-.peopleVideoContent .projectBtn{
+
+.peopleVideoContent .projectBtn {
     border: 4px solid #ffc600;
     border-radius: 50px;
     padding: 10px 20px;
@@ -380,11 +434,13 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
     color: white;
     margin: 0 auto;
 }
-.peopleVideoContent .projectBtn:hover{
-  background: #ffc600;
-  color: black;
+
+.peopleVideoContent .projectBtn:hover {
+    background: #ffc600;
+    color: black;
 }
-.peopleVideoContent .scheduleBtn{
+
+.peopleVideoContent .scheduleBtn {
     display: grid;
     gap: 10px;
     padding: 0 0 0 10px;
@@ -396,11 +452,13 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
     font-weight: 600;
     color: white;
 }
-.peopleVideoContent .scheduleBtn:hover{
-  background: #ffc600;
-  border-radius: 100px;
+
+.peopleVideoContent .scheduleBtn:hover {
+    background: #ffc600;
+    border-radius: 100px;
 }
-.peopleVideoContent .scheduleBtn div{
+
+.peopleVideoContent .scheduleBtn div {
     padding: 2px;
     background-color: #ffc600;
     width: 30px;
@@ -408,8 +466,314 @@ background-image: linear-gradient(90deg,rgba(255,198,2,0),#ffc602);
     border-radius: 100%;
 
 }
-.peopleVideoContent .scheduleBtn img{
+
+.peopleVideoContent .scheduleBtn img {
     width: 20px;
     margin: 4px auto;
     display: block;
+}
+.peopleTitle{
+    margin: 0 0 100px;
+}
+.peoplePara{
+    margin: 0 0 0px;
+}
+.freePara{
+    margin: 150px 0 0px !important;
+}
+/* -------------------------------------media screen -------------------------------- */
+@media only screen and (max-width: 1360px) {
+    .bannerBottomContent img {
+        margin: -200px 0 0;
+        width: 100%;
+    }
+
+    .img20 img {
+        margin: -314px 0 0 -230px;
+    }
+
+    .bannerHeading {
+        padding: 0px 100px 200px;
+    }
+
+    .overlay {
+        background-color: #00000000;
+    }
+
+    .bannerBottomContent h2 {
+        font-size: 50px;
+    }
+
+    .bannerContent {
+        margin-top: 0px;
+    }
+
+    .dogImg img {
+        width: 100%;
+    }
+
+    .free {
+        background-size: 70%;
+    }
+
+    .CreativeOnar {
+        width: 90%;
+    }
+
+    .slideAnimateImg {
+        margin: -200px 0 0 50px;
+    }
+
+    .cardCup {
+        background-position: 165% -50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .hardWorkBG {
+        background-position: -140px 110px;
+        background-size: 400px;
+    }
+
+    .bannerHeading h1 {
+        font-size: 60px;
+    }
+
+    .img20 img {
+        margin: -354px 0 0 -150px;
+    }
+
+    .personalCard {
+        padding: 40px;
+        width: 100%;
+    }
+
+    .free {
+        padding: 100px 40px;
+    }
+
+    .Support h4 {
+        margin: 0 0 0 0px;
+    }
+
+    .Support {
+        padding: 0 40px 100px;
+        background-position: 350px 130px;
+        background-size: 600px;
+    }
+
+    .slideAnimateImg {
+        width: 250px;
+        margin: -100px 0 0 50px;
+    }
+
+    .personalCard h6 {
+        text-align: center;
+    }
+
+    .creative h2 {
+        font-size: 60px;
+    }
+
+    .teamContent {
+        padding: 0 40px;
+    }
+
+    .CreativeHeart {
+        margin: -1150px 0 0 -40px;
+        width: 300px;
+    }
+
+    .cartTop {
+        margin: 0px 0 0;
+    }
+
+    .caring {
+        padding: 0 0 100px;
+    }
+
+    .cultureCard {
+        width: 100%;
+    }
+
+    .cultureImg {
+        margin: -600px 0 0 -160px;
+        width: 250px;
+    }
+
+    .culturedContent {
+        margin-top: 0px;
+    }
+
+    .cardCup {
+        background-position: 285% -50px;
+    }
+
+    .peopleCard {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .peopleVideo svg {
+        width: 190px;
+    }
+
+    .caringCard {
+        width: 400px;
+    }
+
+    .CreativeOnar {
+        width: 100%;
+    }
+
+    .teamContent {
+        margin: 0px auto 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bannerHeading {
+        padding: 0px 20px 20px;
+    }
+
+    .bannerHeading h1 {
+        font-size: 35px;
+    }
+
+    .img20 img {
+        margin: -45px 0 0 -60px;
+    }
+
+    .teamContent {
+        padding: 0 20px;
+    }
+
+    .bannerBottomContent img {
+        margin: -60px 0 0 auto;
+        width: 70%;
+        display: block;
+    }
+
+    .bannerBottomContent h4 {
+        font-size: 28px;
+    }
+
+    .bannerBottomContent h2 {
+        font-size: 45px;
+        word-wrap: break-word;
+    }
+
+    .teamContent p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .personalCard {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .personalCard h6 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .free {
+        padding: 50px 40px;
+    }
+
+    .free {
+        padding: 0px 20px;
+    }
+
+    .teamContent h2 {
+        font-size: 45px;
+        word-wrap: break-word;
+    }
+
+    .Support {
+        padding: 00 20px 0px;
+    }
+
+    .sSupport h4 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .slideAnimateImg {
+        width: 100px;
+        margin: -20px 0 0 20px;
+    }
+
+    .CreativeHeart {
+        width: 150px;
+        margin: -450px 0 0 -40px;
+    }
+
+    .CreativeOnar {
+        margin: -310px 0 0 80px;
+    }
+
+    .caringCard {
+        width: 100%;
+    }
+
+    .cultureCard img {
+        width: 100%;
+    }
+    .cultureImg {
+        display: none;
+    }
+    .cultureCard h2 {
+        font-size: 35px;
+    }
+    .peopleCard h3 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .dogImg {
+        padding: 0 0 0 0px;
+    }
+    .peopleVideo svg {
+        width: 70px;
+    }
+    .peopleVideoContent .projectBtn {
+        font-size: 16px;
+    }
+    .peopleVideoContent {
+        padding: 10% 0 0;
+    }
+    .cardDataSpace {
+        margin: 50px 0 0px;
+    }
+    .hardWorkBG {
+       background-image: none !important;
+    }
+    .caring {
+        padding: 0 0 50px;
+    }
+    .cardCup {
+        padding: 0px 0 0;
+    }
+    .peopleTitle{
+        margin: 0 0 0px;
+    }
+    .peoplePara{
+        margin: 50px 0 0px !important;
+    }
+    .bannerBottomContent {
+        padding: 0 0 0px;
+    }
+    .freePara{
+        margin: 50px 0 0px !important;
+    }
+    .mainHeading {
+        margin: 50px 0 0;
+    }
+    .peopleCard {
+        margin: 100px auto 100px;
+    }
+    
 }

@@ -3,7 +3,7 @@ import style from '../team.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const PersonalCard = (props) => {
-  const { imageSrc, name, role, description } = props;
+  const { image, name, designation, quate_one } = props;
 
   return (
     <Container>
@@ -11,14 +11,14 @@ const PersonalCard = (props) => {
         <Col>
           <div className={style.personalCard}>
             <Row>
-              <Col sm={3}>
-                <img src={imageSrc} alt={name} />
+              <Col lg={3}>
+                <img src={image} alt={name} />
                 <h4>{name}</h4>
-                <p>{role}</p>
+                <p>{designation}</p>
               </Col>
-              <Col sm={9}>
+              <Col lg={9}>
                 <h6>
-                  {description}
+                  {quate_one}
                 </h6>
               </Col>
             </Row>

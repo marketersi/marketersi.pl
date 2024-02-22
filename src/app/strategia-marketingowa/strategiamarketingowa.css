@@ -1821,6 +1821,9 @@
   .faqContainer {
     padding: 70px 30px;
   }
+  .OurClients{
+    margin-bottom: 70px;
+  }
 }
 
 @media only screen and (max-width: 768px) {

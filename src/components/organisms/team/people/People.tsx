@@ -2,42 +2,44 @@
 
 import React from "react";
 import style from "../team.module.css";
-// import { Row, Col, Container } from "react-bootstrap";
 import ReactPlayer from "react-player";
+import { useSelector } from "react-redux";
 
 const People = () => {
+  const { isLoading, screenData } = useSelector((state) => state.team);
+  const { section10, section11 } = screenData || {};
+  if (screenData) {
+    console.log("Team screen data from UI => ", section10);
+  }
+
   return (
     <>
       <div className={style.teamContent}>
-        <h2 style={{ margin: "0 0 100px" }}>
-          Nasi ludzie to <br />
-          teraz
-          <span> Twoi ludzie</span>
+        <h2 className={style.peopleTitle}>
+          {section10?.section10_title}
         </h2>
-        <p style={{ margin: "0 0 100px" }}>
-          <span>Och... zapomniałbym o kluczowej postaci.</span>To owocna
-          kierowniczka działu towarzyskiego.
+        <p className={style.peoplePara}>
+          {section10?.section10_subtitle}
         </p>
       </div>
       <div className={style.peopleCard}>
         <h3>
-          Halinka - przesympatyczna mała drożdżóweczka, dzięki której wszystko
-          działa sprawniej.
+          {section10?.section10_card_text}
         </h3>
       </div>
       <div className={style.dogImg}>
         <img
-          src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhalinka.a6bc791a.png&w=1200&q=75"
           alt=""
+          src={section10?.section10_card_image}
         />
       </div>
       <div className={style.teamContent}>
         <h2 style={{ margin: "0 0 40px" }}>
-          Zróbmy <span>razem</span>
-          <br />
-          coś fajnego!
+          {section11?.section11_title}
         </h2>
-        <p style={{ textAlign: "center" }}>Razem jesteśmy Owocni.</p>
+        <p style={{ textAlign: "center" }}>
+          {section11?.section11_subtitle}
+        </p>
       </div>
       <div className={style.peopleVideo}>
         <svg
@@ -55,7 +57,7 @@ const People = () => {
           ></path>
         </svg>
         <ReactPlayer
-          url="https://res.cloudinary.com/ddctmb3dk/video/upload/f_auto:video,q_auto/v1696941680/shnudykmh6eudqczxjav"
+          url={section11?.section11_video}
           playing={true}
           loop={true}
           muted={true}
@@ -64,10 +66,15 @@ const People = () => {
           className={style.heroVideo}
         />
         <div className={style.peopleVideoContent}>
-            <a className={style.projectBtn} href="/">Wyceń swój projekt</a>
-            <a className={style.scheduleBtn} href="/">Umów konsultację 
-            <div><img src="/assets/images/play_arrow.svg" alt="" /></div>
-            </a>
+          <a className={style.projectBtn} href="/">
+            {section11?.section11_button_text}
+          </a>
+          <a className={style.scheduleBtn} href="/">
+           {section11?.section11_button_text2}
+            <div>
+              <img src="/assets/images/play_arrow.svg" alt="" />
+            </div>
+          </a>
         </div>
       </div>
     </>

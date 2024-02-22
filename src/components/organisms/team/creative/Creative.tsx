@@ -3,19 +3,19 @@
 import React from "react";
 import style from "../team.module.css";
 import { motion, Variants,  } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Creative = () => {
   
-
+  const { isLoading, screenData } = useSelector((state) => state.team);
+  const { section5 } = screenData;
 
   return (
     <>
       <section className={style.creative}>
         <div className={style.teamContent}>
           <h2>
-            Kreatywne <br />
-            <span>supertalenty</span> <br />
-            to wolne duchy.
+            {section5?.section_five_title}
           </h2>
           <motion.div
               className={style.orangeBG} // Add your existing class
@@ -49,21 +49,20 @@ const Creative = () => {
           </motion.div>
           <img
             className={style.CreativeHeart}
-            src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSerce.5c1a3248.png&w=640&q=75"
+            src={section5?.section_five_imgone}
             alt=""
           />
           <img
             className={style.CreativeOnar}
-            src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FO-Nas-Ania.3838a4a4.png&w=1080&q=75"
+            src={section5?.section_five_imgtwo}
             alt=""
           />
 
-          <p style={{ margin: "100px 0" }}>
-            Dawno zrozumieliśmy, że najlepsze projekty nie powstają od 8 do 16.
-            Supertalenty, to najczęściej cyfrowi nomadzi, którzy do twórczości{" "}
+          <p className={style.creativePara}>
+            {section5?.section_five_para}
             <span style={{ display: "inline", margin: "100px 0" }}>
               {" "}
-              potrzebują wolności.
+              {section5?.section_five_paratwo}
             </span>
           </p>
         </div>

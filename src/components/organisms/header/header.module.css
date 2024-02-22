@@ -460,12 +460,30 @@
   .logo img {
     margin-left: auto;
     display: block;
-    width: 300px;
+    width: 200px;
+  }
+
+  .dropMenu {
+    top: 130px
+  }
+  .dropBtn {
+    font-size: 16px;
 }
-.dropMenu{
-top: 130px
+.navbar {
+  padding: 20px 20px;;
 }
+.navRightMenu { 
+  display: inline;
+  font-size: 16px;
 }
+.headerRightBtn {
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+
+}
+
 @media screen and (max-width: 1024px) {
   .navbar {
     display: none;

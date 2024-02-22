@@ -14,3 +14,20 @@
     font-weight: 500;
     display: block;
 }
+.customersPara{
+    margin: 100px 0;
+}
+@media only screen and (max-width: 1024px){
+    .teamContent {
+        padding: 0 40px !important;
+    }
+    .customersPara{
+        margin: 0px 0 100px !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .teamContent p {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
