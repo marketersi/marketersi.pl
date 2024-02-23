@@ -1,13 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Question10 = ({ handleNext }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { formThirteen } = screenData?.surveyQuestions || {};
+
+
   return (
     <div className="zh_question working_container">
-      <h2>Mamy to! Dzięki. <br />
-      Ostatnie pytanie: Jaki jest twój numer telefonu?</h2>
-      <p>Dlaczego tego potrzebujemy? Możemy mieć ważne pytania, które wymagają odpowiedzi zanim rozpoczniemy indywidualną recenzję dla Ciebie.</p>
-      <p>Nie użyjemy Twojego numeru w innym celu niż pytania do analizy Twojej strony.</p>
+      <h2>{formThirteen?.title} </h2>
+      <p>{formThirteen?.description_1}</p>
+      <p>{formThirteen?.description_2}</p>
       <textarea rows={1}
       placeholder="Wpisz tu swoją odpowiedź"
     />

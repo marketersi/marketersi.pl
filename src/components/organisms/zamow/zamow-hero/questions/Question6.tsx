@@ -1,13 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Question6 = ({ handleNext }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { formSix } = screenData?.surveyQuestions || {};
+  
   return (
     <div className="zh_question Thanks">
-      <h2>Dzięki</h2>
+      <h2>{formSix?.title}</h2>
       <p>
-        Mamy jeszcze kilka ostatnich pytań, które pomogą nam dobrać odpowiednią
-        strategię dla Ciebie.
+       {formSix?.description}
       </p>
       <div className="zh_next_btn_container">
         <motion.button
@@ -15,7 +19,7 @@ const Question6 = ({ handleNext }) => {
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-          Okej, lecimy
+          {formSix?.buttonText}
         </motion.button>
         <p>Wciśnij Enter</p>
       </div>

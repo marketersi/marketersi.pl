@@ -120,9 +120,9 @@ const LogoDesignScreen = () => {
           {/* section 10 */}
           <Gallery />
           {/* section 11 */}
-          {/* <StepByStep /> */}
+          <StepByStep />
           {/* section 12 */}
-          {/* <FreeShops /> */}
+          <FreeShops />
           {/* section 13 */}
           {/* <Enexo /> */}
           {/* section 14 */}

@@ -1,7 +1,11 @@
 import React, {useState} from "react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Question7 = ({ handleNext }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { formNine } = screenData?.surveyQuestions || {};
 
   const [rangeValue, setRangeValue] = useState(0);
 
@@ -11,9 +15,8 @@ const Question7 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      <h2>Jak jest cel? Ile wynosi idealny miesięczny przychód?</h2>
-      <p className="goal_description">Uwzględniając obecne możliwości operacyjne Twojej firmy. 
-Użyjemy tych informacji, aby dopasować skalę strategii.</p>
+      <h2>{formNine?.title}</h2>
+      <p className="goal_description">{formNine?.description}</p>
       {/* <p className="range_description">(Wszystkie informacje są ściśle poufne.)</p> */}
       <input
         type="text"
@@ -44,7 +47,7 @@ Użyjemy tych informacji, aby dopasować skalę strategii.</p>
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-          Kontynuuj >>
+          {formNine?.buttonText}
         </motion.button>
         <p>Wciśnij Enter</p>
       </div>

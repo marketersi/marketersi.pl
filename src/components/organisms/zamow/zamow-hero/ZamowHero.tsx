@@ -12,11 +12,17 @@ const ZamowHero = () => {
   const [progress, setProgress] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
 
+  const totalQuestions = 14;
   const handleNextQuestion = () => {
-    // Assuming we have 14 questions
-    const totalQuestions = 14;
     setProgress((prevProgress) => prevProgress + 100 / totalQuestions);
     setCurrentQuestion((prevQuestion) => prevQuestion + 1);
+  };
+
+  const handlePreviousQuestion = () => {
+    if (currentQuestion > 0) {
+      setProgress((prevProgress) => prevProgress - 100 / totalQuestions);
+      setCurrentQuestion((prevQuestion) => prevQuestion - 1);
+    }
   };
 
   return (
@@ -36,25 +42,25 @@ const ZamowHero = () => {
                     initial={{ width: 0 }}
                     animate={{ width: `${progress}%` }}
                     transition={{ duration: 0.5 }}
-                  ></motion.div>
+                  ></motion.div>{" "}
+                  <button
+                    className="back-button"
+                    onClick={handlePreviousQuestion}
+                  >
+                    COFNIJ
+                  </button>
                 </div>
               )}
             </>
           ) : (
             <>
               <h1>
-                {/* <span className="custom-color">Bezpłatne</span> badanie strony{" "}
-                <br /> i marketingu firmy. */}
                 {heroSection?.title}
               </h1>
               <p>
-                {/* Usuń wąskie gardła i usprawnij wyniki swojej firmy <br />
-                dzięki praktycznym wskazówkom od ekspertów <br />w indywidualnej
-                konsultacji lub wideo. */}
                 {heroSection?.info}
               </p>
               <p style={{ fontSize: "16px" }}>
-                {/* Zgłoszenie jest w 100% poufne */}
                 {heroSection?.sub_info}
               </p>
               <div className="input-container">
@@ -77,7 +83,6 @@ const ZamowHero = () => {
       </Row>
       <div className="line-container">
         <p className="mb-0 small">
-          {/* Nasi eksperci cytowani są przez: */}
           {ratingSection?.label} :
         </p>
         <div className="line"></div>

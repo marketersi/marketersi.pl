@@ -1,20 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Question5 = ({ handleNext }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { formFive } = screenData?.surveyQuestions || {};
+
+
   return (
     <div className="zh_question question_container">
-      <h2>Jakiej pomocy szukasz?</h2>
-      <p className="question_description">Może to być tak ogólne jak: "Pomocy w budowaniu marki"</p>
+      <h2>{formFive?.title}</h2>
+      <p className="question_description">{formFive?.listHeading}</p>
         <div className="list_p">
-        <p>- "Reklamy Facebook nie przynoszą rezultatów"</p>
-        <p>- "Potrzebuję więcej zapytań / wyższej sprzedaży. "</p>
-        <p>- etc</p>
+        {formFive?.listItems.map((item, index) => (
+                    <p key={index}>{item}</p>
+                ))}
         </div>
       <textarea rows={1}
       placeholder="Wpisz tu swoją odpowiedź"
     />
-      <p className="input_bottom_content">Shift + Enter aby przejść do następnej linii</p>
+      <p className="input_bottom_content">{formFive?.textbelowInput}</p>
       <div className="zh_next_btn_container">
         <motion.button
           onClick={handleNext}
