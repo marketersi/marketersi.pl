@@ -6,8 +6,14 @@ import Link from "next/link";
 import FeedbackSection from "./nested-forms/FormTwo";
 import SliderSection from "./nested-forms/FormOne";
 import UserDetailsSection from "./nested-forms/FormThree";
+import { useSelector } from "react-redux";
 
 const CardThree = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const {  formOne } = screenData?.cardMenu?.menuThree || "";
+  const { dropdown  } = screenData?.cardMenu?.menuThree?.formOne || {};
+
   const [currentComponent, setCurrentComponent] = useState(0);
 
   const options = [
@@ -45,11 +51,11 @@ const CardThree = () => {
     <>
       {currentComponent === 0 && (
         <div>
-          <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
-          <p className="card-subheading">Wybierz jedną z opcji.</p>
+          <h2 className="card-heading">{formOne?.form1_title}</h2>
+          <p className="card-subheading">{formOne?.form1_subtitle}</p>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
-              options={options}
+              options={dropdown}
               placeholder="Wybierz"
               isSearchable={false}
               components={{ DropdownIndicator }}
@@ -82,7 +88,7 @@ const CardThree = () => {
             whileHover={{ translateY: 5 }}
             onClick={() => setCurrentComponent(1)}
           >
-            Rozpocznij kalkulację
+            {formOne?.form1_buttonText}
           </motion.button>
         </div>
       )}

@@ -22,9 +22,9 @@ const CalculatorScreen = () => {
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <section className="cal_sec">
           <Container>
             <Row className="first-row">
@@ -65,7 +65,7 @@ const CalculatorScreen = () => {
             <Warranty />
           </Container>
         </section>
-      )}
+      {/* )} */}
     </>
   );
 };

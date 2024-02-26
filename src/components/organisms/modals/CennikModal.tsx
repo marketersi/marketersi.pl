@@ -2,8 +2,13 @@ import React from "react";
 import Modal from "react-modal";
 import "./cennik-modal.css";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const CennikModal = ({ isOpen, onRequestClose }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const { metadata  } = screenData?.cardMenu?.menuOne?.formOne || {};
+
   return (
     <Modal
       isOpen={isOpen}
@@ -27,10 +32,10 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
       }}
     >
       <div className="cennik-modal-content">
-        <h2 className="cennik-modal-title">Cennik jest indywidualny.</h2>
+        {/* <h2 className="cennik-modal-title">Cennik jest indywidualny.</h2> */}
+        <h2 className="cennik-modal-title">{metadata?.modal_title}</h2>
         <p>
-          Potrzebujemy wielu szczegółowych odpowiedzi, aby sporządzić precyzyjny
-          cennik projektu.
+          {metadata?.modal_info}
         </p>
         <p>
           Jeśli Twoje plany nie są jeszcze precyzyjne, to ustalenie ceny nie

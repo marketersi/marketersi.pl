@@ -93,7 +93,7 @@ const Calculator = () => {
           </div>
         </Col>
 
-        <Col lg={6} className="card text-center p-5 second-card ">
+        <Col lg={6} className="car text-center p-5 second-card ">
           {/* <h2>Dodatkowy zysk</h2> */}
           <img src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FZysk.923f65ad.png&w=750&q=75" alt="" />
 

@@ -1,13 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import CardOne from "@/components/organisms/cennik/menu-one/CardOne";
 import CardTwo from "@/components/organisms/cennik/menu-two/CardTwo";
 import CardThree from "@/components/organisms/cennik/menu-three/CardThree";
 import CardFour from "@/components/organisms/cennik/menu-four/CardFour";
 import "./cennik.css";
+import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
+import { useDispatch, useSelector } from "react-redux";
+import Loader from "@/components/organisms/animation/Loader";
 
 const PriceListScreen = () => {
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const { title, sub_title, card_title, card_subtitle, cardMenu,  } = screenData;
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
+  }, [dispatch]);
+
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleBtnClick = (value) => {
@@ -37,13 +49,11 @@ const PriceListScreen = () => {
     <section className="container pb-5">
       <div className="row justify-content-center">
         <div className="col-md-8 text-center">
-          <h2 className="mt-5 heading-style">Zdobądź 3 różne opcje cenowe</h2>
+          <h2 className="mt-5 heading-style">{title}</h2>
           <div className="mt-3">
             <p className="subheading">
               <span>
-                Przejdź krótki formularz. Zobacz co dla Ciebie zrobimy,
-                <br />
-                ile za to policzymy i jak szybko Ci się to zwróci.
+                {sub_title}
               </span>
             </p>
           </div>
@@ -53,8 +63,8 @@ const PriceListScreen = () => {
               {selectedOption == null && (
                 <div>
                   <div>
-                    <h2 className="card-heading">Na co chcesz wycenę?</h2>
-                    <p className="card-subheading">Wybierz jedną z opcji.</p>
+                    <h2 className="card-heading">{card_title}</h2>
+                    <p className="card-subheading">{card_subtitle}</p>
                   </div>
                   <div className="btns_container mb-5">
                     <div className="row">
@@ -63,7 +73,7 @@ const PriceListScreen = () => {
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(1)}
                       >
-                        <button style={buttonStyle}>Strona internetowa</button>
+                        <button style={buttonStyle}> {cardMenu?.menuOne?.menu_title}</button>
                       </div>
                       <div
                         className="col"
@@ -71,7 +81,7 @@ const PriceListScreen = () => {
                         onClick={() => handleBtnClick(2)}
                       >
                         <button style={buttonStyle}>
-                          Działania marketingowe
+                          {cardMenu?.MenuTwo?.Menu2?.menu_title}
                         </button>
                       </div>
                     </div>
@@ -82,7 +92,7 @@ const PriceListScreen = () => {
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(3)}
                       >
-                        <button style={buttonStyle}>Nazwa dla firmy</button>
+                        <button style={buttonStyle}>{cardMenu?.menuThree?.menuText}</button>
                       </div>
                       <div
                         className="col"
@@ -90,7 +100,7 @@ const PriceListScreen = () => {
                         onClick={() => handleBtnClick(4)}
                       >
                         <button style={buttonStyle}>
-                          Logo lub identyfikacja
+                        {cardMenu?.menuFour?.menu_title}
                         </button>
                       </div>
                     </div>

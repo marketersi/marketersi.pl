@@ -47,9 +47,9 @@ const ContactScreen = () => {
 
   return (
     <>
-      {isContactUsLoading || isLoading ? (
+      {/* {isContactUsLoading || isLoading ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <section>
           {/* top section */}
           <div className="first_form_container">
@@ -161,7 +161,7 @@ const ContactScreen = () => {
             </div>
           </div>
         </section>
-      )}
+      {/* )} */}
     </>
   );
 };

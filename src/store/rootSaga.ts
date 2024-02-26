@@ -23,6 +23,8 @@ import { teamScreenSaga } from "@/redux/zespol/teamSaga";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
 import { logoScreenSaga } from "@/redux/projektowanie-logo/logoSaga";
 import { all, takeLatest } from "redux-saga/effects";
+import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
+import { priceListScreenSaga } from "@/redux/cennik/pricelistSaga";
 
 export default function* rootSaga() {
   yield all([
@@ -37,5 +39,6 @@ export default function* rootSaga() {
 
     takeLatest(POST_CONTACT, postContactSaga),
     takeLatest(FETCH_LOGO_SCREEN_DATA, logoScreenSaga),
+    takeLatest(FETCH_PRICELIST_SCREEN_DATA, priceListScreenSaga),
   ]);
 }

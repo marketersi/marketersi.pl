@@ -1,40 +1,44 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const SliderForm = ({ setCurrentComponent }) => {
   const [currentSection, setCurrentSection] = useState(0);
 
-  const sectionDescriptions = [
-    {
-      main: "Przesuń suwak blisko potrzeb",
-      additional: "",
-      backgroundColor: "#9b8993",
-    },
-    {
-      main: "Strategiczna - Duża marka",
-      additional: "programista + projektant UX",
-      backgroundColor: "#7e9680",
-    },
-    {
-      main: "Wiodąca - Pod marketing.",
-      additional: "programista + projektant UX",
-      backgroundColor: "#eab595",
-    },
-    {
-      main: "Klasyczna - Firmowa. Fajna.",
-      additional: "programista + projektant ",
-      backgroundColor: "#d87f81",
-    },
-    {
-      main: "Najtańsza – bardzo prosta",
-      additional: "programista + projektant",
-      backgroundColor: "#ae6378",
-    },
-  ];
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const {  formTwo } = screenData?.cardMenu?.menuOne || "";
+  const {  rangeArray } = screenData?.cardMenu?.menuOne?.formTwo || {};
 
-  const totalSections = sectionDescriptions.length;
+  // const sectionDescriptions = [
+  //   {
+  //     main: "Przesuń suwak blisko potrzeb",
+  //     additional: "",
+  //     backgroundColor: "#9b8993",
+  //   },
+  //   {
+  //     main: "Strategiczna - Duża marka",
+  //     additional: "programista + projektant UX",
+  //     backgroundColor: "#7e9680",
+  //   },
+  //   {
+  //     main: "Wiodąca - Pod marketing.",
+  //     additional: "programista + projektant UX",
+  //     backgroundColor: "#eab595",
+  //   },
+  //   {
+  //     main: "Klasyczna - Firmowa. Fajna.",
+  //     additional: "programista + projektant ",
+  //     backgroundColor: "#d87f81",
+  //   },
+  //   {
+  //     main: "Najtańsza – bardzo prosta",
+  //     additional: "programista + projektant",
+  //     backgroundColor: "#ae6378",
+  //   },
+  // ];
+
+  const totalSections = rangeArray.length;
 
   const handleSliderChange = (e) => {
-    // Calculate the current section based on the slider value
     const sliderValue = e.target.value;
     const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
     setCurrentSection(calculatedSection);
@@ -42,16 +46,16 @@ const SliderForm = ({ setCurrentComponent }) => {
   return (
     <div className="slider_section">
       <div>
-        <h2>Jakiej propozycji oczekujesz?</h2>
+        <h2>{formTwo?.section2_title}</h2>
         <p
           style={{
             backgroundColor:
-              sectionDescriptions[currentSection]?.backgroundColor,
+            rangeArray[currentSection]?.backgroundColor,
           }}
         >
-          {sectionDescriptions[currentSection]?.main}
+          {rangeArray[currentSection]?.label}
         </p>
-        <div>{sectionDescriptions[currentSection]?.additional}</div>
+        <div>{rangeArray[currentSection]?.description}</div>
       </div>
 
       <div className="space-between"></div>
@@ -68,7 +72,7 @@ const SliderForm = ({ setCurrentComponent }) => {
             className="slider-input"
             style={{
               backgroundColor:
-                sectionDescriptions[currentSection]?.backgroundColor,
+              rangeArray[currentSection]?.backgroundColor,
             }}
           />
           <img
@@ -78,7 +82,7 @@ const SliderForm = ({ setCurrentComponent }) => {
         </div>
         <div className="ss_btn-container">
           <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
-            Dalej (Prawie koniec)
+            {formTwo?.section2_buttonText}
           </button>
         </div>
       </div>
