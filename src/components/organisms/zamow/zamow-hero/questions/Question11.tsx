@@ -1,59 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {Row, Col} from 'react-bootstrap'
+import { Row, Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Question8 = ({ handleNext }) => {
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { formEleven } = screenData?.surveyQuestions || {};
+
   return (
     <div className="zh_marketing_container">
-      <h2><span>Już prawie koniec.</span>Kiedy planujesz zainwestować w poprawę marketingu i zrealizować finansowe cele?</h2>
-      
+      <h2>{formEleven?.title}</h2>
       <div className="checkBOxContainer">
       <Row>
-        <Col sm={6}>
-        <label className="checkbox style-d" onClick={handleNext}>
-        <input type="checkbox"/>
-        <div className="checkbox__checkmark"></div>
-        <div className="checkbox__body">Poniżej 5 tysięcy zł </div>
-      </label>
-        </Col>
-        <Col sm={6}>
-        <label className="checkbox style-d" onClick={handleNext}>
-        <input type="checkbox"/>
-        <div className="checkbox__checkmark"></div>
-        <div className="checkbox__body">5.000 - 10.000 zł</div>
-      </label>
-        </Col>
-        <Col sm={6}>
-        <label className="checkbox style-d" onClick={handleNext}>
-        <input type="checkbox"/>
-        <div className="checkbox__checkmark"></div>
-        <div className="checkbox__body">10.000 - 25.000 zł </div>
-      </label>
-        </Col>
-        <Col sm={6}>
-        <label className="checkbox style-d" onClick={handleNext}>
-        <input type="checkbox"/>
-        <div className="checkbox__checkmark"></div>
-        <div className="checkbox__body">25.000 - 100.000 zł</div>
-      </label>
-        </Col>
-        <Col sm={6}>
-        <label className="checkbox style-d" onClick={handleNext}>
-        <input type="checkbox"/>
-        <div className="checkbox__checkmark"></div>
-        <div className="checkbox__body">100.000 - 1000.000 zł </div>
-      </label>
-        </Col>
-        <Col sm={6}>
-        <label className="checkbox style-d" onClick={handleNext}>
-        <input type="checkbox"/>
-        <div className="checkbox__checkmark"></div>
-        <div className="checkbox__body">Powyżej miliona zł</div>
-      </label>
-        </Col>
-      </Row>
+                {formEleven?.options.map((option, index) => (
+                    <Col key={index} sm={6}>
+                        <label className="checkbox style-d" onClick={handleNext}>
+                            <input type="checkbox" />
+                            <div className="checkbox__checkmark"></div>
+                            <div className="checkbox__body">{option}</div>
+                        </label>
+                    </Col>
+                ))}
+            </Row>
+          
       </div>
-      
+
       {/* <div className="zh_next_btn_container">
         <motion.button
           onClick={handleNext}

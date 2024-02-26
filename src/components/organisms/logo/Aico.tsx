@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+
+const AicoData = {
+  title: "AICO WARSZAWA",
+  subtitle:
+    "Krótka historia przytulaśnego znaku dla rodzinnej hurtowni artykułów dziecięcych.",
+  text: "Pomysł mamy opiekującej się dzieckiem budził wiele entuzjazmu. Poszukiwania nabrały emocji, gdy ktoś zasugerował, by były to misie. Kto powiedział, że dojrzała marka nie może być słodka? Do zadania trzeba było podejść ostrożnie, by ominąć pułapki Sprytna technika ustawienia małego misia w odwróceniu kolorów znacząco zmniejsza ilość detali i nadała dojrzałego charakteru. W finale symbol jest dobrze zbalansowany. Prosty, radosny i bardzo profesjonalny",
+  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
+  image: "/assets/images/logo-design/daco-logo.webp",
+  quote:
+    "o jest po prostu świetne! Całe szczęście, że zdecydowaliśmy się na wasze studio!",
+  quoteAuthor: "Iwona i Andrzej Ziółkowscy - właściciele.",
+  quoteText:
+    "DACO błyskawicznie zdobyła sympatię docelowej grupy klientów. Dziś jest już rozpoznawalna w Anglii, Danii, Czechach, Słowacji i Rosji.",
+};
 
 const Aico = () => {
   return (
     <>
-    <section className="thematic-section projects-gray-background">
+      <section className="thematic-section projects-gray-background">
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12">
@@ -97,9 +111,8 @@ const Aico = () => {
           </div>
         </div>
       </section>
-
     </>
-  )
-}
+  );
+};
 
-export default Aico
+export default Aico;

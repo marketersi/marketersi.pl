@@ -20,14 +20,14 @@ const FactsOfPsychology = () => {
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <>
           <Hero />
           <FactsContainer />
         </>
-      )}
+      {/* )} */}
     </>
   );
 };

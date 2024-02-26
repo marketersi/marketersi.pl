@@ -1,9 +1,61 @@
-const SliderSection = ({ setCurrentComponent }) => {
+import { useState } from "react";
+import { useSelector } from "react-redux";
+
+const SliderForm = ({ setCurrentComponent }) => {
+  const [currentSection, setCurrentSection] = useState(0);
+
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const {  formTwo } = screenData?.cardMenu?.menuThree || "";
+  const {  rangeArray } = screenData?.cardMenu?.menuThree?.formTwo || {};
+
+  // const sectionDescriptions = [
+  //   {
+  //     main: "Przesuń suwak blisko potrzeb",
+  //     additional: "",
+  //     backgroundColor: "#9b8993",
+  //   },
+  //   {
+  //     main: "Strategiczna - Duża marka",
+  //     additional: "programista + projektant UX",
+  //     backgroundColor: "#7e9680",
+  //   },
+  //   {
+  //     main: "Wiodąca - Pod marketing.",
+  //     additional: "programista + projektant UX",
+  //     backgroundColor: "#eab595",
+  //   },
+  //   {
+  //     main: "Klasyczna - Firmowa. Fajna.",
+  //     additional: "programista + projektant ",
+  //     backgroundColor: "#d87f81",
+  //   },
+  //   {
+  //     main: "Najtańsza – bardzo prosta",
+  //     additional: "programista + projektant",
+  //     backgroundColor: "#ae6378",
+  //   },
+  // ];
+
+  const totalSections = rangeArray.length;
+
+  const handleSliderChange = (e) => {
+    const sliderValue = e.target.value;
+    const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
+    setCurrentSection(calculatedSection);
+  };
   return (
     <div className="slider_section">
       <div>
-        <h2>Jakiej propozycji oczekujesz?</h2>
-        <p>Przesuń suwak blisko potrzeb</p>
+        <h2>{formTwo?.section2_title}</h2>
+        <p
+          style={{
+            backgroundColor:
+            rangeArray[currentSection]?.backgroundColor,
+          }}
+        >
+          {rangeArray[currentSection]?.label}
+        </p>
+        <div>{rangeArray[currentSection]?.description}</div>
       </div>
 
       <div className="space-between"></div>
@@ -13,7 +65,16 @@ const SliderSection = ({ setCurrentComponent }) => {
             src="https://www.owocni.pl/_next/static/media/persons.6bff2827.png"
             alt=""
           />
-          <input type="range" />
+          <input
+            type="range"
+            onChange={handleSliderChange}
+            value={(currentSection / (totalSections - 1)) * 100}
+            className="slider-input"
+            style={{
+              backgroundColor:
+              rangeArray[currentSection]?.backgroundColor,
+            }}
+          />
           <img
             src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
             alt=""
@@ -21,7 +82,7 @@ const SliderSection = ({ setCurrentComponent }) => {
         </div>
         <div className="ss_btn-container">
           <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
-            Dalej (Prawie koniec)
+          Dalej (Prawie koniec)
           </button>
         </div>
       </div>
@@ -29,4 +90,4 @@ const SliderSection = ({ setCurrentComponent }) => {
   );
 };
 
-export default SliderSection;
+export default SliderForm;

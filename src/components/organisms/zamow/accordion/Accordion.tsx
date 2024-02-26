@@ -20,7 +20,6 @@ const Accordion = () => {
   return (
     <div className="container mb-5">
       <h3 className="accordion-heading">
-        {/* Odpowiedzi na częste pytania: */}
         {FAQ_Section?.title}
       </h3>
       <section className="accordion-container w-lg-75 w-100">

@@ -1,22 +1,26 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Warranty = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.calculator);
+  const {  warranty } = screenData;
+
   return (
     <>
       <section className="warranty">
-        <h2>NASZA GWARANCJA</h2>
+        <h2>{warranty?.title}</h2>
         <div className="warranty_card">
           <div className="warranty_card_content">
-            <h3>Lepsze wyniki strony, albo 100% zwrotu pieniędzy!</h3>
+            <h3>{warranty?.card?.title}</h3>
             <p>
-              W Owocnych jesteśmy tak pewni swoich kompetencji, że dajemy
-              klientom, zuchwałą gwarancję.
+            {warranty?.card?.subtitle}
             </p>
-            <a href="/cennik">Zamów bezpłatną ofertę</a>
+            <a href="/cennik">{warranty?.card?.buttonText}</a>
           </div>
           <div className="warranty_card_img">
             <img
-              src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F23-B-min.0199023a.png&w=1920&q=75"
+              src={warranty?.card?.image}
               alt=""
             />
           </div>

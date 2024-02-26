@@ -3,7 +3,6 @@
 }
 
 .p-container {
-  text-align: justify;
   margin: 0 auto;
   width: 80%;
 }
@@ -64,5 +63,8 @@
 }
 .free-test h2 {
   font-size: 40px;
+}
+.p-container {
+  width: 100%;
 }
 }

@@ -11,7 +11,8 @@ export const API_ENDPOINTS = {
   STRATEGY_SCREEN: "api/get-marketing-strategy",
   OPINION_SCREEN: "",
   ANATOMY_SCREEN: "",
-  PRICE_LIST_SCREEN: "",
+  PRICE_LIST_SCREEN: "api/price-list-setting",
+  LOGO_SCREEN: "api/projektowanie",
 };
 
 export const API_ENDPOINTS_POST = {

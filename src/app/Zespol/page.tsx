@@ -2,30 +2,27 @@
 import React, { useEffect } from "react";
 import style from "./team-page.module.css";
 import * as TeamComponents from "@/components/organisms/team/team-components/TeamComponents";
-// import OurClients from "@/components/organisms/strategia-marketingowa/OurClients";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
 import OurClients from "../../components/organisms/main/ourclients/OurClients";
-// import "./strategiamarketingowa.css";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
+import Loader from "@/components/organisms/animation/Loader";
 
 const Team = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
-  const {card1, card2, section3, section4} =screenData ;
-
-  if (screenData) {
-    console.log("Team screen data from UI => ", screenData);
-  }
+  const { card1, card2, section3, section4 } = screenData;
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_TEAM_SCREEN_DATA });
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
-  }, []);
+  }, [dispatch]);
 
- 
- 
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <>
       <TeamComponents.Banner />
@@ -44,9 +41,7 @@ const Team = () => {
         </div>
         <TeamComponents.PersonalCard {...card2} />
         <div className={style.teamContent}>
-          <p className={style.customersPara}>
-            {section4?.section_four_para}
-          </p>
+          <p className={style.customersPara}>{section4?.section_four_para}</p>
         </div>
       </section>
       <TeamComponents.Creative />

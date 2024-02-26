@@ -25,9 +25,12 @@ const FreeSpace = () => {
               {section1?.section_title_one}
             </h2>
             <motion.div whileHover={{ translateY: 5 }}>
-            <a target="_blank" href="https://docs.google.com/document/d/1xMLse-SaH8O0qUs4j3S7JlEbR2YGRhsUO6Dgt7_DC2U/edit">
-            <button >Rekrutacja</button>
-            </a>
+              <a
+                target="_blank"
+                href="https://docs.google.com/document/d/1xMLse-SaH8O0qUs4j3S7JlEbR2YGRhsUO6Dgt7_DC2U/edit"
+              >
+                <button>Rekrutacja</button>
+              </a>
             </motion.div>
           </div>
           <p className={style.freePara}>{section2?.sub_title_discription}</p>

@@ -21,13 +21,17 @@ import WhatRecieve from "../../components/organisms/strategia-marketingowa/WhatR
 import YesAccordion from "../../components/organisms/strategia-marketingowa/accordion/YesAccordion";
 import items from "@/components/organisms/strategia-marketingowa/accordion/Data";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { FETCH_STRATEGY_SCREEN_DATA } from "@/redux/strategia/strategyAction";
 import OurClients from "../../components/organisms/main/ourclients/OurClients";
 import "./strategiamarketingowa.css";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
+import Loader from "@/components/organisms/animation/Loader";
 
 const StrategiaMarketingowa = () => {
+
+  const { isLoading } = useSelector((state) => state.strategy);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -37,6 +41,9 @@ const StrategiaMarketingowa = () => {
 
   return (
     <>
+    {isLoading ? (
+        <Loader />
+      ) : (
       <div>
         {/* 1. MainHeading */}
         <MainHeading />
@@ -99,6 +106,7 @@ const StrategiaMarketingowa = () => {
         {/* 20. Accordion */}
         <YesAccordion items={items} />
       </div>
+      )}
     </>
   );
 };

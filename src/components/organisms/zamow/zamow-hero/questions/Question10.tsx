@@ -1,11 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const Question10 = ({ handleNext }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { formTen } = screenData?.surveyQuestions || {};
+
+
   return (
     <div className="zh_question working_container">
-      <h2>Jak dobrze działał dla Ciebie dotychczasowy marketing?</h2>
-      <p>Prosimy o szczerość. Im więcej się dowiemy, tym lepiej Ci pomożemy.</p>
+      <h2>{formTen?.title}</h2>
+      <p>{formTen?.description}</p>
       <textarea rows={1}
       placeholder="Wpisz tu swoją odpowiedź"
     />

@@ -38,12 +38,9 @@ const Results = () => {
   return (
     <section className="results-section">
       <h2 className="result-title">
-        {/* Rezultaty badań */}
         {ResearchResult?.title}
       </h2>
       <p className="result-subtitle">
-        {/* Klika wyników, które osiągnęli przedsiębiorcy na podstawie wniosków z
-        naszych badań. */}
         {ResearchResult?.sub_title}
       </p>
       <Row>
@@ -60,48 +57,9 @@ const Results = () => {
 
       <div className="text-center free-test">
         <h2>
-          {/* Jak działa bezpłatne badanie? */}
           {howTestWorks?.title}
         </h2>
         <div className="p-container ">
-          {/* <p>
-            Zadamy Ci kilka pytań na temat Twojej działalności, celów
-            biznesowych i budżety marketingowe, aby dowiedzieć się czy nasza
-            współpraca ma sens.
-          </p>
-          <p>
-            Jeśli uznamy, że będziemy dla Ciebie świetnym partnerem,
-            przeanalizujemy Twoją stronę internetową i Twój marketing. Nasi
-            eksperci będą szukać możliwości wprowadzenia ulepszeń, aby zwiększyć
-            ruch i konwersje.
-          </p>
-
-          <p>
-            Nagramy wideo-przegląd, aby jak najlepiej wyjaśnić Ci, które części
-            Twojej strony internetowej i które kanały marketingowe mogłyby
-            najbardziej skorzystać z ulepszeń.
-          </p>
-
-          <p>
-            Co naszym zdaniem pomoże w osiągnięciu celów związanych z ruchem na
-            stronie, leadami i sprzedażą. Oczywiście przedstawimy też
-            niezobowiązujący plan działania.
-          </p>
-
-          <p className="my-5">
-            <span className="bg-white">
-              <strong>Recenzja jest całkowicie bezpłatna.</strong>
-            </span>{" "}
-            Jeśli po zapoznaniu się z recenzją zdecydujesz się zostać naszym
-            klientem, pomożemy Ci wdrożyć wszystkie zalecenia.
-          </p>
-
-          <p>
-            Jeśli nie zdecydujesz się na skorzystanie z naszych usług, ale
-            będziesz w pełni zadowolony ze swojej recenzji, możesz jej używać
-            tak jak sobie zażyczysz.
-          </p> */}
-
           <p>{howTestWorks?.para1}</p>
           <p>{howTestWorks?.para2}</p>
         </div>

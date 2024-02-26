@@ -1,6 +1,6 @@
 .zh_question {
-  padding: 170px 0;
-  width: 45%;
+  padding: 70px 0;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -27,6 +27,12 @@
   line-height: 55px;
   color: #d2200093;
   height: auto;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+textarea::-webkit-scrollbar {
+  display: none;
 }
 .zh_question textarea:active, .zh_question textarea:focus {
   outline: none;
@@ -61,8 +67,12 @@
   font-weight: 400;
   font-size: 22px;
 }
+.zh_next_btn:hover {
+  box-shadow: none;
+
+}
 .question_container{
-  width: 55%;
+  width: 100%;
   padding-bottom: 60px !important;
 }
 .question_container p{
@@ -122,7 +132,7 @@ input.income_show {
   border-radius: 50px;
   border: none;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 input[type="range"] {
@@ -220,7 +230,7 @@ input[type="range"]::-webkit-slider-thumb::before {
  font-size: 17px;
 }
 .zh_marketing_container{
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -315,7 +325,6 @@ input[type="range"]::-webkit-slider-thumb::before {
 }
 /* -------------------------------question 9---------------------- */
 .goal_description{
-  padding: 0 200px;
   margin: 0 0 40px !important;
 }
 .range_container{
@@ -323,13 +332,11 @@ input[type="range"]::-webkit-slider-thumb::before {
 }
 .tri_arrow {
   position: absolute;
-  left: 100px;
-  bottom: 150px;
+  left: 10px;
+  bottom: 50px;
 }
 /* ----------------question 10------------------ */
-.working_container{
-  width: 70%;
-}
+
 .working_container p{
   text-align: left;
 }
@@ -341,11 +348,10 @@ input[type="range"]::-webkit-slider-thumb::before {
 font-weight: 700;
 }
 .zh_marketing_container h2 {
-margin: 0 0 100px;
+margin: 0 0 40px;
 }
 /* ----------------------question 14--------------------- */
 .question_14{
-  width: 50%;
   margin: 0 auto;
   padding: 70px 0;
 }
@@ -370,13 +376,13 @@ margin: 0 0 100px;
 }
 .marketing_book img{
   width: 90%;
-    margin: -60px 0 0 0;
+    margin: 0px 0 0 0;
 }
 .marketing_book h3 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 300;
   text-align: left;
-  line-height: 60px;
+  line-height: 45px;
   margin: 40px 0;
 }
 button.zh_preview_btn {
@@ -387,4 +393,67 @@ button.zh_preview_btn {
   border: 2px solid #d21e00;
   background: transparent;
   font-weight: 500;
+}
+@media only screen and (max-width: 1024px) {
+  .checkBOxContainer {
+    width: 100%;
+}
+.zh_marketing_container {
+  padding: 0px 0;
+}
+.zh_question{
+  padding: 0px 0;
+}
+.tri_arrow {
+  left: -10px;
+  bottom: -10px;
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+  .zh_question {
+    padding: 0px 20px;
+}
+.zh_question textarea {
+  font-size: 20px;
+  line-height: 43px;
+}
+.zh_next_btn {
+  padding: 5px 20px;
+  font-size: 20px;
+}
+.zh_question h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.zh_next_btn_container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tri_arrow {
+  display: none;
+}
+input[type="range"]{
+  width: 100%;
+}
+.checkBOxContainer {
+  padding: 0 20px;
+}
+.marketing_book {
+  padding: 0 20px;
+}
+.marketing_book h3 {
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+.question_14 {
+  margin: 0 auto;
+  padding: 0px 0;
+}
+.question_14 h2 {
+  font-size: 50px;
+}
 }
