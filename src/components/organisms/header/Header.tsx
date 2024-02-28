@@ -27,6 +27,10 @@ const Header = () => {
   const toggleDropdown2 = () => {
     setIsOpen2(!isOpen2);
   };
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false); 
+  };
   return (
     <>
       <header className={style.navbar}>
@@ -84,7 +88,7 @@ const Header = () => {
                   <Link href="/Zespol">Zespół </Link>
                 </Nav.Link>
                 <Nav.Link className={style.navRightMenu}>
-                  <Link href="/kontakt">Kontakt</Link>
+                  <Link href="/kontakt-marketersi">Kontakt</Link>
                 </Nav.Link>
               </Nav>
               <motion.div whileHover={{ translateY: 5 }}>
@@ -101,7 +105,7 @@ const Header = () => {
       <div className={style.mobileHeader}>
       <header className={style.header}>
         <Button className={style.mobileLeftBtn}>
-          <Link href="/cennik">Cennik</Link>
+          <Link onClick={handleMenuItemClick} href="/cennik">Cennik</Link>
         </Button>
         <div className={style.mobileLogo}>
           <Link href="/">
@@ -133,32 +137,32 @@ const Header = () => {
                 {isOpen && (
                   <div className="dropdown-content">
                     <div className={style.menuItem}>
-                      <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
-                      <Link href="/projektowanie-logo">Projektowanie logo</Link>
+                      <Link onClick={handleMenuItemClick} href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
+                      <Link onClick={handleMenuItemClick} href="/projektowanie-logo">Projektowanie logo</Link>
                     </div>
                     <div className={style.menuItem}>
-                      <Link href="/projektowanie-ux">Projektowanie UX</Link>
+                      <Link onClick={handleMenuItemClick} href="/projektowanie-ux">Projektowanie UX</Link>
                     </div>
                     <div className={style.menuItem}>
-                      <Link href="/strategia-marketingowa">
+                      <Link onClick={handleMenuItemClick} href="/strategia-marketingowa">
                         Strategia marketingowa
                       </Link>
                     </div>
                     <div className={style.menuItem}>
-                      <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
+                      <Link onClick={handleMenuItemClick} href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
                     </div>
                     <div className={style.menuItem}>
-                      <Link href="/owocni-opinie">Opinie klientów</Link>
+                      <Link onClick={handleMenuItemClick} href="/owocni-opinie">Opinie klientów</Link>
                     </div>
                   </div>
                 )}
               </div>
             </li>
-            <li>
-              <Link href="/o-nas">Zespół </Link>
+            <li onClick={handleMenuItemClick}>
+              <Link onClick={handleMenuItemClick} href="/Zespol">Zespół </Link>
             </li>
-            <li>
-              <Link href="/kontakt">Kontakt</Link>
+            <li onClick={handleMenuItemClick}>
+              <Link onClick={handleMenuItemClick} href="/kontakt-marketersi">Kontakt</Link>
             </li>
             <li>
               <div className="dropdown">
@@ -178,13 +182,13 @@ const Header = () => {
                 {isOpen2 && (
                   <div className="dropdown-content">
                     <div className={style.menuItem}>
-                      <Link href="/kalkulator">
-                        Kalkulator zysku z nowej strony (ROI)
+                      <Link onClick={handleMenuItemClick} href="/czy-oplaca-sie-agencja-marketingowa">
+                      Policz czy Ci się to opłaca?
                       </Link>
-                      <Link href="/konsultacje">Konsultacja marketingu</Link>
+                      <Link onClick={handleMenuItemClick} href="/konsultacje">Konsultacja marketingu</Link>
                     </div>
                     <div className={style.menuItem}>
-                      <Link href="/faktow">
+                      <Link onClick={handleMenuItemClick} href="/marketingowa-psychologia-sprzedazy">
                         50 Faktów psychologii: Strony www
                       </Link>
                     </div>
@@ -193,10 +197,10 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <Link href="/owocni-opinie">Klienci i opinie</Link>
+              <Link onClick={handleMenuItemClick} href="/owocni-opinie">Klienci i opinie</Link>
             </li>
             <li>
-              <Link href="/cennik">Cennik</Link>
+              <Link onClick={handleMenuItemClick} href="/cennik">Cennik</Link>
             </li>
           </ul>
         </nav>

@@ -7,6 +7,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.facts_hero_container > div:nth-child(1) {
+  width: 50%;
+  order: 2;
+}
+.facts_hero_container > div:nth-child(2) {
+  width: 70%;
+  order: 1;
 }
 
 .facts_hero_container div {
@@ -23,26 +32,19 @@
   font-weight: 800;
   font-size: 80px;
   line-height: 0.9;
+  text-align: center;
 }
 
 .facts_hero_container p {
   font-size: 34px;
   font-weight: 400;
   margin-top: 50px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1360px) {
-  .facts_hero_container{
-    flex-direction: column;
-  }
-  .facts_hero_container > div:nth-child(1) {
-    width: 70%;
-    order: 2;
-}
-.facts_hero_container > div:nth-child(2) {
-    width: 70%;
-    order: 1;
-}
+ 
+ 
 .facts_hero_container h1 {
   text-align: center;
 }
@@ -75,11 +77,23 @@
 }
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 767px) {
+  .facts_hero_container > div:nth-child(1) {
+    width: 100%;
+}
+.facts_hero_container > div:nth-child(2) {
+    width: 100%;
+}
   .facts_hero_sec {
     padding: 20px 20px;
 }
 .facts_hero_container h1 {
-  font-size: 60px;
+  font-size: 50px;
+}
+.facts_hero_container h1 span {
+  font-size: 80px;
+}
+.facts_hero_container p {
+  font-size: 22px;
 }
 }
 @media screen and (max-width: 400px) {
@@ -92,5 +106,8 @@
 }
 .facts_hero_container p {
   font-size: 30px;
+}
+.facts_hero_container h1 span {
+  display: block;
 }
 }

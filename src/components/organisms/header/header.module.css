@@ -513,6 +513,10 @@
   .mobileHeader {
     display: block;
   }
+  .mobileLeftBtn {
+    box-shadow: 0px 3px 0px #ffffff;
+    border: 2px solid #ffffff;
+}
 
 }
 
