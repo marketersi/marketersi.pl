@@ -1,6 +1,13 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const SliderSection = ({ setCurrentComponent }) => {
+
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const {  formTwo } = screenData?.cardMenu?.menuFour || "";
+  const {  rangeArray } = screenData?.cardMenu?.menuFour?.formTwo || {};
+
+
   const [currentSection, setCurrentSection] = useState(0);
 
   const sectionDescriptions = [
@@ -38,8 +45,11 @@ const SliderSection = ({ setCurrentComponent }) => {
     <div className="slider_section">
       <div>
         <h2>Jakiej propozycji oczekujesz?</h2>
-        <p>{sectionDescriptions[currentSection]?.main}</p>
-        <div>{sectionDescriptions[currentSection]?.additional}</div>
+        <p  style={{
+            backgroundColor:
+            rangeArray[currentSection]?.backgroundColor,
+          }}>{rangeArray[currentSection]?.label}</p>
+        <div>{rangeArray[currentSection]?.description}</div>
       </div>
 
       <div className="space-between"></div>
@@ -53,6 +63,10 @@ const SliderSection = ({ setCurrentComponent }) => {
             type="range"
             onChange={handleSliderChange}
             value={(currentSection / (totalSections - 1)) * 100}
+            style={{
+              backgroundColor:
+              rangeArray[currentSection]?.backgroundColor,
+            }}
           />
           <img
             src="https://www.owocni.pl/_next/static/media/person.a15d0f85.png"
@@ -61,7 +75,7 @@ const SliderSection = ({ setCurrentComponent }) => {
         </div>
         <div className="ss_btn-container">
           <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
-            Dalej (Prawie koniec)
+            {formTwo?.section2_buttonText}
           </button>
         </div>
       </div>

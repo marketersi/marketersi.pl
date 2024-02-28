@@ -7,51 +7,24 @@ import FormTwo from "./nested-forms/FormTwo";
 import FormThree from "./nested-forms/FormThree";
 import "../cennikCards.css";
 
-const CardTwo = ({ formData }) => {
-  const {
-    FormOne: formOne,
-    FormTwo: formTwo,
-    FormThree: formThree,
-    FormFour: formFour,
-  } = formData || {};
+const CardTwo = ({ form }) => {
+  console.log("forms", form);
+  const { Section1, Section2, Section3, Section4 } = form || {};
 
-  const optionsOne = formOne?.dropdown1?.map((option) => ({
-    value: option,
-    label: option,
-  }));
-
-  const optionsTwo = formOne?.dropdown2?.map((option) => ({
-    value: option,
-    label: option,
-  }));
 
   const [currentComponent, setCurrentComponent] = useState(0);
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
 
-  const options1 = [
-    { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
-    { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
-    {
-      value: "Obniżyć koszty pozyskania klienta",
-      label: "Obniżyć koszty pozyskania klienta",
-    },
-    {
-      value: "Zwiększyć ilość rozmów handlowych",
-      label: "Zwiększyć ilość rozmów handlowych",
-    },
-  ];
-
-  const options2 = [
-    { value: "Międzynarodowo", label: "Międzynarodowo" },
-    { value: "Na terenie kraju", label: "Na terenie kraju" },
-    { value: "Lokalnie", label: "Lokalnie" },
-    {
-      value: "Inaczej",
-      label: "Inaczej",
-    },
-  ];
+  const optionsOne = Section1?.Dropdown1.map((option) => ({
+    value: option.value,
+    label: option.value,
+  }));
+  const optionsTwo = Section1?.Dropdown2.map((option) => ({
+    value: option.value,
+    label: option.value,
+  }));
 
   const DropdownIndicator = (props) => {
     const { selectProps } = props;
@@ -89,10 +62,7 @@ const CardTwo = ({ formData }) => {
     <>
       {currentComponent === 0 && (
         <div>
-          <h2 className="card-heading mb-3">
-            {/* Jaki cel stawiasz przed swoją firmą? */}
-            {formOne?.select_lable_1}
-          </h2>
+          <h2 className="card-heading mb-3">{Section1?.section_1_title_1}</h2>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
               options={optionsOne}
@@ -128,10 +98,7 @@ const CardTwo = ({ formData }) => {
               }}
             />
           </div>
-          <h2 className="card-heading mt-5">
-            {/* Jak się reklamujesz? */}
-            {formOne?.select_lable_2}
-          </h2>
+          <h2 className="card-heading mt-5">{Section1?.section_1_title_2}</h2>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
               options={optionsTwo}
@@ -178,12 +145,12 @@ const CardTwo = ({ formData }) => {
       )}
 
       {currentComponent === 1 && (
-        <FormOne setCurrentComponent={setCurrentComponent} form={formTwo} />
+        <FormOne setCurrentComponent={setCurrentComponent} form={Section2} />
       )}
       {currentComponent === 2 && (
-        <FormTwo setCurrentComponent={setCurrentComponent} form={formThree} />
+        <FormTwo setCurrentComponent={setCurrentComponent} form={Section3} />
       )}
-      {currentComponent === 3 && <FormThree form={formFour} />}
+      {currentComponent === 3 && <FormThree form={Section4} />}
     </>
   );
 };

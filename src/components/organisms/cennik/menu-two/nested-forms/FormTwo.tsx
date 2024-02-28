@@ -25,13 +25,13 @@ const FormTwo = ({ setCurrentComponent, form }) => {
 
   return (
     <div className="component-two_section">
+      
+
       <h2>
-        {/* Napisz kilka stów o tym projekcie i swoim pomyśle */}
-        {form?.title}
+        {form?.section_3_title_1}
       </h2>
       <p>
-        {/* Im więcej wiemy, tym lepiej się dopasujemy. */}
-        {form?.subtitle}
+        {form?.section_3_title_2}
       </p>
       <textarea
         rows="5"
@@ -44,6 +44,8 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         </button>
       </div>
 
+      
+
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}
@@ -52,13 +54,12 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         className="Modal"
         overlayClassName="Overlay"
       >
+        <h4>{form?.model_title}</h4>
         <p>
-          Przepraszamy, nie jesteśmy w stanie przedstawić sensownej oferty na
-          bazie tak znikomych informacji. Napisz ciut więcej. Dzięki temu
-          będziemy mogli pomóc Ci lepiej.
+          {form?.modal_description}
         </p>
         <div>
-          <button onClick={closeModal}>Rozumiem</button>
+          <button onClick={closeModal}>{form?.button_text}</button>
         </div>
 
         {/* x btn */}
@@ -66,6 +67,8 @@ const FormTwo = ({ setCurrentComponent, form }) => {
           <FontAwesomeIcon icon={faXmark} />
         </div>
       </Modal>
+
+      
     </div>
   );
 };

@@ -15,25 +15,6 @@ const CardOne = () => {
   const {  formOne } = screenData?.cardMenu?.menuOne || "";
   const { dropdown  } = screenData?.cardMenu?.menuOne?.formOne || {};
 
-  // const options = [
-  //   {
-  //     value: "Rozwijamy biznes i zmieniamy stronę.",
-  //     label: "sdfvRozwijamy biznes i zmieniamy stronę.",
-  //   },
-  //   {
-  //     value: "To nowa strona, ale firma jest dojrzała.",
-  //     label: "To nowa strona, ale firma jest dojrzała.",
-  //   },
-  //   {
-  //     value: "To nowa strona i mój pierwszy biznes.",
-  //     label: "To nowa strona i mój pierwszy biznes.",
-  //   },
-  //   {
-  //     value: "Bez planu. Pytam z ciekawości.",
-  //     label: "Bez planu. Pytam z ciekawości.",
-  //   },
-  // ];
-
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 

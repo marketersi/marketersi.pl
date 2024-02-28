@@ -41,7 +41,7 @@ const GPN = () => {
 
             <div className="col-md-4 text-center projects-rwd-hide-img1">
               <img
-                src="/assets/images/logo-design/cennik-logo-gpnt.jpg.webp"
+                src={companyLogo && companyLogo.length > 0  ? companyLogo[0] : ''}
                 alt="Wycena projektu logo na przykładzie profesjonalnej realizacji dla GPNT"
                 title="Cennik logo na przykładzie logo GPNT"
               />
@@ -49,7 +49,7 @@ const GPN = () => {
 
             <div className="col-md-4 text-center">
               <img
-                src="/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp"
+                src={companyLogo && companyLogo.length > 1  ? companyLogo[1] : ''}
                 alt="Profesjonalny projekt logo wykonany przez specjalistów"
                 title="Projekt logo na przykładzie GPN-T"
               />
@@ -57,7 +57,7 @@ const GPN = () => {
 
             <div className="col-md-4 text-center">
               <img
-                src="/assets/images/logo-design/projekty-loga-gpnt3.jpg.webp"
+                src={companyLogo && companyLogo.length > 2  ? companyLogo[2] : ''}
                 alt="Dwa szczegółowe przykłady projektu logo na przykładzie GPN-T"
                 title="Projekty loga na przykładzie GPN-T"
               />
@@ -65,7 +65,7 @@ const GPN = () => {
 
             <div className="col-xs-12 text-center projects-rwd-hide-img2">
               <img
-                src="/assets/images/logo-design/cennik-logo-gpnt.jpg.webp"
+                src={companyLogo && companyLogo.length > 3 ? companyLogo[3] : ''}
                 alt="Wycena projektu logo na przykładzie profesjonalnej realizacji dla GPNT"
                 title="Cennik logo na przykładzie logo GPNT"
               />
@@ -101,7 +101,7 @@ const GPN = () => {
             <div className="col-md-2 col-sm-6 col-xs-12 projects-blue-img-rwd">
               <div className="projects-blue-cont-image1">
                 <img
-                  src="/assets/images/logo-design/Identyfikacja-wizualna-firmy.jpg.webp"
+                  src={productLogo && productLogo.length > 0 ? productLogo[0] : ''}
                   className="projects-blue-image1"
                   alt="Identyfikacja wizualna stworzona za pomocą tego, co stworzył grafik logo"
                   title="Grafik logo prezentuje czcionki, których można użyć w logo"
@@ -112,7 +112,7 @@ const GPN = () => {
             <div className="col-md-6 projects-blue-img-rwd">
               <div className="">
                 <img
-                  src="/assets/images/logo-design/Wizytowki-papier-firmowy.jpg.webp"
+                  src={productLogo && productLogo.length > 1 ? productLogo[1] : ''}
                   className="projects-blue-cont-image2 z-index-1"
                   alt="Materiały firmowe z przykładami identyfikacji wizualnej"
                   title="Przykładowe loga do których użyty został papier firmowy"

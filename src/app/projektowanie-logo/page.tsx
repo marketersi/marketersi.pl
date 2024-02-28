@@ -78,9 +78,9 @@ const LogoDesignScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const dispatch = useDispatch();
 
-  if (screenData) {
-    console.warn("🟢logo screen data ui 👉👉👉", screenData);
-  }
+  // if (screenData) {
+  //   console.warn("🟢logo screen data ui 👉👉👉", screenData);
+  // }
 
   const { LogoAccordionData } = screenData || {};
   const { accordionData } = LogoAccordionData || {};
@@ -122,17 +122,18 @@ const LogoDesignScreen = () => {
           {/* section 11 */}
           <StepByStep />
           {/* section 12 */}
+          {/* ---------------------------------------------------------------- */}
           <FreeShops />
           {/* section 13 */}
-          {/* <Enexo /> */}
+          <Enexo />
           {/* section 14 */}
-          {/* <Daco /> */}
+          <Daco />
           {/* section 15 */}
-          {/* <Aico /> */}
+          <Aico />
           {/* section 16 */}
-          {/* <ZooGarden /> */}
+          <ZooGarden />
           {/* section 17 */}
-          {/* <Construction /> */}
+          <Construction />
           {/* section 18 */}
           {/* <Restaurant /> */}
           {/* section 19 */}
@@ -149,7 +150,7 @@ const LogoDesignScreen = () => {
             </div>
             <Form />
           </section> */}
-          {/* <LogoFooter /> */}
+          <LogoFooter />
         </>
       )}
     </>

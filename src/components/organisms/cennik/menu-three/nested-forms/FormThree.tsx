@@ -1,8 +1,14 @@
+import { useSelector } from "react-redux";
+import FormContact from "../../FormContact";
+
 const UserDetailsSection = () => {
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const { formFour } = screenData?.cardMenu?.menuThree || "";
+
   return (
     <div className="user-details_section">
-      <h2>Zaczynamy składać opcje cenowe.</h2>
-      <p>Komu mamy je wysłać?</p>
+      <h2>{formFour?.form4_title}</h2>
+      <p>{formFour?.form4_subtitle}</p>
       <div className="uds_input-container">
         <input type="text" placeholder="Imię" />
         <input type="text" placeholder="Email" />
@@ -13,11 +19,11 @@ const UserDetailsSection = () => {
           onClick={() => console.log("cennik form submitted")}
           className="cennikBtn"
         >
-          <span>
-            Wyślijcie mi <br /> 3 propozycje cenowe
-          </span>
+          <span>{formFour?.form4_buttonText}</span>
         </button>
       </div>
+      
+      <FormContact />
     </div>
   );
 };

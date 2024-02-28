@@ -1,16 +1,20 @@
+import { useSelector } from "react-redux";
+
 const FeedbackSection = ({ setCurrentComponent }) => {
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const { formThree } = screenData?.cardMenu?.menuThree || "";
+
   return (
     <div className="feedback_section">
-      <h2>Na koniec, napisz coś o tym biznesie.</h2>
-      <p>Jaki masz na to pomysł? Co chcesz umieścić na stronie?</p>
+      <h2>{formThree?.form3_textareaTitle}</h2>
+      <p>{formThree?.form3_textareaSubtitle}</p>
       <textarea rows="5" cols="50" className="fs_textarea"></textarea>
-      <p className="mt-2">
-        Ważne: Wymień produkty/usługi w ofercie. Od najważniejszej.
-      </p>
+      <p className="mt-2">{formThree?.form3_inputTitle}</p>
       <input type="text" className="fs_input" />
       <button onClick={() => setCurrentComponent(3)} className="cennikBtn">
-        Ostatnie pytanie
+        {formThree?.form3_buttonText}
       </button>
+      
     </div>
   );
 };

@@ -157,7 +157,7 @@
   padding: 8px 16px;
   margin: 0 10px 18px auto;
   border-radius: 20px;
-  width: 45%;
+  width: 50%;
   border: 1px solid rgb(201, 201, 201);
 }
 
@@ -258,4 +258,38 @@ input[type="range"]:focus::-webkit-slider-thumb {
   right: -38px;
   font-size: 40px;
   cursor: pointer;
+}
+
+/* --------------------contact-------------------- */
+.componentThree_section {
+  position: relative;
+}
+.contact {
+  position: absolute;
+  top: -20px;
+  right: -204px;
+  width: 230px;
+}
+.contact .whiteBox {
+  height: 150px;
+  width: 150px;
+  background: white;
+  margin: -220px auto 60px;
+  border-radius: 100%;
+}
+.contact h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact a {
+  font-size: 26px;
+  font-weight: 600;
+  color: #5aa53c;
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+}
+
+.contact p {
+  font-size: 15px;
+  font-weight: 300;
 }

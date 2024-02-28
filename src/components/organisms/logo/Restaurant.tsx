@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const RestaurantData = {
   title: "BOHEMIA GDAŃSK",
@@ -14,6 +15,8 @@ const RestaurantData = {
 };
 
 const Restaurant = () => {
+  const {isLoading, screenData} = useSelector((state) => state.logo);
+  const {RestaurantData} = screenData || {};
   return (
     <>
       <section className="thematic-section projects-gray-background">
@@ -22,19 +25,14 @@ const Restaurant = () => {
             <div className="col-md-12 projects-custom-espace"></div>
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle">
-                BOHEMIA <br />
-                <strong>GDAŃSK</strong>
+                {RestaurantData?.title}
               </h5>
 
               <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
-                Logo mojej knajpy musi być w starym <br />
-                klimacie. Tak, by chciało się przy nim <br />
-                posiedzieć z przyjaciółmi.
+                {RestaurantData?.subtitle}
               </h3>
               <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc">
-                Bohemia to autentyczny gdański browar rzemieślniczy. <br />
-                Choć w lokalu znajduje się kuchnia, to chmiel gra pierwsze
-                skrzypce.
+                {RestaurantData?.text}
               </p>
               <p className="theme-desc projects-theme-desc-p">
                 Kraftowe piwo bazuje na starej recepturze, stąd pomysł pieczęci.
@@ -49,17 +47,17 @@ const Restaurant = () => {
           <div className="image-810">
             <img
               className="desktop-810 position-relative"
-              src="https://www.logofirmowe.pl/files/multimedias/527/Pomysl-na-logo-gastronomii.jpg"
+              src={RestaurantData?.secondaryImage}
               title="Projektowanie logo - cena nie musi być wysoka, a pomysł jest dobry"
               alt="Projektowanie logo - cena w ogólnym ujęciu"
               style={{ left: "-65px", position: "relative", maxWidth: "none" }}
             />
-            <img
+            {/* <img
               src="/files/multimedias/528/Projektowanie-logo-cena.jpg.webp"
               className="mobile-810"
               alt="Projektowanie logo - cena w ogólnym ujęciu"
               title="Projektowanie logo - cena nie musi być wysoka, a pomysł jest dobry"
-            />
+            /> */}
           </div>
         </div>
 
@@ -83,20 +81,20 @@ const Restaurant = () => {
             <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
               <img
                 className="desktop-810 position-relative"
-                src="https://www.logofirmowe.pl/files/multimedias/529/Przyklad-przy-projektowaniu-logo-Bohemia.jpg"
+                src={RestaurantData?.image}
                 title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
                 alt="Profesjonalny znak wyróżni Twoją markę "
                 style={{ left: "-75px" }}
               />
             </a>
-            <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
+            {/* <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
               <img
                 src="/files/multimedias/530/Przyklad-przy-projektowaniu-logo-Bohemia-MOB.jpg.webp"
                 className="mobile-810"
                 alt="Profesjonalny znak wyróżni Twoją markę "
                 title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
               />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -104,11 +102,10 @@ const Restaurant = () => {
           <div className="row">
             <div className="col-md-12">
               <h5 className="theme-quote signed-quote signed-quote-image">
-                “Idealne! Czuć, że was to obchodzi.
-                <br />
-                <strong>Z wami naprawdę chce się pracować</strong>.”
+               {RestaurantData?.quote}
+                
               </h5>
-              <p className="signature">Tomasz Salawa - Właściciel</p>
+              <p className="signature">{RestaurantData?.quoteAuthor}</p>
             </div>
           </div>
         </div>

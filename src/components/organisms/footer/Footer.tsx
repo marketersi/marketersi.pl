@@ -31,23 +31,23 @@ const Footer = () => {
             </div>
             <div className={style.footerCol}>
               <Row className="mb-sm-5">
-                <Col sm={3}>
-                  <div className={style.footerRightMenu}>
+                <Col sm={3} xs={6}>
+                  <div className={style.footerRightMenu }>
                     <h3>Fajne marki</h3>
                     <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
                     <Link href="/projektowanie-logo">Projektowanie logo</Link>
                     {/* <Link href="/#">Identyfikacja spółki</Link> */}
                   </div>
                 </Col>
-                <Col sm={3}>
-                  <div className={style.footerRightMenu}>
+                <Col sm={3} xs={6}>
+                <div className={`${style.footerRightMenu} ${style.mobileRightMenu}`}>
                     <h3>Sprawne strony</h3>
                     {/* <Link href="/#">Tworzenie stron</Link> */}
                     <Link href="/projektowanie-ux">Projektowanie UX</Link>
                     {/* <Link href="/#">Audyt strony www</Link> */}
                   </div>
                 </Col>
-                <Col sm={3}>
+                <Col sm={3} xs={6}>
                   <div className={style.footerRightMenu}>
                     <h3>Wydajny marketing</h3>
                     <Link href="/strategia-marketingowa">
@@ -57,8 +57,8 @@ const Footer = () => {
                     <Link href="/konsultacje">Konsultacja marketingu</Link>
                   </div>
                 </Col>
-                <Col sm={3}>
-                  <div className={style.footerRightMenu}>
+                <Col sm={3} xs={6}>
+                <div className={`${style.footerRightMenu} ${style.mobileRightMenu}`}>
                     <h3>Przekonujące treści</h3>
                     <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
                     {/* <Link href="/#">Jakościowe artykuły</Link> */}
@@ -69,12 +69,14 @@ const Footer = () => {
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Marketersi</h3>
+                    <div className={style.footerCennik}>
                     <Link href="/Zespol">Zespół</Link>
                     {/* <Link href="/#">Klienci</Link> */}
                     {/* <Link href="/#">Kariera</Link> */}
-                    <Link href="/kontakt">Kontakt</Link>
-                    <Link href="/cennik">Cennik</Link>
+                    <Link href="/kontakt-marketersi">Kontakt</Link>
+                    <Link href="/cennik" className={style.CennikBrn}>Cennik</Link>
                     {/* <Link href="/#">Realizacje</Link> */}
+                    </div>
                   </div>
                 </Col>
                 <Col sm={9}>
@@ -83,7 +85,7 @@ const Footer = () => {
                     {/* <Link href="/#">
                       Badanie strony i marketingu przez ekspertów [Bezpłatne]
                     </Link> */}
-                    <Link href="/kalkulator">
+                    <Link href="/czy-oplaca-sie-agencja-marketingowa">
                       Kalkulator zysku z nowej strony (ROI)
                     </Link>
                     {/* <Link href="/#">Test skuteczności strony (Krótki)</Link> */}

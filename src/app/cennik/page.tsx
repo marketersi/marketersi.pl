@@ -9,15 +9,23 @@ import "./cennik.css";
 import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "@/components/organisms/animation/Loader";
+import { FETCH_CONSULTING_SCREEN_DATA } from "@/redux/konsultacje/consultingAction";
 
 const PriceListScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
-  const { title, sub_title, card_title, card_subtitle, cardMenu,  } = screenData;
+  const { title, sub_title, card_title, card_subtitle, cardMenu } = screenData;
+  const { Menu2 } = screenData || {};
+
+  const { screenData: consultingScreenData } = useSelector(
+    (state) => state.consulting
+  );
+  const { Form } = consultingScreenData?.PricingOption || {};
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
+    dispatch({ type: FETCH_CONSULTING_SCREEN_DATA });
   }, [dispatch]);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -52,9 +60,7 @@ const PriceListScreen = () => {
           <h2 className="mt-5 heading-style">{title}</h2>
           <div className="mt-3">
             <p className="subheading">
-              <span>
-                {sub_title}
-              </span>
+              <span>{sub_title}</span>
             </p>
           </div>
 
@@ -73,7 +79,10 @@ const PriceListScreen = () => {
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(1)}
                       >
-                        <button style={buttonStyle}> {cardMenu?.menuOne?.menu_title}</button>
+                        <button style={buttonStyle}>
+                          {" "}
+                          {cardMenu?.menuOne?.menu_title}
+                        </button>
                       </div>
                       <div
                         className="col"
@@ -92,7 +101,9 @@ const PriceListScreen = () => {
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(3)}
                       >
-                        <button style={buttonStyle}>{cardMenu?.menuThree?.menuText}</button>
+                        <button style={buttonStyle}>
+                          {cardMenu?.menuThree?.menuText}
+                        </button>
                       </div>
                       <div
                         className="col"
@@ -100,7 +111,7 @@ const PriceListScreen = () => {
                         onClick={() => handleBtnClick(4)}
                       >
                         <button style={buttonStyle}>
-                        {cardMenu?.menuFour?.menu_title}
+                          {cardMenu?.menuFour?.menu_title}
                         </button>
                       </div>
                     </div>
@@ -115,7 +126,7 @@ const PriceListScreen = () => {
 
               {selectedOption == 2 && (
                 <>
-                  <CardTwo />
+                  <CardTwo form={Form} />
                 </>
               )}
 

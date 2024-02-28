@@ -9,41 +9,40 @@ const FormOne = ({ setCurrentComponent, form }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
 
-  const optionsOne = form?.dropdown1?.map((option) => ({
-    value: option,
-    label: option,
+  const optionsOne = form?.Dropdown1.map((option) => ({
+    value: option.value,
+    label: option.value,
+  }));
+  const optionsTwo = form?.Dropdown2.map((option) => ({
+    value: option.value,
+    label: option.value,
   }));
 
-  const optionsTwo = form?.dropdown2?.map((option) => ({
-    value: option,
-    label: option,
-  }));
+  // const options1 = [
+  //   { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
+  //   { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
+  //   {
+  //     value: "Obniżyć koszty pozyskania klienta",
+  //     label: "Obniżyć koszty pozyskania klienta",
+  //   },
+  //   {
+  //     value: "Zwiększyć ilość rozmów handlowych",
+  //     label: "Zwiększyć ilość rozmów handlowych",
+  //   },
+  // ];
 
-  const options1 = [
-    { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
-    { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
-    {
-      value: "Obniżyć koszty pozyskania klienta",
-      label: "Obniżyć koszty pozyskania klienta",
-    },
-    {
-      value: "Zwiększyć ilość rozmów handlowych",
-      label: "Zwiększyć ilość rozmów handlowych",
-    },
-  ];
-
-  const options2 = [
-    { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
-    { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
-    {
-      value: "Obniżyć koszty pozyskania klienta",
-      label: "Obniżyć koszty pozyskania klienta",
-    },
-    {
-      value: "Zwiększyć ilość rozmów handlowych",
-      label: "Zwiększyć ilość rozmów handlowych",
-    },
-  ];
+  // const options2 = [
+  //   { value: "Chcę podnieść ceny", label: "Chcę podnieść ceny" },
+  //   { value: "Zdobyć więcej klientów", label: "Zdobyć więcej klientów" },
+  //   {
+  //     value: "Obniżyć koszty pozyskania klienta",
+  //     label: "Obniżyć koszty pozyskania klienta",
+  //   },
+  //   {
+  //     value: "Zwiększyć ilość rozmów handlowych",
+  //     label: "Zwiększyć ilość rozmów handlowych",
+  //   },
+  // ];
 
   const handleSelectChange = (selectedOption) => {
     setSelectedOption(selectedOption);
@@ -80,8 +79,8 @@ const FormOne = ({ setCurrentComponent, form }) => {
     <>
       <div>
         <h2 className="card-heading mb-3">
-          {/* Na jakim etapie jest Twój biznes? */}
-          {form?.select_lable_1}
+          
+          {form?.section_2_title_1}
         </h2>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
@@ -119,12 +118,10 @@ const FormOne = ({ setCurrentComponent, form }) => {
           />
         </div>
         <h2 className="card-heading mt-5">
-          {/* Ile miesięcznie inwestujesz w marketing? */}
-          {form?.select_lable_2}
+          {form?.section_2_title_2}
         </h2>
         <p>
-          {/* Lub ile planujesz inwestować? */}
-          {form?.subtitle}
+          {form?.section_2_subtitle}
         </p>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
