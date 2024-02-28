@@ -1,20 +1,10 @@
 import React from "react";
-
-const ZooGardenData = {
-  title: "OGRÓD ZOOBOTANICZNY TORUŃ",
-  subtitle:
-    "Chcemy stworzyć ikonę wizualny pomnik upamiętniający uwielbianego niedźwiedzia Nufi.",
-  text: "To profesjonalna instytucja. Niestety, wygląda niedbale, ciut śmiesznie. Stare logo ogrodu łamie praktyki projektowe w nieumiejętny sposób. Kolorystyka odbiera marce klasę. Ogromna ilość detali rozprasza uwagę, a duch niedźwiedzia „Nufi” o białych ślepiach udaje, że tego nie widzi. Zadanie było jasne. Przywrócić marce styl i klasę na jaką zasługuje, stawiając przy tym godny pomnik Nufiemu, który był ikoną ogrodu. Wykonaliśmy masę pracy szukając jego najbardziej „dostojnej” formy. Nowe logo symbolizuje pomnik oparty na typograficznych stopniach. Ikona jest spójna z liternictwem. Prosta, ale jednocześnie dostojna. Symbol (grafika) i sygnatura (podpis) mogą funkcjonować niezależnie. Tak powstały wariacje dla pionowej ekspozycji ze starą grą słów ZOO. Jesteśmy wam wdzięczni za tę wzruszającą projektową przygodę.",
-  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
-  image: "/assets/images/logo-design/daco-logo.webp",
-  quote:
-    "o jest po prostu świetne! Całe szczęście, że zdecydowaliśmy się na wasze studio!",
-  quoteAuthor: "Iwona i Andrzej Ziółkowscy - właściciele.",
-  quoteText:
-    "DACO błyskawicznie zdobyła sympatię docelowej grupy klientów. Dziś jest już rozpoznawalna w Anglii, Danii, Czechach, Słowacji i Rosji.",
-};
+import { useSelector } from "react-redux";
 
 const ZooGarden = () => {
+  const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { ZooGardenData } = screenData || {};
+
   return (
     <>
       <section className="thematic-section projects-gray-background">
@@ -23,26 +13,17 @@ const ZooGarden = () => {
             <div className="col-md-12 projects-custom-espace"></div>
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle projects-theme-subtitle-rwd">
-                OGRÓD <br />
-                ZOOBOTANICZNY <br />
-                <strong>TORUŃ</strong>
+                {ZooGardenData?.title}
               </h5>
 
               <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
-                Chcemy stworzyć ikonę - <br />
-                wizualny pomnik upamiętniający <br />
-                uwielbianego niedźwiedzia Nufi. <br />
+                {ZooGardenData?.subtitle}
               </h3>
               <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc">
-                To profesjonalna instytucja. Niestety, wygląda niedbale, ciut
-                śmiesznie. <br />
-                Stare logo ogrodu łamie praktyki projektowe w nieumiejętny
-                sposób.
+                {ZooGardenData?.text1}
               </p>
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
-                Kolorystyka odbiera marce klasę. Ogromna ilość detali rozprasza
-                uwagę, <br />a duch niedźwiedzia „Nufi” o białych ślepiach
-                udaje, że tego nie widzi.
+                {ZooGardenData?.text2}
               </p>
             </div>
           </div>
@@ -50,7 +31,7 @@ const ZooGarden = () => {
 
         <div className="custom-container1-image">
           <img
-            src="/assets/images/logo-design/Projektowanie-logo-firmy-stary-znak.jpg.webp"
+            src={ZooGardenData?.image_1}
             alt="Zmiana starego znaku firmowego poprzez projektowanie logo firmy"
             title="Prezentacja, jak projektowanie logo firmy może odmienić stary znak firmowy"
           />
@@ -60,13 +41,10 @@ const ZooGarden = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
-                Zadanie było jasne. Przywrócić marce styl i klasę na jaką
-                zasługuje, <br />
-                stawiając przy tym godny pomnik Nufiemu, który był ikoną ogrodu.
+                {ZooGardenData?.text3}
               </p>
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
-                Wykonaliśmy masę pracy szukając jego najbardziej „dostojnej”
-                formy.
+                {ZooGardenData?.text4}
               </p>
             </div>
           </div>
@@ -76,16 +54,10 @@ const ZooGarden = () => {
           <div className="image-810">
             <img
               className="desktop-810 position-relative"
-              src="https://www.logofirmowe.pl/files/multimedias/522/Logo-firmy-ogrod.jpg"
+              src={ZooGardenData?.image_2}
               title="Przykład logo firmy na podstawie Ogrodu"
               alt="Projektowanie logo Twojej firmy wizualizowane na kartce"
               style={{ left: "-291px", position: "relative", maxWidth: "none" }}
-            />
-            <img
-              src="/files/multimedias/523/Logo-firmy-ogrod-MOB.jpg.webp"
-              className="mobile-810"
-              alt="Projektowanie logo Twojej firmy wizualizowane na kartce"
-              title="Przykład logo firmy na podstawie Ogrodu"
             />
           </div>
         </div>
@@ -94,20 +66,13 @@ const ZooGarden = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc projects-custom-m0-top">
-                Nowe logo symbolizuje pomnik oparty na typograficznych
-                stopniach.
-                <br />
-                Ikona jest spójna z liternictwem. Prosta, ale jednocześnie
-                dostojna.
+                {ZooGardenData?.text5}
               </p>
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
-                Symbol (grafika) i sygnatura (podpis) mogą funkcjonować
-                niezależnie. <br />
-                Tak powstały wariacje dla pionowej ekspozycji ze starą grą słów
-                ZOO.
+                {ZooGardenData?.text6}
               </p>
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
-                Jesteśmy wam wdzięczni za tę wzruszającą projektową przygodę.
+                {ZooGardenData?.text7}
               </p>
             </div>
           </div>

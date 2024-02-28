@@ -1,11 +1,11 @@
 import React from "react";
+import FormContact from "../../FormContact";
 
 const FormThree = ({ form }) => {
   return (
     <div className="componentThree_section">
       <h2>
-        {/* Z kim mamy przyjemność? */}
-        {form?.title}
+        {form?.section_4_title}
       </h2>
       <div className="componentThree_input-container">
         <input type="text" placeholder="Imię" />
@@ -16,6 +16,7 @@ const FormThree = ({ form }) => {
       <div>
         <button className="cennikBtn">Zapisz się na konsultację</button>
       </div>
+      <FormContact />
     </div>
   );
 };

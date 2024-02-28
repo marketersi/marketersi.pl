@@ -8,34 +8,6 @@ const SliderForm = ({ setCurrentComponent }) => {
   const {  formTwo } = screenData?.cardMenu?.menuThree || "";
   const {  rangeArray } = screenData?.cardMenu?.menuThree?.formTwo || {};
 
-  // const sectionDescriptions = [
-  //   {
-  //     main: "Przesuń suwak blisko potrzeb",
-  //     additional: "",
-  //     backgroundColor: "#9b8993",
-  //   },
-  //   {
-  //     main: "Strategiczna - Duża marka",
-  //     additional: "programista + projektant UX",
-  //     backgroundColor: "#7e9680",
-  //   },
-  //   {
-  //     main: "Wiodąca - Pod marketing.",
-  //     additional: "programista + projektant UX",
-  //     backgroundColor: "#eab595",
-  //   },
-  //   {
-  //     main: "Klasyczna - Firmowa. Fajna.",
-  //     additional: "programista + projektant ",
-  //     backgroundColor: "#d87f81",
-  //   },
-  //   {
-  //     main: "Najtańsza – bardzo prosta",
-  //     additional: "programista + projektant",
-  //     backgroundColor: "#ae6378",
-  //   },
-  // ];
-
   const totalSections = rangeArray.length;
 
   const handleSliderChange = (e) => {

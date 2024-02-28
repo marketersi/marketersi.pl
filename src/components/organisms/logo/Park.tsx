@@ -1,15 +1,18 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const ParkData = {
-  title: "GPNT GDAŃSK",
-  subtitle: "Odświeżyliśmy wizerunek Gdańskiego Parku Naukowo-Technologicznego",
-  text: "Praca nad nowym wizerunkiem Parku Naukowo-Technologicznego polegała na przeniesieniu logo z poprzedniej epoki do technologicznej współczesności. Wyglądać nowocześnie, ale zachowując ciągłość i spójność.",
-  logoImage: "/assets/images/logo-design/daco-logo.webp",
-  bannerImage:
-    "/assets/images/logo-design/Projektowanie-graficzne-Park-Naukowo-Technologicznego.jpg.webp",
-};
+// const ParkData = {
+//   title: "GPNT GDAŃSK",
+//   subtitle: "Odświeżyliśmy wizerunek Gdańskiego Parku Naukowo-Technologicznego",
+//   text: "Praca nad nowym wizerunkiem Parku Naukowo-Technologicznego polegała na przeniesieniu logo z poprzedniej epoki do technologicznej współczesności. Wyglądać nowocześnie, ale zachowując ciągłość i spójność.",
+//   logoImage: "/assets/images/logo-design/daco-logo.webp",
+//   bannerImage:
+//     "/assets/images/logo-design/Projektowanie-graficzne-Park-Naukowo-Technologicznego.jpg.webp",
+// };
 
 const Park = () => {
+  const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { ParkData } = screenData || {};
   return (
     <>
       <section className="thematic-section projects-gray-background">
@@ -18,20 +21,13 @@ const Park = () => {
             <div className="col-md-12 projects-custom-espace"></div>
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle">
-                GPNT <br />
-                <strong>GDAŃSK</strong>
+                {ParkData?.title}
               </h5>
               <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
-                Odświeżyliśmy <br />
-                wizerunek Gdańskiego <br />
-                Parku Naukowo-Technologicznego
+                {ParkData?.subtitle}
               </h3>
               <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-margin-2">
-                Praca nad nowym wizerunkiem Parku Naukowo-Technologicznego
-                polegała <br />
-                na przeniesieniu logo z poprzedniej epoki do technologicznej
-                współczesności. <br />
-                Wyglądać nowocześnie, ale zachowując ciągłość i spójność.
+                {ParkData?.text}
               </p>
             </div>
 
@@ -43,7 +39,7 @@ const Park = () => {
 
             <div className="col-md-12 text-center custom-margin-bottom-40">
               <img
-                src="/assets/images/logo-design/przyklad-starego-projektu-logo.png.webp"
+                src={ParkData?.logoImage}
                 className="starelogo"
                 alt="Prezentacja projektu logo, starego"
                 title="Przykład starego projektu logo Gdańskiego Parku"
@@ -60,7 +56,7 @@ const Park = () => {
       </section>
 
       <img
-        src="/assets/images/logo-design/nowy-logotyp-dla-firmy-park.jpg.webp"
+        src={ParkData?.bannerImage}
         className="img-background-logop park-img w-100"
         alt="Nowe logo Gdańskiego Parku wykonane przez profesjonalistów"
         title="Nowy logotyp dla firmy na przykładzie nowego logo Gdańskiego Parku"

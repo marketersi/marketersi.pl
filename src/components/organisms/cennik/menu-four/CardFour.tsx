@@ -7,8 +7,13 @@ import CennikModal from "../../modals/CennikModal";
 import SliderSection from "./nested-forms/FormOne";
 import FeedbackSection from "./nested-forms/FormTwo";
 import UserDetailsSection from "./nested-forms/FormThree";
+import { useSelector } from "react-redux";
 
 const CardFour = () => {
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const { formOne } = screenData?.cardMenu?.menuFour || "";
+  const { dropdown } = screenData?.cardMenu?.menuFour?.formOne || {};
+
   const [currentComponent, setCurrentComponent] = useState(0);
 
   const options = [
@@ -78,11 +83,11 @@ const CardFour = () => {
     <>
       {currentComponent === 0 && (
         <div>
-          <h2 className="card-heading">Dla jakiej firmy jest ta strona?</h2>
-          <p className="card-subheading">Wybierz jedną z opcji.</p>
+          <h2 className="card-heading">{formOne?.section1_title}</h2>
+          <p className="card-subheading">{formOne?.section1_subtitle}</p>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
-              options={options}
+              options={dropdown}
               placeholder="Wybierz"
               isSearchable={false}
               components={{ DropdownIndicator }}
@@ -116,7 +121,7 @@ const CardFour = () => {
             whileHover={{ translateY: 5 }}
             onClick={() => setCurrentComponent(1)}
           >
-            Rozpocznij kalkulację
+           {formOne?.section1_buttonText}
           </motion.button>
 
           {/* Modal */}
