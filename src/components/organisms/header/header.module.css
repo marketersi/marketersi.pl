@@ -18,6 +18,11 @@
 
 .headerDrop1:hover .dropMenu {
   display: block;
+  opacity: 1;
+  background: white;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0px);
+  
 }
 
 .headerLeftBtn {
@@ -181,10 +186,8 @@
   box-shadow: none;
   height: 90vh;
   padding: 50px 0;
-  transition-duration: 2s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-  transition-property: all;
+  transition: transform 10s ease-in-out;
+  transform: translateY(-100px);
 }
 
 .dropMenu::before {
@@ -273,12 +276,11 @@
   flex-direction: column;
 }
 
-.dropMenu {
-  display: none;
-}
+
 
 .dropMenu.dropOpen {
   display: block;
+  opacity: 1;
 }
 
 .nav.open {

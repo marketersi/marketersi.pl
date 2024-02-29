@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { POST_CONTACT } from "@/redux/kontakt/contactActions";
 
+
 const ContactForm = () => {
   const {
     register,
@@ -54,7 +55,7 @@ const ContactForm = () => {
 
       <div className="btn_Image">
         <div className="btn">
-          <button>Wyślij wiadomość</button>
+          <button type="submit">Wyślij wiadomość</button>
         </div>
         <div className="sticker_Image">
           <svg

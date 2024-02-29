@@ -12,10 +12,10 @@ const ContactCard = ({ title, name, phone, email, image, id }) => {
         <div className="name">{name}</div>
       </div>
       <div className="mail_id">
-        <a href="#">{email}</a>
+        <a href="mailto:">{email}</a>
       </div>
       <a href="tel:" id={id === 1 ? "card_btn_active" : ""} className="card_btn">
-        <span>Zadzwoń</span> <br /> {phone}
+        <span>Zadzwoń lub napisz do nas</span> <br /> {phone}
       </a>
     </div>
   );

@@ -143,7 +143,7 @@
 
 .card {
   text-align: center;
-  padding: 3rem 3.23rem;
+  padding: 3rem 2rem;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   --tw-shadow-colored: 4px 4px 15px 0px var(--tw-shadow-color),
@@ -176,7 +176,7 @@
 }
 
 .name {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   color: #3e3e3e;
   text-align: left;
@@ -193,7 +193,7 @@
 .card .mail_id a {
   color: #3e3e3e;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -272,7 +272,7 @@ a.card_btn:hover {
 }
 
 .solid_bold {
-  font-size: 12.5rem;
+  font-size: 13rem;
   font-weight: 900;
   color: white;
 }
@@ -280,7 +280,7 @@ a.card_btn:hover {
 .solid_tital {
   font-weight: 900;
   color: white;
-  font-size: 130px;
+  font-size: 8.42rem;
   text-align: center;
   display: block;
 }
@@ -350,7 +350,7 @@ a.card_btn:hover {
 }
 
 .map_content {
-  padding: 0px 50px 30px;
+  padding: 0px 50px 50px;
 }
 
 .map_content p {
@@ -638,8 +638,8 @@ div.glow {
 }
 
 .project_dp {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
@@ -653,7 +653,16 @@ div.glow {
 .map_container {
   position: relative;
 }
+.orders_number {
+  font-size: 13px;
+}
 
+.orders_number.mobile {
+  display: none;
+}
+.card_btn span {
+  font-size: 16px;
+}
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1360px) {
   .right_box_bottom img {
@@ -874,12 +883,20 @@ div.glow {
 }
 
 /* -------------------------------media screen---------------------- */
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .first_heading_txt {
     font-size: 50px;
     line-height: 70px;
   }
-
+  .orders_number.mobile {
+    display: block;
+  }
+  .orders_number.desktop {
+    display: none;
+}
+.right_box_bottom {
+  margin: 8rem auto 0;
+}
   .form_sect {
     width: 100%;
     padding: 20px;
@@ -921,18 +938,16 @@ div.glow {
 
   .logo img {
     width: 150px !important;
+    margin: 0 auto;
+    display: block;
   }
 
   .solid_bold {
-    font-size: 4rem;
+    font-size: 8rem;
   }
 
   .solid_tital {
-    font-weight: 900;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    display: block;
+    font-size: 80px;
   }
 
   .bg_video {
@@ -959,6 +974,7 @@ div.glow {
 
   .botum h3 {
     margin: 0 0 0 0px;
+    font-size: 20px;
   }
 
   .botum_contents {
@@ -968,7 +984,7 @@ div.glow {
   }
 
   .right_box_bottom img {
-    width: 20rem;
+    width: 23rem;
     margin: -90px 0 0 0px;
   }
 
@@ -983,18 +999,18 @@ div.glow {
   }
 
   .icon1 {
-    top: -30px;
-    left: 25px;
+    top: -20px;
+    left: 35px;
   }
 
   .icon2 {
     top: -58px;
-    left: 132px;
+    left: 142px;
   }
 
   .icon3 {
-    top: -33px;
-    left: 185px;
+    top: -23px;
+    left: 215px;
   }
 
   .icon4 {
@@ -1003,63 +1019,60 @@ div.glow {
   }
 
   .icon5 {
-    top: 35px;
-    left: 74px;
-  }
+    top: 45px;
+    left: 94px;
+}
 
   .icon6 {
-    top: -0px;
-    left: 126px;
-  }
+    top: 20px;
+    left: 146px;
+}
 
-  .icon7 {
-    top: 30px;
-    left: 200px;
-  }
+.icon7 {
+  top: 50px;
+  left: 240px;
+}
 
-  .icon8 {
-    top: 10px;
-    left: 272px;
-  }
+.icon8 {
+  top: 30px;
+  left: 312px;
+}
 
-  .icon9 {
-    top: 85px;
-    left: 88px;
-  }
+.icon9 {
+  top: 115px;
+  left: 88px;
+}
 
-  .icon10 {
-    top: 60px;
-    left: 160px;
-  }
+.icon10 {
+  top: 80px;
+  left: 187px;
+}
+.icon11 {
+  top: 140px;
+  left: 136px;
+}
+.icon12 {
+  top: 142px;
+  left: 172px;
+}
 
-  .icon11 {
-    top: 105px;
-    left: 116px;
-  }
-
-  .icon12 {
-    top: 112px;
-    left: 154px;
-  }
-
-  .icon13 {
-    top: 143px;
-    left: 170px;
-  }
-
-  .icon14 {
-    top: 104px;
-    left: 192px;
-  }
+.icon13 {
+  top: 140px;
+  left: 226px;
+}
+.icon14 {
+  top: 187px;
+  left: 212px;
+}
 
   .icon15 {
-    top: 73px;
-    left: 244px;
+    top: 103px;
+    left: 284px;
   }
 
   .icon16 {
-    top: 150px;
-    left: 240px;
+    top: 180px;
+    left: 280px;
   }
 
   .map_button {
@@ -1081,4 +1094,104 @@ div.glow {
     display: block;
     margin: 0 0 30px;
   }
+  .bottom{
+    display: block;
+    margin: 9rem 0 0;
+  }
+  .botum {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+}
+@media only screen and (max-width: 380px) {
+  .right_box_bottom img {
+    width: 20rem;
+    margin: -90px 0 0 0px;
+}
+  .solid_bold{
+    font-size: 6rem;
+  }
+  .solid_tital {
+    font-size: 60px;
+}
+.icon1 {
+  top: -30px;
+  left: 25px;
+}
+
+.icon2 {
+  top: -58px;
+  left: 132px;
+}
+
+.icon3 {
+  top: -33px;
+  left: 185px;
+}
+
+.icon4 {
+  top: 55px;
+  left: 51px;
+}
+
+.icon5 {
+  top: 35px;
+  left: 74px;
+}
+
+.icon6 {
+  top: -0px;
+  left: 126px;
+}
+
+.icon7 {
+  top: 30px;
+  left: 200px;
+}
+
+.icon8 {
+  top: 10px;
+  left: 272px;
+}
+
+.icon9 {
+  top: 85px;
+  left: 88px;
+}
+
+.icon10 {
+  top: 60px;
+  left: 160px;
+}
+
+.icon11 {
+  top: 105px;
+  left: 116px;
+}
+
+.icon12 {
+  top: 112px;
+  left: 154px;
+}
+
+.icon13 {
+  top: 143px;
+  left: 170px;
+}
+
+.icon14 {
+  top: 104px;
+  left: 192px;
+}
+
+.icon15 {
+  top: 73px;
+  left: 244px;
+}
+
+.icon16 {
+  top: 150px;
+  left: 240px;
+}
 }
