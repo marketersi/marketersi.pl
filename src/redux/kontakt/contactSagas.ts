@@ -9,6 +9,8 @@ import {
   postContactSuccess,
   postContactFail,
 } from "./contactSlice";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export function* contactScreenSaga() {
   try {
@@ -52,6 +54,7 @@ export function* postContactSaga(action) {
       yield put(postContactFail());
     }
   } catch (error) {
+    toast.error("Something went wrong");
     console.error("Error in post contact screen post saga:", error);
     yield put(postContactFail());
   }

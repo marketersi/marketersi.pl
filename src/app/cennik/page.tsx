@@ -90,7 +90,7 @@ const PriceListScreen = () => {
                         onClick={() => handleBtnClick(2)}
                       >
                         <button style={buttonStyle}>
-                          {cardMenu?.MenuTwo?.Menu2?.menu_title}
+                          {cardMenu?.MenuTwo?.Form?.menu_title}
                         </button>
                       </div>
                     </div>

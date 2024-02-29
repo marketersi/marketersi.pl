@@ -10,6 +10,7 @@ import ContactForm from "@/components/organisms/contact/Form";
 import ContactMap from "@/components/organisms/contact/Map";
 import Loader from "@/components/organisms/animation/Loader";
 import { useRouter } from "next/navigation";
+import { ToastContainer } from "react-toastify";
 
 const ContactScreen = () => {
   const { isLoading, screenData, contactUsResponse, isContactUsLoading } =
@@ -164,6 +165,7 @@ const ContactScreen = () => {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </section>
       {/* )} */}
     </>
