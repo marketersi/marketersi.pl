@@ -262,7 +262,7 @@ const ContactMap = () => {
         </div>
       )}
 
-      <div className="map_button">
+      {/* <div className="map_button">
         <Link className="nasiBtn" href="/owocni-opinie">
           Nasi klienci
         </Link>
@@ -272,7 +272,7 @@ const ContactMap = () => {
             <Image src="/assets/images/play_arrow.svg" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
