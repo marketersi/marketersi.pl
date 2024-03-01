@@ -29,9 +29,9 @@ const HomeScreen = () => {
 
   return (
     <>
-      {false ? (
+      {/* {false ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <div>
           <Hero />
           <Video />
@@ -45,7 +45,7 @@ const HomeScreen = () => {
           <Order />
           {/* <ThanksMessage /> */}
         </div>
-      )}
+      {/* )} */}
     </>
   );
 };

@@ -97,7 +97,8 @@
   outline: none;
 }
 
-input[type="range"]::before {
+
+.CalTopInput input::before {
   content: "";
   display: block;
   position: absolute;
@@ -108,6 +109,18 @@ input[type="range"]::before {
   background-color: #a51904;
   border-radius: 5px;
 }
+.CalBotInput input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc((var(--value) - 10) / (99999 - 10) * 100%);
+  height: 8px;
+  background-color: #a51904;
+  border-radius: 5px;
+}
+
 
 .custom-range {
   height: 8px;
@@ -122,6 +135,8 @@ input[type="range"] {
   -webkit-appearance: none;
   background-color: #ecbcb7;
   z-index: 1;
+  position: relative;
+  height: 8px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -226,8 +241,11 @@ section.warranty h2 {
 }
 
 /* -------------------------------media screen---------------------- */
-@media only screen and(max-width: 1360px) {
-  
+@media screen and (max-width: 1400px) {
+  .second-card {
+    width: 80%;
+    margin: 0 auto;
+}
 }
 
 @media screen and (max-width: 1024px) {

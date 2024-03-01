@@ -16,14 +16,7 @@
   align-items: center;
 }
 
-.headerDrop1:hover .dropMenu {
-  display: block;
-  opacity: 1;
-  background: white;
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(0px);
-  
-}
+
 
 .headerLeftBtn {
   border-radius: 50px;
@@ -188,6 +181,14 @@
   padding: 50px 0;
   transition: transform 10s ease-in-out;
   transform: translateY(-100px);
+  
+}
+.headerDrop1:hover .dropMenu {
+  display: block;
+  opacity: 1;
+  background: white;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0px);
 }
 
 .dropMenu::before {
@@ -374,7 +375,7 @@
   width: 100%;
   opacity: 0;
   animation-name: fadeFromTop; 
-  animation-duration: 800ms;
+  animation-duration: 300ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
@@ -411,24 +412,28 @@
 } */
 /* .navbar{
   overflow: hidden;
+  z-index: 11111;
+  position: relative;
 }
 .dropMenu {
   background: #fff;
   position: absolute;
-  top: 160;
+  top: 100%;
   left: 0;
   z-index: 1;
   width: 100%;
   opacity: 0;
   animation-name: fadeFromTop; 
-  animation-duration: 800ms;
+  animation-duration: 500ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
 
 .headerDrop1:hover .dropMenu {
   opacity: 1; 
+  display: block;
   animation-name: fadeFromBottom; 
+  
 }
 
 .headerDrop1:not(:hover) .dropMenu {

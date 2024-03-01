@@ -10,11 +10,13 @@ const Calculator = () => {
   useEffect(() => {
     // Calculate additional revenue for a 1% increase in conversion
     const additionalRevenue1 = visitors * 0.01 * averageOrderValue;
-    setConversionIncrease1(additionalRevenue1.toFixed(2));
+
+    setConversionIncrease1(additionalRevenue1);
 
     // Calculate additional revenue for a 5% increase in conversion
     const additionalRevenue5 = visitors * 0.05 * averageOrderValue;
-    setConversionIncrease5(additionalRevenue5.toFixed(2));
+
+    setConversionIncrease5(additionalRevenue5);
   }, [visitors, averageOrderValue]);
 
   const handleVisitorsChange = (event) => {
@@ -27,20 +29,26 @@ const Calculator = () => {
   const handleOrderValueChange = (event) => {
     let newValue = parseInt(event.target.value, 10);
     newValue = Math.max(newValue, 0);
-    newValue = Math.min(newValue, 9999);
+    newValue = Math.min(newValue, 99999);
     setAverageOrderValue(newValue);
   };
 
-  console.log(
-    "conversionIncrease1.toLocaleString('pl-PL' ",
-    conversionIncrease1.toLocaleString("pl-PL")
-  );
+  function formatNumberForPortugueseLocale(number) {
+    if (typeof number !== "string") {
+      number = number.toString();
+    }
+
+    // Replace dots with commas and vice versa
+    return number.replace(/[.,]/g, function (match) {
+      return match === "." ? "," : ".";
+    });
+  }
 
   return (
     <>
       <Row className="p-lg-5 mt-lg-5">
         <Col
-          lg={6}
+          xxl={5}
           className="text-center d-flex flex-column align-items-center justify-content-center"
         >
           <div className="first-card card shadow">
@@ -48,7 +56,7 @@ const Calculator = () => {
               <Col sm={4}>
                 <p>Stronę odwiedza</p>
               </Col>
-              <Col sm={4}>
+              <Col sm={4} className="CalTopInput">
                 <input
                   value={visitors}
                   onChange={handleVisitorsChange}
@@ -76,17 +84,17 @@ const Calculator = () => {
               <Col sm={4}>
                 <p className="inputHeading">Średni zysk z zamówienia to</p>
               </Col>
-              <Col sm={4}>
+              <Col sm={4} className="CalBotInput">
                 <input
                   value={averageOrderValue}
                   onChange={handleOrderValueChange}
                   type="number"
                   className="no-spinner calc_input"
                 />
-                <input
+                <input 
                   type="range"
                   min="1"
-                  max="9999"
+                  max="99999"
                   step="1"
                   value={averageOrderValue}
                   onChange={handleOrderValueChange}
@@ -101,8 +109,7 @@ const Calculator = () => {
           </div>
         </Col>
 
-        <Col lg={6} className="car text-center p-5 second-card ">
-          {/* <h2>Dodatkowy zysk</h2> */}
+        <Col xxl={7}  className="car text-center p-5 second-card ">
           <img
             src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FZysk.923f65ad.png&w=750&q=75"
             alt=""
@@ -112,11 +119,21 @@ const Calculator = () => {
             <h6>wzrost konwersji o 1%</h6>
             <Row>
               <Col className="text-end pe-4">
-                <h3>{conversionIncrease1.toLocaleString("pl-PL")}zł</h3>
+                <h3>
+                  {formatNumberForPortugueseLocale(
+                    conversionIncrease1.toLocaleString("en-US")
+                  )}
+                  zł
+                </h3>
                 <p>Miesięcznie</p>
               </Col>
               <Col className="text-start ps-4">
-                <h3>{(conversionIncrease1 * 12).toLocaleString("pl-PL")}zł</h3>
+                <h3>
+                  {formatNumberForPortugueseLocale(
+                    (conversionIncrease1 * 12).toLocaleString("en-US")
+                  )}{" "}
+                  zł
+                </h3>
                 <p>Rocznie</p>
               </Col>
             </Row>
@@ -126,11 +143,21 @@ const Calculator = () => {
             <h6>wzrost konwersji o 5%</h6>
             <Row>
               <Col className="text-end pe-4">
-                <h3>{conversionIncrease5.toLocaleString("pl-PL")}zł</h3>
+                <h3>
+                  {formatNumberForPortugueseLocale(
+                    conversionIncrease5.toLocaleString("en-US")
+                  ).toLocaleString("en-US")}{" "}
+                  zł
+                </h3>
                 <p>Miesięcznie</p>
               </Col>
               <Col className="text-start ps-4">
-                <h3>{(conversionIncrease5 * 12).toLocaleString("pl-PL")}zł</h3>
+                <h3>
+                  {formatNumberForPortugueseLocale(
+                    (conversionIncrease5 * 12).toLocaleString("en-US")
+                  ).toLocaleString("en-US")}{" "}
+                  zł
+                </h3>
                 <p>Rocznie</p>
               </Col>
             </Row>

@@ -16,7 +16,7 @@ const Warranty = () => {
             <p>
             {warranty?.card?.subtitle}
             </p>
-            <a href="/cennik">{warranty?.card?.buttonText}</a>
+            <a href="/cennik" >{warranty?.card?.buttonText}</a>
           </div>
           <div className="warranty_card_img">
             <img
