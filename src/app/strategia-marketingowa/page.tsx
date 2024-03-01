@@ -41,9 +41,9 @@ const StrategiaMarketingowa = () => {
 
   return (
     <>
-    {isLoading ? (
+    {/* {isLoading ? (
         <Loader />
-      ) : (
+      ) : ( */}
       <div>
         {/* 1. MainHeading */}
         <MainHeading />
@@ -106,7 +106,7 @@ const StrategiaMarketingowa = () => {
         {/* 20. Accordion */}
         <YesAccordion items={items} />
       </div>
-      )}
+      {/* )} */}
     </>
   );
 };

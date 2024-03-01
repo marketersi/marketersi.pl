@@ -95,9 +95,9 @@ const LogoDesignScreen = () => {
 
   return (
     <>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <>
           {/* section 1 */}
           <LogoBanner />
@@ -152,7 +152,7 @@ const LogoDesignScreen = () => {
           </section> */}
           <LogoFooter />
         </>
-      )}
+      {/* )} */}
     </>
   );
 };
