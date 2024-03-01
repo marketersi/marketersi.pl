@@ -5,14 +5,14 @@
 .cr_header h2 {
   font-size: 100px;
   font-weight: 700;
-  margin-top: 100px;
-  margin-bottom: 35px;
+  max-width: 750px;
+  margin: 100px auto 35px;
 }
 
 .cr_header p {
   font-size: 40px;
   font-weight: 500;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
 }
 @media only screen and (max-width: 1024px){

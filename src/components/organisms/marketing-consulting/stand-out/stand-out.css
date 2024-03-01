@@ -9,7 +9,9 @@
   align-items: center;
   padding: 70px 0;
   text-align: left;
-  gap: 60px;
+  gap: 50px;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .so_flex h2 {
@@ -19,12 +21,13 @@
 
 .so_flex p {
   font-weight: 300;
-  font-size: 27px;
+  font-size: 28px;
   margin-top: 12px;
 }
 
 .so_header {
   margin: 36px auto;
+  max-width: 800px;
 }
 
 .so_header h1 {
@@ -33,8 +36,8 @@
 }
 
 .so_header p {
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 400;
 }
 
 .so_paras {

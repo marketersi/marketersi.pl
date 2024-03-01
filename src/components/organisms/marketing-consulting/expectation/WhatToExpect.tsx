@@ -43,7 +43,7 @@ const WhatToExpect = () => {
           alt="feather image left"
           className="leaf_img"
         />
-        <div className="w-sm-50 mx-5">
+        <div className="w-sm-50 mx-sm-5">
           <p>
             {/* Nie rozliczamy pozycji w Google, czy wejść na stronę, bo ważna jest
             tylko ilość klientów. */}

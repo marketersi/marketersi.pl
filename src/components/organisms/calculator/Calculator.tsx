@@ -118,7 +118,7 @@ const Calculator = () => {
           <div className="my-3">
             <h6>wzrost konwersji o 1%</h6>
             <Row>
-              <Col className="text-end pe-4">
+              <Col sm={6} className="text-sm-end text-start pe-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     conversionIncrease1.toLocaleString("en-US")
@@ -127,7 +127,7 @@ const Calculator = () => {
                 </h3>
                 <p>Miesięcznie</p>
               </Col>
-              <Col className="text-start ps-4">
+              <Col sm={6} className="text-start ps-sm-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     (conversionIncrease1 * 12).toLocaleString("en-US")
@@ -142,7 +142,7 @@ const Calculator = () => {
           <div>
             <h6>wzrost konwersji o 5%</h6>
             <Row>
-              <Col className="text-end pe-4">
+              <Col sm={6} className="text-sm-end text-start pe-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     conversionIncrease5.toLocaleString("en-US")
@@ -151,7 +151,7 @@ const Calculator = () => {
                 </h3>
                 <p>Miesięcznie</p>
               </Col>
-              <Col className="text-start ps-4">
+              <Col sm={6} className="text-start ps-sm-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     (conversionIncrease5 * 12).toLocaleString("en-US")

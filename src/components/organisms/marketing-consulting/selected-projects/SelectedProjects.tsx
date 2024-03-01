@@ -43,11 +43,11 @@ const SelectedProjects = () => {
         if (index % 2 !== 0) {
           return (
             <div className="my-5" key={index}>
-              <Row>
+              <Row className="justify-content-center">
                 <Col lg={6}>
                   <img src={banner_image} alt="project-banner-image"  className="left-card-img"/>
                 </Col>
-                <Col lg={6} className="d-flex justify-content-center align-items-center">
+                <Col lg={4} className="d-flex justify-content-center align-items-center">
                   <div className="sp_card_right text-center">
                     <p>{title}</p>
                     <h2>{info}</h2>
@@ -71,7 +71,7 @@ const SelectedProjects = () => {
           return (
             <div className="sp_card_container" key={index}>
               <Row>
-                <Col lg={6} className="d-flex justify-content-center align-items-center">
+                <Col lg={5} className="d-flex justify-content-center align-items-center order-lg-1 order-2">
                   <div className="sp_card_left text-center">
                     <p>{title}</p>
                     <h2>{info}</h2>
@@ -84,7 +84,7 @@ const SelectedProjects = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="order-lg-2 order-1">
                   <img src={banner_image} alt="project-banner-image" className="left-card-img"/>
                 </Col>
               </Row>
@@ -98,10 +98,10 @@ const SelectedProjects = () => {
 
 export default SelectedProjects;
 
-<div className="sp_card_container">
+{/* <div className="sp_card_container">
   <Row>
-    <Col className="d-flex justify-content-center align-items-center">
-      <div className="sp_card_left text-center">
+    <Col lg={4} className="d-flex justify-content-center align-items-center">
+      <div classNae="sp_card_left text-center">
         <p>XCEED</p>
         <h2>od zera do 40 000 000 PLN rocznego obrotu w 5 lat.</h2>
         <div>
@@ -113,24 +113,24 @@ export default SelectedProjects;
         </div>
       </div>
     </Col>
-    <Col>
+    <Col lg={6}>
       <img
         src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FXceed%20app.c37538a7.jpg&w=750&q=75"
         alt=""
       />
     </Col>
   </Row>
-</div>;
+</div>; */}
 
-<div className="my-5">
+{/* <div className="my-5">
   <Row>
-    <Col>
+    <Col lg={6}>
       <img
         src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcupsell.e2c17028.jpg&w=750&q=75"
         alt=""
       />
     </Col>
-    <Col className="d-flex justify-content-center align-items-center">
+    <Col lg={4}   className="d-flex justify-content-center align-items-center">
       <div className="sp_card_right text-center">
         <p>ClickSell</p>
         <h2>Sklep dla graczy od zera do 3 000 000 PLN w 2 lata.</h2>
@@ -144,4 +144,4 @@ export default SelectedProjects;
       </div>
     </Col>
   </Row>
-</div>;
+</div>; */}

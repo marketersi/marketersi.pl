@@ -19,9 +19,9 @@ const Team = () => {
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
   }, [dispatch]);
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
   return (
     <>

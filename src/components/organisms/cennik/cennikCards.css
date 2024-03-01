@@ -1,13 +1,8 @@
-/* select */
+
 .select-input {
   width: 75%;
   margin: 0 auto;
 }
-
-/* select */
-
-/* Card one */
-/* slider section */
 
 .slider_Section {
 }
@@ -52,9 +47,6 @@
   box-shadow: 0 6px 0px #981a04;
 }
 
-/* Slider section */
-
-/* feedback section */
 .feedback_section h2 {
   font-weight: 700;
   font-size: 20px;
@@ -78,10 +70,6 @@
   margin-bottom: 18px;
   border: 1px solid rgb(201, 201, 201);
 }
-
-/* feedback section */
-
-/* user details section */
 .user-details_section h2 {
   color: rgb(45, 45, 45);
   font-weight: 700;
@@ -113,13 +101,6 @@
   padding: 8px 30px;
 }
 
-/* user details section */
-
-/* card two */
-/* component one */
-
-/* component one */
-
 /* component two */
 .component-two_section h2 {
   color: rgb(45, 45, 45);
@@ -150,14 +131,14 @@
 }
 
 .componentThree_input-container {
-  padding: 20px;
+  padding: 20px 80px;
 }
 
 .componentThree_input-container input {
-  padding: 8px 16px;
+  padding: 12px 16px;
   margin: 0 10px 18px auto;
-  border-radius: 20px;
-  width: 50%;
+  border-radius: 40px;
+  width: 45%;
   border: 1px solid rgb(201, 201, 201);
 }
 
@@ -192,7 +173,6 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  /* box-shadow: 0 0 0 12px rgb(255, 255, 255); */
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 1), 0 0 20px rgba(0, 0, 0, 0.2);
 }
 input[type="range"]:active::-webkit-slider-thumb {
@@ -266,7 +246,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 }
 .contact {
   position: absolute;
-  top: -20px;
+  top: -50px;
   right: -204px;
   width: 230px;
 }
@@ -292,4 +272,35 @@ input[type="range"]:focus::-webkit-slider-thumb {
 .contact p {
   font-size: 15px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact{
+    display: none;
+  }
+  .componentThree_input-container {
+    padding: 20px 0px;
+  }
+  .componentThree_input-container input{
+    width: 95%;
+  }
+  .select-input {
+    width: 95%;
+    margin: 0 auto;
+}
+.Modal {
+  width: 80%;
+  max-width: 100%;
+  padding: 30px 20px;
+}
+.Modal .close {
+  top: -32px;
+  right: -28px;
+  font-size: 30px;
+}
 }
