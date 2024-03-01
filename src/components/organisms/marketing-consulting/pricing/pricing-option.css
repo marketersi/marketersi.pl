@@ -1,6 +1,7 @@
 .po_pricing_sec {
-  padding: 100px 0;
+  padding: 50px 0 100px;
   text-align: center;
+  max-width: 800px;
 }
 .po_title {
   font-size: 48px;
@@ -8,25 +9,31 @@
 }
 
 .po_title {
-  font-size: 70px;
+  font-size: 46px;
   font-weight: 500;
+}
+p.po_subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 22px;
 }
 
 .po_card_custom {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff,
     2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset;
   border-radius: 30px;
-  padding: 36px 0;
+  padding: 56px 0;
   background-color: rgba(247, 247, 247, 1);
-  width: 60%;
+  width: 96%;
   margin: auto;
   margin-top: 70px;
 }
 
+
 .po_card_custom h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 15px ;
 }
 
 .po_input {
@@ -63,7 +70,7 @@
   display: grid;
   grid-template-columns: 20% 80%;
   justify-content: center;
-  padding: 30px 100px;
+  padding: 40px 100px;
   gap: 30px;
 }
 
@@ -92,6 +99,9 @@
 @media only screen and (max-width: 767px){
   .po_title {
     font-size: 30px;
+}
+.po_card_custom{
+  padding: 50px 20px;
 }
 .po_card_custom h2 {
   font-size: 20px;

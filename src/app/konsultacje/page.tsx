@@ -9,6 +9,7 @@ import WhatToExpect from "@/components/organisms/marketing-consulting/expectatio
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_CONSULTING_SCREEN_DATA } from "@/redux/konsultacje/consultingAction";
 import Loader from "@/components/organisms/animation/Loader";
+import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 
 const MarketingConsulting = () => {
   const { isLoading, screenData } = useSelector((state) => state.consulting);
@@ -17,10 +18,17 @@ const MarketingConsulting = () => {
     console.log("consulting screen data from UI => ", screenData);
   }
 
+  
+  const { screenData: PriceScreenData } = useSelector(
+    (state) => state.priceList
+  );
+  const { Form } = PriceScreenData?.PricingOption || {};
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_CONSULTING_SCREEN_DATA });
+    dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
   }, []);
 
   return (
