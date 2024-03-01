@@ -205,7 +205,7 @@ a.card_btn {
   padding: 10px;
   border: 2px solid #25b16d;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.2;
   transition: background-color 0.2s;
 }
@@ -638,8 +638,8 @@ div.glow {
 }
 
 .project_dp {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 
@@ -661,7 +661,7 @@ div.glow {
   display: none;
 }
 .card_btn span {
-  font-size: 16px;
+  font-size: 22px;
 }
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1360px) {
@@ -1094,10 +1094,11 @@ div.glow {
     display: block;
     margin: 0 0 30px;
   }
-  .bottom{
+  .bottom {
     display: block;
-    margin: 9rem 0 0;
-  }
+    margin: 9rem auto 0;
+    width: 90%;
+}
   .botum {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1105,6 +1106,10 @@ div.glow {
 }
 .first_form_container{
   padding: 2rem 0;
+}
+.botum_contents {
+  width: 90%;
+  margin: 0 auto;
 }
 }
 @media only screen and (max-width: 380px) {

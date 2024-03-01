@@ -19,7 +19,7 @@ const ContactCard = ({ title, name, phone, email, image, id }) => {
         id={id === 1 ? "card_btn_active" : ""}
         className="card_btn"
       >
-        <span>Zadzwoń lub napisz do nas</span> <br /> {phone}
+        <span>Zadzwoń</span> <br /> {phone}
       </a>
     </div>
   );
