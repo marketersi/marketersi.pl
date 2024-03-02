@@ -414,5 +414,17 @@ body {
 .cartAnimation img {
   width: 150px !important;
 }
+.OurClients_Slide_Title {
+  font-size: 25px !important;
+}
+.OurClients_Slide{
+  margin-bottom: 0;
+}
+.OurClients_Card_Two_Content {
+  color: #8f8f8f;
+  font-size: 22px;
+  line-height: 34.56px;
+  transform: matrix(1, 0, 0, 1, 0.4, 0);
+}
 
 }

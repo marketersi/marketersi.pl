@@ -33,7 +33,7 @@ const Team = () => {
       <OurClients />
       <TeamComponents.Review />
       <section className={style.Customers}>
-        <div className={style.teamContent}>
+        <div className={`${style.teamContent} mb-sm-5`}>
           <p className={style.customersPara}>
             <span>{section3?.section_three_header}</span>
             {section3?.section_three_subheader}

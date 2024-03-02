@@ -23,7 +23,7 @@ const Banner = () => {
 
   return (
     <>
-      <ReactPlayer
+      <div className={style.zespolVideo}><ReactPlayer
         url={herosection?.background_video}
         playing={true}
         loop={true}
@@ -31,7 +31,7 @@ const Banner = () => {
         width="100%"
         height="auto"
         className={style.bannerVideo}
-      />
+      /></div>
       <div className={style.overlay}></div>
       <motion.button
         className="arrowAnimation"
