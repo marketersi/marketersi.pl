@@ -86,7 +86,7 @@ const Footer = () => {
                       Badanie strony i marketingu przez ekspertów [Bezpłatne]
                     </Link> */}
                     <Link href="/czy-oplaca-sie-agencja-marketingowa">
-                      Kalkulator zysku z nowej strony (ROI)
+                    Policz czy Ci się to opłaca?
                     </Link>
                     {/* <Link href="/#">Test skuteczności strony (Krótki)</Link> */}
                     {/* <Link href="/#">Konsultacja marketingu</Link> */}

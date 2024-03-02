@@ -30,7 +30,8 @@ import Loader from "@/components/organisms/animation/Loader";
 
 const StrategiaMarketingowa = () => {
 
-  const { isLoading } = useSelector((state) => state.strategy);
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+  const { FAQsection} = screenData || {};
 
   const dispatch = useDispatch();
 
@@ -91,7 +92,6 @@ const StrategiaMarketingowa = () => {
         <QuoteTwo />
 
         {/* 16. OurClients */}
-        {/* <OurClients /> */}
         <OurClients />
 
         {/* 17. Price */}
@@ -104,7 +104,7 @@ const StrategiaMarketingowa = () => {
         <AnswerAll />
 
         {/* 20. Accordion */}
-        <YesAccordion items={items} />
+        <YesAccordion items={FAQsection?.FAQcard} />
       </div>
       {/* )} */}
     </>

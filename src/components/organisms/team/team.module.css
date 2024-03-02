@@ -217,7 +217,7 @@
 }
 
 .slideAnimateImg {
-    margin: -200px 0 0 200px
+    margin: -200px 0 0 80px
 }
 
 .teamContent h2 {
@@ -305,7 +305,7 @@
 }
 
 .creativePara {
-    margin: 100px 0;
+    margin: 100px 0 !important;
 }
 
 /* ===================Culture==================== */
@@ -376,7 +376,7 @@
 .peopleCard {
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
     width: 1000px;
-    margin: 200px auto 100px;
+    margin: 100px auto 100px;
     background: #f6f6f6;
     border-radius: 30px;
     padding: 70px;
@@ -409,6 +409,7 @@
     top: -3px !important;
     width: 350px;
     left: 39%;
+    z-index: 1;
 }
 
 .peopleVideoContent {
@@ -473,7 +474,8 @@
     display: block;
 }
 .peopleTitle{
-    margin: 0 0 100px;
+    margin: 0 0 50px;
+    font-size: 90px !important;
 }
 .peoplePara{
     margin: 0 0 0px;
@@ -571,6 +573,8 @@
 
     .personalCard h6 {
         text-align: center;
+        font-size: 30px;
+        line-height: 45px;
     }
 
     .creative h2 {
@@ -643,7 +647,7 @@
     }
 
     .img20 img {
-        margin: -45px 0 0 -60px;
+        margin: -13px 0 0 -60px;
     }
 
     .teamContent {
@@ -661,7 +665,7 @@
     }
 
     .bannerBottomContent h2 {
-        font-size: 45px;
+        font-size: 35px;
         word-wrap: break-word;
     }
 
@@ -689,17 +693,23 @@
     }
 
     .teamContent h2 {
-        font-size: 45px;
+        font-size: 35px;
         word-wrap: break-word;
     }
 
     .Support {
         padding: 00 20px 0px;
+        background-position: 10px 200px;
+        background-size: 100%;
+        margin-bottom: 100px;
+    }
+    .Support p{
+        margin-top: 180px !important;
     }
 
-    .sSupport h4 {
-        font-size: 45px;
-        line-height: 60px;
+    .Support h4 {
+        font-size: 35px;
+        line-height: 50px;
     }
 
     .slideAnimateImg {
@@ -727,10 +737,10 @@
         display: none;
     }
     .cultureCard h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .peopleCard h3 {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 50px;
     }
     .dogImg {
@@ -759,6 +769,7 @@
     }
     .peopleTitle{
         margin: 0 0 0px;
+        font-size: 35px !important;
     }
     .peoplePara{
         margin: 50px 0 0px !important;
@@ -775,5 +786,14 @@
     .peopleCard {
         margin: 100px auto 100px;
     }
-    
+    .bannerVideo {
+        width: 100% !important;
+    }
+    .zespolVideo{
+        width: 100%!important;
+        overflow: hidden;
+    }
+    .creativePara {
+        margin: 50px 0 100px !important;
+    }
 }
