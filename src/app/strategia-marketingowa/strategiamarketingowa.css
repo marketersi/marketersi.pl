@@ -98,6 +98,9 @@
 /* 4. MainContentTwo */
 .MainContentTwo {
   margin-bottom: 80px;
+  background-image: url(https://images.prismic.io/marketersi/0e530cd3-7759-4996-8f47-9be27ed2ea7f_Strategia-Marketingowa-przyklad.avif?auto=compress,format);
+  background-position: 0px -200px;
+  background-repeat: no-repeat;
 }
 
 .MainContentTwo_Container p {
@@ -116,6 +119,9 @@
   font-size: 12px;
   color: #515151;
   text-align: left;
+}
+.MainContentTwo_Container p:nth-child(4) {
+max-width: 500px;
 }
 
 /* 5. ResultTable */
@@ -1861,7 +1867,7 @@
   .MainContentTwo_Container p {
     font-size: 22px;
     line-height: 40.2px;
-    text-align: center;
+    text-align: left;
   }
 
   .ResultTable_Title {
@@ -1892,7 +1898,7 @@
   }
 
   .Testimonial_Card_Content_Title {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .Testimonial_Card_Content_Button {
@@ -1900,12 +1906,13 @@
   }
 
   .ResultMax_Title {
-    font-size: 45px;
+    font-size: 30px;
     word-wrap: break-word;
+    line-height: 35px;
   }
 
   .ResultMax_Content_One {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .ResultMax_Content_Two {
@@ -1922,13 +1929,13 @@
   .Analysis_Card_Content_Title {
     font-size: 35px;
     line-height: 45px;
-    text-align: center;
+    text-align: left;
   }
 
   .Analysis_Card_Content_Text {
     font-size: 22px;
     line-height: 35px;
-    text-align: center;
+    text-align: left;
   }
 
   .Analysis_Card_Content_Table {
@@ -1937,13 +1944,13 @@
 
   .Analysis1_Dropdown_Text1 {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
   }
 
   .Analysis1_Dropdown_Text3 {
     font-size: 18px;
     line-height: 27px;
-    text-align: center;
+    text-align: left;
   }
 
   .Analysis1_Dropdown_Image img {
@@ -1975,7 +1982,7 @@
   .Analysis3_Dropdown_Text1,
   .Analysis3_Dropdown_Text2,
   .Analysis3_Dropdown_Text3 {
-    text-align: center;
+    text-align: left;
   }
 
   .Analysis2_Dropdown_Image1 img,

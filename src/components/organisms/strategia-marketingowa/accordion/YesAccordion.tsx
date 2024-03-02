@@ -36,8 +36,9 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
             transform: "translate(0px, 0px)",
           }}
         >
-          Na wszystkie pytania 
-          odpowiedź brzmi TAK!
+          {/* Na wszystkie pytania 
+          odpowiedź brzmi TAK! */}
+          {FAQsection?.title}
         </h2>
         </div>
         {FAQsection?.FAQcard.map((item, index) => (
@@ -60,11 +61,11 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
               )}
             </div>
           ))}
-        <a className="send-offer-button js--triggerAnimation">
+        {/* <a className="send-offer-button js--triggerAnimation">
           <span>
             <span>OK Wyślijcie mi niezobowiązującą ofertę </span>
           </span>
-        </a>
+        </a> */}
       </div>
     </>
   );
