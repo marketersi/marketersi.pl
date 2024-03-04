@@ -1,39 +1,39 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const PriceList = () => {
+
+  const {screenData} = useSelector((state) => state.sales);
+  const {pricingSection} =screenData || {};
   return (
     <>
     <div className="container">
-          <div className="copywriter-custom-header text-center">Cennik</div>
+          <div className="copywriter-custom-header text-center">{pricingSection?.title}</div>
           <div className="copywriter-custom-subheader text-center">
-            Jak wyceniamy teksty?
+            {pricingSection?.sub_title}
           </div>
         </div>
         <div className="container copywriter-whatwedo-container">
           <div className="row">
             <div className="col-md-6 copywriter-what-we-do">
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Skuteczny-copywriting.jpg"
+                src={pricingSection?.image_left}
                 title="Copywriting cennik usług pisania tekstów reklamowych"
                 alt="Sprzedażowe teksty na stronę internetową firmy"
               />
               <div className="copywriter-intro-sm-text">
-                Piszemy treści, które skutecznie <br />
-                realizują wyznaczone im zadania. <br />
-                Motywują, przekonują i zarabiają.
+               {pricingSection?.image_left_desc}
               </div>
             </div>
             <div className="col-md-6 copywriter-what-we-do">
               <img
                 className="custom-margin-bottom-5 nierobimy-max-width-100"
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/content-marketing-bez-niespodzianek-jpg.jpg"
+                src={pricingSection?.image_right}
                 title="Usługi copywriterskie dla Twojej firmy"
                 alt="Opracowanie tekstów dla jednej strony internetowej"
               />
               <div className="copywriter-intro-sm-text copywriter-intro-sm-mright">
-                Nie tworzymy ,,bezmyślnych wypełniaczy” <br />
-                mierzonych ilością znaków. Takich jak masowe <br />
-                teksty dla SEO czy oklepane opisy produktów.
+               {pricingSection?.image_right_desc}
               </div>
             </div>
           </div>
@@ -42,26 +42,21 @@ const PriceList = () => {
           <div className="row">
             <div className="col-md-12 copywriter-custom-smaller">
               <p className="theme-desc">
-                Nasz cennik zamknęliśmy w rozsądnym przedziale dla małych firm.{" "}
-                <br />
-                Każdy projekt jest inny. Każda cena podawana jest indywidualnie,{" "}
-                <br />
-                elastycznie i przyjaźnie. Tylko jakość nie podlega negocjacji.
+               {pricingSection?.para_1}
               </p>
 
               <p className="theme-desc">
-                90% pracy wykonamy dla Ciebie za 50% ceny. Drugą połowę <br />
-                rozliczymy dopiero, gdy będziesz w pełni zadowolony.
+                {pricingSection?.para_2}
               </p>
 
               <p className="theme-desc">
                 <strong>
-                  Możesz czuć się <br className="dont-delete" /> bezpiecznie.{" "}
+                  {pricingSection?.bottom_text}
                 </strong>
               </p>
 
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Owocni.jpg"
+                src={pricingSection?.brand_logo}
                 className="copywriter-owocni"
                 title="Agencja reklamowa przygotuje teksty reklamowe dla Ciebie"
                 alt="Logo firmy Owocni, która zajmuje się copywritingiem"
@@ -71,7 +66,7 @@ const PriceList = () => {
         </div>
         <div className="copywriter-wierzymy-container">
           <img
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Wierzymy-w-male-firmy.jpg"
+            src={pricingSection?.banner_img}
             title="Odpowiednie slogany reklamowe wzmocnią pozycję Twojej firmy"
             alt="Owocni oferują pisanie tekstów dla małych firm"
           />

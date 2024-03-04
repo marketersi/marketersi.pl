@@ -30,11 +30,11 @@ const Culture = () => {
       </Container>
       <div className={`${style.teamContent} ${style.culturedContent}`}>
         <p>
-          <span>{section7?.subtitle_1}</span>
+          <span className="d-inline-block me-2">{section7?.subtitle_1}</span>
           {section7?.paragraph_1}
         </p>
         <p>
-          <span>{section7?.subtitle_2}</span>
+          <span className="d-inline-block me-2"> {section7?.subtitle_2}</span>
           {section7?.paragraph_2}
         </p>
         <p>

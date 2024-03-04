@@ -7,7 +7,7 @@ export const API_ENDPOINTS = {
   EXAMINATION_SCREEN: "api/examination",
   TEAM_SCREEN: "api/teamsearch-section",
   UX_SCREEN: "",
-  SALES_SCREEN: "",
+  SALES_SCREEN: "api/sales-content-setting",
   STRATEGY_SCREEN: "api/get-marketing-strategy",
   OPINION_SCREEN: "",
   ANATOMY_SCREEN: "",

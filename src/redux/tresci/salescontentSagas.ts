@@ -7,7 +7,7 @@ import {
   fetchSalesContentScreenSuccess,
 } from "./salescontentSlice";
 
-export function* anatomyScreenSaga() {
+export function* salesScreenSaga() {
   try {
     console.log("Inside sales content screen saga");
     yield put(fetchSalesContentScreenStart());

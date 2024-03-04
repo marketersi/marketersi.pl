@@ -14,7 +14,11 @@ type AccordionProps = {
   items: AccordionItem[];
 };
 
-const Faq: React.FC<AccordionProps> = ({ items }) => {
+const Faq: React.FC<AccordionProps> = ({ faqAQ }) => {
+
+
+  const {faq_ques, faq_ans} = faqAQ || [];
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
@@ -36,8 +40,8 @@ const Faq: React.FC<AccordionProps> = ({ items }) => {
         />
       </div>
       <div className="faqContainer">
-      {items &&
-        items.map((item, index) => (
+      {faqAQ &&
+        faqAQ?.map((item, index) => (
           <div key={index} className="accordion-item">
             <div
               className={`accordion-title ${
@@ -45,7 +49,7 @@ const Faq: React.FC<AccordionProps> = ({ items }) => {
               }`}
               onClick={() => handleClick(index)}
             >
-              {item.title}
+              {item.faq_ques}
               {index === activeIndex ? (
                 <FontAwesomeIcon icon={faMinus} className="icon" />
               ) : (
@@ -53,7 +57,7 @@ const Faq: React.FC<AccordionProps> = ({ items }) => {
               )}
             </div>
             {index === activeIndex && (
-              <div className="accordion-content">{item.content}</div>
+              <div className="accordion-content">{item.faq_ans}</div>
             )}
           </div>
         ))}

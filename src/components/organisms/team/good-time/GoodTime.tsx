@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "../team.module.css";
 import PersonalCard from "../personal/PersonalCard";
 import { useSelector } from "react-redux";
@@ -9,10 +9,24 @@ const GoodTime = () => {
   const { section8 } = screenData || {};
   const { card1, card2, card3, card4, card5 } = screenData?.section9 || {};
 
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000); 
+
+   
+    return () => clearInterval(interval);
+  }, []);
+
+
   return (
     <>
       <div className={style.teamContent}>
-        <h2 className={style.goodHeadingMain}>{section8?.section8_title}</h2>
+        <h2 className={style.goodHeadingMain}>{section8?.section8_title?.split(' ').slice(0, 2).join(' ')} <div className="d-inline-block mx-2 ">{time.toLocaleTimeString([] , { hour: '2-digit', minute: '2-digit', hour12: false })}</div>
+        {section8?.section8_title?.split(' ').slice(2).join(' ')}
+         </h2>
         <p>{section8?.section8_discription_1}</p>
         <p>{section8?.section8_discription_2}</p>
       </div>
