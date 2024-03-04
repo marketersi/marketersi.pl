@@ -1365,10 +1365,10 @@ max-width: 500px;
 
 .ModalTitle {
   color: #ffffff;
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 500;
   letter-spacing: -1.15px;
-  line-height: 50.6px;
+  line-height: 45px;
   text-align: center;
   padding-inline: 30px;
   margin-top: 50px;
@@ -1381,18 +1381,31 @@ max-width: 500px;
   line-height: 30px;
   text-align: center;
   padding-inline: 100px;
-  margin-top: -60px;
+  margin-top: -80px;
+}
+.ModalCard p{
+text-align: center;
+}
+
+.component-two_section textarea {
+  border-radius: 20px;
+  border-color: #cecece;
+  width: 90%;
+  padding: 12px;
+  outline: none;
+  margin: 0 auto;
+  display: block;
 }
 
 .ModalCard {
   max-width: 1280px;
-  min-height: 100px;
+  min-height: auto;
   background-color: #f7f7f7;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 15px 0px, #ffffff 0px 0px 0px 0px,
     #ffffff 2px 2px 2px 0px inset, #c7c7c7 -2px -2px 2px 0px inset;
   padding: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   padding-top: 40px;
   margin-top: -50px;
   display: flex;
@@ -1400,6 +1413,16 @@ max-width: 500px;
   justify-content: space-between;
   align-items: center;
 }
+.component-two_section{
+  margin-bottom: -50px;
+}
+.formTwo{
+  margin-bottom: -50px;
+}
+.componentThree_section h2{
+  text-align: center;
+}
+
 
 .ModalDropdownTitleOne {
   color: #2d2d2d;
@@ -1407,6 +1430,21 @@ max-width: 500px;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
+}
+.contact {
+  right: -250px;
+}
+.contact h5 {
+  color: white;
+  text-align: center;
+}
+.contact p {
+  color: white;
+}
+.contact a {
+text-align: center;
+margin: 0 auto;
+display: block;
 }
 
 .ModalDropdownTitleTwo {
@@ -1460,6 +1498,9 @@ max-width: 500px;
   color: white;
   border: none;
   font-size: x-large;
+}
+.card-heading{
+  text-align: center;
 }
 
 /* *** */
@@ -2189,4 +2230,26 @@ max-width: 500px;
     line-height: 27px;
     padding-inline: 0px;
   }
+  .Modal {
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+    left: 0;
+    right: 0;
+}
+.ModalContent{
+  padding-inline: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.ModalCard{
+  margin-top: 20px;
+}
+.ModalTitle{
+  padding-inline: 0;
+}
+.CenikModal{
+  max-width: 100%;
+  width: 100%;
+}
 }

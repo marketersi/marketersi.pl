@@ -1,15 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-// const ParkData = {
-//   title: "GPNT GDAŃSK",
-//   subtitle: "Odświeżyliśmy wizerunek Gdańskiego Parku Naukowo-Technologicznego",
-//   text: "Praca nad nowym wizerunkiem Parku Naukowo-Technologicznego polegała na przeniesieniu logo z poprzedniej epoki do technologicznej współczesności. Wyglądać nowocześnie, ale zachowując ciągłość i spójność.",
-//   logoImage: "/assets/images/logo-design/daco-logo.webp",
-//   bannerImage:
-//     "/assets/images/logo-design/Projektowanie-graficzne-Park-Naukowo-Technologicznego.jpg.webp",
-// };
-
 const Park = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { ParkData } = screenData || {};

@@ -135,21 +135,21 @@ const LogoDesignScreen = () => {
           {/* section 17 */}
           <Construction />
           {/* section 18 */}
-          {/* <Restaurant /> */}
+          <Restaurant />
           {/* section 19 */}
-          {/* <Park /> */}
+          <Park />
           {/* section 20 */}
-          {/* <GPN /> */}
+          <GPN />
           {/* section 21 */}
-          {/* <NewCompany /> */}
+          <NewCompany />
           {/* section 22 */}
-          {/* <section className="black-sec-form">
+          <section className="black-sec-form">
             <div className="copywriter-ending-1 text-center">
               Zróbmy razem <br />
               coś fajnego
             </div>
             <Form />
-          </section> */}
+          </section>
           <LogoFooter />
         </>
       {/* )} */}

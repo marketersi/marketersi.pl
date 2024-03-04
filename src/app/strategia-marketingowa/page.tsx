@@ -27,17 +27,27 @@ import OurClients from "../../components/organisms/main/ourclients/OurClients";
 import "./strategiamarketingowa.css";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 import Loader from "@/components/organisms/animation/Loader";
+import { FETCH_CONSULTING_SCREEN_DATA } from "@/redux/konsultacje/consultingAction";
+import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
+
 
 const StrategiaMarketingowa = () => {
 
   const { isLoading, screenData } = useSelector((state) => state.strategy);
   const { FAQsection} = screenData || {};
+  // const {  screenData : ConsultData  } = useSelector((state) => state.consulting);
+
+  const { screenData: PriceListData } = useSelector(
+    (state) => state.priceList
+  );
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_STRATEGY_SCREEN_DATA });
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
+    dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
+    // dispatch({ type: FETCH_CONSULTING_SCREEN_DATA });
   }, [dispatch]);
 
   return (

@@ -19,21 +19,9 @@ const NewCompany = () => {
       <div className="halfc-bottom"></div>
       <section className="names-thematic-section-black names-thematic-section-black-fix">
         <div className="copywriter-ending-main-theme text-center">
-          {/* Niech Twoja nowa <br />
-          firma zachwyca już <br />
-          od pierwszego <br />
-          spojrzenia <br /> */}
           {title && title}
         </div>
-        {/* <div className="copywriter-ending-3 text-center copywriter-ending-a copywriting-ending-text">
-          Jeśli lubisz ten kreatywny klimat zrozumienia <br />
-          panujący w małych zespołach projektowych, <br />
-          to w Owocnych poczujesz się jak w domu.
-        </div>
-        <div className="projects-typed-label text-center copywriter-ending-a copywriting-ending-subtext">
-          Mamy prosty sposób na świetne projekty. <br />
-          Nazywa się świetni ludzie.
-        </div> */}
+       
         {subtitle && (
           <div className="copywriter-ending-3 text-center copywriter-ending-a copywriting-ending-text">
             {subtitle}

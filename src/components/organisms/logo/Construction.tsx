@@ -1,19 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const ConstructionData = {
-  title: "CORE CONSTRUCTION Poznań",
-  subtitle:
-    "Dzień dobry Owocni. Potrzebujemy czegoś prostego i genialnego. Minimalistycznego symbolu naszej jakości.",
-  text: "To nie było łatwe zadanie. Szukaliśmy pomysłu, który zda egzamin. Sukcesem okazał się zapis typograficzny zawierający w sobie klucz. Wyzwanie polegało na tym, by symbol nie zakłócał czytelności nazwy. Wyraz, który będzie rozpoznawany bez wysiłku, wymagał masy pracy. Niezliczona ilość prób przynosi w końcu piękny, czytelny balans. Wszystko za sprawą typograficznej linii o równej grubości.",
-  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
-  image: "/assets/images/logo-design/daco-logo.webp",
-  quote:
-    "Współpracowaliśmy z wieloma firmami, ale Owocni są nie do podrobienia. Polecam!",
-  quoteAuthor: "Krystian Sadowski - prezes zarządu.",
-  quoteText:
-    "Po tak ciężkiej pracy miło będzie wybrać się na piwo. Zwłaszcza, że Bohemia jest już tak blisko...",
-};
 
 const Construction = () => {
   const {isLoading, screenData} = useSelector((state) => state.logo);
