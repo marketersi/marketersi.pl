@@ -9,6 +9,7 @@ import "./cennik.css";
 import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "@/components/organisms/animation/Loader";
+import { useSearchParams } from "next/navigation";
 
 const PriceListScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
@@ -51,6 +52,22 @@ const PriceListScreen = () => {
     border: "1px solid rgb(201, 201, 201)",
     fontSize: "18px",
   };
+
+  // check to query string and for type
+  const searchParams = useSearchParams();
+  const type = searchParams.get("type");
+
+  useEffect(() => {
+    if (type) {
+      switch (type) {
+        case "strony":
+          handleBtnClick(1);
+          break;
+        default:
+          break;
+      }
+    }
+  }, [type]);
 
   return (
     <section className="container pb-5">
