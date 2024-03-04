@@ -32,12 +32,10 @@ const Restaurant = () => {
                 {RestaurantData?.subtitle}
               </h3>
               <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc">
-                {RestaurantData?.text}
+                {RestaurantData?.text1}
               </p>
               <p className="theme-desc projects-theme-desc-p">
-                Kraftowe piwo bazuje na starej recepturze, stąd pomysł pieczęci.
-                <br />
-                Chmielowe szyszki będą przyjemną częścią rozpoznawalności.
+                {RestaurantData?.text2}
               </p>
             </div>
           </div>
@@ -47,7 +45,7 @@ const Restaurant = () => {
           <div className="image-810">
             <img
               className="desktop-810 position-relative"
-              src={RestaurantData?.secondaryImage}
+              src={RestaurantData?.image_1}
               title="Projektowanie logo - cena nie musi być wysoka, a pomysł jest dobry"
               alt="Projektowanie logo - cena w ogólnym ujęciu"
               style={{ left: "-65px", position: "relative", maxWidth: "none" }}
@@ -65,12 +63,10 @@ const Restaurant = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="theme-desc projects-theme-desc-p projects-custom-m0-top">
-                Jednak prawdziwy sekret drzemie w zapisie typograficznym. <br />
-                Wyrafinowany, elegancki, nadaje całości legendarnego wydźwięku
+              {RestaurantData?.text3}
               </p>
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
-                Żaden fan rzemieślniczego browaru nie przechodzi obok tego
-                obojętnie.
+              {RestaurantData?.text4}
               </p>
             </div>
           </div>
@@ -81,7 +77,7 @@ const Restaurant = () => {
             <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
               <img
                 className="desktop-810 position-relative"
-                src={RestaurantData?.image}
+                src={RestaurantData?.image_2}
                 title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
                 alt="Profesjonalny znak wyróżni Twoją markę "
                 style={{ left: "-75px" }}

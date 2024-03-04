@@ -51,14 +51,14 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Example Modal"
-        className="Modal"
+        className="CenikModal"
         overlayClassName="Overlay"
       >
         <h4>{form?.model_title}</h4>
         <p>
           {form?.modal_description}
         </p>
-        <div>
+        <div className="cenikBtnDiv">
           <button onClick={closeModal}>{form?.button_text}</button>
         </div>
 

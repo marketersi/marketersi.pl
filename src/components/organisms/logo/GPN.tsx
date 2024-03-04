@@ -1,20 +1,20 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const GPNData = {
-  title:
-    "Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie stanowiło całości. Logo wymaga stanowiło całości. Logo wymaga zapisów międzynarodowych, a dzięki takiemu zabiegowi będziemożna eksponować jew zależności od kontekstu w pionie i w poziomie.",
-  companyLogo: [
-    "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
-    "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
-    "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
-  ],
-  productLogo: [
-    "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
-    "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
-    "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
-  ],
-};
+// const GPNData = {
+//   title:
+//     "Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie stanowiło całości. Logo wymaga stanowiło całości. Logo wymaga zapisów międzynarodowych, a dzięki takiemu zabiegowi będziemożna eksponować jew zależności od kontekstu w pionie i w poziomie.",
+//   companyLogo: [
+//     "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
+//     "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
+//     "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
+//   ],
+//   productLogo: [
+//     "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
+//     "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
+//     "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
+//   ],
+// };
 
 const GPN = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -73,11 +73,6 @@ const GPN = () => {
 
             <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text1">
               <p className="theme-desc text-center projects-blue-text2">
-                {/* Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
-                stanowiło całości. Logo wymaga <br />
-                zapisów międzynarodowych, a dzięki takiemu zabiegowi będzie
-                można eksponować je <br />
-                w zależności od kontekstu w pionie i w poziomie. <br /> */}
                 {title && title}
               </p>
             </div>
@@ -119,7 +114,6 @@ const GPN = () => {
                 />
               </div>
             </div>
-
             <div className="col-md-12 projects-h-50"></div>
           </div>
         </div>

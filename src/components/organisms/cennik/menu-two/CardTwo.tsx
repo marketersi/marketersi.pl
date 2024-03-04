@@ -61,7 +61,7 @@ const CardTwo = ({ form }) => {
   return (
     <>
       {currentComponent === 0 && (
-        <div>
+        <div className="formTwo">
           <h2 className="card-heading mb-3">{Section1?.section_1_title_1}</h2>
           <div style={{ textAlign: "left" }} className="select-input">
             <Select
