@@ -1,12 +1,19 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 const Motus = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const { projects} = screenData || {};
+  const {projectSection2, projectSection3 } = projects || {};
+
+
   return (
     <div>
           <section className="thematic-section motus-section copywriter-standard-pt-140">
         <div className="copywriter-text-center">
           <img
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/MotusXD-logo.jpg"
+            src={projectSection2?.logo_image}
             title="Marketing internetowy pomoże Ci rozwinąć firmę"
             alt="Logotyp Motus City to estetyczna reklama"
           />
@@ -16,23 +23,16 @@ const Motus = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <div className="names-client-name copywriter-black copywriter-green-underline copywriter-cname">
-                KRAKÓW
+                {projectSection2?.underlined_label}
               </div>
               <div className="names-client-desc copywriter-client-desc-margin">
-                Teksty, nagłówki i slogany na stronę <br />
-                wizerunkową wyjątkowych <br />
-                elektrycznych hulajnóg
+               {projectSection2?.title}
               </div>
             </div>
 
             <div className="col-md-12">
               <p className="theme-desc">
-                Klient zamówił słowa, które oddadzą frajdę jeżdżenia Motusem XD.{" "}
-                <br />
-                Fantastyczny produkt musiał dostać fantastyczne teksty: zwięzłe,{" "}
-                <br />
-                sugestywne i w miejskim stylu dla młodych odbiorców. Oto
-                fragmenty.
+                {projectSection2?.description}
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Motus = () => {
 
         <div className="copywriter-text-center copywriter-standard-mtb-40">
           <img
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Haslo-reklamowe-hulajdusza.jpg"
+            src={projectSection2?.bannar_image}
             title="Copywriter oferta kreowania tekstów na strony internetowe"
             alt="Slogany reklamowe przygotowane przez Owocnych"
           />
@@ -49,18 +49,16 @@ const Motus = () => {
         <div className="copywriter-bg-2">
           <img
             className="copywriter-seo-img-dnone"
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Motus-fotografia-reklamowa1.jpg"
+            src={projectSection2?.bckgrnd_image}
             title="Copywriter cennik przygotowania opisów produktów"
             alt="Skuteczny marketing firmy to zadanie, którym zajmie się nasza agencja reklamowa"
           />
           <div className="custom-container2 copywriting-text-right">
             <div className="copywriting-custom-subcont">
               <span className="copywriting-img-desc">
-                <span className="copywriter-custom-red">Żyje się raz!</span>{" "}
+                <span className="copywriter-custom-red">{projectSection2?.bckgrnd_image_title}</span>{" "}
                 <br className="dont-delete" />
-                Dlatego od razu <br className="dont-delete" />
-                warto mieć świetną <br className="dont-delete" />
-                hulajnogę Motusa XD
+               {projectSection2?.quote}
               </span>
             </div>
           </div>
@@ -70,13 +68,11 @@ const Motus = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="copywriting-img-desc copywriter-cmargin-5 motus-desc">
-                Mniej męczy, mniej kosztuje, <br className="dont-delete" />
-                więcej cieszy i mniej truje.
+                {projectSection2?.title_1}
               </div>
 
               <div className="copywriter-img-big-desc copywriter-custom-color">
-                Cieszy jadąc, <br className="dont-delete" />
-                jedzie ciesząc
+                {projectSection2?.sub_title_1}
               </div>
 
               <div className="copywriting-img-desc copywriter-cmargin-6">
@@ -91,7 +87,7 @@ const Motus = () => {
         <div className="copywriter-bg-3">
           <img
             className="copywriter-seo-img-dnone"
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Motus-fotografia-reklamowa2.jpg"
+            src={projectSection2?.bottom_bannar_image}
             title="Przykład fotografii reklamowej to również content marketing"
             alt="Realizacja fotografii reklamowej dla klienta Owocnych"
           />
@@ -99,7 +95,7 @@ const Motus = () => {
 
         <div className="copywriter-text-center">
           <img
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Logo-kancelaria.jpg"
+            src={projectSection3?.logo_image}
             className=""
             title="Content marketing dla kancelarii prawniczej"
             alt="Case study copywritingu dla kancelarii prawniczej"
@@ -110,23 +106,17 @@ const Motus = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <div className="names-client-name copywriter-black copywriter-green-underline copywriter-cname">
-                GDAŃSK
+                {projectSection3?.underlined_label}
               </div>
 
               <div className="names-client-desc copywriter-client-desc-margin">
-                Hasła i teksty oferty dla dobrej <br />
-                trójmiejskiej kancelari prawnej.
+                {projectSection3?.title}
               </div>
             </div>
 
             <div className="col-md-12">
               <p className="theme-desc">
-                To było bardzo trudne zadanie. Sektor usług prawnych podlega
-                wielkim <br />
-                obostrzeniom i regulacjom określającym, jak nie wolno o sobie
-                pisać. <br />
-                Znaleźć tam język, który będzie potrafił reklamować? Wyzwanie
-                roku!
+                {projectSection3?.description}
               </p>
             </div>
           </div>
@@ -134,7 +124,7 @@ const Motus = () => {
 
         <div className="copywriter-text-center copywriter-rwd-mtb-40">
           <img
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Teksty-reklamowe-kancelaria.jpg"
+            src={projectSection3?.bannar_image}
             title="Przykład tekstów reklamowych dla klienta Owocnych"
             alt="Teksty reklamowe dla kancelarii prawniczej"
           />
@@ -144,17 +134,11 @@ const Motus = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-prawo-tekst-1">
-                <span>
-                  Jako człowiek, <br />
-                </span>
-                pomagam zrozumieć.
+                {projectSection3?.quote_1}
               </div>
 
               <div className="copywriter-prawo-tekst-2">
-                <span>
-                  Jako adwokat, <br />
-                </span>
-                pomagam zwyciężać.
+                {projectSection3?.quote_2}
               </div>
             </div>
           </div>

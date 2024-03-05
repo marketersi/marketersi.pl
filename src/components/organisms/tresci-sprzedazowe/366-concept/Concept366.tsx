@@ -1,13 +1,20 @@
 import React from 'react'
 import img from 'next/img';
+import { useSelector } from 'react-redux';
 
 
 const Concept366 = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const { projects} = screenData || {};
+  const {projectSection4 } = projects || {};
+
+
   return (
     <>
 <section className="thematic-section">
 
-<img src="https://cdn.owocni.pl/img/single-copywriter/luk.png" className="projects-bow-2" alt="" />
+<img src={projectSection4?.logo_image} className="projects-bow-2" alt="" />
 
 <div className="copywriter-text-center copywriter-standard-mt-80">
 <img

@@ -1,6 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const BusinessTools = () => {
+
+  const {screenData} = useSelector((state) => state.sales);
+  const {buisnessToolsSection} = screenData || {};
+
   return (
     <>
       <section className="business_tools">
@@ -8,9 +13,7 @@ const BusinessTools = () => {
           <div className="row">
             <div className="col-md-12 text-center copywriter-cmargin-2">
               <h1 className="copywriter-big-header-2">
-                To Twoje podstawowe narzędzia <br />
-                biznesowe do zdobywania <br />
-                nowych klientów. <br />
+                {buisnessToolsSection?.title}
               </h1>
             </div>
           </div>
@@ -20,12 +23,11 @@ const BusinessTools = () => {
             <div className="copywriter-image-box-1">
               <div className="copywriter-image-label">
                 <strong>
-                  Oferty <br />
-                  handlowe
+                  {buisnessToolsSection?.img_1_text}
                 </strong>
               </div>
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Tekst-oferty-handlowej.jpg"
+                src={buisnessToolsSection?.image_1}
                 title="Pisanie tekstów oferty handlowej"
                 alt="Owocni to numer 1 jeśli chodzi o skuteczny copywriting"
               />
@@ -36,12 +38,11 @@ const BusinessTools = () => {
             <div className="copywriter-image-box-2">
               <div className="copywriter-image-label">
                 <strong>
-                  Treści <br />
-                  strony
+                {buisnessToolsSection?.img_2_text}
                 </strong>
               </div>
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Teksty-na-strone.jpg"
+                src={buisnessToolsSection?.image_2}
                 title="Coptwriter oferta - przygotowywanie tekstów na stronę"
                 alt="Dobrze przygotowane teksty na stronę to gwarancja wzrostu zysków"
               />
@@ -52,12 +53,11 @@ const BusinessTools = () => {
             <div className="copywriter-image-box-3">
               <div className="copywriter-image-label">
                 <strong>
-                  Skrypt <br />
-                  reklam{" "}
+                {buisnessToolsSection?.img_3_text}
                 </strong>
               </div>
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Teskty-reklamowe.jpg"
+                src={buisnessToolsSection?.image_3}
                 title="Usługi copywriterskie obejmują treści reklamowe"
                 alt="Lekkie pióro to cecha charakterystyczna Owocnych"
               />
@@ -68,13 +68,11 @@ const BusinessTools = () => {
             <div className="copywriter-image-box-4">
               <div className="copywriter-image-label">
                 <strong>
-                  {" "}
-                  Wyjątkowe <br />
-                  artykuły{" "}
+                {buisnessToolsSection?.img_4_text}
                 </strong>
               </div>
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Teksty-artykul.jpg"
+                src={buisnessToolsSection?.image_4}
                 title="Lekkie pióro pomaga w pisaniu artykułów"
                 alt="Artykuł - nad takimi rzeczami pracuje copywriter"
               />
@@ -85,11 +83,11 @@ const BusinessTools = () => {
             <div className="copywriter-image-box-5">
               <div className="copywriter-image-label">
                 <strong>
-                  Katalogi <br />i broszury PDF
+                {buisnessToolsSection?.img_5_text}
                 </strong>
               </div>
               <img
-                src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Teksty-katalogu.jpg"
+                src={buisnessToolsSection?.image_5}
                 title="Copywriting katalogów i broszur"
                 alt="Broszura i katalog to podstawa"
               />
@@ -100,15 +98,11 @@ const BusinessTools = () => {
           <div className="row">
             <div className="col-md-12 text-center copywriter-cmargin-3">
               <div className="copywriter-custom-text-1">
-                Zmienimy złożoność w prostotę. <br />
-                Zainteresowanie w działanie. <br />
-                Czytających w kupujących.
+              {buisnessToolsSection?.para_1}
               </div>
 
               <div className="copywriter-custom-text-2">
-                Przechwycimy wyobraźnię. <br />
-                Zaangażujemy umysły. <br />
-                Wywołamy reakcję.
+              {buisnessToolsSection?.para_2}
               </div>
             </div>
           </div>

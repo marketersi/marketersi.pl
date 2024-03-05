@@ -1,4 +1,7 @@
 "use client";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 import Concept366 from "@/components/organisms/tresci-sprzedazowe/366-concept/Concept366";
 import BusinessTools from "@/components/organisms/tresci-sprzedazowe/business_tools/BusinessTools";
 import items from "@/components/organisms/tresci-sprzedazowe/faq/Data";
@@ -19,7 +22,20 @@ import Section5 from "@/components/organisms/tresci-sprzedazowe/section5/Section
 import "./sales.css";
 import TresciFooter from "@/components/organisms/tresci-sprzedazowe/tresci-footer/TresciFooter";
 
-const page = () => {
+
+const Sales = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const {quoteSection, faq, projects} = screenData || {};
+  const {faqAQ } = faq || [];
+  const {projectSection1 } = projects || [];
+  const {customerReview } = projectSection1 || [];
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: FETCH_SALES_SCREEN_DATA });
+  }, [dispatch]);
   return (
     <>
       <SalesBanner />
@@ -28,24 +44,21 @@ const page = () => {
           <div className="row">
             <div className="col-md-12 text-center copywriter-custom-margin-1">
               <h1 className="copywriter-big-header">
-                Lepszy biznes zaczyna <br />
-                się od lepszych słów
+                {quoteSection?.main_title}
               </h1>
 
               <span className="copywriter-big-subheader copywriter-cmargin-1">
-                Nieważne czy to treści oferty czy treść strony.{" "}
-                <br className="dont-delete" />
-                2x skuteczniejszy tekst, to 2x większy zysk.
+                {quoteSection?.sub_title}
               </span>
             </div>
           </div>
         </div>
       </section>
-      <OptionBox2 />
+      <OptionBox2 quoteSection={quoteSection} />
       <BusinessTools />
-      <ProfitCard />
+      {/* <ProfitCard /> */}
       <Section5 />
-      <FAQ items={items} />
+      <FAQ faqAQ={faqAQ} />
       <Guarantee />
       <PriceList />
       <Form />
@@ -53,17 +66,14 @@ const page = () => {
         className="copywriter-custom-header-2 text-center copywriter-cmargin-4 menu-target"
         id="sec2"
       >
-        Wybrane fragmenty <br />
-        naszych realizacji
+       {projectSection1?.title}
       </div>
       <div className="copywriter-custom-subheader-2 text-center">
-        Oferty handlowe, strony sprzedażowe, maile. <br />
-        Sprawdź, jakiej jakości możesz oczekiwać <br />
-        po współpracy znami.
+        {projectSection1?.sub_title}
       </div>
       <Orange />
       <Motus />
-      <OptionBox2 />
+      <OptionBox2 customerReview={customerReview}/>
       <Concept366 />
       <OptionBox2 />
       <Robo />
@@ -83,4 +93,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Sales;
