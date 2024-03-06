@@ -1,10 +1,13 @@
 import { call, put } from "redux-saga/effects";
 import { axiosInstance } from "@/services/httpServices";
-import { API_ENDPOINTS } from "@/services/webConstants";
+import { API_ENDPOINTS, API_ENDPOINTS_POST } from "@/services/webConstants";
 import {
   fetchPriceListScreenFail,
   fetchPriceListScreenStart,
   fetchPriceListScreenSuccess,
+  isMenuSubmitFail,
+  isMenuSubmitStarted,
+  isMenuSubmitSuccess,
 } from "./pricelistSlice";
 
 export function* priceListScreenSaga() {
@@ -26,5 +29,27 @@ export function* priceListScreenSaga() {
   } catch (error) {
     console.error("Error in Price list screen saga:", error);
     yield put(fetchPriceListScreenFail());
+  }
+}
+
+
+export function* cennikMenuStorSaga() {
+  try{
+    yield put(isMenuSubmitStarted())
+
+    const { data: responseData} = yield call(
+      axiosInstance.post,
+      API_ENDPOINTS_POST.CENNIK_MENU_STOR
+    );
+    
+    if(responseData){
+      yield put(isMenuSubmitSuccess());
+    }else{
+      yield put(isMenuSubmitFail());
+    }
+
+  }
+  catch(error){
+    yield put(isMenuSubmitFail());
   }
 }

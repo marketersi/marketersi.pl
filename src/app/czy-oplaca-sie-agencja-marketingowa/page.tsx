@@ -31,11 +31,11 @@ const CalculatorScreen = () => {
               <Col className="text-center">
                 <h1>
                   {screenData?.first_heading &&
-                    screenData?.first_heading.split(" ").slice(0, 3).join(" ")}
+                    screenData?.first_heading.split(" ").slice(0, 6).join(" ")}
                 </h1>
                 <h1>
                   {screenData?.first_heading &&
-                    screenData?.first_heading.split(" ").slice(3).join(" ")}
+                    screenData?.first_heading.split(" ").slice(6).join(" ")}
                 </h1>
                 <p>{screenData?.sub_heading}</p>
               </Col>

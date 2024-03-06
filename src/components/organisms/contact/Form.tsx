@@ -1,11 +1,15 @@
 "use client";
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import { POST_CONTACT } from "@/redux/kontakt/contactActions";
 
 
 const ContactForm = () => {
+
+  const {screenData} = useSelector((state) => state.contact);
+  const {contact_us} = screenData || {};
+  const {form} = contact_us || {};
   const {
     register,
     handleSubmit,
@@ -23,8 +27,9 @@ const ContactForm = () => {
 
   return (
     <form action="" className="form_sect" onSubmit={handleSubmit(onSubmit)}>
-      <p className="form_head_txt text-center">Napisz, jak możemy pomóc?</p>
-      <p className="form_mail_content text-center">studio@marketersi.pl</p>
+      <p className="form_head_txt text-center">{form?.title}</p>
+      <a href={`tel:${form?.number}`} className="form_number_content">{form?.number}</a>
+      <a href={`mailto:${form?.mail}`} className="form_mail_content text-center">{form?.mail}</a>
       <textarea
         required
         placeholder="Wiadomość"
@@ -55,7 +60,7 @@ const ContactForm = () => {
 
       <div className="btn_Image">
         <div className="btn">
-          <button type="submit">Wyślij wiadomość</button>
+          <button type="submit">{form?.button_text}</button>
         </div>
         <div className="sticker_Image">
           <svg

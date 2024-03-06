@@ -5,11 +5,8 @@ import { useSelector } from "react-redux";
 
 
 
-const ProfitSlider = () => {
-  const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { NewCompanyProfitSliderData } = screenData || {};
-  const { images } = screenData?.NewCompanyProfitSliderData || [];
-  console.log("sliderImages:", NewCompanyProfitSliderData);
+const ProfitSlider = ({carouselImages, images}) => {
+
 
   return (
     <>

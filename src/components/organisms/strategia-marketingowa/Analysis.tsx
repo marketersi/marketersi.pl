@@ -83,22 +83,22 @@ export default function Analysis() {
           <div className="Analysis1_Grid">
             <div className="Analysis1_GridItem1">
               {ButtonData?.CardGrid?.Card1?.map((point, i) => {
-                return <div key={i}>{point}</div>;
+                return <div className="AnalysisCardDes" key={i}>{point}</div>;
               })}
             </div>
             <div className="Analysis1_GridItem2">
               {ButtonData?.CardGrid?.Card2?.map((point, i) => {
-                return <div key={i}>{point}</div>;
+                return <div className="AnalysisCardDes" key={i}>{point}</div>;
               })}
             </div>
             <div className="Analysis1_GridItem3">
               {ButtonData?.CardGrid?.Card3?.map((point, i) => {
-                return <div key={i}>{point}</div>;
+                return <div className="AnalysisCardDes" key={i}>{point}</div>;
               })}
             </div>
             <div className="Analysis1_GridItem4">
               {ButtonData?.CardGrid?.Card4?.map((point, i) => {
-                return <div key={i}>{point}</div>;
+                return <div className="AnalysisCardDes" key={i}>{point}</div>;
               })}
             </div>
           </div>

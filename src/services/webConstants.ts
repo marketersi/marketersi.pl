@@ -13,8 +13,10 @@ export const API_ENDPOINTS = {
   ANATOMY_SCREEN: "",
   PRICE_LIST_SCREEN: "api/price-list-setting",
   LOGO_SCREEN: "api/projektowanie",
+
 };
 
 export const API_ENDPOINTS_POST = {
   CONTACT_US: "api/contactMail",
+  CENNIK_MENU_STOR: "api/cenik/menus/store"
 };

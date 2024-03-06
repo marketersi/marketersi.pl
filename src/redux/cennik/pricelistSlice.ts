@@ -5,6 +5,8 @@ const priceListSlice = createSlice({
   initialState: {
     isLoading: false,
     screenData: {},
+
+    isMenuSubmit: false,
   },
   reducers: {
     // Action when starting to fetch price list screen data
@@ -22,6 +24,18 @@ const priceListSlice = createSlice({
     fetchPriceListScreenFail: (state) => {
       state.isLoading = false;
     },
+    // ----------
+    isMenuSubmitStarted: (state) => {
+      state.isMenuSubmit = true;
+    },
+
+    isMenuSubmitSuccess: (state) => {
+      state.isMenuSubmit = false;
+    },
+
+    isMenuSubmitFail: (state) => {
+      state.isMenuSubmit = false;
+    },
   },
 });
 
@@ -29,5 +43,9 @@ export const {
   fetchPriceListScreenStart,
   fetchPriceListScreenSuccess,
   fetchPriceListScreenFail,
+
+  isMenuSubmitStarted,
+  isMenuSubmitSuccess,
+  isMenuSubmitFail,
 } = priceListSlice.actions;
 export default priceListSlice.reducer;

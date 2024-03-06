@@ -1,8 +1,8 @@
 import React from 'react'
 import '../tresci.css'
 
-const OptionBox2 = ({quoteSection}) => {
-  const { image = '', description_1 = '', description_2 = '' } = quoteSection || {};
+const OptionBox2 = ({optionBox2 }) => {
+  const { background_image = '', description = '', title = '', btn_title = '' } = optionBox2 || {};
   return (
     <div>
         <section className="projects-gray-opinion-2">
@@ -13,7 +13,7 @@ const OptionBox2 = ({quoteSection}) => {
               <div className="opinion-box-image">
                 <img
                   className="opinion-box-inside-image"
-                  src={image}
+                  src={background_image}
                   title="Usługi copywriterskie dla różnych branż"
                   alt="Opinia klienta jest bardzo ważna dla agencji marketingowej"
                 />
@@ -28,13 +28,13 @@ const OptionBox2 = ({quoteSection}) => {
               </div> */}
               <div className="opinion-box-content projects-opinion-2 copywriter-prawo-text">
                 <p className="theme-desc projects-client-opinion-p text-center">
-                  {description_1}
+                  {title}
                 </p>
                 <div className="opinion-box-text copywriter-opinion-box-text">
-                  {description_2}
+                  {description}
                 </div>
                 <button className="download-catalog-button projects-opinion-button copywriter-green-background copywriter-new-btn copywriter-standard-mt-10 send-offer-button js--triggerAnimation" type="button">
-                  <strong>Wyślijcie mi niezobowiązującą ofertę.</strong>
+                  <strong>{btn_title}</strong>
                 </button>
               </div>
               <div className="clearfix"></div>

@@ -28,8 +28,11 @@ const Sales = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
   const {quoteSection, faq, projects} = screenData || {};
   const {faqAQ } = faq || [];
-  const {projectSection1 } = projects || [];
-  const {customerReview } = projectSection1 || [];
+  const {projectSection1, projectSection3, projectSection5, projectSection7 } = projects || {};
+  const {customerReview } = projectSection3 || {};
+  const {customerReview:customerReview3 } = projectSection5 || {};
+  const {customerReview:customerReview4 } = projectSection7 || {};
+  console.log("custom", customerReview)
 
   const dispatch = useDispatch();
 
@@ -54,7 +57,7 @@ const Sales = () => {
           </div>
         </div>
       </section>
-      <OptionBox2 quoteSection={quoteSection} />
+      <OptionBox2 optionBox2={quoteSection} />
       <BusinessTools />
       {/* <ProfitCard /> */}
       <Section5 />
@@ -73,12 +76,12 @@ const Sales = () => {
       </div>
       <Orange />
       <Motus />
-      <OptionBox2 customerReview={customerReview}/>
+      <OptionBox2 optionBox2={customerReview}/>
       <Concept366 />
-      <OptionBox2 />
+      <OptionBox2 optionBox2={customerReview3}/>
       <Robo />
       <Mako />
-      <OptionBox2 />
+      <OptionBox2 optionBox2={customerReview4}/>
       <InkBook />
       <Profit />
       <section className="black-sec-form">
