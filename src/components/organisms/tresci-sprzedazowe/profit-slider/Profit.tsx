@@ -1,7 +1,14 @@
 import React from "react";
 import ProfitSlider from "./ProfitSlider";
+import { useSelector } from "react-redux";
 
 const Profit = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const { sliderSection } = screenData || {};
+  const { images } = sliderSection || {};
+
+
   return (
     <div>
       <section className="thematic-nr-section thematic-bg-section copywriter-ending-white-bg copywriter-standard-pt-40">
@@ -13,26 +20,22 @@ const Profit = () => {
       </section>
       <section className="names-thematic-section-black names-thematic-section-black-fix copywriter-ending-padding copywriter-standard-pt-40">
         <div className="copywriter-ending-big text-center">
-          Taki zysk, <br />
-          jaki tekst
+          {sliderSection?.main_title}
         </div>
 
         <div className="copywriter-ending-big-2 text-center">
-          Taki tekst jaki copywriter
+          {sliderSection?.sub_title}
         </div>
 
         <div className="container custom-container2">
           <div className="row">
             <div className="col-md-12">
               <p className="theme-desc text-center copywriter-ending-white">
-                Lubisz ten kreatywny klimat porozumienia <br />
-                panujący w małym zespole projektowym? <br />W Owocnych poczujesz
-                się jak w domu.
+                {sliderSection?.para_1}
               </p>
 
               <p className="theme-desc text-center copywriter-ending-white">
-                Podejrzyj nas podczas pracy. <br />
-                Przewiń fotografie w bok.
+                {sliderSection?.para_2}
               </p>
             </div>
           </div>
@@ -40,7 +43,7 @@ const Profit = () => {
 
         <div className="clearfix"></div>
       </section>
-      <ProfitSlider />
+      <ProfitSlider images={images} />
     </div>
   );
 };

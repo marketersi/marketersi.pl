@@ -1,95 +1,103 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
 
 const InkBook = () => {
+  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const { projects } = screenData || {};
+  const { projectSection8 } = projects || {};
+
   return (
     <>
-    <section className="thematic-section copywriter-standard-pb-80">
+      <section className="thematic-section copywriter-standard-pb-80">
+        <img
+          src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
+          className="projects-bow-2"
+          alt=""
+        />
 
-<img src="https://cdn.owocni.pl/img/single-copywriter/luk.png" className="projects-bow-2" alt="" />
+        <div className="copywriter-text-center copywriter-standard-mt-80">
+          <img
+            src={projectSection8?.logo_image}
+            title="Logo klienta agencji Owocni"
+            alt="Copywriting cena opracowania materiałów reklamowych"
+          />
+        </div>
 
-<div className="copywriter-text-center copywriter-standard-mt-80">
-  <img src="https://cdn.owocni.pl/img/single-copywriter/seo-images/inkbook.jpg" title="Logo klienta agencji Owocni" alt="Copywriting cena opracowania materiałów reklamowych" />
-</div>
+        <div className="container custom-container2">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <div className="names-client-name copywriter-black copywriter-green-underline copywriter-cname">
+                {projectSection8?.underlined_label}
+              </div>
 
-<div className="container custom-container2">
-  <div className="row">
-    <div className="col-md-12 text-center">
+              <div className="names-client-desc copywriter-client-desc-margin">
+                {projectSection8?.title_1}
+              </div>
+            </div>
 
-      <div className="names-client-name copywriter-black copywriter-green-underline copywriter-cname">
-        WROCŁAW
-      </div>
+            <div className="col-md-12">
+              <p className="theme-desc copywriter-custom-mright copywriter-rwd-mtb-40">
+                {projectSection8?.description}
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div className="names-client-desc copywriter-client-desc-margin">
-        Polskie, profesjonalne czytniki <br />
-        ebooków. Tekst oferty i prezentacji.
-      </div>
+        <div className="copywriter-custom-header-3 text-center copywriter-standard-mt-80">
+          {projectSection8?.bannar_image_1_title}
+        </div>
 
-    </div>
+        <div className="copywriter-text-center copywriter-standard-mb-80">
+          <img
+            src={projectSection8?.bannar_image_1}
+            title="Content marketing dla firmy Moko"
+            alt="Przykładowe teksty reklamowe dla klienta Owocnych"
+          />
+        </div>
 
-    <div className="col-md-12">
+        <div className="copywriter-custom-header-4 text-center">
+          {projectSection8?.title}
+        </div>
 
-      <p className="theme-desc copywriter-custom-mright copywriter-rwd-mtb-40">
-        Polski InkBOOK bez kompleksów konkuruje z najlepszymi czytnikami <br />
-        na świecie. Dlatego z wielką przyjemnością opracowaliśmy copywriting, <br />
-        który jest tak dopracowany, jak sam produkt. Oto jego fragment. 
-      </p>
+        {/* <div className="copywriter-custom-subheader-4 text-center">
+          Ale to więcej niż ksiązka.
+        </div> */}
 
-    </div>
-  </div>
-</div>
+        <div className="container text-center copywriter-reading-container copywriter-standard-mb-80">
+          <div className="row">
+            <div className="col-md-4">
+              <img src={projectSection8?.image_1} alt="" />
+              <div className="copywriter-sm-desc">
+                {projectSection8?.image_1_info}
+              </div>
+            </div>
 
-<div className="copywriter-custom-header-3 text-center copywriter-standard-mt-80">
-  Waga zeszytu, <br />
-  pojemność biblioteki
-</div>
+            <div className="col-md-4">
+              <img src={projectSection8?.image_2} alt="" />
+              <div className="copywriter-sm-desc">
+                {projectSection8?.image_2_info}
+              </div>
+            </div>
 
-<div className="copywriter-text-center copywriter-standard-mb-80">
-  <img src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Pisanie-tekstow-reklamowych-inkBOOK.jpg" title="Content marketing dla firmy Moko" alt="Przykładowe teksty reklamowe dla klienta Owocnych" />
-</div>
+            <div className="col-md-4">
+              <img src={projectSection8?.image_3} alt="" />
+              <div className="copywriter-sm-desc">
+                {projectSection8?.image_3_info}
+              </div>
+            </div>
+          </div>
+        </div>
 
-<div className="copywriter-custom-header-4 text-center">
-  Czyta się jak książkę.
-</div>
-
-<div className="copywriter-custom-subheader-4 text-center">
-  Ale to więcej niż ksiązka.
-</div>
-
-<div className="container text-center copywriter-reading-container copywriter-standard-mb-80">
-  <div className="row">
-    <div className="col-md-4">
-      <img src="https://cdn.owocni.pl/img/single-copywriter/oko.jpg" alt="" />
-      <div className="copywriter-sm-desc">
-        Nie zmęczy Twych <br className="dont-delete" />
-        oczu w ciemności
-      </div>
-    </div>
-
-    <div className="col-md-4">
-      <img src="https://cdn.owocni.pl/img/single-copywriter/lupa.jpg" alt="" />
-      <div className="copywriter-sm-desc">
-        Dopasuje rozmiar <br className="dont-delete" />
-        treści do wygody
-      </div>
-    </div>
-
-    <div className="col-md-4">
-      <img src="https://cdn.owocni.pl/img/single-copywriter/zegar.jpg" alt="" />
-      <div className="copywriter-sm-desc">
-        Powie Ci ile czasu <br className="dont-delete" />
-        do końca rozdziału.
-      </div>
-    </div>
-  </div>
-</div>
-
-<div className="copywriter-text-center">
-  <img src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Reklama-inkbook.jpg" title="Reklama dla firmy Moko" alt="Realizacja reklamy dla Moko" />
-</div>
-
-</section>
+        <div className="copywriter-text-center">
+          <img
+            src={projectSection8?.bottom_image}
+            title="Reklama dla firmy Moko"
+            alt="Realizacja reklamy dla Moko"
+          />
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default InkBook
+export default InkBook;

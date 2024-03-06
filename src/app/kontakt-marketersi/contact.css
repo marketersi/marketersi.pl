@@ -31,6 +31,7 @@
   align-items: center;
   margin: 0 0 30px;
   grid-template-columns: 50% 50%;
+  gap: 10px;
 }
 
 .logo img {
@@ -62,8 +63,18 @@
   font-size: 25px;
   font-weight: 200;
   margin-bottom: 1.5rem;
+  display: block;
+  text-decoration: none;
+  color: black;
 }
-
+a.form_number_content {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  font-weight: 300;
+  color: #333333;
+}
 .form_text_area {
   padding: 10px 0 0 20px;
   width: 100%;
@@ -638,8 +649,8 @@ div.glow {
 }
 
 .project_dp {
-  width: 100px;
-  height: 100x;
+  width: 130px;
+  height: 130x;
   border-radius: 50%;
 }
 

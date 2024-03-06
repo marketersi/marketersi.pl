@@ -48,7 +48,7 @@ const Calculator = () => {
     <>
       <Row className="p-lg-5 mt-lg-5">
         <Col
-          xxl={5}
+          xxl={6}
           className="text-center d-flex flex-column align-items-center justify-content-center"
         >
           <div className="first-card card shadow">
@@ -109,7 +109,7 @@ const Calculator = () => {
           </div>
         </Col>
 
-        <Col xxl={7}  className="car text-center p-5 second-card ">
+        <Col xxl={6}  className="car text-center p-sm-4 p-3 second-card ">
           <img
             src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FZysk.923f65ad.png&w=750&q=75"
             alt=""
@@ -118,7 +118,7 @@ const Calculator = () => {
           <div className="my-3">
             <h6>wzrost konwersji o 1%</h6>
             <Row>
-              <Col sm={6} className="text-sm-end text-start pe-4">
+              <Col xs={6} className="text-end  pe-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     conversionIncrease1.toLocaleString("en-US")
@@ -127,7 +127,7 @@ const Calculator = () => {
                 </h3>
                 <p>Miesięcznie</p>
               </Col>
-              <Col sm={6} className="text-start ps-sm-4">
+              <Col xs={6} className="text-start ps-sm-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     (conversionIncrease1 * 12).toLocaleString("en-US")
@@ -142,7 +142,7 @@ const Calculator = () => {
           <div>
             <h6>wzrost konwersji o 5%</h6>
             <Row>
-              <Col sm={6} className="text-sm-end text-start pe-4">
+              <Col xs={6} className="text-end  pe-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     conversionIncrease5.toLocaleString("en-US")
@@ -151,7 +151,7 @@ const Calculator = () => {
                 </h3>
                 <p>Miesięcznie</p>
               </Col>
-              <Col sm={6} className="text-start ps-sm-4">
+              <Col xs={6} className="text-start ps-sm-4">
                 <h3>
                   {formatNumberForPortugueseLocale(
                     (conversionIncrease5 * 12).toLocaleString("en-US")

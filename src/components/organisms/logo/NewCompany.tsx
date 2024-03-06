@@ -11,8 +11,9 @@ const NewCompanyData = {
 
 const NewCompany = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { NewCompanyData } = screenData || {};
+  const { NewCompanyData, NewCompanyProfitSliderData } = screenData || {};
   const { title, subtitle, cursorChangingText } = NewCompanyData || {};
+  const { images } = NewCompanyProfitSliderData || {};
 
   return (
     <>
@@ -39,7 +40,7 @@ const NewCompany = () => {
         <div className="copywriter-ending-3 text-center copywriter-ending-a-italic"></div>
 
         <div className="clearfix"></div>
-        <ProfitSlider />
+        <ProfitSlider images={images} />
       </section>
     </>
   );
