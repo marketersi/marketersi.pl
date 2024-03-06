@@ -15,8 +15,8 @@ const People = () => {
 
   const router = useRouter();
 
-  const navigateToPriceListNazwa = () => {
-    router.push("/cennik?type=nazwa");
+  const navigateToPriceListStrone = () => {
+    router.push("/cennik?type=Strone");
   };
   const navigateToPriceListDziałania = () => {
     router.push("/cennik?type=Działania");
@@ -78,7 +78,7 @@ const People = () => {
         <div className={style.peopleVideoContent}>
           <a className={style.projectBtn} onClick={(e) => {
                 e.preventDefault();
-                navigateToPriceListNazwa();
+                navigateToPriceListStrone();
               }} href="#">
             {section11?.section11_button_text}
           </a>

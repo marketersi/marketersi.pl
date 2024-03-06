@@ -29,17 +29,15 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
       
       <div className="faqContainer">
         <div className="header__top__left" >
-        <h2
+        {/* <h2
           className="textAnimation"
           style={{
             opacity: 1,
             transform: "translate(0px, 0px)",
           }}
         >
-          {/* Na wszystkie pytania 
-          odpowiedź brzmi TAK! */}
           {FAQsection?.title}
-        </h2>
+        </h2> */}
         </div>
         {FAQsection?.FAQcard.map((item, index) => (
             <div key={index} className="accordion-item">

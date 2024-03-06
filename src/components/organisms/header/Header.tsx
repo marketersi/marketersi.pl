@@ -267,7 +267,7 @@ const Header = () => {
                           onClick={handleMenuItemClick}
                           href="/marketingowa-psychologia-sprzedazy"
                         >
-                          50 Faktów psychologii: Strony www
+                          10 Faktów psychologii: Strony www
                         </Link>
                       </div>
                     </div>

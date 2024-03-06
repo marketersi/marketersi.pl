@@ -99,11 +99,6 @@
         box-shadow: none;
     }
     .slick-prev {
-        left: 120px;
-        width: 62px;
-        height: 62px;
-        border-radius: 100%;
-        z-index: 1111;
         box-shadow: none;
         /* transition: transform 0.3s ease; */
     }
