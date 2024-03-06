@@ -391,9 +391,10 @@ body {
 }
 .OurClients_Slide_Image img {
   width: 100%;
+  height: auto;
 }
 .embla__slide {
-  max-height: 100%;
+  max-height: 90%;
 }
 .OurClients_Slide_Button {
   margin: 10px 0 0 0;
@@ -425,6 +426,22 @@ body {
   font-size: 22px;
   line-height: 34.56px;
   transform: matrix(1, 0, 0, 1, 0.4, 0);
+}
+.OurClients_Slide_Last {
+  padding-inline: 20px;
+  padding-block: 50px;
+}
+.OurClients_Card_One_Button{
+  font-size: 16px;
+}
+.OurClients_Card_One_Title{
+  font-size: 30px;
+  line-height: 40px;
+
+}
+.OurClients_Card_One_Content {
+  font-size: 20.6px;
+  padding-inline: 10px;
 }
 
 }

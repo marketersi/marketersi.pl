@@ -68,6 +68,28 @@ const PriceListScreen = () => {
       }
     }
   }, [type]);
+  useEffect(() => {
+    if (type) {
+      switch (type) {
+        case "nazwa":
+          handleBtnClick(3);
+          break;
+        default:
+          break;
+      }
+    }
+  }, [type]);
+  useEffect(() => {
+    if (type) {
+      switch (type) {
+        case "Działania":
+          handleBtnClick(2);
+          break;
+        default:
+          break;
+      }
+    }
+  }, [type]);
 
   return (
     <section className="container pb-5">
