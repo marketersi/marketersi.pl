@@ -24,7 +24,7 @@ const Banner = () => {
   return (
     <>
       <div className={style.zespolVideo}>
-        {/* <ReactPlayer
+        <ReactPlayer
         url={herosection?.background_video}
         playing={true}
         loop={true}
@@ -33,15 +33,8 @@ const Banner = () => {
         height="auto"
         playsinline
         className={style.bannerVideo}
-      /> */}
-        <video
-          src={herosection?.background_video}
-          className={style.bannerVideo}
-          autoPlay={true}
-          loop={true}
-          muted={true}
-          playsInline={true}
-        ></video>
+      />
+        
       </div>
       <div className={style.overlay}></div>
       <motion.button
