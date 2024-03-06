@@ -4,6 +4,7 @@ import React from "react";
 import style from "../team.module.css";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
+import { useRouter } from "next/navigation";
 
 const People = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
@@ -11,6 +12,15 @@ const People = () => {
   if (screenData) {
     console.log("Team screen data from UI => ", section10);
   }
+
+  const router = useRouter();
+
+  const navigateToPriceListNazwa = () => {
+    router.push("/cennik?type=nazwa");
+  };
+  const navigateToPriceListDziałania = () => {
+    router.push("/cennik?type=Działania");
+  };
 
   return (
     <>
@@ -66,10 +76,16 @@ const People = () => {
           className={style.heroVideo}
         />
         <div className={style.peopleVideoContent}>
-          <a className={style.projectBtn} href="/">
+          <a className={style.projectBtn} onClick={(e) => {
+                e.preventDefault();
+                navigateToPriceListNazwa();
+              }} href="#">
             {section11?.section11_button_text}
           </a>
-          <a className={style.scheduleBtn} href="/">
+          <a className={style.scheduleBtn} onClick={(e) => {
+                e.preventDefault();
+                navigateToPriceListDziałania();
+              }} href="#">
            {section11?.section11_button_text2}
             <div>
               <img src="/assets/images/play_arrow.svg" alt="" />

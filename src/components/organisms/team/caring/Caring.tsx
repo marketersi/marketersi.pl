@@ -34,6 +34,7 @@ const Caring = () => {
       <div className={style.caring}>
         <img
           src={section6?.image_6}
+          className={style.caringImg}
           alt="ghjk"
         />
         <Container>

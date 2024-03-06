@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.BannerBotHeading {
+    padding-left: 50px;
+}
+
 .img20 img {
     /* position: absolute; */
     bottom: -162px;
@@ -44,10 +48,18 @@
     color: #3e3e3e;
 }
 
-.bannerBottomContent img {
-    margin: -280px 0 0;
-
+.BannerBotImg {
+    position: relative;
 }
+
+.bannerBottomContent img {
+    position: absolute;
+    top: -270px;
+    left: 70px;
+    width: 100%;
+    z-index: -1;
+}
+
 
 .bannerBottomContent h2 {
     font-size: 60px;
@@ -77,7 +89,7 @@
 }
 
 .overlay {
-    height: 855px;
+    height: 856px;
     width: 100%;
     position: absolute;
     background-color: #00000026;
@@ -136,7 +148,7 @@
 .free {
     padding: 100px 0;
     background-repeat: no-repeat;
-    background-position: -600px 0px;
+    background-position: -680px 0px;
 }
 
 .teamContent p span {
@@ -261,8 +273,14 @@
     width: 100%;
 }
 
+.caringImg {
+    width: 115% !important;
+}
+
 .caring {
     padding: 0 0 150px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .caringCard {
@@ -346,7 +364,7 @@
 }
 
 .cultureImg {
-    margin: -600px 0 0 -160px;
+    margin: -600px 0 0 -250px;
 }
 
 /* =======================Good Time===================== */
@@ -361,21 +379,21 @@
 .cardCup {
     /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75); */
     background-repeat: no-repeat;
-    background-position: 125% -50px;
-    padding: 100px 0;
+    background-position: 135% 0px;
+    padding: 150px 0 100px;
 }
 
 .hardWorkBG {
     /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75); */
     background-repeat: no-repeat;
-    background-position: -190px 160px;
+    background-position: -250px 160px;
     padding: 0px 0 2px;
 }
 
 /* ===============================people============================= */
 .peopleCard {
     box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-    width: 1000px;
+    width: 980px;
     margin: 100px auto 100px;
     background: #f6f6f6;
     border-radius: 30px;
@@ -386,7 +404,7 @@
     font-size: 50px;
     text-align: center;
     line-height: 70px;
-    font-weight: 800;
+    font-weight: 600;
     color: #3e3e3e;
     margin: 0 0 200px;
 }
@@ -473,16 +491,20 @@
     margin: 4px auto;
     display: block;
 }
-.peopleTitle{
+
+.peopleTitle {
     margin: 0 0 50px;
     font-size: 90px !important;
 }
-.peoplePara{
+
+.peoplePara {
     margin: 0 0 0px;
 }
-.freePara{
+
+.freePara {
     margin: 150px 0 0px !important;
 }
+
 /* -------------------------------------media screen -------------------------------- */
 @media only screen and (max-width: 1360px) {
     .bannerBottomContent img {
@@ -658,6 +680,7 @@
         margin: -60px 0 0 auto;
         width: 70%;
         display: block;
+        top: 0;
     }
 
     .bannerBottomContent h4 {
@@ -690,6 +713,8 @@
 
     .free {
         padding: 0px 20px;
+        background-repeat: no-repeat;
+        background-position: -200px 450px;
     }
 
     .teamContent h2 {
@@ -703,12 +728,13 @@
         background-size: 100%;
         margin-bottom: 100px;
     }
-    .Support p{
+
+    .Support p {
         margin-top: 180px !important;
     }
 
     .Support h4 {
-        font-size: 35px;
+        font-size: 30px;
         line-height: 50px;
     }
 
@@ -727,73 +753,119 @@
     }
 
     .caringCard {
-        width: 100%;
+        width: 70%;
+    }
+    .caringCard h4 {
+        font-size: 20px;
+    }
+    .caringCard p {
+        font-size: 16px;
+    }
+    .cartRow img {
+        width: 70%;
+        margin: 0 auto 20px;
+        display: block;
     }
 
     .cultureCard img {
         width: 100%;
     }
+
     .cultureImg {
         display: none;
     }
+
     .cultureCard h2 {
         font-size: 30px;
     }
+
     .peopleCard h3 {
         font-size: 25px;
         line-height: 50px;
     }
+
     .dogImg {
         padding: 0 0 0 0px;
+        width: 100%;
+        overflow: hidden;
     }
+    .dogImg img{
+        padding: 0 0 0 0px;
+        width: 130%;
+        margin: 0px auto 100px;
+    }
+
     .peopleVideo svg {
         width: 70px;
+        display: none;
     }
+
     .peopleVideoContent .projectBtn {
         font-size: 16px;
     }
+
     .peopleVideoContent {
         padding: 10% 0 0;
     }
+
     .cardDataSpace {
         margin: 50px 0 0px;
     }
+
     .hardWorkBG {
-       background-image: none !important;
+        background-image: none !important;
     }
+
     .caring {
         padding: 0 0 50px;
     }
+
     .cardCup {
         padding: 0px 0 0;
     }
-    .peopleTitle{
+
+    .peopleTitle {
         margin: 0 0 0px;
         font-size: 35px !important;
     }
-    .peoplePara{
+
+    .peoplePara {
         margin: 50px 0 0px !important;
     }
+
     .bannerBottomContent {
         padding: 0 0 0px;
     }
-    .freePara{
-        margin: 50px 0 0px !important;
+
+    .freePara {
+        margin: 130px 0 0px !important;
     }
+
     .mainHeading {
-        margin: 50px 0 0;
+        margin: 50px 0 0 50px;
     }
+
     .peopleCard {
-        margin: 100px auto 100px;
+        margin: 100px auto 0px;
     }
+
     .bannerVideo {
         width: 100% !important;
     }
-    .zespolVideo{
-        width: 100%!important;
+
+    .zespolVideo {
+        width: 100% !important;
         overflow: hidden;
     }
+
     .creativePara {
         margin: 50px 0 100px !important;
+    }
+
+    .BannerBotHeading {
+        padding-left: 0px;
+    }
+    .BannerBotImg{
+        min-height: 250px;
     }
 }

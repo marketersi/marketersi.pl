@@ -69,18 +69,20 @@ const Banner = () => {
         </div>
         <div className={style.bannerBottomContent}>
           <Row>
-            <Col lg={6} className="order-lg-1 order-2">
+            <Col xxl={6} lg={7} className="order-lg-1 order-2">
+              <div className={style.BannerBotHeading}>
               <h4>{herosection?.sub_title}</h4>
               <h2>
                 {herosection?.title_2}
                 
               </h2>
+              </div>
             </Col>
-            <Col lg={6} className="order-lg-2 order-1">
-              <img
+            <Col xxl={6} lg={5} className="order-lg-2 order-1">
+              <div className={style.BannerBotImg}><img
                 src={herosection?.right_image}
                 alt=""
-              />
+              /></div>
             </Col>
           </Row>
           <div className={`${style.teamContent} ${style.bannerContent}`} >
