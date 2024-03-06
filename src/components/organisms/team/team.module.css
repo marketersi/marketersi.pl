@@ -714,7 +714,7 @@
     .free {
         padding: 0px 20px;
         background-repeat: no-repeat;
-        background-position: -200px 450px;
+        background-position: 290px 65%;
     }
 
     .teamContent h2 {
@@ -842,7 +842,10 @@
     }
 
     .mainHeading {
-        margin: 50px 0 0 50px;
+        margin: 50px 50px 0 0px;
+    }
+    .mainHeading h2{
+        text-align: left;
     }
 
     .peopleCard {

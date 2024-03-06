@@ -2,21 +2,14 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 
 export default function QuoteTwo() {
-
-const {isLoading, screenData} = useSelector((state) => state.strategy);
-const {quoteTwo} = screenData ;
+  const { isLoading, screenData } = useSelector((state) => state.strategy);
+  const { quoteTwo } = screenData;
 
   return (
     <div className="QuoteTwo content">
-      <div className="QuoteTwo_Title feature">
-        {quoteTwo?.title}
-      </div>
-      <div className="QuoteTwo_TextOne">
-        {quoteTwo?.description_1}
-      </div>
-      <div className="QuoteTwo_TextTwo">
-        {quoteTwo?.description_2}
-      </div>
+      <div className="QuoteTwo_Title feature">{quoteTwo?.title}</div>
+      <div className="QuoteTwo_TextOne">{quoteTwo?.description_1}</div>
+      <div className="QuoteTwo_TextTwo">{quoteTwo?.description_2}</div>
       <div className="QuoteTwo_Image full">
         <Image
           src={quoteTwo?.image}
@@ -27,6 +20,9 @@ const {quoteTwo} = screenData ;
             left: "50%",
           }}
         />
+      </div>
+      <div className="clientReviewHeading">
+        <h2>Pozwól naszym klientom opowiedzieć Ci o współpracy z nami</h2>
       </div>
     </div>
   );

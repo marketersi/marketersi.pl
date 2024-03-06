@@ -9,7 +9,7 @@ const Warranty = () => {
   const router = useRouter();
 
   const navigateToPriceListStrony = () => {
-    router.push("/cennik?type=strony");
+    router.push("/cennik?type=Strone");
   };
 
   return (

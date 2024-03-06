@@ -305,6 +305,7 @@ export default function Analysis() {
             <div className="Analysis4_PanelImage">
               <Image
                 src={Card4?.ButtonData?.image_1}
+                className="card4Img"
                 alt="AnalysisDropdownFour_1"
                 height={361 * 0.9}
                 width={514 * 0.9}
@@ -312,7 +313,7 @@ export default function Analysis() {
             </div>
             <div className="Analysis4_PanelText">
               <div className="Analysis4_PanelTextTitle">
-                {Card4?.ButtonData?.title1}
+                {Card4?.ButtonData?.title_1}
               </div>
               <div className="Analysis4_PanelTextContent">
                 {Card4?.ButtonData?.description_1}

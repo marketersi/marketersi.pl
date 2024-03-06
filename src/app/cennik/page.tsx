@@ -60,7 +60,7 @@ const PriceListScreen = () => {
   useEffect(() => {
     if (type) {
       switch (type) {
-        case "strony":
+        case "Strone":
           handleBtnClick(1);
           break;
         default:
@@ -68,17 +68,7 @@ const PriceListScreen = () => {
       }
     }
   }, [type]);
-  useEffect(() => {
-    if (type) {
-      switch (type) {
-        case "nazwa":
-          handleBtnClick(3);
-          break;
-        default:
-          break;
-      }
-    }
-  }, [type]);
+  
   useEffect(() => {
     if (type) {
       switch (type) {

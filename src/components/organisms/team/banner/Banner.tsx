@@ -23,15 +23,26 @@ const Banner = () => {
 
   return (
     <>
-      <div className={style.zespolVideo}><ReactPlayer
+      <div className={style.zespolVideo}>
+        {/* <ReactPlayer
         url={herosection?.background_video}
         playing={true}
         loop={true}
         muted={true}
         width="100%"
         height="auto"
+        playsinline
         className={style.bannerVideo}
-      /></div>
+      /> */}
+        <video
+          src={herosection?.background_video}
+          className={style.bannerVideo}
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+        ></video>
+      </div>
       <div className={style.overlay}></div>
       <motion.button
         className="arrowAnimation"
@@ -62,36 +73,25 @@ const Banner = () => {
           </h1>
         </div>
         <div className={style.img20}>
-          <img
-            src={herosection?.left_image}
-            alt=""
-          />
+          <img src={herosection?.left_image} alt="" />
         </div>
         <div className={style.bannerBottomContent}>
           <Row>
             <Col xxl={6} lg={7} className="order-lg-1 order-2">
               <div className={style.BannerBotHeading}>
-              <h4>{herosection?.sub_title}</h4>
-              <h2>
-                {herosection?.title_2}
-                
-              </h2>
+                <h4>{herosection?.sub_title}</h4>
+                <h2>{herosection?.title_2}</h2>
               </div>
             </Col>
             <Col xxl={6} lg={5} className="order-lg-2 order-1">
-              <div className={style.BannerBotImg}><img
-                src={herosection?.right_image}
-                alt=""
-              /></div>
+              <div className={style.BannerBotImg}>
+                <img src={herosection?.right_image} alt="" />
+              </div>
             </Col>
           </Row>
-          <div className={`${style.teamContent} ${style.bannerContent}`} >
-            <p>
-              {herosection?.para_one}
-            </p>
-            <p>
-            {herosection?.para_two}
-            </p>
+          <div className={`${style.teamContent} ${style.bannerContent}`}>
+            <p>{herosection?.para_one}</p>
+            <p>{herosection?.para_two}</p>
           </div>
         </div>
       </Container>

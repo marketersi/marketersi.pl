@@ -421,6 +421,7 @@ max-width: 500px;
   max-width: 800px;
   text-align: left;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .Analysis1_Dropdown_Text3 {
@@ -624,9 +625,10 @@ max-width: 500px;
 }
 
 .Analysis4_Panel {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  grid-template-columns: 40% 60%;
   gap: 50px;
 }
 
@@ -652,6 +654,14 @@ max-width: 500px;
   font-weight: 300;
   line-height: 27px;
   max-width: 1088px;
+  margin-bottom: 20px;
+}
+.card4Img {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 30px;
 }
 
 /* 10. WhatRecieve */
@@ -985,7 +995,12 @@ max-width: 500px;
   display: flex;
   justify-content: center;
 }
-
+.clientReviewHeading h2 {
+  font-size: 61px;
+  text-align: center;
+  font-weight: 600;
+  margin: 40px 0 0;
+}
 /* 16. OurClients */
 .OurClients {
   margin-bottom: 150px;
