@@ -8,7 +8,7 @@ export default function WhatRecieve() {
   const {WhatReceive } = screenData;
 
   const [WhatRecieve_Dropdown_Show, setWhatRecieve_Dropdown_Show] =
-    useState(false);
+    useState(true);
 
   return (
     <div className="WhatRecieve content">

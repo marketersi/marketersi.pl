@@ -141,7 +141,7 @@ max-width: 500px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.52) 0px 0px 28px 0px;
   max-width: 1152px;
-  padding: 40px 40px;
+  padding: 40px 40px 20px;
 }
 
 .ResultTable_Table_Row {
@@ -163,7 +163,7 @@ max-width: 500px;
 }
 
 .ResultTable_Table_Row_Content {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 27px;
   max-width: 17ch;
   color: #515151;
@@ -185,6 +185,7 @@ max-width: 500px;
 }
 
 /* 6. Strategy */
+
 .Strategy {
   margin-bottom: 100px;
 }
@@ -213,7 +214,7 @@ max-width: 500px;
 
 .Strategy_Card_Title {
   color: #373737;
-  font-size: 33px;
+  font-size: 30px;
   line-height: 49.5px;
   text-align: center;
 }
@@ -221,7 +222,12 @@ max-width: 500px;
 .Strategy_Card_Title_Number {
   font-weight: 900;
   color: rgb(208 208 208);
-  font-size: 180px;
+  font-size: 150px;
+}
+img.strategyImg {
+  width: 80% !important;
+  margin: 0 auto;
+  display: block;
 }
 
 .Strategy_Card_Content_One {
@@ -1234,10 +1240,13 @@ max-width: 500px;
 }
 
 .StrategyAction_Container {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   padding-inline: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  grid-template-columns: 50% 50%;
 }
 
 .StrategyAction_Content_Title {
@@ -1337,7 +1346,7 @@ max-width: 500px;
 /* * */
 .content {
   --gap: clamp(1rem, 6vw, 3rem);
-  --content: min(77ch, 100% - var(--gap) * 2);
+  --content: min(80ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
   --feature: minmax(0, 5rem);
   --full: minmax(var(--gap), 1fr);
@@ -1799,7 +1808,7 @@ display: block;
 
   .StrategyAction_Container {
     flex-direction: column;
-    padding: 0 150px;
+    padding: 0 50px;
   }
 }
 
@@ -1888,6 +1897,9 @@ display: block;
   }
   .OurClients{
     margin-bottom: 70px;
+  }
+  .StrategyAction_Container {
+    grid-template-columns: 100%;
   }
 }
 
@@ -2199,6 +2211,7 @@ display: block;
 
   .StrategyAction_Container {
     padding: 0px 20px;
+    grid-template-columns: 100%;
   }
 
   .StrategyAction_Content_Title {
