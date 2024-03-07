@@ -1,5 +1,5 @@
 .faqContainer {
-    max-width: 800px;
+    max-width: 900px !important;
     margin: 0 auto;
     padding: 70px 0;
 }
@@ -11,8 +11,8 @@
 .accordion-title {
     display: flex;
     justify-content: space-between;
-    font-size: 20px !important;
-    font-weight: 500 !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
     border-bottom: 2px solid gray;
     background: transparent !important;
     padding: 15px 20px 15px 0 !important;

@@ -1,33 +1,43 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function ImageAdvantage() {
+  const { screenData } = useSelector((state) => state.strategy);
+  const { imagesAdvantage } = screenData || {};
+  const { info_1, info_2 } = imagesAdvantage || [];
+
   const [ImageAdvantage_Dropdown_Show, setImageAdvantage_Dropdown_Show] =
     useState(true);
 
   return (
     <div className="ImageAdvantage content">
       <div className="ImageAdvantage_Title feature">
-        Opracujemy Twoją wizerunkową przewagę
+        {/* Opracujemy Twoją wizerunkową przewagę */}
+        {imagesAdvantage?.title}
       </div>
       <div className="ImageAdvantage_Content feature">
-        W świecie, w którym Twojego potencjalnego klienta od konkurencji dzieli
-        jedynie kilka kliknięć, należy starannie zaplanować to, w jaki sposób
-        będziemy się wyróżniać - zarówno słowem jak i obrazem.
+        {imagesAdvantage?.description}
       </div>
       <div className="ImageAdvantage_Table">
         <div className="ImageAdvantage_Table_Column">
-          <div>Wizerunkowe cele firmy</div>
+          {info_1?.map((info, index) => (
+            <div key={index}>{info}</div>
+          ))}
+          {/* <div>Wizerunkowe cele firmy</div>
           <div>Architektura i standardy marki</div>
           <div>Storytelling - Nasza opowieść</div>
           <div>Jak się wyróżniamy</div>
-          <div>Pożądane Emocje</div>
+          <div>Pożądane Emocje</div> */}
         </div>
         <div className="ImageAdvantage_Table_Column">
-          <div>Logo i zasady ekspozycji.</div>
+        {info_2?.map((info, index) => (
+            <div key={index}>{info}</div>
+          ))}
+          {/* <div>Logo i zasady ekspozycji.</div>
           <div>Zasady komunikacji werbalnej</div>
           <div>Typografia i hierarchia wizualna</div>
           <div>Markowy styl ilustracji i fotografii</div>
-          <div>Personal branding</div>
+          <div>Personal branding</div> */}
         </div>
         <div className="ImageAdvantage_Table_Column">
           <div className="ImageAdvantage_Button_Container">
@@ -41,7 +51,7 @@ export default function ImageAdvantage() {
                 setImageAdvantage_Dropdown_Show(!ImageAdvantage_Dropdown_Show);
               }}
             >
-              ▼ Jak taki plan wygląda w praktyce?
+              ▼ {imagesAdvantage?.button_text}
             </button>
           </div>
         </div>
@@ -52,17 +62,10 @@ export default function ImageAdvantage() {
         hidden={ImageAdvantage_Dropdown_Show}
       >
         <div className="ImageAdvantage_Dropdown_ContentOne">
-          Starannie badamy Twoją konkurencję, aby upewnić się, że Twoja marka
-          wyróżni się w korzystny sposób. Dobieramy odpowiednią paletę kolorów,
-          styl i tworzymy wytyczne dla Twojego brandingu. Opracowujemy opowieść
-          Twojej marki - w taki sposób, by wywoływała odpowiednie emocje w
-          Twoich potencjalnych klientach i zdobyła ich zaufanie.
+          {imagesAdvantage?.paragraph_1}
         </div>
         <div className="ImageAdvantage_Dropdown_ContentTwo">
-          Skuteczny emotional branding pozwoli Ci uzyskać przewagę nad
-          konkurencją już na pierwszy rzut oka. Takie strategiczne podejście do
-          identyfikacji sprawi, że twoja marka zapisze się w pamięci klienta od
-          pierwszego kontaktu i zostanie z nim aż do podjęcia decyzji zakupowej.
+          {imagesAdvantage?.paragraph_2}
         </div>
       </div>
     </div>
