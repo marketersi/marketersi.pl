@@ -8,10 +8,10 @@ export default function Analysis() {
   const { ButtonData } = screenData?.Card1 || {};
   const { Point1, Point2 } = Card1?.Points || {};
 
-  const [Analysis1_Dropdown_Show, setAnalysis1_Dropdown_Show] = useState(false);
-  const [Analysis2_Dropdown_Show, setAnalysis2_Dropdown_Show] = useState(false);
-  const [Analysis3_Dropdown_Show, setAnalysis3_Dropdown_Show] = useState(false);
-  const [Analysis4_Dropdown_Show, setAnalysis4_Dropdown_Show] = useState(false);
+  const [Analysis1_Dropdown_Show, setAnalysis1_Dropdown_Show] = useState(true);
+  const [Analysis2_Dropdown_Show, setAnalysis2_Dropdown_Show] = useState(true);
+  const [Analysis3_Dropdown_Show, setAnalysis3_Dropdown_Show] = useState(true);
+  const [Analysis4_Dropdown_Show, setAnalysis4_Dropdown_Show] = useState(true);
 
   return (
     <div className="Analysis content">

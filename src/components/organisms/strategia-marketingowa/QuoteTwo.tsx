@@ -7,7 +7,7 @@ export default function QuoteTwo() {
 
   return (
     <div className="QuoteTwo content">
-      <div className="QuoteTwo_Title feature">{quoteTwo?.title}</div>
+      <div className="QuoteTwo_Title feature">{quoteTwo?.title_1}</div>
       <div className="QuoteTwo_TextOne">{quoteTwo?.description_1}</div>
       <div className="QuoteTwo_TextTwo">{quoteTwo?.description_2}</div>
       <div className="QuoteTwo_Image full">
@@ -22,7 +22,7 @@ export default function QuoteTwo() {
         />
       </div>
       <div className="clientReviewHeading">
-        <h2>Pozwól naszym klientom opowiedzieć Ci o współpracy z nami</h2>
+        <h2>{quoteTwo?.title_2}</h2>
       </div>
     </div>
   );

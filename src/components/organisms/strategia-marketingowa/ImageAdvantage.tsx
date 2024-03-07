@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function ImageAdvantage() {
   const [ImageAdvantage_Dropdown_Show, setImageAdvantage_Dropdown_Show] =
-    useState(false);
+    useState(true);
 
   return (
     <div className="ImageAdvantage content">
