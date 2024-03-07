@@ -18,14 +18,8 @@ const LogoBanner = () => {
   return (
     <>
       <section>
-        <div className="container">
+        <div className="LogoBannerContainer">
           <div className="top-section-banner projects-top-section-banner projects-fix-top-pos">
-            {/* <img
-              src="/assets/images/logo-design/Projektowanie-logo-dla-firm1.jpg.webp"
-              className="projects-main-image-logop"
-              alt="Zespół, którego misja to projektowanie logo dla firm"
-              title="Zespół, którego misja to projektowanie logo dla firm"
-            /> */}
             {image && (
               <img
                 src={image}
@@ -39,16 +33,9 @@ const LogoBanner = () => {
           <div className="col-md-6 col-46 projects-top-banner-container">
             <div className="top-banner-text projects-top-banner-text">
               <h1 className="top-banner-title projects-top-banner-title projects-top-title-mright">
-                {/* Projektowanie logo
-                <br className="dont-delete" />
-                które pokochasz */}
                 {title && title}
               </h1>
               <h2 className="top-banner-long-text projects-top-banner-long-text">
-                {/* Dajemy Ci{" "}
-                <strong>
-                  <span className="orange-big-underline">100% gwarancji.</span>
-                </strong> */}
                 <strong>{subtitle && subtitle}</strong>
               </h2>
             </div>
@@ -56,15 +43,6 @@ const LogoBanner = () => {
 
           <div className="col-md-6 col-46 projects-top-banner-container">
             <div className="projects-under-top-banner-text">
-              {/* <p className="p-0">
-                Piękna, ręcznie stworzona marka — nawet w 5 dni. <br />
-              </p>
-              <p className="margin-top-0 p-0">
-                Praca do pełnej satysfakcji — bez limitu projektów. <br />
-              </p>
-              <p className="margin-top-0 p-0">
-                Nr 1 w Polsce — 1.000 zadowolonych klientów.
-              </p>{" "} */}
               <p>{text && text}</p>
             </div>
           </div>
@@ -76,7 +54,6 @@ const LogoBanner = () => {
                 type="button"
                 fdprocessedid="k9dho"
               >
-                {/* <strong>OK. Wyślijcie mi niezobowiązującą ofertę</strong> */}
                 <strong>{buttontext && buttontext}</strong>
               </button>
             </div>

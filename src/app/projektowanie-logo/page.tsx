@@ -150,7 +150,7 @@ const LogoDesignScreen = () => {
             </div>
             <Form />
           </section>
-          <LogoFooter />
+          {/* <LogoFooter /> */}
         </>
       {/* )} */}
     </>

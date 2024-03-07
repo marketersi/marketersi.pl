@@ -12,12 +12,11 @@ const Hero = () => {
       <div className="facts_hero_container">
         <div>
           <h1>
-            <span>{screenData?.title && screenData.title.split(" ")[0]}</span>  
-             {screenData?.title  && screenData.title.split(" ").slice(1).join(" ")}
+            <span>{screenData?.title && screenData.title.split(" ")[0]}</span>
+            {screenData?.title &&
+              screenData.title.split(" ").slice(1).join(" ")}
           </h1>
-          <p>
-            {screenData?.subtitle}
-          </p>
+          <p>{screenData?.subtitle}</p>
         </div>
         <div className="factowBannerVideo">
           <ReactPlayer
@@ -26,8 +25,16 @@ const Hero = () => {
             loop={true}
             width="100%"
             height="auto"
-            url={screenData?.video_url}
+            url="https://res.cloudinary.com/ddctmb3dk/video/upload/v1698077578/zxcacvh2xxu6vj3nbe1j.webm"
           />
+          {/* <ReactPlayer
+            muted={true}
+            playing={true}
+            loop={true}
+            width="100%"
+            height="auto"
+            url={screenData?.video_url}
+          /> */}
         </div>
       </div>
     </section>
