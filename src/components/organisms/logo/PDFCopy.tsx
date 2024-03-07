@@ -40,7 +40,7 @@ const PDFCopy = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-md-6 projects-lprasa-container">
+            <div className="col-lx-6 projects-lprasa-container">
               {image && (
                 <img
                   src={image}
@@ -50,7 +50,7 @@ const PDFCopy = () => {
                 />
               )}
             </div>
-            <div className="col-md-6">
+            <div className="col-lx-6">
               <p className="theme-desc projects-custom-lineheight projects-custom-margin pGuid">
                 {imageTitle && imageTitle}
               </p>

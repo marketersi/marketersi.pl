@@ -548,9 +548,11 @@ export const SlideFour = () => {
           {FeedbackSummary?.description}
         </div>
         <div className="OurClients_Card_One_Button_Container">
-          <button className="OurClients_Card_One_Button">
-            Poznaj wszystkie recenzje
-          </button>
+        <button className="OurClients_Card_One_Button" onClick={() => {
+    window.location.href = '/marketersi-opinie';
+}}>
+    Poznaj wszystkie recenzje
+</button>
         </div>
       </div>
     </>

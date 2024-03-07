@@ -18,7 +18,7 @@ const FreeShops = () => {
               <h5 className="theme-subtitle projects-clients-theme-subtitle projects-theme-subtitle-rwd projects-custom-mtop-0">
                 {title && title}
               </h5>
-              <h3 className="projects-theme-title-2 text-left">
+              <h3 className="projects-theme-title-2 text-left ErupaSubTItle">
                 {subtitle && subtitle}
               </h3>
               <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc projects-custom-push-top-td projects-custom-margin-2">

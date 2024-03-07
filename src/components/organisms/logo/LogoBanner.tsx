@@ -30,7 +30,7 @@ const LogoBanner = () => {
             )}
           </div>
 
-          <div className="col-md-6 col-46 projects-top-banner-container">
+          <div className="col-xl-6 col-46 projects-top-banner-container">
             <div className="top-banner-text projects-top-banner-text">
               <h1 className="top-banner-title projects-top-banner-title projects-top-title-mright">
                 {title && title}
@@ -41,13 +41,13 @@ const LogoBanner = () => {
             </div>
           </div>
 
-          <div className="col-md-6 col-46 projects-top-banner-container">
+          <div className="col-xl-6 col-46 projects-top-banner-container">
             <div className="projects-under-top-banner-text">
               <p>{text && text}</p>
             </div>
           </div>
 
-          <div className="col-md-12 part-sec">
+          <div className="col-xl-12 part-sec">
             <div className="catalog-submit-button text-left projects-catalog-submit-buttom">
               <button
                 className="download-catalog-button-2 projects-download-catalog-button send-offer-button js--triggerAnimation"
