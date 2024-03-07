@@ -17,3 +17,8 @@
     background: transparent !important;
     padding: 15px 20px 15px 0 !important;
 }
+@media  screen and (max-width: 1024px){
+    .faqContainer {
+        max-width: 90% !important;
+      }
+}

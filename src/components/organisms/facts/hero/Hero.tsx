@@ -19,22 +19,22 @@ const Hero = () => {
           <p>{screenData?.subtitle}</p>
         </div>
         <div className="factowBannerVideo">
-          <ReactPlayer
-            muted={true}
-            playing={true}
-            loop={true}
-            width="100%"
-            height="auto"
-            url="https://res.cloudinary.com/ddctmb3dk/video/upload/v1698077578/zxcacvh2xxu6vj3nbe1j.webm"
-          />
           {/* <ReactPlayer
             muted={true}
             playing={true}
             loop={true}
             width="100%"
             height="auto"
-            url={screenData?.video_url}
+            url="https://res.cloudinary.com/ddctmb3dk/video/upload/v1698077578/zxcacvh2xxu6vj3nbe1j.webm"
           /> */}
+          <ReactPlayer
+            muted={true}
+            playing={true}
+            loop={true}
+            width="100%"
+            height="auto"
+            url={screenData?.video_url}
+          />
         </div>
       </div>
     </section>

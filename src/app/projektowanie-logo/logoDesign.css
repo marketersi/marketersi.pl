@@ -14,7 +14,7 @@ h6 {
 }
 
 .projects-top-banner-container {
-  width: 600px;
+  max-width: 600px;
 }
 
 .projects-top-banner-text {
@@ -130,6 +130,7 @@ img.projects-main-image-logop {
   top: 170px;
   right: 50px;
   position: absolute;
+  z-index: -1;
 }
 
 .logo-home img,
@@ -137,14 +138,6 @@ img.projects-main-image-logop {
   max-width: 100%;
 }
 
-/* .top-section-banner:after {
-  width: 290px;
-  height: 605px;
-  top: 100px;
-  right: 60px;
-  position: absolute;
-  content: "";
-} */
 
 .projects-top-section-banner:after {
   background: url() no-repeat;
@@ -220,8 +213,8 @@ img.projects-main-image-logop {
 
 .img-background-logop {
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
+  margin: 50px auto 0;
+  max-width: 80%;
 }
 
 .custom-container1 {
@@ -392,8 +385,12 @@ img.projects-main-image-logop {
 }
 
 .projects-theme-desc-p {
-  margin-left: 0px;
   margin-right: 0px;
+  margin-left: 0;
+}
+.valuePara{
+  max-width: 400px;
+  margin-left: auto;
 }
 
 .projects-includes-ul {
@@ -515,7 +512,7 @@ img.projects-main-image-logop {
 
 .projects-container-textright {
   text-align: right;
-  max-width: 880px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -551,6 +548,7 @@ img.projects-main-image-logop {
   position: absolute;
   right: 0;
   left: -330px;
+  max-width: 700px;
 }
 
 .logo-button-box {
@@ -566,6 +564,14 @@ img.projects-main-image-logop {
 
 .galeria-logo-style {
   margin-bottom: -20vw;
+}
+.galleryDecPara {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.galeriaImageContainer {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .project-pbottom-30 {
@@ -628,6 +634,8 @@ img.projects-main-image-logop {
   letter-spacing: -0.025em;
   line-height: 93px;
   padding-top: 50px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .projects-under-big-header3 {
@@ -638,6 +646,8 @@ img.projects-main-image-logop {
   line-height: 52px;
   margin-bottom: 20px;
   color: #373737;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .projects-clients-theme-subtitle {
@@ -672,7 +682,7 @@ img.projects-main-image-logop {
 .projects-theme-title-2 {
   color: #252424;
   font-family: "Playfair Display";
-  font-size: 42px;
+  font-size: 50px;
   line-height: 1.4;
   font-weight: 900;
   padding-top: 35px;
@@ -712,6 +722,8 @@ img.projects-main-image-logop {
   text-align: center;
   margin: 24px 0 66px;
   letter-spacing: -0.03em;
+  max-width: 900px;
+  margin-inline: auto;
 }
 
 .signature {
@@ -727,7 +739,7 @@ img.projects-main-image-logop {
 .image-810-container {
   overflow: hidden;
   width: 100%;
-  margin: 20px 0 50px;
+  margin: 20px 0 0px;
 }
 
 .image-810 {
@@ -783,6 +795,12 @@ img.projects-main-image-logop {
   font-size: 48px;
   text-align: center;
   margin-top: 100px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+.ErupaSubTItle {
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .projects-mb-30 {
@@ -794,7 +812,7 @@ img.projects-main-image-logop {
 }
 
 .park-img {
-  margin-bottom: -328px;
+  margin-bottom: -294px;
   position: relative;
   z-index: 2;
 }
@@ -810,6 +828,7 @@ img.projects-main-image-logop {
   min-height: 500px;
   position: relative;
   z-index: 1;
+  padding-bottom: 50px;
 }
 
 .projects-h-100 {
@@ -822,6 +841,7 @@ img.projects-main-image-logop {
 
 .projects-blue-section-m-text {
   margin-top: 40px;
+  padding-inline: 200px ;
 }
 
 .projects-blue-text2 {
@@ -889,6 +909,8 @@ img.projects-main-image-logop {
   margin-top: 250px;
   padding-left: 5px;
   padding-right: 5px;
+  max-width: 900px;
+  margin-inline: auto;
 }
 
 .copywriting-ending-text {
@@ -939,6 +961,8 @@ img.projects-main-image-logop {
   line-height: 36px;
   letter-spacing: -0.025em;
   margin-bottom: 60px;
+  max-width: 900px;
+  margin-inline: auto ;
 }
 
 .projects-custom-typed-text {
@@ -948,6 +972,8 @@ img.projects-main-image-logop {
   margin-top: 30px;
   margin-bottom: 80px;
   font-size: 38px;
+  max-width: 900px;
+  margin-inline: auto ;
 }
 
 .copywriter-ending-1 {
@@ -1141,4 +1167,110 @@ contact-inputs textarea {
 
 .download-catalog-button:hover {
   background: #d9ad29;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 10rem;
+  height: 10rem;
+}
+.mobileLogo {
+  display: none;
+}
+.desktopLogo {
+  display: block;
+}
+/* -------------------------------------------------media screen ---------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  .top-section-banner{
+    position: relative;
+    width: 100%;
+    top: 0;
+    max-width: 100%;
+  }
+  img.projects-main-image-logop {
+    max-width: 80%;
+}
+.projects-top-banner-container{
+  max-width: 100%;
+  text-align: center;
+}
+.download-catalog-button-2{
+  margin-inline: auto ;
+  display: block;
+}
+.projects-under-top-banner-text p{
+  padding-inline: 50px;
+}
+.mobileLogo {
+  display: block;
+}
+.desktopLogo {
+  display: none;
+}
+img.projects-ksiazka-projektowanie-logo {
+  margin-inline: auto;
+  display: block;
+}
+.projects-theme-desc-p {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+img.opinion-box-inside-image {
+  width: 100% !important;
+}
+.opinion-box-image{
+  position: relative;
+}
+.opinion-box-image {
+  width: 85%;
+  margin-inline: auto;
+}
+.projects-opinion-1 {
+  margin: 0px auto 50px;
+  width: 85%;
+}
+.opinion-box:nth-child(odd) .opinion-box-content {
+  float: none;
+}
+.opinion-box-content-left {
+  float: none !important;
+}
+.projects-co-otrzymasz {
+  padding: 0 25px;
+  padding-bottom: 30px;
+  font-size: 75px;
+  line-height: 75px;
+}
+.projects-custom-white-container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+.projects-wierzymy-img {
+  position: relative;
+  left: 0;
+  max-width: 80%;
+}
+.projects-custom-h5 {
+  margin-inline: auto;
+}
+.valuePara{
+  max-width: 90%;
+  text-align: center;
+}
+.projects-happy-clients-margin {
+  margin-top: 150px;
+}
+.img-background-logop {
+  max-width: 100%;
+}
+.projects-galeria-theme {
+  font-size: 100px;
+  line-height: 100px;
+}
+.image-810 {
+  width: 90%;
+  margin: auto;
+  left: 0 !important;
+
+}
+
 }

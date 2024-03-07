@@ -58,7 +58,7 @@ const ProjectsValue = () => {
         </div>
 
         <img
-          src="/assets/images/logo-design/Logo-projekt-wierzymy.jpg.webp"
+          src={image}
           className="img-background-logop img-background-logop-rwd"
           alt="Logo projekt wizytówki"
           title="Logo - projekt z napisem “wierzymy”"
@@ -69,7 +69,7 @@ const ProjectsValue = () => {
               {imageTitle && imageTitle}
             </h5>
 
-            <p className="theme-desc projects-theme-desc-p">
+            <p className="theme-desc projects-theme-desc-p valuePara">
               {imageSubtitle && imageSubtitle}
             </p>
 
