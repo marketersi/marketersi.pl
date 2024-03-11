@@ -1,14 +1,12 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
 const SalesBanner = () => {
-
-  
   const { isLoading, screenData } = useSelector((state) => state.sales);
-  const {heroSection} = screenData || {};
+  const { heroSection } = screenData || {};
   return (
     <>
-     <section className="sales_banner copywriter-page">
+      <section className="sales_banner copywriter-page">
         <div className="container">
           <div className="top-section-banner copywriter-top-section-banner">
             <img
@@ -35,24 +33,25 @@ const SalesBanner = () => {
                     {heroSection?.sub_title}
                   </h2>
                 </div>
+                <div className=" part-sec old-btn">
+                  <a
+                    href="#"
+                    className="btn btn-green send-offer-button js--triggerAnimation"
+                    data-toggle="modal"
+                    data-target="#contactModal"
+                  >
+                    O.K. wyślijcie mi niezobowiązującą ofertę.
+                  </a>
+                </div>
               </div>
-              <div className="col-md-12 part-sec old-btn">
-                <a
-                  href="#"
-                  className="btn btn-green send-offer-button js--triggerAnimation"
-                  data-toggle="modal"
-                  data-target="#contactModal"
-                >
-                  O.K. wyślijcie mi niezobowiązującą ofertę.
-                </a>
-              </div>
+
               <div className="clearfix"></div>
             </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default SalesBanner
+export default SalesBanner;

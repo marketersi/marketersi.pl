@@ -10,7 +10,7 @@ export const API_ENDPOINTS = {
   SALES_SCREEN: "api/sales-content-setting",
   STRATEGY_SCREEN: "api/get-marketing-strategy",
   OPINION_SCREEN: "",
-  ANATOMY_SCREEN: "",
+  ANATOMY_SCREEN: "api/business-name-creation",
   PRICE_LIST_SCREEN: "api/price-list-setting",
   LOGO_SCREEN: "api/projektowanie",
 

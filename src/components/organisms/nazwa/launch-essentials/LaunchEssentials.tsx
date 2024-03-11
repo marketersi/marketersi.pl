@@ -1,40 +1,56 @@
 import React from "react";
+import { useSelector } from "react-redux";
+
+
 
 const LaunchEssentials = () => {
+  const { isLoading, screenData } = useSelector((state) => state.anatomy);
+  const {launch_essentials} = screenData || {};
+
+  // const backgroundImageUrl = launch_essentials?.policy_image || '';
+  // const BG_After = {
+  //   'names-container-Litery:after': {
+  //     backgroundImage: `url(${backgroundImageUrl})`,
+  //     backgroundRepeat: 'no-repeat',
+  //     backgroundPosition: 'center',
+  //     height: '204px',
+  //     position: 'absolute',
+  //     width: '306px',
+  //     top: '-90px',
+  //     right: '0',
+  //     left: '0',
+  //     margin: '0 auto'
+  //   }
+  // };
   return (
     <section className="menu-target  sec0" id="sec1">
       <div className="container projects-custom-container1">
         <div className="row">
           <div className="col-md-12" id="sec1">
             <h3 className="projects-theme-title2 no-after p-bottom-10 naming-what-you-get-header">
-              Co dokładnie otrzymasz?
+              {launch_essentials?.section_title}
             </h3>
 
             <h5 className="projects-theme-subtitle1 theme-desc-list2">
-              Wszystko to, czego potrzebujesz, by
-              <br />
-              rozkręcić nową markę na dobre.
+              {launch_essentials?.section_subtitle}
             </h5>
 
             <p className="theme-desc text-center p-0 naming-project-includes">
-              Każdy projekt zawiera:
+              {launch_essentials?.list_title}
             </p>
 
             <ul className="names-list-info theme-desc">
-              <li>Dobrze brzmiącą nazwę, z której będziesz dumny.</li>
-              <li>Propozycję wolnej polskiej domeny spójnej z nazwą.</li>
-              <li>Slogan reklamowy wspomagający zapamiętanie nazwy.</li>
-              <li>Pełne prawa autorskie do wybranej nazwy i sloganu.</li>
+              <li>{launch_essentials?.list_element1}</li>
+              <li>{launch_essentials?.list_element2}</li>
+              <li>{launch_essentials?.list_element3}</li>
+              <li>{launch_essentials?.list_element4}</li>
             </ul>
 
             <div className="container custom-container1">
               <div className="row">
                 <div className="col-md-12">
                   <p className="theme-desc projects-theme-desc-p projects-mq-book-fix after-li-ctext">
-                    Nawet, jeśli nie wiesz, jakiego rodzaju nazwy firmy
-                    oczekujesz, <br />
-                    to na pewno ją rozpoznasz, gdy zobaczysz ją wśród
-                    propozycji.
+                    {launch_essentials?.section_paragraph}
                   </p>
                 </div>
               </div>
@@ -45,7 +61,7 @@ const LaunchEssentials = () => {
 
       <div className="naming-seo-img naming-tm-100 naming-new-tm-1">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/naming-zastrzezenie-nazwy-firmy.jpg"
+          src={launch_essentials?.banner_url}
           title="Naming a zastrzeżenie nazwy firmy"
           alt="Naming czyli tworzenie nazw"
         />
@@ -54,14 +70,12 @@ const LaunchEssentials = () => {
       <div className="container custom-container1 pnazw-page">
         <div className="row">
           <div className="col-md-12">
-            <div className="names-container-Litery">
+            <div className="names-container-Litery" >
               <div className="names-client-desc names-client-desc-litery">
-                100% gwarancji satysfakcji.
+                {launch_essentials?.policy_title}
               </div>
               <p className="theme-desc pnazw-ctext-size">
-                Nie kończymy pracy bez uzyskania Twojego pełnego zadowolenia.{" "}
-                <br />
-                Przygotowujemy kolejne propozycje – bez ukrytych kosztów.
+                {launch_essentials?.policy_description}
               </p>
             </div>
           </div>

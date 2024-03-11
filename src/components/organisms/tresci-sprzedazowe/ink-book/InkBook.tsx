@@ -5,6 +5,7 @@ const InkBook = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
   const { projects } = screenData || {};
   const { projectSection8 } = projects || {};
+  const { qualities } = projectSection8 || {};
 
   return (
     <>
@@ -56,7 +57,7 @@ const InkBook = () => {
         </div>
 
         <div className="copywriter-custom-header-4 text-center">
-          {projectSection8?.title}
+          {qualities?.title}
         </div>
 
         {/* <div className="copywriter-custom-subheader-4 text-center">
@@ -66,23 +67,23 @@ const InkBook = () => {
         <div className="container text-center copywriter-reading-container copywriter-standard-mb-80">
           <div className="row">
             <div className="col-md-4">
-              <img src={projectSection8?.image_1} alt="" />
+              <img src={qualities?.image_1} alt="" />
               <div className="copywriter-sm-desc">
-                {projectSection8?.image_1_info}
+                {qualities?.image_1_info}
               </div>
             </div>
 
             <div className="col-md-4">
-              <img src={projectSection8?.image_2} alt="" />
+              <img src={qualities?.image_2} alt="" />
               <div className="copywriter-sm-desc">
-                {projectSection8?.image_2_info}
+                {qualities?.image_2_info}
               </div>
             </div>
 
             <div className="col-md-4">
-              <img src={projectSection8?.image_3} alt="" />
+              <img src={qualities?.image_3} alt="" />
               <div className="copywriter-sm-desc">
-                {projectSection8?.image_3_info}
+                {qualities?.image_3_info}
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@ const InkBook = () => {
 
         <div className="copywriter-text-center">
           <img
-            src={projectSection8?.bottom_image}
+            src={qualities?.bottom_image}
             title="Reklama dla firmy Moko"
             alt="Realizacja reklamy dla Moko"
           />

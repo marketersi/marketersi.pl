@@ -107,17 +107,11 @@ const StepByStep = () => {
           style={{ zIndex: 1, marginTop: 0 }}
         >
           <div className="image-810">
-            {/* <img
-              src="/assets/images/logo-design/Wlasne-logo-Appetime.jpg.webp"
-              className="desktop-810 position-relative"
-              alt="Tworzenie identyfikacji wizualnej i wizytówki"
-              title="Jak stworzyć własne logo na przykładzie Appetime"
-              style={{ position: "relative", left: "-450px", maxWidth: "none" }}
-            /> */}
+       
             {bannerImage && (
               <img
                 src={bannerImage}
-                className="desktop-810 position-relative"
+                className="desktop-810 position-relative appeImg"
                 alt="Tworzenie identyfikacji wizualnej i wizytówki"
                 title="Jak stworzyć własne logo na przykładzie Appetime"
                 style={{

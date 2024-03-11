@@ -1,62 +1,55 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ImplementationEx4 = () => {
+  const { screenData } = useSelector((state) => state.anatomy);
+  const { implementation } = screenData || {};
+  const { example3 } = implementation || {};
   return (
     <section className="projects-gray-opinion-5">
-      <div className="container names-custom-container">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname custom-after-top-line cname-big-mtop">
-              MIŃSK <br className="dont-delete" />{" "}
-              <div className="underline-down">MAZOWIECKI</div>
+      {example3?.map((item, index) => {
+        return (
+          <div key={index} className="container names-custom-container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <div className="names-client-name copywriter-cname custom-after-top-line cname-big-mtop">
+                  {item.title}
+                </div>
+                <div className="names-client-desc">{item.subtitle}</div>
+              </div>
             </div>
 
-            <div className="names-client-desc">
-              Nazwa napoju energetyzującego <br />
-              opartego o naturalne składniki.
+            <div className="naming-seo-img">
+              <img
+                src={item.image}
+                title="Nowa nazwa dla produktu - Biomba"
+                alt="Biomba jako dobry przykład nazw produktów"
+              />
+            </div>
+
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-quote-fsize-2">
+                    {item.quote}
+                  </h5>
+                  <p className="signature newsignmargin">{item.quote_name}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="container names-custom-container">
+              <div className="row">
+                <div className="col-md-12">
+                  <p className="theme-desc">{item.para}</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
 
-      <div className="naming-seo-img">
-        <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/nazwa-dla-produktu-biomba.jpg"
-          title="Nowa nazwa dla produktu - Biomba"
-          alt="Biomba jako dobry przykład nazw produktów"
-        />
-      </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-quote-fsize-2">
-              „Nigdy wcześniej nie zamawialiśmy nazwy, <br />
-              ale gdy już zobaczyliśmy ten projekt, po prostu <br />
-              nie wyobrażamy sobie innego. Co za pomysł!
-            </h5>
-            <p className="signature newsignmargin">
-              Grzegorz M. Dyrektor produkcji
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="container names-custom-container">
-        <div className="row">
-          <div className="col-md-12">
-            <p className="theme-desc">
-              Krótka, prosta i łatwa do zapamiętania. W optymalny sposób
-              przekazuje <br />
-              wyróżniki marki. Element „bio” odnoszący się do owoców i warzyw
-              oraz <br />
-              nawiązanie do mocnego i natychmiastowego pobudzenia. Bomba!
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="container names-custom-container">
+      {/* <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
             <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
@@ -492,7 +485,7 @@ const ImplementationEx4 = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

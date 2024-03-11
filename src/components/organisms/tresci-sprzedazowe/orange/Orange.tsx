@@ -10,7 +10,7 @@ const Orange = () => {
     <>
 <section className="thematic-section-orange" id='sec2' >
         <div className="copywriter-orange-bg" style={{
-  backgroundImage: `url(${projectSection1?.bckgrnd_image})`
+  backgroundImage: `url(${projectSection1?.background_image})`
 }}>
           {/* <img
             className="copywriter-seo-img-dnone"

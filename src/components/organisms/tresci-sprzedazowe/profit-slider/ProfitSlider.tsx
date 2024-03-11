@@ -14,7 +14,7 @@ const ProfitSlider = ({carouselImages, images}) => {
         <Carousel>
           {images?.map((image, index) => (
             <Carousel.Item>
-              <ExampleCarouselImage src={image} alt="Second slide" />
+              <ExampleCarouselImage src={image} alt="Second slide"/>
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
           ))}

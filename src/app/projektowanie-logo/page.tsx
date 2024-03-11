@@ -99,50 +99,28 @@ const LogoDesignScreen = () => {
         <Loader />
       ) : ( */}
         <>
-          {/* section 1 */}
           <LogoBanner />
-          {/* section 2 */}
           <SampleLogo />
-          {/* section 3 */}
           <GoodBusiness />
-          {/* section 4 */}
           <PDFCopy />
-          {/* section 5 */}
           <Opinion />
-          {/* section 6 */}
           <Receive />
-          {/* section 7 */}
           <Guarantee />
-          {/* section 8 */}
           <LogoAccordion items={accordionData} />
-          {/* section 9 */}
           <ProjectValue />
-          {/* section 10 */}
           <Gallery />
-          {/* section 11 */}
           <StepByStep />
-          {/* section 12 */}
           {/* ---------------------------------------------------------------- */}
           <FreeShops />
-          {/* section 13 */}
           <Enexo />
-          {/* section 14 */}
           <Daco />
-          {/* section 15 */}
           <Aico />
-          {/* section 16 */}
           <ZooGarden />
-          {/* section 17 */}
           <Construction />
-          {/* section 18 */}
           <Restaurant />
-          {/* section 19 */}
           <Park />
-          {/* section 20 */}
           <GPN />
-          {/* section 21 */}
           <NewCompany />
-          {/* section 22 */}
           <section className="black-sec-form">
             <div className="copywriter-ending-1 text-center">
               Zróbmy razem <br />
@@ -150,7 +128,7 @@ const LogoDesignScreen = () => {
             </div>
             <Form />
           </section>
-          {/* <LogoFooter /> */}
+          <LogoFooter />
         </>
       {/* )} */}
     </>
