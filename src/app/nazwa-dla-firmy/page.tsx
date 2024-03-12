@@ -15,6 +15,7 @@ import LogoAccordion from "@/components/organisms/logo/accordion/LogoAccordion";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_ANATOMY_SCREEN_DATA } from "@/redux/nazwa-dla-firmy/anatomyAction";
 import OptionBox2 from "@/components/organisms/tresci-sprzedazowe/options-box2/OptionBox2";
+import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 
 const NazwaDlaFirmy = () => {
   const {  screenData } = useSelector((state) => state.anatomy);
@@ -28,6 +29,7 @@ const NazwaDlaFirmy = () => {
 
   useEffect(() => {
     dispatch({ type: FETCH_ANATOMY_SCREEN_DATA });
+    dispatch({ type: FETCH_SALES_SCREEN_DATA });
   }, [dispatch]);
 
   return (

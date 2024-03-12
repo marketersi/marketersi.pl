@@ -1706,6 +1706,6 @@ contact-inputs textarea {
     font-size: 30px;
   }
   .nazwa_footer_bottom_left {
-    display: none;
+    display: none !important;
 }
 }
