@@ -1,20 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-// const GPNData = {
-//   title:
-//     "Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie stanowiło całości. Logo wymaga stanowiło całości. Logo wymaga zapisów międzynarodowych, a dzięki takiemu zabiegowi będziemożna eksponować jew zależności od kontekstu w pionie i w poziomie.",
-//   companyLogo: [
-//     "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
-//     "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
-//     "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
-//   ],
-//   productLogo: [
-//     "/assets/images/logo-design/cennik-logo-gpnt.jpg.webp",
-//     "/assets/images/logo-design/projekt-logo-gpnt2.jpg.webp",
-//     "/assets/images/logo-design/projekt-logo-gpnt.jpg.webp",
-//   ],
-// };
 
 const GPN = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -31,11 +17,7 @@ const GPN = () => {
             {/* ignore */}
             <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text2">
               <p className="theme-desc text-center projects-blue-text2">
-                Po pierwsze, rozdzieliliśmy symbol od sygnatury. Tak, aby nie
-                stanowiło całości. Logo wymaga <br />
-                zapisów międzynarodowych, a dzięki takiemu zabiegowi będzie
-                można eksponować je <br />
-                w zależności od kontekstu w pionie i w poziomie. <br />
+               {title && title}
               </p>
             </div>
 
@@ -77,7 +59,7 @@ const GPN = () => {
               </p>
             </div>
 
-            <div className="col-md-3 col-sm-6 col-xs-12 projects-blue-img-rwd z-index-2">
+            <div className="col-xl-3 col-md-6 col-xs-12 projects-blue-img-rwd z-index-2">
               <a
                 href=" https://www.youtube.com/watch?v=a6h9eJTJmCw"
                 data-lity=""
@@ -93,7 +75,7 @@ const GPN = () => {
               </a>
             </div>
 
-            <div className="col-md-2 col-sm-6 col-xs-12 projects-blue-img-rwd">
+            <div className="col-xl-2 col-md-6 col-xs-12 projects-blue-img-rwd">
               <div className="projects-blue-cont-image1">
                 <img
                   src={productLogo && productLogo.length > 0 ? productLogo[0] : ''}
@@ -104,7 +86,7 @@ const GPN = () => {
               </div>
             </div>
 
-            <div className="col-md-6 projects-blue-img-rwd">
+            <div className="col-xl-6 col-md-12 projects-blue-img-rwd">
               <div className="">
                 <img
                   src={productLogo && productLogo.length > 1 ? productLogo[1] : ''}

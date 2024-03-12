@@ -1,14 +1,18 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import "./nazwa-hero.css";
+import { useSelector } from "react-redux";
 
 const NazwaHero = () => {
+  const { isLoading, screenData } = useSelector((state) => state.anatomy);
+  const { heroSection } = screenData || {};
+  console.log("dla :", heroSection);
   return (
     <section className="pnazw-page">
       <div className="container ">
         <div className="top-section-banner names-top-section-banner naming-no-bg naming-no-after naming-top-section-banner">
           <ReactPlayer
-            url="https://www.copywriting.pl/files/resources/Nazwy-landing.mp4"
+            url={heroSection?.background_video}
             playing={true}
             loop={true}
             muted={true}
@@ -22,18 +26,15 @@ const NazwaHero = () => {
             <div className="col-md-6 col-46 names-top-banner-container">
               <div className="top-banner-text projects-top-banner-text naming-top-banner-text">
                 <h1 className="top-banner-title projects-top-banner-title pnazw-topbanner-title">
-                  Dobry biznes <br className="dont-delete" /> zaczyna się od{" "}
-                  <br className="dont-delete" /> dobrej nazwy.{" "}
+                  {/* Dobry biznes <br className="dont-delete" /> zaczyna się od{" "}
+                  <br className="dont-delete" /> dobrej nazwy.{" "} */}
+                  {heroSection?.title}
                 </h1>
                 <h2 className="top-banner-long-text names-top-banner-long-text">
-                  Projektujemy nazwy, które mówią wyraźnie.{" "}
-                  <br className="dont-delete" />
-                  Robią dobre wrażenie i zapadają w pamięci.{" "}
-                  <br className="dont-delete" />
+                 {heroSection?.subtitle1}
                 </h2>
                 <h2 className="top-banner-long-text names-top-banner-long-text pnazw-second-maintext">
-                  Dajemy 100% gwarancji satysfakcji.{" "}
-                  <br className="dont-delete" />- Bez limitu propozycji.
+                {heroSection?.subtitle2}
                 </h2>
               </div>
             </div>

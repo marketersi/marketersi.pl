@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Profit = () => {
 
-  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const {  screenData } = useSelector((state) => state.sales);
   const { sliderSection } = screenData || {};
   const { images } = sliderSection || {};
 

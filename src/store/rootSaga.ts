@@ -27,6 +27,8 @@ import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 import { salesScreenSaga } from "@/redux/tresci/salescontentSagas";
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 import { priceListScreenSaga } from "@/redux/cennik/pricelistSaga";
+import { anatomyScreenSaga } from "@/redux/nazwa-dla-firmy/anatomySagas";
+import { FETCH_ANATOMY_SCREEN_DATA } from "@/redux/nazwa-dla-firmy/anatomyAction";
 
 export default function* rootSaga() {
   yield all([
@@ -43,5 +45,6 @@ export default function* rootSaga() {
     takeLatest(FETCH_LOGO_SCREEN_DATA, logoScreenSaga),
     takeLatest(FETCH_PRICELIST_SCREEN_DATA, priceListScreenSaga),
     takeLatest(FETCH_SALES_SCREEN_DATA, salesScreenSaga),
+    takeLatest(FETCH_ANATOMY_SCREEN_DATA, anatomyScreenSaga),
   ]);
 }

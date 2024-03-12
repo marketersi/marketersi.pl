@@ -1,38 +1,35 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Anatomy = () => {
+  const { isLoading, screenData } = useSelector((state) => state.anatomy);
+  const {anatomy} = screenData || {};
   return (
     <section className="top-section-ending projects-over-hid">
       <div className="container projects-custom-container1">
         <div className="row">
           <div className="col-md-12">
             <h2 className="theme-title1 projects-big-header custom-projects-margin-top">
-              Owocna nazwa pomoże Ci <br className="dont-delete" /> rozwinąć
-              firmę szybciej.
+              {anatomy?.title}
             </h2>
 
             <p className="theme-desc text-center p-0 projects-under-big-header2 ">
-              Świetne marki od zawsze przyciągają najlepszych
-              <br />
-              pracowników, uwodzą klientów i napędzają zyski.
+             {anatomy?.description1}
             </p>
 
             <p className="theme-desc text-center p-0 projects-under-big-header">
-              Pomożemy Ci stworzyć świetną markę. Zaprojektujemy nazwę,
-              <br />
-              która wyśle czytelny komunikat i wywoła skojarzenia, <br />
-              które będą miały duży wpływ na decyzje klientów.
+              {anatomy?.description2}
             </p>
 
             <p className="theme-desc text-center p-0 names-features-image naming-tm-100">
               <img
                 className="owocnych-nazw-text"
-                src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/Anatomia-tworzenia-nazw.png"
+                src={anatomy?.title_image_url}
                 title="anatomia-naming"
                 alt="Anatomia - projektowanie nazw"
               />
               <br className="dont-delete" />
-              owocnych&nbsp;nazw
+              {anatomy?.below_text}
             </p>
           </div>
         </div>
@@ -40,7 +37,7 @@ const Anatomy = () => {
 
       <div className="naming-seo-img">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/Tworzenie-nazwy-firmy.jpg"
+          src={anatomy?.banner_url}
           title="Składowe tworzenia nazwy"
           alt="Przepis na dobrą nazwę"
         />

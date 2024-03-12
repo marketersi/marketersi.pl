@@ -4,11 +4,12 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "./accordion.css";
+import { useSelector } from "react-redux";
 
 // Define a type for the items prop
 type AccordionItem = {
   title: string;
-  content: string;
+  description: string;
 };
 
 type AccordionProps = {
@@ -16,6 +17,10 @@ type AccordionProps = {
 };
 
 const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
+  const { screenData } = useSelector((state) => state.anatomy);
+  const { faq } = screenData || {};
+  // const { accordion } = faq || {};
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
@@ -25,12 +30,11 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
   return (
     <div id="sec2">
       <div className="copywriter-intro-bg-5-label text-center">
-        Na wszystkie pytania <br />
-        odpowiedź brzmi:
+        {faq?.title}
       </div>
 
       <img
-        src="/assets/images/logo-design/Projekt-loga-tak.jpg.webp"
+        src={faq?.image}
         className="img-background-logop"
         alt="Projekt prostego loga"
         title="Projekt loga przedstawiający słowo “TAK”"
@@ -54,7 +58,7 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
                 )}
               </div>
               {index === activeIndex && (
-                <div className="accordion-content">{item.content}</div>
+                <div className="accordion-content">{item.description}</div>
               )}
             </div>
           ))}

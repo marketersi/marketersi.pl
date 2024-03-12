@@ -1,6 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ProjectValue = () => {
+  const { isLoading, screenData } = useSelector((state) => state.anatomy);
+  const { project_value } = screenData || {};
   return (
     <div className="pnazw-page">
       <section className="projects-thematic-section-gray projects-thematic-section-background-index ">
@@ -12,13 +15,11 @@ const ProjectValue = () => {
                 id="sec2"
               >
                 <h1 className="theme-title1 projects-big-header names-big-header naming-padding-valuation pnazw-custom-header">
-                  Jak wyceniamy projekty?
+                  {project_value?.title}
                 </h1>
               </div>
               <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
-                Cały proces zamkamy w rozsądnej cenie dla małych firm. <br />
-                Każdy projekt jest inny. Każdy wyceniamy indywidualnie, <br />
-                elastycznie i przyjaźnie. Tylko jakość nie podlega negocjacji.
+                {project_value?.description}
               </p>
             </div>
           </div>
@@ -27,14 +28,13 @@ const ProjectValue = () => {
         <div className="projects-custom-container-gray new-wierzymy">
           <img
             className="img-wierzymy"
-            src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/agencja-namingowa-wierzymy.jpg"
+            src={project_value?.banner_url}
             title="Agencja namingowa - wierzymy w małe firmy"
             alt="Wierzymy, że dobry naming pomaga"
           />
 
           <p className="theme-desc text-center projects-gray-section-custom-font projects-gray-section-valuation projects-thematic-section-background-index projecs-big-wierzymy-label">
-            90% pracy wykonamy
-            <br /> za 50% ceny.
+            {project_value?.offer_title}
           </p>
         </div>
 
@@ -44,11 +44,7 @@ const ProjectValue = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
-                Drugą połowę rozliczymy,
-                <br />
-                gdy będziesz w pełni zadowolony
-                <br />
-                ze wszystkich efektów naszej pracy.
+                {project_value?.bottom_description}
               </p>
             </div>
           </div>

@@ -509,7 +509,7 @@ section.black-sec-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     border-bottom: 2px solid lightgray;
 }
@@ -520,10 +520,10 @@ section.black-sec-form {
   
   .accordion-content {
     padding: 20px 0;
-    font-size: 18px;
+    font-size: 14px;
     background: transparent;
     border-top: 1px solid lightgray;
-    line-height: 35px;
+    line-height: 25px;
     font-weight: 300;
 }
 .faqContainer {

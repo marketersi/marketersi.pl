@@ -6,7 +6,7 @@ const ExampleCarouselImage = ({ src, alt }) => {
   return (
     <>
       <img style={{margin: '0 auto'}}
-        className="d-block "
+        className="d-block logoBotSlideImg"
         src={src}
         alt={alt}
       />

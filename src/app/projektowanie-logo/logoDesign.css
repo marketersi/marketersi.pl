@@ -8,6 +8,7 @@ h6 {
   padding: 0;
   margin: 0;
 }
+
 .LogoBannerContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -47,6 +48,7 @@ h6 {
   z-index: 2;
   text-shadow: none;
 }
+
 img.projects-main-image-logop {
   max-width: 90%;
   margin: 40px auto 0;
@@ -177,6 +179,7 @@ img.projects-main-image-logop {
   padding: 40px 5px;
   line-height: 80px;
 }
+
 .theme-title1 {
   padding: 0 15px;
   padding-bottom: 35px;
@@ -241,6 +244,7 @@ img.projects-main-image-logop {
 .pGuid {
   max-width: 450px;
 }
+
 .orange-link {
   color: #e0ab06;
   border-bottom: 2px #e0ab06 solid;
@@ -388,7 +392,8 @@ img.projects-main-image-logop {
   margin-right: 0px;
   margin-left: 0;
 }
-.valuePara{
+
+.valuePara {
   max-width: 400px;
   margin-left: auto;
 }
@@ -565,10 +570,12 @@ img.projects-main-image-logop {
 .galeria-logo-style {
   margin-bottom: -20vw;
 }
+
 .galleryDecPara {
   max-width: 800px;
   margin: 0 auto 40px;
 }
+
 .galeriaImageContainer {
   max-width: 900px;
   margin: 0 auto;
@@ -798,6 +805,7 @@ img.projects-main-image-logop {
   max-width: 400px;
   margin-inline: auto;
 }
+
 .ErupaSubTItle {
   max-width: 600px;
   margin-inline: auto;
@@ -841,7 +849,7 @@ img.projects-main-image-logop {
 
 .projects-blue-section-m-text {
   margin-top: 40px;
-  padding-inline: 200px ;
+  padding-inline: 200px;
 }
 
 .projects-blue-text2 {
@@ -853,6 +861,7 @@ img.projects-main-image-logop {
 .projects-rwd-hide-img2 {
   display: none;
 }
+
 .projects-blue-img-rwd {
   text-align: right;
 }
@@ -962,7 +971,7 @@ img.projects-main-image-logop {
   letter-spacing: -0.025em;
   margin-bottom: 60px;
   max-width: 900px;
-  margin-inline: auto ;
+  margin-inline: auto;
 }
 
 .projects-custom-typed-text {
@@ -973,7 +982,7 @@ img.projects-main-image-logop {
   margin-bottom: 80px;
   font-size: 38px;
   max-width: 900px;
-  margin-inline: auto ;
+  margin-inline: auto;
 }
 
 .copywriter-ending-1 {
@@ -1168,109 +1177,535 @@ contact-inputs textarea {
 .download-catalog-button:hover {
   background: #d9ad29;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: 10rem;
   height: 10rem;
 }
+
 .mobileLogo {
   display: none;
 }
+
 .desktopLogo {
   display: block;
 }
+
 /* -------------------------------------------------media screen ---------------------------------------------------- */
-@media screen and (max-width: 1024px) {
-  .top-section-banner{
+@media only screen and (max-width: 1024px) {
+  .top-section-banner {
     position: relative;
     width: 100%;
     top: 0;
     max-width: 100%;
   }
+
   img.projects-main-image-logop {
     max-width: 80%;
-}
-.projects-top-banner-container{
-  max-width: 100%;
-  text-align: center;
-}
-.download-catalog-button-2{
-  margin-inline: auto ;
-  display: block;
-}
-.projects-under-top-banner-text p{
-  padding-inline: 50px;
-}
-.mobileLogo {
-  display: block;
-}
-.desktopLogo {
-  display: none;
-}
-img.projects-ksiazka-projektowanie-logo {
-  margin-inline: auto;
-  display: block;
-}
-.projects-theme-desc-p {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-img.opinion-box-inside-image {
-  width: 100% !important;
-}
-.opinion-box-image{
-  position: relative;
-}
-.opinion-box-image {
-  width: 85%;
-  margin-inline: auto;
-}
-.projects-opinion-1 {
-  margin: 0px auto 50px;
-  width: 85%;
-}
-.opinion-box:nth-child(odd) .opinion-box-content {
-  float: none;
-}
-.opinion-box-content-left {
-  float: none !important;
-}
-.projects-co-otrzymasz {
-  padding: 0 25px;
-  padding-bottom: 30px;
-  font-size: 75px;
-  line-height: 75px;
-}
-.projects-custom-white-container {
-  max-width: 90%;
-  margin-inline: auto;
-}
-.projects-wierzymy-img {
-  position: relative;
-  left: 0;
-  max-width: 80%;
-}
-.projects-custom-h5 {
-  margin-inline: auto;
-}
-.valuePara{
-  max-width: 90%;
-  text-align: center;
-}
-.projects-happy-clients-margin {
-  margin-top: 150px;
-}
-.img-background-logop {
-  max-width: 100%;
-}
-.projects-galeria-theme {
-  font-size: 100px;
-  line-height: 100px;
-}
-.image-810 {
-  width: 90%;
-  margin: auto;
-  left: 0 !important;
+  }
 
+  .projects-top-banner-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .download-catalog-button-2 {
+    margin-inline: auto;
+    display: block;
+  }
+
+  .projects-under-top-banner-text p {
+    padding-inline: 50px;
+  }
+
+  .mobileLogo {
+    display: block;
+  }
+
+  .desktopLogo {
+    display: none;
+  }
+
+  img.projects-ksiazka-projektowanie-logo {
+    margin-inline: auto;
+    display: block;
+  }
+
+  .projects-theme-desc-p {
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  img.opinion-box-inside-image {
+    width: 100% !important;
+  }
+
+  .opinion-box-image {
+    position: relative;
+  }
+
+  .opinion-box-image {
+    width: 85%;
+    margin-inline: auto;
+  }
+
+  .projects-opinion-1 {
+    margin: 0px auto 50px;
+    width: 85%;
+  }
+
+  .opinion-box:nth-child(odd) .opinion-box-content {
+    float: none;
+  }
+
+  .opinion-box-content-left {
+    float: none !important;
+  }
+
+  .projects-co-otrzymasz {
+    padding: 0 25px;
+    padding-bottom: 30px;
+    font-size: 75px;
+    line-height: 75px;
+  }
+
+  .projects-custom-white-container {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  .projects-wierzymy-img {
+    position: relative;
+    left: 0;
+    max-width: 80%;
+  }
+
+  .projects-custom-h5 {
+    margin-inline: auto;
+  }
+
+  .valuePara {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .projects-happy-clients-margin {
+    margin-top: 120px;
+  }
+
+  .img-background-logop {
+    max-width: 90%;
+  }
+
+  .projects-galeria-theme {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .image-810 {
+    width: 90%;
+    margin: auto;
+    left: 0 !important;
+  }
+
+  .appetime-img {
+    width: 90%;
+    margin-inline: auto;
+    display: block;
+  }
+
+  .appeImg {
+    left: 0 !important;
+    top: 250px !important;
+    width: 200% !important;
+  }
+
+  .desktop-810 {
+    width: 100%;
+    left: 0 !important;
+  }
+
+  .logoBotSlideImg {
+    width: 70%;
+  }
+
+  .copywriter-ending-1 {
+    font-size: 70px !important;
+    line-height: 70px !important;
+  }
+
+  .custom-container1-image img {
+    width: 90%;
+  }
+
+  .projects-theme-title3 {
+
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .LogoBannerContainer {
+    max-width: 90%;
+    margin-left: auto;
+  }
+
+  .theme-title1 {
+    font-size: 70px;
+  }
+
+  .pGuid {
+    max-width: 100%;
+  }
+
+  .opinion-box-text {
+    font-size: 30px;
+  }
+
+  .projects-co-otrzymasz {
+    font-size: 70px;
+  }
+
+  .projets-custom-theme-desc {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .projects-big-100 {
+    font-size: 150px;
+    line-height: 150px;
+
+  }
+
+  .projects-big-sub100 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .copywriter-intro-bg-5-label {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .projects-krok-po-kroku {
+    font-size: 70px;
+    line-height: 70px;
+    padding-bottom: 50px;
+  }
+
+  .projects-under-big-header3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .projects-clients-theme-subtitle {
+    font-size: 40px;
+  }
+
+  .projects-theme-title-2 {
+    font-size: 42px;
+  }
+
+  .theme-quote {
+    font-size: 50px;
+  }
+
+  .park-img {
+    margin-bottom: -174px;
+  }
+
+
+  .projects-blue-section-m-text {
+    padding-inline: 0;
+    margin-bottom: 50px;
+  }
+
+  .copywriter-ending-main-theme {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .copywriter-ending-3 {
+    font-size: 26px;
+
+  }
+
+  .projects-custom-typed-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  li.projects-includes-li {
+    text-align: left;
+  }
+  .projects-thematic-section-blue {
+    padding-top: 100px;
+}
 }
 
+/* ----------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .top-banner-title {
+    line-height: 47px;
+    font-size: 45px;
+  }
+
+  .projects-under-top-banner-text p {
+    padding-inline: 10px;
+  }
+
+  .top-section-banner {
+    left: auto;
+    right: auto;
+  }
+
+  .projects-download-catalog-button {
+    font-size: 16px;
+    max-width: 90% !important;
+  }
+
+  .theme-desc {
+    font-size: 22px !important;
+    line-height: 28px;
+  }
+
+  .projects-push-content-top {
+    margin-top: 50px;
+  }
+
+  .projects-theme-title-2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .theme-quote {
+    font-size: 35px;
+  }
+
+  .projects-clients-theme-subtitle {
+    font-size: 35px;
+  }
+
+  .opinion-box {
+    margin-top: 50px !important;
+  }
+
+  .copywriter-ending-1 {
+    font-size: 45px !important;
+    line-height: 45px !important;
+  }
+
+  .opinion-box-text {
+    font-size: 25px;
+  }
+
+  .receive {
+    padding: 50px 0 70px !important;
+  }
+
+  .projets-custom-theme-desc {
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  .projects-big-sub100 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .projects-theme-desc-p {
+    margin-right: 0;
+    margin-left: 0 !important;
+  }
+
+  .projects-custom-h5 {
+    font-size: 26px !important;
+    padding-inline: 20px;
+    text-align: center;
+  }
+
+  .valuePara {
+    max-width: 100%;
+    text-align: center;
+    padding-inline: 20px;
+
+  }
+
+  .theme-title1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  img.projects-ksiazka-projektowanie-logo {
+    width: 80%;
+  }
+
+  img.projects-top-logo {
+    width: 45%;
+  }
+
+  .opinion-box-image {
+    width: 95%;
+  }
+
+  .projects-opinion-1 {
+    width: 95%;
+  }
+
+  .opinion-box-content {
+    padding: 30px;
+  }
+
+  .projects-co-otrzymasz {
+    font-size: 45px;
+  }
+
+  .projects-oferta-veggo-cont {
+    display: block;
+  }
+
+  .projects-big-100 {
+    font-size: 100px;
+    line-height: 150px;
+  }
+
+  .projects-custom-white-container {
+    padding: 35px 30px;
+  }
+
+  .copywriter-intro-bg-5-label {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .projects-theme-title3 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .projects-custom-h5 {
+    font-size: 30px;
+  }
+
+  .projects-custom-container3 {
+    margin-top: 50px;
+  }
+
+  .logo-button-box button {
+    font-size: 18px;
+  }
+
+  .projects-galeria-theme {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .projects-co-otrzymasz-sub {
+    font-size: 30px;
+  }
+
+  .projects-logotyp-fix-size {
+    width: 100%;
+  }
+
+  .projects-krok-po-kroku {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .names-container-form {
+    width: 100% !important;
+  }
+
+  .contact-input {
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+
+  .contact-inputs {
+    margin-bottom: 0px !important;
+  }
+
+  .contact-form-btn {
+    font-size: 18px !important;
+    width: 100% !important;
+  }
+
+  .contact-form-btn-bg {
+    width: 100% !important;
+  }
+
+  .contact-form-2020 .header-text {
+    font-size: 28px !important;
+  }
+
+  img.projects-blue-cont-image2 {
+    width: 100%;
+  }
+
+  .projects-blue-video {
+    display: block;
+    margin-top: 0px;
+    margin-inline: auto;
+  }
+
+  img.projects-blue-image1 {
+    margin-inline: auto;
+    display: block;
+  }
+
+  .projects-thematic-section-blue {
+    padding-inline: 30px;
+  }
+
+  .projects-oferta-veggo-bg {
+    width: 95%;
+  }
+
+  .projects-theme-desc-p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .projects-includes {
+    padding-left: 0%;
+  }
+
+  .copywriter-ending-3 {
+    font-size: 22px;
+    padding-inline: 20px;
+  }
+
+  .park-img {
+    margin-bottom: -87px;
+  }
+
+  .copywriter-ending-main-theme {
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 50px;
+  }
+
+  .projects-blue-video-desc {
+    margin-top: 40px;
+  }
+
+  img.starelogo {
+    width: 95%;
+  }
+
+  .signature {
+    margin-bottom: 0px;
+  }
+
+  .top-banner-long-text {
+    line-height: 35px;
+    font-size: 30px;
+  }
+  .nazwa_footer_bottom_left {
+    display: none !important;
+}
 }

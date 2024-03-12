@@ -196,9 +196,9 @@
 .pnazw-page .names-client-desc-litery {
   margin-bottom: 20px;
 }
-.pnazw-page .names-container-Litery:after {
+/* .pnazw-page .names-container-Litery:after {
   background-image: url(https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/litery-tworzenie-nazw-dla-firm.jpg);
-}
+} */
 
 .names-container-Litery:after {
   content: "";

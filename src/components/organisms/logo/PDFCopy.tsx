@@ -40,7 +40,7 @@ const PDFCopy = () => {
 
         <div className="container">
           <div className="row">
-            <div className="col-lx-6 projects-lprasa-container">
+            <div className="col-xl-6 projects-lprasa-container">
               {image && (
                 <img
                   src={image}
@@ -50,7 +50,7 @@ const PDFCopy = () => {
                 />
               )}
             </div>
-            <div className="col-lx-6">
+            <div className="col-xl-6">
               <p className="theme-desc projects-custom-lineheight projects-custom-margin pGuid">
                 {imageTitle && imageTitle}
               </p>
@@ -65,7 +65,7 @@ const PDFCopy = () => {
               <p className="theme-desc projects-custom-lineheight">
                 {imageSubtitle && imageSubtitle} <br />
                 {imageLink && imageLinkText && (
-                  <a href={imageLink} style={{ textDecoration: "none" }}>
+                  <a href="https://drive.google.com/uc?authuser=0&id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&export=download" style={{ textDecoration: "none" }}>
                     <span className="orange-link">
                       <strong>{imageLinkText}</strong>
                     </span>
