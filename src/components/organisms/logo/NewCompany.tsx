@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProfitSlider from "../tresci-sprzedazowe/profit-slider/ProfitSlider";
 import { useSelector } from "react-redux";
-
-const NewCompanyData = {
-  title: "Niech Twoja nowa firma zachwyca już od pierwszego spojrzenia",
-  subtitle:
-    "Jeśli lubisz ten kreatywny klimat zrozumienia panujący w małych zespołach projektowych, to w Owocnych poczujesz się jak w domu. Mamy prosty sposób na świetne projekty. Nazywa się świetni ludzie.",
-  cursorChangingText: "Doświad",
-};
 
 const NewCompany = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { NewCompanyData, NewCompanyProfitSliderData } = screenData || {};
   const { title, subtitle, cursorChangingText } = NewCompanyData || {};
   const { images } = NewCompanyProfitSliderData || {};
+
+  const words = ["Doświadczeni", "Kreatywni", "Rzetelni",];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentLetterIndex < words[currentWordIndex].length) {
+        setCurrentLetterIndex((prevIndex) => prevIndex + 1);
+      } else {
+        setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+        setCurrentLetterIndex(0);
+      }
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, [currentLetterIndex, currentWordIndex]);
 
   return (
     <>
@@ -22,20 +32,34 @@ const NewCompany = () => {
         <div className="copywriter-ending-main-theme text-center">
           {title && title}
         </div>
-       
+
         {subtitle && (
           <div className="copywriter-ending-3 text-center copywriter-ending-a copywriting-ending-text">
             {subtitle}
           </div>
         )}
-        <div
+        {/* <div
           className="TypeMe typeme1 text-center projects-custom-typed-text"
           data-items="Utalentowani,Doświadczeni,Kreatywni,Rzetelni"
         >
-          {/* Doświad */}
           {cursorChangingText && cursorChangingText}
+        </div> */}
+
+        <div className="TypeMe typeme1 text-center projects-custom-typed-text">
+          {words.map((word, index) => (
+            <span
+              key={index}
+              className={`typed-cursor ${
+                index === currentWordIndex ? "active" : ""
+              }`}
+              style={{
+                display: index === currentWordIndex ? "inline" : "none",
+              }}
+            >
+              {word.substring(0, currentLetterIndex)}|
+            </span>
+          ))}
         </div>
-        <span className="typed-cursor">|</span>
 
         <div className="copywriter-ending-3 text-center copywriter-ending-a-italic"></div>
 

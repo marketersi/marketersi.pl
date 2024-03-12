@@ -76,7 +76,7 @@ const Construction = () => {
             <div className="col-md-12">
               <p className="signature">{ConstructionData?.quoteAuthor}</p>
               <p className="theme-desc projects-theme-desc-p">
-                {ConstructionData?.quoteText}
+                {ConstructionData?.text4}
               </p>
             </div>
           </div>

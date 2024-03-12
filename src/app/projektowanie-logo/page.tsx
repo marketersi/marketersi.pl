@@ -28,6 +28,7 @@ import LogoFooter from "@/components/organisms/logo/logo-footer/LogoFooter";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
 import Loader from "@/components/organisms/animation/Loader";
+import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 
 const LogoAccordionData = {
   accordionData: [
@@ -87,6 +88,8 @@ const LogoDesignScreen = () => {
 
   useEffect(() => {
     dispatch({ type: FETCH_LOGO_SCREEN_DATA });
+    dispatch({ type: FETCH_SALES_SCREEN_DATA });
+
   }, [dispatch]);
 
   useEffect(() => {

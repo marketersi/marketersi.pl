@@ -217,7 +217,7 @@ img.projects-main-image-logop {
 .img-background-logop {
   display: block;
   margin: 50px auto 0;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .custom-container1 {
@@ -1192,6 +1192,11 @@ contact-inputs textarea {
   display: block;
 }
 
+div#sec2 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* -------------------------------------------------media screen ---------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   .top-section-banner {
@@ -1440,9 +1445,10 @@ contact-inputs textarea {
   li.projects-includes-li {
     text-align: left;
   }
+
   .projects-thematic-section-blue {
     padding-top: 100px;
-}
+  }
 }
 
 /* ----------------------------------------------- */
@@ -1705,7 +1711,26 @@ contact-inputs textarea {
     line-height: 35px;
     font-size: 30px;
   }
+
   .nazwa_footer_bottom_left {
     display: none !important;
-}
+  }
+
+  .projects-logotyp {
+    padding: 0;
+  }
+
+  .appeImg {
+    display: none;
+  }
+
+  .mobile-810 {
+    display: block;
+    width: 100%;
+    margin: 180px 0 0 0px;
+  }
+
+  .projects-clients-theme-subtitle {
+    margin-top: 40px;
+  }
 }
