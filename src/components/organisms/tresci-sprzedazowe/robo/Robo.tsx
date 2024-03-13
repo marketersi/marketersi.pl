@@ -67,10 +67,10 @@ const Robo = () => {
         <div className="container custom-container2 copywriter-standard-mt-80">
           <div className="row">
             <div className="col-md-12 copywriter-standard-mb-m100 new-mb">
-              <div className="copywriter-custom-text-turbokids-1">
+              <div className="copywriter-custom-text-turbokids-1 pl-20">
                 {projectSection6?.quote_1}
               </div>
-              <div className="copywriter-custom-subtext-turbokids-1">
+              <div className="copywriter-custom-subtext-turbokids-1 pl-20">
                 {projectSection6?.quote_1_desc}
               </div>
             </div>
@@ -89,10 +89,10 @@ const Robo = () => {
         <div className="container custom-container2 copywriter-after-img-1">
           <div className="row">
             <div className="col-md-12">
-              <div className="copywriter-custom-text-turbokids-1 copywriter-text-left">
+              <div className="copywriter-custom-text-turbokids-1 copywriter-text-left pr-20">
                 {projectSection6?.quote_2}
               </div>
-              <div className="copywriter-custom-subtext-turbokids-1 copywriter-text-left">
+              <div className="copywriter-custom-subtext-turbokids-1 copywriter-text-left pr-20">
                 {projectSection6?.quote_2_desc}
               </div>
 

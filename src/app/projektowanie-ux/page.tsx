@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import "./uxDesign.css";
 import UxBanner from "@/components/organisms/ux/UxBanner";
 import Counter from "@/components/organisms/ux/Counter";
@@ -15,8 +15,15 @@ import Slider from "@/components/organisms/ux/UxSlider/Slider";
 import Executive from "@/components/organisms/ux/Executive";
 import UxAccordion from "@/components/organisms/ux/accordion/UxAccordion";
 import items from "@/components/organisms/ux/accordion/Data";
+import { useDispatch, useSelector } from "react-redux";
+import { FETCH_UX_SCREEN_DATA } from "@/redux/ux/uxDesignAction";
 
 const UXDesignScreen = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch({ type: FETCH_UX_SCREEN_DATA });
+  }, []);
+
   return (
     <>
       <UxBanner />

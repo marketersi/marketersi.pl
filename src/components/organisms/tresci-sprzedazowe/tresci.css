@@ -190,6 +190,7 @@
     letter-spacing: -0.01em;
     line-height: 40px;
     font-family: "RobotoLight";
+    max-width: 500px;
 }
 .copywriter-ikony-theme {
     font-size: 76px;
@@ -322,6 +323,12 @@
     letter-spacing: -0.025em;
     line-height: 36px;
 }
+.pl-20 {
+    padding-left: 20%;
+}
+.pr-20 {
+    padding-right: 45%;
+}
 .copywriter-after-img-1 {
     position: relative;
     z-index: 1;
@@ -406,6 +413,8 @@
     line-height: 82px;
     color: #353434;
     margin-bottom: 50px;
+    max-width: 800px;
+    margin-inline: auto;
 }
  .mako-big-img {
     background-image: url(https://cdn.owocni.pl/img/single-copywriter/seo-images/Pisanie-tekstow-reklamowych-MAKO.jpg);
@@ -424,6 +433,9 @@
     line-height: 74px;
     color: #353434;
     margin-top: 30px;
+    max-width: 1000px;
+    margin-inline: auto;
+    margin-bottom: 50px;
 }
 .copywriter-custom-subheader-4 {
     font-family: "Georgia";
@@ -464,6 +476,8 @@
     line-height: 191px;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
+    margin-inline: auto;
+    max-width: 1000px;
 }
 .copywriter-ending-big-2 {
     color: white;
@@ -474,7 +488,7 @@
     margin-bottom: 70px;
 }
 .copywriter-ending-white {
-    color: white;
+    color: white !important;
 }
 section.profit-sec {
     background: black;
