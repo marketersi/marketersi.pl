@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Executive = () => {
   return (
     <>
-    <section>
+      <section>
         <div id="highResult">
           <video
             className="mobile"
@@ -85,7 +85,7 @@ const Executive = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Executive
+export default Executive;

@@ -4,7 +4,7 @@
   padding: 70px 70px;
 }
 .accordion-item {
-  border-bottom: 2px solid #b9b9b9;
+  /* border-bottom: 2px solid #b9b9b9; */
   padding: 42px 24px 42px 24px;
 }
 .accordion-title {

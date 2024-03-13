@@ -845,4 +845,22 @@ section#sec1 {
   line-height: 50px;
   margin-bottom: 100px;
 }
+.copywriter-custom-img-text {
+  font-size: 50px;
+  line-height: 60px;
+}
+.copywriter-ikony-subtheme {
+  font-size: 30px;
+  line-height: 36px;
+}
+.copywriter-ikony-theme {
+  font-size: 50px;
+  line-height: 50px;
+}
+.copywriter-bg-10 .copywriter-fotel {
+  position: relative;
+  right: auto;
+  top: 0;
+  left: auto;
+}
 }

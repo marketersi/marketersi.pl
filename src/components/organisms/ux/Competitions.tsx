@@ -6,10 +6,10 @@ const CompetitionsData = {
   titleStyle: "hiper",
   image:
     "https://propozycje.owocni.pl/ux/Podkreslenie-konkurencja.0db36d83.png",
-    description1: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-    description2: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-    description3: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-    description4: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description1: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description2: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description3: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description4: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
 };
 
 const Competitions = () => {
@@ -17,11 +17,10 @@ const Competitions = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Increment count up to 100, then reset to 0
       setCount((prevCount) => (prevCount + 1) % 101);
-    }, 1000); // Adjust the interval as needed (in milliseconds)
+    }, 1000);
 
-    return () => clearInterval(interval); // Cleanup the interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   const words = ["Netflix", "Spotify", "Philips", "Adidas"];
