@@ -118,13 +118,6 @@ const Concept366 = () => {
             alt="Przykładowe zrealizowane dotychczas teksty na stronę"
           />
 
-          {/* <img
-          className="copywriter-fotel-rwd"
-          src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Meble-fotel.jpg"
-          title="Pisanie tekstów dla małych i średnich firm"
-          alt="Przykładowe zrealizowane dotychczas teksty na stronę"
-          
-        /> */}
         </div>
 
         <br />

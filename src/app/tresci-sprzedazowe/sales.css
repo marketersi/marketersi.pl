@@ -523,7 +523,7 @@ img.copywriter-owocni {
 }
 .names-client-desc {
   font-family: "Playfair Display";
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 900 !important;
   letter-spacing: -0.025em;
   margin-bottom: 50px;
@@ -594,12 +594,8 @@ img.copywriter-owocni {
   padding-left: 48%;
 }
 .copywriting-img-desc {
-  font-family: "Georgia";
-  font-size: 44px;
-  color: #353434;
-  line-height: 48px;
-  letter-spacing: -0.01em;
-  margin-bottom: 30px;
+  font-size: 34px;
+  line-height: 38px;
 }
 .copywriter-custom-red {
   color: #b8412c;
@@ -679,4 +675,174 @@ img.copywriter-owocni {
 section#sec1 {
   max-width: 900px;
   margin-inline: auto;
+}
+
+/* ----------------------------------------------------------midea screen ------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+  .copywriter-top-section-banner {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+.top-banner-title {
+  text-align: center;
+}
+.top-banner-long-text {
+  text-align: center;
+}
+.top-banner-text {
+  float: none;
+}
+.copywriter-page .old-btn a.btn{
+  display: block;
+}
+.opinion-box-image {
+  position: relative;
+  width: 100%;
+}
+.opinion-box-content {
+  width: 100%;
+  margin: 0px 0px 50px 0px;
+}
+.opinion-box-inside-image {
+  width: 100%;
+}
+.projects-opinion-box-container {
+  padding: 50px;
+}
+.projects-empty-opinion-box {
+  display: none;
+}
+.copywriter-image-box img {
+  width: 100%;
+}
+.copywriter-image-label {
+  font-size: 20px;
+}
+.copywriter-big-header-2 {
+  font-size: 50px;
+  line-height: 50px;
+}
+.copywriter-custom-text-1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+.copywriter-custom-text-2 {
+  font-size: 30px;
+  line-height: 35px;
+}
+.copywriter-custom-gray-header-1 {
+  font-size: 70px;
+  margin: 30px 0;
+}
+.copywriter-intro-header-right {
+  text-align: center;
+}
+.copywriter-intro-description-right {
+  text-align: center;
+}
+.copywriter-intro-header-left {
+  text-align: center;
+}
+.copywriter-intro-description-left {
+  text-align: center;
+}
+.copywriter-intro-whatwedo-container img {
+  margin-inline: auto;
+  display: block;
+}
+.nazwa_footer_bottom_left {
+  display: none;
+}
+.copywriter-container-custom {
+  margin-top: 0px;
+}
+.copywriting-white-text-cont {
+  max-width: 95%;
+  display: block;
+  margin-inline: auto;
+}
+.copywriter-ksiazka-img {
+  margin-top: 0px;
+  margin-inline: auto;
+  display: block; 
+}
+.copywriter-intro-bg-5-label {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+}
+.faqContainer {
+  max-width: 500px;
+}
+.copywriter-custom-container-2 {
+  max-width: 90%;
+}
+.copywriter-custom-header {
+  font-size: 50px;
+}
+.copywriter-whatwedo-container img {
+  margin-inline: auto;
+  display: block;
+}
+.copywriter-whatwedo-container {
+  max-width: 90%;
+}
+.copywriter-intro-sm-text {
+  text-align: center;
+}
+.custom-container1 {
+  max-width: 90%;
+}
+.copywriter-wierzymy-container img {
+  position: absolute;
+  right: 7%;
+  top: -40px;
+  width: 90%;
+}
+.names-container-form:not(.names-container-form-btn) {
+  margin-top: 10px;
+}
+.copywriter-custom-header-2 {
+  font-size: 50px;
+  line-height: 50px;
+}
+.copywriter-custom-subheader-2 {
+  font-size: 30px;
+}
+.custom-container2 {
+  max-width: 90%;
+}
+.copywriter-custom-mright-3 {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.names-client-desc {
+  font-size: 40px;
+  line-height: 50px;
+}
+.copywriter-orange-black-text {
+  text-align: center;
+}
+.copywriting-img-desc {
+  font-size: 24px;
+  line-height: 28px;
+}
+.copywriter-bg-2 {
+  height: 600px;
+  background-size: 100%;
+  margin-bottom: 0;
+}
+.copywriter-img-big-desc {
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 30px;
+}
+.copywriter-prawo-tekst-2 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 100px;
+}
 }

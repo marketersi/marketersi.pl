@@ -37,7 +37,7 @@ const Section5 = () => {
         </div>
         <div className="container copywriter-intro-whatwedo-container">
           <div className="row">
-            <div className="col-md-6 copywriter-text-right">
+            <div className="col-lg-6 copywriter-text-right">
               <img
                 src={steps?.image_1}
                 title="Teksty reklamowe Owocnych to gwarancja sukcesu"
@@ -45,7 +45,7 @@ const Section5 = () => {
               />
             </div>
 
-            <div className="col-md-6 copywriter-intro-box">
+            <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
                 {steps?.title_1}
               </div>
@@ -54,7 +54,7 @@ const Section5 = () => {
               </div>
             </div>
 
-            <div className="col-md-6 copywriter-intro-box copywriting-hide-1">
+            <div className="col-lg-6 copywriter-intro-box copywriting-hide-1 order-lg-1 order-2">
               <div className="copywriter-intro-header-left">
                 <strong>{steps?.title_2}</strong>{steps?.sub_title_2}
               </div>
@@ -63,14 +63,14 @@ const Section5 = () => {
               </div>
             </div>
 
-            <div className="col-md-6 copywriting-hide-1 copywriter-text-left">
+            <div className="col-lg-6 copywriting-hide-1 copywriter-text-left order-lg-2 order-1">
               <img
                 src={steps?.image_2}
                 title="Skuteczny copywriting wymaga odpowiedniej wiedzy"
                 alt="Slogany reklamowe, które przyciągają użytkowników"
               />
             </div>
-            <div className="col-md-6 copywriter-text-right">
+            <div className="col-lg-6 copywriter-text-right">
               <img
                 src={steps?.image_3}
                 title="Teksty reklamowe, które przekonają odbiorców do Twojej firmy"
@@ -78,7 +78,7 @@ const Section5 = () => {
               />
             </div>
 
-            <div className="col-md-6 copywriter-intro-box">
+            <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
                 <strong>{steps?.title_3}</strong> <br />
                 {steps?.sub_title_3}
