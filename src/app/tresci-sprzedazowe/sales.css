@@ -106,6 +106,7 @@ section.sales_banner {
 /* ==============================sales banner-bottom-text========================== */
 .copywriter-page .copyuwriter-custom-push-1 {
   margin-top: 24px;
+  max-width: 800px;
 }
 .copywriter-custom-margin-1 {
   margin-top: 25px;
@@ -131,6 +132,9 @@ section.sales_banner {
 /* ==============================sales option box========================== */
 section.sales_option_box {
   padding: 100px 0;
+}
+.projects-opinion-box-container {
+  max-width: 1100px;
 }
 .opinion-box {
   font-family: "Open Sans";
@@ -159,8 +163,7 @@ section.sales_option_box {
 }
 .opinion-box-content {
   padding: 50px 25px;
-  /* width: 64%; */
-  width: 66%;
+  width: 55%;
   background-color: white;
   float: right;
   margin: 50px 0px 50px 0px;
@@ -192,7 +195,10 @@ section.sales_option_box {
 }
 
 /* ==============================sales business tools========================== */
-
+section.business_tools {
+  max-width: 1000px;
+  margin-inline: auto;
+}
 .copywriter-cmargin-2 {
   margin-top: 30px;
 }
@@ -210,10 +216,11 @@ section.sales_option_box {
 .copywriter-image-box {
   display: inline-block;
   vertical-align: top;
+  width: 20%;
 }
 .copywriter-image-label {
   font-size: 22px;
-  line-height: 20px;
+  line-height: 30px;
   font-family: "Arial";
 }
 .copywriter-image-box-2,
@@ -350,6 +357,7 @@ strong {
   background-color: white;
   margin-bottom: 70px;
   margin-top: 70px;
+  padding: 20px 50px;
 }
 .copywriter-custom-header {
   font-family: "Playfair Display";
@@ -408,10 +416,10 @@ strong {
   letter-spacing: -0.01em;
   line-height: 29px;
 }
-.copywriter-intro-sm-mright {
+/* .copywriter-intro-sm-mright {
   margin-right: -50px;
   margin-left: -50px;
-}
+} */
 .custom-container1 {
   max-width: 810px;
   margin: auto;
@@ -450,11 +458,15 @@ img.copywriter-owocni {
   font-weight: 900;
   margin-bottom: 30px;
   line-height: 89px;
+  max-width: 800px;
+  margin-inline: auto ;
 }
 .copywriter-custom-subheader-2 {
   font-family: "Playfair Display";
   font-size: 40px;
   letter-spacing: -0.01em;
+  max-width: 800px;
+  margin-inline: auto ;
 }
 
 /* ==============================sales Orange========================== */
@@ -475,8 +487,8 @@ img.copywriter-owocni {
   text-align: center;
 }
 .custom-container2 {
-  max-width: 810px;
-  margin: auto;
+  max-width: 800px;
+  margin-inline: auto;
 }
 .copywriter-cname {
   margin-top: 40px;
@@ -579,7 +591,7 @@ img.copywriter-owocni {
 .copywriting-custom-subcont {
   display: inline-block;
   text-align: left !important;
-  padding-left: 20px;
+  padding-left: 48%;
 }
 .copywriting-img-desc {
   font-family: "Georgia";
@@ -640,6 +652,7 @@ img.copywriter-owocni {
   font-family: "Georgia";
   line-height: 38px;
   margin-top: -90px;
+  max-width: 400px;
 }
 .copywriter-prawo-tekst-2 {
   margin-top: 40px;
@@ -661,4 +674,9 @@ img.copywriter-owocni {
   z-index: 10;
   display: inline;
   letter-spacing: -0.025em;
+}
+
+section#sec1 {
+  max-width: 900px;
+  margin-inline: auto;
 }
