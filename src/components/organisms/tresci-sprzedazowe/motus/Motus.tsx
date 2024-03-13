@@ -56,7 +56,7 @@ const Motus = () => {
           <div className="custom-container2 copywriting-text-right">
             <div className="copywriting-custom-subcont">
               <span className="copywriting-img-desc">
-                <span className="copywriter-custom-red">{projectSection2?.bckgrnd_image_title}</span>{" "}
+                <span className="copywriter-custom-red">{projectSection2?.background_image_title}</span>{" "}
                 <br className="dont-delete" />
                {projectSection2?.quote}
               </span>

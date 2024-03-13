@@ -54,7 +54,7 @@
 
 .form_head_txt {
   font-size: 28px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-weight: 300;
   color: #333333;
 }
@@ -74,6 +74,7 @@ a.form_number_content {
   font-size: 25px;
   font-weight: 300;
   color: #333333;
+  margin-bottom: 10px;
 }
 .form_text_area {
   padding: 10px 0 0 20px;

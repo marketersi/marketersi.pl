@@ -211,6 +211,7 @@
 .copywriter-custom-img-text-sm {
     letter-spacing: -0.01em;
     font-size: 36px;
+    max-width: 500px;
 }
 .copywriter-bg-10 .copywriter-fotel {
     position: absolute;
@@ -260,6 +261,7 @@
     font-size: 57px;
     line-height: 55px;
     text-align: right;
+    padding-left: 40%;
 }
 .copywriter-custom-subtext-akuku-2 {
     font-family: "Georgia";
@@ -268,6 +270,7 @@
     line-height: 34px;
     text-align: right;
     margin-bottom: 50px;
+    padding-left: 30%;
 }
 .copywriter-custom-margin {
     margin-right: -30px;
@@ -291,6 +294,8 @@
     font-family: 'Roboto';
     line-height: 90px;
     letter-spacing: -0.025em;
+    max-width: 570px;
+    margin-inline: auto;
 }
 .copywriter-roboty-img-810 {
     display: none;

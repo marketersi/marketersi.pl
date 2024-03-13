@@ -24,7 +24,7 @@ import TresciFooter from "@/components/organisms/tresci-sprzedazowe/tresci-foote
 
 const Sales = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
-  const { quoteSection, faq, projects } = screenData || {};
+  const { quoteSection, faq, projects, heroSection } = screenData || {};
   const { faqAQ } = faq || [];
   const { projectSection1, projectSection3, projectSection5, projectSection7 } =
     projects || {};
@@ -46,11 +46,11 @@ const Sales = () => {
           <div className="row">
             <div className="col-md-12 text-center copywriter-custom-margin-1">
               <h1 className="copywriter-big-header">
-                {quoteSection?.main_title}
+                {heroSection?.main_title}
               </h1>
 
               <span className="copywriter-big-subheader copywriter-cmargin-1">
-                {quoteSection?.sub_title}
+                {heroSection?.sub_title}
               </span>
             </div>
           </div>
