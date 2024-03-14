@@ -23,10 +23,16 @@ import { teamScreenSaga } from "@/redux/zespol/teamSaga";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
 import { logoScreenSaga } from "@/redux/projektowanie-logo/logoSaga";
 import { all, takeLatest } from "redux-saga/effects";
-import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
+import {
+  FETCH_PRICELIST_SCREEN_DATA,
+  SUBMIT_MENU_STOR_FORM,
+} from "@/redux/cennik/pricelistAction";
 import { salesScreenSaga } from "@/redux/tresci/salescontentSagas";
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
-import { priceListScreenSaga } from "@/redux/cennik/pricelistSaga";
+import {
+  cennikMenuStorSaga,
+  priceListScreenSaga,
+} from "@/redux/cennik/pricelistSaga";
 import { anatomyScreenSaga } from "@/redux/nazwa-dla-firmy/anatomySagas";
 import { FETCH_ANATOMY_SCREEN_DATA } from "@/redux/nazwa-dla-firmy/anatomyAction";
 import { FETCH_UX_SCREEN_DATA } from "@/redux/ux/uxDesignAction";
@@ -49,5 +55,6 @@ export default function* rootSaga() {
     takeLatest(FETCH_SALES_SCREEN_DATA, salesScreenSaga),
     takeLatest(FETCH_ANATOMY_SCREEN_DATA, anatomyScreenSaga),
     takeLatest(FETCH_UX_SCREEN_DATA, uxScreenSaga),
+    takeLatest(SUBMIT_MENU_STOR_FORM, cennikMenuStorSaga),
   ]);
 }
