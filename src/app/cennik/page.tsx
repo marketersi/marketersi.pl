@@ -16,6 +16,8 @@ const PriceListScreen = () => {
   const { title, sub_title, card_title, card_subtitle, cardMenu } = screenData;
   const { Form } = screenData?.cardMenu?.MenuTwo || {};
 
+  const { menuOne, menuThree, menuFour } = cardMenu || {};
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -146,7 +148,7 @@ const PriceListScreen = () => {
               )}
               {selectedOption == 1 && (
                 <>
-                  <CardOne />
+                  <CardOne menu={menuOne} />
                 </>
               )}
 
@@ -158,13 +160,15 @@ const PriceListScreen = () => {
 
               {selectedOption == 3 && (
                 <>
-                  <CardThree />
+                  {/* <CardThree /> */}
+                  <CardOne menu={menuThree} />
                 </>
               )}
 
               {selectedOption == 4 && (
                 <>
-                  <CardFour />
+                  {/* <CardFour /> */}
+                  <CardOne menu={menuFour} />
                 </>
               )}
             </div>

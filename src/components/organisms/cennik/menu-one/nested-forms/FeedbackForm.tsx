@@ -2,15 +2,13 @@ import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const FeedbackForm = ({ setCurrentComponent }) => {
-  const { isLoading, screenData, formData } = useSelector(
-    (state) => state.priceList
-  );
+const FeedbackForm = ({ setCurrentComponent, formThree }) => {
+  const { formData } = useSelector((state) => state.priceList);
 
   const [textAreaValue, setTextAreaValue] = useState("");
   const [inputValue, setInputValue] = useState("");
 
-  const { formThree } = screenData?.cardMenu?.menuOne || "";
+  // const { formThree } = screenData?.cardMenu?.menuOne || "";
 
   console.log("formData", formData);
 

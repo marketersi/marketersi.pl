@@ -4,11 +4,11 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-const UserInfoForm = () => {
-  const { isLoading, screenData, formData, isMenuSubmitSuccess } = useSelector(
+const UserInfoForm = ({ formFour }) => {
+  const { formData, isMenuSubmitSuccess } = useSelector(
     (state) => state.priceList
   );
-  const { formFour } = screenData?.cardMenu?.menuOne || "";
+  // const { formFour } = screenData?.cardMenu?.menuOne || "";
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
