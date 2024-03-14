@@ -51,7 +51,7 @@ const FormThree = ({ form }) => {
     <div className="componentThree_section">
       <h2>{form?.section_4_title}</h2>
       <div className="componentThree_input-container">
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Imię"
@@ -79,8 +79,10 @@ const FormThree = ({ form }) => {
             onChange={(e) => setWebsite(e.target.value)}
             required
           />
-          <div onClick={handleSubmit}>
-            <button className="cennikBtn">Zapisz się na konsultację</button>
+          <div>
+            <button className="cennikBtn" type="submit">
+              Zapisz się na konsultację
+            </button>
           </div>
         </form>
       </div>

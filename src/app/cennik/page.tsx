@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "next/navigation";
 import "./cennik.css";
 import { ToastContainer } from "react-toastify";
+import { clearPriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const PriceListScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
@@ -73,6 +74,10 @@ const PriceListScreen = () => {
       }
     }
   }, [type]);
+
+  useEffect(() => {
+    dispatch(clearPriceListFormData());
+  }, [dispatch]);
 
   return (
     <section className="container pb-5">
