@@ -27,8 +27,14 @@ import {
   FETCH_PRICELIST_SCREEN_DATA,
   SUBMIT_MENU_STOR_FORM,
 } from "@/redux/cennik/pricelistAction";
-import { salesScreenSaga } from "@/redux/tresci/salescontentSagas";
-import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
+import {
+  salesScreenSaga,
+  sendAQuoteSaga,
+} from "@/redux/tresci/salescontentSagas";
+import {
+  FETCH_SALES_SCREEN_DATA,
+  SEND_ME_A_QUOTE,
+} from "@/redux/tresci/salescontentAction";
 import {
   cennikMenuStorSaga,
   priceListScreenSaga,
@@ -56,5 +62,6 @@ export default function* rootSaga() {
     takeLatest(FETCH_ANATOMY_SCREEN_DATA, anatomyScreenSaga),
     takeLatest(FETCH_UX_SCREEN_DATA, uxScreenSaga),
     takeLatest(SUBMIT_MENU_STOR_FORM, cennikMenuStorSaga),
+    takeLatest(SEND_ME_A_QUOTE, sendAQuoteSaga),
   ]);
 }

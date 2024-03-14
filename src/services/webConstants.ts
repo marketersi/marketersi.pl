@@ -18,4 +18,5 @@ export const API_ENDPOINTS = {
 export const API_ENDPOINTS_POST = {
   CONTACT_US: "api/contactMail",
   CENNIK_MENU_STOR: "api/cenik/menus/store",
+  SEND_A_QUOTE: "api/sales",
 };
