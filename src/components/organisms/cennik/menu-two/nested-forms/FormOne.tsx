@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Select, { components } from "react-select";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const FormOne = ({ setCurrentComponent, form }) => {
   console.log("form two", form);
@@ -17,8 +19,6 @@ const FormOne = ({ setCurrentComponent, form }) => {
     value: option.value,
     label: option.value,
   }));
-
-
 
   const handleSelectChange = (selectedOption) => {
     setSelectedOption(selectedOption);
@@ -51,13 +51,22 @@ const FormOne = ({ setCurrentComponent, form }) => {
       </components.DropdownIndicator>
     );
   };
+
+  const dispatch = useDispatch();
+
+  const handleButtonClick = () => {
+    let payload = {
+      formOneDropdownValueOne: selectedOption?.value,
+      formOneDropdownValueTwo: selectedOption2?.value,
+    };
+    dispatch(savePriceListFormData(payload));
+    setCurrentComponent(2);
+  };
+
   return (
     <>
       <div>
-        <h2 className="card-heading">
-          
-          {form?.section_2_title_1}
-        </h2>
+        <h2 className="card-heading">{form?.section_2_title_1}</h2>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={optionsOne}
@@ -93,12 +102,8 @@ const FormOne = ({ setCurrentComponent, form }) => {
             }}
           />
         </div>
-        <h2 className="card-heading mt-5 mb-2">
-          {form?.section_2_title_2}
-        </h2>
-        <p>
-          {form?.section_2_subtitle}
-        </p>
+        <h2 className="card-heading mt-5 mb-2">{form?.section_2_title_2}</h2>
+        <p>{form?.section_2_subtitle}</p>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={optionsTwo}
@@ -137,7 +142,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
         <motion.button
           className="cennikBtn mt-5"
           whileHover={{ translateY: 5 }}
-          onClick={() => setCurrentComponent(2)}
+          onClick={handleButtonClick}
         >
           Dalej (Prawie koniec)
         </motion.button>

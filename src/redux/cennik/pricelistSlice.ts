@@ -7,6 +7,8 @@ const priceListSlice = createSlice({
     screenData: {},
 
     isMenuSubmit: false,
+    isMenuSubmitSuccess: false,
+    formData: {},
   },
   reducers: {
     // Action when starting to fetch price list screen data
@@ -27,14 +29,27 @@ const priceListSlice = createSlice({
     // ----------
     isMenuSubmitStarted: (state) => {
       state.isMenuSubmit = true;
+      state.isMenuSubmitSuccess = false;
     },
 
     isMenuSubmitSuccess: (state) => {
       state.isMenuSubmit = false;
+      state.isMenuSubmitSuccess = true;
     },
 
     isMenuSubmitFail: (state) => {
       state.isMenuSubmit = false;
+      state.isMenuSubmitSuccess = false;
+    },
+
+    // Save Price list form data
+    savePriceListFormData: (state, { payload }) => {
+      state.formData = { ...state.formData, ...payload };
+      console.log("form data", state.formData);
+    },
+
+    clearPriceListFormData: (state) => {
+      state.formData = {};
     },
   },
 });
@@ -47,5 +62,8 @@ export const {
   isMenuSubmitStarted,
   isMenuSubmitSuccess,
   isMenuSubmitFail,
+
+  savePriceListFormData,
+  clearPriceListFormData,
 } = priceListSlice.actions;
 export default priceListSlice.reducer;

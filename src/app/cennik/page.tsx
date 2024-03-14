@@ -1,31 +1,24 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import CardOne from "@/components/organisms/cennik/menu-one/CardOne";
 import CardTwo from "@/components/organisms/cennik/menu-two/CardTwo";
 import CardThree from "@/components/organisms/cennik/menu-three/CardThree";
 import CardFour from "@/components/organisms/cennik/menu-four/CardFour";
-import "./cennik.css";
 import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "@/components/organisms/animation/Loader";
 import { useSearchParams } from "next/navigation";
+import "./cennik.css";
+import { ToastContainer } from "react-toastify";
 
 const PriceListScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
   const { title, sub_title, card_title, card_subtitle, cardMenu } = screenData;
   const { Form } = screenData?.cardMenu?.MenuTwo || {};
 
-  // const { screenData: consultingScreenData } = useSelector(
-  //   (state) => state.consulting
-  // );
-  // const { Form } = consultingScreenData?.PricingOption || {};
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
-    // dispatch({ type: FETCH_CONSULTING_SCREEN_DATA });
   }, [dispatch]);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -68,7 +61,7 @@ const PriceListScreen = () => {
       }
     }
   }, [type]);
-  
+
   useEffect(() => {
     if (type) {
       switch (type) {
@@ -173,6 +166,7 @@ const PriceListScreen = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

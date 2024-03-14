@@ -2,12 +2,16 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
+import { useDispatch } from "react-redux";
+import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const FormTwo = ({ setCurrentComponent, form }) => {
   console.log("form three", form);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [projectDescription, setProjectDescription] = useState("");
+
+  const dispatch = useDispatch();
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -19,20 +23,16 @@ const FormTwo = ({ setCurrentComponent, form }) => {
       console.log("no project description");
       console.log("modal", isModalOpen);
     } else {
+      const payload = { formTwoTextAreaValue: projectDescription };
+      dispatch(savePriceListFormData(payload));
       setCurrentComponent(3);
     }
   };
 
   return (
     <div className="component-two_section">
-      
-
-      <h2>
-        {form?.section_3_title_1}
-      </h2>
-      <p>
-        {form?.section_3_title_2}
-      </p>
+      <h2>{form?.section_3_title_1}</h2>
+      <p>{form?.section_3_title_2}</p>
       <textarea
         rows="5"
         cols="50"
@@ -44,8 +44,6 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         </button>
       </div>
 
-      
-
       {/* Modal */}
       <Modal
         isOpen={isModalOpen}
@@ -55,9 +53,7 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         overlayClassName="Overlay"
       >
         <h4>{form?.model_title}</h4>
-        <p>
-          {form?.modal_description}
-        </p>
+        <p>{form?.modal_description}</p>
         <div className="cenikBtnDiv">
           <button onClick={closeModal}>{form?.button_text}</button>
         </div>
@@ -67,8 +63,6 @@ const FormTwo = ({ setCurrentComponent, form }) => {
           <FontAwesomeIcon icon={faXmark} />
         </div>
       </Modal>
-
-      
     </div>
   );
 };
