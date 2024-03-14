@@ -552,3 +552,51 @@ section.black-sec-form {
 .faqContainer .accordion-item:before{
     background-color: transparent;
 }
+
+/* -----------form------------ */
+.sendQuote {
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    margin-inline: auto;
+}
+.inputLayout {
+    display: flex;
+    gap: 30px;
+}
+.inputLayout input {
+    width: 30%;
+    padding: 7px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+.sendQuote textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 10px 0; 
+    resize: none;
+}
+.sendQuote textarea:active, .sendQuote textarea:focus, .inputLayout input:active, .inputLayout input:focus {
+    outline: none;
+    border: 1.5px solid #438d07 ;
+}
+.sendQuote h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.quoteBtn button {
+    padding: 10px 20px;
+    border: navajowhite;
+    background: #438d07;
+    color: white;
+    font-size: 22px;
+    box-shadow: 0px 4px 0 #295a01;
+    border-radius: 10px;
+}
+.quoteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
