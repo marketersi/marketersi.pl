@@ -46,11 +46,11 @@ const Sales = () => {
           <div className="row">
             <div className="col-md-12 text-center copywriter-custom-margin-1">
               <h1 className="copywriter-big-header">
-                {heroSection?.main_title}
+                {heroSection?.title}
               </h1>
 
               <span className="copywriter-big-subheader copywriter-cmargin-1">
-                {heroSection?.sub_title}
+                {heroSection?.description}
               </span>
             </div>
           </div>
