@@ -15,7 +15,7 @@ const PriceList = () => {
         </div>
         <div className="container copywriter-whatwedo-container">
           <div className="row">
-            <div className="col-md-6 copywriter-what-we-do">
+            <div className="col-lg-6 copywriter-what-we-do">
               <img
                 src={pricingSection?.image_left}
                 title="Copywriting cennik usług pisania tekstów reklamowych"
@@ -25,7 +25,7 @@ const PriceList = () => {
                {pricingSection?.image_left_desc}
               </div>
             </div>
-            <div className="col-md-6 copywriter-what-we-do">
+            <div className="col-lg-6 copywriter-what-we-do">
               <img
                 className="custom-margin-bottom-5 nierobimy-max-width-100"
                 src={pricingSection?.image_right}
