@@ -336,7 +336,7 @@ img.projects-main-image-logop {
 }
 
 .opinion-box-text {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Georgia";
   color: rgb(81, 81, 81);
   line-height: 1.25;
@@ -1196,6 +1196,12 @@ div#sec2 {
   max-width: 800px;
   margin: 0 auto;
 }
+.shopImage {
+  width: 170% !important;
+}
+img.zooImage.position-relative {
+  left: -120px !important;
+}
 
 /* -------------------------------------------------media screen ---------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
@@ -1310,7 +1316,7 @@ div#sec2 {
   }
 
   .image-810 {
-    width: 90%;
+    width: 100%;
     margin: auto;
     left: 0 !important;
   }
@@ -1493,6 +1499,7 @@ div#sec2 {
 
   .projects-clients-theme-subtitle {
     font-size: 35px;
+    line-height: 38px;
   }
 
   .opinion-box {
@@ -1731,6 +1738,13 @@ div#sec2 {
   }
 
   .projects-clients-theme-subtitle {
-    margin-top: 40px;
+    margin-top: 10px;
   }
+  .shopImage {
+    left: -180px !important;
+}
+img.zooImage.position-relative {
+  width: 170%;
+  left: -120px !important;
+}
 }

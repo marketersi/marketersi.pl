@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { ModalForm } from "../ModalForm";
 
 const SalesBanner = () => {
-  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const { screenData } = useSelector((state) => state.sales);
   const { heroSection } = screenData || {};
+
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
+
   return (
     <>
       <section className="sales_banner copywriter-page">
@@ -33,15 +41,13 @@ const SalesBanner = () => {
                     {heroSection?.sub_title}
                   </h2>
                 </div>
-                <div className=" part-sec old-btn">
-                  <a
-                    href="#"
-                    className="btn btn-green send-offer-button js--triggerAnimation"
-                    data-toggle="modal"
-                    data-target="#contactModal"
-                  >
+                <div
+                  className=" part-sec old-btn"
+                  
+                >
+                  <button onClick={() => setIsModal(true)} className="btn btn-green send-offer-button js--triggerAnimation">
                     O.K. wyślijcie mi niezobowiązującą ofertę.
-                  </a>
+                  </button>
                 </div>
               </div>
 
@@ -49,6 +55,7 @@ const SalesBanner = () => {
             </div>
           </div>
         </div>
+        <ModalForm isOpen={isModal} onClose={handleModalClose} />
       </section>
     </>
   );

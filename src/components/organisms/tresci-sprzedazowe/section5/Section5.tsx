@@ -1,14 +1,14 @@
-import React from 'react'
-import { Form } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import React from "react";
+import { Form } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Section5 = () => {
-  const {screenData} = useSelector((state) => state.sales)
-  const {howItWorksSection, knowMoreSection} = screenData || {};
-  const {steps} = howItWorksSection || {};
+  const { screenData } = useSelector((state) => state.sales);
+  const { howItWorksSection, knowMoreSection } = screenData || {};
+  const { steps } = howItWorksSection || {};
   return (
     <>
-    <section className="section5" id='sec1'>
+      <section className="section5" id="sec1">
         <div className="container copywriter-standard-mtb-40">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -47,16 +47,20 @@ const Section5 = () => {
 
             <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
-                {steps?.title_1}
+                <strong>{steps?.title_1}</strong>
+                {steps?.sub_title_1}
               </div>
               <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
                 {steps?.description_1}
               </div>
             </div>
+          </div>
+          <div className="row">
 
             <div className="col-lg-6 copywriter-intro-box copywriting-hide-1 order-lg-1 order-2">
               <div className="copywriter-intro-header-left">
-                <strong>{steps?.title_2}</strong>{steps?.sub_title_2}
+                <strong>{steps?.title_2}</strong>
+                {steps?.sub_title_2}
               </div>
               <div className="copywriter-intro-description-left copywriter-rwd-mtb-40">
                 {steps?.description_2}
@@ -70,6 +74,8 @@ const Section5 = () => {
                 alt="Slogany reklamowe, które przyciągają użytkowników"
               />
             </div>
+            </div>
+            <div className="row">
             <div className="col-lg-6 copywriter-text-right">
               <img
                 src={steps?.image_3}
@@ -84,7 +90,7 @@ const Section5 = () => {
                 {steps?.sub_title_3}
               </div>
               <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
-               {steps?.description_3}
+                {steps?.description_3}
               </div>
             </div>
           </div>
@@ -96,13 +102,13 @@ const Section5 = () => {
             </div>
 
             <div className="copywriting-bg-white-subheader">
-             {knowMoreSection?.para}
+              {knowMoreSection?.para}
             </div>
 
             <div>
               <a
                 className="copywriting-bg-white-subheader-link"
-                href="https://www.copywriting.pl/jak-pisac-artykuly-zlote_zasady/"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -118,15 +124,10 @@ const Section5 = () => {
           />
         </div>
 
-
         {/* =================================================================== */}
-        
-        
-        
-        
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Section5
+export default Section5;

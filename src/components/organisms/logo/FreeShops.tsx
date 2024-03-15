@@ -58,7 +58,7 @@ const FreeShops = () => {
         <div className="image-810-container">
           <div className="image-810">
             <img
-              className="desktop-810 position-relative"
+              className=" position-relative shopImage"
               src={FreeShopsData?.bannerimage}
               alt="Projekt"
               title="Profes"

@@ -51,7 +51,7 @@ const ImplementationEx5 = () => {
         </div>
       </div>
 
-      <div className="container names-custom-container">
+      {/* <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
             <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
@@ -124,7 +124,7 @@ const ImplementationEx5 = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

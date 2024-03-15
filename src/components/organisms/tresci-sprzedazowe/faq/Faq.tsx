@@ -14,7 +14,9 @@ type AccordionProps = {
   items: AccordionItem[];
 };
 
-const Faq: React.FC<AccordionProps> = ({ faqAQ }) => {
+const Faq: React.FC<AccordionProps> = ({ faq }) => {
+  const {faqAQ} = faq || [];
+  console.log ("asdfkjskdfk", faqAQ)
 
 
   const {faq_ques, faq_ans} = faqAQ || [];
@@ -29,12 +31,11 @@ const Faq: React.FC<AccordionProps> = ({ faqAQ }) => {
   return (
     <div>
       <div className="copywriter-intro-bg-5-label text-center">
-        Na wszystkie pytania <br />
-        odpowiedź brzmi:
+        {faq?.main_title}
       </div>
       <div className="copywriter-text-center copywriter-standard-mtb-40">
         <img
-          src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Copywriter-FAQ.jpg"
+          src={faq?.image}
           title="Owocni oferują usługi copywriterskie"
           alt="Reklama, której powiesz tak"
         />

@@ -33,7 +33,7 @@ const ImplementationExamples = () => {
 
       <CustomerReview3 />
 
-      <ImplementationEx6 />
+      {/* <ImplementationEx6 /> */}
 
       {/* Curved Image */}
       <img

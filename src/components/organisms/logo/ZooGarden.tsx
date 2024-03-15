@@ -53,7 +53,7 @@ const ZooGarden = () => {
         <div className="image-810-container">
           <div className="image-810">
             <img
-              className="desktop-810 position-relative"
+              className="zooImage position-relative"
               src={ZooGardenData?.image_2}
               title="Przykład logo firmy na podstawie Ogrodu"
               alt="Projektowanie logo Twojej firmy wizualizowane na kartce"

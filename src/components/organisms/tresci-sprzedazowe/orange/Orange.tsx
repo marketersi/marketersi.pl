@@ -29,7 +29,7 @@ const Orange = () => {
         <div className="container custom-container2">
           <div className="row">
             <div className="col-md-12 text-center">
-              <div className="names-client-name copywriter-black copywriter-green-underline copywriter-white-text copywriter-cname">
+              <div className="names-client-name  copywriter-green-underline copywriter-white-text copywriter-cname">
                 {projectSection1?.mid_text}
               </div>
 

@@ -94,6 +94,9 @@ section.sales_banner {
   border-color: #438d07;
   box-shadow: 0 4px 0 0 #31600b;
   color: #fff;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .copywriter-page .old-btn a.btn {
@@ -190,7 +193,7 @@ section.sales_option_box {
 
 .opinion-box-content {
   padding: 50px 25px;
-  width: 55%;
+  width: 65%;
   background-color: white;
   float: right;
   margin: 50px 0px 50px 0px;
@@ -333,6 +336,9 @@ section.business_tools {
   margin-bottom: 10px;
   margin-top: 50px;
 }
+.copywriter-intro-header-right strong {
+  display: block;
+}
 
 .copywriter-intro-description-right {
   font-size: 18px;
@@ -409,6 +415,8 @@ strong {
   line-height: 70px;
   font-weight: 900;
   margin-bottom: 25px;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
 .copywriter-custom-container-2 {
@@ -421,9 +429,20 @@ strong {
 
 .copywriter-custom-header {
   font-family: "Playfair Display";
-  font-size: 72px;
+  font-size: 60px;
   letter-spacing: -0.01em;
   font-weight: 900;
+}
+.teeTitle {
+  font-size: 60px;
+}
+.teeDescription {
+  font-size: 24px;
+}
+.teePara {
+  font-size: 20px;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .copywriter-custom-push-2 {
