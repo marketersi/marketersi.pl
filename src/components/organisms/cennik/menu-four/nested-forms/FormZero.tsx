@@ -1,0 +1,118 @@
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { motion } from "framer-motion";
+import Select, { components } from "react-select";
+import Image from "next/image";
+import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
+import CennikModal from "@/components/organisms/modals/CennikModal";
+
+const FormZero = ({ setCurrentComponent }) => {
+  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const { formOne } = screenData?.cardMenu?.menuFour || "";
+  const { dropdown } = screenData?.cardMenu?.menuFour?.formOne || {};
+
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const DropdownIndicator = (props) => {
+    const { selectProps } = props;
+    const { value } = selectProps;
+
+    return (
+      <components.DropdownIndicator {...props}>
+        {value ? (
+          <span role="img" aria-label="selected-emoji">
+            <Image
+              src={"/assets/images/strategiamarketingowa/dropdownok.png"}
+              alt="arrow"
+              width={30}
+              height={30}
+            />
+          </span>
+        ) : (
+          <Image
+            src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+            alt="arrow"
+            width={30}
+            height={30}
+          />
+        )}
+      </components.DropdownIndicator>
+    );
+  };
+
+  const handleSelectChange = (selectedOption) => {
+    setSelectedOption(selectedOption);
+    if (
+      selectedOption &&
+      selectedOption.value === dropdown[dropdown.length - 1].value
+    ) {
+      setIsModalOpen(true);
+    }
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const dispatch = useDispatch();
+
+  const handleButtonClick = () => {
+    let payload = {
+      formZeroDropdownValueOne: selectedOption?.value,
+    };
+    console.log("payload 1", payload);
+    dispatch(savePriceListFormData(payload));
+    setCurrentComponent(1);
+  };
+
+  return (
+    <div>
+      <h2 className="card-heading">{formOne?.section1_title}</h2>
+      <p className="card-subheading">{formOne?.section1_subtitle}</p>
+      <div style={{ textAlign: "left" }} className="select-input">
+        <Select
+          options={dropdown}
+          placeholder="Wybierz"
+          isSearchable={false}
+          components={{ DropdownIndicator }}
+          onChange={handleSelectChange}
+          styles={{
+            clearIndicator: (baseStyles, state) => ({
+              ...baseStyles,
+              display: "none",
+            }),
+            indicatorSeparator: (baseStyles, state) => ({
+              ...baseStyles,
+              display: "none",
+            }),
+            control: (baseStyles, state) => ({
+              ...baseStyles,
+              paddingLeft: "10px",
+              borderRadius: "20px",
+              paddingBlock: "3px",
+            }),
+            dropdownIndicator: (provided, state) => ({
+              ...provided,
+              padding: "0",
+              paddingLeft: "3px",
+              paddingRight: "3px",
+            }),
+          }}
+        />
+      </div>
+      <motion.button
+        className="cennikBtn mt-5"
+        whileHover={{ translateY: 5 }}
+        onClick={handleButtonClick}
+      >
+        {formOne?.section1_buttonText}
+      </motion.button>
+
+      {/* Modal */}
+      <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
+    </div>
+  );
+};
+
+export default FormZero;

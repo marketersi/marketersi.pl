@@ -8,6 +8,7 @@ import SliderSection from "./nested-forms/FormOne";
 import FeedbackSection from "./nested-forms/FormTwo";
 import UserDetailsSection from "./nested-forms/FormThree";
 import { useSelector } from "react-redux";
+import FormZero from "./nested-forms/FormZero";
 
 const CardFour = () => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
@@ -82,51 +83,52 @@ const CardFour = () => {
   return (
     <>
       {currentComponent === 0 && (
-        <div>
-          <h2 className="card-heading">{formOne?.section1_title}</h2>
-          <p className="card-subheading">{formOne?.section1_subtitle}</p>
-          <div style={{ textAlign: "left" }} className="select-input">
-            <Select
-              options={dropdown}
-              placeholder="Wybierz"
-              isSearchable={false}
-              components={{ DropdownIndicator }}
-              onChange={handleSelectChange}
-              styles={{
-                clearIndicator: (baseStyles, state) => ({
-                  ...baseStyles,
-                  display: "none",
-                }),
-                indicatorSeparator: (baseStyles, state) => ({
-                  ...baseStyles,
-                  display: "none",
-                }),
-                control: (baseStyles, state) => ({
-                  ...baseStyles,
-                  paddingLeft: "10px",
-                  borderRadius: "20px",
-                  paddingBlock: "3px",
-                }),
-                dropdownIndicator: (provided, state) => ({
-                  ...provided,
-                  padding: "0",
-                  paddingLeft: "3px",
-                  paddingRight: "3px",
-                }),
-              }}
-            />
-          </div>
-          <motion.button
-            className="cennikBtn mt-5"
-            whileHover={{ translateY: 5 }}
-            onClick={() => setCurrentComponent(1)}
-          >
-           {formOne?.section1_buttonText}
-          </motion.button>
+        // <div>
+        //   <h2 className="card-heading">{formOne?.section1_title}</h2>
+        //   <p className="card-subheading">{formOne?.section1_subtitle}</p>
+        //   <div style={{ textAlign: "left" }} className="select-input">
+        //     <Select
+        //       options={dropdown}
+        //       placeholder="Wybierz"
+        //       isSearchable={false}
+        //       components={{ DropdownIndicator }}
+        //       onChange={handleSelectChange}
+        //       styles={{
+        //         clearIndicator: (baseStyles, state) => ({
+        //           ...baseStyles,
+        //           display: "none",
+        //         }),
+        //         indicatorSeparator: (baseStyles, state) => ({
+        //           ...baseStyles,
+        //           display: "none",
+        //         }),
+        //         control: (baseStyles, state) => ({
+        //           ...baseStyles,
+        //           paddingLeft: "10px",
+        //           borderRadius: "20px",
+        //           paddingBlock: "3px",
+        //         }),
+        //         dropdownIndicator: (provided, state) => ({
+        //           ...provided,
+        //           padding: "0",
+        //           paddingLeft: "3px",
+        //           paddingRight: "3px",
+        //         }),
+        //       }}
+        //     />
+        //   </div>
+        //   <motion.button
+        //     className="cennikBtn mt-5"
+        //     whileHover={{ translateY: 5 }}
+        //     onClick={() => setCurrentComponent(1)}
+        //   >
+        //    {formOne?.section1_buttonText}
+        //   </motion.button>
 
-          {/* Modal */}
-          <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
-        </div>
+        //   {/* Modal */}
+        //   <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
+        // </div>
+        <FormZero setCurrentComponent={setCurrentComponent} />
       )}
 
       {currentComponent === 1 && (
