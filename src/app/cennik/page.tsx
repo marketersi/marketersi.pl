@@ -12,23 +12,48 @@ import { ToastContainer } from "react-toastify";
 import { clearPriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const PriceListScreen = () => {
-  const { isLoading, screenData } = useSelector((state) => state.priceList);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const { screenData } = useSelector((state) => state.priceList);
   const { title, sub_title, card_title, card_subtitle, cardMenu } = screenData;
   const { Form } = screenData?.cardMenu?.MenuTwo || {};
 
-  const { menuOne, menuThree, menuFour } = cardMenu || {};
+  const [isRed, setIsRed] = useState({
+    status: true,
+    menu: 0,
+  });
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
+    dispatch(clearPriceListFormData());
   }, [dispatch]);
 
-  const [selectedOption, setSelectedOption] = useState(null);
-
   const handleBtnClick = (value) => {
-    setSelectedOption(value);
+    setIsRed({ status: true, menu: value });
+    setTimeout(() => {
+      setSelectedOption(value);
+    }, 500);
   };
+
+  // check to query string and for type
+  const searchParams = useSearchParams();
+  const type = searchParams.get("type");
+
+  useEffect(() => {
+    if (type) {
+      switch (type) {
+        case "Strone":
+          handleBtnClick(1);
+          break;
+        case "Działania":
+          handleBtnClick(2);
+          break;
+        default:
+          break;
+      }
+    }
+  }, [type]);
 
   const cardStyle = {
     boxShadow:
@@ -47,39 +72,8 @@ const PriceListScreen = () => {
     backgroundColor: "rgb(255, 255, 255)",
     border: "1px solid rgb(201, 201, 201)",
     fontSize: "18px",
+    color: "black",
   };
-
-  // check to query string and for type
-  const searchParams = useSearchParams();
-  const type = searchParams.get("type");
-
-  useEffect(() => {
-    if (type) {
-      switch (type) {
-        case "Strone":
-          handleBtnClick(1);
-          break;
-        default:
-          break;
-      }
-    }
-  }, [type]);
-
-  useEffect(() => {
-    if (type) {
-      switch (type) {
-        case "Działania":
-          handleBtnClick(2);
-          break;
-        default:
-          break;
-      }
-    }
-  }, [type]);
-
-  useEffect(() => {
-    dispatch(clearPriceListFormData());
-  }, [dispatch]);
 
   return (
     <section className="container pb-5">
@@ -107,7 +101,21 @@ const PriceListScreen = () => {
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(1)}
                       >
-                        <button style={buttonStyle}>
+                        <button
+                          style={{
+                            ...buttonStyle,
+                            backgroundColor:
+                              isRed.menu === 1
+                                ? "#f0a0a0"
+                                : buttonStyle.backgroundColor,
+                            color:
+                              isRed.menu === 1 ? "white" : buttonStyle.color,
+                            border:
+                              isRed.menu === 1
+                                ? "1px solid red"
+                                : buttonStyle.border,
+                          }}
+                        >
                           {" "}
                           {cardMenu?.menuOne?.menu_title}
                         </button>
@@ -117,7 +125,21 @@ const PriceListScreen = () => {
                         style={{ textAlign: "left" }}
                         onClick={() => handleBtnClick(2)}
                       >
-                        <button style={buttonStyle}>
+                        <button
+                          style={{
+                            ...buttonStyle,
+                            backgroundColor:
+                              isRed.menu === 2
+                                ? "#f0a0a0"
+                                : buttonStyle.backgroundColor,
+                            color:
+                              isRed.menu === 2 ? "white" : buttonStyle.color,
+                            border:
+                              isRed.menu === 2
+                                ? "1px solid red"
+                                : buttonStyle.border,
+                          }}
+                        >
                           {cardMenu?.MenuTwo?.Form?.menu_title}
                         </button>
                       </div>
@@ -129,7 +151,21 @@ const PriceListScreen = () => {
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(3)}
                       >
-                        <button style={buttonStyle}>
+                        <button
+                          style={{
+                            ...buttonStyle,
+                            backgroundColor:
+                              isRed.menu === 3
+                                ? "#f0a0a0"
+                                : buttonStyle.backgroundColor,
+                            color:
+                              isRed.menu === 3 ? "white" : buttonStyle.color,
+                            border:
+                              isRed.menu === 3
+                                ? "1px solid red"
+                                : buttonStyle.border,
+                          }}
+                        >
                           {cardMenu?.menuThree?.menuText}
                         </button>
                       </div>
@@ -138,7 +174,21 @@ const PriceListScreen = () => {
                         style={{ textAlign: "left" }}
                         onClick={() => handleBtnClick(4)}
                       >
-                        <button style={buttonStyle}>
+                        <button
+                          style={{
+                            ...buttonStyle,
+                            backgroundColor:
+                              isRed.menu === 4
+                                ? "#f0a0a0"
+                                : buttonStyle.backgroundColor,
+                            color:
+                              isRed.menu === 4 ? "white" : buttonStyle.color,
+                            border:
+                              isRed.menu === 4
+                                ? "1px solid red"
+                                : buttonStyle.border,
+                          }}
+                        >
                           {cardMenu?.menuFour?.menu_title}
                         </button>
                       </div>
