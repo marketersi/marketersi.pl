@@ -10,6 +10,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
   console.log("form from form zero", form);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const DropdownIndicator = (props) => {
     const { selectProps } = props;
@@ -52,18 +53,39 @@ const FormZero = ({ setCurrentComponent, form }) => {
 
   const dispatch = useDispatch();
 
+  // const handleButtonClick = () => {
+  //   let payload = {
+  //     formZeroDropdownValueOne: selectedOption?.value,
+  //   };
+  //   dispatch(savePriceListFormData(payload));
+  //   setCurrentComponent(1);
+  // };
+
   const handleButtonClick = () => {
-    let payload = {
-      formZeroDropdownValueOne: selectedOption?.value,
-    };
-    dispatch(savePriceListFormData(payload));
-    setCurrentComponent(1);
+    let payload;
+    setIsButtonClicked(true);
+    if (!selectedOption) {
+      setTimeout(() => {
+        setIsButtonClicked(false);
+      }, 500);
+    } else {
+      payload = {
+        formZeroDropdownValueOne: selectedOption?.value,
+      };
+      dispatch(savePriceListFormData(payload));
+      setCurrentComponent(1);
+    }
   };
 
   return (
     <div>
-      <h2 className="card-heading">{form?.section1_title}</h2>
-      <p className="card-subheading">{form?.section1_subtitle}</p>
+      <h2 className={`card-heading ${isButtonClicked ? "red-title" : ""}`}>
+        {form?.section1_title}
+      </h2>
+      <p className={`card-subheading ${isButtonClicked ? "red-title" : ""}`}>
+        {form?.section1_subtitle}
+      </p>
+
       <div style={{ textAlign: "left" }} className="select-input">
         <Select
           options={form.dropdown}
@@ -95,6 +117,10 @@ const FormZero = ({ setCurrentComponent, form }) => {
               padding: "0",
               paddingLeft: "3px",
               paddingRight: "3px",
+            }),
+            menu: (provided, state) => ({
+              ...provided,
+              backgroundColor: selectedOption ? "#effeeb" : "#fff",
             }),
           }}
         />

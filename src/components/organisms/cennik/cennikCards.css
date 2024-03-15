@@ -119,7 +119,10 @@
   border-color: #cecece;
   width: 90%;
   padding: 12px;
-  outline: none;
+}
+
+.component-two_section textarea:focus {
+  outline: 1.5px solid #d21e00;
 }
 
 /* component two */
@@ -141,6 +144,10 @@
   border-radius: 40px;
   width: 45%;
   border: 1px solid rgb(201, 201, 201);
+}
+
+.componentThree_input-container input:focus {
+  outline: 2px solid #d21e00;
 }
 
 /* component three */
@@ -317,7 +324,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
     font-size: 20px;
   }
   50% {
-    font-size: 24px;
+    font-size: 22px;
   }
   100% {
     font-size: 20px;

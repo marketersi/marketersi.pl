@@ -11,6 +11,8 @@ const FormTwo = ({ setCurrentComponent, form }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [projectDescription, setProjectDescription] = useState("");
 
+  console.log("project description", projectDescription.length);
+
   const dispatch = useDispatch();
 
   const closeModal = () => {
@@ -18,10 +20,8 @@ const FormTwo = ({ setCurrentComponent, form }) => {
   };
 
   const handleNext = () => {
-    if (!projectDescription) {
+    if (projectDescription.length < 10) {
       setIsModalOpen(true);
-      console.log("no project description");
-      console.log("modal", isModalOpen);
     } else {
       const payload = { formTwoTextAreaValue: projectDescription };
       dispatch(savePriceListFormData(payload));
@@ -37,6 +37,9 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         rows="5"
         cols="50"
         onChange={(e) => setProjectDescription(e.target.value)}
+        style={{
+          backgroundColor: projectDescription.length > 10 ? "#effeeb" : "",
+        }}
       ></textarea>
       <div className="mt-5">
         <button className="cennikBtn" onClick={handleNext}>
