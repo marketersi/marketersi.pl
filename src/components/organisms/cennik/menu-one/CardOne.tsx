@@ -6,13 +6,11 @@ import "../cennikCards.css";
 import { useSelector } from "react-redux";
 import FormZero from "./nested-forms/FormZero";
 
-const CardOne = ({ menu }) => {
+const CardOne = () => {
   const [currentComponent, setCurrentComponent] = useState(0);
-  // const { screenData } = useSelector((state) => state.priceList);
-  // const { formOne, formTwo, formThree, formFour } =
-  //   screenData?.cardMenu?.menuOne || "";
-
-  const { formOne, formTwo, formThree, formFour } = menu;
+  const { screenData } = useSelector((state) => state.priceList);
+  const { formOne, formTwo, formThree, formFour } =
+    screenData?.cardMenu?.menuOne || "";
 
   return (
     <>

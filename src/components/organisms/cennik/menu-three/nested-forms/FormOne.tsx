@@ -1,12 +1,13 @@
+import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const SliderForm = ({ setCurrentComponent }) => {
   const [currentSection, setCurrentSection] = useState(0);
 
   const { isLoading, screenData } = useSelector((state) => state.priceList);
-  const {  formTwo } = screenData?.cardMenu?.menuThree || "";
-  const {  rangeArray } = screenData?.cardMenu?.menuThree?.formTwo || {};
+  const { formTwo } = screenData?.cardMenu?.menuThree || "";
+  const { rangeArray } = screenData?.cardMenu?.menuThree?.formTwo || {};
 
   const totalSections = rangeArray.length;
 
@@ -15,14 +16,26 @@ const SliderForm = ({ setCurrentComponent }) => {
     const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
     setCurrentSection(calculatedSection);
   };
+
+  const dispatch = useDispatch();
+
+  const handleNext = () => {
+    const payload = {
+      formOneSelectedRangeValue: rangeArray[currentSection]?.description,
+    };
+
+    console.log("payload ooo", payload);
+    dispatch(savePriceListFormData(payload));
+    setCurrentComponent(2);
+  };
+
   return (
     <div className="slider_section">
       <div>
         <h2>{formTwo?.section2_title}</h2>
         <p
           style={{
-            backgroundColor:
-            rangeArray[currentSection]?.backgroundColor,
+            backgroundColor: rangeArray[currentSection]?.backgroundColor,
           }}
         >
           {rangeArray[currentSection]?.label}
@@ -43,8 +56,7 @@ const SliderForm = ({ setCurrentComponent }) => {
             value={(currentSection / (totalSections - 1)) * 100}
             className="slider-input"
             style={{
-              backgroundColor:
-              rangeArray[currentSection]?.backgroundColor,
+              backgroundColor: rangeArray[currentSection]?.backgroundColor,
             }}
           />
           <img
@@ -53,8 +65,8 @@ const SliderForm = ({ setCurrentComponent }) => {
           />
         </div>
         <div className="ss_btn-container">
-          <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
-          Dalej (Prawie koniec)
+          <button onClick={handleNext} className="cennikBtn">
+            Dalej (Prawie koniec)
           </button>
         </div>
       </div>
