@@ -10,7 +10,7 @@ const LogoBannerData = {
   buttontext: "OK. Wyślijcie mi niezobowiązującą ofertę",
 };
 
-const LogoBanner = () => {
+const LogoBanner = ({ openModal }) => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { LogoBannerData } = screenData || {};
   const { image, title, subtitle, text, buttontext } = LogoBannerData || {};
@@ -53,6 +53,7 @@ const LogoBanner = () => {
                 className="download-catalog-button-2 projects-download-catalog-button send-offer-button js--triggerAnimation"
                 type="button"
                 fdprocessedid="k9dho"
+                onClick={openModal}
               >
                 <strong>{buttontext && buttontext}</strong>
               </button>

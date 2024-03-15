@@ -20,7 +20,7 @@ const LogoFooterData = {
   formButtonText: "Otrzymaj ofertę",
 };
 
-const LogoFooter = () => {
+const LogoFooter = ({ openModal }) => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
   const pathname = usePathname();
 
@@ -38,44 +38,44 @@ const LogoFooter = () => {
   };
 
   //   ------------ modal------------
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  // const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
+  // const openModal = () => {
+  //   setModalIsOpen(true);
+  // };
 
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-  const customStyles = {
-    overlay: {
-      backgroundColor: "rgba(0, 0, 0, 0.8)", // Set overlay background color to black with some opacity
-    },
-    content: {},
-  };
+  // const closeModal = () => {
+  //   setModalIsOpen(false);
+  // };
+  // const customStyles = {
+  //   overlay: {
+  //     backgroundColor: "rgba(0, 0, 0, 0.8)", // Set overlay background color to black with some opacity
+  //   },
+  //   content: {},
+  // };
 
-  const animateDown: Variants = {
-    offscreen: {
-      y: -180,
-      z: -100,
-      opacity: 0,
-      scale: 0.5,
-    },
-    onscreen: {
-      y: 0,
-      z: 0,
-      opacity: 1,
-      scale: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.6,
-        duration: 4,
-      },
-    },
-  };
+  // const animateDown: Variants = {
+  //   offscreen: {
+  //     y: -180,
+  //     z: -100,
+  //     opacity: 0,
+  //     scale: 0.5,
+  //   },
+  //   onscreen: {
+  //     y: 0,
+  //     z: 0,
+  //     opacity: 1,
+  //     scale: 1,
+  //     transition: {
+  //       type: "spring",
+  //       bounce: 0.6,
+  //       duration: 4,
+  //     },
+  //   },
+  // };
 
-  const { isLoading, screenData } = useSelector((state) => state.logo);
-  const { pagesLinks, downloadButtonText, formButtonText } = screenData;
+  // const { isLoading, screenData } = useSelector((state) => state.logo);
+  // const { pagesLinks, downloadButtonText, formButtonText } = screenData;
 
   return (
     <>
@@ -106,7 +106,7 @@ const LogoFooter = () => {
         </div>
       </div>
       {/*    ------------ modal------------ */}
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
@@ -124,7 +124,7 @@ const LogoFooter = () => {
             <FontAwesomeIcon icon={faXmark} />
           </button>
         </motion.div>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

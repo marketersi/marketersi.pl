@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./logoDesign.css";
 import LogoBanner from "@/components/organisms/logo/LogoBanner";
 import SampleLogo from "@/components/organisms/logo/SampleLogo";
@@ -29,6 +29,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
 import Loader from "@/components/organisms/animation/Loader";
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
+import { ModalForm } from "@/components/organisms/tresci-sprzedazowe/ModalForm";
 
 const LogoAccordionData = {
   accordionData: [
@@ -89,50 +90,61 @@ const LogoDesignScreen = () => {
   useEffect(() => {
     dispatch({ type: FETCH_LOGO_SCREEN_DATA });
     dispatch({ type: FETCH_SALES_SCREEN_DATA });
-
   }, [dispatch]);
 
   useEffect(() => {
     console.warn("accordionData👉✅", accordionData);
   }, [accordionData]);
 
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
+
+  const openModal = () => {
+    setIsModal(true);
+  };
+
   return (
     <>
       {/* {isLoading ? (
         <Loader />
       ) : ( */}
-        <>
-          <LogoBanner />
-          <SampleLogo />
-          <GoodBusiness />
-          <PDFCopy />
-          <Opinion />
-          <Receive />
-          <Guarantee />
-          <LogoAccordion items={accordionData} />
-          <ProjectValue />
-          <Gallery />
-          <StepByStep />
-          {/* ---------------------------------------------------------------- */}
-          <FreeShops />
-          <Enexo />
-          <Daco />
-          <Aico />
-          <ZooGarden />
-          <Construction />
-          <Restaurant />
-          <Park />
-          <GPN />
-          <NewCompany />
-          <section className="black-sec-form">
-            <div className="copywriter-ending-1 text-center">
-              Zróbmy razem <br />
-              coś fajnego
-            </div>
-            <Form />
-          </section>
-          <LogoFooter />
-        </>
+      <>
+        <LogoBanner openModal={openModal} />
+        <SampleLogo />
+        <GoodBusiness />
+        <PDFCopy />
+        <Opinion />
+        <Receive />
+        <Guarantee openModal={openModal} />
+        <LogoAccordion items={accordionData} />
+        <ProjectValue />
+        <Gallery openModal={openModal} />
+        <StepByStep />
+        {/* ---------------------------------------------------------------- */}
+        <FreeShops />
+        <Enexo />
+        <Daco />
+        <Aico />
+        <ZooGarden />
+        <Construction />
+        <Restaurant />
+        <Park />
+        <GPN />
+        <NewCompany />
+        <section className="black-sec-form">
+          <div className="copywriter-ending-1 text-center">
+            Zróbmy razem <br />
+            coś fajnego
+          </div>
+          <Form />
+        </section>
+        <LogoFooter openModal={openModal} />
+
+        <ModalForm isOpen={isModal} onClose={handleModalClose} />
+      </>
       {/* )} */}
     </>
   );
