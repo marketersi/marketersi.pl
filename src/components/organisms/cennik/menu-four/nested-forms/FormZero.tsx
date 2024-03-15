@@ -11,6 +11,7 @@ const FormZero = ({ setCurrentComponent }) => {
   const { formOne } = screenData?.cardMenu?.menuFour || "";
   const { dropdown } = screenData?.cardMenu?.menuFour?.formOne || {};
 
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -58,18 +59,29 @@ const FormZero = ({ setCurrentComponent }) => {
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {
-    let payload = {
-      formZeroDropdownValueOne: selectedOption?.value,
-    };
-    console.log("payload 1", payload);
-    dispatch(savePriceListFormData(payload));
-    setCurrentComponent(1);
+    let payload;
+    setIsButtonClicked(true);
+    if (!selectedOption) {
+      setTimeout(() => {
+        setIsButtonClicked(false);
+      }, 500);
+    } else {
+      payload = {
+        formZeroDropdownValueOne: selectedOption?.value,
+      };
+      dispatch(savePriceListFormData(payload));
+      setCurrentComponent(1);
+    }
   };
 
   return (
     <div>
-      <h2 className="card-heading">{formOne?.section1_title}</h2>
-      <p className="card-subheading">{formOne?.section1_subtitle}</p>
+      <h2 className={`card-heading ${isButtonClicked ? "red-title" : ""}`}>
+        {formOne?.section1_title}
+      </h2>
+      <p className={`card-subheading ${isButtonClicked ? "red-title" : ""}`}>
+        {formOne?.section1_subtitle}
+      </p>
       <div style={{ textAlign: "left" }} className="select-input">
         <Select
           options={dropdown}
@@ -91,12 +103,20 @@ const FormZero = ({ setCurrentComponent }) => {
               paddingLeft: "10px",
               borderRadius: "20px",
               paddingBlock: "3px",
+              backgroundColor: selectedOption
+                ? "#effeeb"
+                : baseStyles.backgroundColor,
+              outline: selectedOption ? "2px solid #effeeb" : "none",
             }),
             dropdownIndicator: (provided, state) => ({
               ...provided,
               padding: "0",
               paddingLeft: "3px",
               paddingRight: "3px",
+            }),
+            menu: (provided, state) => ({
+              ...provided,
+              backgroundColor: selectedOption ? "#effeeb" : "#fff",
             }),
           }}
         />
