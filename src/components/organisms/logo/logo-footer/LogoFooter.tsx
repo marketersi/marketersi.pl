@@ -94,9 +94,12 @@ const LogoFooter = () => {
           ))}
         </div>
         <div className="nazwa_footer_bottom_right">
-          <button className="nazwa_footer_bottom_PDF">
-            Pobierz wersję PDF
-          </button>
+          <a href="https://drive.google.com/uc?authuser=0&id=1sXRhdpQRI228rKk2CcuDTtpnF8DhAj2Q&export=download">
+            <button className="nazwa_footer_bottom_PDF">
+              Pobierz wersję PDF
+            </button>
+          </a>
+
           <button className="nazwa_footer_bottom_Offer" onClick={openModal}>
             Otrzymaj ofertę
           </button>

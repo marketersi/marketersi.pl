@@ -60,7 +60,7 @@ const Sales = () => {
       <BusinessTools />
       {/* <ProfitCard /> */}
       <Section5 />
-      <FAQ faqAQ={faqAQ} />
+      <FAQ faq={faq} />
       <Guarantee />
       <PriceList />
       <Form />

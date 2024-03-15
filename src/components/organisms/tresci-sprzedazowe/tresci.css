@@ -402,7 +402,7 @@ contact-inputs textarea {
 
 .copywriter-after-img-1:after {
     content: '';
-    width: 596px;
+    width: 500px;
     height: 620px;
     position: absolute;
     right: -175px;
@@ -412,6 +412,7 @@ contact-inputs textarea {
     top: -113px;
     background-position: left;
     z-index: -1;
+    background-size: 80%;
 }
 
 .copywriter-border-870 {
@@ -446,11 +447,12 @@ contact-inputs textarea {
     line-height: 63px;
     letter-spacing: -0.01em;
     margin-bottom: 160px;
+    max-width: 650px;
 }
 
 .copywriter-custom-subtext-4 {
     color: #373737;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 33px;
     letter-spacing: -0.01em;
     text-align: right;

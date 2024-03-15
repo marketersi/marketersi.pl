@@ -1,18 +1,21 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const ImplementationEx8 = () => {
+  const {  screenData } = useSelector((state) => state.anatomy);
+  const { implementation } = screenData || {};
+  const { example6 } = implementation || {};
   return (
     <section className="names-thematic-section-black">
       <div className="container names-custom-container">
         <div className="row">
           <div className="col-md-12 text-center">
             <div className="names-client-name copywriter-cname names-color-white cname-big-mtop custom-cname-small-margin underline-down">
-              RYMANÓW
+              {example6?.title}
             </div>
 
             <div className="names-client-desc names-color-dark names-custom-gray-text names-color-grey new-margin-gray nazwa_cardtwo_text">
-              Nazwa luksusowej marki <br />
-              w kategorii mody ślubnej <br />o międzynarodowych aspiracjach.
+              {example6?.subtitle}
             </div>
           </div>
         </div>
@@ -20,7 +23,7 @@ const ImplementationEx8 = () => {
 
       <div className="naming-seo-img">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/propozycje-nazw-victoria-coburg.jpg"
+          src={example6?.image_1}
           title="Jak podejść do nazwy dla nowej firmy? Przykład logotypu"
           alt="Victoria Coburg - dostępność domen"
         />
@@ -30,26 +33,19 @@ const ImplementationEx8 = () => {
         <div className="row">
           <div className="col-md-12">
             <h5 className="theme-quote signed-quote signed-quote-image names-quote-fsize names-color-light-dark names-custom-gray-text names-color-grey-med pnazw-new-custom-margin nazwa_cardtwo_quote">
-              Ta nazwa jest magiczna. Klientkom błyszczą oczy, <br />
-              gdy mówię o jej znaczeniu.
+              {example6?.quote}
             </h5>
 
             <p className="signature projects-gray-color-signature names-color-grey-dark newsignmargin nazwa_cardtwo_quoteauthor">
-              Andrzej O. - Wspólnik
+              {example6?.quote_name}
             </p>
 
             <p className="theme-desc names-color-light-dark names-color-grey nazwa_cardtwo_text">
-              <strong>Czy wiesz, że:</strong> Marsz Mendelssohna odgrywany w
-              kościele na każdej <br />
-              ceremonii ślubnej został napisany dla księżniczki Victorii Coburg?
+              {example6?.para_1}
             </p>
 
             <p className="theme-desc names-color-light-dark names-color-grey nazwa_cardtwo_text">
-              To nazwa z królewskim rodowodem! To pochodzenie jest skazane{" "}
-              <br />
-              na sukces. W 2018 roku marka obchodziła swoje dziesięciolecie.{" "}
-              <br />
-              Gratulujemy i dziękujemy.
+              {example6?.para_2}
             </p>
           </div>
         </div>
@@ -57,15 +53,15 @@ const ImplementationEx8 = () => {
 
       <div className="naming-seo-img text-center coburg-imgs">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/projektowanie-nazw-victoria-coburg.jpg"
+          src={example6?.image_2}
           title="Projektowanie nowej nazwy i logo - Victoria Coburg"
           alt="Przykład zaprojektowanej nowej nazwy na kartkach"
         />
-        <img
+        {/* <img
           src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/kampanie-reklamowe-victoria-coburg.jpg"
           title="Dobra nazwa dla firmy na przykładzie Victoria Coburg"
           alt="Tworzenie nazw firm na przykładzie Victoria Coburg"
-        />
+        /> */}
       </div>
     </section>
   );

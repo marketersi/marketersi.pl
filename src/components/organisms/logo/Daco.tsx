@@ -34,7 +34,7 @@ const Daco = () => {
         <div className="image-810-container">
           <div className="image-810">
             <img
-              className="desktop-810 position-relative"
+              className="shopImage position-relative"
               src={DacoData?.image}
               title="Projekt logo dla firmy Daco"
               alt="Profesjonalny projekt logo dla firmy Daco"
