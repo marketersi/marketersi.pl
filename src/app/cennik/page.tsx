@@ -17,10 +17,7 @@ const PriceListScreen = () => {
   const { title, sub_title, card_title, card_subtitle, cardMenu } = screenData;
   const { Form } = screenData?.cardMenu?.MenuTwo || {};
 
-  const [isRed, setIsRed] = useState({
-    status: true,
-    menu: 0,
-  });
+  const [isRed, setIsRed] = useState(0);
 
   const dispatch = useDispatch();
 
@@ -30,7 +27,7 @@ const PriceListScreen = () => {
   }, [dispatch]);
 
   const handleBtnClick = (value) => {
-    setIsRed({ status: true, menu: value });
+    setIsRed(value);
     setTimeout(() => {
       setSelectedOption(value);
     }, 500);
@@ -105,13 +102,12 @@ const PriceListScreen = () => {
                           style={{
                             ...buttonStyle,
                             backgroundColor:
-                              isRed.menu === 1
+                              isRed === 1
                                 ? "#f0a0a0"
                                 : buttonStyle.backgroundColor,
-                            color:
-                              isRed.menu === 1 ? "white" : buttonStyle.color,
+                            color: isRed === 1 ? "white" : buttonStyle.color,
                             border:
-                              isRed.menu === 1
+                              isRed === 1
                                 ? "1px solid red"
                                 : buttonStyle.border,
                           }}
@@ -129,13 +125,12 @@ const PriceListScreen = () => {
                           style={{
                             ...buttonStyle,
                             backgroundColor:
-                              isRed.menu === 2
+                              isRed === 2
                                 ? "#f0a0a0"
                                 : buttonStyle.backgroundColor,
-                            color:
-                              isRed.menu === 2 ? "white" : buttonStyle.color,
+                            color: isRed === 2 ? "white" : buttonStyle.color,
                             border:
-                              isRed.menu === 2
+                              isRed === 2
                                 ? "1px solid red"
                                 : buttonStyle.border,
                           }}
@@ -155,13 +150,12 @@ const PriceListScreen = () => {
                           style={{
                             ...buttonStyle,
                             backgroundColor:
-                              isRed.menu === 3
+                              isRed === 3
                                 ? "#f0a0a0"
                                 : buttonStyle.backgroundColor,
-                            color:
-                              isRed.menu === 3 ? "white" : buttonStyle.color,
+                            color: isRed === 3 ? "white" : buttonStyle.color,
                             border:
-                              isRed.menu === 3
+                              isRed === 3
                                 ? "1px solid red"
                                 : buttonStyle.border,
                           }}
@@ -178,13 +172,12 @@ const PriceListScreen = () => {
                           style={{
                             ...buttonStyle,
                             backgroundColor:
-                              isRed.menu === 4
+                              isRed === 4
                                 ? "#f0a0a0"
                                 : buttonStyle.backgroundColor,
-                            color:
-                              isRed.menu === 4 ? "white" : buttonStyle.color,
+                            color: isRed === 4 ? "white" : buttonStyle.color,
                             border:
-                              isRed.menu === 4
+                              isRed === 4
                                 ? "1px solid red"
                                 : buttonStyle.border,
                           }}
