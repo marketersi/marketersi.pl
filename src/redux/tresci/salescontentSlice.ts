@@ -5,6 +5,8 @@ const salesContentSlice = createSlice({
   initialState: {
     isLoading: false,
     screenData: {},
+
+    isFormSubmitted: false,
   },
   reducers: {
     // Action when starting to fetch sales content screen data
@@ -22,6 +24,18 @@ const salesContentSlice = createSlice({
     fetchSalesContentScreenFail: (state) => {
       state.isLoading = false;
     },
+
+    // Submit a form to get quote
+    sendAQuoteStarted: (state) => {
+      state.isFormSubmitted = false;
+    },
+    sendAQuoteSuccess: (state, { payload }) => {
+      console.log("inside sendAQuoteSuccess", payload);
+      state.isFormSubmitted = payload.response.status;
+    },
+    sendAQuoteFailed: (state) => {
+      state.isFormSubmitted = false;
+    },
   },
 });
 
@@ -29,5 +43,9 @@ export const {
   fetchSalesContentScreenStart,
   fetchSalesContentScreenSuccess,
   fetchSalesContentScreenFail,
+
+  sendAQuoteStarted,
+  sendAQuoteSuccess,
+  sendAQuoteFailed,
 } = salesContentSlice.actions;
 export default salesContentSlice.reducer;
