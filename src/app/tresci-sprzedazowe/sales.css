@@ -94,6 +94,9 @@ section.sales_banner {
   border-color: #438d07;
   box-shadow: 0 4px 0 0 #31600b;
   color: #fff;
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .copywriter-page .old-btn a.btn {
@@ -332,6 +335,9 @@ section.business_tools {
   font-family: Arial;
   margin-bottom: 10px;
   margin-top: 50px;
+}
+.copywriter-intro-header-right strong {
+  display: block;
 }
 
 .copywriter-intro-description-right {

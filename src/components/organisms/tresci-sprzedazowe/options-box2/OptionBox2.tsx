@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../tresci.css'
+import { ModalForm } from '../ModalForm';
 
 const OptionBox2 = ({optionBox2 }) => {
   const { background_image = '', description = '', title = '', btn_title = '' } = optionBox2 || {};
+
+  const [ isModal, setIsModal] = useState(false)
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
   return (
     <div>
         <section className="projects-gray-opinion-2">
@@ -33,7 +40,7 @@ const OptionBox2 = ({optionBox2 }) => {
                 <div className="opinion-box-text copywriter-opinion-box-text">
                   {description}
                 </div>
-                <button className="download-catalog-button projects-opinion-button copywriter-green-background copywriter-new-btn copywriter-standard-mt-10 send-offer-button js--triggerAnimation" type="button">
+                <button onClick={() => setIsModal(true)} className="download-catalog-button projects-opinion-button copywriter-green-background copywriter-new-btn copywriter-standard-mt-10 send-offer-button js--triggerAnimation" type="button">
                   <strong>{btn_title}</strong>
                 </button>
               </div>
@@ -44,6 +51,7 @@ const OptionBox2 = ({optionBox2 }) => {
         </div>
       </div>
     </section>
+    <ModalForm isOpen={isModal} onClose={handleModalClose}/>
     </div>
   )
 }
