@@ -11,6 +11,8 @@ const FormZero = ({ setCurrentComponent }) => {
   const { formOne } = screenData?.cardMenu?.menuThree || "";
   const { dropdown } = screenData?.cardMenu?.menuThree?.formOne || {};
 
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
+
   const dispatch = useDispatch();
 
   const DropdownIndicator = (props) => {
@@ -43,19 +45,37 @@ const FormZero = ({ setCurrentComponent }) => {
   };
 
   const handleButtonClick = () => {
-    let payload = {
-      formZeroDropdownValueOne: selectedOption?.value,
-    };
+    // let payload = {
+    //   formZeroDropdownValueOne: selectedOption?.value,
+    // };
 
-    console.log("payload nnn", payload);
-    dispatch(savePriceListFormData(payload));
-    setCurrentComponent(1);
+    // console.log("payload nnn", payload);
+    // dispatch(savePriceListFormData(payload));
+    // setCurrentComponent(1);
+
+    let payload;
+    setIsButtonClicked(true);
+    if (!selectedOption) {
+      setTimeout(() => {
+        setIsButtonClicked(false);
+      }, 500);
+    } else {
+      payload = {
+        formZeroDropdownValueOne: selectedOption?.value,
+      };
+      dispatch(savePriceListFormData(payload));
+      setCurrentComponent(1);
+    }
   };
 
   return (
     <div>
-      <h2 className="card-heading">{formOne?.form1_title}</h2>
-      <p className="card-subheading">{formOne?.form1_subtitle}</p>
+      <h2 className={`card-heading ${isButtonClicked ? "red-title" : ""}`}>
+        {formOne?.form1_title}
+      </h2>
+      <p className={`card-subheading ${isButtonClicked ? "red-title" : ""}`}>
+        {formOne?.form1_subtitle}
+      </p>
       <div style={{ textAlign: "left" }} className="select-input">
         <Select
           options={dropdown}
@@ -77,12 +97,20 @@ const FormZero = ({ setCurrentComponent }) => {
               paddingLeft: "10px",
               borderRadius: "20px",
               paddingBlock: "3px",
+              backgroundColor: selectedOption
+                ? "#effeeb"
+                : baseStyles.backgroundColor,
+              outline: selectedOption ? "2px solid #effeeb" : "none",
             }),
             dropdownIndicator: (provided, state) => ({
               ...provided,
               padding: "0",
               paddingLeft: "3px",
               paddingRight: "3px",
+            }),
+            menu: (provided, state) => ({
+              ...provided,
+              backgroundColor: selectedOption ? "#effeeb" : "#fff",
             }),
           }}
         />
