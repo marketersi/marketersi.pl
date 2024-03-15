@@ -51,6 +51,8 @@ a.activeLink{
   inset: 0 !important;
   border: none !important;
   z-index: 11111111 !important;
+  display: flex;
+  align-items: center;
 }
 .ReactModalPortal {
   position: relative;

@@ -9,6 +9,7 @@ import {
   isMenuSubmitStarted,
   isMenuSubmitSuccess,
 } from "./pricelistSlice";
+import { toast } from "react-toastify";
 
 export function* priceListScreenSaga() {
   try {
@@ -32,24 +33,30 @@ export function* priceListScreenSaga() {
   }
 }
 
+export function* cennikMenuStorSaga(action) {
+  const payload = action.payload;
+  console.log("Inside Price list screen saga post", payload);
 
-export function* cennikMenuStorSaga() {
-  try{
-    yield put(isMenuSubmitStarted())
+  try {
+    yield put(isMenuSubmitStarted());
 
-    const { data: responseData} = yield call(
+    const { data: responseData } = yield call(
       axiosInstance.post,
-      API_ENDPOINTS_POST.CENNIK_MENU_STOR
+      API_ENDPOINTS_POST.CENNIK_MENU_STOR,
+      payload
     );
-    
-    if(responseData){
+
+    if (responseData) {
+      console.log("menu submit success saga");
+
       yield put(isMenuSubmitSuccess());
-    }else{
+    } else {
+      console.log("menu submit failed saga");
       yield put(isMenuSubmitFail());
     }
-
-  }
-  catch(error){
+  } catch (error) {
+    console.log("menu submit failed catch saga");
     yield put(isMenuSubmitFail());
+    toast.error("something went wrong");
   }
 }

@@ -81,6 +81,8 @@ button.nazwa_footer_bottom_Offer {
     inset: 0 !important;
     border: none !important;
     z-index: 11111111 !important;
+    display: flex;
+    align-items: center;
 }
 .ReactModalPortal {
     position: relative;

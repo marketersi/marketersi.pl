@@ -1,12 +1,14 @@
+import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-const SliderForm = ({ setCurrentComponent }) => {
+const SliderForm = ({ setCurrentComponent, formTwo }) => {
   const [currentSection, setCurrentSection] = useState(0);
 
-  const { isLoading, screenData } = useSelector((state) => state.priceList);
-  const { formTwo } = screenData?.cardMenu?.menuOne || "";
-  const { rangeArray } = screenData?.cardMenu?.menuOne?.formTwo || {};
+  // const { formTwo } = screenData?.cardMenu?.menuOne || "";
+  // const { rangeArray } = screenData?.cardMenu?.menuOne?.formTwo || {};
+
+  const { rangeArray } = formTwo || [];
 
   const totalSections = rangeArray.length;
 
@@ -15,6 +17,17 @@ const SliderForm = ({ setCurrentComponent }) => {
     const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
     setCurrentSection(calculatedSection);
   };
+
+  const dispatch = useDispatch();
+
+  const handleNext = () => {
+    const payload = {
+      formOneSelectedRangeValue: rangeArray[currentSection]?.description,
+    };
+    dispatch(savePriceListFormData(payload));
+    setCurrentComponent(2);
+  };
+
   return (
     <div className="slider_section">
       <div>
@@ -51,7 +64,7 @@ const SliderForm = ({ setCurrentComponent }) => {
           />
         </div>
         <div className="ss_btn-container">
-          <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
+          <button onClick={handleNext} className="cennikBtn">
             {formTwo?.section2_buttonText}
           </button>
         </div>
