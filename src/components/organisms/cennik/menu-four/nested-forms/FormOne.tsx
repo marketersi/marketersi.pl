@@ -1,54 +1,43 @@
+import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const SliderSection = ({ setCurrentComponent }) => {
-
   const { isLoading, screenData } = useSelector((state) => state.priceList);
-  const {  formTwo } = screenData?.cardMenu?.menuFour || "";
-  const {  rangeArray } = screenData?.cardMenu?.menuFour?.formTwo || {};
-
+  const { formTwo } = screenData?.cardMenu?.menuFour || "";
+  const { rangeArray } = screenData?.cardMenu?.menuFour?.formTwo || {};
 
   const [currentSection, setCurrentSection] = useState(0);
 
-  const sectionDescriptions = [
-    {
-      main: "Przesuń suwak blisko potrzeb",
-      additional: "",
-    },
-    {
-      main: "Strategiczna - Duża marka",
-      additional: "programista + projektant UX",
-    },
-    {
-      main: "Wiodąca - Pod marketing.",
-      additional: "programista + projektant UX",
-    },
-    {
-      main: "Klasyczna - Firmowa. Fajna.",
-      additional: "programista + projektant ",
-    },
-    {
-      main: "Najtańsza – bardzo prosta",
-      additional: "programista + projektant",
-    },
-  ];
-
-  const totalSections = sectionDescriptions.length;
+  const totalSections = rangeArray.length;
 
   const handleSliderChange = (e) => {
-    // Calculate the current section based on the slider value
     const sliderValue = e.target.value;
     const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
     setCurrentSection(calculatedSection);
   };
+
+  const dispatch = useDispatch();
+
+  const handleNext = () => {
+    const payload = {
+      formOneSelectedRangeValue: rangeArray[currentSection]?.description,
+    };
+    dispatch(savePriceListFormData(payload));
+    setCurrentComponent(2);
+  };
+
   return (
     <div className="slider_section">
       <div>
         <h2>Jakiej propozycji oczekujesz?</h2>
-        <p  style={{
-            backgroundColor:
-            rangeArray[currentSection]?.backgroundColor,
-          }}>{rangeArray[currentSection]?.label}</p>
+        <p
+          style={{
+            backgroundColor: rangeArray[currentSection]?.backgroundColor,
+          }}
+        >
+          {rangeArray[currentSection]?.label}
+        </p>
         <div>{rangeArray[currentSection]?.description}</div>
       </div>
 
@@ -64,8 +53,7 @@ const SliderSection = ({ setCurrentComponent }) => {
             onChange={handleSliderChange}
             value={(currentSection / (totalSections - 1)) * 100}
             style={{
-              backgroundColor:
-              rangeArray[currentSection]?.backgroundColor,
+              backgroundColor: rangeArray[currentSection]?.backgroundColor,
             }}
           />
           <img
@@ -74,7 +62,7 @@ const SliderSection = ({ setCurrentComponent }) => {
           />
         </div>
         <div className="ss_btn-container">
-          <button onClick={() => setCurrentComponent(2)} className="cennikBtn">
+          <button onClick={handleNext} className="cennikBtn">
             {formTwo?.section2_buttonText}
           </button>
         </div>

@@ -148,7 +148,7 @@ const PriceListScreen = () => {
               )}
               {selectedOption == 1 && (
                 <>
-                  <CardOne menu={menuOne} />
+                  <CardOne />
                 </>
               )}
 
@@ -160,15 +160,13 @@ const PriceListScreen = () => {
 
               {selectedOption == 3 && (
                 <>
-                  {/* <CardThree /> */}
-                  <CardOne menu={menuThree} />
+                  <CardThree />
                 </>
               )}
 
               {selectedOption == 4 && (
                 <>
-                  {/* <CardFour /> */}
-                  <CardOne menu={menuFour} />
+                  <CardFour />
                 </>
               )}
             </div>
