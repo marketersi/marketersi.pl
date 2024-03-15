@@ -10,6 +10,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
 
   const optionsOne = form?.Dropdown1.map((option) => ({
     value: option.value,
@@ -55,18 +56,39 @@ const FormOne = ({ setCurrentComponent, form }) => {
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {
-    let payload = {
-      formOneDropdownValueOne: selectedOption?.value,
-      formOneDropdownValueTwo: selectedOption2?.value,
-    };
-    dispatch(savePriceListFormData(payload));
-    setCurrentComponent(2);
+    // let payload = {
+    //   formOneDropdownValueOne: selectedOption?.value,
+    //   formOneDropdownValueTwo: selectedOption2?.value,
+    // };
+    // dispatch(savePriceListFormData(payload));
+    // setCurrentComponent(2);
+
+    let payload;
+    setIsButtonClicked(true);
+    if (!selectedOption || !selectedOption2) {
+      setTimeout(() => {
+        setIsButtonClicked(false);
+      }, 500);
+    } else {
+      payload = {
+        formOneDropdownValueOne: selectedOption?.value,
+        formOneDropdownValueTwo: selectedOption2?.value,
+      };
+      dispatch(savePriceListFormData(payload));
+      setCurrentComponent(2);
+    }
   };
 
   return (
     <>
       <div>
-        <h2 className="card-heading">{form?.section_2_title_1}</h2>
+        <h2
+          className={`card-heading ${
+            isButtonClicked && !selectedOption ? "red-title" : ""
+          }`}
+        >
+          {form?.section_2_title_1}
+        </h2>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={optionsOne}
@@ -99,11 +121,23 @@ const FormOne = ({ setCurrentComponent, form }) => {
                 paddingLeft: "3px",
                 paddingRight: "3px",
               }),
+              menu: (provided, state) => ({
+                ...provided,
+                backgroundColor: selectedOption ? "#effeeb" : "#fff",
+              }),
             }}
           />
         </div>
-        <h2 className="card-heading mt-5 mb-2">{form?.section_2_title_2}</h2>
-        <p>{form?.section_2_subtitle}</p>
+        <h2
+          className={`card-heading mt-5 mb-2 ${
+            isButtonClicked && !selectedOption2 ? "red-title" : ""
+          }`}
+        >
+          {form?.section_2_title_2}
+        </h2>
+        <p className={isButtonClicked && !selectedOption2 ? "red-title" : ""}>
+          {form?.section_2_subtitle}
+        </p>
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={optionsTwo}
@@ -135,6 +169,10 @@ const FormOne = ({ setCurrentComponent, form }) => {
                 padding: "0",
                 paddingLeft: "3px",
                 paddingRight: "3px",
+              }),
+              menu: (provided, state) => ({
+                ...provided,
+                backgroundColor: selectedOption2 ? "#effeeb" : "#fff",
               }),
             }}
           />

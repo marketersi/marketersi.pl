@@ -9,7 +9,7 @@ const FormThree = ({ form }) => {
   const { formData, isMenuSubmitSuccess } = useSelector(
     (state) => state.priceList
   );
-
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -19,6 +19,7 @@ const FormThree = ({ form }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsButtonClicked(true);
     const payload = {
       type: 2,
       prlist_menu2_dropdown_1_id: formData?.formZeroDropdownValueOne,
@@ -33,11 +34,18 @@ const FormThree = ({ form }) => {
     };
 
     console.log("menu 2 payload", payload);
-    dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setWebsite("");
+
+    if (name && email && phone && website) {
+      dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
+      setName("");
+      setEmail("");
+      setPhone("");
+      setWebsite("");
+    } else {
+      setTimeout(() => {
+        setIsButtonClicked(false);
+      }, 500);
+    }
   };
 
   useEffect(() => {
@@ -47,9 +55,22 @@ const FormThree = ({ form }) => {
     }
   }, [isMenuSubmitSuccess]);
 
+  const isValidEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <div className="componentThree_section">
-      <h2>{form?.section_4_title}</h2>
+      <h2
+        className={
+          isButtonClicked && (!name || !email || !phone || !website)
+            ? "red-title"
+            : ""
+        }
+      >
+        {form?.section_4_title}
+      </h2>
       <div className="componentThree_input-container">
         <form onSubmit={handleSubmit}>
           <input
@@ -57,27 +78,37 @@ const FormThree = ({ form }) => {
             placeholder="Imię"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            required
+            style={{
+              backgroundColor: name && "#effeeb",
+              outline: name && "1px solid #effeeb",
+            }}
           />
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            style={{
+              backgroundColor: email && isValidEmail(email) ? "#effeeb" : "",
+              outline: email && isValidEmail(email) ? "1px solid #effeeb" : "",
+            }}
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           />
           <input
             type="text"
             placeholder="Telefon"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            required
           />
           <input
             type="text"
             placeholder="Strona internetowa"
             value={website}
             onChange={(e) => setWebsite(e.target.value)}
-            required
+            style={{
+              backgroundColor: website && "#effeeb",
+              outline: website && "1px solid #effeeb",
+            }}
           />
           <div>
             <button className="cennikBtn" type="submit">
