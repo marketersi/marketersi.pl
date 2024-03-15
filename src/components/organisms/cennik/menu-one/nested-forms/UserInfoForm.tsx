@@ -9,7 +9,7 @@ const UserInfoForm = ({ formFour }) => {
     (state) => state.priceList
   );
   // const { formFour } = screenData?.cardMenu?.menuOne || "";
-
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -19,6 +19,7 @@ const UserInfoForm = ({ formFour }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsButtonClicked(true);
     const payload = {
       type: 1,
       tbl_firstpricecard_dropdwonoption_id: formData.formZeroDropdownValueOne,
@@ -30,8 +31,16 @@ const UserInfoForm = ({ formFour }) => {
       section4_phone: phone,
     };
 
-    console.log("paylaod", payload);
-    dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
+    if (name && email && phone) {
+      dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
+      setName("");
+      setEmail("");
+      setPhone("");
+    } else {
+      setTimeout(() => {
+        setIsButtonClicked(false);
+      }, 500);
+    }
   };
 
   useEffect(() => {
@@ -41,32 +50,55 @@ const UserInfoForm = ({ formFour }) => {
     }
   }, [isMenuSubmitSuccess]);
 
+  const isValidEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <div className="user-details_section">
       <form onSubmit={handleSubmit}>
-        <h2>{formFour?.section4_title}</h2>
-        <p>{formFour?.section4_subtitle}</p>
+        <h2
+          className={
+            isButtonClicked && (!name || !email || !phone) ? "red-title" : ""
+          }
+        >
+          {formFour?.section4_title}
+        </h2>
+        <p
+          className={
+            isButtonClicked && (!name || !email || !phone) ? "red-title" : ""
+          }
+        >
+          {formFour?.section4_subtitle}
+        </p>
         <div className="uds_input-container">
           <input
             type="text"
             placeholder="Imię"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            required
+            style={{
+              backgroundColor: name && "#effeeb",
+              outline: name && "1px solid #effeeb",
+            }}
           />
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
+            style={{
+              backgroundColor: email && isValidEmail(email) ? "#effeeb" : "",
+              outline: email && isValidEmail(email) ? "1px solid #effeeb" : "",
+            }}
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           />
           <input
             type="text"
             placeholder="Tel: (Opcjonalnie)"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            required
           />
         </div>
         <div>

@@ -1,6 +1,9 @@
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Modal from "react-modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const FeedbackSection = ({ setCurrentComponent }) => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
@@ -8,8 +11,13 @@ const FeedbackSection = ({ setCurrentComponent }) => {
 
   const [textAreaValue, setTextAreaValue] = useState("");
   const [inputValue, setInputValue] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const dispatch = useDispatch();
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   const handleNext = (e) => {
     e.preventDefault();
@@ -17,8 +25,13 @@ const FeedbackSection = ({ setCurrentComponent }) => {
       formTwoTextAreaValue: textAreaValue,
       formTwoInputValue: inputValue,
     };
-    dispatch(savePriceListFormData(payload));
-    setCurrentComponent(3);
+
+    if (textAreaValue && inputValue) {
+      dispatch(savePriceListFormData(payload));
+      setCurrentComponent(3);
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   return (
@@ -30,22 +43,47 @@ const FeedbackSection = ({ setCurrentComponent }) => {
           rows="5"
           cols="50"
           className="fs_textarea"
-          required
           onChange={(e) => setTextAreaValue(e.target.value)}
           value={textAreaValue}
+          style={{
+            backgroundColor: textAreaValue.length > 10 ? "#effeeb" : "",
+            outline: textAreaValue.length > 10 ? "none" : "",
+          }}
         ></textarea>
         <p className="mt-2">{formThree?.section3_subtitle2}</p>
         <input
           type="text"
           className="fs_input"
-          required
           onChange={(e) => setInputValue(e.target.value)}
           value={inputValue}
+          style={{
+            backgroundColor: inputValue.length > 10 ? "#effeeb" : "",
+            outline: inputValue.length > 10 ? "none" : "",
+          }}
         />
         <button type="submit" className="cennikBtn">
           Ostatnie pytanie
         </button>
       </form>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        className="CenikModal"
+        overlayClassName="Overlay"
+      >
+        <h4>Hardcoded title</h4>
+        <p>HC description</p>
+        <div className="cenikBtnDiv">
+          <button onClick={closeModal}>HC button</button>
+        </div>
+
+        {/* x btn */}
+        <div className="close" onClick={closeModal}>
+          <FontAwesomeIcon icon={faXmark} />
+        </div>
+      </Modal>
     </div>
   );
 };
