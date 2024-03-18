@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
-import { saveExaminationFormData } from "@/redux/zamow/zamowSlice";
+import { POST_EXAMINATION_SURVEY } from "@/redux/zamow/zamowAction";
 
 const Question13 = ({ handleNext }) => {
-  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { isLoading, screenData, formData } = useSelector(
+    (state) => state.examination
+  );
   const { formThirteen } = screenData?.surveyQuestions || {};
 
   const [inputValue, setInputValue] = useState("");
@@ -13,11 +15,22 @@ const Question13 = ({ handleNext }) => {
 
   const handleButtonClick = () => {
     const payload = {
+      formZeroInputValue: formData?.formZeroInputValue,
+      formOneInputValue: formData?.formOneInputValue,
+      formTwoInputValue: formData?.formTwoInputValue,
+      formThreeInputValue: formData?.formThreeInputValue,
+      formFourInputValue: formData?.formFourInputValue,
+      selectedRangeValue: formData?.selectedRangeValue,
+      selectedOptionValue: formData?.selectedOption,
+      selectedRangeValueTwo: formData?.selectedRangeValueTwo,
+      formFiveInputValue: formData?.formFiveInputValue,
+      selectedOptionValueTwo: formData?.selectedOptionTwo,
+      formSixInputValue: formData?.formSixInputValue,
       formSevenInputValue: inputValue,
     };
 
-    console.log("payload 7 exam ui", payload);
-    dispatch(saveExaminationFormData(payload));
+    console.log("final payload", payload);
+    dispatch({ type: POST_EXAMINATION_SURVEY, payload });
     handleNext();
   };
 

@@ -8,14 +8,11 @@ const Question8 = ({ handleNext }) => {
   const { screenData } = useSelector((state) => state.examination);
   const { formEight } = screenData?.surveyQuestions || {};
 
-  const [selectedOption, setSelectedOption] = useState("");
-
   const dispatch = useDispatch();
 
   const handleButtonClick = (option) => {
-    setSelectedOption(option);
-    const payload = { 
-      selectedOption: selectedOption,
+    const payload = {
+      selectedOption: option,
     };
 
     console.log("payload selected option exam ui", payload);
