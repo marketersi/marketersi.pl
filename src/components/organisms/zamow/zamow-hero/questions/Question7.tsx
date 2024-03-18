@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { saveExaminationFormData } from "@/redux/zamow/zamowSlice";
 
 const Question7 = ({ handleNext }) => {
-
-  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { screenData } = useSelector((state) => state.examination);
   const { formSeven } = screenData?.surveyQuestions || {};
 
   const [rangeValue, setRangeValue] = useState(0);
@@ -12,7 +12,18 @@ const Question7 = ({ handleNext }) => {
   const handleRangeChange = (event) => {
     setRangeValue(parseInt(event.target.value, 10));
   };
-  
+
+  const dispatch = useDispatch();
+
+  const handleButtonClick = () => {
+    const payload = {
+      selectedRangeValue: rangeValue,
+    };
+    console.log("payload range value 1 exam ui", payload);
+    dispatch(saveExaminationFormData(payload));
+    handleNext();
+  };
+
   return (
     <div className="zh_question range_container">
       <h2>{formSeven?.title}</h2>
@@ -31,23 +42,23 @@ const Question7 = ({ handleNext }) => {
           alt=""
         />
       )}
-     <input
-     min={0}
-     max={100000}
+      <input
+        min={0}
+        max={100000}
         type="range"
         step={1000}
         value={rangeValue}
         onChange={handleRangeChange}
         className="income_range"
       />
-      
+
       <div className="zh_next_btn_container">
         <motion.button
-          onClick={handleNext}
+          onClick={handleButtonClick}
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-         {formSeven?.buttonText}
+          {formSeven?.buttonText}
         </motion.button>
         <p>Wciśnij Enter</p>
       </div>

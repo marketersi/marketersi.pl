@@ -1,41 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { saveExaminationFormData } from "@/redux/zamow/zamowSlice";
 
-const Question8 = ({ handleNext }) => {
-  const { isLoading, screenData } = useSelector((state) => state.examination);
+const Question11 = ({ handleNext }) => {
+  const { screenData } = useSelector((state) => state.examination);
   const { formEleven } = screenData?.surveyQuestions || {};
+
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const dispatch = useDispatch();
+
+  const handleButtonClick = (option) => {
+    setSelectedOption(option);
+    const payload = {
+      selectedOptionTwo: selectedOption,
+    };
+
+    console.log("payload selected option 2 exam ui", payload);
+    dispatch(saveExaminationFormData(payload));
+    handleNext();
+  };
 
   return (
     <div className="zh_marketing_container">
       <h2>{formEleven?.title}</h2>
       <div className="checkBOxContainer">
-      <Row>
-                {formEleven?.options.map((option, index) => (
-                    <Col key={index} sm={6}>
-                        <label className="checkbox style-d" onClick={handleNext}>
-                            <input type="checkbox" />
-                            <div className="checkbox__checkmark"></div>
-                            <div className="checkbox__body">{option}</div>
-                        </label>
-                    </Col>
-                ))}
-            </Row>
-          
+        <Row>
+          {formEleven?.options.map((option, index) => (
+            <Col key={index} sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick(option)}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">{option}</div>
+              </label>
+            </Col>
+          ))}
+        </Row>
       </div>
-
-      {/* <div className="zh_next_btn_container">
-        <motion.button
-          onClick={handleNext}
-          className="zh_next_btn"
-          whileHover={{ translateY: 5 }}
-        >
-          OK
-        </motion.button>
-      </div> */}
     </div>
   );
 };
 
-export default Question8;
+export default Question11;
