@@ -19,4 +19,5 @@ export const API_ENDPOINTS_POST = {
   CONTACT_US: "api/contactMail",
   CENNIK_MENU_STOR: "api/cenik/menus/store",
   SEND_A_QUOTE: "api/sales",
+  EXAM_FORM_STORE: "api/post-examination",
 };

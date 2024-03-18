@@ -16,8 +16,14 @@ import {
 } from "@/redux/kontakt/contactSagas";
 import { FETCH_STRATEGY_SCREEN_DATA } from "@/redux/strategia/strategyAction";
 import { strategyScreenSaga } from "@/redux/strategia/strategySaga";
-import { FETCH_EXAMINATION_SCREEN_DATA } from "@/redux/zamow/zamowAction";
-import { examinationScreenSaga } from "@/redux/zamow/zamowSagas";
+import {
+  FETCH_EXAMINATION_SCREEN_DATA,
+  POST_EXAMINATION_SURVEY,
+} from "@/redux/zamow/zamowAction";
+import {
+  examinationFormSaga,
+  examinationScreenSaga,
+} from "@/redux/zamow/zamowSagas";
 import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
 import { teamScreenSaga } from "@/redux/zespol/teamSaga";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
@@ -63,5 +69,6 @@ export default function* rootSaga() {
     takeLatest(FETCH_UX_SCREEN_DATA, uxScreenSaga),
     takeLatest(SUBMIT_MENU_STOR_FORM, cennikMenuStorSaga),
     takeLatest(SEND_ME_A_QUOTE, sendAQuoteSaga),
+    takeLatest(POST_EXAMINATION_SURVEY, examinationFormSaga),
   ]);
 }

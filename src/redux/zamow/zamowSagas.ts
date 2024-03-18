@@ -1,7 +1,10 @@
 import { call, put } from "redux-saga/effects";
 import { axiosInstance } from "@/services/httpServices";
-import { API_ENDPOINTS } from "@/services/webConstants";
+import { API_ENDPOINTS, API_ENDPOINTS_POST } from "@/services/webConstants";
 import {
+  examFormSubmitFail,
+  examFormSubmitStarted,
+  examFormSubmitSuccess,
   fetchExaminationScreenFail,
   fetchExaminationScreenStart,
   fetchExaminationScreenSuccess,
@@ -26,5 +29,32 @@ export function* examinationScreenSaga() {
   } catch (error) {
     console.error("Error in exam screen saga:", error);
     yield put(fetchExaminationScreenFail());
+  }
+}
+
+export function* examinationFormSaga(action) {
+  const payload = action.payload;
+  console.log("Examination screen saga post", payload);
+
+  try {
+    yield put(examFormSubmitStarted());
+
+    const { data: responseData } = yield call(
+      axiosInstance.post,
+      API_ENDPOINTS_POST.EXAM_FORM_STORE,
+      payload
+    );
+
+    if (responseData) {
+      console.log("exam form submit success saga");
+
+      yield put(examFormSubmitSuccess());
+    } else {
+      console.log("exam form submit failed saga");
+      yield put(examFormSubmitFail());
+    }
+  } catch (error) {
+    console.log("exam form submit failed catch saga");
+    yield put(examFormSubmitFail());
   }
 }
