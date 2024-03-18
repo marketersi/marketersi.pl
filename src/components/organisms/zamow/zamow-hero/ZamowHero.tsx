@@ -3,10 +3,13 @@ import { Col, Row } from "react-bootstrap";
 import "./zamow-hero.css";
 import { motion } from "framer-motion";
 import Questions from "./questions/Questions";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useToast } from "react-toastify";
+import { POST_EXAMINATION_SURVEY } from "@/redux/zamow/zamowAction";
+import { saveExaminationFormData } from "@/redux/zamow/zamowSlice";
 
 const ZamowHero = () => {
-  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { screenData } = useSelector((state) => state.examination);
   const { heroSection, ratingSection } = screenData || {};
 
   const [progress, setProgress] = useState(0);
@@ -53,38 +56,15 @@ const ZamowHero = () => {
               )}
             </>
           ) : (
-            <>
-              <h1>
-                {heroSection?.title}
-              </h1>
-              <p>
-                {heroSection?.info}
-              </p>
-              <p style={{ fontSize: "16px" }}>
-                {heroSection?.sub_info}
-              </p>
-              <div className="input-container">
-                <input
-                  placeholder="Wpisz tu adres strony www."
-                  className="zemow-hero-input"
-                />
-                <motion.button
-                  className="zamow-hero-btn"
-                  whileHover={{ scale: 0.97 }}
-                  whileTap={{ scale: 0.9 }}
-                  onClick={handleNextQuestion}
-                >
-                  Rozpocznij.
-                </motion.button>
-              </div>
-            </>
+            <FormZero
+              heroSection={heroSection}
+              handleNextQuestion={handleNextQuestion}
+            />
           )}
         </Col>
       </Row>
       <div className="line-container">
-        <p className="mb-0 small">
-          {ratingSection?.label} :
-        </p>
+        <p className="mb-0 small">{ratingSection?.label} :</p>
         <div className="line"></div>
       </div>
     </section>
@@ -92,3 +72,45 @@ const ZamowHero = () => {
 };
 
 export default ZamowHero;
+
+const FormZero = ({ heroSection, handleNextQuestion }) => {
+  const [inputValue, setInputValue] = useState("");
+
+  console.log("form zero input", inputValue);
+
+  const dispatch = useDispatch();
+
+  const handleButtonClick = () => {
+    const payload = {
+      formZeroInputValue: inputValue,
+    };
+
+    console.log("payload 0 exam ui", payload);
+    dispatch(saveExaminationFormData(payload));
+    handleNextQuestion();
+  };
+
+  return (
+    <>
+      <h1>{heroSection?.title}</h1>
+      <p>{heroSection?.info}</p>
+      <p style={{ fontSize: "16px" }}>{heroSection?.sub_info}</p>
+      <div className="input-container">
+        <input
+          placeholder="Wpisz tu adres strony www."
+          className="zemow-hero-input"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+        />
+        <motion.button
+          className="zamow-hero-btn"
+          whileHover={{ scale: 0.97 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={handleButtonClick}
+        >
+          Rozpocznij.
+        </motion.button>
+      </div>
+    </>
+  );
+};

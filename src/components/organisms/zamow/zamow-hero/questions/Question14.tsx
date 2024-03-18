@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import { saveAs } from "file-saver";
 
 const Question14 = () => {
-  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { screenData } = useSelector((state) => state.examination);
   const { summary } = screenData?.surveyQuestions || {};
+
+  const handleDownloadPDF = async () => {
+    const pdfUrl =
+      "https://marketersi.cdn.prismic.io/marketersi/ZfgO6smUzjad_UM9_marketersi.pdf";
+    if (pdfUrl) {
+      try {
+        const response = await fetch(pdfUrl);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const blob = await response.blob();
+        saveAs(blob, "brochure.pdf");
+      } catch (error) {
+        console.error("Error downloading PDF:", error);
+      }
+    }
+  };
 
   return (
     <>
@@ -29,10 +47,12 @@ const Question14 = () => {
                 <motion.button
                   className="zh_next_btn"
                   whileHover={{ translateY: 5 }}
+                  onClick={handleDownloadPDF}
                 >
                   {summary?.buttonText_1}
                 </motion.button>
-                <Link href="/">
+
+                <Link href="/Zespol">
                   <motion.button
                     className="zh_preview_btn"
                     whileHover={{ translateY: 5 }}
