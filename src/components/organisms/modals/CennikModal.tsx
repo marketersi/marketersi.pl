@@ -8,12 +8,14 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
 
   const { isLoading, screenData } = useSelector((state) => state.priceList);
   const { metadata  } = screenData?.cardMenu?.menuOne?.formOne || {};
+  const { modalInfo  } = metadata || {};
 
   return (
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Modal for Last Option"
+      className="form1Modal"
       style={{
         overlay: {
           backgroundColor: "rgba(0, 0, 0, 0.8)",
@@ -33,22 +35,21 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
     >
       <div className="cennik-modal-content">
         {/* <h2 className="cennik-modal-title">Cennik jest indywidualny.</h2> */}
-        <h2 className="cennik-modal-title">{metadata?.modal_title}</h2>
+        <h2 className="cennik-modal-title">{modalInfo?.modal_title}</h2>
         <p>
-          {metadata?.modal_info}
+          {modalInfo?.modal_info}
         </p>
         <p>
-          Jeśli Twoje plany nie są jeszcze precyzyjne, to ustalenie ceny nie
-          będzie możliwe.
+        {modalInfo?.modal_info_2}
         </p>
         <div>
           <button className="cennik-modal-btn">
             <Link href="/">
-              Wracam. <br /> Strona główna
+            {modalInfo?.modal_button1Text}
             </Link>
           </button>
           <button className="cennik-modal-btn" onClick={onRequestClose}>
-            Rozumiem. <br /> Chcę kontynuować.
+            {modalInfo?.modal_button2Text}
           </button>
         </div>
       </div>

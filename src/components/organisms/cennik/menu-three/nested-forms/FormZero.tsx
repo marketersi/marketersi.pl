@@ -115,8 +115,17 @@ const FormZero = ({ setCurrentComponent }) => {
           }}
         />
       </div>
+      {selectedOption && selectedOption.value === dropdown[1].value && (
+        <div className="additional-input-container">
+          <div>
+          <h2>Podaj adres strony:</h2>
+          <p>Lub wpisz jej nazwę</p>
+          </div>
+          <input type="text" />
+        </div>
+      )}
       <motion.button
-        className="cennikBtn mt-5"
+        className="cennikBtn"
         whileHover={{ translateY: 5 }}
         onClick={handleButtonClick}
       >

@@ -4,10 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import Modal from "react-modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const FeedbackSection = ({ setCurrentComponent }) => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
   const { formThree } = screenData?.cardMenu?.menuFour || "";
+  const { modalInfo } = formThree || "";
 
   const [textAreaValue, setTextAreaValue] = useState("");
   const [inputValue, setInputValue] = useState("");
@@ -73,11 +75,26 @@ const FeedbackSection = ({ setCurrentComponent }) => {
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        <h4>Hardcoded title</h4>
-        <p>HC description</p>
-        <div className="cenikBtnDiv">
-          <button onClick={closeModal}>HC button</button>
+        <div className="cennik-modal-content">
+          <h2 className="cennik-modal-title">
+            {modalInfo?.modal_title}
+          </h2>
+          <p>
+          {modalInfo?.modal_info}
+          </p>
+          <p>
+          {modalInfo?.modal_info_2}
+          </p>
+          <div>
+            <button className="cennik-modal-btn">
+              <Link href="/">{modalInfo?.modal_button1Text}</Link>
+            </button>
+            <button className="cennik-modal-btn" onClick={closeModal}>
+            {modalInfo?.modal_button2Text}
+            </button>
+          </div>
         </div>
+        
 
         {/* x btn */}
         <div className="close" onClick={closeModal}>

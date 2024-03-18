@@ -53,14 +53,6 @@ const FormZero = ({ setCurrentComponent, form }) => {
 
   const dispatch = useDispatch();
 
-  // const handleButtonClick = () => {
-  //   let payload = {
-  //     formZeroDropdownValueOne: selectedOption?.value,
-  //   };
-  //   dispatch(savePriceListFormData(payload));
-  //   setCurrentComponent(1);
-  // };
-
   const handleButtonClick = () => {
     let payload;
     setIsButtonClicked(true);
@@ -134,7 +126,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
       )}
 
       <motion.button
-        className="cennikBtn mt-5"
+        className="cennikBtn"
         whileHover={{ translateY: 5 }}
         onClick={handleButtonClick}
       >
