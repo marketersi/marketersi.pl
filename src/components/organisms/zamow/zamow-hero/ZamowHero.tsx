@@ -4,12 +4,10 @@ import "./zamow-hero.css";
 import { motion } from "framer-motion";
 import Questions from "./questions/Questions";
 import { useDispatch, useSelector } from "react-redux";
-import { useToast } from "react-toastify";
-import { POST_EXAMINATION_SURVEY } from "@/redux/zamow/zamowAction";
 import { saveExaminationFormData } from "@/redux/zamow/zamowSlice";
 
 const ZamowHero = () => {
-  const { screenData } = useSelector((state) => state.examination);
+  const { isLoading, screenData } = useSelector((state) => state.examination);
   const { heroSection, ratingSection } = screenData || {};
 
   const [progress, setProgress] = useState(0);

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
@@ -26,8 +26,27 @@ const Question14 = () => {
     }
   };
 
+  const [showGif, setShowGif] = useState(false);
+
+  useEffect(() => {
+    const showGifTimer = setTimeout(() => {
+      setShowGif(true);
+    }, 2000);
+
+    const hideGifTimer = setTimeout(() => {
+      setShowGif(false);
+    }, 4000);
+
+    return () => {
+      clearTimeout(showGifTimer);
+      clearTimeout(hideGifTimer);
+    };
+  }, []);
+
   return (
     <>
+      {showGif && <img src="/assets/congrats.gif" className="congrats_gif" />}
+
       <div className="question_14">
         <h2>{summary?.title}</h2>
         <p>{summary?.description}</p>
