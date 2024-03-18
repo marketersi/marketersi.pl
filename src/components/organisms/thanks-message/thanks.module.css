@@ -70,3 +70,22 @@
     font-size: 12px;
     margin: 0;
 }
+@media only screen and (max-width: 1024px){
+    .thanksContainer .maiImg{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .thanksContainer .maiImg{
+       width: 100%;
+    }
+    .thanksContainer h2{
+        font-size: 40px;
+    }
+    .thanksContainer h4{
+        font-size: 22px;
+    }
+    .thanksContainer h5{
+        font-size: 20px;
+    }
+}

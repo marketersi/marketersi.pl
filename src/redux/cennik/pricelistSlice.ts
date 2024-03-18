@@ -50,6 +50,7 @@ const priceListSlice = createSlice({
 
     clearPriceListFormData: (state) => {
       state.formData = {};
+      state.isMenuSubmitSuccess = false;
     },
   },
 });

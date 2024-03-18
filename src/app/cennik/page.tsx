@@ -56,7 +56,7 @@ const PriceListScreen = () => {
     boxShadow:
       "4px 4px 15px rgba(0, 0, 0, 0.15), 0 0 0 #ffffff, 2px 2px 2px #ffffff inset, -2px -2px 2px #c7c7c7 inset",
     borderRadius: "30px",
-    padding: "36px 0",
+    padding: "25px 0 15px",
     backgroundColor: "rgba(247, 247, 247, 1)",
     width: "85%",
     margin: "24px auto",
@@ -75,7 +75,7 @@ const PriceListScreen = () => {
   return (
     <section className="container pb-5">
       <div className="row justify-content-center">
-        <div className="col-md-8 text-center">
+        <div className="col-xl-8 text-center">
           <h2 className="mt-5 heading-style">{title}</h2>
           <div className="mt-3">
             <p className="subheading">
@@ -83,7 +83,7 @@ const PriceListScreen = () => {
             </p>
           </div>
 
-          <div className="card mt-4" style={cardStyle}>
+          <div className="card cennikFormCard mt-4" style={cardStyle}>
             <div className="card-body">
               {selectedOption == null && (
                 <div>
@@ -94,11 +94,12 @@ const PriceListScreen = () => {
                   <div className="btns_container mb-5">
                     <div className="row">
                       <div
-                        className="col"
+                        className="col-lg-6"
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(1)}
                       >
                         <button
+                          className="BtnStyle"
                           style={{
                             ...buttonStyle,
                             backgroundColor:
@@ -117,11 +118,12 @@ const PriceListScreen = () => {
                         </button>
                       </div>
                       <div
-                        className="col"
+                        className="col-lg-6"
                         style={{ textAlign: "left" }}
                         onClick={() => handleBtnClick(2)}
                       >
                         <button
+                          className="BtnStyle"
                           style={{
                             ...buttonStyle,
                             backgroundColor:
@@ -140,13 +142,14 @@ const PriceListScreen = () => {
                       </div>
                     </div>
 
-                    <div className="row mt-3">
+                    <div className="row mt-lg-3">
                       <div
-                        className="col"
+                        className="col-lg-6"
                         style={{ textAlign: "right" }}
                         onClick={() => handleBtnClick(3)}
                       >
                         <button
+                          className="BtnStyle"
                           style={{
                             ...buttonStyle,
                             backgroundColor:
@@ -164,11 +167,12 @@ const PriceListScreen = () => {
                         </button>
                       </div>
                       <div
-                        className="col"
+                        className="col-lg-6"
                         style={{ textAlign: "left" }}
                         onClick={() => handleBtnClick(4)}
                       >
                         <button
+                          className="BtnStyle"
                           style={{
                             ...buttonStyle,
                             backgroundColor:

@@ -104,7 +104,7 @@ const UserDetailsSection = () => {
           />
         </div>
         <div>
-          <button type="submit" className="cennikBtn">
+          <button type="submit" className="cennikBtn range_description">
             <span>{formFour?.section4_buttonText}</span>
           </button>
         </div>

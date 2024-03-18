@@ -17,7 +17,6 @@ const FeedbackForm = ({ setCurrentComponent, formThree }) => {
     setIsModalOpen(false);
   };
 
-  console.log("formData", formData);
 
   const dispatch = useDispatch();
 
@@ -75,10 +74,12 @@ const FeedbackForm = ({ setCurrentComponent, formThree }) => {
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        <h4>Hardcoded title</h4>
-        <p>HC description</p>
+        {/* <h4>Hardcoded title</h4> */}
+        <p>
+          {formThree?.modal?.modal_description}
+        </p>
         <div className="cenikBtnDiv">
-          <button onClick={closeModal}>HC button</button>
+          <button onClick={closeModal}>{formThree?.modal?.modal_buttonText}</button>
         </div>
 
         {/* x btn */}

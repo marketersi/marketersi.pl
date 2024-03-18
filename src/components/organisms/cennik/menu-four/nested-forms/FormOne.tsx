@@ -38,7 +38,7 @@ const SliderSection = ({ setCurrentComponent }) => {
         >
           {rangeArray[currentSection]?.label}
         </p>
-        <div>{rangeArray[currentSection]?.description}</div>
+        <div className="range_description">{rangeArray[currentSection]?.description}</div>
       </div>
 
       <div className="space-between"></div>
