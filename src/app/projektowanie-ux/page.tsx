@@ -15,14 +15,14 @@ import Slider from "@/components/organisms/ux/UxSlider/Slider";
 import Executive from "@/components/organisms/ux/Executive";
 import UxAccordion from "@/components/organisms/ux/accordion/UxAccordion";
 import items from "@/components/organisms/ux/accordion/Data";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { FETCH_UX_SCREEN_DATA } from "@/redux/ux/uxDesignAction";
 
 const UXDesignScreen = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch({ type: FETCH_UX_SCREEN_DATA });
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
@@ -38,7 +38,7 @@ const UXDesignScreen = () => {
       <WebSite />
       <Slider />
       <Executive />
-      <UxAccordion items={items} />
+      <UxAccordion />
     </>
   );
 };

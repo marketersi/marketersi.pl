@@ -1,21 +1,13 @@
-// components/Accordion.js
-
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "./accordion.css";
+import { useSelector } from "react-redux";
 
-// Define a type for the items prop
-type AccordionItem = {
-  title: string;
-  content: string;
-};
+const UXAccordion = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const FAQ = screenData.FAQ || {};
 
-type AccordionProps = {
-  items: AccordionItem[];
-};
-
-const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
@@ -33,11 +25,11 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
               transform: "translate(0px, 0px)",
             }}
           >
-            Na wszystkie pytania odpowiedź brzmi TAK!
+            {FAQ?.FAQTitle?.title}
           </h2>
         </div>
-        {items &&
-          items.map((item, index) => (
+        {FAQ.FAQCard &&
+          FAQ.FAQCard.map((item, index) => (
             <div key={index} className="accordion-item">
               <div
                 className={`accordion-title ${
@@ -45,7 +37,7 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
                 }`}
                 onClick={() => handleClick(index)}
               >
-                {item.title}
+                {item.question}
                 {index === activeIndex ? (
                   <FontAwesomeIcon icon={faMinus} className="icon" />
                 ) : (
@@ -53,7 +45,7 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
                 )}
               </div>
               {index === activeIndex && (
-                <div className="accordion-content">{item.content}</div>
+                <div className="accordion-content">{item.answer}</div>
               )}
             </div>
           ))}
@@ -67,4 +59,4 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
   );
 };
 
-export default LogoAccordion;
+export default UXAccordion;

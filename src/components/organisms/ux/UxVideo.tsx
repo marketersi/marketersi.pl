@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-
+import { useSelector } from "react-redux";
 
 const UXVideoData = {
   title: "UX Video",
   description1: "UX Video",
-  description2: ["firmy", "firmy","firmy", "dfghjk"],
+  description2: ["firmy", "firmy", "firmy", "dfghjk"],
   image: "images/",
   tabVideo1: "video/",
   tabVideo2: "video/",
@@ -13,7 +13,7 @@ const UXVideoData = {
   tabTitle1: "title1",
   tabTitle2: "title2",
   tabTitle3: "title3",
-  imgSprings:"http",
+  imgSprings: "http",
   dotImg1: "http://",
   dotImg2: "http://",
   dotImg3: "http://",
@@ -21,8 +21,13 @@ const UXVideoData = {
   description4: "http://",
   description5: "http://",
   description6: "http://",
-}
+};
 const UxVideo = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const UXVideo = screenData["UX-Video"] || {};
+
+  const Videotab = UXVideo.Videotab || [];
+
   const [selectedTab, setSelectedTab] = useState(1);
   return (
     <>
@@ -32,28 +37,30 @@ const UxVideo = () => {
             className="textAnimation titleAnimation"
             style={{ opacity: 1, transform: "translate(0px, 0px)" }}
           >
-            Jeśli myślisz systemowo
+            {/* Jeśli myślisz systemowo
             <br />
             <br className="mobile" />
-            możesz sięgać gwiazd!
+            możesz sięgać gwiazd! */}
+            {UXVideo?.title}
           </h2>
           <p
             className="textAnimation"
             style={{ opacity: 1, transform: "translate(0px, 0px)" }}
           >
-            Miej na względzie realizację
+            {/* Miej na względzie realizację
             <br className="mobile" />
             ambitnych celów Twojej firmy,
             <br className="mobile" />
             <br />
             ale koncentruj się na tym, jakie <br className="mobile" />
-            są cele Twoich klientów.
+            są cele Twoich klientów. */}
+            {UXVideo?.paragraph_1}
           </p>
           <p
             className="textAnimation"
             style={{ opacity: 1, transform: "translate(0px, 0px)" }}
           >
-            Makieta <span className="italy">user experience </span>to
+            {/* Makieta <span className="italy">user experience </span>to
             <br className="mobile" />
             narzędzie, które pozwoli <br />
             <br className="mobile" />
@@ -80,15 +87,16 @@ const UxVideo = () => {
               <span>ę</span>
             </span>
             <br className="mobile" />
-            firmy w internecie
+            firmy w internecie */}
+
+            {UXVideo?.paragraph_2}
           </p>
         </div>
         <div>
-          <div id="videos">
+          {/* <div id="videos">
             <img
               className="videoBg"
               src="https://propozycje.owocni.pl/ux/VideoUX.98555e54.46666926.png"
-              // srcset="https://propozycje.owocni.pl/ux/VideoUX-650.280ddf04.png 960w ./img/VideoUX.98555e54.png 1000w"
             />
 
             {selectedTab == 1 && (
@@ -138,7 +146,6 @@ const UxVideo = () => {
                 </h3>
               </div>
               <div
-                // style={{ opacity: 1, transform: "translate(0px, 0px)" }}
                 className={selectedTab == 2 ? "active" : ""}
                 onClick={() => setSelectedTab(2)}
               >
@@ -149,8 +156,6 @@ const UxVideo = () => {
                 </h3>
               </div>
               <div
-                // style={{ opacity: 1, transform: "translate(0px, 0px)" }}
-                // className=""
                 className={selectedTab == 3 ? "active" : ""}
                 onClick={() => setSelectedTab(3)}
               >
@@ -161,7 +166,44 @@ const UxVideo = () => {
                 </h3>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          <>
+            <div id="videos">
+              <img
+                className="videoBg"
+                src="https://propozycje.owocni.pl/ux/VideoUX.98555e54.46666926.png"
+              />
+              {Videotab.map((video) => (
+                <React.Fragment key={video.id}>
+                  {selectedTab === video.id && (
+                    <ReactPlayer
+                      url={video.video}
+                      playing={true}
+                      loop={true}
+                      muted={true}
+                      width="100%"
+                      height="auto"
+                    />
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+            <div className="textWithArrow">
+              <div className="textVideo">
+                {Videotab.map((video) => (
+                  <div
+                    key={video.id}
+                    className={selectedTab === video.id ? "active" : ""}
+                    onClick={() => setSelectedTab(video.id)}
+                  >
+                    <h3>{video.title}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+
           <div className="para">
             <img
               className="sp"
@@ -198,23 +240,12 @@ const UxVideo = () => {
       </section>
       <section>
         <div id="WhatGet">
-          <p className="textAnimation">
-            Prowadzimy odwiedzających przez proces sprzedaży tak,
-            <br />
-            aby nie byli znudzeni, zdezorientowani i nie odeszli.
-          </p>
-          <p className="textAnimation">
-            Kierujemy klientów do jednego produktu/usługi, <br />
-            której potrzebuje, by rozwiązać swój problem.
-          </p>
-          <p className="textAnimation">
-            Pozyskamy namiar, by móc się kontaktować
-            <br />
-            nawet, jeśli klient opuści Twoją stronę.
-          </p>
+          <p className="textAnimation">{UXVideo?.paragraph_3}</p>
+          <p className="textAnimation">{UXVideo?.paragraph_4}</p>
+          <p className="textAnimation">{UXVideo?.paragraph_5}</p>
           <a className="send-offer-button js--triggerAnimation">
             <span>
-              <span>OK Wyślijcie mi niezobowiązującą ofertę </span>
+              <span> {UXVideo?.button_text}</span>
             </span>
           </a>
         </div>

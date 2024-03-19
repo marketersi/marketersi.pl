@@ -1,70 +1,22 @@
 import React from "react";
+import ReactPlayer from "react-player";
+import { useSelector } from "react-redux";
 
 const Executive = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const executive = screenData.executive || {};
+
   return (
     <>
       <section>
         <div id="highResult">
-          <video
-            className="mobile"
-            data-time="180"
-            playsinline=""
-            autoplay="true"
-            loop=""
-            muted=""
-            data-vscid="d3xa7p0zx"
-          >
-            <source
-              src="https://propozycje.owocni.pl/ux/Co-otrzymam.3d0d4083.mp4"
-              type="video/mp4"
-            />
-          </video>
-
-          <h2>
-            Zdobądź gwiazdorski
-            <br className="mobile" />
-            projekt wykonawczy
-            <br />
-            zorientowany na <br className="mobile" />
-            <span className="underLine">
-              <span>w</span>
-              <span>y</span>
-              <span>s</span>
-              <span>o</span>
-              <span>k</span>
-              <span>i</span>
-              <span>e</span>
-              <span className="space"></span>
-              <span>r</span>
-              <span>e</span>
-              <span>z</span>
-              <span>u</span>
-              <span>l</span>
-              <span>t</span>
-              <span>a</span> <span>t</span>
-              <span>y</span>
-            </span>
-          </h2>
+          <h2>{executive.title}</h2>
           <div className="row">
             <div>
-              <p>
-                Przemyślana architektura informacji
-                <br />
-                uporządkuje ofertę firmy w internecie.
-              </p>
-              <p>
-                Modele szkieletowe podstron <br />
-                organizują całą zawartość.
-              </p>
-              <p>
-                Lista pomysłów oraz idei
-                <br />
-                na 2x wyższą skuteczność.
-              </p>
-              <p>
-                100% satysfakcji <br />
-                lub zwrot środków
-              </p>
+              <p>{executive.paragraph_1}</p>
+              <p>{executive.paragraph_1}</p>
+              <p>{executive.paragraph_1}</p>
+              <p>{executive.paragraph_1}</p>
             </div>
             <div>
               <video
@@ -80,6 +32,15 @@ const Executive = () => {
                   type="video/mp4"
                 />
               </video>
+
+              {/* <ReactPlayer
+                muted={true}
+                playing={true}
+                loop={true}
+                width="100%"
+                height="auto"
+                url={executive?.video_url}
+              /> */}
             </div>
           </div>
         </div>

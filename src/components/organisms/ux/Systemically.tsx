@@ -1,23 +1,24 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
 
 const SystemicallyData = {
   hand1Img: "images",
   title: "title",
   description: "description",
-  hand2Img: "images",  
-}
+  hand2Img: "images",
+};
 const Systemically = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const Systematically = screenData.Systematically || {};
+
   return (
     <>
-    <section>
+      <section>
         <div id="guaranteeWrapper">
           <div id="guarantee">
             <div className="mobileImg">
-              <img
-                src="https://propozycje.owocni.pl/ux/Projektantka-UX.ae39040d.995c06ff.png"
-                alt=""
-              />
-              <img
+              {/* <img src={Systematically.image} alt="" /> */}
+              {/* <img
                 className="hand1Img"
                 src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-PRAWA.10fe6d37.png"
                 alt=""
@@ -28,9 +29,9 @@ const Systemically = () => {
                 src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-LEWA.5795952e.3993493a.png"
                 alt=""
                 style={{ transform: "translate3d(10.0154px, -10.0154px, 0px)" }}
-              />
+              /> */}
             </div>
-            <img
+            {/* <img
               src="https://propozycje.owocni.pl/ux/Gwarancja.e6e5fa2c.jpg"
               alt=""
               srcset="
@@ -38,29 +39,21 @@ const Systemically = () => {
               https://propozycje.owocni.pl/ux/Gwarancja.e6e5fa2c.jpg     1060w
             "
               sizes="(max-width: 900px) 650px, 1150px"
-            />
+            /> */}
+            <img src={Systematically.image} alt="" />
+
             <div className="rowD">
               <div>
-                <h2>
-                  Gwarantujemy dowieźć Ci
-                  <br />
-                  duużo wyższe wyniki niż <br />
-                  ma Twoja obecna strona, <br />
-                  albo nic nie zapłacisz.
-                </h2>
+                <h2>{Systematically.title}</h2>
                 <p>
-                  <b>- zwrot 100% środków!</b>
+                  <b>- {Systematically.subtitle}</b>
                   <br />
-                  Szczegółowy opis gwarancji znajdziesz <br />w sekcji pytania
-                  na dole strony.
+                  {Systematically.description}
                 </p>
               </div>
               <div className="imgs">
-                <img
-                  src="https://propozycje.owocni.pl/ux/Projektantka-UX.ae39040d.995c06ff.png"
-                  alt=""
-                />
-                <img
+                <img src={Systematically.right_image} alt="" />
+                {/* <img
                   className="hand1"
                   src="https://propozycje.owocni.pl/ux/Projektantka-UX-Dlon-PRAWA.10fe6d37.png"
                   alt=""
@@ -75,14 +68,14 @@ const Systemically = () => {
                   style={{
                     transform: "translate3d(-26.7078px, -26.7078px, 0px)",
                   }}
-                />
+                /> */}
               </div>
             </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Systemically
+export default Systemically;

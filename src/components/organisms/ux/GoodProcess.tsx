@@ -1,7 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const GoodProcessData = {
-  title:"Good Process",
+  title: "Good Process",
   description: ["Good Process", "Good Process", "Good Process"],
   proVideo1: "goodProcess",
   proTitle1: "Good Process",
@@ -15,9 +16,12 @@ const GoodProcessData = {
   proTitle3: "Good Process",
   proSubTitle3: "Good Process",
   proDescription3: "Good Process",
-}
+};
 
 const GoodProcess = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const GoodProcess = screenData.GoodProcess || {};
+
   return (
     <>
       <section id="stage">
@@ -26,15 +30,13 @@ const GoodProcess = () => {
             className="textAnimation titleAnimation"
             style={{ opacity: 1, transform: "translate(0px, 0px)" }}
           >
-            Wszystko zaczyna się
-            <br />
-            od dobrego procesu
+            {GoodProcess.title}
           </h2>
           <p
             className="textAnimation"
             style={{ opacity: 1, transform: "translate(0px, 0px)" }}
           >
-            3 sprawdzone kroki do klikalnego prototypu <br />
+            {/* 3 sprawdzone kroki do klikalnego prototypu <br />
             Twojej nowej,
             <span className="underLine underLine2">
               <span>w</span>
@@ -52,7 +54,9 @@ const GoodProcess = () => {
               <span>e</span>
               <span>j</span>
             </span>
-            strony
+            strony */}
+
+            {GoodProcess?.paragraph}
           </p>
         </div>
         <div className="dots">
@@ -199,6 +203,7 @@ const GoodProcess = () => {
             style={{ left: "390.62px", top: "5487px" }}
           />
         </div>
+
         <p className="mobilenumber">1</p>
         <div className="stageD stage1">
           <div className="right texts">
