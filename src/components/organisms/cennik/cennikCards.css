@@ -3,11 +3,10 @@
   margin: 0 auto;
 }
 
-.slider_Section {
-}
+.slider_Section {}
 
 .space-between {
-  margin: 100px 0px;
+  margin: 75px 0px;
 }
 
 .slider_section h2 {
@@ -55,7 +54,7 @@
 }
 
 .feedback_section p {
-  font-size: 16px;
+  font-size: 17px;
   color: rgb(45, 45, 45);
 }
 
@@ -64,6 +63,16 @@
   border-radius: 20px;
   border-color: #cecece;
   width: 90%;
+  padding: 20px;
+}
+
+.fs_textarea:focus,
+.fs_textarea:active,
+.fs_input:focus,
+.fs_input:active,
+.uds_input-container input:focus {
+  border-color: #d21e00;
+  outline: #d21e00;
 }
 
 .fs_input {
@@ -71,6 +80,7 @@
   margin-bottom: 18px;
   border: 1px solid rgb(201, 201, 201);
 }
+
 .user-details_section h2 {
   color: rgb(45, 45, 45);
   font-weight: 700;
@@ -91,8 +101,12 @@
   padding: 8px 16px;
   margin: 0 auto 18px auto;
   border-radius: 20px;
-  width: 50%;
+  width: 40%;
   border: 1px solid rgb(201, 201, 201);
+}
+
+.form4Btn {
+  width: 40%;
 }
 
 .user-details_section button {
@@ -100,6 +114,10 @@
   line-height: normal;
   margin-top: 8px;
   padding: 8px 30px;
+}
+
+.css-h4y3oo-control {
+  padding-block: 5px !important;
 }
 
 /* component two */
@@ -125,6 +143,15 @@
   outline: 1.5px solid #d21e00;
 }
 
+.range_description {
+  max-width: 300px;
+  margin-inline: auto;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
 /* component two */
 
 /* component three */
@@ -135,7 +162,7 @@
 }
 
 .componentThree_input-container {
-  padding: 20px 80px;
+  padding: 20px 80px 0px;
 }
 
 .componentThree_input-container input {
@@ -148,6 +175,24 @@
 
 .componentThree_input-container input:focus {
   outline: 2px solid #d21e00;
+}
+
+button.custom-modal-btn {
+  padding: 8px 36px;
+  background: #d21e00;
+  font-size: 18px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 6px 0px #981a04;
+  margin: 0 auto;
+  display: block;
+}
+
+button.custom-modal-btn a {
+  color: white;
+  text-decoration: none;
 }
 
 /* component three */
@@ -183,9 +228,11 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 0 0 12px rgba(255, 255, 255, 1), 0 0 20px rgba(0, 0, 0, 0.2);
 }
+
 input[type="range"]:active::-webkit-slider-thumb {
   box-shadow: 0 0 0 14px rgb(255, 255, 255);
 }
+
 input[type="range"]:focus::-webkit-slider-thumb {
   box-shadow: 0 0 0 12px rgb(255, 255, 255);
 }
@@ -227,6 +274,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
   text-align: center;
   line-height: normal;
 }
+
 .cenikBtnDiv {
   margin-top: 32px;
 }
@@ -248,27 +296,34 @@ input[type="range"]:focus::-webkit-slider-thumb {
   cursor: pointer;
 }
 
+
 /* --------------------contact-------------------- */
 .componentThree_section {
   position: relative;
+  margin: 0 -15px;
 }
+
 .contact {
   position: absolute;
   top: -50px;
   right: -204px;
   width: 230px;
 }
+
 .contact .whiteBox {
   height: 150px;
   width: 150px;
   background: white;
   margin: -220px auto 60px;
   border-radius: 100%;
+  margin-right: 10px;
 }
+
 .contact h5 {
   font-size: 18px;
   font-weight: 500;
 }
+
 .contact a {
   font-size: 26px;
   font-weight: 600;
@@ -287,25 +342,31 @@ input[type="range"]:focus::-webkit-slider-thumb {
     display: none;
   }
 }
+
 @media screen and (max-width: 767px) {
   .contact {
     display: none;
   }
+
   .componentThree_input-container {
     padding: 20px 0px;
   }
+
   .componentThree_input-container input {
     width: 95%;
   }
+
   .select-input {
     width: 95%;
     margin: 0 auto;
   }
+
   .Modal {
     width: 80%;
     max-width: 100%;
     padding: 30px 20px;
   }
+
   .Modal .close {
     top: -32px;
     right: -28px;
@@ -315,7 +376,7 @@ input[type="range"]:focus::-webkit-slider-thumb {
 
 /* new styles */
 .red-title {
-  color: #d21e00;
+  color: #d21e00 !important;
   animation: scaleUp 0.5s ease forwards;
 }
 
@@ -323,10 +384,45 @@ input[type="range"]:focus::-webkit-slider-thumb {
   0% {
     font-size: 20px;
   }
+
   50% {
     font-size: 22px;
   }
+
   100% {
     font-size: 20px;
   }
+}
+
+@media only screen and (max-width: 1024px) {
+  .CenikModal {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .uds_input-container input {
+    width: 100%;
+  }
+  .form2Modal {
+    width: 90% !important;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  .CenikModal {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .uds_input-container input {
+    width: 100%;
+  }
+
+  .form4Btn {
+    width: 100%;
+  }
+  .form2Modal {
+    width: 100% !important;
+}
 }

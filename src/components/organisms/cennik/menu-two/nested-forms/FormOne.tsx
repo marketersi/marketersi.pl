@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
+import CennikModal from "@/components/organisms/modals/CennikModal";
+import CustomModal from "@/components/organisms/modals/CustomModal";
 
 const FormOne = ({ setCurrentComponent, form }) => {
   console.log("form two", form);
@@ -11,6 +13,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const optionsOne = form?.Dropdown1.map((option) => ({
     value: option.value,
@@ -26,7 +29,17 @@ const FormOne = ({ setCurrentComponent, form }) => {
   };
   const handleSelectChange2 = (selectedOption) => {
     setSelectedOption2(selectedOption);
+    if (
+      selectedOption &&
+      selectedOption.value === optionsTwo[0].value
+    ) {
+      setIsModalOpen(true);
+    }
   };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
 
   const DropdownIndicator = (props) => {
     const { selectProps } = props;
@@ -129,7 +142,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
           />
         </div>
         <h2
-          className={`card-heading mt-5 mb-2 ${
+          className={`card-heading mt-4 mb-2 ${
             isButtonClicked && !selectedOption2 ? "red-title" : ""
           }`}
         >
@@ -176,9 +189,10 @@ const FormOne = ({ setCurrentComponent, form }) => {
               }),
             }}
           />
+          <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} />
         </div>
         <motion.button
-          className="cennikBtn mt-5"
+          className="cennikBtn"
           whileHover={{ translateY: 5 }}
           onClick={handleButtonClick}
         >

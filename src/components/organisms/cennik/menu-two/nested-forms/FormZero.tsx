@@ -120,7 +120,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
         />
       </div>
       <h2
-        className={`card-heading mt-5 ${
+        className={`card-heading mt-4 mb-3 ${
           isButtonClicked && !selectedOption2 ? "red-title" : ""
         }`}
       >
@@ -166,7 +166,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
         />
       </div>
       <motion.button
-        className="cennikBtn mt-5"
+        className="cennikBtn"
         whileHover={{ translateY: 5 }}
         onClick={handleButtonClick}
       >

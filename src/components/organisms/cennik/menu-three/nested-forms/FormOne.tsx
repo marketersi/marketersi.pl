@@ -32,7 +32,7 @@ const SliderForm = ({ setCurrentComponent }) => {
   return (
     <div className="slider_section">
       <div>
-        <h2>{formTwo?.section2_title}</h2>
+        <h2>{formTwo?.form2_title}</h2>
         <p
           style={{
             backgroundColor: rangeArray[currentSection]?.backgroundColor,
@@ -40,7 +40,7 @@ const SliderForm = ({ setCurrentComponent }) => {
         >
           {rangeArray[currentSection]?.label}
         </p>
-        <div>{rangeArray[currentSection]?.description}</div>
+        <div className="range_description">{rangeArray[currentSection]?.description}</div>
       </div>
 
       <div className="space-between"></div>

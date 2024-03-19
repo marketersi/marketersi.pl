@@ -41,7 +41,7 @@ const FormTwo = ({ setCurrentComponent, form }) => {
           backgroundColor: projectDescription.length > 10 ? "#effeeb" : "",
         }}
       ></textarea>
-      <div className="mt-5">
+      <div className="">
         <button className="cennikBtn" onClick={handleNext}>
           Ostatnie pytanie
         </button>

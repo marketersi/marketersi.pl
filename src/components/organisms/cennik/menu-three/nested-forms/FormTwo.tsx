@@ -8,6 +8,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const FeedbackSection = ({ setCurrentComponent }) => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
   const { formThree } = screenData?.cardMenu?.menuThree || "";
+  const { modalInfo } = formThree?.metadata || "";
 
   const [textAreaValue, setTextAreaValue] = useState("");
   const [inputValue, setInputValue] = useState("");
@@ -73,10 +74,10 @@ const FeedbackSection = ({ setCurrentComponent }) => {
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        <h4>Hardcoded title</h4>
-        <p>HC description</p>
+        <h4></h4>
+        <p>{modalInfo?.form3_modal_info}</p>
         <div className="cenikBtnDiv">
-          <button onClick={closeModal}>HC button</button>
+          <button onClick={closeModal}>{modalInfo?.form3_modal_buttonText}</button>
         </div>
 
         {/* x btn */}
