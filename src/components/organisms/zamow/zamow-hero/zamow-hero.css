@@ -1,7 +1,7 @@
 .zamow-hero h1 {
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 600;
-  line-height: 60px;
+  line-height: 65px;
   margin: 0 0 40px;
 }
 
@@ -15,7 +15,7 @@
   line-height: 1.4;
   font-weight: 300;
   color: rgb(45 45 45);
-  font-size: 28px;
+  font-size: 25px;
   margin: 0 0 40px;
 }
 
@@ -26,7 +26,7 @@
 
 .input-container {
   position: relative;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -106,6 +106,14 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1024px){
+  .zamow-hero-btn {
+    position: static;
+    margin: 20px 0 0;
+}
+
+}
+
 @media only screen and (max-width: 767px) {
   .zamow-hero h1 {
     font-size: 40px;
@@ -113,7 +121,7 @@
 }
 
   .zamow-hero p {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .input-container {
@@ -123,5 +131,8 @@
   .zamow-hero-btn {
     position: static;
     margin: 20px 0 0;
+}
+.zh_next_btn_container p {
+  display: none;
 }
 }
