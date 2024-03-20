@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 
 
-const ProfitSlider = ({carouselImages, images}) => {
+const ProfitSlider = ({ images}) => {
 
 
   return (

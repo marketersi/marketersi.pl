@@ -8,7 +8,6 @@ import CennikModal from "@/components/organisms/modals/CennikModal";
 import CustomModal from "@/components/organisms/modals/CustomModal";
 
 const FormOne = ({ setCurrentComponent, form }) => {
-  console.log("form two", form);
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);

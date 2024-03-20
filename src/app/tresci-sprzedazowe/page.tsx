@@ -31,7 +31,6 @@ const Sales = () => {
   const { customerReview } = projectSection3 || {};
   const { customerReview: customerReview3 } = projectSection5 || {};
   const { customerReview: customerReview4 } = projectSection7 || {};
-  console.log("custom", customerReview);
 
   const dispatch = useDispatch();
 

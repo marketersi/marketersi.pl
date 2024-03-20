@@ -59,7 +59,7 @@
 .OurClients_Card_Two {
   display: flex;
   align-items: center;
-  background-color: #e3e3e3;
+  
   border-radius: 0px 0px 25.6px 25.6px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.15) 4px 4px 15px 0px, #ffffff 0px 0px 0px 0px,

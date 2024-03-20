@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { ModalForm } from "../../tresci-sprzedazowe/ModalForm";
 
 const CustomerReview = () => {
   const {  screenData } = useSelector((state) => state.anatomy);
   const { implementation } = screenData || {};
   const { example1 } = implementation || {};
+
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
   return (
     <section className="projects-gray-opinion-1">
       <div className="container projects-opinion-box-container">
@@ -19,13 +26,7 @@ const CustomerReview = () => {
                   alt="Klientka zadowolona z procesu jakim jest tworzenie nazw"
                 />
               </div>
-              <div className="opinion-box-content rwd-opinion-image opinion-client-bg-iglarki naming-no-bg naming-opinion-img">
-                <img
-                  src={example1?.customer_image}
-                  title="Kobieta zadowolona z efektu tworzenia nazwy dla firm"
-                  alt="Klientka zadowolona z procesu jakim jest tworzenie nazw"
-                />
-              </div>
+             
               <div className="opinion-box-content opinion-box-content-left projects-opinion-1 projects-opinion-1-new naming-opinion-text">
                 <p className="theme-desc projects-client-opinion-p text-center">
                   <strong>{example1?.customer_quote}</strong>
@@ -37,6 +38,7 @@ const CustomerReview = () => {
                 <button
                   className="download-catalog-button names-new-btn send-offer-button  js--triggerAnimation pnazw-opinion-btn"
                   type="button"
+                  onClick={() => setIsModal(true)}
                 >
                   <strong>{example1?.review_buttonText}</strong>
                 </button>
@@ -47,6 +49,7 @@ const CustomerReview = () => {
           <div className="col-md-12 projects-empty-opinion-box"></div>
         </div>
       </div>
+      <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </section>
   );
 };

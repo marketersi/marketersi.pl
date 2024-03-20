@@ -13,6 +13,7 @@ import ImplementationEx8 from "./examples/ImplementationEx8";
 import Profit from "../../tresci-sprzedazowe/profit-slider/Profit";
 import Form from "../../tresci-sprzedazowe/form/Form";
 import "./examples.css";
+import NazwaSlider from "../NazwaSlider";
 
 const ImplementationExamples = () => {
   return (
@@ -52,7 +53,7 @@ const ImplementationExamples = () => {
 
       <ImplementationEx8 />
 
-      <Profit />
+      <NazwaSlider />
 
       <section className="black-sec-form">
         <div className="copywriter-ending-1 text-center">

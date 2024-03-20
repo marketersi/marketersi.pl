@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const FormTwo = ({ setCurrentComponent, form }) => {
-  console.log("form three", form);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [projectDescription, setProjectDescription] = useState("");

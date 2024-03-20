@@ -2,6 +2,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import "./NazwaFooter.css";
 import { useState } from "react";
+import { ModalForm } from "../../tresci-sprzedazowe/ModalForm";
 
 const NazwaFooter = () => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
@@ -11,6 +12,12 @@ const NazwaFooter = () => {
 
   const handleNavbarToggle = () => {
     setIsNavbarCollapsed(!isNavbarCollapsed);
+  };
+
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
   };
 
   return (
@@ -40,8 +47,10 @@ const NazwaFooter = () => {
         </Link>
       </div>
       <div className="nazwa_footer_bottom_right">
-        <button className="nazwa_footer_bottom_btn">Zdobądź wycenę</button>
+        <button className="nazwa_footer_bottom_btn" onClick={() => setIsModal(true)}>Zdobądź wycenę</button>
+        <a href="tel:570964200" className="nazwa_footer_Time_btn">Zadzwoń(8 <sup>00</sup> - 16 <sup>00</sup> ) </a>
       </div>
+      <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </div>
   );
 };

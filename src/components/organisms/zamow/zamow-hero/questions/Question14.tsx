@@ -56,10 +56,10 @@ const Question14 = () => {
       </div>
       <div className="marketing_book">
         <Row>
-          <Col lg={5}>
+          <Col lg={6}>
             <img src={summary?.image} alt="" />
           </Col>
-          <Col lg={7}>
+          <Col lg={6}>
             <h3>{summary?.image_description}</h3>
             <div>
               <div className="zh_next_btn_container">
