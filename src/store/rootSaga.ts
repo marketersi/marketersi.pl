@@ -49,6 +49,8 @@ import { anatomyScreenSaga } from "@/redux/nazwa-dla-firmy/anatomySagas";
 import { FETCH_ANATOMY_SCREEN_DATA } from "@/redux/nazwa-dla-firmy/anatomyAction";
 import { FETCH_UX_SCREEN_DATA } from "@/redux/ux/uxDesignAction";
 import { uxScreenSaga } from "@/redux/ux/uxDesignSaga";
+import { FETCH_OPINION_SCREEN_DATA } from "@/redux/opinie/opinionAction";
+import { opinionScreenSaga } from "@/redux/opinie/opinionSaga";
 
 export default function* rootSaga() {
   yield all([
@@ -70,5 +72,6 @@ export default function* rootSaga() {
     takeLatest(SUBMIT_MENU_STOR_FORM, cennikMenuStorSaga),
     takeLatest(SEND_ME_A_QUOTE, sendAQuoteSaga),
     takeLatest(POST_EXAMINATION_SURVEY, examinationFormSaga),
+    takeLatest(FETCH_OPINION_SCREEN_DATA, opinionScreenSaga),
   ]);
 }
