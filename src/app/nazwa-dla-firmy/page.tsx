@@ -24,7 +24,6 @@ const NazwaDlaFirmy = () => {
   const dispatch = useDispatch();
 
   if (screenData) {
-    // console.log("home screen data from UI => ", screenData);
   }
 
   useEffect(() => {
@@ -34,27 +33,18 @@ const NazwaDlaFirmy = () => {
 
   return (
     <>
-      {/* section 1 */}
       <NazwaHero />
 
-      {/* section 2 */}
       <Anatomy />
 
-      {/* section 3 */}
       <AnatomyGuide />
 
-      {/* section 4 */}
-      {/* TO ADD :REVIEW CARD */}
       <OptionBox2 optionBox2={launch_essentials} />
 
-      {/* section 5 */}
       <LaunchEssentials />
 
-      {/* section 6 */}
-      {/* TO ADD: ACCORDION */}
       <LogoAccordion items={accordion} />
 
-      {/* section 7 */}
       <ProjectValue />
 
       <ImplementationExamples />

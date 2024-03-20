@@ -61,6 +61,7 @@ const LaunchEssentials = () => {
 
       <div className="naming-seo-img naming-tm-100 naming-new-tm-1">
         <img
+        className="Naming"
           src={launch_essentials?.banner_url}
           title="Naming a zastrzeżenie nazwy firmy"
           alt="Naming czyli tworzenie nazw"

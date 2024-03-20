@@ -2,7 +2,7 @@
   /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap'); */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 body {
-  background: #e3e3e3;
+  background-color: #f5f5f5;
   font-family: 'Poppins', sans-serif !important;
 }
 
@@ -14,11 +14,11 @@ body {
 }
 
 body {
-  background: #e3e3e3;
+  background: #f5f5f5;
 }
-body {
+/* body {
   background: #e3e3e3;
-}
+} */
 
 .loader_container {
   display: flex;
@@ -87,7 +87,7 @@ body {
 .OurClients_Card_Two {
   display: flex;
   align-items: center;
-  background-color: #e3e3e3;
+  background-color: #f5f5f5;
   border-radius: 0px 0px 25.6px 25.6px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.15) 4px 4px 15px 0px, #ffffff 0px 0px 0px 0px,
@@ -361,6 +361,9 @@ body {
   font-size: 72px;
   font-weight: 900;
   margin-bottom: 25px;
+  max-width: 800px;
+  line-height: 70px;
+  margin-inline: auto;
 }
 .img-background-logop {
   display: block;

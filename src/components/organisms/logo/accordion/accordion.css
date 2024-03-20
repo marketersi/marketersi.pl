@@ -1,5 +1,5 @@
 .faqContainer {
-    max-width: 900px !important;
+    max-width: 800px !important;
     margin: 0 auto;
     padding: 70px 0;
 }
@@ -19,6 +19,15 @@
 }
 @media  screen and (max-width: 1024px){
     .faqContainer {
-        max-width: 90% !important;
+        max-width: 80% !important;
       }
+}
+@media  screen and (max-width: 767px){
+    .faqContainer {
+        max-width: 90% !important;
+        padding: 30px 0;
+      }
+      .accordion-title {
+        font-size: 16px !important;
+}
 }

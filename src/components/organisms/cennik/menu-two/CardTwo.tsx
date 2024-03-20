@@ -9,7 +9,6 @@ import "../cennikCards.css";
 import FormZero from "./nested-forms/FormZero";
 
 const CardTwo = ({ form }) => {
-  console.log("forms", form);
   const { Section1, Section2, Section3, Section4 } = form || {};
 
   const [currentComponent, setCurrentComponent] = useState(0);

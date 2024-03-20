@@ -30,11 +30,7 @@ const SalesBanner = () => {
               <div className="col-md-6 col-46 names-top-banner-container">
                 <div className="top-banner-text projects-top-banner-text">
                   <h1 className="top-banner-title copywriter-top-banner-title">
-                    {/* <span className="copywriter-big">Copywriter,</span>{" "}
-                    <br className="dont-delete" />
-                    tyle, że{" "}
-                    <span className="copywriter-green-number">100%</span>{" "}
-                    lepszy. */}
+                    
                     {heroSection?.main_title}
                   </h1>
                   <h2 className="top-banner-long-text copywriter-top-banner-long-text">

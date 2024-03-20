@@ -66,11 +66,7 @@ const { LogoAccordionData } = logoData || {};
             </div>
           ))}
       </div>
-      <p className="theme-desc projects-theme-desc-p text-center">
-        Nawet jeśli nie wiesz, jak powinno wyglądać Twoje <br />
-        wymarzone logo, to na pewno je rozpoznasz, <br />
-        gdy zobaczysz je wśród propozycji.
-      </p>
+     
     </div>
   );
 };

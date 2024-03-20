@@ -7,7 +7,6 @@ import { useDispatch } from "react-redux";
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const FormZero = ({ setCurrentComponent, form }) => {
-  console.log("form from form zero", form);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
