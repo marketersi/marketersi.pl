@@ -45,13 +45,7 @@ const FormZero = ({ setCurrentComponent }) => {
   };
 
   const handleButtonClick = () => {
-    // let payload = {
-    //   formZeroDropdownValueOne: selectedOption?.value,
-    // };
 
-    // console.log("payload nnn", payload);
-    // dispatch(savePriceListFormData(payload));
-    // setCurrentComponent(1);
 
     let payload;
     setIsButtonClicked(true);

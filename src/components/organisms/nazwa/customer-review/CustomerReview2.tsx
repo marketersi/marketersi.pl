@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { ModalForm } from "../../tresci-sprzedazowe/ModalForm";
+import { useSelector } from "react-redux";
 
 const CustomerReview2 = () => {
+  const {  screenData } = useSelector((state) => state.anatomy);
+  const { implementation } = screenData || {};
+  const { customer_review } = implementation || {};
+
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
+
+  
   return (
     <section className="projects-gray-opinion-5">
       <div className="container projects-opinion-box-container">
@@ -10,35 +23,26 @@ const CustomerReview2 = () => {
               <div className="opinion-box-image">
                 <img
                   className="opinion-box-inside-image"
-                  src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/zalozyciel-dobra-nazwa-dla-firmy-carmnik.jpg"
+                  src={customer_review?.customer_image}
                   title="Założyciel Carmnik zadowolony z nowej nazwy"
                   alt="Klient przekonał się, że można stworzyć dobrą nazwę"
                 />
               </div>
-              <div className="opinion-box-content rwd-opinion-image opinion-client-bg-bohemia naming-no-bg naming-opinion-img">
-                <img
-                  src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/zalozyciel-dobra-nazwa-dla-firmy-carmnik.jpg"
-                  title="Założyciel Carmnik zadowolony z nowej nazwy"
-                  alt="Klient przekonał się, że można stworzyć dobrą nazwę"
-                />
-              </div>
+
               <div className="opinion-box-content projects-opinion-4 projects-opinion-1-new naming-opinion-text">
                 <p className="theme-desc projects-client-opinion-p text-center">
-                  <strong>OPINIA KLIENTA</strong>
+                  <strong>{customer_review?.customer_quote}</strong>
                 </p>
                 <div className="opinion-box-text">
-                  „Na stworzenie mobilnej jadłodajni postawiłem wszystkie
-                  oszczędności. Owocni nie mieli wyjścia, <br />
-                  to musiało się nam udać.
-                  <br />
-                  Pozdrawiam! :)))”
+                 {customer_review?.customer_description}
                 </div>
 
                 <button
                   className="download-catalog-button names-new-btn send-offer-button js--triggerAnimation pnazw-opinion-btn"
                   type="button"
+                  onClick={() => setIsModal(true)}
                 >
-                  <strong>OK Podeślijcie mi tę ofertę.</strong>
+                  <strong>{customer_review?.review_buttonText}</strong>
                 </button>
               </div>
               <div className="clearfix"></div>
@@ -48,6 +52,7 @@ const CustomerReview2 = () => {
           <div className="col-md-12 projects-empty-opinion-box"></div>
         </div>
       </div>
+      <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </section>
   );
 };

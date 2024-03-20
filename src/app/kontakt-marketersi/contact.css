@@ -1,5 +1,5 @@
 .first_form_container {
-  background-color: #e3e3e3;
+  
   padding: 5rem 0;
 }
 
@@ -42,7 +42,7 @@
   margin: 0 23px 0 auto;
   width: 36rem;
   padding: 2rem 3rem;
-  background-color: #f5f5f5;
+  
   border-radius: 0.9rem;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
@@ -149,7 +149,7 @@ a.form_number_content {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-around;
-  background-color: #e3e3e3;
+  
   padding: 0 5rem 5rem 5rem;
 }
 
@@ -263,7 +263,7 @@ a.card_btn:hover {
 }
 
 .section_logo {
-  background-color: #e3e3e3;
+  
   padding-bottom: 3rem;
   margin: 0 0 70px;
 }

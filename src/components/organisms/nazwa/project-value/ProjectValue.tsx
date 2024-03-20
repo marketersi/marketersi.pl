@@ -42,7 +42,7 @@ const ProjectValue = () => {
 
         <div className="container custom-container1">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-lg-6">
               <p className="theme-desc projects-theme-desc-p names-left-padding projects-thematic-section-background-index">
                 {project_value?.bottom_description}
               </p>

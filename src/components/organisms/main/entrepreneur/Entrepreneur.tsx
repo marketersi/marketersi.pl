@@ -15,13 +15,7 @@ const Entrepreneur = () => {
     <div>
       <Container>
         <div className={style.enter}>
-          {/* <Image
-            // src="/assets/images/Kurs-na-social-media.avif"
-            src={section1?.image_url}
-            alt="rating image"
-            width="auto"
-            height="auto"
-          /> */}
+          
           <ReactPlayer
         // url="/assets/videos/desktopTop.mp4"
         url={section1?.image_url}

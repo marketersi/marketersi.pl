@@ -1815,7 +1815,6 @@ h6 {
   display: block;
   transform: translate(10px, 50px);
   font-family: "Playfair Display", serif;
-  background: #e3e3e3;
   background: linear-gradient(0deg, #e3e3e3 0%, white 40%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1827,7 +1826,6 @@ h6 {
   font-weight: bold;
   text-align: center;
   font-family: "Playfair Display", serif;
-  background: #e3e3e3;
   background: linear-gradient(0deg, #e3e3e3 0%, white 40%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
