@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 const Personally = () => {
   const { screenData } = useSelector((state) => state.opinion);
-  const atMarketersi = screenData.AtOwonce || {};
+  const atMarketersi = screenData.atMarketersi || {};
 
   return (
     <>
@@ -34,8 +34,8 @@ const Personally = () => {
                   <h4>{atMarketersi.cont_title}</h4>
                   <p>{atMarketersi?.cont_name}</p>
                   <p>Tel. {atMarketersi?.cont_number}</p>
-                  <a href={`mailto:${atMarketersi?.writeToUs?.email}`}>
-                    {atMarketersi?.writeToUs?.text}
+                  <a href={`mailto:${atMarketersi?.write_to_us?.email}`}>
+                    {atMarketersi?.write_to_us?.text}
                   </a>
                 </div>
               </Col>

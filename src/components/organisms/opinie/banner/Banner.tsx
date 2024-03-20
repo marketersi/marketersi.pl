@@ -14,12 +14,7 @@ const Banner = () => {
           <Row>
             <Col sm={4}>
               <div className={style.opinionContent}>
-                <h1>
-                  Opinie <br />
-                  o firmie <br />
-                  Owocni.pl
-                  {banner.title}
-                </h1>
+                <h1>{banner.title}</h1>
               </div>
             </Col>
             <Col sm={4}>
