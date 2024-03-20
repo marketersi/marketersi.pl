@@ -8,7 +8,7 @@ const NewCompany = () => {
   const { title, subtitle, cursorChangingText } = NewCompanyData || {};
   const { images } = NewCompanyProfitSliderData || {};
 
-  const words = ["Doświadczeni", "Kreatywni", "Rzetelni",];
+  const words = ["Doświadczeni", "Kreatywni", "Rzetelni"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
 

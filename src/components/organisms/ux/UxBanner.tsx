@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import ReactPlayer from "react-player";
 
 const UxBanner = () => {
-  const { isLoading, screenData } = useSelector((state) => state.ux);
+  const { screenData } = useSelector((state) => state.ux);
   const HeroSection = screenData.HeroSection || {};
 
   console.log("screenData from uxBanner", HeroSection);
@@ -22,8 +23,8 @@ const UxBanner = () => {
                 {HeroSection?.title2}
               </h1>
               <p className="subitle">{HeroSection.description1}</p>
-              <p className="subitle">{HeroSection.description2} </p>
-              <p className="subitle">
+              <p className="subitle mt-5">{HeroSection.description2} </p>
+              {/* <p className="subitle">
                 Dla tych, co
                 <span className="underLine">
                   <span>m</span>
@@ -47,18 +48,17 @@ const UxBanner = () => {
                   <span>w</span>
                   <span>o</span>
                 </span>
-              </p>
+              </p> */}
               <p className="subitle"></p>
             </div>
-            <video
-              playsinline=""
-              id="phoneMove"
-              loop="true"
-              autoplay="true"
-              data-vscid="d3xa7p0zx"
-            >
-              <source src={HeroSection?.video_url} type="video/mp4" />
-            </video>
+            <ReactPlayer
+              muted={true}
+              playing={true}
+              loop={true}
+              width="100%"
+              height="auto"
+              url={HeroSection?.video_url}
+            />
           </div>
         </div>
       </section>

@@ -1,27 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import style from "../opinie.module.css";
-import { Row, Col } from "react-bootstrap";
-import { accordionData } from "./Data.js";
 import SingleQuestion from "./Question";
 import "./accordion.css";
-// import Accordion from "react-bootstrap/Accordion";
 
-const Accordion = () => {
-  const [questions, setQuestions] = useState(accordionData);
+const Accordion = ({ data }) => {
   return (
     <>
       <div className={style.accordion}>
         <div className={style.accordionContainer}>
           <section className="accordion-container w-75">
-            {questions.map((question) => {
-              return (
-                <SingleQuestion
-                  key={question.id}
-                  {...question}
-                ></SingleQuestion>
-              );
-            })}
+            <SingleQuestion data={data} />
           </section>
         </div>
       </div>

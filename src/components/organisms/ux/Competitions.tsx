@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 const CompetitionsData = {
   title: "Konkurencja w wersji ",
@@ -13,6 +14,9 @@ const CompetitionsData = {
 };
 
 const Competitions = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const CompetitionData = screenData.CompetitionData || {};
+
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -43,16 +47,16 @@ const Competitions = () => {
             transform: "translate(0px, 0px)",
           }}
         >
-          {CompetitionsData.title}
+          {CompetitionData.compt_title}
           <span>
-            {CompetitionsData.titleStyle}
-            <img src={CompetitionsData.image} alt="" />
+            {/* {CompetitionData.titleStyle} */}
+            <img src={CompetitionData.compt_image} alt="" />
           </span>
         </h2>
         <div className="text2">
           <div>
-            {CompetitionsData.description1}
-            <span className="slotContainer ani1">
+            {CompetitionData.compt_description1}
+            {/* <span className="slotContainer ani1">
               <span className="animated-words">
                 <span className="word">{words[currentWordIndex]}</span>
               </span>
@@ -60,26 +64,29 @@ const Competitions = () => {
             i <br className="mobile" />
             <div className="timer timerNumber">
               <div className="cell"> {count} </div>
-            </div>
-            {CompetitionsData.description2}
+            </div> */}
+
+            {CompetitionData.compt_description3}
           </div>
           <p>
-            Łatwo jest być innym,
+            {/* Łatwo jest być innym,
             <br className="mobile" />
             ale trudno tu być lepszym.
             <br />
             Skończyły się czasy klonów
-            <br className="mobile" />i sztampowych szablonów.
+            <br className="mobile" />i sztampowych szablonów. */}
+            {CompetitionData.compt_description2}
           </p>
           <p>
-            Dziś wygrywają ci, którzy
+            {/* Dziś wygrywają ci, którzy
             <br className="mobile" />
             odnajdują lepsze odpowiedzi
             <span className="loading">
               <span>.</span>
               <span>.</span>
               <span>.</span>
-            </span>
+            </span> */}
+            {CompetitionData.compt_description3}...
           </p>
         </div>
       </section>

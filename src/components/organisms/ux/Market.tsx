@@ -1,6 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+const sentence = "Jak zainteresować ludzi";
+const intervalDuration = 300;
+const typingSpeed = 50;
 
 const Market = () => {
+  const [currentLetterIndex, setCurrentLetterIndex] = useState(0);
+
+  useEffect(() => {
+    let timeout;
+    const type = () => {
+      setCurrentLetterIndex((prevIndex) => prevIndex + 1);
+      timeout = setTimeout(type, typingSpeed);
+    };
+
+    const interval = setInterval(() => {
+      if (currentLetterIndex === sentence.length) {
+        setCurrentLetterIndex(0);
+      } else {
+        type();
+      }
+    }, intervalDuration);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, [currentLetterIndex]);
+
   return (
     <>
       <section>
@@ -20,6 +47,14 @@ const Market = () => {
                 <span className="wrap">Jak zainteresować ludzi</span>
               </a>
             </h1>
+
+            {/* Test */}
+            <div className="TypeMe typeme1 text-center projects-custom-typed-text">
+              <span className="typed-cursor active">
+                {sentence.substring(0, currentLetterIndex)}|
+              </span>
+            </div>
+
             <div className="section over-hide content">
               <div className="container2">
                 <div className="row2 justify-content-center">

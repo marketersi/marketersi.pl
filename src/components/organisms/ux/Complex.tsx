@@ -1,26 +1,30 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
 
 const ComplexData = {
   title: "title",
   description1: "description",
-  DStyle1:["description", "description"],
+  DStyle1: ["description", "description"],
   description2: "description",
-  DStyle2:["description", "description","description"],
+  DStyle2: ["description", "description", "description"],
   description3: "description",
-  DStyle3:["description", "description"],
-
-}
+  DStyle3: ["description", "description"],
+};
 
 const Complex = () => {
+  const { screenData } = useSelector((state) => state.ux);
+  const complex = screenData.complex || {};
+
   return (
     <>
-    <section>
+      <section>
         <div id="textArrow">
           <h2>
             Przekształcamy złożone <br />
             problemy biznesowe w proste,
             <br />
             intuicyjne i skuteczne interfejsy.
+            {/* {complex.title} */}
           </h2>
           <div className="rowD">
             <div>
@@ -42,6 +46,9 @@ const Complex = () => {
                 Takie strony ładnie
                 <br />
                 wyglądają, ale słabo działają.
+                {/* {
+                  complex.paragraph_1
+                } */}
               </p>
             </div>
             <img
@@ -68,6 +75,7 @@ const Complex = () => {
                 by głęboko
                 <br />
                 analizować twarde dane z sieci
+                {/* {complex.paragraph_2} */}
               </p>
             </div>
           </div>
@@ -102,12 +110,13 @@ const Complex = () => {
                 <span>j</span>
                 <span>ę</span>
               </span>
+              {/* {complex.paragraph_3} */}
             </p>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Complex
+export default Complex;
