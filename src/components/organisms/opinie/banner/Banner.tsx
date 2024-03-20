@@ -1,8 +1,12 @@
 import React from "react";
 import style from "../opinie.module.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Banner = () => {
+  const { screenData } = useSelector((state) => state.opinion);
+  const banner = screenData.Banner || {};
+
   return (
     <>
       <div className={style.opinionBanner}>
@@ -14,15 +18,17 @@ const Banner = () => {
                   Opinie <br />
                   o firmie <br />
                   Owocni.pl
+                  {banner.title}
                 </h1>
               </div>
             </Col>
             <Col sm={4}>
-              <img src="/assets/images/Frame.svg" alt="" />
+              <img src={banner.image_1} alt="" />
             </Col>
             <Col sm={4}>
-              <img className={style.opinionBnnaerImg}
-                src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F20latDzialalnosciPLbiel.be533f8b.svg&w=640&q=75"
+              <img
+                className={style.opinionBnnaerImg}
+                src={banner.image_2}
                 alt=""
               />
             </Col>

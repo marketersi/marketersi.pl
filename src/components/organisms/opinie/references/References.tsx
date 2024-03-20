@@ -1,103 +1,227 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../opinie.module.css";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import ReferenceCard from "./ReferenceCard";
-import {
-  ClientCarousel,
-  CarouselContext,
-} from "../../strategia-marketingowa/ClientCarouselNext";
-import { useContext } from "react";
+import { useSelector } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinusCircle, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
-const SlideOne = () => {
-  const { handleNext } = useContext(CarouselContext);
-  return (
-    <>
-       <div className={style.referenceCardSec}>
-            <Row>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-            </Row>
-          </div>
-          <div className={style.referenceCardSec}>
-            <Row>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-            </Row>
-          </div>
-    </>
-  );
-};
-const SlideTwo = () => {
-  const { handleNext } = useContext(CarouselContext);
-  return (
-    <>
-       <div className={style.referenceCardSec}>
-            <Row>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-            </Row>
-          </div>
-          <div className={style.referenceCardSec}>
-            <Row>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-              <Col sm={4}><ReferenceCard /></Col>
-            </Row>
-          </div>
-    </>
-  );
-};
+const ReferenceCardArray = [
+  {
+    id: 3,
+    customer_name: "Mariusz Czerwiński,",
+    customer_designation: "Tema, Lublin",
+    rating_no: "4.78",
+    review:
+      "Nasze wcześniejsze logo trochę straszyło, obecne jest świetne! Mamy dużo więcej klientów.",
+    created_at: "2024-02-22T11:37:29.000000Z",
+    updated_at: "2024-02-22T11:37:29.000000Z",
+  },
+  {
+    id: 2,
+    customer_name: "Maciej Ligus",
+    customer_designation: "Eximo Project, Bydgoszcz",
+    rating_no: "4",
+    review:
+      "Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę. Genialna robota.",
+    created_at: "2024-02-22T11:32:53.000000Z",
+    updated_at: "2024-02-22T11:36:59.000000Z",
+  },
+  {
+    id: 1,
+    customer_name: "Krzysztof Marcinkiewicz",
+    customer_designation: "12 Stopni, Opole",
+    rating_no: "5",
+    review: "Zorganizowane jak w zegarku. Pełen profesjonalizm. Polecam.",
+    created_at: "2024-02-22T11:32:39.000000Z",
+    updated_at: "2024-02-22T11:32:39.000000Z",
+  },
+  {
+    id: 3,
+    customer_name: "Mariusz Czerwiński,",
+    customer_designation: "Tema, Lublin",
+    rating_no: "4.78",
+    review:
+      "Nasze wcześniejsze logo trochę straszyło, obecne jest świetne! Mamy dużo więcej klientów.",
+    created_at: "2024-02-22T11:37:29.000000Z",
+    updated_at: "2024-02-22T11:37:29.000000Z",
+  },
+  {
+    id: 2,
+    customer_name: "Maciej Ligus",
+    customer_designation: "Eximo Project, Bydgoszcz",
+    rating_no: "4",
+    review:
+      "Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę. Genialna robota.",
+    created_at: "2024-02-22T11:32:53.000000Z",
+    updated_at: "2024-02-22T11:36:59.000000Z",
+  },
+  {
+    id: 1,
+    customer_name: "Krzysztof Marcinkiewicz",
+    customer_designation: "12 Stopni, Opole",
+    rating_no: "5",
+    review: "Zorganizowane jak w zegarku. Pełen profesjonalizm. Polecam.",
+    created_at: "2024-02-22T11:32:39.000000Z",
+    updated_at: "2024-02-22T11:32:39.000000Z",
+  },
+  {
+    id: 2,
+    customer_name: "Maciej Ligus",
+    customer_designation: "Eximo Project, Bydgoszcz",
+    rating_no: "4",
+    review:
+      "Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę. Genialna robota.",
+    created_at: "2024-02-22T11:32:53.000000Z",
+    updated_at: "2024-02-22T11:36:59.000000Z",
+  },
+  {
+    id: 3,
+    customer_name: "Mariusz Czerwiński,",
+    customer_designation: "Tema, Lublin",
+    rating_no: "4.78",
+    review:
+      "Nasze wcześniejsze logo trochę straszyło, obecne jest świetne! Mamy dużo więcej klientów.",
+    created_at: "2024-02-22T11:37:29.000000Z",
+    updated_at: "2024-02-22T11:37:29.000000Z",
+  },
+  {
+    id: 2,
+    customer_name: "Maciej Ligus",
+    customer_designation: "Eximo Project, Bydgoszcz",
+    rating_no: "4",
+    review:
+      "Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę. Genialna robota.",
+    created_at: "2024-02-22T11:32:53.000000Z",
+    updated_at: "2024-02-22T11:36:59.000000Z",
+  },
+  {
+    id: 1,
+    customer_name: "Krzysztof Marcinkiewicz",
+    customer_designation: "12 Stopni, Opole",
+    rating_no: "5",
+    review: "Zorganizowane jak w zegarku. Pełen profesjonalizm. Polecam.",
+    created_at: "2024-02-22T11:32:39.000000Z",
+    updated_at: "2024-02-22T11:32:39.000000Z",
+  },
+  {
+    id: 3,
+    customer_name: "Mariusz Czerwiński,",
+    customer_designation: "Tema, Lublin",
+    rating_no: "4.78",
+    review:
+      "Nasze wcześniejsze logo trochę straszyło, obecne jest świetne! Mamy dużo więcej klientów.",
+    created_at: "2024-02-22T11:37:29.000000Z",
+    updated_at: "2024-02-22T11:37:29.000000Z",
+  },
+  {
+    id: 2,
+    customer_name: "Maciej Ligus",
+    customer_designation: "Eximo Project, Bydgoszcz",
+    rating_no: "4",
+    review:
+      "Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę. Genialna robota.",
+    created_at: "2024-02-22T11:32:53.000000Z",
+    updated_at: "2024-02-22T11:36:59.000000Z",
+  },
+  {
+    id: 1,
+    customer_name: "Krzysztof Marcinkiewicz",
+    customer_designation: "12 Stopni, Opole",
+    rating_no: "5",
+    review: "Zorganizowane jak w zegarku. Pełen profesjonalizm. Polecam.",
+    created_at: "2024-02-22T11:32:39.000000Z",
+    updated_at: "2024-02-22T11:32:39.000000Z",
+  },
+  {
+    id: 2,
+    customer_name: "Maciej Ligus",
+    customer_designation: "Eximo Project, Bydgoszcz",
+    rating_no: "4",
+    review:
+      "Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę. Genialna robota.",
+    created_at: "2024-02-22T11:32:53.000000Z",
+    updated_at: "2024-02-22T11:36:59.000000Z",
+  },
+];
 
+export default function References() {
+  const { screenData } = useSelector((state) => state.opinion);
+  const Reference = screenData.Reference || {};
 
+  const [startIndex, setStartIndex] = useState(0);
+  const [showAll, setShowAll] = useState(false);
+  const reviewsPerPage = 6;
 
-export default function References(){
+  const handleNext = () => {
+    if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
+      setStartIndex(startIndex + reviewsPerPage);
+    }
+  };
 
-  const slides = [SlideOne, SlideTwo];
-  const { handleNext } = useContext(CarouselContext);
+  const handleShowAll = () => {
+    setStartIndex(0);
+    setShowAll(!showAll);
+  };
+
   return (
     <>
       <div className={style.google}>
         <div className={style.opinionContainer}>
           <div className={style.opinionContent}>
-            <h3>Wiesz, że:</h3>
-            <h2>
-              Niektórzy, klienci są <br />z nami już od dekady.
-            </h2>
-            <h4>
-              To były czasy, kiedy <span>referencje od klientów</span> zbierało się na
-              papierze firmowym z pieczątką i wieszało w ramkę.
-            </h4>
+            <h3>{Reference?.heading}</h3>
+            <h2>{Reference?.title}</h2>
+            <h4>{Reference?.subtitle}</h4>
           </div>
           <Row>
-            <Col sm={4}>
-              <div className={style.tesco}>
-                <img src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FReferencje1.f883c230.png&w=640&q=75" alt="" />
-                <h4>Tesco</h4>
-                <p>2014</p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className={style.tesco}>
-                <img src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FReferencje1.f883c230.png&w=640&q=75" alt="" />
-                <h4>Tesco</h4>
-                <p>2014</p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className={style.tesco}>
-                <img src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FReferencje1.f883c230.png&w=640&q=75" alt="" />
-                <h4>Tesco</h4>
-                <p>2014</p>
-              </div>
-            </Col>
+            {Reference?.referenceImage?.map((e, i) => {
+              return (
+                <Col sm={4} key={i}>
+                  <div className={style.tesco}>
+                    <img src={e.image} alt="" />
+                    <h4>{e.name}</h4>
+                    <p>{e.year}</p>
+                  </div>
+                </Col>
+              );
+            })}
           </Row>
-          <ClientCarousel slides={slides} options={{ loop: true }} />
+
+          <div className={style.referenceCardSec}>
+            <Row className={style.rowTransition}>
+              {ReferenceCardArray.slice(
+                startIndex,
+                showAll
+                  ? ReferenceCardArray.length
+                  : startIndex + reviewsPerPage
+              ).map((e, i) => {
+                return (
+                  <Col sm={4} key={i}>
+                    <ReferenceCard {...e} />
+                  </Col>
+                );
+              })}
+            </Row>
+
+            {!showAll && (
+              <div className={style.buttonContainer}>
+                <Button onClick={handleShowAll}>
+                  {showAll ? "Hide" : "Show All"}
+                </Button>
+
+                <Button
+                  onClick={handleNext}
+                  disabled={
+                    startIndex + reviewsPerPage >= ReferenceCardArray.length
+                  }
+                >
+                  Next
+                </Button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>
   );
-};
-
+}
