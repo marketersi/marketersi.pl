@@ -17,6 +17,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { FETCH_OPINION_SCREEN_DATA } from "@/redux/opinie/opinionAction";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 import "./opinion.css";
+import ReviewCard from "@/components/organisms/opinie/brilliant-job/ReviewCard";
+import HappyCustomers from "@/components/organisms/opinie/happy-customers/HappyCustomers";
 
 const CustomersOpinion = () => {
   const { screenData } = useSelector((state) => state.opinion);
@@ -33,10 +35,10 @@ const CustomersOpinion = () => {
   return (
     <>
       <Banner />
-      <OurClients />
-      <BrilliantJob />
-      {/* Brilliant Job */}
-      <BrilliantJob />
+      {/* <OurClients /> */}
+      <HappyCustomers />
+      {/* <BrilliantJob /> */}
+      <ReviewCard />
       <div className="review">
         <Review />
       </div>
