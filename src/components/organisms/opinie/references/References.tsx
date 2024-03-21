@@ -205,18 +205,22 @@ export default function References() {
 
             {!showAll && (
               <div className={style.buttonContainer}>
-                <Button onClick={handleShowAll}>
-                  {showAll ? "Hide" : "Show All"}
-                </Button>
+                <div onClick={handleShowAll} className={style.showAllbtn}>
+                  {showAll ? null : "Pokaż wszystkie"}
+                </div>
 
-                <Button
+                {/* <Button
                   onClick={handleNext}
                   disabled={
                     startIndex + reviewsPerPage >= ReferenceCardArray.length
                   }
                 >
                   Next
-                </Button>
+                </Button> */}
+
+                <div className="ArrowButton" onClick={handleNext}>
+                  <span className="ArrowButton_Arrow">&gt;</span>
+                </div>
               </div>
             )}
           </div>
