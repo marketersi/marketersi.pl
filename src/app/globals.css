@@ -339,7 +339,6 @@ body {
   color: #fdc818;
   margin-right: 5px;
   font-size: 24px;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .empty {
@@ -459,4 +458,8 @@ body {
   padding-bottom: 40px;
   padding-inline: 50px;
   margin: 50px 0 0;
+}
+
+.slick-slide {
+  padding-right: 18px;
 }
