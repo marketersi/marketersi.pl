@@ -1,6 +1,5 @@
 import React from "react";
 import style from "../opinie.module.css";
-// import { Row, Col } from "react-bootstrap";
 
 const GoogleCard = () => {
   return (
