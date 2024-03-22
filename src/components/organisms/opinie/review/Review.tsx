@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "../opinie.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,9 +6,28 @@ import Slider from "react-slick";
 import { useSelector } from "react-redux";
 import Stars from "@/components/molecules/Ratings";
 
+function isMobile() {
+  return typeof window !== "undefined" && window.innerWidth <= 768;
+}
+
 export default function Review() {
   const { screenData } = useSelector((state) => state.opinion);
   const Review = screenData.Review || [];
+
+  // check for mobile view
+  const [mobile, setMobile] = useState(isMobile());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(isMobile());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   function SampleNextArrow(props) {
     const { onClick } = props;
@@ -25,7 +44,7 @@ export default function Review() {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: mobile ? 1 : 3,
     slidesToScroll: 3,
     nextArrow: <SampleNextArrow />,
   };

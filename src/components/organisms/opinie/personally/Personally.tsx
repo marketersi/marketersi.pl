@@ -13,7 +13,7 @@ const Personally = () => {
         <div className={style.personallyContainer}>
           <div className={style.personallyCard}>
             <Row>
-              <Col sm={4}>
+              <Col lg={4}>
                 <img
                   className={style.personallMan}
                   src={atMarketersi?.img_1}
@@ -25,7 +25,7 @@ const Personally = () => {
                   alt=""
                 />
               </Col>
-              <Col sm={8}>
+              <Col lg={8}>
                 <h2>{atMarketersi?.title}</h2>
                 <p>{atMarketersi?.para_1}</p>
                 <p>{atMarketersi?.para_2}</p>

@@ -40,18 +40,12 @@ export default function OurClients() {
 
   return (
     <div className="OurClients content mt-5">
-      {/* <div className="OurClients_Title">
-        Pozwól naszym klientom opowiedzieć Ci o współpracy z nami
-      </div> */}
       <div className="OurClients_Marquee full">
         {/* Marquee 1 */}
         <Marquee autoFill speed={175}>
           {row1?.map((e, i) => {
             return (
               <Image
-                // src={
-                //   "/assets/images/strategiamarketingowa/marquee/Marquee_One_1.png"
-                // }
                 src={e.message}
                 alt="row 1 image"
                 width={0}
@@ -73,9 +67,6 @@ export default function OurClients() {
           {row2?.map((e, i) => {
             return (
               <Image
-                // src={
-                //   "/assets/images/strategiamarketingowa/marquee/Marquee_One_1.png"
-                // }
                 src={e.message}
                 alt="row 2 image"
                 width={0}
@@ -91,120 +82,13 @@ export default function OurClients() {
               />
             );
           })}
-          {/* <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_1.png"
-            }
-            alt="Marquee_Two_1"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_2.png"
-            }
-            alt="Marquee_Two_2"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_3.png"
-            }
-            alt="Marquee_Two_3"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_4.png"
-            }
-            alt="Marquee_Two_4"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_5.png"
-            }
-            alt="Marquee_Two_5"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_6.png"
-            }
-            alt="Marquee_Two_6"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Two_7.png"
-            }
-            alt="Marquee_Two_7"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          /> */}
+          
         </Marquee>
         {/* Marquee 3 */}
         <Marquee autoFill speed={100}>
           {row3?.map((e, i) => {
             return (
               <Image
-                // src={
-                //   "/assets/images/strategiamarketingowa/marquee/Marquee_One_1.png"
-                // }
                 src={e.message}
                 alt="row 3 image"
                 width={0}
@@ -220,120 +104,14 @@ export default function OurClients() {
               />
             );
           })}
-          {/* <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_1.png"
-            }
-            alt="Marquee_Three_1"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_2.png"
-            }
-            alt="Marquee_Three_2"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_3.png"
-            }
-            alt="Marquee_Three_3"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_4.png"
-            }
-            alt="Marquee_Three_4"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_5.png"
-            }
-            alt="Marquee_Three_5"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_6.png"
-            }
-            alt="Marquee_Three_6"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Three_7.png"
-            }
-            alt="Marquee_Three_7"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          /> */}
+          
         </Marquee>
         {/* Marquee 4 */}
         <Marquee autoFill speed={150}>
           {row4?.map((e, i) => {
             return (
               <Image
-                // src={
-                //   "/assets/images/strategiamarketingowa/marquee/Marquee_One_1.png"
-                // }
+               
                 src={e.message}
                 alt="row 4 image"
                 width={0}
@@ -349,66 +127,7 @@ export default function OurClients() {
               />
             );
           })}
-          {/* <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Four_1.png"
-            }
-            alt="Marquee_Four_1"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Four_2.png"
-            }
-            alt="Marquee_Four_2"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Four_3.png"
-            }
-            alt="Marquee_Four_3"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          />
-          <Image
-            src={
-              "/assets/images/strategiamarketingowa/marquee/Marquee_Four_4.png"
-            }
-            alt="Marquee_Four_4"
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{
-              width: "50%",
-              height: "50%",
-              filter: "grayscale(100%)",
-              opacity: "0.5",
-            }}
-          /> */}
+          
         </Marquee>
       </div>
       <div className="OurClients_Card_Container popout">
@@ -426,10 +145,7 @@ export default function OurClients() {
             />
           </div>
           <div className="OurClients_Card_Two_Content">
-            {/* Amerykańska agencja ratingowa “Rating Capitan” plasuje nas w swoim
-            raporcie w gronie{" "}
-            <span className="YelloMarkReverse">10 najlepszych agencji</span> w
-            Polsce. (Na podstawie realnych opinii) */}
+           
             {RatingCard?.rating_description}
           </div>
         </div>
@@ -464,7 +180,6 @@ export const SlideOne = (props) => {
         <div className="OurClients_Slide_Container">
           <div className="OurClients_Slide_Image">
             <Image
-              // src={"/assets/images/strategiamarketingowa/OurClientsImage1.jpeg"}
               src={image_url}
               alt="OurClientsImage1"
               width={190}
@@ -474,17 +189,12 @@ export const SlideOne = (props) => {
           </div>
           <div className="OurClients_Slide_Content">
             <div className="OurClients_Slide_Title">
-              {/* Nie ma dnia, by ktoś nie pochwalił nas za nazwę, logo czy stronę.{" "}
-              <span className="YellowMarkSlide">Genialna robota.”</span> */}
               {review}
             </div>
             <div className="OurClients_Slide_Media">
               <div className="OurClients_Slide_Media_Video">
                 <ReactPlayer
-                  // url={
-                  //   "/assets/images/strategiamarketingowa/OurClientsVideo1.mp4"
-                  // }
-                  url={video_url}
+                 url={video_url}
                   playing
                   loop
                   width="60%"
@@ -504,12 +214,6 @@ export const SlideOne = (props) => {
                   </div>
                 </div>
                 <div className="OurClients_Slide_Star_Rating">
-                  {/* <Image
-                    src={"/assets/images/strategiamarketingowa/starrating.avif"}
-                    alt="starrating"
-                    width={75}
-                    height={22}
-                  /> */}
                   <Stars rating={rating} />
                 </div>
               </div>
@@ -532,19 +236,14 @@ export const SlideFour = () => {
   const { ClientReviews } = screenData || {};
   const { FeedbackSummary } = ClientReviews || {};
 
-  // const { handleNext } = useContext(CarouselContext);
   return (
     <>
       {/* Slide 4 */}
       <div className="OurClients_Slide_Last">
         <div className="OurClients_Card_One_Title">
-          {/* 20 lat pracy. Tysiące <span className="YellowMark">zadowolonych</span>{" "}
-          klientów */}
           {FeedbackSummary?.title}
         </div>
         <div className="OurClients_Card_One_Content">
-          {/* Międzynarodowe korporacje. Lokalni przedsiębiorcy. Instytucje
-          publiczne. */}
           {FeedbackSummary?.description}
         </div>
         <div className="OurClients_Card_One_Button_Container">
@@ -559,7 +258,6 @@ export const SlideFour = () => {
   );
 };
 
-// unwanted for now
 const SlideTwo = () => {
   const { handleNext } = useContext(CarouselContext);
   return (
