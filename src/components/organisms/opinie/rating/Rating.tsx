@@ -21,9 +21,11 @@ const Rating = () => {
                 <img src={ratings.banner_image} alt="" />
               </Col>
               <Col sm={6}>
+                <div className={style.ratingCardContent}>
                 <h6>{ratings?.paragraph_1}</h6>
                 <p>{ratings?.paragraph_2}</p>
                 <p>{ratings?.paragraph_3}</p>
+                </div>
               </Col>
             </Row>
             <div className={style.topBtn}>

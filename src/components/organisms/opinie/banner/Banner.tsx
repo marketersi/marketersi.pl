@@ -12,15 +12,15 @@ const Banner = () => {
       <div className={style.opinionBanner}>
         <Container>
           <Row>
-            <Col sm={4}>
+            <Col lg={4} md={6}>
               <div className={style.opinionContent}>
                 <h1>{banner.title}</h1>
               </div>
             </Col>
-            <Col sm={4}>
+            <Col lg={4} md={6} className="d-flex align-item-center">
               <img src={banner.image_1} alt="" />
             </Col>
-            <Col sm={4}>
+            <Col lg={4} md={12}>
               <img
                 className={style.opinionBnnaerImg}
                 src={banner.image_2}

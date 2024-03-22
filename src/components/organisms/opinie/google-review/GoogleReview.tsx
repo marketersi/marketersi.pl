@@ -1,11 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "../opinie.module.css";
 import { Col, Row } from "react-bootstrap";
 import GoogleCard from "./GoogleCard";
 import Slider from "react-slick";
 
+function isMobile() {
+  return typeof window !== "undefined" && window.innerWidth <= 768;
+}
+
 export default function GoogleReview() {
   const [showAll, setShowAll] = useState(false);
+
+  // check for mobile view
+  const [mobile, setMobile] = useState(isMobile());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(isMobile());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   function SampleNextArrow(props) {
     const { onClick } = props;
@@ -22,7 +41,7 @@ export default function GoogleReview() {
   var settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: mobile ? 1 : 3,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
   };
@@ -91,10 +110,13 @@ export default function GoogleReview() {
 
               {!showAll && (
                 <div
-                  className={style.showAllbtn}
+                  className={`${style.showAllbtn} ${style.mt95}`}
                   onClick={() => setShowAll(!showAll)}
                 >
-                  Pokaż wszystkie
+                  <span>Pokaż wszystkie</span>
+                  <div className={style.googlePlay}>
+                    <img src="https://www.owocni.pl/assets/arrow.svg" alt="" />
+                  </div>
                 </div>
               )}
             </div>

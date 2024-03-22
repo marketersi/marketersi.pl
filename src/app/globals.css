@@ -202,8 +202,8 @@ body {
 }
 .ArrowButton {
   display: flex;
-  height: 2em;
-  width: 2em;
+  height: 2.5em;
+  width: 2.5em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -223,7 +223,7 @@ body {
   box-shadow: none;
 }
 .ArrowButton_Arrow {
-  font-size: 1em;
+  font-size: 4rem;
   font-weight: bolder;
 }
 .OurClients_Slide_Button_Text {
@@ -462,4 +462,77 @@ body {
 
 .slick-slide {
   padding-right: 18px;
+}
+.brandImgBtn{
+  cursor: pointer;
+  font-size: 25.6px;
+  font-weight: 600;
+  line-height: 34.432px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-inline: 50px;
+  margin: 50px 0 0;
+  position: absolute;
+  right: -210px;
+  top: 20px;
+}
+.brandImgBtn .ArrowButton{
+margin-inline: auto;
+margin-top: 20px;
+}
+
+@media only screen and (max-width:1024px){
+  .brandImgBtn {
+    margin: 30px 0 0;
+    right: -150px;
+    top: 0px;
+}
+}
+
+@media only screen and (max-width:767px){
+  .brandImgBtn {
+    align-self: end;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25.6px;
+    font-weight: 600;
+    line-height: 34.432px;
+    text-align: center;
+    justify-content: end;
+    padding-bottom: 40px;
+    padding-inline: 50px;
+    margin: 50px 0 0;
+    position: static;
+    gap: 30px;
+}
+.ArrowButton {
+  height: 1.5em;
+  width: 1.5em;
+}
+.ArrowButton_Arrow {
+  font-size: 2rem;
+}
+.brandImgBtn .ArrowButton {
+  margin-inline: initial;
+  margin-top: 0;
+}
+.brandSlide {
+  margin: 0 0 100px;
+}
+.brand_Slide_ButtonNext {
+  padding-right: 0;
+  }
+  .opinie_opinionContent__hxTb1 h4 {
+    font-size: 30px;
+}
+.opinionContent h4 {
+  line-height: 45px;
+}
+.personallyCard h2 {
+  font-size: 40px;
+}
+.personallyCard {
+  padding: 20px;
+}
 }

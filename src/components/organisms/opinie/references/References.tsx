@@ -207,6 +207,10 @@ export default function References() {
               <div className={style.buttonContainer}>
                 <div onClick={handleShowAll} className={style.showAllbtn}>
                   {showAll ? null : "Pokaż wszystkie"}
+                  {/* <span>Pokaż wszystkie</span> */}
+                  <div className={style.googlePlay}>
+                    <img src="https://www.owocni.pl/assets/arrow.svg" alt="" />
+                  </div>
                 </div>
 
                 {/* <Button
