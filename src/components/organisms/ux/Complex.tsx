@@ -17,38 +17,17 @@ const Complex = () => {
 
   return (
     <>
-      <section>
+      <section className="arrowContainer">
         <div id="textArrow">
           <h2>
-            Przekształcamy złożone <br />
-            problemy biznesowe w proste,
-            <br />
-            intuicyjne i skuteczne interfejsy.
-            {/* {complex.title} */}
+            {complex.title}
           </h2>
           <div className="rowD">
             <div>
               <p>
-                W agencji stronę projektuje grafik
-                <br />
-                <span className="underLine orange">
-                  <span>-</span>
-                  <span className="space"></span>
-                  <span>t</span>
-                  <span>o</span>
-                  <span className="space"></span>
-                  <span>b</span>
-                  <span>ł</span>
-                  <span>ą</span>
-                  <span>d</span>
-                  <span>!</span>
-                </span>
-                Takie strony ładnie
-                <br />
-                wyglądają, ale słabo działają.
-                {/* {
+                {
                   complex.paragraph_1
-                } */}
+                }
               </p>
             </div>
             <img
@@ -57,60 +36,13 @@ const Complex = () => {
             />
             <div>
               <p>
-                U nas pracę rozpoczyna marketer, <br />
-                który ma
-                <span className="underLine green">
-                  <span>k</span>
-                  <span>o</span>
-                  <span>m</span>
-                  <span>p</span>
-                  <span>e</span>
-                  <span>t</span>
-                  <span>e</span>
-                  <span>n</span>
-                  <span>c</span>
-                  <span>j</span>
-                  <span>e</span>
-                </span>
-                by głęboko
-                <br />
-                analizować twarde dane z sieci
-                {/* {complex.paragraph_2} */}
+                {complex.paragraph_2}
               </p>
             </div>
           </div>
           <div className="one">
             <p>
-              Na bazie tych danych copywriter <br className="mobile" />
-              tworzy przekonującą narrację.
-              <br />
-              Grafik ma za zadanie wzmocnić <br className="mobile" />
-              ten przekaz na samym końcu.
-              <br />
-              <br className="mobile" />
-              Działa to tak dobrze, że możemy dać
-              <br className="mobile" />
-              <span className="underLine">
-                <span>z</span>
-                <span>u</span>
-                <span>c</span>
-                <span>h</span>
-                <span>w</span>
-                <span>a</span>
-                <span>ł</span>
-                <span>ą</span>
-                <span className="space"></span>
-                <span>g</span>
-                <span>w</span>
-                <span>a</span>
-                <span>r</span>
-                <span>a</span>
-                <span>n</span>
-                <span>c</span>
-                <span>j</span>
-                <span>ę</span>
-              </span>
-              {/* {complex.paragraph_3} */}
+              {complex.paragraph_3}
             </p>
           </div>
         </div>

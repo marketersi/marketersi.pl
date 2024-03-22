@@ -23,15 +23,9 @@ const IgnoreSites = () => {
           <div className="contentText">
             <h2>{IgnoreSites.title}</h2>
             <p>
-              {/* Przedsiębiorca dosłownie traci zyski, skupiając <br />
-              się na firmie zamiast na doświadczeniu
-              <br />
-              użytkownika. I tu pojawiamy się my... */}
               {IgnoreSites.descript1}
             </p>
             <p>
-              {/* Owocni są od tego, by myśleć <br />
-              tak, jak myślą Twoi klienci. */}
               {IgnoreSites.descript2}
             </p>
             <a className="btn-neon send-offer-button js--triggerAnimation">

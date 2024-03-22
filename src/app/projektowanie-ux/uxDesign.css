@@ -27,8 +27,7 @@ h6 {
 
 #header>div div {
   position: relative;
-  margin-top: 40px;
-  left: 30px;
+  left: 10px;
 }
 
 #header>div div .titleHead {
@@ -62,7 +61,7 @@ h6 {
 #header>div div .subitle {
   letter-spacing: -0.9px;
   color: #515151;
-  font-size: min(5vw, 40px);
+  font-size: min(5vw, 32px);
   line-height: 1.2;
   font-family: "Georgia", serif;
   margin-left: 70px;
@@ -92,7 +91,7 @@ h6 {
 }
 
 #header>div div .subitle:nth-child(3) {
-  padding-left: 20px;
+  padding-left: 30px;
   padding-bottom: 20px;
 }
 
@@ -116,17 +115,20 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 30px;
+  max-width: 300px;
 }
 
 #numbers div img {
   max-width: 40vw;
+  width: 100%;
 }
 
 #numbers div p {
   margin-top: 50px;
   color: #515151;
   font-size: 20px;
-  font-size: min(3vw, 20px);
+  font-size: min(3vw, 18px);
 }
 
 
@@ -147,12 +149,14 @@ h6 {
   color: #333;
   position: relative;
   top: 20px;
+  max-width: 650px;
+  margin-inline: auto;
 }
 
 #messagesSection h2 span img {
   z-index: -1;
   position: absolute;
-  left: 0;
+  left: calc(-20% - 250px);
   bottom: -19px;
 }
 
@@ -165,7 +169,9 @@ h6 {
 }
 
 #messagesSection .text2 {
-  padding-top: 100px;
+  padding-top: 50px;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
 #messagesSection .text2>p,
@@ -173,7 +179,7 @@ h6 {
   line-height: 1.23;
   padding: 20px 0;
   color: #515151;
-  font-size: 43px;
+  font-size: clamp(16px, 30px, 40px);
   font-family: "Georgia", serif;
   text-align: center;
   font-weight: normal;
@@ -1192,9 +1198,9 @@ h6 {
 
 #maciej .imgs>img:nth-child(1),
 #maciej .imgs>picture:nth-child(1) {
-  left: 270px;
+  left: 50px;
   bottom: 20px;
-  transform: scale(1.3);
+  transform: scale(0.9);
 }
 
 #maciej .imgs>img:nth-child(2),
@@ -1211,6 +1217,7 @@ h6 {
 #maciej .contentText {
   z-index: 2;
   margin-top: 250px;
+  max-width: 800px;
 }
 
 #maciej .contentText h2 {
@@ -1226,7 +1233,7 @@ h6 {
   margin-top: 50px;
   text-align: center;
   color: #373737;
-  font-size: 38px;
+  font-size: clamp(22px, 35px, 40px);
   font-family: "Georgia", serif;
 }
 
@@ -1248,6 +1255,7 @@ h6 {
   display: block;
   margin: 150px auto;
   position: relative;
+  text-decoration: none;
 }
 
 #maciej .contentText .btn-neon .light {
@@ -1285,8 +1293,8 @@ h6 {
 }
 
 #maciej .contentText .btn-neon:hover {
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #7f7f7f;
+  color: #7f7f7f;
   text-shadow: 0 0 4px #fff;
   box-shadow: inset 0 0 6px #fff, 0 0 6px #fff;
 }
@@ -1295,9 +1303,9 @@ h6 {
 
 #textArrow {
   color: #373737;
-  font-size: min(4.5vw, 38px);
+  font-size: min(4.5vw, 35px);
   font-family: "Georgia", serif;
-  line-height: 0.9;
+  line-height: 1.1;
   margin-top: 100px;
 }
 
@@ -1320,17 +1328,25 @@ h6 {
   transform: scaleX(0.9) rotate(10deg);
 }
 
+section.arrowContainer {
+  padding: 0 100px;
+}
+
 #textArrow h2 {
-  color: #fff;
-  font-size: min(6vw, 90px);
+  color: #7f7f7f;
+  font-size: min(8vw, 90px);
   text-align: center;
   font-weight: normal;
   margin-bottom: 50px;
+  max-width: 1000px;
+  margin-inline: auto;
+  line-height: clamp(50px, 90px, 100px);
 }
 
 #textArrow .rowD {
   display: flex;
   justify-content: center;
+  gap: 100px;
 }
 
 #textArrow .rowD .orange {
@@ -1347,13 +1363,13 @@ h6 {
 }
 
 #textArrow .rowD>div {
-  margin: 80px;
+  margin: 80px 0;
 }
 
 
 #textArrow .rowD img {
   position: absolute;
-  left: 50%;
+  left: 47%;
   transform: translate(-50%, 0);
 }
 
@@ -1405,17 +1421,20 @@ h6 {
   display: flex;
   z-index: 2;
   position: relative;
-  padding: 60px;
+  padding: 0 60px 0 0;
+  max-width: 800px;
 }
 
 #guarantee .rowD h2 {
-  font-size: min(6vw, 72px);
+  font-size: min(6vw, 70px);
   font-weight: normal;
+  line-height: min(24vh, 70px);
 }
 
 #guarantee .rowD p {
   margin-top: 50px;
   font-size: min(4vw, 24px);
+  max-width: 500px;
 }
 
 #guarantee .rowD p b {
@@ -1433,7 +1452,7 @@ h6 {
 }
 
 #guarantee .rowD .imgs img {
-  bottom: 0px;
+  top: -100px;
   position: absolute;
 }
 
@@ -1446,6 +1465,8 @@ h6 {
 
 #videoSection {
   padding: 0 0 100px 0;
+  max-width: 1100px;
+  margin-inline: auto;
 }
 
 #videoSection> :nth-child(1) {
@@ -1460,16 +1481,19 @@ h6 {
 }
 
 #videoSection> :nth-child(1) h2 {
-  font-size: 120px;
+  font-size: clamp(50px, 100px, 120px);
   padding: 100px 0 50px 0;
   letter-spacing: -1px;
   font-family: "Playfair Display", serif;
   font-weight: 900;
+  max-width: 1000px;
+  margin-inline: auto;
+  line-height: clamp(50px, 100px, 120px);
 }
 
 #videoSection> :nth-child(1) p {
-  padding: 30px;
-  font-size: 50px;
+  padding: 0 0 30px;
+  font-size: clamp(30px, 40px, 50px);
   letter-spacing: -0.5px;
   line-height: 1.33;
 }
@@ -1534,7 +1558,7 @@ h6 {
 }
 
 #videoSection> :nth-child(2) .para img.dot4 {
-  top: 800px;
+  top: 320px;
   z-index: -2;
   left: -450px;
   transform: scale(0.5);
@@ -1562,10 +1586,11 @@ h6 {
 }
 
 #videoSection> :nth-child(2) .textVideo {
-  padding-left: 70px;
+  padding-left: 120px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 
@@ -1596,27 +1621,27 @@ h6 {
 #videoSection .textWithArrow {
   left: -50px;
   position: relative;
-  z-index: 20;
+  /* z-index: 20;
   display: flex;
   justify-content: center;
   overflow: hidden;
   align-items: stretch;
-  padding: 110px 0;
+  padding: 110px 0; */
 }
 
 #videoSection .textWithArrow div {
   cursor: pointer;
-  color: #f2f2f2;
+  color: #656565;
 }
 
 #videoSection .textWithArrow div h3 {
   text-align: right;
   font-family: "Arial", serif;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: 100;
   text-transform: uppercase;
-  font-size: min(2.7vw, 24px);
+  font-size: min(2.7vw, 22px);
 }
 
 #videoSection .textWithArrow div p {
@@ -1630,17 +1655,16 @@ h6 {
 }
 
 #videoSection .textWithArrow div.active h3 {
+  max-width: 250px;
   position: relative;
-  width: max-content;
-  float: right;
 }
 
 #videoSection .textWithArrow div.active h3:after {
   position: absolute;
   bottom: -10px;
-  left: 17px;
+  right: 0;
   display: block;
-  width: 110%;
+  width: 80%;
   height: 5px;
   content: "";
   background: #1ec19b;
@@ -1654,9 +1678,9 @@ h6 {
 #videoSection .textWithArrow div.active h3:before {
   position: absolute;
   bottom: -10px;
-  left: 17px;
+  right: 0px;
   display: block;
-  width: 109%;
+  width: 80%;
   height: 5px;
   content: "";
   background: #1ec19b;
@@ -1682,6 +1706,8 @@ h6 {
   font-family: "Georgia", serif;
   color: #333;
   text-align: center;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 #WhatGet p {
@@ -1770,10 +1796,9 @@ h6 {
 /* -------------------Stage Section------------- */
 
 #stage {
-  max-width: 100vw;
+  max-width: 1000px;
   overflow: hidden;
   height: 6530px;
-  max-width: 1500px;
   margin: auto;
   line-height: 1;
   position: relative;
@@ -1817,7 +1842,7 @@ h6 {
   font-family: "Playfair Display", serif;
   background: linear-gradient(0deg, #e3e3e3 0%, white 40%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: gray;
 }
 
 #stage .mobilenumber {
@@ -1832,11 +1857,12 @@ h6 {
 }
 
 #stage h2 {
-  font-size: min(10vw, 115px);
-  padding: 100px 0 50px 0;
+  font-size: min(10vw, 100px);
+  padding: 100px 0 0px 0;
   letter-spacing: -1px;
   font-weight: 900;
   font-family: "Playfair Display", serif;
+  line-height: min(10vw, 100px);
 }
 
 #stage .line {
@@ -2157,6 +2183,8 @@ h6 {
 
 #highResult {
   margin-top: 420px;
+  max-width: 1100px;
+  margin-inline: auto;
 }
 
 #highResult video {
@@ -2174,7 +2202,7 @@ h6 {
   color: #373737;
   letter-spacing: -1px;
   text-align: center;
-  font-size: min(10vw, 66px);
+  font-size: min(10vw, 60px);
 }
 
 
@@ -2227,13 +2255,34 @@ h6 {
 
 
 #highResult p {
-  font-size: min(5vw, 40px);
+  font-size: min(5vw, 35px);
   font-family: Georgia;
   color: #373737;
   margin: 30px 0;
 }
 
+.paraResult p:nth-child(1) {
+  max-width: 700px;
+}
+
+.paraResult p:nth-child(2) {
+  max-width: 600px;
+}
+
+.paraResult p:nth-child(3) {
+  max-width: 450px;
+}
+
+.paraResult p:nth-child(4) {
+  max-width: 400px;
+}
+
 /* -------------------- FAQ section --------------- */
+.header__top__left{
+  font-family: "Playfair Display", serif;
+  max-width: 800px;
+  margin-inline: auto;
+}
 
 #faq .header__top__left h2 {
   font-family: "Playfair Display", serif;
@@ -2439,671 +2488,274 @@ h6 {
   font-size: 20px;
 }
 
-@media (max-width: 1600px) {
-  #WhatGet a>span>span {
-    padding: 20px;
-  }
+/* -----------------new------------- */
+.UXBannerContainer {
+  width: 95%;
+  margin-inline: auto;
+  padding-block: 50px 0;
 }
 
-@media (max-width: 1500px) {
-  #ImageSection h2 {
-    margin-bottom: 2vw;
-    font-size: 5vw;
-  }
+.UXheroVideo video {
+  width: 90% !important;
+}
 
-  #ImageSection>div h2 {
-    font-size: 13vw;
-    line-height: 1;
-    transform: translateY(-60px);
-  }
+.numberContainer {
+  padding: 0 50px;
+}
 
-  #ImageSection>div>* {
-    width: 85vw !important;
-    max-height: none;
-    height: calc((936 / 1440) * 95vw) !important;
-  }
+/* --------------- */
+section.dCard {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.cardBG {
+  background: #FF5000;
+  border-radius: 25px 25px 0 0;
+  width: 95%;
+  margin: 0 auto;
+  max-height: 230px;
+}
+.cardBG .cardMainImg {
+  margin-left: -10px;
+  margin-top: -20px;
+  width: 100%;
+  max-height: 220px;
+}
+.cardBox {
+  position: relative;
+}
+.cardHeading {
+  background: white;
+  width: 95%;
+  margin-inline: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px lightgray;
+}
+.cardHeading h3 {
+  color: #FF5000;
+  font-size: 28px;
+  font-weight: 600;
+}
+.cursor {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  border: 3px solid #ff9667;
+  border-radius: 100%;
+}
+.cursor img {
+  width: 20px;
+  display: block;
+  margin: 10px 0 0 15px;
+}
+.cursor h6 {
+  background: #ff5000;
+  font-size: 14px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.projects-custom-typed-text {
+  font-size: clamp(40px, 50px, 100px);
+  margin-block: 100px;
+  color: #dd4203;
+}
 
-  #stage .stageD {
-    margin: 0 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  #stage .stageD video {
-    max-width: 100vw;
-    position: relative;
-    left: -30px;
-  }
-
-  #stage .stageD .texts {
-    display: block !important;
-  }
-
-  #stage>div:nth-child(1) p {
-    padding: 0;
-  }
-
-  #videoSection> :nth-child(1) h2 {
-    font-size: 7.5vw;
-    padding-bottom: 0px;
-    padding-top: 0;
-  }
-
-  #videoSection {
-    padding: 20px;
-    margin-top: 100px;
-  }
-
-  #guarantee .rowD .imgs {
-    display: none;
-  }
-
-  #guarantee .rowD {
-    margin-top: 30px;
-    padding: 20px;
-    flex-direction: column-reverse;
-  }
-
-  #guarantee>img {
-    margin: 0 auto;
-  }
-
-  #guarantee {
-    margin-top: 0;
-    padding-top: 100px;
-    overflow: hidden;
-    margin-bottom: 0px;
-    max-width: 100%;
-  }
-
-  #guarantee .mobileImg {
-    display: block;
-    position: relative;
-  }
-
-  #guarantee .hand1Img,
-  #guarantee .hand2Img {
-    position: absolute;
-    bottom: 0;
-  }
-
-  #guarantee img {
-    width: 80vw;
-  }
-
-  #guarantee .hand1Img {
-    width: 60vw;
-    right: 2vw;
-    bottom: -14vw;
-  }
-
-  #guarantee .hand2Img {
-    width: 45vw;
-    left: 2vw;
-  }
-
-  #guaranteeWrapper {
-    padding: 0;
-  }
-
-  #textArrow .one {
-    text-align: left;
-    margin: 10px 50px;
-    max-width: 700px;
-  }
-
-  #textArrow .one br {
-    display: block;
-  }
-
-  #textArrow .rowD img {
-    display: none;
-  }
-
-  #textArrow .rowD>div {
-    margin: 10px 50px;
-  }
-
-  #textArrow .rowD>div p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  #textArrow .rowD {
-    flex-direction: column;
-  }
-
-  #textArrow h2 {
-    padding: 10px;
-  }
-
-  #textArrow {
-    padding-left: 20px;
-    line-height: 1.1;
-  }
-
-  #maciej .contentText p {
-    font-size: 4vw;
-  }
-
-  #maciej .contentText h2 {
-    font-size: 8vw;
-  }
-
-  #maciej .contentText {
-    margin-top: 50px;
-    overflow: hidden;
-  }
-
-  #maciej .imgs {
-    display: none;
-  }
-
-  #maciej {
-    height: auto;
-    display: block;
-  }
-
-  #header>div div .subitle {
+video.mobileVideo {
+  display: none;
+}
+/* ----------------------------------media screen ----------------------- */
+@media only screen and (max-width: 1024px){
+  #header>div div .titleHead>span{
     margin: 0;
-    padding: 0 !important;
   }
-
-  #header>div div .subitle:nth-child(3) {
-    padding-bottom: 10px !important;
+  #header>div div .titleHead{
+    padding-left: 0;
   }
-
-  #header>div div .titleHead {
-    padding: 0;
-  }
-
-  #header>div div .titleHead>span {
+  #header>div div .subitle{
     margin-left: 0;
   }
-
-  #header>div video {
-    max-width: 70vw;
-    left: 0;
-    margin: auto;
+  #header>div div .subitle:nth-child(3){
+    padding-left: 0;
   }
-
-  #header>div {
-    flex-direction: column-reverse;
-    margin-top: 100px;
-  }
-}
-
-@media (min-width: 1400px) {
-  #stage .stageD>div.texts {
-    text-align: right;
-  }
-}
-
-@media (max-width: 1400px) {
-  #messagesSection .timer .cell {
-    width: 20px;
-    height: 40px;
-  }
-
-  #messagesSection .timer.timerBrands3 {
-    width: 1vw;
-  }
-
-  #messagesSection .ani2.slotContainer {
-    width: 7vw;
-  }
-
-  #messagesSection .slotContainer {
-    width: 90px;
-    height: 40px;
-    top: 1.6vw;
-  }
-
-  #stage .dots {
-    display: none;
-  }
-
-  #stage .mobilenumber {
-    display: block;
-  }
-
-  #stage {
-    height: auto;
-    overflow: hidden;
-  }
-
-  #videoSection> :nth-child(2) .para img {
-    display: none;
-  }
-
-  #messagesSection .text2 {
-    padding: 0 20px;
-    padding-top: 50px;
-    text-align: center;
-  }
-
-  #messagesSection h2 span img {
-    width: 37vw;
-    bottom: -2vw;
-  }
-
-  #messagesSection h2 {
-    font-size: 14vw;
-    line-height: 1;
-  }
-}
-
-@media (max-width: 1350px) {
-  #faq {
-    margin-top: 50px;
-    max-width: 90vw;
-  }
-
-  #videoSection> :nth-child(1) .mobile {
-    display: block;
-  }
-
-  #videoSection> :nth-child(1) br {
-    display: none;
-  }
-}
-
-@media (max-width: 1300px) and (max-width: 450px) {
-  #highResult .row div:nth-child(2) {
-    top: -400px;
-  }
-}
-
-@media (max-width: 1300px) {
-  #faq .h6 {
-    font-size: 16px;
-  }
-
   #numbers {
-    max-width: 800px;
-    flex-wrap: wrap;
-  }
+    display: grid;
+    justify-content: normal;
+    grid-template-columns: auto auto;;
+}
+#numbers div {
+  padding: 0 30px;
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+#messagesSection {
+  padding-top: 50px;
+  padding-inline: 50px;
+}
+.cardBox {
+  margin-bottom: 70px;
+}
+section.dCard {
+  margin-inline: 50px;
+}
+.cardBG .cardMainImg {
+  margin-left: -10px;
+  margin-top: -20px;
+  width: 100%;
+  max-height: 260px;
+}
+.cardBG {
+  max-height: 260px;
+}
+#maciej .imgs>img:nth-child(1), #maciej .imgs>picture:nth-child(1) {
 
-  #numbers p {
-    margin-top: 10px !important;
-  }
+  display: none;
+}
+#maciej .contentText {
+  margin-top: 0px;
+  padding-inline: 50px;
+}
+#maciej .contentText h2 {
+  font-size: 65px;
+}
+#maciej .contentText .btn-neon{
+  margin: 80px auto 0;
+}
+#textArrow {
+  margin-top: 0px;
+}
+#maciej {
+  height: 810px;
+}
+#textArrow h2 {
+  line-height: 70px;
+}
+section.arrowContainer {
+  padding: 0 50px;
+}
+#textArrow .rowD {
+  gap: 0px;
+  flex-direction: column;
+}
+#textArrow .rowD img {
+  display: none;
+}
+#textArrow .rowD>div {
+  margin: 0px 0 40px;
+}
+#textArrow .one {
+  text-align: left;
+}
+#guarantee>img {
+  max-width: 50%;
+}
 
-  #boxySection .content {
-    max-width: none;
-    width: calc(100% + 270px + (((100% - 810px) / 4)));
-  }
+#guarantee .rowD {
+  padding: 0 50px 0 50px;
+  flex-direction: column;
+}
+#guarantee .rowD .imgs img {
+  top: 0;
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  display: block;
+}
+#guaranteeWrapper {
+  padding-bottom: 50px;
+}
+#videoSection> :nth-child(1) h2 {
+  font-size: clamp(50px, 80px, 120px);
+  padding: 100px 0 50px 0;
+  line-height: clamp(50px, 80px, 120px);
+}
+#videoSection {
+  padding: 0 50px 0px;
+}
+#videoSection> :nth-child(2) .textVideo {
+  flex-direction: row;
+}
+#videoSection .textWithArrow div h3 {
+  text-align: left;
+}
 
-  #boxySection .container2:nth-child(4):not(.left):not(.leftS1):not(.leftS2) {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-  }
+#videoSection .textWithArrow div.active h3:after {
+  width: 100%;
+}
+#videoSection .textWithArrow div.active h3:before {
+  width: 100%;
+}
+#videoSection> :nth-child(2) .para img.dot2 {
+  top: 350px;
+  left: -360px;
+}
+#WhatGet {
+  padding-inline: 50px;
+}
+#WhatGet a {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+#highResult {
+  margin-top: 100px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+video.mobileVideo {
+  display: block;
+}
+#videoSection> :nth-child(2) #videos{
+  left: 0;
+  width: 100%;
+}
+#videoSection> :nth-child(2) #videos .videoBg {
+  width: 111%;
+}
+div#videos video {
+  width: 100% !important;
+}
+video.desktopVideo {
+  display: none;
+}
 
-  #boxySection .container2.left {
-    -webkit-transform: translateX(calc((((100vw - var(--scrollbar-width) - 810px) / 4) * -1) - 270px));
-    -ms-transform: translateX(calc((((100vw - var(--scrollbar-width) - 810px) / 4) * -1) - 270px));
-    transform: translateX(calc((((100vw - var(--scrollbar-width) - 810px) / 4) * -1) - 270px));
-  }
-
-  #textArrow p>span span {
-    letter-spacing: -1px;
-  }
-
-  #videoSection> :nth-child(2) {
-    flex-direction: column;
-    margin-top: 0px;
-  }
-
-  #videoSection> :nth-child(2) #videos {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    max-width: 100vw;
-  }
-
-  #videoSection> :nth-child(2) .textVideo {
-    flex-direction: row;
-    gap: 60px;
-  }
-
-  #videoSection .textWithArrow div h3 {
-    text-align: center;
-    font-weight: bold;
-  }
-
-  #videoSection .textWithArrow div.active h3 {
-    text-align: center;
-  }
-
-  #videoSection .textWithArrow div.active h3:before,
-  #videoSection .textWithArrow div.active h3:after {
-    left: 0;
+}
+@media only screen and (max-width:767px){
+  video.mobileVideo {
+    display: block;
     width: 100%;
-  }
-
-  #ImageSection {
-    margin-top: 0;
-  }
-
-  #highResult video.mobile {
-    display: block;
-    margin: auto;
-    max-width: 95vw;
-  }
-
-  #highResult h2 {
-    line-height: 1;
-    margin-bottom: 8vw;
-  }
-
-  #highResult h2 .mobile {
-    display: block;
-  }
-
-  #highResult .row {
-    margin-top: 0;
-  }
-
-  #highResult .row {
-    flex-direction: column-reverse;
-  }
-
-  #highResult .row div:nth-child(1) {
-    position: relative;
-  }
-
-  #highResult .row div:nth-child(2) {
-    display: none;
-    left: auto;
-    position: absolute;
-    top: -500px;
-  }
-
-  #highResult .row video {
-    max-width: 96vw;
-    clip-path: polygon(1% 0, 99% 0, 99% 100%, 1% 100%);
-  }
-
-  #faq .faq-item__content[data-v-7b10b9fb] {
-    padding-right: 25vw;
-  }
+}
+#messagesSection h2 {
+  font-size: 40px;
+}
+#header>div div .titleHead .UX {
+    top: -60px;
+    left: 140px;
+}
+#numbers {
+  display: block;
+}
+#numbers div {
+  margin-bottom: 50px;
+}
+#maciej .contentText h2 {
+  font-size: 35px;
+}
+#messagesSection {
+  padding-top: 20px;
+  padding-inline: 20px;
+}
+#messagesSection .text2 {
+  padding-top: 20px;
+}
+#messagesSection .text2>p, #messagesSection .text2>div {
+  font-size: clamp(16px, 22px, 40px);
+}
+.projects-custom-typed-text{
+  font-size: clamp(30px, 30px, 100px);
 }
 
-@media (max-width: 1200px) {
-  #faq .header__top__left {
-    margin-bottom: 50px;
-    font-size: 5vw;
-  }
-
-  #WhatGet a {
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  #faq .faq-item__header[data-v-7b10b9fb] {
-    padding: 24px;
-  }
-
-  #faq .faq-item__content p[data-v-7b10b9fb] {
-    padding: 0 24px 24px;
-  }
-}
-
-@media (max-width: 1000px) {
-  #makiety .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #makiety .buttons a {
-    margin: 20px;
-  }
-
-  #makiety .mockups img {
-    width: 90vw;
-    left: 5vw;
-  }
-
-  #makiety {
-    margin-bottom: 520px;
-  }
-
-  @media not all and (min-resolution: 0.001dpcm) {
-    #makiety {
-      margin-top: 50px;
-    }
-  }
-
-  #videoSection> :nth-child(2) #videos video {
-    max-width: 85vw;
-    position: relative;
-    z-index: -1;
-    transform: translate(28px, -6px);
-  }
-
-  #videoSection> :nth-child(2) #videos video:nth-child(4) {
-    transform: translate(23px, -6px);
-  }
-
-  #videoSection> :nth-child(2) #videos .videoBg {
-    max-width: 90vw;
-    top: -15px;
-    left: 0.2vw;
-  }
-
-  #textArrow .one {
-    margin: 10px 10px;
-  }
-
-  #textArrow .rowD>div {
-    margin: 10px 10px;
-  }
-
-  #header>div div .subitle>span span {
-    letter-spacing: -2.5px;
-  }
-
-  #header>div div {
-    margin-top: -30px;
-  }
-}
-
-@media (max-width: 950px) {
-  #boxySection .content {
-    width: calc(100% + 540px + (((100% - 540px) / 3)) * 2);
-  }
-
-  #boxySection .container2:nth-child(3):not(.leftS1):not(.leftS2) {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-
-  #boxySection .container2:nth-child(4):not(.leftS2) {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-
-  #boxySection .container2.leftS1 {
-    -webkit-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 540px) / 3)) * 1 * -1) - 270px));
-    -ms-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 540px) / 3)) * 1 * -1) - 270px));
-    transform: translateX(calc(((((100vw - var(--scrollbar-width) - 540px) / 3)) * 1 * -1) - 270px));
-  }
-
-  #boxySection .container2.leftS2 {
-    -webkit-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 540px) / 3)) * 2 * -1) - 540px));
-    -ms-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 540px) / 3)) * 2 * -1) - 540px));
-    transform: translateX(calc(((((100vw - var(--scrollbar-width) - 540px) / 3)) * 2 * -1) - 540px));
-  }
-
-  #ImageSection>div>* {
-    width: 85vw !important;
-    max-height: none;
-    height: calc((1445 / 995) * 95vw) !important;
-  }
-}
-
-@media (max-width: 900px) {
-  #boxySection .writeText a span {
-    font-size: 10vw;
-  }
-}
-
-@media (max-width: 800px) {
-  #header>div {
-    align-items: unset;
-    overflow: hidden;
-  }
-
-  #maciej .contentText .btn-neon {
-    margin: 15vw auto;
-    font-size: 5vw;
-  }
-
-  #textArrow {
-    margin-top: 0px;
-    padding-left: 20px;
-    line-height: 1.2;
-  }
-
-  #videoSection> :nth-child(1) p {
-    font-size: 5vw;
-  }
-
-  #videoSection> :nth-child(1) p>span:not(:nth-child(1)) {
-    font-size: 5.2vw;
-  }
-
-  #faq a>span {
-    transform: translate(-5px, -5px);
-  }
-
-  #faq a>span>span {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  #faq .faq-item__header[data-v-7b10b9fb] {
-    padding: 20px 24px;
-  }
-
-  #faq .faq-item__content[data-v-7b10b9fb],
-  #faq .faq-item__content p[data-v-7b10b9fb] {
-    font-size: 14px;
-  }
-
-  #faq .faq-item__content p[data-v-7b10b9fb] {
-    padding: 0 24px 20px;
-  }
-}
-
-@media (max-width: 700px) {
-  #videoSection> :nth-child(2) .textVideo {
-    gap: 30px;
-  }
-
-  #makiety .arrow div {
-    font-size: 30px;
-  }
-
-  #makiety .buttons a {
-    margin: 10px;
-    font-size: 25px;
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 650px) {
-  #boxySection .content {
-    width: calc(100% + 810px + (((100% - 270px) / 2)) * 3);
-  }
-
-  #boxySection .container2.leftS1 {
-    -webkit-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 1 * -1) - 270px));
-    -ms-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 1 * -1) - 270px));
-    transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 1 * -1) - 270px));
-  }
-
-  #boxySection .container2.leftS2 {
-    -webkit-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 2 * -1) - 540px));
-    -ms-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 2 * -1) - 540px));
-    transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 2 * -1) - 540px));
-  }
-
-  #boxySection .container2.leftS3 {
-    -webkit-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 3 * -1) - 810px));
-    -ms-transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 3 * -1) - 810px));
-    transform: translateX(calc(((((100vw - var(--scrollbar-width) - 270px) / 2)) * 3 * -1) - 810px));
-  }
-
-  #boxySection .container2:nth-child(3):not(.leftS2) {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-
-  #boxySection .container2:nth-child(4):not(.leftS3) {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-
-  #boxySection .container2:nth-child(2):not(.leftS1) {
-    -webkit-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-
-  #header>div div .titleHead .UX {
-    top: -13vw;
-    left: 33vw;
-  }
-
-  #videoSection .textWithArrow {
-    padding: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  #header>div video {
-    max-width: 95vw;
-  }
-}
-
-@media (max-width: 500px) {
-  #makiety .arrow div {
-    font-size: 25px;
-  }
-
-  #messagesSection .slotContainer {
-    width: 62px;
-    height: 24px;
-    top: 1.6vw;
-  }
-
-  #messagesSection .ani2.slotContainer {
-    width: 7.3vw;
-  }
-
-  #messagesSection .timer .cell {
-    width: 14px;
-    height: 26px;
-  }
-
-  #messagesSection .text2>p,
-  #messagesSection .text2>div {
-    font-size: 20px;
-  }
 }
