@@ -3,22 +3,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type ratingType = {
   rating: number;
+  size?: string;
+  noShadow?: boolean;
 };
 
-const Stars = ({ rating }: ratingType) => {
+const Stars = ({ rating, size, noShadow }: ratingType) => {
   const tempArray = Array.from({ length: 5 }, (_, index) => {
     const number = index + 0.5;
     return (
       <span key={index}>
         {rating >= index + 1 ? (
-          // <i className="fa-solid fa-star star"></i>
-          <FontAwesomeIcon icon={faStar} className="star" />
+          <FontAwesomeIcon
+            icon={faStar}
+            className="star"
+            style={{ fontSize: size || "" }}
+          />
         ) : rating >= number ? (
-          // <i className="fa-solid fa-star-half-stroke star"></i>
-          <FontAwesomeIcon icon={faStarHalfStroke} className="star" />
+          <FontAwesomeIcon
+            icon={faStarHalfStroke}
+            className="star"
+            style={{ fontSize: size || "" }}
+          />
         ) : (
-          // <i className="fa-regular fa-star star"></i>
-          <FontAwesomeIcon icon={faStar} className="empty" />
+          <FontAwesomeIcon
+            icon={faStar}
+            className="empty"
+            style={{ fontSize: size || "" }}
+          />
         )}
       </span>
     );

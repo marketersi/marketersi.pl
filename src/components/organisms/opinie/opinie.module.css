@@ -396,6 +396,7 @@
   border-radius: 10px;
   padding: 30px 30px;
   box-shadow: 0 0 10px lightgray;
+  margin: 8px;
 }
 
 .googleCard .profile {
@@ -566,4 +567,10 @@
 .buttonContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.showAllbtn {
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
 }

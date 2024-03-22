@@ -1,79 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../opinie.module.css";
-import { Row, Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import GoogleCard from "./GoogleCard";
-import {
-  ClientCarousel,
-  CarouselContext,
-} from "../../strategia-marketingowa/ClientCarouselNext";
-import { useContext } from "react";
-
-const SlideOne = () => {
-  const { handleNext } = useContext(CarouselContext);
-  return (
-    <>
-      <div className={style.googleReview}>
-        <Row>
-          <Col sm={8}>
-            <img
-              src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75"
-              alt=""
-            />
-          </Col>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-        </Row>
-      </div>
-    </>
-  );
-};
-const SlideTwo = () => {
-  const { handleNext } = useContext(CarouselContext);
-  return (
-    <>
-      <div className={style.googleReview}>
-        <Row>
-          <Col sm={8}>
-            <img
-              src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75"
-              alt=""
-            />
-          </Col>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-          <Col sm={4}>
-            <GoogleCard />
-          </Col>
-        </Row>
-      </div>
-    </>
-  );
-};
+import Slider from "react-slick";
 
 export default function GoogleReview() {
-  const slides = [SlideOne, SlideTwo];
-  const { handleNext } = useContext(CarouselContext);
+  const [showAll, setShowAll] = useState(false);
+
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="brand_Slide_ButtonNext">
+        <div className="OurClients_Slide_Button_Text">Następna</div>
+        <div className="ArrowButton" onMouseEnter={onClick}>
+          <span className="ArrowButton_Arrow">&gt;</span>
+        </div>
+      </div>
+    );
+  }
+
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+  };
+
   return (
     <>
       <div className={style.google}>
@@ -99,7 +52,52 @@ export default function GoogleReview() {
                 </li>
               </ul>
             </div>
-            <ClientCarousel slides={slides} options={{ loop: true }} />
+
+            {/* Google Review Banner */}
+            <div className={style.googleReviewBanner}>
+              <img
+                src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75"
+                alt=""
+              />
+            </div>
+
+            <div className={style.googleReview}>
+              {showAll ? (
+                <div className={style.allItemsContainer}>
+                  <Row>
+                    {Array.from({ length: 9 }).map((_, index) => {
+                      return (
+                        <Col md={4} key={index}>
+                          <GoogleCard />
+                        </Col>
+                      );
+                    })}
+                  </Row>
+                </div>
+              ) : (
+                <Slider {...settings}>
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                  <GoogleCard />
+                </Slider>
+              )}
+
+              {!showAll && (
+                <div
+                  className={style.showAllbtn}
+                  onClick={() => setShowAll(!showAll)}
+                >
+                  Pokaż wszystkie
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
