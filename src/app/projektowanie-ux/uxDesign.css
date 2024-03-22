@@ -2757,5 +2757,10 @@ video.desktopVideo {
 .projects-custom-typed-text{
   font-size: clamp(30px, 30px, 100px);
 }
+.projects-custom-typed-text {
+  font-size: clamp(40px, 50px, 100px);
+  margin-block: 80px;
+  color: #dd4203;
+}
 
 }
