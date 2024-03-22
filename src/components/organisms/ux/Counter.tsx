@@ -8,7 +8,7 @@ const Counter = () => {
   console.log("screenData from counter", CounterData);
   return (
     <>
-      <section>
+      <section className="numberContainer">
         <div id="numbers">
           {CounterData.map((item, index) => (
             <div key={index}>

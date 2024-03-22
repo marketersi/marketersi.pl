@@ -88,3 +88,7 @@ h2.textAnimation {
   text-align: center;
   margin: 0 0 50px;
 }
+.accordion-item {
+  max-width: 1000px;
+  margin-inline: auto;
+}

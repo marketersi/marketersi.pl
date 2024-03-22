@@ -1,1 +1,0 @@
-export { default as Banner } from "@/components/organisms/opinie/banner/Banner";

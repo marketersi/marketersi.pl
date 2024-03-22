@@ -9,6 +9,7 @@ const ReviewCard = () => {
   const BrilliantJob = screenData.BrilliantJob || [];
 
   return (
+    <div className="review">  
     <div className="review_container">
       <div className="reviewer_image_container">
         <img src={BrilliantJob[0]?.image_url} alt="reviewer_image" />
@@ -38,6 +39,7 @@ const ReviewCard = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

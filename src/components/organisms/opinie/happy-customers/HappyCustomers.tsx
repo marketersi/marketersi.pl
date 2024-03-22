@@ -25,7 +25,8 @@ const HappyCustomers = () => {
   };
 
   return (
-    <div className="customer_replies_container">
+    <div className="replies">
+      <div className="customer_replies_container">
       <h1>
         Zapytaliśmy setkę klientów za co uwielbiają współpracę , z nami oto co
         odpowiedzieli...
@@ -43,6 +44,7 @@ const HappyCustomers = () => {
           ))}
         </Slider>
       </div>
+    </div>
     </div>
   );
 };
