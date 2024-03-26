@@ -17,6 +17,7 @@ export default function AnswerAll() {
           alt="AnswerAllImage"
           height={299}
           width={1001}
+          className="yes_accordion_image"
         />
       </div>
     </div>
