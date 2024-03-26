@@ -1924,6 +1924,12 @@ img.strategyImg {
     line-height: 50px;
   }
 
+  .MainHeading_Title span {
+    background-size: 100% 0.15em;
+    background-position: 0 1lh;
+    background-repeat: no-repeat;
+  }
+
   .MainHeading_SecondTitle {
     font-size: 34px;
     line-height: 50px;
@@ -2000,6 +2006,10 @@ img.strategyImg {
     font-size: 22px;
     line-height: 40.2px;
     text-align: center;
+  }
+
+  .Analysis4_Panel {
+    display: block;
   }
 
   .Analysis_Card_img_order img {
@@ -2109,6 +2119,9 @@ img.strategyImg {
 
   .WhatRecieve_Table {
     flex-direction: column;
+    text-align: justify;
+    margin: 0 auto 50px auto;
+    justify-content: baseline;
   }
 
   .WhatRecieveImage1 img {
@@ -2256,7 +2269,7 @@ img.strategyImg {
   }
 
   .ImageAdvantage_Table {
-    align-items: start;
+    align-items: center;
   }
 
   .WhatRecieve_Dropdown_TitleTwo {
@@ -2291,6 +2304,10 @@ img.strategyImg {
   .CenikModal {
     max-width: 100%;
     width: 100%;
+  }
+
+  .QuoteOne_Image img {
+    width: 90vw;
   }
 }
 
