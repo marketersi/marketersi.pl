@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 
 const SelectedProjects = () => {
-  const { isLoading, screenData } = useSelector((state) => state.consulting);
+  const { screenData } = useSelector((state) => state.consulting);
 
   const { Projects } = screenData || {};
   const { subtitle, title, Cards } = Projects || {};
@@ -14,17 +14,9 @@ const SelectedProjects = () => {
   return (
     <Container className="sp_sec">
       <div className="sp_header">
-        <h2>
-          {/* Wybrane <br />
-          realizacje */}
-          {title}
-        </h2>
+        <h2>{title}</h2>
         <p>
-          <em>
-            {/* Chcesz wiedzieć jak możemy pomóc? <br /> Najlepiej zobacz jak
-            pomogliśmy innym. */}
-            {subtitle}
-          </em>
+          <em>{subtitle}</em>
         </p>
       </div>
 
@@ -45,9 +37,16 @@ const SelectedProjects = () => {
             <div className="my-5" key={index}>
               <Row className="justify-content-center">
                 <Col lg={6}>
-                  <img src={banner_image} alt="project-banner-image"  className="left-card-img"/>
+                  <img
+                    src={banner_image}
+                    alt="project-banner-image"
+                    className="left-card-img"
+                  />
                 </Col>
-                <Col lg={4} className="d-flex justify-content-center align-items-center">
+                <Col
+                  lg={4}
+                  className="d-flex justify-content-center align-items-center"
+                >
                   <div className="sp_card_right text-center">
                     <p>{title}</p>
                     <h2>{info}</h2>
@@ -71,7 +70,10 @@ const SelectedProjects = () => {
           return (
             <div className="sp_card_container" key={index}>
               <Row>
-                <Col lg={5} className="d-flex justify-content-center align-items-center order-lg-1 order-2">
+                <Col
+                  lg={5}
+                  className="d-flex justify-content-center align-items-center order-lg-1 order-2"
+                >
                   <div className="sp_card_left text-center">
                     <p>{title}</p>
                     <h2>{info}</h2>
@@ -85,7 +87,11 @@ const SelectedProjects = () => {
                   </div>
                 </Col>
                 <Col lg={6} className="order-lg-2 order-1">
-                  <img src={banner_image} alt="project-banner-image" className="left-card-img"/>
+                  <img
+                    src={banner_image}
+                    alt="project-banner-image"
+                    className="left-card-img"
+                  />
                 </Col>
               </Row>
             </div>
@@ -97,51 +103,3 @@ const SelectedProjects = () => {
 };
 
 export default SelectedProjects;
-
-{/* <div className="sp_card_container">
-  <Row>
-    <Col lg={4} className="d-flex justify-content-center align-items-center">
-      <div classNae="sp_card_left text-center">
-        <p>XCEED</p>
-        <h2>od zera do 40 000 000 PLN rocznego obrotu w 5 lat.</h2>
-        <div>
-          <p>Aplikacja / B2C</p>
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
-    </Col>
-    <Col lg={6}>
-      <img
-        src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FXceed%20app.c37538a7.jpg&w=750&q=75"
-        alt=""
-      />
-    </Col>
-  </Row>
-</div>; */}
-
-{/* <div className="my-5">
-  <Row>
-    <Col lg={6}>
-      <img
-        src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcupsell.e2c17028.jpg&w=750&q=75"
-        alt=""
-      />
-    </Col>
-    <Col lg={4}   className="d-flex justify-content-center align-items-center">
-      <div className="sp_card_right text-center">
-        <p>ClickSell</p>
-        <h2>Sklep dla graczy od zera do 3 000 000 PLN w 2 lata.</h2>
-        <div>
-          <p>eCommerce / Startup</p>
-          <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
-    </Col>
-  </Row>
-</div>; */}
