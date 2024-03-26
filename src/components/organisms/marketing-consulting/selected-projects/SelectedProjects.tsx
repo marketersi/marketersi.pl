@@ -53,12 +53,8 @@ const SelectedProjects = () => {
                     <div>
                       <p>{catagory}</p>
                       <div>
-                        <img
-                          src={flag_logo_1}
-                          alt="flag logo 1"
-                          className="me-1"
-                        />
-                        <img src={flag_logo_2} alt="flag logo 2" />
+                        <img src={flag_logo_1} className="me-1" />
+                        <img src={flag_logo_2} />
                       </div>
                     </div>
                   </div>
