@@ -1616,8 +1616,8 @@ display: block;
 
 .ArrowButton {
   display: flex;
-  height: 2em;
-  width: 2em;
+  height: 2.5em;
+  width: 2.5em;
   flex-direction: column;
   align-items: center;
   justify-content: center;

@@ -15,7 +15,7 @@ const Brands = () => {
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-      <div className="brand_Slide_ButtonNext">
+      <div className="brandImgBtn">
         <div className="OurClients_Slide_Button_Text">Następna</div>
         <div className="ArrowButton" onMouseEnter={onClick}>
           <span className="ArrowButton_Arrow">&gt;</span>
@@ -40,7 +40,10 @@ const Brands = () => {
 
           {brand?.map((e, i) => {
             return (
-              <div className={style.brandSlide} key={i}>
+              <>
+              <div className="row">
+                <div className="col-md-10">
+                <div className={style.brandSlide} key={i}>
                 <h4>{e.brand_title}</h4>
                 <div className={style.brandSlideItem}>
                   <Slider {...settings}>
@@ -50,6 +53,9 @@ const Brands = () => {
                   </Slider>
                 </div>
               </div>
+                </div>
+              </div>
+              </>
             );
           })}
         </div>

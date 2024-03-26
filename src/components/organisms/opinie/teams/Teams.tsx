@@ -34,32 +34,22 @@ const Teams = () => {
           </div>
           <div className={style.teamsCard}>
             <Row>
-              <Col sm={6}>
+              <Col lg={6}>
                 <img className={style.maleImg} src={teams.img_two} alt="" />
                 <img className={style.femaleImg} src={teams.img_three} />
                 <h4 className={style.teamLeftContent}>
-                  {/* <span>Od 2004 roku</span> <br />
-                  zamknęliśmy <br />
-                  ponad 12 tyś. <br />
-                  projektów */}
                   {teams.para_four}
                 </h4>
               </Col>
-              <Col sm={6}>
+              <Col lg={6}>
                 <div className={style.teamsCardContent}>
                   <h5>
-                    {/* <span>Dwa zespoły.</span> <br />
-                    Jeden standard. */}
                     {teams.para_one}
                   </h5>
                   <p>
-                    {/* Owszem, często pracujemy w dużych zespołach przy złozonych
-                    projektach dla dużych firm i korporacji. */}
                     {teams.para_two}
                   </p>
                   <p>
-                    {/* Owszem, często pracujemy w dużych zespołach przy złozonych
-                    projektach dla dużych firm i korporacji. */}
                     {teams.para_three}
                   </p>
                 </div>
@@ -73,6 +63,7 @@ const Teams = () => {
             initial="offscreen"
             whileInView="onscreen"
             variants={springUp}
+            className={style.animatedCar}
           />
         </div>
       </div>

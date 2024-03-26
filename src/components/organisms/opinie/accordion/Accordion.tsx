@@ -9,7 +9,7 @@ const Accordion = ({ data }) => {
     <>
       <div className={style.accordion}>
         <div className={style.accordionContainer}>
-          <section className="accordion-container w-75">
+          <section className="accordion-container ">
             <SingleQuestion data={data} />
           </section>
         </div>
