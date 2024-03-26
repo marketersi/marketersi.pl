@@ -2,23 +2,6 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 
-// const GoodProcessData = {
-//   title: "Good Process",
-//   description: ["Good Process", "Good Process", "Good Process"],
-//   proVideo1: "goodProcess",
-//   proTitle1: "Good Process",
-//   proSubTitle1: "Good Process",
-//   proDescription1: "Good Process",
-//   proVideo2: "goodProcess",
-//   proTitle2: "Good Process",
-//   proSubTitle2: "Good Process",
-//   proDescription2: "Good Process",
-//   proVideo3: "goodProcess",
-//   proTitle3: "Good Process",
-//   proSubTitle3: "Good Process",
-//   proDescription3: "Good Process",
-// };
-
 const GoodProcess = () => {
   const { screenData } = useSelector((state) => state.ux);
   const GoodProcess = screenData.GoodProcess || {};
@@ -121,7 +104,6 @@ const GoodProcess = () => {
                   {stage_3?.number}
                 </span>
               </p>
-         
             </div>
           </div>
 

@@ -18,7 +18,6 @@ const MarketingConsulting = () => {
     console.log("consulting screen data from UI => ", screenData);
   }
 
-  
   const { screenData: PriceScreenData } = useSelector(
     (state) => state.priceList
   );
@@ -36,13 +35,13 @@ const MarketingConsulting = () => {
       {/* {isLoading ? (
         <Loader />
       ) : ( */}
-        <div>
-          <PricingOption />
-          <StandOut />
-          <SelectedProjects />
-          <CustomersReview />
-          <WhatToExpect />
-        </div>
+      <div>
+        <PricingOption />
+        <StandOut />
+        <SelectedProjects />
+        <CustomersReview />
+        <WhatToExpect />
+      </div>
       {/* )} */}
     </>
   );
