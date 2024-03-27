@@ -665,7 +665,7 @@ img.opinionBnnaerImg {
   margin-top: 0px;
 }
 /* ------------------------------media screen ------------------------------- */
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   .opinionContent h1 {
     font-size: 50px;
   }
@@ -762,7 +762,7 @@ img.opinionBnnaerImg {
   }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .opinionBanner img {
     width: 70%;
     margin-inline: auto;
@@ -856,46 +856,66 @@ img.opinionBnnaerImg {
   .googleMenu ul li {
     font-size: 22px;
     font-weight: 600;
-}
-.googleMenu ul li .playBG img {
-  width: 60%;
-}
-.hoverMenu {
-  width: 100%;
-  padding: 10px;
-  white-space: nowrap;
-}
-.mt95 {
-  margin-top: 0px;
-}
-.brand_Slide_ButtonNext {
-padding-right: 0;
-}
-.showAllbtn {
-  justify-content: flex-end;
-}
-.personallyCard {
-  padding: 30px;
-}
-.personallyCard p {
-  font-size: 22px;
-}
-.personallyCard h2 {
-  font-size: 40px;
-}
-.personallHand {
-  width: 250px;
-}
-.contact {
-  margin-bottom: 150px;
-}
-.expertLogo {
-  margin: 0px;
-}
-.expertContent h2 {
-  font-size: 40px;
-  font-weight: 300;
-  color: #3e3e3e;
-  text-align: center;
-}
+  }
+  .googleMenu ul li .playBG img {
+    width: 60%;
+  }
+  .hoverMenu {
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+  }
+  .mt95 {
+    margin-top: 0px;
+  }
+  .brand_Slide_ButtonNext {
+    padding-right: 0;
+  }
+  .showAllbtn {
+    justify-content: flex-end;
+  }
+  .personallyCard {
+    padding: 30px;
+    position: relative;
+  }
+  .personallyCard p {
+    font-size: 22px;
+  }
+  .personallyCard h2 {
+    font-size: 40px;
+  }
+  .personallHand {
+    width: 300px;
+    transform: translateX(-50px) translateY(50px);
+  }
+  .contact {
+    margin-bottom: 150px;
+  }
+  .expertLogo {
+    margin: 0px;
+  }
+  .expertContent h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #3e3e3e;
+    text-align: center;
+  }
+
+  .expertLogo img {
+    width: inherit;
+  }
+
+  .Personally {
+    z-index: 1;
+  }
+
+  .personallyContainer {
+    margin-top: 350px;
+  }
+
+  .personallMan {
+    display: block;
+    top: -400px;
+    z-index: -1;
+  }
 }

@@ -35,7 +35,7 @@
   max-width: 70%;
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width: 1024px) {
   .customer_replies_container {
     margin-top: 0;
     width: 100%;
@@ -52,23 +52,21 @@
   .accordion-container {
     max-width: 100%;
   }
-
- 
 }
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .customer_replies_container h1 {
     font-size: 35px;
-}
-.review_container {
-  flex-direction: column;
-}
-.single_review_card {
-  padding: 10px;
-  font-size: 18px;
-}
-.question h4 {
-  font-size: 22px;
-  font-weight: 400;
-}
- 
+  }
+  .review_container {
+    flex-direction: column;
+  }
+  .single_review_card {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .question h4 {
+    font-size: 22px;
+    font-weight: 400;
+  }
 }
