@@ -121,7 +121,7 @@
   text-align: left;
 }
 .MainContentTwo_Container p:nth-child(4) {
-max-width: 500px;
+  max-width: 500px;
 }
 
 /* 5. ResultTable */
@@ -446,7 +446,7 @@ img.strategyImg {
   gap: 20px;
   max-width: 800px;
 }
-.AnalysisCardDes{
+.AnalysisCardDes {
   margin: 0 0 20px;
 }
 
@@ -939,9 +939,11 @@ img.strategyImg {
 
 .Branding_Container {
   display: flex;
-  padding-inline: 100px;
   justify-content: center;
   align-items: center;
+  max-width: 60vw;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .Branding_Content_Container {
@@ -963,6 +965,7 @@ img.strategyImg {
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
+  max-width: 90%;
 }
 
 /* 15. QuoteTwo */
@@ -1077,7 +1080,7 @@ img.strategyImg {
 .OurClients_Card_Two {
   display: flex;
   align-items: center;
-  
+
   border-radius: 0px 0px 25.6px 25.6px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.15) 4px 4px 15px 0px, #ffffff 0px 0px 0px 0px,
@@ -1311,7 +1314,7 @@ img.strategyImg {
   line-height: 27px;
 }
 
-.accordion__item+.accordion__item {
+.accordion__item + .accordion__item {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1352,10 +1355,16 @@ img.strategyImg {
   --full: minmax(var(--gap), 1fr);
   display: grid;
   grid-template-columns:
-    [full-start] var(--full) [feature-start] var(--feature) [popout-start] var(--popout) [content-start] var(--content) [content-end] var(--popout) [popout-end] var(--feature) [feature-end] var(--full) [full-end];
+    [full-start] var(--full) [feature-start] var(--feature) [popout-start] var(
+      --popout
+    )
+    [content-start] var(--content) [content-end] var(--popout) [popout-end] var(
+      --feature
+    )
+    [feature-end] var(--full) [full-end];
 }
 
-.content>* {
+.content > * {
   grid-column: content;
 }
 
@@ -1410,8 +1419,8 @@ img.strategyImg {
   padding-inline: 100px;
   margin-top: -80px;
 }
-.ModalCard p{
-text-align: center;
+.ModalCard p {
+  text-align: center;
 }
 
 .component-two_section textarea {
@@ -1440,16 +1449,15 @@ text-align: center;
   justify-content: space-between;
   align-items: center;
 }
-.component-two_section{
+.component-two_section {
   margin-bottom: -50px;
 }
-.formTwo{
+.formTwo {
   margin-bottom: -50px;
 }
-.componentThree_section h2{
+.componentThree_section h2 {
   text-align: center;
 }
-
 
 .ModalDropdownTitleOne {
   color: #2d2d2d;
@@ -1469,9 +1477,9 @@ text-align: center;
   color: white;
 }
 .contact a {
-text-align: center;
-margin: 0 auto;
-display: block;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .ModalDropdownTitleTwo {
@@ -1526,7 +1534,7 @@ display: block;
   border: none;
   font-size: x-large;
 }
-.card-heading{
+.card-heading {
   text-align: center;
 }
 
@@ -1699,11 +1707,13 @@ display: block;
   pointer-events: none;
 }
 
-.embla__slide__number>span {
+.embla__slide__number > span {
   color: var(--brand-primary);
-  background-image: linear-gradient(45deg,
-      var(--brand-primary),
-      var(--brand-secondary));
+  background-image: linear-gradient(
+    45deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1895,7 +1905,7 @@ display: block;
   .faqContainer {
     padding: 70px 30px;
   }
-  .OurClients{
+  .OurClients {
     margin-bottom: 70px;
   }
   .StrategyAction_Container {
@@ -1912,6 +1922,12 @@ display: block;
   .MainHeading_Title {
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .MainHeading_Title span {
+    background-size: 100% 0.15em;
+    background-position: 0 1lh;
+    background-repeat: no-repeat;
   }
 
   .MainHeading_SecondTitle {
@@ -1990,6 +2006,10 @@ display: block;
     font-size: 22px;
     line-height: 40.2px;
     text-align: center;
+  }
+
+  .Analysis4_Panel {
+    display: block;
   }
 
   .Analysis_Card_img_order img {
@@ -2099,6 +2119,9 @@ display: block;
 
   .WhatRecieve_Table {
     flex-direction: column;
+    text-align: justify;
+    margin: 0 auto 50px auto;
+    justify-content: baseline;
   }
 
   .WhatRecieveImage1 img {
@@ -2246,12 +2269,11 @@ display: block;
   }
 
   .ImageAdvantage_Table {
-    align-items: start;
+    align-items: center;
   }
 
   .WhatRecieve_Dropdown_TitleTwo {
     padding-inline: 0px;
-
   }
 
   .WhatRecieve_Dropdown_TitleOne {
@@ -2267,20 +2289,29 @@ display: block;
     height: 100vh;
     left: 0;
     right: 0;
+  }
+  .ModalContent {
+    padding-inline: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .ModalCard {
+    margin-top: 20px;
+  }
+  .ModalTitle {
+    padding-inline: 0;
+  }
+  .CenikModal {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .QuoteOne_Image img {
+    width: 90vw;
+  }
 }
-.ModalContent{
-  padding-inline: 0;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-.ModalCard{
-  margin-top: 20px;
-}
-.ModalTitle{
-  padding-inline: 0;
-}
-.CenikModal{
-  max-width: 100%;
-  width: 100%;
-}
+
+.AnswerAll_Image img {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }

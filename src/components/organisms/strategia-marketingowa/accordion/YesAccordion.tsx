@@ -4,18 +4,8 @@ import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "./yes.css";
 import { useSelector } from "react-redux";
 
-type AccordionItem = {
-  title: string;
-  content: string;
-};
-
-type AccordionProps = {
-  items: AccordionItem[];
-};
-
-const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
-
-  const { isLoading, screenData } = useSelector((state) => state.strategy);
+const YesAccordion = () => {
+  const { screenData } = useSelector((state) => state.strategy);
   const { FAQsection } = screenData;
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -26,10 +16,9 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
 
   return (
     <>
-      
       <div className="faqContainer">
-        <div className="header__top__left" >
-        {/* <h2
+        <div className="header__top__left">
+          {/* <h2
           className="textAnimation"
           style={{
             opacity: 1,
@@ -40,25 +29,33 @@ const YesAccordion: React.FC<AccordionProps> = ({ items }) => {
         </h2> */}
         </div>
         {FAQsection?.FAQcard.map((item, index) => (
-            <div key={index} className="accordion-item">
-              <div
-                className={`accordion-title ${
-                  index === activeIndex ? "active" : ""
-                }`}
-                onClick={() => handleClick(index)}
-              >
-                {item.question}
-                {index === activeIndex ? (
-                  <FontAwesomeIcon icon={faMinus} className="icon" />
-                ) : (
-                  <FontAwesomeIcon icon={faPlus} className="icon" />
-                )}
+          <div key={index} className="accordion-item">
+            <div
+              className={`accordion-title ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onClick={() => handleClick(index)}
+            >
+              {item.question}
+
+              {/* Animated Text */}
+              <div className="yes_accordion_animated_text">
+                <span>T</span>
+                <span>A</span>
+                <span>K</span>
               </div>
-              {index === activeIndex && (
-                <div className="accordion-content">{item.answer}</div>
+
+              {index === activeIndex ? (
+                <FontAwesomeIcon icon={faMinus} className="icon" />
+              ) : (
+                <FontAwesomeIcon icon={faPlus} className="icon" />
               )}
             </div>
-          ))}
+            {index === activeIndex && (
+              <div className="accordion-content">{item.answer}</div>
+            )}
+          </div>
+        ))}
         {/* <a className="send-offer-button js--triggerAnimation">
           <span>
             <span>OK Wyślijcie mi niezobowiązującą ofertę </span>

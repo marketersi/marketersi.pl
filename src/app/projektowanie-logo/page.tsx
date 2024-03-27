@@ -27,62 +27,12 @@ import Form from "@/components/organisms/tresci-sprzedazowe/form/Form";
 import LogoFooter from "@/components/organisms/logo/logo-footer/LogoFooter";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_LOGO_SCREEN_DATA } from "@/redux/projektowanie-logo/logoAction";
-import Loader from "@/components/organisms/animation/Loader";
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 import { ModalForm } from "@/components/organisms/tresci-sprzedazowe/ModalForm";
 
-const LogoAccordionData = {
-  accordionData: [
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-    {
-      title: "Lorem ipsum dolor sit amet",
-      content: "Lorem ipsum dolor sit amet",
-    },
-  ],
-};
-
 const LogoDesignScreen = () => {
-  const { isLoading, screenData } = useSelector((state) => state.logo);
+  const { screenData } = useSelector((state) => state.logo);
   const dispatch = useDispatch();
-
-  // if (screenData) {
-  //   console.warn("🟢logo screen data ui 👉👉👉", screenData);
-  // }
 
   const { LogoAccordionData } = screenData || {};
   const { accordionData } = LogoAccordionData || {};

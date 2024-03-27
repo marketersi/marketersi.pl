@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./stand-out.css";
 import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
@@ -22,6 +22,24 @@ const StandOut = () => {
     subtitle,
     title,
   } = WhyUs || {};
+
+  const [mobile, setMobile] = useState(isMobile());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(isMobile());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  function isMobile() {
+    return typeof window !== "undefined" && window.innerWidth <= 768;
+  }
 
   return (
     <div className="so_sec">
@@ -92,13 +110,15 @@ const StandOut = () => {
         </div>
 
         <div className="so_flex">
-          <div>
-            <img
-              // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMagazyny%20o%20nas.a119f925.jpg&w=384&q=75"
-              src={info_image_url_2}
-              alt="info_image2"
-            />
-          </div>
+          {!mobile && (
+            <div>
+              <img
+                // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMagazyny%20o%20nas.a119f925.jpg&w=384&q=75"
+                src={info_image_url_2}
+                alt="info_image2"
+              />
+            </div>
+          )}
           <div>
             <h2>
               {/* Jak dobrze znamy <br /> się na marketingu? */}
@@ -111,6 +131,15 @@ const StandOut = () => {
               {info_2}
             </p>
           </div>
+          {mobile && (
+            <div>
+              <img
+                // src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMagazyny%20o%20nas.a119f925.jpg&w=384&q=75"
+                src={info_image_url_2}
+                alt="info_image2"
+              />
+            </div>
+          )}
         </div>
       </Container>
     </div>

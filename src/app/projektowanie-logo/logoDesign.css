@@ -9,6 +9,15 @@ h6 {
   margin: 0;
 }
 
+.modal_close_btn {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
 .LogoBannerContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -140,7 +149,6 @@ img.projects-main-image-logop {
   max-width: 100%;
 }
 
-
 .projects-top-section-banner:after {
   background: url() no-repeat;
 }
@@ -248,6 +256,15 @@ img.projects-main-image-logop {
 .orange-link {
   color: #e0ab06;
   border-bottom: 2px #e0ab06 solid;
+  cursor: pointer;
+}
+
+.logo_image {
+  width: 100%;
+}
+
+.orange_clickable {
+  color: #e0ab06;
   cursor: pointer;
 }
 
@@ -496,7 +513,6 @@ img.projects-main-image-logop {
 }
 
 .projects-gray-background {
-  
 }
 
 .projects-wierzymy-container {
@@ -1352,7 +1368,6 @@ img.zooImage.position-relative {
   }
 
   .projects-theme-title3 {
-
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -1386,7 +1401,6 @@ img.zooImage.position-relative {
   .projects-big-100 {
     font-size: 150px;
     line-height: 150px;
-
   }
 
   .projects-big-sub100 {
@@ -1427,7 +1441,6 @@ img.zooImage.position-relative {
     margin-bottom: -174px;
   }
 
-
   .projects-blue-section-m-text {
     padding-inline: 0;
     margin-bottom: 50px;
@@ -1440,7 +1453,6 @@ img.zooImage.position-relative {
 
   .copywriter-ending-3 {
     font-size: 26px;
-
   }
 
   .projects-custom-typed-text {
@@ -1544,7 +1556,6 @@ img.zooImage.position-relative {
     max-width: 100%;
     text-align: center;
     padding-inline: 20px;
-
   }
 
   .theme-title1 {
@@ -1742,9 +1753,9 @@ img.zooImage.position-relative {
   }
   .shopImage {
     left: -180px !important;
-}
-img.zooImage.position-relative {
-  width: 170%;
-  left: -120px !important;
-}
+  }
+  img.zooImage.position-relative {
+    width: 170%;
+    left: -120px !important;
+  }
 }

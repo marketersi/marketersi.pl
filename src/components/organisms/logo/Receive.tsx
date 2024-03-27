@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import Modal from "react-modal";
 
 const ReceiveData = {
   title: "Co otrzymasz?",
@@ -20,6 +21,14 @@ const Receive = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { ReceiveData } = screenData || {};
   const { title, subtitle, image, points } = ReceiveData || {};
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const handleButtonClick = (index) => {
+    if (index === 1) {
+      setModalIsOpen(true);
+    }
+  };
 
   return (
     <>
@@ -58,8 +67,23 @@ const Receive = () => {
                   <div className="row">
                     <div className="col-sm-12 projects-includes">
                       <ul className="projects-includes-ul">
-                        {points?.map((point) => (
-                          <li className="projects-includes-li">{point}</li>
+                        {points?.map((point, i) => (
+                          <li className="projects-includes-li" key={i}>
+                            {/* {point} */}
+                            {i === 1 ? (
+                              <>
+                                {point}{" "}
+                                <div
+                                  onClick={() => handleButtonClick(i)}
+                                  className="orange_clickable"
+                                >
+                                  (Zobacz co to jest?)
+                                </div>
+                              </>
+                            ) : (
+                              point
+                            )}
+                          </li>
                         ))}
                       </ul>
                     </div>
@@ -80,6 +104,31 @@ const Receive = () => {
           )}
         </div>
       </section>
+
+      {/* Modal */}
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+          },
+          content: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          },
+        }}
+      >
+        <img
+          src="https://www.logofirmowe.pl/Logofirmowe/projektowanie-logo-img/Responsywne.jpg"
+          alt="Modal Image"
+        />
+
+        <div onClick={() => setModalIsOpen(false)} className="modal_close_btn">
+          x
+        </div>
+      </Modal>
     </>
   );
 };

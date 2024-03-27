@@ -30,16 +30,12 @@ import Loader from "@/components/organisms/animation/Loader";
 import { FETCH_CONSULTING_SCREEN_DATA } from "@/redux/konsultacje/consultingAction";
 import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 
-
 const StrategiaMarketingowa = () => {
-
   const { isLoading, screenData } = useSelector((state) => state.strategy);
-  const { FAQsection} = screenData || {};
+  const { FAQsection } = screenData || {};
   // const {  screenData : ConsultData  } = useSelector((state) => state.consulting);
 
-  const { screenData: PriceListData } = useSelector(
-    (state) => state.priceList
-  );
+  const { screenData: PriceListData } = useSelector((state) => state.priceList);
 
   const dispatch = useDispatch();
 
@@ -52,7 +48,7 @@ const StrategiaMarketingowa = () => {
 
   return (
     <>
-    {/* {isLoading ? (
+      {/* {isLoading ? (
         <Loader />
       ) : ( */}
       <div>
@@ -114,7 +110,7 @@ const StrategiaMarketingowa = () => {
         <AnswerAll />
 
         {/* 20. Accordion */}
-        <YesAccordion items={FAQsection?.FAQcard} />
+        <YesAccordion />
       </div>
       {/* )} */}
     </>
