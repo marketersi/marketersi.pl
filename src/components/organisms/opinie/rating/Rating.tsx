@@ -13,7 +13,7 @@ const Rating = () => {
         <div className={style.ratingContainer}>
           <div className={style.faceMotion}>
             <img className={style.face} src={ratings.animated_image} alt="" />
-            {/* <img className={style.eyes} src={ratings.banner_image} alt="" /> */}
+            <img className={style.eyes} src={ratings.animated_image2} alt="" />
           </div>
           <div className={style.ratingBlackCard}>
             <Row>
@@ -22,9 +22,9 @@ const Rating = () => {
               </Col>
               <Col sm={6}>
                 <div className={style.ratingCardContent}>
-                <h6>{ratings?.paragraph_1}</h6>
-                <p>{ratings?.paragraph_2}</p>
-                <p>{ratings?.paragraph_3}</p>
+                  <h6>{ratings?.paragraph_1}</h6>
+                  <p>{ratings?.paragraph_2}</p>
+                  <p>{ratings?.paragraph_3}</p>
                 </div>
               </Col>
             </Row>

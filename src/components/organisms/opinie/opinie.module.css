@@ -276,8 +276,8 @@
 .eyes {
   position: absolute;
   z-index: 1;
-  left: 90px;
-  top: -50px;
+  left: 5%;
+  top: -30%;
 }
 
 .ratingBlackCard img {
@@ -917,5 +917,11 @@ img.opinionBnnaerImg {
     display: block;
     top: -400px;
     z-index: -1;
+  }
+
+  .eyes {
+    left: 11%;
+    top: 38%;
+    width: 210px;
   }
 }

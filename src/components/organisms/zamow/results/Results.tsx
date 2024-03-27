@@ -62,6 +62,10 @@ const Results = () => {
         <div className="p-container ">
           <p>{howTestWorks?.para1}</p>
           <p>{howTestWorks?.para2}</p>
+          <p>{howTestWorks?.para3}</p>
+          <p>{howTestWorks?.para4}</p>
+          <p>{howTestWorks?.para5}</p>
+          <p>{howTestWorks?.para6}</p>
         </div>
       </div>
     </section>
