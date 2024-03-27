@@ -33,24 +33,24 @@ const BookExamination = () => {
       {/* {isLoading ? (
         <Loader />
       ) : ( */}
-        <div>
-          <div className="bg_sunset"></div>
-          <Container className="zamow-container">
-            <ZamowHero />
-            <CustomerRating />
-            <Results />
-            <Accordion />
-            <div className="btt_btn_container">
-              <motion.button
-                onClick={handleBackToTop}
-                className="btt_btn"
-                whileHover={{ translateY: 5 }}
-              >
-                Powrót na górę
-              </motion.button>
-            </div>
-          </Container>
-        </div>
+      <div>
+        <div className="bg_sunset"></div>
+        <Container className="zamow-container">
+          <ZamowHero />
+          <CustomerRating />
+          <Results />
+          <Accordion />
+          <div className="btt_btn_container">
+            <motion.button
+              onClick={handleBackToTop}
+              className="btt_btn"
+              whileHover={{ translateY: 5 }}
+            >
+              Powrót na górę
+            </motion.button>
+          </div>
+        </Container>
+      </div>
       {/* )} */}
     </>
   );
