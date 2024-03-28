@@ -34,7 +34,7 @@ export default function Analysis() {
           </div>
 
           <div className="ImageAdvantage_Button_Container">
-            <button
+            <div
               className={`${
                 Analysis1_Dropdown_Show
                   ? "ImageAdvantage_Button"
@@ -45,7 +45,7 @@ export default function Analysis() {
               }}
             >
               ▼ {Card1?.button_text}
-            </button>
+            </div>
           </div>
         </div>
 
@@ -83,22 +83,38 @@ export default function Analysis() {
           <div className="Analysis1_Grid">
             <div className="Analysis1_GridItem1">
               {ButtonData?.CardGrid?.Card1?.map((point, i) => {
-                return <div className="AnalysisCardDes" key={i}>{point}</div>;
+                return (
+                  <div className="AnalysisCardDes" key={i}>
+                    {point}
+                  </div>
+                );
               })}
             </div>
             <div className="Analysis1_GridItem2">
               {ButtonData?.CardGrid?.Card2?.map((point, i) => {
-                return <div className="AnalysisCardDes" key={i}>{point}</div>;
+                return (
+                  <div className="AnalysisCardDes" key={i}>
+                    {point}
+                  </div>
+                );
               })}
             </div>
             <div className="Analysis1_GridItem3">
               {ButtonData?.CardGrid?.Card3?.map((point, i) => {
-                return <div className="AnalysisCardDes" key={i}>{point}</div>;
+                return (
+                  <div className="AnalysisCardDes" key={i}>
+                    {point}
+                  </div>
+                );
               })}
             </div>
             <div className="Analysis1_GridItem4">
               {ButtonData?.CardGrid?.Card4?.map((point, i) => {
-                return <div className="AnalysisCardDes" key={i}>{point}</div>;
+                return (
+                  <div className="AnalysisCardDes" key={i}>
+                    {point}
+                  </div>
+                );
               })}
             </div>
           </div>
@@ -131,8 +147,8 @@ export default function Analysis() {
             </div>
           </div>
 
-          <div className="ImageAdvantage_Button_Container text-xl-end">
-            <button
+          <div className="ImageAdvantage_Button_Container float-right">
+            <div
               className={`${
                 Analysis2_Dropdown_Show
                   ? "ImageAdvantage_Button"
@@ -143,7 +159,7 @@ export default function Analysis() {
               }}
             >
               ▼ {Card2?.button_text}
-            </button>
+            </div>
           </div>
         </div>
       </div>
@@ -199,8 +215,8 @@ export default function Analysis() {
             </div>
           </div>
 
-          <div className="ImageAdvantage_Button_Container">
-            <button
+          <div className="ImageAdvantage_Button_Container ">
+            <div
               className={`${
                 Analysis3_Dropdown_Show
                   ? "ImageAdvantage_Button"
@@ -211,7 +227,7 @@ export default function Analysis() {
               }}
             >
               ▼ {Card3?.button_text}
-            </button>
+            </div>
           </div>
         </div>
         <div>
@@ -282,8 +298,8 @@ export default function Analysis() {
               })}
             </div>
           </div>
-          <div className="ImageAdvantage_Button_Container">
-            <button
+          <div className="ImageAdvantage_Button_Container float-right">
+            <div
               className={`${
                 Analysis4_Dropdown_Show
                   ? "ImageAdvantage_Button"
@@ -294,7 +310,7 @@ export default function Analysis() {
               }}
             >
               ▼ {Card4?.button_text}
-            </button>
+            </div>
           </div>
         </div>
       </div>
