@@ -30,7 +30,7 @@ export default function ImageAdvantage() {
           <div>Pożądane Emocje</div> */}
         </div>
         <div className="ImageAdvantage_Table_Column">
-        {info_2?.map((info, index) => (
+          {info_2?.map((info, index) => (
             <div key={index}>{info}</div>
           ))}
           {/* <div>Logo i zasady ekspozycji.</div>
@@ -41,7 +41,7 @@ export default function ImageAdvantage() {
         </div>
         <div className="ImageAdvantage_Table_Column">
           <div className="ImageAdvantage_Button_Container">
-            <button
+            <div
               className={`${
                 ImageAdvantage_Dropdown_Show
                   ? "ImageAdvantage_Button"
@@ -52,7 +52,7 @@ export default function ImageAdvantage() {
               }}
             >
               ▼ {imagesAdvantage?.button_text}
-            </button>
+            </div>
           </div>
         </div>
       </div>
