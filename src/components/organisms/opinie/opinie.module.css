@@ -917,6 +917,7 @@ img.opinionBnnaerImg {
     display: block;
     top: -400px;
     z-index: -1;
+    width: -webkit-fill-available;
   }
 
   .eyes {

@@ -736,3 +736,40 @@ button.formModalCloseBtn {
   margin: 0 auto;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .inputLayout {
+    display: block;
+  }
+
+  .inputLayout input {
+    width: 100%;
+  }
+  .quoteBtn {
+    display: block;
+    text-align: center;
+  }
+  .quoteBtn button {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .copywriter-custom-text-1 {
+    width: 100%;
+  }
+
+  .copywriter-custom-text-2 {
+    width: 100%;
+  }
+
+  .logo-form-container {
+    position: relative;
+  }
+
+  button.formModalCloseBtn {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    color: black;
+  }
+}

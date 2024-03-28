@@ -1,4 +1,4 @@
-import react, {useState} from "react"
+import react, { useState } from "react";
 import Link from "next/link";
 import "./TesciFooter.css";
 import { usePathname } from "next/navigation";
@@ -10,7 +10,6 @@ import { motion, Variants } from "framer-motion";
 import { ModalForm } from "../ModalForm";
 
 const TresciFooter = () => {
-
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
   const pathname = usePathname();
 
@@ -19,7 +18,6 @@ const TresciFooter = () => {
   const handleNavbarToggle = () => {
     setIsNavbarCollapsed(!isNavbarCollapsed);
   };
-
 
   //   ------------ modal------------
   const [isModal, setIsModal] = useState(false);
@@ -30,33 +28,48 @@ const TresciFooter = () => {
 
   return (
     <>
-    <div className="nazwa_footer_bottom">
-      <div className="nazwa_footer_bottom_left">
-        
-        <Link
-          href="#sec1"
-          className={isSelected == 1 ? "activeLink" : ""}
-          onClick={() => setIsSelected(1)}
-        >Jak to działa?
-        </Link>
-        <Link
-          href="#sec2"
-          className={isSelected == 2 ? "activeLink" : ""}
-          onClick={() => setIsSelected(2)}
-        >
-          {" "}Przykłady realizacji
-        </Link>
-      </div>
-      <div className="nazwa_footer_bottom_right">
-        <button className="tersci_footer_bottom_btn" onClick={() => setIsModal(true)}>Zdobądź wycenę</button>
-      </div>
-    </div>
+      <div className="nazwa_footer_bottom">
+        <div className="nazwa_footer_bottom_left">
+          <Link
+            href="#sec1"
+            className={isSelected == 1 ? "activeLink" : ""}
+            onClick={() => setIsSelected(1)}
+          >
+            Jak to działa?
+          </Link>
+          <Link
+            href="#sec2"
+            className={isSelected == 2 ? "activeLink" : ""}
+            onClick={() => setIsSelected(2)}
+          >
+            {" "}
+            Przykłady realizacji
+          </Link>
+        </div>
+        <div className="nazwa_footer_bottom_right">
+          <button
+            className="tersci_footer_bottom_btn"
+            onClick={() => setIsModal(true)}
+          >
+            Zdobądź wycenę
+          </button>
+        </div>
 
+        {/* Footer contact btn */}
+        <div className="tresci_contact_footer_btn">
+          <a href="tel:570964200">
+            <strong>Zadzwoń</strong>
+            <br />
+            (8<sup>00</sup>-16
+            <sup>00</sup>)
+          </a>
+        </div>
+      </div>
 
-{/* -------------------------------------modal---------------------------------- */}
+      {/* -------------------------------------modal---------------------------------- */}
 
       <ModalForm isOpen={isModal} onClose={handleModalClose} />
-      </>
+    </>
   );
 };
 
