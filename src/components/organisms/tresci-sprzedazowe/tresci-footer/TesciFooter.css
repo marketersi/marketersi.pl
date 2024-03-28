@@ -38,7 +38,7 @@
   line-height: 31.2px;
   text-align: center;
 }
-a.activeLink{
+a.activeLink {
   color: black;
   border-bottom: 2px solid black;
   padding-bottom: 10px;
@@ -72,4 +72,32 @@ a.activeLink{
   margin: 0 auto;
   /* background: gray; */
   position: relative;
+}
+
+.tresci_contact_footer_btn {
+  display: none;
+}
+
+/* media query for mobile */
+@media screen and (max-width: 767px) {
+  .tresci_contact_footer_btn {
+    display: inline;
+    padding: 3px 30px;
+    font-size: 16px;
+    line-height: 17px;
+    background-color: #fff;
+    border: 0.666667px solid #438d07;
+    box-shadow: #c1c1c1 5px 5px 0px -1px;
+  }
+  .tresci_contact_footer_btn a {
+    text-decoration: none;
+    color: #438d07;
+  }
+
+  .nazwa_footer_bottom {
+    justify-content: space-evenly;
+  }
+  .tersci_footer_bottom_btn {
+    font-size: 18px;
+  }
 }
