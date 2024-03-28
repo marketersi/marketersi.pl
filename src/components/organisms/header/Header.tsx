@@ -95,13 +95,13 @@ const Header = () => {
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
                   {isDropdownOpen && (
-                  <div
-                    className={style.dropMenu}
-                    onClick={handleMenuItemClickDP}
-                  >
-                    <HeaderDropDown2 />
-                  </div>
-                   )}
+                    <div
+                      className={style.dropMenu}
+                      onClick={handleMenuItemClickDP}
+                    >
+                      <HeaderDropDown2 />
+                    </div>
+                  )}
                 </div>
               </div>
             </Col>
@@ -215,7 +215,7 @@ const Header = () => {
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
-                          href="/owocni-opinie"
+                          href="/marketersi-opinie"
                         >
                           Opinie klientów
                         </Link>
@@ -275,7 +275,7 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <Link onClick={handleMenuItemClick} href="/owocni-opinie">
+                <Link onClick={handleMenuItemClick} href="/marketersi-opinie">
                   Klienci i opinie
                 </Link>
               </li>
