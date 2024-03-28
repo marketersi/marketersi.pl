@@ -11,7 +11,7 @@ const Accordion = () => {
   const { FAQ } = FAQ_Section || [];
 
   const [questions, setQuestions] = useState(accordionData);
-  const [openQuestionId, setOpenQuestionId] = useState(null);
+  const [openQuestionId, setOpenQuestionId] = useState(0);
 
   const handleQuestionClick = (questionId) => {
     setOpenQuestionId(openQuestionId === questionId ? null : questionId);
@@ -19,9 +19,7 @@ const Accordion = () => {
 
   return (
     <div className="container mb-5">
-      <h3 className="accordion-heading">
-        {FAQ_Section?.title}
-      </h3>
+      <h3 className="accordion-heading">{FAQ_Section?.title}</h3>
       <section className="accordion-container w-lg-75 w-100">
         {FAQ?.map((question, index) => {
           return (
