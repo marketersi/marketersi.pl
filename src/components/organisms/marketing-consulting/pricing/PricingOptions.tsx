@@ -17,13 +17,9 @@ const PricingOption = () => {
       <div className="container po_pricing_sec">
         <div className="row justify-content-center m-0">
           <div>
-            <h2 className="po_title">
-              {PricingOption?.title}
-            </h2>
+            <h2 className="po_title">{PricingOption?.title}</h2>
             <div className="mt-3">
-              <p className="po_subtitle">
-                {PricingOption?.subtitle}
-              </p>
+              <p className="po_subtitle">{PricingOption?.subtitle}</p>
             </div>
 
             <div className="po_card_custom">
@@ -34,13 +30,17 @@ const PricingOption = () => {
       </div>
 
       <div className="po_brands">
-        <p>
-          {PricingOption?.brand_quote}
-          sdfas
-        </p>
+        <p>{PricingOption?.brand_quote}</p>
         <img
           src={PricingOption?.brand_image}
           alt="experts"
+          className="brand_desktop"
+        />
+        {/* mobile image */}
+        <img
+          src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogotypy-Mobile.575fca16.png&w=1080&q=75"
+          // src={PricingOption?.brand_image_mobile}
+          className="brand_mobile"
         />
       </div>
     </section>

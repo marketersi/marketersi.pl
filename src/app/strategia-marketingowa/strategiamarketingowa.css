@@ -1021,7 +1021,7 @@ img.strategyImg {
   justify-content: center;
 }
 .clientReviewHeading h2 {
-  font-size: 61px;
+  font-size: 55px;
   text-align: center;
   font-weight: 600;
   margin: 40px 0 0;
@@ -2324,6 +2324,9 @@ img.strategyImg {
 
   .QuoteOne_Image img {
     width: 90vw;
+  }
+  .faqContainer {
+    padding: 5px 30px;
   }
 }
 
