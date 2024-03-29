@@ -37,12 +37,8 @@ const Results = () => {
 
   return (
     <section className="results-section">
-      <h2 className="result-title">
-        {ResearchResult?.title}
-      </h2>
-      <p className="result-subtitle">
-        {ResearchResult?.sub_title}
-      </p>
+      <h2 className="result-title">{ResearchResult?.title}</h2>
+      <p className="result-subtitle">{ResearchResult?.sub_title}</p>
       <Row>
         {PercentageCard?.map((e, i) => {
           return (
@@ -56,10 +52,8 @@ const Results = () => {
       {/* how test works */}
 
       <div className="text-center free-test">
-        <h2>
-          {howTestWorks?.title}
-        </h2>
-        <div className="p-container ">
+        <h2>{howTestWorks?.title}</h2>
+        <div className="p-container">
           <p>{howTestWorks?.para1}</p>
           <p>{howTestWorks?.para2}</p>
           <p>{howTestWorks?.para3}</p>
