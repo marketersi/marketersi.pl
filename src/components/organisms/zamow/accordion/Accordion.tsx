@@ -18,7 +18,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="container mb-5">
+    <div className="zamow_accordion">
       <h3 className="accordion-heading">{FAQ_Section?.title}</h3>
       <section className="accordion-container w-lg-75 w-100">
         {FAQ?.map((question, index) => {

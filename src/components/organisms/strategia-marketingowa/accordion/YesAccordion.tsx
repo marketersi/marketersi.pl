@@ -36,7 +36,7 @@ const YesAccordion = () => {
               }`}
               onClick={() => handleClick(index)}
             >
-              {item.question}
+              <div style={{ flex: 1 }}>{item.question}</div>
 
               {/* Animated Text */}
               <div className="yes_accordion_animated_text">

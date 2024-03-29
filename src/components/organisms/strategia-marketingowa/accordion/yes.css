@@ -16,12 +16,11 @@
 }
 .accordion-title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 22px;
   font-weight: 400;
-  gap: 47px;
 }
+
 .faqContainer .accordion-item {
   position: relative;
 }
@@ -86,6 +85,10 @@ h2.textAnimation {
   font-weight: 600;
   text-align: center;
   margin: 0 0 50px;
+}
+
+.yes_accordion_animated_text {
+  margin-right: 30px;
 }
 
 .yes_accordion_animated_text span {
