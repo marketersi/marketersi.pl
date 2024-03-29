@@ -22,7 +22,7 @@ const Rating = () => {
   }, []);
 
   useEffect(() => {
-    const newTranslateY = -20 + (scrollOffset / window.innerHeight) * 33;
+    const newTranslateY = -20 + (scrollOffset / 720) * 33;
     setTranslateY(newTranslateY);
   }, [scrollOffset]);
 
@@ -31,15 +31,23 @@ const Rating = () => {
       <div className={style.rating}>
         <div className={style.ratingContainer}>
           <div className={style.faceMotion}>
-            <img className={style.face} src={ratings.animated_image} alt="" />
-            <img
-              className={style.eyes}
-              src={ratings.animated_image2}
-              alt=""
-              style={{
-                transform: `translate3d(0px, ${translateY}px, 0px)`,
-              }}
-            />
+            <div className={style.face}>
+              <img
+                src={ratings.animated_image}
+                alt=""
+                className={style.emoFace}
+              />
+              <div>
+                <img
+                  className={style.eyes}
+                  src={ratings.animated_image2}
+                  alt=""
+                  style={{
+                    transform: `translate3d(0px, ${translateY}px, 0px)`,
+                  }}
+                />
+              </div>
+            </div>
           </div>
           <div className={style.ratingBlackCard}>
             <Row>

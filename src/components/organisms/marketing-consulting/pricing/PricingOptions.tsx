@@ -37,11 +37,7 @@ const PricingOption = () => {
           className="brand_desktop"
         />
         {/* mobile image */}
-        <img
-          src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogotypy-Mobile.575fca16.png&w=1080&q=75"
-          // src={PricingOption?.brand_image_mobile}
-          className="brand_mobile"
-        />
+        <img src={PricingOption?.brand_image_mobile} className="brand_mobile" />
       </div>
     </section>
   );
