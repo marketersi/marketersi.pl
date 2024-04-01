@@ -18,7 +18,6 @@ const HappyCustomers = () => {
   const { screenData } = useSelector((state) => state.opinion);
   const customerReplies = screenData.customerReplies || {};
 
-  console.log("cr ==?>", customerReplies);
 
   function SampleNextArrow(props) {
     const { onClick } = props;

@@ -34,7 +34,6 @@ const CennikModal = ({ isOpen, onRequestClose }) => {
       }}
     >
       <div className="cennik-modal-content">
-        {/* <h2 className="cennik-modal-title">Cennik jest indywidualny.</h2> */}
         <h2 className="cennik-modal-title">{modalInfo?.modal_title}</h2>
         <p>
           {modalInfo?.modal_info}

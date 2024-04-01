@@ -74,8 +74,6 @@ export default ZamowHero;
 const FormZero = ({ heroSection, handleNextQuestion }) => {
   const [inputValue, setInputValue] = useState("");
 
-  console.log("form zero input", inputValue);
-
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {

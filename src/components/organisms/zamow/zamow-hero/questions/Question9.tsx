@@ -28,13 +28,6 @@ const Question9 = ({ handleNext }) => {
     <div className="zh_question range_container">
       <h2>{formNine?.title}</h2>
       <p className="goal_description">{formNine?.description}</p>
-      {/* <p className="range_description">(Wszystkie informacje są ściśle poufne.)</p> */}
-      {/* <input
-        type="text"
-        value={`${rangeValue} zł`}
-        onChange={(e) => setRangeValue(Number(e.target.value))}
-        className="income_show"
-      /> */}
 
       <div className="income_show">{rangeValue} zł</div>
 

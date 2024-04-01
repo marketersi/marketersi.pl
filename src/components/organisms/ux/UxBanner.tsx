@@ -6,8 +6,6 @@ const UxBanner = () => {
   const { screenData } = useSelector((state) => state.ux);
   const HeroSection = screenData.HeroSection || {};
 
-  console.log("screenData from uxBanner", HeroSection);
-
   return (
     <>
       <section>

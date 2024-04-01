@@ -10,8 +10,6 @@ const Brands = () => {
   const brands = screenData.brands || {};
   const brand = brands.brand || [];
 
-  console.log("brands", brand);
-
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (

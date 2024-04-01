@@ -21,12 +21,6 @@ const ClientCarousel = ({ slides, options }) => {
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-            {/* {slides?.map((e, index) => (
-              <div className="embla__slide" key={index}>
-                <SlideComponent />
-                <SlideOne {...e} />
-              </div>
-            ))} */}
 
             {slides?.map((e, index) => (
               <div className="embla__slide" key={index}>

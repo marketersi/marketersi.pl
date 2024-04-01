@@ -73,7 +73,6 @@ const LogoDesignScreen = () => {
         <ProjectValue />
         <Gallery openModal={openModal} />
         <StepByStep />
-        {/* ---------------------------------------------------------------- */}
         <FreeShops />
         <Enexo />
         <Daco />

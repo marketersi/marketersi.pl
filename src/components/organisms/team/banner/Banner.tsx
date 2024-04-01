@@ -22,7 +22,7 @@ const Banner = () => {
   const { herosection } = screenData;
 
   return (
-    <>
+    <div className={style.banner}>
       <div className={style.zespolVideo}>
         <ReactPlayer
         url={herosection?.background_video}
@@ -62,7 +62,6 @@ const Banner = () => {
         <div className={style.bannerHeading}>
           <h1>
             {herosection?.main_title}
-            {/* Jak to jest współpracować <br /> z nami? */}
           </h1>
         </div>
         <div className={style.img20}>
@@ -88,7 +87,7 @@ const Banner = () => {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

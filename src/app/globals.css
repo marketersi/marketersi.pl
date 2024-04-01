@@ -38,13 +38,11 @@ body {
   margin-bottom: 120px;
 }
 .OurClients_Card_Container {
-  margin-top: -220px;
+  margin-bottom: -450px;
 }
 .OurClients_Card_One {
   background-color: #ffffff;
-  border-radius: 25.6px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-radius: 25px;
   margin-bottom: -20px;
 }
 .OurClients_Card_One_Title {
@@ -87,12 +85,13 @@ body {
   display: flex;
   align-items: center;
   background-color: #f5f5f5;
-  border-radius: 0px 0px 25.6px 25.6px;
+  border-radius: 25px 25px 25px 25px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.15) 4px 4px 15px 0px, #ffffff 0px 0px 0px 0px,
     #ffffff 2px 2px 2px 0px inset, #c7c7c7 -2px -2px 2px 0px inset;
   padding-inline: 50px;
   padding-block: 30px;
+  margin-top: 150px;
 }
 .OurClients_Card_Two_Content {
   color: #8f8f8f;
@@ -120,6 +119,7 @@ body {
 }
 .OurClients_Marquee {
   z-index: -10;
+  opacity: 0.8;
 }
 
 /* * */
@@ -368,6 +368,18 @@ body {
   margin: 0 auto;
   max-width: 100%;
 }
+.OurClients_Slide_Title.mobile_title {
+  display: none;
+}
+.OurClients_Slide_Title.desktop_title {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+.desktop{
+  display: block;
+}
 
 /* ------------------media screen ---------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
@@ -383,11 +395,29 @@ body {
   .star {
     font-size: 15px;
   }
+  .OurClients_Slide_Title.mobile_title {
+    display: block;
+}
+.OurClients_Slide_Title.desktop_title {
+  display: none;
+}
+.mobile {
+  display: block;
+}
+.desktop{
+  display: none;
+}
+.OurClients_Card_Container {
+  margin-bottom: 0px;
+  margin-top: -220px;
+}
 }
 @media only screen and (max-width: 767px) {
   .OurClients_Slide_Container {
-    display: block !important;
-  }
+    display: grid !important;
+    grid-template-columns: 40% 60%;
+    gap: 20px !important;
+}
   .OurClients_Slide_Image img {
     width: 100%;
     height: auto;
@@ -407,16 +437,19 @@ body {
   }
   .OurClients_Card_Two {
     display: block !important;
+    margin-top: 100px;
   }
   .cartAnimation {
-    margin: -130px 0 0 -50px !important;
+    margin: -420px 0 0 -50px !important;
   }
   .cartAnimation img {
     width: 150px !important;
   }
   .OurClients_Slide_Title {
     font-size: 25px !important;
-  }
+    line-height: 30px !important;
+    padding-top: 0 !important;
+}
   .OurClients_Slide {
     margin-bottom: 0;
   }
@@ -534,5 +567,8 @@ margin-top: 20px;
 }
 .personallyCard {
   padding: 20px;
+}
+.OurClients_Slide {
+  padding-inline: 30px;
 }
 }

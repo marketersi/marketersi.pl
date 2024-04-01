@@ -5,7 +5,6 @@ const Counter = () => {
   const { screenData } = useSelector((state) => state.ux);
   const CounterData = screenData.CounterData || [];
 
-  console.log("screenData from counter", CounterData);
   return (
     <>
       <section className="numberContainer">

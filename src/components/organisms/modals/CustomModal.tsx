@@ -33,7 +33,6 @@ const CustomModal = ({ isOpen, onRequestClose }) => {
       }}
     >
       <div className="cennik-modal-content">
-        {/* <h2 className="cennik-modal-title">Cennik jest indywidualny.</h2> */}
         <h2 className="cennik-modal-title">{modal?.title}</h2>
         <p>
           {modal?.description}

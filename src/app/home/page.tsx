@@ -15,8 +15,9 @@ import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 import Loader from "@/components/organisms/animation/Loader";
 import ThanksMessage from "@/components/organisms/thanks-message/ThanksMessage";
 
+
 const HomeScreen = () => {
-  const { isLoading, screenData } = useSelector((state) => state.home);
+  const { isLoading, screenData } = useSelector((state: RootState) => state.home);
   const dispatch = useDispatch();
 
   if (screenData) {

@@ -12,7 +12,6 @@ export default function ImageAdvantage() {
   return (
     <div className="ImageAdvantage content">
       <div className="ImageAdvantage_Title feature">
-        {/* Opracujemy Twoją wizerunkową przewagę */}
         {imagesAdvantage?.title}
       </div>
       <div className="ImageAdvantage_Content feature">
@@ -23,21 +22,11 @@ export default function ImageAdvantage() {
           {info_1?.map((info, index) => (
             <div key={index}>{info}</div>
           ))}
-          {/* <div>Wizerunkowe cele firmy</div>
-          <div>Architektura i standardy marki</div>
-          <div>Storytelling - Nasza opowieść</div>
-          <div>Jak się wyróżniamy</div>
-          <div>Pożądane Emocje</div> */}
         </div>
         <div className="ImageAdvantage_Table_Column">
           {info_2?.map((info, index) => (
             <div key={index}>{info}</div>
           ))}
-          {/* <div>Logo i zasady ekspozycji.</div>
-          <div>Zasady komunikacji werbalnej</div>
-          <div>Typografia i hierarchia wizualna</div>
-          <div>Markowy styl ilustracji i fotografii</div>
-          <div>Personal branding</div> */}
         </div>
         <div className="ImageAdvantage_Table_Column">
           <div className="ImageAdvantage_Button_Container">
@@ -56,7 +45,6 @@ export default function ImageAdvantage() {
           </div>
         </div>
       </div>
-      {/* ImageAdvantage_Dropdown */}
       <div
         className="ImageAdvantage_Dropdown"
         hidden={ImageAdvantage_Dropdown_Show}

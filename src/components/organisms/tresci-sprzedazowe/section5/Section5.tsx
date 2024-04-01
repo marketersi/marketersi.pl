@@ -123,8 +123,6 @@ const Section5 = () => {
             alt="Książka, którą przygotowali copywriterzy Owocnych"
           />
         </div>
-
-        {/* =================================================================== */}
       </section>
     </>
   );

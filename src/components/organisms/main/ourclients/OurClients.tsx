@@ -17,8 +17,6 @@ export default function OurClients() {
     ClientReviews || {};
   const { row1, row2, row3, row4 } = SliderImages || {};
 
-  console.log("client feedback", ClientFeedback);
-  // const slides = [SlideOne, SlideTwo, SlideThree, SlideFour];
 
   const slideAnimationLeft: Variants = {
     offscreen: {
@@ -40,7 +38,7 @@ export default function OurClients() {
 
   return (
     <div className="OurClients content mt-5">
-      <div className="OurClients_Marquee full">
+      <div className="OurClients_Marquee full mobile">
         {/* Marquee 1 */}
         <Marquee autoFill speed={175}>
           {row1?.map((e, i) => {
@@ -82,7 +80,6 @@ export default function OurClients() {
               />
             );
           })}
-          
         </Marquee>
         {/* Marquee 3 */}
         <Marquee autoFill speed={100}>
@@ -104,14 +101,12 @@ export default function OurClients() {
               />
             );
           })}
-          
         </Marquee>
         {/* Marquee 4 */}
         <Marquee autoFill speed={150}>
           {row4?.map((e, i) => {
             return (
               <Image
-               
                 src={e.message}
                 alt="row 4 image"
                 width={0}
@@ -127,7 +122,6 @@ export default function OurClients() {
               />
             );
           })}
-          
         </Marquee>
       </div>
       <div className="OurClients_Card_Container popout">
@@ -145,10 +139,95 @@ export default function OurClients() {
             />
           </div>
           <div className="OurClients_Card_Two_Content">
-           
             {RatingCard?.rating_description}
           </div>
         </div>
+      </div>
+      <div className="OurClients_Marquee full desktop">
+        {/* Marquee 1 */}
+        <Marquee autoFill speed={175}>
+          {row1?.map((e, i) => {
+            return (
+              <Image
+                src={e.message}
+                alt="row 1 image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{
+                  width: "50%",
+                  height: "50%",
+                  filter: "grayscale(100%)",
+                  opacity: "0.5",
+                }}
+                key={i}
+              />
+            );
+          })}
+        </Marquee>
+        {/* Marquee 2 */}
+        <Marquee autoFill speed={100}>
+          {row2?.map((e, i) => {
+            return (
+              <Image
+                src={e.message}
+                alt="row 2 image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{
+                  width: "50%",
+                  height: "50%",
+                  filter: "grayscale(100%)",
+                  opacity: "0.5",
+                }}
+                key={i}
+              />
+            );
+          })}
+        </Marquee>
+        {/* Marquee 3 */}
+        <Marquee autoFill speed={100}>
+          {row3?.map((e, i) => {
+            return (
+              <Image
+                src={e.message}
+                alt="row 3 image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{
+                  width: "50%",
+                  height: "50%",
+                  filter: "grayscale(100%)",
+                  opacity: "0.5",
+                }}
+                key={i}
+              />
+            );
+          })}
+        </Marquee>
+        {/* Marquee 4 */}
+        <Marquee autoFill speed={150}>
+          {row4?.map((e, i) => {
+            return (
+              <Image
+                src={e.message}
+                alt="row 4 image"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{
+                  width: "50%",
+                  height: "50%",
+                  filter: "grayscale(100%)",
+                  opacity: "0.5",
+                }}
+                key={i}
+              />
+            );
+          })}
+        </Marquee>
       </div>
       <motion.div
         initial="offscreen"
@@ -177,6 +256,7 @@ export const SlideOne = (props) => {
     <>
       {/* Slide 1 */}
       <div className="OurClients_Slide">
+        <div className="OurClients_Slide_Title mobile_title">{review}</div>
         <div className="OurClients_Slide_Container">
           <div className="OurClients_Slide_Image">
             <Image
@@ -188,13 +268,11 @@ export const SlideOne = (props) => {
             />
           </div>
           <div className="OurClients_Slide_Content">
-            <div className="OurClients_Slide_Title">
-              {review}
-            </div>
+            <div className="OurClients_Slide_Title desktop_title">{review}</div>
             <div className="OurClients_Slide_Media">
               <div className="OurClients_Slide_Media_Video">
                 <ReactPlayer
-                 url={video_url}
+                  url={video_url}
                   playing
                   loop
                   width="60%"
@@ -247,146 +325,149 @@ export const SlideFour = () => {
           {FeedbackSummary?.description}
         </div>
         <div className="OurClients_Card_One_Button_Container">
-        <button className="OurClients_Card_One_Button" onClick={() => {
-    window.location.href = '/marketersi-opinie';
-}}>
-    Poznaj wszystkie recenzje
-</button>
+          <button
+            className="OurClients_Card_One_Button"
+            onClick={() => {
+              window.location.href = "/marketersi-opinie";
+            }}
+          >
+            Poznaj wszystkie recenzje
+          </button>
         </div>
       </div>
     </>
   );
 };
 
-const SlideTwo = () => {
-  const { handleNext } = useContext(CarouselContext);
-  return (
-    <>
-      {/* Slide 2 */}
-      <div className="OurClients_Slide">
-        <div className="OurClients_Slide_Container">
-          <div className="OurClients_Slide_Image">
-            <Image
-              src={"/assets/images/strategiamarketingowa/OurClientsImage2.png"}
-              alt="OurClientsImage2"
-              width={190}
-              height={275}
-              style={{ filter: "grayscale(100%)" }}
-            />
-          </div>
-          <div className="OurClients_Slide_Content">
-            <div className="OurClients_Slide_Title">
-              Na mobilną jadłodajnię postawiłem oszczędności. Owocni nie mieli
-              wyjścia,{" "}
-              <span className="YellowMarkSlide">to musiało się nam udać.</span>
-            </div>
-            <div className="OurClients_Slide_Media">
-              <div className="OurClients_Slide_Media_Video">
-                <ReactPlayer
-                  url={
-                    "/assets/images/strategiamarketingowa/OurClientsVideo2.mp4"
-                  }
-                  playing
-                  loop
-                  width="60%"
-                  height="auto"
-                  muted={true}
-                />
-              </div>
-              <div className="OurClients_Slide_Media_Rating">
-                <div>
-                  <div className="OurClients_Slide_Star_Reviewer">
-                    Piotr Parol
-                  </div>
-                  <div className="OurClients_Slide_Star_Company">
-                    trójmiejski food truck
-                  </div>
-                </div>
-                <div className="OurClients_Slide_Star_Rating">
-                  <Image
-                    src={"/assets/images/strategiamarketingowa/starrating.avif"}
-                    alt="starrating"
-                    width={75}
-                    height={22}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="OurClients_Slide_Button">
-          <div className="OurClients_Slide_Button_Text">Następna</div>
-          <div className="ArrowButton" onMouseEnter={handleNext}>
-            <span className="ArrowButton_Arrow">&gt;</span>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
-const SlideThree = () => {
-  const { handleNext } = useContext(CarouselContext);
-  return (
-    <>
-      {/* Slide 3 */}
-      <div className="OurClients_Slide">
-        <div className="OurClients_Slide_Container">
-          <div className="OurClients_Slide_Image">
-            <Image
-              src={"/assets/images/strategiamarketingowa/OurClientsImage3.png"}
-              alt="OurClientsImage3"
-              width={190}
-              height={275}
-              style={{ filter: "grayscale(100%)" }}
-            />
-          </div>
-          <div className="OurClients_Slide_Content">
-            <div className="OurClients_Slide_Title">
-              Całe szczęście, że zdecydowałem się na zmianę agencji. To jest
-              <span className="YellowMarkSlide">
-                zupełnie inna współpraca.”
-              </span>
-            </div>
-            <div className="OurClients_Slide_Media">
-              <div className="OurClients_Slide_Media_Video">
-                <Image
-                  src={
-                    "/assets/images/strategiamarketingowa/OurClientsVideo3.avif"
-                  }
-                  alt="OurClientsVideo3"
-                  width={241 * 0.5}
-                  height={34 * 0.5}
-                  style={{ marginRight: "70px" }}
-                />
-              </div>
-              <div className="OurClients_Slide_Media_Rating">
-                <div>
-                  <div className="OurClients_Slide_Star_Reviewer">
-                    Przemek Majewski
-                  </div>
-                  <div className="OurClients_Slide_Star_Company">
-                    Software house
-                  </div>
-                </div>
-                <div className="OurClients_Slide_Star_Rating">
-                  <Image
-                    src={"/assets/images/strategiamarketingowa/starrating.avif"}
-                    alt="starrating"
-                    width={75}
-                    height={22}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="OurClients_Slide_Button">
-          <div className="OurClients_Slide_Button_Text">Następna</div>
-          <div className="ArrowButton" onMouseEnter={handleNext}>
-            <span className="ArrowButton_Arrow">&gt;</span>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+// const SlideTwo = () => {
+//   const { handleNext } = useContext(CarouselContext);
+//   return (
+//     <>
+//       {/* Slide 2 */}
+//       <div className="OurClients_Slide">
+//         <div className="OurClients_Slide_Container">
+//           <div className="OurClients_Slide_Image">
+//             <Image
+//               src={"/assets/images/strategiamarketingowa/OurClientsImage2.png"}
+//               alt="OurClientsImage2"
+//               width={190}
+//               height={275}
+//               style={{ filter: "grayscale(100%)" }}
+//             />
+//           </div>
+//           <div className="OurClients_Slide_Content">
+//             <div className="OurClients_Slide_Title">
+//               Na mobilną jadłodajnię postawiłem oszczędności. Owocni nie mieli
+//               wyjścia,{" "}
+//               <span className="YellowMarkSlide">to musiało się nam udać.</span>
+//             </div>
+//             <div className="OurClients_Slide_Media">
+//               <div className="OurClients_Slide_Media_Video">
+//                 <ReactPlayer
+//                   url={
+//                     "/assets/images/strategiamarketingowa/OurClientsVideo2.mp4"
+//                   }
+//                   playing
+//                   loop
+//                   width="60%"
+//                   height="auto"
+//                   muted={true}
+//                 />
+//               </div>
+//               <div className="OurClients_Slide_Media_Rating">
+//                 <div>
+//                   <div className="OurClients_Slide_Star_Reviewer">
+//                     Piotr Parol
+//                   </div>
+//                   <div className="OurClients_Slide_Star_Company">
+//                     trójmiejski food truck
+//                   </div>
+//                 </div>
+//                 <div className="OurClients_Slide_Star_Rating">
+//                   <Image
+//                     src={"/assets/images/strategiamarketingowa/starrating.avif"}
+//                     alt="starrating"
+//                     width={75}
+//                     height={22}
+//                   />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="OurClients_Slide_Button">
+//           <div className="OurClients_Slide_Button_Text">Następna</div>
+//           <div className="ArrowButton" onMouseEnter={handleNext}>
+//             <span className="ArrowButton_Arrow">&gt;</span>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+// const SlideThree = () => {
+//   const { handleNext } = useContext(CarouselContext);
+//   return (
+//     <>
+//       {/* Slide 3 */}
+//       <div className="OurClients_Slide">
+//         <div className="OurClients_Slide_Container">
+//           <div className="OurClients_Slide_Image">
+//             <Image
+//               src={"/assets/images/strategiamarketingowa/OurClientsImage3.png"}
+//               alt="OurClientsImage3"
+//               width={190}
+//               height={275}
+//               style={{ filter: "grayscale(100%)" }}
+//             />
+//           </div>
+//           <div className="OurClients_Slide_Content">
+//             <div className="OurClients_Slide_Title">
+//               Całe szczęście, że zdecydowałem się na zmianę agencji. To jest
+//               <span className="YellowMarkSlide">
+//                 zupełnie inna współpraca.”
+//               </span>
+//             </div>
+//             <div className="OurClients_Slide_Media">
+//               <div className="OurClients_Slide_Media_Video">
+//                 <Image
+//                   src={
+//                     "/assets/images/strategiamarketingowa/OurClientsVideo3.avif"
+//                   }
+//                   alt="OurClientsVideo3"
+//                   width={241 * 0.5}
+//                   height={34 * 0.5}
+//                   style={{ marginRight: "70px" }}
+//                 />
+//               </div>
+//               <div className="OurClients_Slide_Media_Rating">
+//                 <div>
+//                   <div className="OurClients_Slide_Star_Reviewer">
+//                     Przemek Majewski
+//                   </div>
+//                   <div className="OurClients_Slide_Star_Company">
+//                     Software house
+//                   </div>
+//                 </div>
+//                 <div className="OurClients_Slide_Star_Rating">
+//                   <Image
+//                     src={"/assets/images/strategiamarketingowa/starrating.avif"}
+//                     alt="starrating"
+//                     width={75}
+//                     height={22}
+//                   />
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="OurClients_Slide_Button">
+//           <div className="OurClients_Slide_Button_Text">Następna</div>
+//           <div className="ArrowButton" onMouseEnter={handleNext}>
+//             <span className="ArrowButton_Arrow">&gt;</span>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };

@@ -18,15 +18,6 @@ const YesAccordion = () => {
     <>
       <div className="faqContainer">
         <div className="header__top__left">
-          {/* <h2
-          className="textAnimation"
-          style={{
-            opacity: 1,
-            transform: "translate(0px, 0px)",
-          }}
-        >
-          {FAQsection?.title}
-        </h2> */}
         </div>
         {FAQsection?.FAQcard.map((item, index) => (
           <div key={index} className="accordion-item">
@@ -38,7 +29,6 @@ const YesAccordion = () => {
             >
               <div style={{ flex: 1 }}>{item.question}</div>
 
-              {/* Animated Text */}
               <div className="yes_accordion_animated_text">
                 <span>T</span>
                 <span>A</span>
@@ -56,11 +46,6 @@ const YesAccordion = () => {
             )}
           </div>
         ))}
-        {/* <a className="send-offer-button js--triggerAnimation">
-          <span>
-            <span>OK Wyślijcie mi niezobowiązującą ofertę </span>
-          </span>
-        </a> */}
       </div>
     </>
   );

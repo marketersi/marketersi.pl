@@ -74,7 +74,6 @@ const FeedbackForm = ({ setCurrentComponent, formThree }) => {
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        {/* <h4>Hardcoded title</h4> */}
         <p>
           {formThree?.modal?.modal_description}
         </p>
@@ -82,7 +81,6 @@ const FeedbackForm = ({ setCurrentComponent, formThree }) => {
           <button onClick={closeModal}>{formThree?.modal?.modal_buttonText}</button>
         </div>
 
-        {/* x btn */}
         <div className="close" onClick={closeModal}>
           <FontAwesomeIcon icon={faXmark} />
         </div>

@@ -29,12 +29,6 @@ const Question7 = ({ handleNext }) => {
       <h2>{formSeven?.title}</h2>
       <p className="goal_description">{formSeven?.subtitle}</p>
       <p className="range_description">{formSeven?.info}</p>
-      {/* <input
-        type="text"
-        value={`${rangeValue} zł`}
-        onChange={(e) => setRangeValue(Number(e.target.value))}
-        className="income_show"
-      /> */}
 
       <div className="income_show">{rangeValue} zł</div>
       {rangeValue === 0 && (

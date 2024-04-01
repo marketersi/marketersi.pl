@@ -96,7 +96,6 @@ const FeedbackSection = ({ setCurrentComponent }) => {
         </div>
         
 
-        {/* x btn */}
         <div className="close" onClick={closeModal}>
           <FontAwesomeIcon icon={faXmark} />
         </div>

@@ -10,7 +10,6 @@ const Home = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { section2 } = screenData;
   const Team_image = screenData?.section2?.image.Team_image || [];
-  console.log("array imahes", Team_image);
 
   const springUp: Variants = {
     offscreen: {
@@ -40,12 +39,9 @@ const Home = () => {
       />
       <div className={style.teamContent}>
         <h2>
-          {/* No więc, <span> jak to jest</span>
-          współpracować z nami? */}
           {section2?.section_two_title_2}
         </h2>
         <p style={{ textAlign: "center", marginTop: "30px" }}>
-          {/* Zapytaliśmy o to setkę naszych klientów. <br /> Oto, co odpowiedzieli: */}
           {section2?.description}
         </p>
       </div>

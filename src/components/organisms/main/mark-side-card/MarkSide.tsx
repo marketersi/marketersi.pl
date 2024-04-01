@@ -13,8 +13,6 @@ const MarkSide = () => {
   const companySection = screenData.companySection || {};
   const companyCard = screenData.companyCard || [];
 
-  console.log("company card", companyCard);
-
   const links1 = [
     {
       label: "Nazwa dla firmy",
@@ -61,7 +59,6 @@ const MarkSide = () => {
         <Col lg={4}>
           <div className={style.mark}>
             <Image
-              // src="/assets/images/Projektowanie-logo.avif"
               src={companySection?.image_1}
               alt="rating image"
               width="auto"
@@ -72,7 +69,6 @@ const MarkSide = () => {
         </Col>
         <Col lg={4}>
           <ReactPlayer
-            // url="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
             url={companySection?.image_2}
             playing={true}
             loop={true}
@@ -86,7 +82,6 @@ const MarkSide = () => {
         <Col lg={4}>
           <div className={style.mark}>
             <Image
-              // src="/assets/images/Agencja-marketingowa.avif"
               src={companySection?.image_3}
               alt="rating image"
               width="auto"

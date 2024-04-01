@@ -17,12 +17,9 @@ const Order = () => {
         <div className={style.order}>
           <div className={style.orderContent}>
             <h2>
-              {/* Zamów bezpłatne badanie strony, by otrzymać porady od ekspertów */}
               {ratingSection?.main_title}
             </h2>
             <p>
-              {/* Usprawnij to na stronie firmy <br /> i przygotuj więcej miejsca na
-              nowych klientów. */}
               {ratingSection?.subtitle_1}
             </p>
 
@@ -34,7 +31,6 @@ const Order = () => {
           </div>
           <div className={style.orderImg}>
             <Image
-              // src="/assets/images/Badanie-marketingu-owocni.avif"
               src={ratingSection?.image_url}
               alt="My Image"
               width="auto"
@@ -42,8 +38,6 @@ const Order = () => {
             />
             <div className={style.ratingContent}>
               <p>
-                {/* Serwis oceniany przez klientów jako <br /> DOSKONAŁY! w ankiecie
-                badania opinii. */}
                 {ratingSection?.subtitle_2}
               </p>
               <div className={style.rating}>
