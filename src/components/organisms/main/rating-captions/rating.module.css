@@ -107,7 +107,6 @@
     }
     .ratingCOntent p {
         font-size: 28px;
-        /* text-align: left; */
     }
     .rating {
         
@@ -117,6 +116,10 @@
 @media screen and (max-width: 767px) {
     .ratingImg img {
         width: 100px;
+    }
+    .ratingCOntent p {
+        font-size: 22px;
+        line-height: 35px;
     }
 
     .ratingImg :nth-child(2) {
@@ -132,6 +135,7 @@
         margin: 0 auto 20px;
     }
     .ratingCOntent h2 {
-        font-size: 45px;
+        font-size: 40px;
+        line-height: 55px;
     }
 }

@@ -294,6 +294,9 @@
     margin: -236px 0 0 330px;
     width: 180px;
   }
+  .heroVideo:before {
+    height: 50%;
+  }
 }
 @media screen and (max-width: 400px) {
   .heroImg3 {

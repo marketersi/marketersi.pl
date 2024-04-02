@@ -63,6 +63,7 @@ const MarkSide = () => {
               alt="rating image"
               width="auto"
               height="auto"
+              className={style.markImg1}
             />
             <Card data={companyCard[0]} links={links1} />
           </div>
