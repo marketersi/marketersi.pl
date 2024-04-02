@@ -90,7 +90,6 @@ export default function WhatRecieve() {
           {WhatReceive?.description_9}
         </div>
       </div>
-      {/* Image 2 */}
       <div className="feature" style={{ textAlign: "center" }}>
         <Image
           src={WhatReceive?.image_url_2}

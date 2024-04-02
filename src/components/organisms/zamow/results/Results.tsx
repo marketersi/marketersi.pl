@@ -49,8 +49,6 @@ const Results = () => {
         })}
       </Row>
 
-      {/* how test works */}
-
       <div className="text-center free-test">
         <h2>{howTestWorks?.title}</h2>
         <div className="p-container">

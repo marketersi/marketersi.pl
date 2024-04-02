@@ -270,12 +270,14 @@
 
 /* ========== */
 .caring img {
-    width: 100%;
+    width: 80%;
+    margin-inline: auto;
+    display: block;
 }
 
-.caringImg {
+/* .caringImg {
     width: 115% !important;
-}
+} */
 
 .caring {
     padding: 0 0 150px;
@@ -416,6 +418,7 @@
 .dogImg img {
     margin: -300px auto 100px;
     display: block;
+    width: 50%;
 }
 
 .peopleVideo {
@@ -503,6 +506,11 @@
 
 .freePara {
     margin: 150px 0 0px !important;
+}
+
+.banner {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 /* -------------------------------------media screen -------------------------------- */
@@ -657,6 +665,7 @@
     .teamContent {
         margin: 0px auto 50px;
     }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -755,17 +764,21 @@
     .caringCard {
         width: 70%;
     }
+
     .caringCard h4 {
         font-size: 20px;
     }
+
     .caringCard p {
         font-size: 16px;
     }
+
     .caring img {
         width: 70%;
         margin: 0 auto;
         display: block;
     }
+
     .cartRow img {
         width: 70%;
         margin: 0 auto 20px;
@@ -794,7 +807,8 @@
         width: 100%;
         overflow: hidden;
     }
-    .dogImg img{
+
+    .dogImg img {
         padding: 0 0 0 0px;
         width: 130%;
         margin: 0px auto 100px;
@@ -849,7 +863,8 @@
     .mainHeading {
         margin: 50px 50px 0 0px;
     }
-    .mainHeading h2{
+
+    .mainHeading h2 {
         text-align: left;
     }
 
@@ -859,6 +874,11 @@
 
     .bannerVideo {
         width: 100% !important;
+    }
+    .bannerVideo video{
+        width: 120% !important;
+        margin-inline: -10px;
+        display: block;
     }
 
     .zespolVideo {
@@ -873,7 +893,8 @@
     .BannerBotHeading {
         padding-left: 0px;
     }
-    .BannerBotImg{
+
+    .BannerBotImg {
         min-height: 250px;
-    }
+    }           
 }

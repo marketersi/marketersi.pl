@@ -33,7 +33,6 @@ import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 const StrategiaMarketingowa = () => {
   const { isLoading, screenData } = useSelector((state) => state.strategy);
   const { FAQsection } = screenData || {};
-  // const {  screenData : ConsultData  } = useSelector((state) => state.consulting);
 
   const { screenData: PriceListData } = useSelector((state) => state.priceList);
 
@@ -52,67 +51,46 @@ const StrategiaMarketingowa = () => {
         <Loader />
       ) : ( */}
       <div>
-        {/* 1. MainHeading */}
         <MainHeading />
 
-        {/* 2. MainContentOne */}
         <MainContentOne />
 
-        {/* 3. MainNumber */}
         <MainNumber />
 
-        {/* 4. MainContentTwo */}
         <MainContentTwo />
 
-        {/* 5. ResultTable */}
         <ResultTable />
 
-        {/* 6. Strategy */}
         <Strategy />
 
-        {/* 7. Testimonial */}
         <Testimonial />
 
-        {/* 8. ResultMax */}
         <ResultMax />
 
-        {/* 9. Analysis */}
         <Analysis />
 
-        {/* 10. WhatRecieve */}
         <WhatRecieve />
 
-        {/* 11. ImageAdvantage */}
         <ImageAdvantage />
 
-        {/* 12. InviteCustomer */}
         <InviteCustomer />
 
-        {/* 13. QuoteOne */}
         <QuoteOne />
 
-        {/* 14. Branding */}
         <Branding />
 
-        {/* 15. QuoteTwo */}
         <QuoteTwo />
 
-        {/* 16. OurClients */}
         <OurClients />
 
-        {/* 17. Price */}
         <Price />
 
-        {/* 18. StrategyAction */}
         <StrategyAction />
 
-        {/* 19. AnswerAll */}
         <AnswerAll />
 
-        {/* 20. Accordion */}
         <YesAccordion />
       </div>
-      {/* )} */}
     </>
   );
 };

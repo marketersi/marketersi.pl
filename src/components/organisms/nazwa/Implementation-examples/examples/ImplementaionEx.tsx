@@ -33,9 +33,6 @@ const ImplementationExample1 = () => {
       </div>
 
       <div className="names-client-desc names-client-iglarki">
-        {/* Dwie kreatywne mamy, <br />
-        które w wolnym czasie <br />
-        szyją piękne rzeczy. */}
         {example1?.subtitle}
       </div>
     </section>

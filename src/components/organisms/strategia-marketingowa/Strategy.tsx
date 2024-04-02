@@ -5,7 +5,6 @@ export default function Strategy() {
 
   const { isLoading, screenData } = useSelector((state) => state.strategy);
   const { strategy } = screenData;
-  // console.log(featureList);
 
   return (
     <div className="Strategy content">

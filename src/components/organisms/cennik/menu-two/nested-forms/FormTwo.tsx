@@ -60,7 +60,6 @@ const FormTwo = ({ setCurrentComponent, form }) => {
           <button onClick={closeModal}>{form?.button_text}</button>
         </div>
 
-        {/* x btn */}
         <div className="close" onClick={closeModal}>
           <FontAwesomeIcon icon={faXmark} />
         </div>

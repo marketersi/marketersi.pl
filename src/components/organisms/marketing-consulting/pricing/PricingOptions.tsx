@@ -10,8 +10,6 @@ const PricingOption = () => {
   const { PricingOption } = screenData || {};
   const { Form } = screenData?.PricingOption || {};
 
-  console.log("form data ===>", Form);
-
   return (
     <section>
       <div className="container po_pricing_sec">

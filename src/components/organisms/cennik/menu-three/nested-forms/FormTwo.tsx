@@ -80,7 +80,6 @@ const FeedbackSection = ({ setCurrentComponent }) => {
           <button onClick={closeModal}>{modalInfo?.form3_modal_buttonText}</button>
         </div>
 
-        {/* x btn */}
         <div className="close" onClick={closeModal}>
           <FontAwesomeIcon icon={faXmark} />
         </div>

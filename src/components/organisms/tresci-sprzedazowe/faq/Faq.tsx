@@ -16,7 +16,6 @@ type AccordionProps = {
 
 const Faq: React.FC<AccordionProps> = ({ faq }) => {
   const {faqAQ} = faq || [];
-  console.log ("asdfkjskdfk", faqAQ)
 
 
   const {faq_ques, faq_ans} = faqAQ || [];

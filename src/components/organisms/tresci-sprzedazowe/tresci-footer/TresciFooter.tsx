@@ -55,7 +55,6 @@ const TresciFooter = () => {
           </button>
         </div>
 
-        {/* Footer contact btn */}
         <div className="tresci_contact_footer_btn">
           <a href="tel:570964200">
             <strong>Zadzwoń</strong>

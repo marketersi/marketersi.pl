@@ -9,8 +9,6 @@ const SelectedProjects = () => {
   const { Projects } = screenData || {};
   const { subtitle, title, Cards } = Projects || {};
 
-  console.log("cards", Cards);
-
   return (
     <Container className="sp_sec">
       <div className="sp_header">

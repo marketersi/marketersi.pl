@@ -60,10 +60,6 @@ const InkBook = () => {
           {qualities?.title}
         </div>
 
-        {/* <div className="copywriter-custom-subheader-4 text-center">
-          Ale to więcej niż ksiązka.
-        </div> */}
-
         <div className="container text-center copywriter-reading-container copywriter-standard-mb-80">
           <div className="row">
             <div className="col-md-4">

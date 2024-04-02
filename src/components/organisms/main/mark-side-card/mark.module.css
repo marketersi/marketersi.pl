@@ -63,6 +63,9 @@
 .markVideo video {
     width: 100% !important;
 }
+.markImg1{
+    width: 65% !important;
+}
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
     .mark img{
@@ -73,20 +76,24 @@
     .markVideo video {
         margin: 40px auto 0;
         display: block;
+        width: 60% !important;
     }
 }
 @media screen and (max-width: 767px) {
     .mark img{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         display: block;
     }
     .markVideo video {
         margin: 40px auto 0;
         display: block;
-        width: 80% !important;
+        width: 95% !important;
     }
     .markCard{
         width: 100%;
+    }
+    .markImg1{
+        width: 90% !important;
     }
 }

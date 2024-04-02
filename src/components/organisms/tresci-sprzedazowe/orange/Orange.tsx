@@ -12,12 +12,6 @@ const Orange = () => {
         <div className="copywriter-orange-bg" style={{
   backgroundImage: `url(${projectSection1?.background_image})`
 }}>
-          {/* <img
-            className="copywriter-seo-img-dnone"
-            src="https://cdn.owocni.pl/img/single-copywriter/seo-images/Reklama-hurum-tlo.jpg"
-            title="Content marketing dla firm"
-            alt="Strony internetowe powinny zawierać oferty reklamowe"
-          /> */}
         </div>
         <div className="copywriter-text-center">
           <img

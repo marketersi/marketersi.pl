@@ -25,14 +25,6 @@ const OptionBox2 = ({optionBox2 }) => {
                   alt="Opinia klienta jest bardzo ważna dla agencji marketingowej"
                 />
               </div>
-              {/* <div className="opinion-box-content rwd-opinion-image opinion-client-bg-prawo copywriter-prawo">
-                <img
-                  className="opinion-box-inside-image"
-                  src="https://cdn.owocni.pl/img/single-copywriter/seo-images/klient-agencji-reklamowej-owocni.jpg"
-                  title="Usługi copywriterskie dla różnych branż"
-                  alt="Opinia klienta jest bardzo ważna dla agencji marketingowej"
-                />
-              </div> */}
               <div className="opinion-box-content projects-opinion-2 copywriter-prawo-text">
                 <p className="theme-desc projects-client-opinion-p text-center">
                   {title}
