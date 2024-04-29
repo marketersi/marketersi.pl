@@ -16,10 +16,7 @@ type AccordionProps = {
   items: AccordionItem[];
 };
 
-const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
-  const { screenData: logoData } = useSelector((state) => state.logo);
-  const { LogoAccordionData } = logoData || {};
-
+const LogoAccordion: React.FC<AccordionProps> = ({ items, title, image }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleClick = (index: number) => {
@@ -28,16 +25,9 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items }) => {
 
   return (
     <div id="sec2">
-      <div className="copywriter-intro-bg-5-label text-center">
-        {LogoAccordionData?.title}
-      </div>
+      <div className="copywriter-intro-bg-5-label text-center">{title}</div>
 
-      <img
-        src={LogoAccordionData?.description}
-        className="img-background-logop"
-        alt="tak_image"
-        title="Projekt loga przedstawiający słowo “TAK”"
-      />
+      <img src={image} className="img-background-logop" alt="tak_image" />
 
       <div className="faqContainer">
         {items &&

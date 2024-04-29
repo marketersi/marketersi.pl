@@ -56,8 +56,8 @@ const Hero = () => {
           <div className={style.subtitleContainer}>
             <h6>{heroSection?.subtitle}</h6>
             <p>
-            Z Marketersami jest łatwiej. <br />
-Przyjemnie i przewidywalnie.
+              Z Marketersami jest łatwiej. <br />
+              Przyjemnie i przewidywalnie.
             </p>
             <p></p>
           </div>
@@ -75,7 +75,7 @@ Przyjemnie i przewidywalnie.
               ></motion.div>
             </Link>
           </div>
-          <div className={style.heroBottomImg}>
+          {/* <div className={style.heroBottomImg}>
             <div className={style.leftImg} ref={ref}>
               <motion.img
                 src={heroSection?.image_left1}
@@ -120,7 +120,7 @@ Przyjemnie i przewidywalnie.
                 animate={controls}
               />
             </div>
-          </div>
+          </div> */}
         </Container>
       </div>
     </div>
