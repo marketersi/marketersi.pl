@@ -18,9 +18,11 @@ import OptionBox2 from "@/components/organisms/tresci-sprzedazowe/options-box2/O
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 
 const NazwaDlaFirmy = () => {
-  const {  screenData } = useSelector((state) => state.anatomy);
-  const {  launch_essentials, faq } = screenData || {};
+  const { screenData } = useSelector((state) => state.anatomy);
+  const { launch_essentials, faq } = screenData || {};
   const { accordion } = faq || {};
+
+  console.log("nazwaDlaFirmy acc", accordion);
   const dispatch = useDispatch();
 
   if (screenData) {
@@ -43,7 +45,7 @@ const NazwaDlaFirmy = () => {
 
       <LaunchEssentials />
 
-      <LogoAccordion items={accordion} />
+      <LogoAccordion items={accordion} title={faq?.title} image={faq?.image} />
 
       <ProjectValue />
 

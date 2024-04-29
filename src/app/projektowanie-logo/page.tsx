@@ -35,7 +35,7 @@ const LogoDesignScreen = () => {
   const dispatch = useDispatch();
 
   const { LogoAccordionData } = screenData || {};
-  const { accordionData } = LogoAccordionData || {};
+  const { accordionData, title, description } = LogoAccordionData || {};
 
   useEffect(() => {
     dispatch({ type: FETCH_LOGO_SCREEN_DATA });
@@ -69,7 +69,11 @@ const LogoDesignScreen = () => {
         <Opinion />
         <Receive />
         <Guarantee openModal={openModal} />
-        <LogoAccordion items={accordionData} />
+        <LogoAccordion
+          items={accordionData}
+          title={title}
+          image={description}
+        />
         <ProjectValue />
         <Gallery openModal={openModal} />
         <StepByStep />

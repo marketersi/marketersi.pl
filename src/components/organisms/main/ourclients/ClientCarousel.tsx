@@ -21,7 +21,6 @@ const ClientCarousel = ({ slides, options }) => {
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-
             {slides?.map((e, index) => (
               <div className="embla__slide" key={index}>
                 {index === slides.length - 1 ? (
