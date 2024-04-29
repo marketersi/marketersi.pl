@@ -1,7 +1,6 @@
 import React, { createContext } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { SlideFour, SlideOne } from "./OurClients";
-import Autoplay from "embla-carousel-autoplay";
 
 const CarouselContext = createContext({
   handleNext: () => {},
@@ -9,9 +8,7 @@ const CarouselContext = createContext({
 });
 
 const ClientCarousel = ({ slides, options }) => {
-  const [emblaRef, embla] = useEmblaCarousel(options, [
-    Autoplay({ playOnInit: true, delay: 3000 }),
-  ]);
+  const [emblaRef, embla] = useEmblaCarousel(options);
   const handleNext = () => {
     embla.scrollNext();
   };
