@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
+import { ModalForm } from "../tresci-sprzedazowe/ModalForm";
 
 const UXVideoData = {
   title: "UX Video",
@@ -29,6 +30,14 @@ const UxVideo = () => {
   const Videotab = UXVideo.Videotab || [];
 
   const [selectedTab, setSelectedTab] = useState(1);
+
+  
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
+
   return (
     <>
       <section id="videoSection">
@@ -131,11 +140,12 @@ const UxVideo = () => {
           <p className="textAnimation">{UXVideo?.paragraph_5}</p>
           <a className="send-offer-button js--triggerAnimation">
             <span>
-              <span> {UXVideo?.button_text}</span>
+              <span onClick={() => setIsModal(true)}> {UXVideo?.button_text}</span>
             </span>
           </a>
         </div>
       </section>
+      <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </>
   );
 };

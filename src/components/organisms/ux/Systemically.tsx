@@ -17,10 +17,10 @@ const Systemically = () => {
         <div id="guaranteeWrapper">
           <div id="guarantee">
             
-            <img src={Systematically.image} alt="" />
+            <img src={Systematically.image} alt="" className="desktop"/>
 
-            <div className="rowD">
-              <div>
+            <div className="rowD row">
+              <div className="col-xxl-7 order-xxl-1 order-2">
                 <h2>{Systematically.title}</h2>
                 <p>
                   <b>- {Systematically.subtitle}</b>
@@ -28,9 +28,9 @@ const Systemically = () => {
                   {Systematically.description}
                 </p>
               </div>
-              <div className="imgs">
+              <div className="imgs col-xxl-5 order-xxl-2 order-1">
                 <img src={Systematically.right_image} alt="" />
-                
+                <img src={Systematically.image} alt=""  className="mobile"/>
               </div>
             </div>
           </div>
