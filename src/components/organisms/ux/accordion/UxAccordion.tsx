@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "./accordion.css";
 import { useSelector } from "react-redux";
+import { ModalForm } from "../../tresci-sprzedazowe/ModalForm";
 
 const UXAccordion = () => {
   const { screenData } = useSelector((state) => state.ux);
@@ -13,6 +14,14 @@ const UXAccordion = () => {
   const handleClick = (index: number) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+
+  
+  const [isModal, setIsModal] = useState(false);
+
+  const handleModalClose = () => {
+    setIsModal(!isModal);
+  };
+
 
   return (
     <>
@@ -51,10 +60,11 @@ const UXAccordion = () => {
           ))}
         <a className="send-offer-button js--triggerAnimation">
           <span>
-            <span>OK Wyślijcie mi niezobowiązującą ofertę </span>
+            <span onClick={() => setIsModal(true)}>OK Wyślijcie mi niezobowiązującą ofertę </span>
           </span>
         </a>
       </div>
+            <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </>
   );
 };

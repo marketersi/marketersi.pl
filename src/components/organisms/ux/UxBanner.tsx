@@ -11,7 +11,7 @@ const UxBanner = () => {
       <section>
         <div id="header" className="UXBannerContainer">
           <div className="row">
-            <div className="col-lg-6 order-lg-1 order-2">
+            <div className="col-xxl-6 order-xxl-1 order-2">
               <h1 className="titleHead">
                 <span>
                   {HeroSection?.title1}
@@ -24,12 +24,12 @@ const UxBanner = () => {
               <p className="subitle mt-4">{HeroSection.description2} </p>
               <p className="subitle"></p>
             </div>
-            <div className="col-lg-6 order-lg-2 order-1">
+            <div className="col-xxl-6 order-xxl-2 order-1">
             <ReactPlayer
               muted={true}
               playing={true}
               loop={true}
-              width="100%"
+              width="80%"
               height="auto"
               url={HeroSection?.video_url}
               className="UXheroVideo"

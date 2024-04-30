@@ -9,25 +9,25 @@ h6 {
   margin: 0;
 }
 
-#header > div {
+#header>div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
 }
 
-#header > div video {
+#header>div video {
   position: relative;
   max-width: 95vw;
   z-index: -2;
 }
 
-#header > div div {
+#header>div div {
   position: relative;
   left: 10px;
 }
 
-#header > div div .titleHead {
+#header>div div .titleHead {
   font-size: min(14vw, 100px);
   font-family: "Playfair Display", serif;
   margin: auto;
@@ -40,11 +40,11 @@ h6 {
   margin-bottom: 40px;
 }
 
-#header > div div .titleHead > span {
+#header>div div .titleHead>span {
   margin-left: -40px;
 }
 
-#header > div div .titleHead .UX {
+#header>div div .titleHead .UX {
   color: #fff;
   font-size: 210px;
   position: absolute;
@@ -55,7 +55,7 @@ h6 {
   font-size: min(30vw, 210px);
 }
 
-#header > div div .subitle {
+#header>div div .subitle {
   letter-spacing: -0.9px;
   color: #515151;
   font-size: min(5vw, 32px);
@@ -67,7 +67,7 @@ h6 {
   margin-bottom: 0;
 }
 
-#header > div div .subitle > span {
+#header>div div .subitle>span {
   font-weight: 700;
   font-size: min(5.6vw, 47px);
   display: inline-flex;
@@ -75,28 +75,28 @@ h6 {
   color: #e3e3e3;
 }
 
-#header > div div .subitle > span .space {
+#header>div div .subitle>span .space {
   display: block;
   margin: 5px;
 }
 
-#header > div div .subitle > span span {
+#header>div div .subitle>span span {
   letter-spacing: -4px;
   display: block;
   transform: scaleX(0.9) rotate(10deg);
   color: #37ba9e !important;
 }
 
-#header > div div .subitle:nth-child(3) {
+#header>div div .subitle:nth-child(3) {
   padding-left: 30px;
   padding-bottom: 20px;
 }
 
-#header > div div .subitle:nth-child(4) {
+#header>div div .subitle:nth-child(4) {
   padding-left: 40px;
 }
 
-#header > div div .subitle:nth-child(5) {
+#header>div div .subitle:nth-child(5) {
   padding-left: 60px;
 }
 
@@ -170,8 +170,8 @@ h6 {
   margin-inline: auto;
 }
 
-#messagesSection .text2 > p,
-#messagesSection .text2 > div {
+#messagesSection .text2>p,
+#messagesSection .text2>div {
   line-height: 1.23;
   padding: 20px 0;
   color: #515151;
@@ -216,7 +216,7 @@ h6 {
 }
 
 .mobile {
-  display: none;
+  display: none !important;
 }
 
 #messagesSection .timer {
@@ -486,7 +486,7 @@ h6 {
   z-index: 11;
 }
 
-#boxySection .pricing:checked ~ .card-3d-wrap .card-3d-wrapper {
+#boxySection .pricing:checked~.card-3d-wrap .card-3d-wrapper {
   height: 100%;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -514,6 +514,7 @@ h6 {
 }
 
 @-webkit-keyframes border-transform {
+
   0%,
   100% {
     border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
@@ -545,6 +546,7 @@ h6 {
 }
 
 @keyframes border-transform {
+
   0%,
   100% {
     border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
@@ -639,16 +641,15 @@ h6 {
     -webkit-transform 400ms 0.1s cubic-bezier(0.03, -1.35, 0.49, 2.21);
 }
 
-#boxySection .gif > * {
+#boxySection .gif>* {
   width: 270px;
   height: 270px;
 }
 
-#boxySection .pricing:checked ~ .card-3d-wrap .card-3d-wrapper .gif {
+#boxySection .pricing:checked~.card-3d-wrap .card-3d-wrapper .gif {
   opacity: 1;
   pointer-events: auto;
-  -webkit-transform: translate3d(0, 0, 35px) perspective(100px) scale(1)
-    rotate(0deg);
+  -webkit-transform: translate3d(0, 0, 35px) perspective(100px) scale(1) rotate(0deg);
   transform: translate3d(0, 0, 35px) perspective(100px) scale(1) rotate(0deg);
   -webkit-transition: rotate cubic-bezier(0.03, -1.35, 0.49, 2.21),
     opacity 300ms 3500ms ease,
@@ -768,7 +769,7 @@ h6 {
     -webkit-transform 300ms 1300ms cubic-bezier(0.18, -0.74, 0.4, 2.39);
 }
 
-#boxySection .pricing:checked ~ .card-3d-wrap .card-3d-wrapper .person {
+#boxySection .pricing:checked~.card-3d-wrap .card-3d-wrapper .person {
   opacity: 0;
   -webkit-transform: translate(-50%, 50px) scale(1);
   -ms-transform: translate(-50%, 50px) scale(1);
@@ -789,8 +790,7 @@ h6 {
 
 #boxySection .head {
   position: relative;
-  -webkit-transform: translate3d(0, 5px, 35px) perspective(100px) scale(0)
-    rotate(30deg);
+  -webkit-transform: translate3d(0, 5px, 35px) perspective(100px) scale(0) rotate(30deg);
   transform: translate3d(0, 5px, 35px) perspective(100px) scale(0) rotate(30deg);
   opacity: 0;
   pointer-events: none;
@@ -812,11 +812,10 @@ h6 {
   left: -7px;
 }
 
-#boxySection .pricing:checked ~ .card-3d-wrap .card-3d-wrapper .head {
+#boxySection .pricing:checked~.card-3d-wrap .card-3d-wrapper .head {
   opacity: 1;
   pointer-events: auto;
-  -webkit-transform: translate3d(0, 0, 35px) perspective(100px) scale(1)
-    rotate(0deg);
+  -webkit-transform: translate3d(0, 0, 35px) perspective(100px) scale(1) rotate(0deg);
   transform: translate3d(0, 0, 35px) perspective(100px) scale(1) rotate(0deg);
   -webkit-transition: rotate, opacity 300ms 1300ms ease,
     -webkit-transform 400ms 1300ms cubic-bezier(0.03, -1.35, 0.49, 2.21);
@@ -871,7 +870,7 @@ h6 {
   border-radius: 100%;
 }
 
-#boxySection .pricing:checked ~ .card-3d-wrap .card-3d-wrapper .circle {
+#boxySection .pricing:checked~.card-3d-wrap .card-3d-wrapper .circle {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -940,7 +939,7 @@ h6 {
   display: none;
 }
 
-#boxySection .pricing + label {
+#boxySection .pricing+label {
   display: none !important;
 }
 
@@ -1175,7 +1174,7 @@ h6 {
   height: 1100px;
   max-width: 1160px;
   margin: auto;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -1185,26 +1184,26 @@ h6 {
   bottom: 0;
 }
 
-#maciej .imgs > img,
-#maciej .imgs > picture {
+#maciej .imgs>img,
+#maciej .imgs>picture {
   bottom: 0;
   position: absolute;
 }
 
-#maciej .imgs > img:nth-child(1),
-#maciej .imgs > picture:nth-child(1) {
+#maciej .imgs>img:nth-child(1),
+#maciej .imgs>picture:nth-child(1) {
   left: 50px;
   bottom: 20px;
   transform: scale(0.9);
 }
 
-#maciej .imgs > img:nth-child(2),
-#maciej .imgs > picture:nth-child(2) {
+#maciej .imgs>img:nth-child(2),
+#maciej .imgs>picture:nth-child(2) {
   bottom: -10px;
 }
 
-#maciej .imgs > img:nth-child(3),
-#maciej .imgs > picture:nth-child(3) {
+#maciej .imgs>img:nth-child(3),
+#maciej .imgs>picture:nth-child(3) {
   left: 540px;
   bottom: 30px;
 }
@@ -1279,8 +1278,8 @@ h6 {
   transform: translate(-50%, -50%);
 }
 
-#maciej .contentText > img,
-#maciej .contentText > picture {
+#maciej .contentText>img,
+#maciej .contentText>picture {
   position: absolute;
   bottom: -120px;
   z-index: -2;
@@ -1304,7 +1303,7 @@ h6 {
   margin-top: 100px;
 }
 
-#textArrow p > span {
+#textArrow p>span {
   font-weight: 700;
   font-size: min(5vw, 43px);
   display: inline-flex;
@@ -1312,12 +1311,12 @@ h6 {
   color: #e3e3e3;
 }
 
-#textArrow p > span .space {
+#textArrow p>span .space {
   display: block;
   margin: 5px;
 }
 
-#textArrow p > span span {
+#textArrow p>span span {
   letter-spacing: -3px;
   display: block;
   transform: scaleX(0.9) rotate(10deg);
@@ -1357,7 +1356,7 @@ section.arrowContainer {
   margin: 0;
 }
 
-#textArrow .rowD > div {
+#textArrow .rowD>div {
   margin: 80px 0;
 }
 
@@ -1401,7 +1400,7 @@ section.arrowContainer {
   display: none;
 }
 
-#guarantee > img {
+#guarantee>img {
   margin: auto;
   display: block;
   margin-bottom: 200px;
@@ -1414,7 +1413,7 @@ section.arrowContainer {
   z-index: 2;
   position: relative;
   padding: 0 60px 0 0;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 #guarantee .rowD h2 {
@@ -1436,21 +1435,27 @@ section.arrowContainer {
 }
 
 #guarantee .rowD .imgs {
-  left: -80px;
   z-index: -1;
   position: relative;
-  bottom: -50px;
   max-width: 95vw;
 }
 
 #guarantee .rowD .imgs img {
-  top: -100px;
-  position: absolute;
+  margin-inline: auto;
+  display: block;
 }
 
 #guarantee .rowD .imgs img:nth-child(2) {
   left: 100px;
   top: 350px;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: none;
 }
 
 /* ------------------Video Section--------------- */
@@ -1461,18 +1466,18 @@ section.arrowContainer {
   margin-inline: auto;
 }
 
-#videoSection > :nth-child(1) {
+#videoSection> :nth-child(1) {
   text-align: center;
   font-family: "Georgia", serif;
   color: #333;
   line-height: 1;
 }
 
-#videoSection > :nth-child(1) .mobile {
+#videoSection> :nth-child(1) .mobile {
   display: none;
 }
 
-#videoSection > :nth-child(1) h2 {
+#videoSection> :nth-child(1) h2 {
   font-size: clamp(50px, 100px, 120px);
   padding: 100px 0 50px 0;
   letter-spacing: -1px;
@@ -1483,18 +1488,18 @@ section.arrowContainer {
   line-height: clamp(50px, 100px, 120px);
 }
 
-#videoSection > :nth-child(1) p {
+#videoSection> :nth-child(1) p {
   padding: 0 0 30px;
   font-size: clamp(30px, 40px, 50px);
   letter-spacing: -0.5px;
   line-height: 1.33;
 }
 
-#videoSection > :nth-child(1) p .italy {
+#videoSection> :nth-child(1) p .italy {
   font-style: italic;
 }
 
-#videoSection > :nth-child(1) p > span:not(:nth-child(1)) {
+#videoSection> :nth-child(1) p>span:not(:nth-child(1)) {
   font-weight: 700;
   font-size: 56px;
   display: inline-flex;
@@ -1502,19 +1507,19 @@ section.arrowContainer {
   color: #e3e3e3;
 }
 
-#videoSection > :nth-child(1) p > span:not(:nth-child(1)) .space {
+#videoSection> :nth-child(1) p>span:not(:nth-child(1)) .space {
   display: block;
   margin: 5px;
 }
 
-#videoSection > :nth-child(1) p > span:not(:nth-child(1)) span {
+#videoSection> :nth-child(1) p>span:not(:nth-child(1)) span {
   letter-spacing: -2px;
   display: block;
   transform: rotate(10deg);
   color: #37ba9e;
 }
 
-#videoSection > :nth-child(2) {
+#videoSection> :nth-child(2) {
   padding: 50px 0;
   display: flex;
   justify-content: center;
@@ -1522,41 +1527,41 @@ section.arrowContainer {
   position: relative;
 }
 
-#videoSection > :nth-child(2) .para {
+#videoSection> :nth-child(2) .para {
   position: absolute;
   z-index: 12;
 }
 
-#videoSection > :nth-child(2) .para img {
+#videoSection> :nth-child(2) .para img {
   position: absolute;
   top: 390px;
   left: -500px;
 }
 
-#videoSection > :nth-child(2) .para img.dot1 {
+#videoSection> :nth-child(2) .para img.dot1 {
   top: 550px;
 }
 
-#videoSection > :nth-child(2) .para img.dot2 {
+#videoSection> :nth-child(2) .para img.dot2 {
   z-index: 2;
   top: 600px;
   left: -360px;
 }
 
-#videoSection > :nth-child(2) .para img.dot3 {
+#videoSection> :nth-child(2) .para img.dot3 {
   z-index: -1;
   top: 540px;
   left: -510px;
 }
 
-#videoSection > :nth-child(2) .para img.dot4 {
+#videoSection> :nth-child(2) .para img.dot4 {
   top: 320px;
   z-index: -2;
   left: -450px;
   transform: scale(0.5);
 }
 
-#videoSection > :nth-child(2) h2 {
+#videoSection> :nth-child(2) h2 {
   font-size: 87px;
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -1566,18 +1571,18 @@ section.arrowContainer {
   color: #333;
 }
 
-#videoSection > :nth-child(2) #videos {
+#videoSection> :nth-child(2) #videos {
   position: relative;
   left: 50px;
 }
 
-#videoSection > :nth-child(2) #videos .videoBg {
+#videoSection> :nth-child(2) #videos .videoBg {
   position: absolute;
   top: -15px;
   left: -90px;
 }
 
-#videoSection > :nth-child(2) .textVideo {
+#videoSection> :nth-child(2) .textVideo {
   padding-left: 120px;
   display: flex;
   justify-content: space-around;
@@ -1661,11 +1666,9 @@ section.arrowContainer {
   background: #1ec19b;
   transform-origin: right;
   animation: gradient calc(var(--time) * 1ms) linear infinite;
-  background: linear-gradient(
-    270deg,
-    #ee8aa1 100%,
-    rgba(238, 138, 161, 0) 100%
-  );
+  background: linear-gradient(270deg,
+      #ee8aa1 100%,
+      rgba(238, 138, 161, 0) 100%);
 }
 
 #videoSection .textWithArrow div.active h3:before {
@@ -1719,7 +1722,7 @@ section.arrowContainer {
   display: inline-flex;
 }
 
-#WhatGet a > span {
+#WhatGet a>span {
   transform: translate(-10px, -10px);
   transition: transform 0.5s;
   border-radius: 60px;
@@ -1729,11 +1732,11 @@ section.arrowContainer {
   display: inline-flex;
 }
 
-#WhatGet a > span:hover {
+#WhatGet a>span:hover {
   transform: translate(0px, 0px);
 }
 
-#WhatGet a > span > span {
+#WhatGet a>span>span {
   background: white;
   padding: 30px;
   margin: 3px;
@@ -1866,21 +1869,21 @@ section.arrowContainer {
   stroke: #e3e3e3;
 }
 
-#stage > div:nth-child(1) {
+#stage>div:nth-child(1) {
   text-align: center;
   font-family: "Georgia", serif;
   color: #333;
   line-height: 1;
 }
 
-#stage > div:nth-child(1) p {
+#stage>div:nth-child(1) p {
   padding: 30px;
   font-size: min(4.5vw, 50px);
   letter-spacing: -0.5px;
   line-height: 1.3;
 }
 
-#stage > div:nth-child(1) p > span {
+#stage>div:nth-child(1) p>span {
   font-weight: 700;
   font-size: min(5vw, 61px);
   display: inline-flex;
@@ -1889,12 +1892,12 @@ section.arrowContainer {
   color: #e3e3e3;
 }
 
-#stage > div:nth-child(1) p > span .space {
+#stage>div:nth-child(1) p>span .space {
   display: block;
   margin: 5px;
 }
 
-#stage > div:nth-child(1) p > span span {
+#stage>div:nth-child(1) p>span span {
   letter-spacing: -2px;
   display: block;
   transform: rotate(10deg);
@@ -1964,7 +1967,7 @@ section.arrowContainer {
   z-index: 10;
 }
 
-#stage .number > div {
+#stage .number>div {
   width: 100%;
   height: 100%;
   position: relative;
@@ -1981,35 +1984,35 @@ section.arrowContainer {
   max-width: 100vw;
 }
 
-#stage .stageD > div {
+#stage .stageD>div {
   width: 95vw;
   max-width: 800px;
   margin: 50px 0;
   padding: 15px;
 }
 
-#stage .stageD > div h3 {
+#stage .stageD>div h3 {
   font-size: min(12.5vw, 72px);
 }
 
-#stage .stageD > div .subtitle {
+#stage .stageD>div .subtitle {
   font-size: min(4.5vw, 36px);
   font-family: "Georgia", serif;
   color: #515151;
   margin: 40px 0 20px 0;
 }
 
-#stage .stageD > div p:not(.subtitle) {
+#stage .stageD>div p:not(.subtitle) {
   font-size: min(4vw, 24px);
   font-family: arial;
 }
 
-#stage .stageD > div p {
+#stage .stageD>div p {
   font-size: 36px;
   position: relative;
 }
 
-#stage .stageD > div.right.texts {
+#stage .stageD>div.right.texts {
   text-align: left;
 }
 
@@ -2041,7 +2044,7 @@ section.arrowContainer {
   margin-bottom: 200px;
 }
 
-#ImageSection > div {
+#ImageSection>div {
   position: sticky;
   top: 0;
   height: 100vh;
@@ -2050,7 +2053,7 @@ section.arrowContainer {
   align-items: center;
 }
 
-#ImageSection > div h2 {
+#ImageSection>div h2 {
   font-weight: bold;
   line-height: 149px;
   font-size: 200px;
@@ -2060,13 +2063,13 @@ section.arrowContainer {
   transform: translateY(-320px);
 }
 
-#ImageSection > div .shadow {
+#ImageSection>div .shadow {
   box-shadow: 0px -80px 80px 20px #e3e3e3;
   width: 1440px;
   height: 936px;
 }
 
-#ImageSection > div > * {
+#ImageSection>div>* {
   margin: auto;
   display: block;
   transform-style: preserve-3d;
@@ -2191,7 +2194,7 @@ section.arrowContainer {
   font-size: min(10vw, 60px);
 }
 
-#highResult h2 > span {
+#highResult h2>span {
   font-weight: 700;
   font-size: min(9.6vw, 67px);
   display: inline-flex;
@@ -2199,12 +2202,12 @@ section.arrowContainer {
   color: #e3e3e3;
 }
 
-#highResult h2 > span .space {
+#highResult h2>span .space {
   display: block;
   margin: 5px;
 }
 
-#highResult h2 > span span {
+#highResult h2>span span {
   letter-spacing: -4px;
   display: block;
   transform: scaleX(0.9) rotate(10deg);
@@ -2292,7 +2295,7 @@ section.arrowContainer {
   display: inline-flex;
 }
 
-#faq a > span {
+#faq a>span {
   transform: translate(-10px, -10px);
   transition: transform 0.5s;
   border-radius: 60px;
@@ -2302,11 +2305,11 @@ section.arrowContainer {
   display: inline-flex;
 }
 
-#faq a > span:hover {
+#faq a>span:hover {
   transform: translate(0px, 0px);
 }
 
-#faq a > span > span {
+#faq a>span>span {
   background: white;
   padding: 30px;
   margin: 3px;
@@ -2486,6 +2489,7 @@ section.dCard {
   max-width: 1200px;
   margin-inline: auto;
 }
+
 .cardBG {
   background: #ff5000;
   border-radius: 25px 25px 0 0;
@@ -2493,15 +2497,18 @@ section.dCard {
   margin: 0 auto;
   max-height: 230px;
 }
+
 .cardBG .cardMainImg {
   margin-left: -10px;
   margin-top: -20px;
   width: 100%;
   max-height: 220px;
 }
+
 .cardBox {
   position: relative;
 }
+
 .cardHeading {
   background: white;
   width: 95%;
@@ -2511,11 +2518,13 @@ section.dCard {
   border-radius: 20px;
   box-shadow: 0 0 10px lightgray;
 }
+
 .cardHeading h3 {
   color: #ff5000;
   font-size: 28px;
   font-weight: 600;
 }
+
 .cursor {
   position: absolute;
   top: 20px;
@@ -2525,11 +2534,13 @@ section.dCard {
   border: 3px solid #ff9667;
   border-radius: 100%;
 }
+
 .cursor img {
   width: 20px;
   display: block;
   margin: 10px 0 0 15px;
 }
+
 .cursor h6 {
   background: #ff5000;
   font-size: 14px;
@@ -2537,6 +2548,7 @@ section.dCard {
   margin-top: 5px;
   margin-left: 0px;
 }
+
 .projects-custom-typed-text {
   font-size: clamp(40px, 50px, 100px);
   margin-block: 100px;
@@ -2546,89 +2558,144 @@ section.dCard {
 video.mobileVideo {
   display: none;
 }
+
 /* ----------------------------------media screen ----------------------- */
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {
+  .UXheroVideo {
+    width: 80% !important;
+    margin-inline: auto;
+  }
+
+  #header>div div .titleHead {
+    padding-left: 130px;
+  }
+
+  #header>div div .titleHead .UX {
+    left: 420px;
+  }
+
+  #header>div div .titleHead>span {
+    margin-left: 0px;
+  }
+
+  #header>div div .subitle {
+    margin-left: 140px;
+  }
+
+  #header>div div .subitle:nth-child(3) {
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
-  #header > div div .titleHead > span {
+  #header>div div .titleHead>span {
     margin: 0;
   }
-  #header > div div .titleHead {
+
+  #header>div div .titleHead {
     padding-left: 0;
   }
-  #header > div div .subitle {
+
+  #header>div div .subitle {
     margin-left: 0;
   }
-  #header > div div .subitle:nth-child(3) {
+
+  #header>div div .subitle:nth-child(3) {
     padding-left: 0;
   }
+
   #numbers {
     display: grid;
     justify-content: normal;
     grid-template-columns: auto auto;
   }
+
   #numbers div {
     padding: 0 30px;
     max-width: 100%;
     margin-bottom: 80px;
   }
+
   #messagesSection {
     padding-top: 50px;
     padding-inline: 50px;
   }
+
   .cardBox {
     margin-bottom: 70px;
   }
+
   section.dCard {
     margin-inline: 50px;
   }
+
   .cardBG .cardMainImg {
     margin-left: -10px;
     margin-top: -20px;
     width: 100%;
     max-height: 260px;
   }
+
   .cardBG {
     max-height: 260px;
   }
-  #maciej .imgs > img:nth-child(1),
-  #maciej .imgs > picture:nth-child(1) {
+
+  #maciej .imgs>img:nth-child(1),
+  #maciej .imgs>picture:nth-child(1) {
     display: none;
   }
+
   #maciej .contentText {
     margin-top: 0px;
     padding-inline: 50px;
   }
+
   #maciej .contentText h2 {
     font-size: 65px;
   }
+
   #maciej .contentText .btn-neon {
     margin: 80px auto 0;
   }
+
   #textArrow {
     margin-top: 0px;
   }
+
   #maciej {
     height: 810px;
   }
+
   #textArrow h2 {
     line-height: 70px;
   }
+
   section.arrowContainer {
     padding: 0 50px;
   }
+
   #textArrow .rowD {
     gap: 0px;
     flex-direction: column;
   }
+
   #textArrow .rowD img {
     display: none;
   }
-  #textArrow .rowD > div {
+
+  #textArrow .rowD>div {
     margin: 0px 0 40px;
   }
+
   #textArrow .one {
     text-align: left;
   }
-  #guarantee > img {
+
+  #guarantee>img {
     max-width: 50%;
   }
 
@@ -2636,27 +2703,34 @@ video.mobileVideo {
     padding: 0 50px 0 50px;
     flex-direction: column;
   }
+
   #guarantee .rowD .imgs img {
     top: 0;
-    position: relative;
+    /* position: relative; */
     width: 90%;
     margin-left: auto;
     display: block;
   }
+
+
   #guaranteeWrapper {
     padding-bottom: 50px;
   }
-  #videoSection > :nth-child(1) h2 {
+
+  #videoSection> :nth-child(1) h2 {
     font-size: clamp(50px, 80px, 120px);
     padding: 100px 0 50px 0;
     line-height: clamp(50px, 80px, 120px);
   }
+
   #videoSection {
     padding: 0 50px 0px;
   }
-  #videoSection > :nth-child(2) .textVideo {
+
+  #videoSection> :nth-child(2) .textVideo {
     flex-direction: row;
   }
+
   #videoSection .textWithArrow div h3 {
     text-align: left;
   }
@@ -2664,82 +2738,105 @@ video.mobileVideo {
   #videoSection .textWithArrow div.active h3:after {
     width: 100%;
   }
+
   #videoSection .textWithArrow div.active h3:before {
     width: 100%;
   }
-  #videoSection > :nth-child(2) .para img.dot2 {
+
+  #videoSection> :nth-child(2) .para img.dot2 {
     top: 350px;
     left: -360px;
   }
+
   #WhatGet {
     padding-inline: 50px;
   }
+
   #WhatGet a {
     margin-top: 70px;
     margin-bottom: 70px;
   }
+
   #highResult {
     margin-top: 100px;
     max-width: 1100px;
     margin-inline: auto;
   }
+
   video.mobileVideo {
     display: block;
   }
-  #videoSection > :nth-child(2) #videos {
+
+  #videoSection> :nth-child(2) #videos {
     left: 0;
     width: 100%;
   }
-  #videoSection > :nth-child(2) #videos .videoBg {
+
+  #videoSection> :nth-child(2) #videos .videoBg {
     width: 111%;
   }
+
   div#videos video {
     width: 100% !important;
   }
+
   video.desktopVideo {
     display: none;
   }
 }
+
 @media only screen and (max-width: 767px) {
   video.mobileVideo {
     display: block;
     width: 100%;
   }
+
   #messagesSection h2 {
     font-size: 40px;
   }
-  #header > div div .titleHead .UX {
+
+  #header>div div .titleHead .UX {
     top: -60px;
     left: 140px;
   }
+
   #numbers {
     display: block;
   }
+
   #numbers div {
     margin-bottom: 50px;
   }
+
   #maciej .contentText h2 {
     font-size: 35px;
   }
+
   #messagesSection {
     padding-top: 20px;
     padding-inline: 20px;
   }
+
   #messagesSection .text2 {
     padding-top: 20px;
   }
-  #messagesSection .text2 > p,
-  #messagesSection .text2 > div {
+
+  #messagesSection .text2>p,
+  #messagesSection .text2>div {
     font-size: clamp(16px, 22px, 40px);
   }
+
   .projects-custom-typed-text {
     font-size: clamp(30px, 30px, 100px);
   }
+
   .projects-custom-typed-text {
     font-size: clamp(40px, 50px, 100px);
     margin-block: 80px;
     color: #dd4203;
   }
+
+  
 }
 
 /* test executive styles */
@@ -2774,8 +2871,225 @@ video.mobileVideo {
   margin-bottom: 16px;
   font-weight: 400;
 }
-.executive_video_container {
+
+.executive_video_container {}
+
+.executive_video {}
+
+/* ----------------------------------------goodProcess------------------------------ */
+section.goodProcess {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 100px;
+  margin-block: 100px;
+  padding: 0 8rem;
 }
 
-.executive_video {
+.goodProcess h3 {
+  font-size: min(12.5vw, 68px);
+  margin: 40px 0 -10px;
+  font-family: "Georgia", serif;
+
+}
+
+.goodProcess .subtitle {
+  font-size: min(4.5vw, 36px);
+  font-family: "Georgia", serif;
+  color: #515151;
+  margin: 40px 0 20px 0;
+  max-width: 400px;
+}
+
+.two .subtitle {
+  max-width: 100%;
+  text-align: right;
+}
+
+.three .subtitle {
+  max-width: 100%;
+}
+
+.two h3 {
+  text-align: right;
+}
+
+.two p {
+  text-align: right;
+}
+
+.two .processVideo {
+  margin-left: 30px;
+}
+
+.goodProcess p {
+  font-size: min(4vw, 24px);
+}
+
+.processVideo {
+  margin-left: -50px;
+}
+
+.number {
+  font-size: 300px;
+  text-align: center;
+  color: gray;
+  margin-top: 100px;
+}
+
+.imgs img {
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (max-width: 1360px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+
+  #guarantee .rowD {
+    max-width: 100% !important;
+  }
+
+  #guarantee {
+    margin-top: 150px;
+  }
+
+  #guarantee .rowD h2 {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  section.goodProcess {
+    grid-template-columns: 100%;
+    row-gap: 50px;
+    margin-block: 50px;
+    padding: 0 3rem;
+  }
+
+  .order1 {
+    order: 0;
+  }
+
+  .order2 {
+    order: 1;
+  }
+
+  .order3 {
+    order: 2;
+  }
+
+  .order4 {
+    order: 3;
+  }
+
+  .order5 {
+    order: 5;
+  }
+
+  .order6 {
+    order: 6;
+  }
+
+  .processVideo {
+    width: 100% !important;
+    margin-left: 0;
+  }
+
+  .number {
+    font-size: 150px;
+    margin-top: 0px;
+  }
+
+  .two .processVideo {
+    margin-left: 0px;
+  }
+
+  .two .subtitle {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .two h3 {
+    text-align: left;
+  }
+
+  .two p {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  section.goodProcess {
+    padding: 0 1rem;
+  }
+  #videoSection> :nth-child(1) h2 {
+    font-size: 34px;
+    padding: 0;
+    line-height: 1;
+  }
+
+  #guarantee .rowD p {
+    margin-top: 0px;
+    font-size: min(4vw, 24px);
+    max-width: 500px;
+  }
+  #guarantee .rowD h2 {
+    margin-top: 40px !important;
+}
+#maciej .contentText .btn-neon {
+  font-size: 20px;
+}
+#maciej .contentText p {
+  font-size: 20px;
+}
+#videoSection> :nth-child(1) p {
+  font-size: 20px;
+}
+.faqContainer {
+  padding: 50px 0px !important;
+}
+.accordion-item {
+  padding: 0px 24px 42px 24px !important;
+}
+#highResult .row div:nth-child(1) {
+  position: static;
+}
+section.arrowContainer {
+  padding: 0 20px;
+  margin-top: -250px;
+}
+#textArrow h2 {
+  line-height: 50px;
+}
+#maciej .contentText .btn-neon .light:after{
+  display: none;
+}
+#maciej .contentText {
+  margin-top: 0px;
+  padding-inline: 20px;
+}
+#guarantee{
+  width: 100%;
+}
+#guarantee .rowD{
+padding: 0 20px;
+}
+#guarantee .rowD h2{
+  line-height: 1.5;
+}
+#videoSection {
+  padding: 0 20px 0px;
+}
+#videoSection> :nth-child(2) .textVideo{
+  padding-left: 50px;
+  gap: 20px;
+  font-size: 20px;
+}
+
 }
