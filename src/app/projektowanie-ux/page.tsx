@@ -35,7 +35,7 @@ const UXDesignScreen = () => {
       <Systemically />
       <UxVideo />
       <GoodProcess />
-      {/* <WebSite /> */}
+      <WebSite />
       <Slider />
       <Executive />
       <UxAccordion />

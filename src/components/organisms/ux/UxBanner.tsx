@@ -23,17 +23,38 @@ const UxBanner = () => {
               <p className="subitle">{HeroSection.description1}</p>
               <p className="subitle mt-4">{HeroSection.description2} </p>
               <p className="subitle"></p>
+              {/* <span className="underLine underLine2">
+                <span>u</span>
+                <span>p</span>
+                <span>o</span>
+                <span>r</span>
+                <span>z</span>
+                <span>ą</span>
+                <span>d</span>
+                <span>k</span>
+                <span>o</span>
+                <span>w</span>
+                <span>a</span>
+                <span>ć</span>
+                <span className="space"></span>
+                <span>o</span>
+                <span>f</span>
+                <span>e</span>
+                <span>r</span>
+                <span>t</span>
+                <span>ę</span>
+              </span> */}
             </div>
             <div className="col-xxl-6 order-xxl-2 order-1">
-            <ReactPlayer
-              muted={true}
-              playing={true}
-              loop={true}
-              width="80%"
-              height="auto"
-              url={HeroSection?.video_url}
-              className="UXheroVideo"
-            />
+              <ReactPlayer
+                muted={true}
+                playing={true}
+                loop={true}
+                width="80%"
+                height="auto"
+                url={HeroSection?.video_url}
+                className="UXheroVideo"
+              />
             </div>
           </div>
         </div>

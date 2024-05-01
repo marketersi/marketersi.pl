@@ -270,7 +270,7 @@
 
 /* ========== */
 .caring img {
-    width: 80%;
+    width: 60%;
     margin-inline: auto;
     display: block;
 }
@@ -806,6 +806,7 @@
         padding: 0 0 0 0px;
         width: 100%;
         overflow: hidden;
+        margin-top: -200px;
     }
 
     .dogImg img {
@@ -876,7 +877,7 @@
         width: 100% !important;
     }
     .bannerVideo video{
-        width: 120% !important;
+        width: 190% !important;
         margin-inline: -10px;
         display: block;
     }

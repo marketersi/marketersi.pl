@@ -52,11 +52,11 @@ const Creative = () => {
             src={section5?.section_five_imgone}
             alt=""
           />
-          <img
+          {/* <img
             className={style.CreativeOnar}
             src={section5?.section_five_imgtwo}
             alt=""
-          />
+          /> */}
 
           <p className={style.creativePara}>
             {section5?.section_five_para}

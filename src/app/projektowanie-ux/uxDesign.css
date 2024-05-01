@@ -2055,12 +2055,12 @@ section.arrowContainer {
 
 #ImageSection>div h2 {
   font-weight: bold;
-  line-height: 149px;
-  font-size: 200px;
+  line-height: 100px;
+  font-size: 100px;
   color: #fff;
   font-family: "Playfair Display", serif;
   text-align: center;
-  transform: translateY(-320px);
+  /* transform: translateY(-320px); */
 }
 
 #ImageSection>div .shadow {
@@ -2940,6 +2940,25 @@ section.goodProcess {
   margin: 0 auto;
   display: block;
 }
+/* -------------------animated text---------------- */
+.UXBannerContainer span:not(:nth-child(1)) {
+  font-weight: 700;
+  font-size: 56px;
+  display: inline-flex;
+  margin: 0 10px;
+  color: #37ba9e;
+}
+.underLine span {
+  animation: isFloating 4.6s ease-in-out infinite;
+  transition: text-shadow 200ms linear, transform 100ms linear;
+}
+#videoSection > :nth-child(1) p > span:not(:nth-child(1)) span {
+    letter-spacing: -2px;
+    display: block;
+    transform: rotate(10deg);
+    color: #37ba9e;
+}
+
 
 @media only screen and (max-width: 1360px) {
   .desktop {
@@ -3091,5 +3110,10 @@ padding: 0 20px;
   gap: 20px;
   font-size: 20px;
 }
+#ImageSection>div h2{
+  font-size: 50px;
+  line-height: 1.3;
+}
 
 }
+

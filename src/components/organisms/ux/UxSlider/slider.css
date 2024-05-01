@@ -57,3 +57,60 @@
   justify-content: flex-end;
   border-radius: 0 40px 40px 0;
 }
+
+.slider-container{
+position: relative;
+width: 100%;
+margin: 0;
+padding: 0;
+/* overflow: hidden; */
+}
+.UxBtn{
+  cursor: pointer;
+  position: sticky;
+  top: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.UxBtn button{
+  border: none;
+  background-color: white;
+  padding: 20px 40px;
+  font-size: 36px;
+  font-weight: 600;
+  position: absolute;
+}
+.UxBtn .leftBtn{
+  border-radius: 0 40px 40px 0;
+  left: 0;
+}
+.UxBtn .rightBtn{
+  border-radius: 40px 0 0 40px;
+  right: 0;
+}
+.slick-prev:before, .slick-next:before{
+  display: none;
+}
+.slick-next{
+  right: 0;
+}
+.UxSlider{
+  padding: 0 12rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .UxSlider {
+    padding: 0px 3rem;
+}
+}
+@media only screen and (max-width: 768px){
+  .UxSlider {
+    padding: 0px 1rem;
+}
+.UxBtn button{
+  padding: 15px 20px;
+  font-size: 16px;
+}
+}
