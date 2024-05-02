@@ -30,12 +30,12 @@ const Order = () => {
             </Link>
           </div>
           <div className={style.orderImg}>
-            <Image
+            {/* <Image
               src={ratingSection?.image_url}
               alt="My Image"
               width="auto"
               height="auto"
-            />
+            /> */}
             <div className={style.ratingContent}>
               <p>
                 {ratingSection?.subtitle_2}
