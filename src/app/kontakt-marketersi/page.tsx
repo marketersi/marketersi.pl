@@ -64,6 +64,7 @@ const ContactScreen = () => {
                   muted={true}
                   style={{ aspectRatio: 235 / 235 }}
                   className="bg_video"
+                  pip={false}
                 />
                 <p className="first_sect_p">{contact_us?.sub_title}</p>
                 <h1 className="first_heading_txt">{contact_us?.main_title}</h1>
