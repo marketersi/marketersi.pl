@@ -35,13 +35,12 @@ const CoverFlowSlider = () => {
     centerMode: true,
     infinite: true,
     centerPadding: "0",
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
     dots: false,
-    // beforeChange: (current, next) => setSlideIndex(next),
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
+    beforeChange: (current, next) => setSlideIndex(next),
+
   };
 
   return (
