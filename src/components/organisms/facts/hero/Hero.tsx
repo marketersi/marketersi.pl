@@ -34,6 +34,7 @@ const Hero = () => {
             width="100%"
             height="auto"
             url={screenData?.video_url}
+            pip={false}
           />
         </div>
       </div>

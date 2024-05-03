@@ -178,6 +178,7 @@ img.hardImg {
 .order .orderImg {
   border-radius: 0px 50px 50px 0px;
   overflow: hidden;
+  background-image: linear-gradient(45deg, #d79126, #a56118);
 }
 
 .order .orderImg img {

@@ -1758,4 +1758,7 @@ img.zooImage.position-relative {
     width: 170%;
     left: -120px !important;
   }
+  .modal_logo_img{
+    width: 90%;
+  }
 }

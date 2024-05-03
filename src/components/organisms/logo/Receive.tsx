@@ -120,7 +120,7 @@ const Receive = () => {
           },
         }}
       >
-        <img
+        <img className="modal_logo_img"
           src="https://www.logofirmowe.pl/Logofirmowe/projektowanie-logo-img/Responsywne.jpg"
           alt="Modal Image"
         />
