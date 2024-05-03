@@ -51,6 +51,7 @@ const Entrepreneur = () => {
               height="auto"
               muted={true}
               className={style.numberVideo}
+              pip={false}
             />
             <p>
               {section3?.paragraph_1}

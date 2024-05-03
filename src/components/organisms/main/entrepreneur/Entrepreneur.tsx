@@ -22,6 +22,7 @@ const Entrepreneur = () => {
         width="100%"
         height="auto"
         className={style.socialVideo}
+        pip={false}
       />
           <div className={style.Content}>
             <h2>

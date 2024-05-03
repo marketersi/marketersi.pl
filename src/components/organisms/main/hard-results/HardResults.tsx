@@ -47,7 +47,9 @@ const Entrepreneur = () => {
                 loop={true}
                 width="100%"
                 height="auto"
-                muted={true}              />
+                muted={true}
+                pip={false}
+                  />
             </Col>
           </Row>
           <div className={style.Content}>
@@ -67,6 +69,7 @@ const Entrepreneur = () => {
                 width="100%"
                 height="auto"
                 muted={true}
+                pip={false}
               />
             </Col>
             <Col lg={5}>
@@ -94,6 +97,7 @@ const Entrepreneur = () => {
               width="100%"
               height="auto"
               muted={true}
+              pip={false}
             />
             <h2 className={style.brandingHeading}>
               {section7?.title}
@@ -108,6 +112,7 @@ const Entrepreneur = () => {
               width="100%"
               height="auto"
               muted={true}
+              pip={false}
             />
             <p>
               {section7?.paragraph_2}
@@ -122,6 +127,7 @@ const Entrepreneur = () => {
               width="100%"
               height="auto"
               muted={true}
+              pip={false}
             />
             <p>
 
@@ -134,6 +140,7 @@ const Entrepreneur = () => {
               width="100%"
               height="auto"
               muted={true}
+              pip={false}
             />
             <h3>
               {section7?.bottom_title}
