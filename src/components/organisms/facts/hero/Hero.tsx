@@ -19,14 +19,6 @@ const Hero = () => {
           <p>{screenData?.subtitle}</p>
         </div>
         <div className="factowBannerVideo">
-          {/* <ReactPlayer
-            muted={true}
-            playing={true}
-            loop={true}
-            width="100%"
-            height="auto"
-            url="https://res.cloudinary.com/ddctmb3dk/video/upload/v1698077578/zxcacvh2xxu6vj3nbe1j.webm"
-          /> */}
           <ReactPlayer
             muted={true}
             playing={true}
@@ -36,6 +28,12 @@ const Hero = () => {
             url={screenData?.video_url}
             pip={false}
           />
+          <video
+            controls={false}
+          >
+            <source src={screenData?.video_url} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>

@@ -97,17 +97,17 @@ padding: 0;
   right: 0;
 }
 .UxSlider{
-  padding: 0 12rem;
+  padding: 0 0rem;
 }
 
 @media only screen and (max-width: 1024px){
   .UxSlider {
-    padding: 0px 3rem;
+    padding: 0px 0rem;
 }
 }
 @media only screen and (max-width: 768px){
   .UxSlider {
-    padding: 0px 1rem;
+    padding: 0px 0rem;
 }
 .UxBtn button{
   padding: 15px 20px;
