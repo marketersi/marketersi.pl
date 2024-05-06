@@ -28,12 +28,7 @@ const Hero = () => {
             url={screenData?.video_url}
             pip={false}
           />
-          <video
-            controls={false}
-          >
-            <source src={screenData?.video_url} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          
         </div>
       </div>
     </section>
