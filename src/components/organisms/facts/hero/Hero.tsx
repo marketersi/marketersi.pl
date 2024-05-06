@@ -3,6 +3,7 @@ import React from "react";
 import "./hero.css";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
+// import video from "/assets/videos/Strony-Internetowe_2_jilacc.mp4"
 
 const Hero = () => {
   const { isLoading, screenData } = useSelector((state) => state.facts);
@@ -28,7 +29,32 @@ const Hero = () => {
             url={screenData?.video_url}
             pip={false}
           />
-          
+          <ReactPlayer
+            muted={true}
+            playing={true}
+            loop={true}
+            width="100%"
+            height="auto"
+            url="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
+            pip={false}
+          />
+
+          <video
+            muted
+            autoPlay
+            loop
+            width="100%"
+            height="auto"
+            src={screenData?.video_url}
+          />
+          <video
+            muted
+            autoPlay
+            loop
+            width="100%"
+            height="auto"
+            src="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
+          />
         </div>
       </div>
     </section>
