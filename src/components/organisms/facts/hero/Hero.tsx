@@ -46,6 +46,7 @@ const Hero = () => {
             width="100%"
             height="auto"
             src={screenData?.video_url}
+            controls
           />
           <video
             muted
@@ -54,6 +55,7 @@ const Hero = () => {
             width="100%"
             height="auto"
             src="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
+            controls
           />
         </div>
       </div>
