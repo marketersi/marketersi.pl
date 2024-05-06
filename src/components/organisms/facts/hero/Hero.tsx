@@ -29,7 +29,7 @@ const Hero = () => {
             url={screenData?.video_url}
             pip={false}
           />
-          <ReactPlayer
+          {/* <ReactPlayer
             muted={true}
             playing={true}
             loop={true}
@@ -56,7 +56,7 @@ const Hero = () => {
             height="auto"
             src="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
             controls
-          />
+          /> */}
         </div>
       </div>
     </section>

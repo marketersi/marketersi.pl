@@ -63,9 +63,9 @@
 .markVideo video {
     width: 100% !important;
 }
-.markImg1{
+/* .markImg1{
     width: 65% !important;
-}
+} */
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
     .mark img{
