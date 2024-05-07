@@ -31,35 +31,6 @@ const Hero = () => {
             preload="metadata"
             playsinline
           />
-          <ReactPlayer
-            muted={true}
-            playing={true}
-            loop={true}
-            width="100%"
-            height="auto"
-            url="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
-            pip={false}
-            preload="metadata"
-          />
-
-          <video
-            muted
-            autoPlay
-            loop
-            width="100%"
-            height="auto"
-            src={screenData?.video_url}
-            controls
-          />
-          <video
-            muted
-            autoPlay
-            loop
-            width="100%"
-            height="auto"
-            src="/assets/videos/Strony-Internetowe_2_jilacc.mp4"
-            controls
-          />
         </div>
       </div>
     </section>

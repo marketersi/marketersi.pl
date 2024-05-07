@@ -49,6 +49,7 @@ const Entrepreneur = () => {
                 height="auto"
                 muted={true}
                 pip={false}
+                playsinline
                   />
             </Col>
           </Row>
@@ -70,6 +71,7 @@ const Entrepreneur = () => {
                 height="auto"
                 muted={true}
                 pip={false}
+                playsinline
               />
             </Col>
             <Col lg={5}>
@@ -98,6 +100,7 @@ const Entrepreneur = () => {
               height="auto"
               muted={true}
               pip={false}
+              playsinline
             />
             <h2 className={style.brandingHeading}>
               {section7?.title}
@@ -113,6 +116,7 @@ const Entrepreneur = () => {
               height="auto"
               muted={true}
               pip={false}
+              playsinline
             />
             <p>
               {section7?.paragraph_2}
@@ -128,6 +132,7 @@ const Entrepreneur = () => {
               height="auto"
               muted={true}
               pip={false}
+              playsinline
             />
             <p>
 
@@ -141,6 +146,7 @@ const Entrepreneur = () => {
               height="auto"
               muted={true}
               pip={false}
+              playsinline
             />
             <h3>
               {section7?.bottom_title}

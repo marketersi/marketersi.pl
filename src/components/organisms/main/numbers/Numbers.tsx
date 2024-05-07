@@ -52,6 +52,7 @@ const Entrepreneur = () => {
               muted={true}
               className={style.numberVideo}
               pip={false}
+              playsinline
             />
             <p>
               {section3?.paragraph_1}

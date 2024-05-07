@@ -279,6 +279,7 @@ export const SlideOne = (props) => {
                   height="auto"
                   muted={true}
                   pip={false}
+                  playsinline
                 />
               </div>
               <div className="OurClients_Slide_Media_Rating">

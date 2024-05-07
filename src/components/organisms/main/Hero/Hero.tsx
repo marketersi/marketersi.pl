@@ -49,6 +49,7 @@ const Hero = () => {
         className={style.heroVideo}
         muted={true}
         pip={false}
+        playsinline
       />
 
       <div className={style.hero}>

@@ -36,6 +36,7 @@ const ReviewCard = () => {
             width="100%"
             height="auto"
             url={BrilliantJob[0]?.video_url}
+            playsinline
           />
         </div>
       </div>
