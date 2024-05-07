@@ -40,6 +40,7 @@ const SlideOne = () => {
                     width="100%"
                     height="auto"
                     className={style.heroVideo}
+                    playsinline
                   />
                 </Col>
                 <Col sm={10}>
@@ -92,6 +93,7 @@ const SlideTwo = () => {
                     width="100%"
                     height="auto"
                     className={style.heroVideo}
+                    playsinline
                   />
                 </Col>
                 <Col sm={10}>

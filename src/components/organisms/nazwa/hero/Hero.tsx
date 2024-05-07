@@ -49,6 +49,7 @@ const NazwaHero = () => {
                 width="100%"
                 height="auto"
                 className="heroVideo"
+                playsinline
               />
             </div>
 

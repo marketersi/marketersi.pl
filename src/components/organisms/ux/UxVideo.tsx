@@ -79,6 +79,7 @@ const UxVideo = () => {
                       muted={true}
                       width="auto"
                       height="auto"
+                      playsinline
                     />
                   )}
                 </React.Fragment>

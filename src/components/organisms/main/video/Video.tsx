@@ -60,6 +60,7 @@ const Video = () => {
           width="100%"
           height="auto"
           pip={false}
+          playsinline
         />
         <div className={style.youtubeIcon} onClick={openPopup}>
           <svg
@@ -90,6 +91,7 @@ const Video = () => {
               className="popupVideo"
               style={{ borderRadius: "30px" }}
               pip={false}
+              playsinline
             />
           </div>
         </div>

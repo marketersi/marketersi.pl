@@ -54,6 +54,7 @@ const UxBanner = () => {
                 height="auto"
                 url={HeroSection?.video_url}
                 className="UXheroVideo"
+                playsinline
               />
             </div>
           </div>

@@ -19,6 +19,7 @@ const GoodProcess = () => {
             loop={true}
             muted={true}
             className="processVideo"
+            playsinline
           />
 
           <h3>{stage_1?.title}</h3>
@@ -38,6 +39,7 @@ const GoodProcess = () => {
             loop={true}
             muted={true}
             className="processVideo"
+            playsinline
           />
 
           <h3>{stage_2?.title}</h3>
@@ -51,6 +53,7 @@ const GoodProcess = () => {
             loop={true}
             muted={true}
             className="processVideo"
+            playsinline
           />
 
           <h3>{stage_3?.title}</h3>

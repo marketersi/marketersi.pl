@@ -78,6 +78,7 @@ const MarkSide = () => {
             className={style.markVideo}
             muted={true}
             pip={false}
+            playsinline
           />
           <Card data={companyCard[1]} links={links2} />
         </Col>

@@ -23,6 +23,7 @@ const Entrepreneur = () => {
         height="auto"
         className={style.socialVideo}
         pip={false}
+        playsinline
       />
           <div className={style.Content}>
             <h2>
