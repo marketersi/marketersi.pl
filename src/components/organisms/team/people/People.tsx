@@ -74,6 +74,7 @@ const People = () => {
           width="100%"
           height="auto"
           className={style.heroVideo}
+          playsinline
         />
         <div className={style.peopleVideoContent}>
           <a className={style.projectBtn} onClick={(e) => {
