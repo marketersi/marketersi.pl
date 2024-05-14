@@ -4,12 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import { POST_CONTACT } from "@/redux/kontakt/contactActions";
 
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-
-  const {screenData} = useSelector((state) => state.contact);
-  const {contact_us} = screenData || {};
-  const {form} = contact_us || {};
+  const { screenData } = useSelector((state) => state.contact);
+  const { contact_us } = screenData || {};
+  const { form } = contact_us || {};
   const {
     register,
     handleSubmit,
@@ -19,16 +19,46 @@ const ContactForm = () => {
   } = useForm();
   const dispatch = useDispatch();
 
+  // const onSubmit = (data) => {
+  //   dispatch({ type: POST_CONTACT, payload: data });
+  //   reset();
+  // };
+
+  // test email
   const onSubmit = (data) => {
-    dispatch({ type: POST_CONTACT, payload: data });
-    reset();
+    const templateParams = {
+      from_name: "chiranjiv",
+      from_email: "chiranjiv@gmail.com",
+      to_name: "marketersi",
+      message: "test message",
+    };
+
+    emailjs
+      .send("service_84eiitx", "template_qeb2vrk", templateParams, {
+        publicKey: "RSmUy9y50sZPaBket",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
     <form action="" className="form_sect" onSubmit={handleSubmit(onSubmit)}>
       <p className="form_head_txt text-center">{form?.title}</p>
-      <a href={`tel:${form?.number}`} className="form_number_content">{form?.number}</a>
-      <a href={`mailto:${form?.mail}`} className="form_mail_content text-center">{form?.mail}</a>
+      <a href={`tel:${form?.number}`} className="form_number_content">
+        {form?.number}
+      </a>
+      <a
+        href={`mailto:${form?.mail}`}
+        className="form_mail_content text-center"
+      >
+        {form?.mail}
+      </a>
       <textarea
         required
         placeholder="Wiadomość"
