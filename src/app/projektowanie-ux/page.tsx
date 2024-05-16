@@ -30,8 +30,8 @@ const UXDesignScreen = () => {
       <UxBanner />
       <Counter />
       <Competitions />
-      {/* <Market /> */}
-      <Flip />
+      <Market />
+      {/* <Flip /> */}
       <IgnoreSites />
       <Complex />
       <Systemically />

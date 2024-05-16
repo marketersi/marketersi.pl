@@ -131,29 +131,25 @@
 }
 
 /* ------------------------------------ */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+.hidden {
+    display: none; /* Hide non-active headings */
+  }
+  .blinking-cursor {
+    display: inline-block;
+    width: 0.1em;
+    height: 1em;
+    margin-left: 2px; /* Adjust this value to position the cursor */
+    background-color: black; /* Change color as needed */
+    animation: blink-animation 1s infinite;
   }
   
-  @keyframes blink {
-    50% { border-color: transparent; }
+  @keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
-  
-  .headingEffect h2 {
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .15em solid orange; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(40, end),
-      blink .75s step-end infinite;
-  }
-  
-  .headingEffect h2.hidden {
-    width: 0;
-    border-right: none;
-    animation: none;
+  .headingEffect h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
   }
