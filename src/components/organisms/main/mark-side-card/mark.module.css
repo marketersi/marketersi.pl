@@ -61,7 +61,10 @@
     display: block;
 }
 .markVideo video {
-    width: 100% !important;
+    width: 80% !important;
+    margin-inline: auto;
+    margin-top: 30px;
+    display: block;
 }
 /* .markImg1{
     width: 65% !important;

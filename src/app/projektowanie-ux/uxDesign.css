@@ -3118,6 +3118,13 @@ padding: 0 20px;
 .numberContainer{
   padding: 0;
 }
-
+#ImageSection picture * {
+  width: 100% !important;
+  height: 100%;
+}
+#ImageSection{
+  width: 100%;
+  overflow: hidden;
+}
 }
 
