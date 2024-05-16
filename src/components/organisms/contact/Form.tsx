@@ -5,6 +5,9 @@ import { useForm } from "react-hook-form";
 import { POST_CONTACT } from "@/redux/kontakt/contactActions";
 
 import emailjs from "@emailjs/browser";
+import dotenv from "dotenv";
+import { toast } from "react-toastify";
+dotenv.config();
 
 const ContactForm = () => {
   const { screenData } = useSelector((state) => state.contact);
@@ -27,24 +30,29 @@ const ContactForm = () => {
   // test email
   const onSubmit = (data) => {
     const templateParams = {
-      from_name: "chiranjiv",
-      from_email: "chiranjiv@gmail.com",
-      to_name: "marketersi",
-      message: "test message",
+      from_name: data.name,
+      from_email: data.email,
+      to_name: "Marketersi",
+      message: data.message,
     };
 
     emailjs
-      .send("service_84eiitx", "template_qeb2vrk", templateParams, {
-        publicKey: "RSmUy9y50sZPaBket",
+      .send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, templateParams, {
+        publicKey: process.env.PUBLIC_KEY,
       })
       .then(
         () => {
           console.log("SUCCESS!");
+          toast.success(
+            "Thank you for contacting us! We will connect with you soon."
+          );
         },
         (error) => {
           console.log("FAILED...", error.text);
+          toast.error("Oops! Something went wrong. Please try again later.");
         }
       );
+    reset();
   };
 
   return (

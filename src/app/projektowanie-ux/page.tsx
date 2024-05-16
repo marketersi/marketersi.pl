@@ -17,6 +17,7 @@ import UxAccordion from "@/components/organisms/ux/accordion/UxAccordion";
 import items from "@/components/organisms/ux/accordion/Data";
 import { useDispatch } from "react-redux";
 import { FETCH_UX_SCREEN_DATA } from "@/redux/ux/uxDesignAction";
+import Flip from "@/components/organisms/ux/flip/Flip";
 
 const UXDesignScreen = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const UXDesignScreen = () => {
       <Counter />
       <Competitions />
       <Market />
+      {/* <Flip /> */}
       <IgnoreSites />
       <Complex />
       <Systemically />
