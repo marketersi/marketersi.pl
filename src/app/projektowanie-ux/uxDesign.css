@@ -2030,7 +2030,7 @@ section.arrowContainer {
 }
 
 #ImageSection picture * {
-  width: 100%;
+  width: 100% !important;
   height: 100%;
 }
 
@@ -2060,7 +2060,7 @@ section.arrowContainer {
   color: #fff;
   font-family: "Playfair Display", serif;
   text-align: center;
-  /* transform: translateY(-320px); */
+  transform: translateY(-320px);
 }
 
 #ImageSection>div .shadow {
@@ -2879,7 +2879,7 @@ video.mobileVideo {
 /* ----------------------------------------goodProcess------------------------------ */
 section.goodProcess {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   row-gap: 100px;
   margin-block: 100px;
   padding: 0 8rem;
@@ -2933,13 +2933,47 @@ section.goodProcess {
   font-size: 300px;
   text-align: center;
   color: gray;
-  margin-top: 100px;
+  position: relative;
+  background-color: #f4f4f4;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  line-height: 0.8;
+}
+.one .number {
+  margin-top: -340px;
+  margin-left: 50px;
+}
+.two .number {
+  margin-top: 300px;
+  margin-left: 50px;
+}
+.three .number {
+  margin-top: 300px;
+  margin-left: 50px;
 }
 
 .imgs img {
   margin: 0 auto;
   display: block;
 }
+.process1 {
+  margin-top: 200px;
+  max-width: 500px;
+  margin-left: 150px;
+}
+.process2 {
+  margin-top: 200px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: 150px;
+}
+.process3 {
+  margin-top: 200px;
+  margin-bottom: 800px;
+  max-width: 650px;
+  margin-left: 150px;
+}
+
 /* -------------------animated text---------------- */
 .UXBannerContainer span:not(:nth-child(1)) {
   font-weight: 700;
@@ -3021,7 +3055,7 @@ section.goodProcess {
 
   .number {
     font-size: 150px;
-    margin-top: 0px;
+    margin-top: 0px !important;
   }
 
   .two .processVideo {
@@ -3040,7 +3074,19 @@ section.goodProcess {
   .two p {
     text-align: left;
   }
-
+.process1 {
+    margin-top: 0;
+    margin-inline: auto;
+}
+.process2{
+  margin-inline: auto;
+  margin-top: 0;
+}
+.process3{
+  margin-inline: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -3125,6 +3171,7 @@ padding: 0 20px;
 #ImageSection{
   width: 100%;
   overflow: hidden;
+  height: auto;
 }
 }
 

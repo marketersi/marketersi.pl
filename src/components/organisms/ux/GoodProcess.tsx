@@ -9,30 +9,32 @@ const GoodProcess = () => {
 
   return (
     <>
-      
-
       <section className="goodProcess">
-        <div className="one order2">
-          <ReactPlayer
-            url={stage_1?.video_url}
-            playing={true}
-            loop={true}
-            muted={true}
-            className="processVideo"
-            playsinline
-          />
+      <div className="one">
+          <div className="number">1</div>
+        </div>
+        <div className="process1">
+          <div className="one ">
+            <ReactPlayer
+              url={stage_1?.video_url}
+              playing={true}
+              loop={true}
+              muted={true}
+              className="processVideo"
+              playsinline
+            />
 
-          <h3>{stage_1?.title}</h3>
-          <p className="subtitle">{stage_1?.subtitle}</p>
-          <p>{stage_1?.description}</p>
+            <h3>{stage_1?.title}</h3>
+            <p className="subtitle">{stage_1?.subtitle}</p>
+            <p>{stage_1?.description}</p>
+          </div>
         </div>
-        <div className="one order1">
-        <div className="number">1</div>
+        
+        <div className="two">
+          <div className="number">2</div>
         </div>
-        <div className="two order3">
-        <div className="number">2</div>
-        </div>
-        <div className="two order4">
+        <div className="process2">
+        <div className="two ">
           <ReactPlayer
             url={stage_2?.video_url}
             playing={true}
@@ -46,6 +48,11 @@ const GoodProcess = () => {
           <p className="subtitle">{stage_2?.subtitle}</p>
           <p>{stage_2?.description}</p>
         </div>
+        </div>
+        <div className="three">
+          <div className="number">3</div>
+        </div>
+        <div className="process3">
         <div className="three order6">
           <ReactPlayer
             url={stage_3?.video_url}
@@ -60,9 +67,8 @@ const GoodProcess = () => {
           <p className="subtitle">{stage_3?.subtitle}</p>
           <p>{stage_3?.description}</p>
         </div>
-        <div className="three order5">
-          <div className="number">3</div>
         </div>
+      
       </section>
     </>
   );

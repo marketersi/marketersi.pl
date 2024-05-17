@@ -4,9 +4,8 @@ import "./slider.css";
 import { useSelector } from "react-redux";
 
 const CoverFlowSlider = () => {
+  const carousel = React.useRef(null);
 
-  const carousel =React.useRef(null);
-  
   const { screenData } = useSelector((state) => state.ux);
   const slider = screenData.slider || {};
 
@@ -40,19 +39,41 @@ const CoverFlowSlider = () => {
     speed: 500,
     dots: false,
     beforeChange: (current, next) => setSlideIndex(next),
-
+    responsive: [
+      {
+        breakpoint: 1024, // tablet view and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600, // mobile view and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+  
 
   return (
     <div className="slider-container">
       <div className="UxBtn">
-            <button onClick={() => carousel?.current?.slickPrev()} className="leftBtn">
-            « cofnij 
-            </button>
-            <button onClick={() => carousel?.current?.slickNext()} className="rightBtn">
-            dalej » 
-            </button>
-          </div>
+        <button
+          onClick={() => carousel?.current?.slickPrev()}
+          className="leftBtn"
+        >
+          « cofnij
+        </button>
+        <button
+          onClick={() => carousel?.current?.slickNext()}
+          className="rightBtn"
+        >
+          dalej »
+        </button>
+      </div>
       <Slider {...settings} className="UxSlider" ref={carousel}>
         {slider?.images?.map((e, index) => {
           return (
@@ -65,7 +86,6 @@ const CoverFlowSlider = () => {
           );
         })}
       </Slider>
-      
     </div>
   );
 };
