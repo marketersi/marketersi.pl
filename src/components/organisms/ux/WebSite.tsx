@@ -7,7 +7,7 @@ const WebSite = () => {
   const websites = screenData.websites || {};
 
   const [scrollRotation, setScrollRotation] = useState(0);
-  const [perspective, setPerspective] = useState(window.innerWidth * 1.3);
+  const [perspective, setPerspective] = useState();
 
   useEffect(() => {
     // Ensure this runs only on the client side
