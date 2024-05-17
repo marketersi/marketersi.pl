@@ -2060,7 +2060,7 @@ section.arrowContainer {
   color: #fff;
   font-family: "Playfair Display", serif;
   text-align: center;
-  /* transform: translateY(-320px); */
+  transform: translateY(-320px);
 }
 
 #ImageSection>div .shadow {

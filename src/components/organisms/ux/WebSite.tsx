@@ -10,24 +10,30 @@ const WebSite = () => {
   const [perspective, setPerspective] = useState(window.innerWidth * 1.3);
 
   useEffect(() => {
-    const handleResize = () => {
+    // Ensure this runs only on the client side
+    if (typeof window !== "undefined") {
       setPerspective(window.innerWidth * 1.3);
-    };
 
-    const handleScroll = () => {
-      const rotationValue = window.scrollY / 20;
-      if (scrollRotation < 1450) {
-        setScrollRotation(rotationValue);
-      }
-    };
+      const handleResize = () => {
+        setPerspective(window.innerWidth * 1.3);
+      };
 
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("scroll", handleScroll);
+      const handleScroll = () => {
+        const rotationValue = window.scrollY / 20;
+        if (scrollRotation < 1450) {
+          setScrollRotation(rotationValue);
+        }
+      };
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
-    };
+      window.addEventListener("resize", handleResize);
+      window.addEventListener("scroll", handleScroll);
+
+      // Cleanup event listeners on component unmount
+      return () => {
+        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, [scrollRotation]);
 
   return (
