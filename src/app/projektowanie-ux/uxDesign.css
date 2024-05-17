@@ -1653,34 +1653,40 @@ section.arrowContainer {
 #videoSection .textWithArrow div.active h3 {
   max-width: 250px;
   position: relative;
+  /* max-width: 150px; */
+  margin-left: auto;
 }
 
-#videoSection .textWithArrow div.active h3:after {
+#videoSection .textWithArrow div.active h3::after {
   position: absolute;
   bottom: -10px;
-  right: 0;
+  left: 80px;
   display: block;
-  width: 80%;
+  width: var(--progress, 0%);
   height: 5px;
   content: "";
   background: #1ec19b;
   transform-origin: right;
   animation: gradient calc(var(--time) * 1ms) linear infinite;
-  background: linear-gradient(270deg,
-      #ee8aa1 100%,
-      rgba(238, 138, 161, 0) 100%);
+  background: linear-gradient(270deg, #1ec19b 100%, rgba(238, 138, 161, 0) 100%);
+  max-width: 150px;
+  margin-left: auto;
+
 }
 
-#videoSection .textWithArrow div.active h3:before {
+#videoSection .textWithArrow div.active h3::before {
   position: absolute;
   bottom: -10px;
-  right: 0px;
+  left: 80px;
   display: block;
-  width: 80%;
+  width: 100%;
   height: 5px;
   content: "";
-  background: #1ec19b;
+  background: #ee8aa1;
+  max-width: 150px;
+  margin-left: auto;
 }
+
 
 #videoSection .textWithArrow img {
   z-index: 10;
@@ -2060,7 +2066,7 @@ section.arrowContainer {
   color: #fff;
   font-family: "Playfair Display", serif;
   text-align: center;
-  transform: translateY(-320px);
+  /* transform: translateY(-320px); */
 }
 
 #ImageSection>div .shadow {
@@ -2836,7 +2842,7 @@ video.mobileVideo {
     color: #dd4203;
   }
 
-  
+
 }
 
 /* test executive styles */
@@ -2939,14 +2945,17 @@ section.goodProcess {
   font-weight: 900;
   line-height: 0.8;
 }
+
 .one .number {
   margin-top: -340px;
   margin-left: 50px;
 }
+
 .two .number {
   margin-top: 300px;
   margin-left: 50px;
 }
+
 .three .number {
   margin-top: 300px;
   margin-left: 50px;
@@ -2956,17 +2965,20 @@ section.goodProcess {
   margin: 0 auto;
   display: block;
 }
+
 .process1 {
   margin-top: 200px;
   max-width: 500px;
   margin-left: 150px;
 }
+
 .process2 {
   margin-top: 200px;
   max-width: 620px;
   margin-left: auto;
   margin-right: 150px;
 }
+
 .process3 {
   margin-top: 200px;
   margin-bottom: 800px;
@@ -2982,15 +2994,17 @@ section.goodProcess {
   margin: 0 10px;
   color: #37ba9e;
 }
+
 .underLine span {
   animation: isFloating 4.6s ease-in-out infinite;
   transition: text-shadow 200ms linear, transform 100ms linear;
 }
-#videoSection > :nth-child(1) p > span:not(:nth-child(1)) span {
-    letter-spacing: -2px;
-    display: block;
-    transform: rotate(10deg);
-    color: #37ba9e;
+
+#videoSection> :nth-child(1) p>span:not(:nth-child(1)) span {
+  letter-spacing: -2px;
+  display: block;
+  transform: rotate(10deg);
+  color: #37ba9e;
 }
 
 
@@ -3074,19 +3088,22 @@ section.goodProcess {
   .two p {
     text-align: left;
   }
-.process1 {
+
+  .process1 {
     margin-top: 0;
     margin-inline: auto;
-}
-.process2{
-  margin-inline: auto;
-  margin-top: 0;
-}
-.process3{
-  margin-inline: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  }
+
+  .process2 {
+    margin-inline: auto;
+    margin-top: 0;
+  }
+
+  .process3 {
+    margin-inline: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3094,6 +3111,7 @@ section.goodProcess {
     padding: 0 1rem;
     row-gap: 0;
   }
+
   #videoSection> :nth-child(1) h2 {
     font-size: 34px;
     padding: 0;
@@ -3105,73 +3123,92 @@ section.goodProcess {
     font-size: min(4vw, 24px);
     max-width: 500px;
   }
+
   #guarantee .rowD h2 {
     margin-top: 40px !important;
-}
-#maciej .contentText .btn-neon {
-  font-size: 20px;
-}
-#maciej .contentText p {
-  font-size: 20px;
-}
-#videoSection> :nth-child(1) p {
-  font-size: 20px;
-}
-.faqContainer {
-  padding: 50px 0px !important;
-}
-.accordion-item {
-  padding: 0px 24px 42px 24px !important;
-}
-#highResult .row div:nth-child(1) {
-  position: static;
-}
-section.arrowContainer {
-  padding: 0 20px;
-  margin-top: -250px;
-}
-#textArrow h2 {
-  line-height: 50px;
-}
-#maciej .contentText .btn-neon .light:after{
-  display: none;
-}
-#maciej .contentText {
-  margin-top: 0px;
-  padding-inline: 20px;
-}
-#guarantee{
-  width: 100%;
-}
-#guarantee .rowD{
-padding: 0 20px;
-}
-#guarantee .rowD h2{
-  line-height: 1.5;
-}
-#videoSection {
-  padding: 0 20px 0px;
-}
-#videoSection> :nth-child(2) .textVideo{
-  padding-left: 50px;
-  gap: 20px;
-  font-size: 20px;
-}
-#ImageSection>div h2{
-  font-size: 50px;
-  line-height: 1.3;
-}
-.numberContainer{
-  padding: 0;
-}
-#ImageSection picture * {
-  width: 100% !important;
-  height: 100%;
-}
-#ImageSection{
-  width: 100%;
-  overflow: hidden;
-  height: auto;
-}
-}
+  }
 
+  #maciej .contentText .btn-neon {
+    font-size: 20px;
+  }
+
+  #maciej .contentText p {
+    font-size: 20px;
+  }
+
+  #videoSection> :nth-child(1) p {
+    font-size: 20px;
+  }
+
+  .faqContainer {
+    padding: 50px 0px !important;
+  }
+
+  .accordion-item {
+    padding: 0px 24px 42px 24px !important;
+  }
+
+  #highResult .row div:nth-child(1) {
+    position: static;
+  }
+
+  section.arrowContainer {
+    padding: 0 20px;
+    margin-top: -250px;
+  }
+
+  #textArrow h2 {
+    line-height: 50px;
+  }
+
+  #maciej .contentText .btn-neon .light:after {
+    display: none;
+  }
+
+  #maciej .contentText {
+    margin-top: 0px;
+    padding-inline: 20px;
+  }
+
+  #guarantee {
+    width: 100%;
+  }
+
+  #guarantee .rowD {
+    padding: 0 20px;
+  }
+
+  #guarantee .rowD h2 {
+    line-height: 1.5;
+  }
+
+  #videoSection {
+    padding: 0 20px 0px;
+  }
+
+  #videoSection> :nth-child(2) .textVideo {
+    padding-left: 50px;
+    gap: 20px;
+    font-size: 20px;
+  }
+
+  #ImageSection>div h2 {
+    font-size: 50px;
+    line-height: 1.3;
+  }
+
+  .numberContainer {
+    padding: 0;
+  }
+
+  #ImageSection picture * {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  #ImageSection {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+}

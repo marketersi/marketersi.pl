@@ -1,28 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 import { ModalForm } from "../tresci-sprzedazowe/ModalForm";
 
-const UXVideoData = {
-  title: "UX Video",
-  description1: "UX Video",
-  description2: ["firmy", "firmy", "firmy", "dfghjk"],
-  image: "images/",
-  tabVideo1: "video/",
-  tabVideo2: "video/",
-  tabVideo3: "video/",
-  tabTitle1: "title1",
-  tabTitle2: "title2",
-  tabTitle3: "title3",
-  imgSprings: "http",
-  dotImg1: "http://",
-  dotImg2: "http://",
-  dotImg3: "http://",
-  dotImg4: "http://",
-  description4: "http://",
-  description5: "http://",
-  description6: "http://",
-};
+
 const UxVideo = () => {
   const { screenData } = useSelector((state) => state.ux);
   const UXVideo = screenData["UX-Video"] || {};
@@ -30,13 +11,28 @@ const UxVideo = () => {
   const Videotab = UXVideo.Videotab || [];
 
   const [selectedTab, setSelectedTab] = useState(1);
-
-  
   const [isModal, setIsModal] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  const playerRef = useRef(null);
 
   const handleModalClose = () => {
     setIsModal(!isModal);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (playerRef.current) {
+        const duration = playerRef.current.getDuration();
+        const currentTime = playerRef.current.getCurrentTime();
+        const progress = (currentTime / duration) * 100;
+        setProgress(progress);
+        document.documentElement.style.setProperty('--progress', `${progress}%`);
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, [selectedTab]);
 
   return (
     <>
@@ -62,7 +58,6 @@ const UxVideo = () => {
           </p>
         </div>
         <div>
-
           <div className="row">
             <div id="videos" className="col-lg-8">
               <img
@@ -73,6 +68,7 @@ const UxVideo = () => {
                 <React.Fragment key={video.id}>
                   {selectedTab === video.id && (
                     <ReactPlayer
+                      ref={playerRef}
                       url={video.video}
                       playing={true}
                       loop={true}
@@ -93,7 +89,9 @@ const UxVideo = () => {
                     className={selectedTab === video.id ? "active" : ""}
                     onClick={() => setSelectedTab(video.id)}
                   >
-                    <h3>{video.title}</h3>
+                    <h3 style={{ '--progress': `${selectedTab === video.id ? progress : 0}%` }}>
+                      {video.title}
+                    </h3>
                   </div>
                 ))}
               </div>
