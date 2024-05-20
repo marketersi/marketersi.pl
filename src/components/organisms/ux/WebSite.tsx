@@ -4,7 +4,8 @@ import { useSelector } from "react-redux";
 
 const WebSite = () => {
   const { screenData } = useSelector((state) => state.ux);
-  const websites = screenData.websites || {};
+  const websites = screenData.websites || [];
+  console.log(websites, "=======>")
 
   const [scrollRotation, setScrollRotation] = useState(0);
   const [perspective, setPerspective] = useState();
@@ -53,8 +54,8 @@ const WebSite = () => {
                   style={{ height: 700, width: 950 }}
                   src={
                     scrollRotation > 810
-                      ? "https://images.prismic.io/marketersi/ZkczCCol0Zci9PNj_Untitleddesign-8-.png?auto=format,compress"
-                      : "https://propozycje.owocni.pl/ux/Makieta-UX-strony.4f281932.1365da9d.png"
+                      ? websites?.image_2
+                      : websites?.image_1
                   }
                   alt="Image 1"
                 />

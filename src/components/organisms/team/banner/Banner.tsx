@@ -37,7 +37,7 @@ const Banner = () => {
         
       </div>
       <div className={style.overlay}></div>
-      <motion.button
+      {/* <motion.button
         className="arrowAnimation"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -57,7 +57,7 @@ const Banner = () => {
           animate={{ opacity: [0, 1, 0], rotate: -45 }}
           transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
         ></motion.span>
-      </motion.button>
+      </motion.button> */}
       <Container>
         <div className={style.bannerHeading}>
           <h1>
