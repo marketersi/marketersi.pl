@@ -11,24 +11,7 @@ const CoverFlowSlider = () => {
 
   const [slideIndex, setSlideIndex] = useState(0);
 
-  function SampleNextArrow(props) {
-    const { onClick } = props;
-    return (
-      <div onClick={onClick} className="arrow arrow-right">
-        dalej »
-      </div>
-    );
-  }
-
-  function SamplePrevArrow(props) {
-    const { onClick } = props;
-    return (
-      <div className="arrow arrow-left" onClick={onClick}>
-        « cofnij
-      </div>
-    );
-  }
-
+  
   const settings = {
     className: "center",
     centerMode: true,
@@ -41,14 +24,14 @@ const CoverFlowSlider = () => {
     beforeChange: (current, next) => setSlideIndex(next),
     responsive: [
       {
-        breakpoint: 1024, // tablet view and below
+        breakpoint: 1024, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600, // mobile view and below
+        breakpoint: 600, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

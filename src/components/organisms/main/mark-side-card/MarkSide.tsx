@@ -112,8 +112,6 @@ const Card = ({ data, links }) => {
       transition: {
         type: "ease",
         bounce: 0.4,
-        // damping: 25,
-        // stiffness: 70,
         duration: 2,
       },
     },

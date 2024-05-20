@@ -36,7 +36,6 @@ const Teams = () => {
             <Row>
               <Col lg={6}>
                 <img className={style.maleImg} src={teams.img_two} alt="" />
-                {/* <img className={style.femaleImg} src={teams.img_three} /> */}
                 <h4 className={style.teamLeftContent}>{teams.para_four}</h4>
               </Col>
               <Col lg={6}>

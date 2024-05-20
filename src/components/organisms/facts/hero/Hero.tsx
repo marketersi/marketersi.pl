@@ -3,7 +3,6 @@ import React from "react";
 import "./hero.css";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
-// import video from "/assets/videos/Strony-Internetowe_2_jilacc.mp4"
 
 const Hero = () => {
   const { isLoading, screenData } = useSelector((state) => state.facts);

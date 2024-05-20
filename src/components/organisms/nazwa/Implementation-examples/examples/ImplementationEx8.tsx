@@ -57,11 +57,11 @@ const ImplementationEx8 = () => {
           title="Projektowanie nowej nazwy i logo - Victoria Coburg"
           alt="Przykład zaprojektowanej nowej nazwy na kartkach"
         />
-        {/* <img
+        <img
           src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/kampanie-reklamowe-victoria-coburg.jpg"
           title="Dobra nazwa dla firmy na przykładzie Victoria Coburg"
           alt="Tworzenie nazw firm na przykładzie Victoria Coburg"
-        /> */}
+        />
       </div>
     </section>
   );

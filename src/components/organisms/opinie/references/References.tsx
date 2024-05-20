@@ -3,8 +3,6 @@ import style from "../opinie.module.css";
 import { Row, Col, Button } from "react-bootstrap";
 import ReferenceCard from "./ReferenceCard";
 import { useSelector } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinusCircle, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
 const ReferenceCardArray = [
   {
@@ -207,20 +205,12 @@ export default function References() {
               <div className={style.buttonContainer}>
                 <div onClick={handleShowAll} className={style.showAllbtn}>
                   {showAll ? null : "Pokaż wszystkie"}
-                  {/* <span>Pokaż wszystkie</span> */}
                   <div className={style.googlePlay}>
                     <img src="https://www.owocni.pl/assets/arrow.svg" alt="" />
                   </div>
                 </div>
 
-                {/* <Button
-                  onClick={handleNext}
-                  disabled={
-                    startIndex + reviewsPerPage >= ReferenceCardArray.length
-                  }
-                >
-                  Next
-                </Button> */}
+                
 
                 <div className="ArrowButton" onClick={handleNext}>
                   <span className="ArrowButton_Arrow">&gt;</span>

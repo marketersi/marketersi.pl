@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import style from "../team.module.css";
 import PersonalCard from "../personal/PersonalCard";
 import { useSelector } from "react-redux";
-import { url } from "inspector";
 
 const GoodTime = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);

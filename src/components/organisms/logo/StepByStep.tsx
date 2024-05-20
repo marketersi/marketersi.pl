@@ -89,13 +89,11 @@ const StepByStep = () => {
               style={{ marginBottom: "-430px" }}
             >
               <h5 className="theme-quote signed-quote signed-quote-image margin-right-74">
-                {/* Współpraca z Owocnymi <br />
-                to był strzał w 10! */}
+              
                 {bannerImageTitle && bannerImageTitle}
               </h5>
 
               <p className="signature projects-rwd-push">
-                {/* Wojciech Rzepka - właściciel. */}
                 {bannerImageSubtitle && bannerImageSubtitle}
               </p>
             </div>

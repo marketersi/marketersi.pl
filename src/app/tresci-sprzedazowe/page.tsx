@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 import Concept366 from "@/components/organisms/tresci-sprzedazowe/366-concept/Concept366";
 import BusinessTools from "@/components/organisms/tresci-sprzedazowe/business_tools/BusinessTools";
-import items from "@/components/organisms/tresci-sprzedazowe/faq/Data";
 import FAQ from "@/components/organisms/tresci-sprzedazowe/faq/Faq";
 import Form from "@/components/organisms/tresci-sprzedazowe/form/Form";
 import Guarantee from "@/components/organisms/tresci-sprzedazowe/guarantee/Guarantee";
@@ -14,7 +13,6 @@ import Motus from "@/components/organisms/tresci-sprzedazowe/motus/Motus";
 import OptionBox2 from "@/components/organisms/tresci-sprzedazowe/options-box2/OptionBox2";
 import Orange from "@/components/organisms/tresci-sprzedazowe/orange/Orange";
 import PriceList from "@/components/organisms/tresci-sprzedazowe/price-list/PriceList";
-import ProfitCard from "@/components/organisms/tresci-sprzedazowe/profit-card/ProfitCard";
 import Profit from "@/components/organisms/tresci-sprzedazowe/profit-slider/Profit";
 import Robo from "@/components/organisms/tresci-sprzedazowe/robo/Robo";
 import SalesBanner from "@/components/organisms/tresci-sprzedazowe/sales_banner/SalesBanner";
@@ -57,7 +55,6 @@ const Sales = () => {
       </section>
       <OptionBox2 optionBox2={quoteSection} />
       <BusinessTools />
-      {/* <ProfitCard /> */}
       <Section5 />
       <FAQ faq={faq} />
       <Guarantee />

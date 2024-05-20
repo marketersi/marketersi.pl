@@ -18,7 +18,7 @@ const Creative = () => {
             {section5?.section_five_title}
           </h2>
           <motion.div
-              className={style.orangeBG} // Add your existing class
+              className={style.orangeBG} 
               initial={{ scale: 1 }}
               animate={{ scale: [1, 1.5, 1] }}
               transition={{ duration: 2, repeat: Infinity }}

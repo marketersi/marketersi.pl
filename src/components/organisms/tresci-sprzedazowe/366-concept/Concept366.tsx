@@ -1,5 +1,4 @@
 import React from "react";
-import img from "next/img";
 import { useSelector } from "react-redux";
 
 const Concept366 = () => {

@@ -11,7 +11,6 @@ function isMobile() {
 export default function GoogleReview() {
   const [showAll, setShowAll] = useState(false);
 
-  // check for mobile view
   const [mobile, setMobile] = useState(isMobile());
 
   useEffect(() => {
@@ -72,7 +71,6 @@ export default function GoogleReview() {
               </ul>
             </div>
 
-            {/* Google Review Banner */}
             <div className={style.googleReviewBanner}>
               <img
                 src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgoogle.1ad8cd13.jpg&w=750&q=75"

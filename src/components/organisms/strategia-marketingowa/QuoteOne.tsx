@@ -10,8 +10,6 @@ export default function QuoteOne() {
       <div className="QuoteOne_Image full">
         <img
           src={quoteOne?.image}
-          // height={733}
-          // width={918}
           alt="QuoteOneImage"
         />
       </div>

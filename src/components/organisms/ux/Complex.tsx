@@ -1,15 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const ComplexData = {
-  title: "title",
-  description1: "description",
-  DStyle1: ["description", "description"],
-  description2: "description",
-  DStyle2: ["description", "description", "description"],
-  description3: "description",
-  DStyle3: ["description", "description"],
-};
 
 const Complex = () => {
   const { screenData } = useSelector((state) => state.ux);

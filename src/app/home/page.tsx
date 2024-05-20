@@ -13,7 +13,6 @@ import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 import Loader from "@/components/organisms/animation/Loader";
-import ThanksMessage from "@/components/organisms/thanks-message/ThanksMessage";
 
 const HomeScreen = () => {
   const { isLoading, screenData } = useSelector(
@@ -31,23 +30,17 @@ const HomeScreen = () => {
 
   return (
     <>
-      {/* {false ? (
-        <Loader />
-      ) : ( */}
       <div>
         <Hero />
         <Video />
         <RatingCaption />
         <MarkSide />
-        {/* <Reviews /> */}
         <OurClients />
         <Entrepreneur />
         <Numbers />
         <HardResult />
         <Order />
-        {/* <ThanksMessage /> */}
       </div>
-      {/* )} */}
     </>
   );
 };

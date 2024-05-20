@@ -35,7 +35,6 @@ const Brands = () => {
       <div className={style.brands}>
         <div className={style.opinionContainer}>
           <h2>{brands.title}</h2>
-
           {brand?.map((e, i) => {
             return (
               <>

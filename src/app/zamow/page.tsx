@@ -30,9 +30,6 @@ const BookExamination = () => {
 
   return (
     <>
-      {/* {isLoading ? (
-        <Loader />
-      ) : ( */}
       <div>
         <div className="bg_sunset"></div>
         <Container className="zamow-container">
@@ -51,7 +48,6 @@ const BookExamination = () => {
           </div>
         </Container>
       </div>
-      {/* )} */}
     </>
   );
 };

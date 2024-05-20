@@ -15,7 +15,6 @@ const Question8 = ({ handleNext }) => {
       selectedOption: option,
     };
 
-    console.log("payload selected option exam ui", payload);
     dispatch(saveExaminationFormData(payload));
     handleNext();
   };

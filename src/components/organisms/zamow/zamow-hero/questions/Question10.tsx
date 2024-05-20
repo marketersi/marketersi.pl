@@ -16,7 +16,6 @@ const Question10 = ({ handleNext }) => {
       formFiveInputValue: inputValue,
     };
 
-    console.log("payload 5 exam ui", payload);
     dispatch(saveExaminationFormData(payload));
     handleNext();
   };

@@ -42,14 +42,10 @@ const StrategiaMarketingowa = () => {
     dispatch({ type: FETCH_STRATEGY_SCREEN_DATA });
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
     dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
-    // dispatch({ type: FETCH_CONSULTING_SCREEN_DATA });
   }, [dispatch]);
 
   return (
     <>
-      {/* {isLoading ? (
-        <Loader />
-      ) : ( */}
       <div>
         <MainHeading />
 

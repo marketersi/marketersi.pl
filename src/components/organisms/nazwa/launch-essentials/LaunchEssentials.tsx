@@ -7,21 +7,7 @@ const LaunchEssentials = () => {
   const { isLoading, screenData } = useSelector((state) => state.anatomy);
   const {launch_essentials} = screenData || {};
 
-  // const backgroundImageUrl = launch_essentials?.policy_image || '';
-  // const BG_After = {
-  //   'names-container-Litery:after': {
-  //     backgroundImage: `url(${backgroundImageUrl})`,
-  //     backgroundRepeat: 'no-repeat',
-  //     backgroundPosition: 'center',
-  //     height: '204px',
-  //     position: 'absolute',
-  //     width: '306px',
-  //     top: '-90px',
-  //     right: '0',
-  //     left: '0',
-  //     margin: '0 auto'
-  //   }
-  // };
+ 
   return (
     <section className="menu-target  sec0" id="sec1">
       <div className="container projects-custom-container1">

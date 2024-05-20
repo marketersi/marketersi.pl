@@ -27,7 +27,6 @@ const ContactForm = () => {
   //   reset();
   // };
 
-  // test email
   const onSubmit = (data) => {
     const templateParams = {
       from_name: data.name,

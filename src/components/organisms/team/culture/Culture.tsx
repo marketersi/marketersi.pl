@@ -2,7 +2,6 @@ import React from "react";
 import style from "../team.module.css";
 import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import Section5 from "../../tresci-sprzedazowe/section5/Section5";
 
 const Culture = () => {
 

@@ -2,13 +2,6 @@ import React from "react";
 import "./logo.css";
 import { useSelector } from "react-redux";
 
-const LogoBannerData = {
-  image: "/assets/images/logo-design/Projektowanie-logo-dla-firm1.jpg.webp",
-  title: "Projektowanie logo ktorego pokochasz.",
-  subtitle: "Dajemy Ci 100% gwarancji.",
-  text: "Piękna, ręcznie stworzona marka — nawet w 5 dni. Praca do pełnej satysfakcji — bez limitu projektów. Nr 1 w Polsce — 1.000 zadowolonych klientów.",
-  buttontext: "OK. Wyślijcie mi niezobowiązującą ofertę",
-};
 
 const LogoBanner = ({ openModal }) => {
   const { isLoading, screenData } = useSelector((state) => state.logo);

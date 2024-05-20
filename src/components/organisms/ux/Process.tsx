@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "./process/process.css";
-import Image from 'next/image';
 
 const Process = () => {
   const [circlePositions, setCirclePositions] = useState([]);
@@ -10,7 +9,7 @@ const Process = () => {
     const pathLength = path.getTotalLength();
     const spacing = 20;
     const numberOfCircles = Math.floor(pathLength / spacing);
-    const leftOffset = 780 - 390.62; // Adjust for the initial position to start at 780px
+    const leftOffset = 780 - 390.62; 
 
     let positions = [];
     for (let i = 0; i <= numberOfCircles; i++) {

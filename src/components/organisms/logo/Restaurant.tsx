@@ -1,18 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const RestaurantData = {
-  title: "BOHEMIA GDAŃSK",
-  subtitle:
-    "Logo mojej knajpy musi być w starym klimacie. Tak, by chciało się przy nim posiedzieć z przyjaciółmi.",
-  text: "Bohemia to autentyczny gdański browar rzemieślniczy. Choć w lokalu znajduje się kuchnia, to chmiel gra pierwsze skrzypce. Kraftowe piwo bazuje na starej recepturze, stąd pomysł pieczęci. Chmielowe szyszki będą przyjemną częścią rozpoznawalności. Jednak prawdziwy sekret drzemie w zapisie typograficznym. Wyrafinowany, elegancki, nadaje całości legendarnego wydźwięku Żaden fan rzemieślniczego browaru nie przechodzi obok tego obojętnie.",
-  secondaryImage: "/img/Projektowanie-graficzne-logo.jpg.webp",
-  image: "/assets/images/logo-design/daco-logo.webp",
-  quote: "Idealne! Czuć, że was to obchodzi.Z wami naprawdę chce się pracować.",
-  quoteAuthor: "Tomasz Salawa - Właściciel",
-  quoteText:
-    "Po tak ciężkiej pracy miło będzie wybrać się na piwo. Zwłaszcza, że Bohemia jest już tak blisko...",
-};
+
 
 const Restaurant = () => {
   const {isLoading, screenData} = useSelector((state) => state.logo);
@@ -50,12 +39,7 @@ const Restaurant = () => {
               alt="Projektowanie logo - cena w ogólnym ujęciu"
               style={{ left: "-65px", position: "relative", maxWidth: "none" }}
             />
-            {/* <img
-              src="/files/multimedias/528/Projektowanie-logo-cena.jpg.webp"
-              className="mobile-810"
-              alt="Projektowanie logo - cena w ogólnym ujęciu"
-              title="Projektowanie logo - cena nie musi być wysoka, a pomysł jest dobry"
-            /> */}
+           
           </div>
         </div>
 
@@ -83,14 +67,7 @@ const Restaurant = () => {
                 style={{ left: "-75px" }}
               />
             </a>
-            {/* <a href="https://www.youtube.com/watch?v=9C-ZNDm0Ziw" data-lity="">
-              <img
-                src="/files/multimedias/530/Przyklad-przy-projektowaniu-logo-Bohemia-MOB.jpg.webp"
-                className="mobile-810"
-                alt="Profesjonalny znak wyróżni Twoją markę "
-                title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
-              />
-            </a> */}
+           
           </div>
         </div>
 

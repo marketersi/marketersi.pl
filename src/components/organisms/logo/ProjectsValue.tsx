@@ -1,17 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const ProjectValueData = {
-  title: "Jak wyceniamy projekty?",
-  subtitle:
-    "Proces zamknięty jest w rozsądnej cenie dla małych firm. Każdy projekt jest inny. Każdy wyceniamy indywidualnie, elastycznie i przyjaźnie. Tylko jakość nie podlega negocjacji.",
-  image: "/assets/images/logo-design/Logo-projekt-wierzymy.jpg.webp",
-  imageTitle: "90% pracy wykonamy dla Ciebie. Ciebie za 50% ceny.",
-  imageSubtitle:
-    "Drugą połowę rozliczymy dopiero, gdy będziesz w pełni zadowolony z wszystkich efektów naszej pracy.",
-  galleryTitle: "Galeria Realizacji",
-  galleryImage: "/assets/images/logo-design/Przyklady-logo-firmy.jpg.webp",
-};
+
 
 const ProjectsValue = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);

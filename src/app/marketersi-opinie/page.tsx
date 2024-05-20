@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
 import Banner from "@/components/organisms/opinie/banner/Banner";
-import BrilliantJob from "@/components/organisms/opinie/brilliant-job/BrilliantJob";
 import Review from "@/components/organisms/opinie/review/Review";
 import Teams from "@/components/organisms/opinie/teams/Teams";
 import Brands from "@/components/organisms/opinie/brands/Brands";
@@ -11,7 +10,6 @@ import GoogleReview from "@/components/organisms/opinie/google-review/GoogleRevi
 import References from "@/components/organisms/opinie/references/References";
 import Personally from "@/components/organisms/opinie/personally/Personally";
 import Experts from "@/components/organisms/opinie/expert/Experts";
-import OurClients from "@/components/organisms/strategia-marketingowa/OurClients";
 import Order from "@/components/organisms/main/order/Order";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_OPINION_SCREEN_DATA } from "@/redux/opinie/opinionAction";
@@ -35,9 +33,7 @@ const CustomersOpinion = () => {
   return (
     <>
       <Banner />
-      {/* <OurClients /> */}
       <HappyCustomers />
-      {/* <BrilliantJob /> */}
       <ReviewCard />
       <div className="review">
         <Review />

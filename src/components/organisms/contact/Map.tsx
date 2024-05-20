@@ -80,7 +80,6 @@ const ContactMap = () => {
     <div className="map_container">
       <Image src="/assets/images/contact/mapakontakt.avif" alt="" />
 
-      {/* Icon Container */}
       <>
         <div
           className={`icon1 plus_icon_container ${

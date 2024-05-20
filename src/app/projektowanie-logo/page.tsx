@@ -58,9 +58,6 @@ const LogoDesignScreen = () => {
 
   return (
     <>
-      {/* {isLoading ? (
-        <Loader />
-      ) : ( */}
       <>
         <LogoBanner openModal={openModal} />
         <SampleLogo />
@@ -98,7 +95,6 @@ const LogoDesignScreen = () => {
 
         <ModalForm isOpen={isModal} onClose={handleModalClose} />
       </>
-      {/* )} */}
     </>
   );
 };
