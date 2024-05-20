@@ -24,9 +24,7 @@ const IgnoreSites = () => {
     <>
       <section>
         <div id="maciej">
-          {/* <div className="imgs">
-            <img src={IgnoreSites.image} />
-          </div> */}
+
           <div className="contentText">
             <h2>{IgnoreSites.title}</h2>
             <p>{IgnoreSites.descript1}</p>

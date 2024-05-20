@@ -38,12 +38,7 @@ const NewCompany = () => {
             {subtitle}
           </div>
         )}
-        {/* <div
-          className="TypeMe typeme1 text-center projects-custom-typed-text"
-          data-items="Utalentowani,Doświadczeni,Kreatywni,Rzetelni"
-        >
-          {cursorChangingText && cursorChangingText}
-        </div> */}
+       
 
         <div className="TypeMe typeme1 text-center projects-custom-typed-text">
           {words.map((word, index) => (

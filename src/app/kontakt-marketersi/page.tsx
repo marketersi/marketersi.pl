@@ -30,7 +30,6 @@ const ContactScreen = () => {
   const dispatch = useDispatch();
   const router = useRouter();
 
-  console.log("post response", contactUsResponse);
 
   if (screenData) {
     console.log("contact screen data from UI => ", project);
@@ -48,11 +47,7 @@ const ContactScreen = () => {
 
   return (
     <>
-      {/* {isContactUsLoading || isLoading ? (
-        <Loader />
-      ) : ( */}
       <section>
-        {/* top section */}
         <div className="first_form_container">
           <div className="container">
             <div className="row">
@@ -76,7 +71,6 @@ const ContactScreen = () => {
           </div>
         </div>
 
-        {/* <!-- contact card section --> */}
         <div className="card_section">
           <Container>
             <Row>
@@ -92,7 +86,6 @@ const ContactScreen = () => {
           </Container>
         </div>
 
-        {/* <!-- Brand Image Section --> */}
         <div className="section_logo">
           <div className="container Image_logos">
             {brandImagesArray?.map((item, index) => {
@@ -105,7 +98,6 @@ const ContactScreen = () => {
           </div>
         </div>
 
-        {/* <!-- Map & Review section --> */}
         <div className="container_fluid_plus">
           <div className="container">
             <div className="row">
@@ -124,9 +116,6 @@ const ContactScreen = () => {
                 </div>
 
                 <div className="icons">
-                  {/* <p className="left_icin_txt">
-                    {contact_us?.social_media_content}
-                  </p> */}
                   <Image src="/assets/images/contact/1 614011205.avif" alt="" />
                 </div>
                 <div className="bottom">
@@ -168,7 +157,6 @@ const ContactScreen = () => {
         </div>
         <ToastContainer />
       </section>
-      {/* )} */}
     </>
   );
 };

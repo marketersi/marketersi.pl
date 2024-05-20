@@ -57,11 +57,8 @@ const Hero = () => {
           <h1>{heroSection?.title}</h1>
           <div className={style.subtitleContainer}>
             <h6>{heroSection?.subtitle}</h6>
-            <p>
-              Z Marketersami jest łatwiej. <br />
-              Przyjemnie i przewidywalnie.
-            </p>
-            <p></p>
+           
+            <p>{heroSection?.description}</p>
           </div>
           <div className={style.heroBtn}>
             <Link href="/cennik">

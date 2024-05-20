@@ -2,16 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
-const CompetitionsData = {
-  title: "Konkurencja w wersji ",
-  titleStyle: "hiper",
-  image:
-    "https://propozycje.owocni.pl/ux/Podkreslenie-konkurencja.0db36d83.png",
-  description1: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-  description2: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-  description3: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-  description4: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
-};
+
 
 const Competitions = () => {
   const { screenData } = useSelector((state) => state.ux);

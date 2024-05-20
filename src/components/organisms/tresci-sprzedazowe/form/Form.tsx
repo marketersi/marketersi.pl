@@ -20,7 +20,6 @@ const Form = () => {
   const router = useRouter();
 
   const onSubmit = (data) => {
-    console.log(data);
     dispatch({ type: SEND_ME_A_QUOTE, payload: data });
     reset();
   };

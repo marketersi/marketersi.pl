@@ -5,13 +5,11 @@ import { useSelector } from "react-redux";
 const WebSite = () => {
   const { screenData } = useSelector((state) => state.ux);
   const websites = screenData.websites || [];
-  console.log(websites, "=======>")
 
   const [scrollRotation, setScrollRotation] = useState(0);
   const [perspective, setPerspective] = useState();
 
   useEffect(() => {
-    // Ensure this runs only on the client side
     if (typeof window !== "undefined") {
       setPerspective(window.innerWidth * 1.3);
 
@@ -29,7 +27,6 @@ const WebSite = () => {
       window.addEventListener("resize", handleResize);
       window.addEventListener("scroll", handleScroll);
 
-      // Cleanup event listeners on component unmount
       return () => {
         window.removeEventListener("resize", handleResize);
         window.removeEventListener("scroll", handleScroll);

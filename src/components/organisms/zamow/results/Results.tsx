@@ -3,32 +3,6 @@ import { Card, Col, Row } from "react-bootstrap";
 import "./results.css";
 import { useSelector } from "react-redux";
 
-const cardData = [
-  {
-    value: 293,
-    text: "Wzrost ruchu na stronie",
-    name: "KocieKoszulki.pl",
-    type: "eCommerce store",
-  },
-  {
-    value: 108,
-    text: "Większa sprzedaż",
-    name: "Red-Rocket.pl",
-    type: "Producent Kamperów",
-  },
-  {
-    value: 65,
-    text: "Wyższa konwersja",
-    name: "Pragmile.com",
-    type: "Softwarehouse",
-  },
-  {
-    value: 73,
-    text: "Niższy koszt reklam",
-    name: "Dlabs.ai",
-    type: "Medycyna B2B",
-  },
-];
 
 const Results = () => {
   const { isLoading, screenData } = useSelector((state) => state.examination);

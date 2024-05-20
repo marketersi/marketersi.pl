@@ -14,7 +14,6 @@ export default function Review() {
   const { screenData } = useSelector((state) => state.opinion);
   const Review = screenData.Review || [];
 
-  // check for mobile view
   const [mobile, setMobile] = useState(isMobile());
 
   useEffect(() => {

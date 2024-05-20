@@ -1,12 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const SystemicallyData = {
-  hand1Img: "images",
-  title: "title",
-  description: "description",
-  hand2Img: "images",
-};
 const Systemically = () => {
   const { screenData } = useSelector((state) => state.ux);
   const Systematically = screenData.Systematically || {};

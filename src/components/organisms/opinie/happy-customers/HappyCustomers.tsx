@@ -1,6 +1,5 @@
 import React from "react";
 import "./happyCustomers.css";
-// import { customerReplies } from "./data";
 import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";

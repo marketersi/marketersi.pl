@@ -19,15 +19,15 @@ const FlipCard = ({
       if (isFlipping) {
         const timeoutId = setTimeout(() => {
           setIsFlipped(true);
-        }, 500); // Flip after a small delay to allow the previous card to return
+        }, 500); 
   
         return () => clearTimeout(timeoutId);
       } else {
         setIsFlipped(false);
-        setAnimateImage(true); // Trigger the animation when flipping back to the front
+        setAnimateImage(true); 
   
         const animationTimeoutId = setTimeout(() => {
-          setAnimateImage(false); // Remove the animation class after it finishes
+          setAnimateImage(false); 
         }, 500);
   
         return () => clearTimeout(animationTimeoutId);

@@ -19,9 +19,7 @@ const Team = () => {
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
   }, [dispatch]);
 
-  // if (isLoading) {
-  //   return <Loader />;
-  // }
+ 
 
   return (
     <>
@@ -31,7 +29,6 @@ const Team = () => {
       <TeamComponents.Support />
       <TeamComponents.ImageSlider />
       <OurClients />
-      <TeamComponents.Review />
       <section className={style.Customers}>
         <div className={`${style.teamContent} mb-sm-5`}>
           <p className={style.customersPara}>

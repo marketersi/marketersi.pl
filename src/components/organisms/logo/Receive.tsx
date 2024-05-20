@@ -2,20 +2,6 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import Modal from "react-modal";
 
-const ReceiveData = {
-  title: "Co otrzymasz?",
-  subtitle:
-    "Każdy podstawowy pakiet zawiera komplet materiałów niezbędnych do prowadzenia Twojej firmy.",
-  image: "/assets/images/logo-design/Projekt-logo-dla-firm-anatomia.jpg.webp",
-  points: [
-    "Unikalne, własne logo - tworzone od czystej kartki",
-    "Projekty logo w wersji responsywnej. (Zobacz co to jest?)",
-    "Pliki profesjonalnej ekspozycji. - Wersja biała, wersja jednokolorowa, przezroczysty znak wodny ikony, bitmapy oraz krzywe (Wektory).",
-    "Spójny z wizerunkiem projekt firmowych wizytówek.",
-    "Profesjonalny papier firmowy do druku ofert oraz faktur.",
-    "Grafikę firmową na Facebook lub do innej społeczności.",
-  ],
-};
 
 const Receive = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -37,7 +23,6 @@ const Receive = () => {
           <div className="row">
             <div className="col-md-12">
               <h3 className="projects-co-otrzymasz no-after">
-                {/* Co otrzymam? */}
                 {title && title}
               </h3>
 
@@ -69,7 +54,6 @@ const Receive = () => {
                       <ul className="projects-includes-ul">
                         {points?.map((point, i) => (
                           <li className="projects-includes-li" key={i}>
-                            {/* {point} */}
                             {i === 1 ? (
                               <>
                                 {point}{" "}

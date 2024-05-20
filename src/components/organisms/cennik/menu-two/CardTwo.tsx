@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import Select, { components } from "react-select";
-import { motion } from "framer-motion";
 import FormOne from "./nested-forms/FormOne";
 import FormTwo from "./nested-forms/FormTwo";
 import FormThree from "./nested-forms/FormThree";

@@ -1,10 +1,8 @@
-// components/Accordion.js
 
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
-// Define a type for the items prop
 type AccordionItem = {
   title: string;
   content: string;
@@ -26,7 +24,6 @@ const Faq: React.FC<AccordionProps> = ({ faq }) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
-  // Check if items is defined before mapping over it
   return (
     <div>
       <div className="copywriter-intro-bg-5-label text-center">

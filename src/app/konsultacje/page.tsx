@@ -32,9 +32,6 @@ const MarketingConsulting = () => {
 
   return (
     <>
-      {/* {isLoading ? (
-        <Loader />
-      ) : ( */}
       <div>
         <PricingOption />
         <StandOut />
@@ -42,7 +39,6 @@ const MarketingConsulting = () => {
         <CustomersReview />
         <WhatToExpect />
       </div>
-      {/* )} */}
     </>
   );
 };

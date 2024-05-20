@@ -15,7 +15,6 @@ const Video = () => {
       rotate: -10,
       transition: {
         type: "ease",
-        // bounce: 0.4,
         damping: 25,
         stiffness: 70,
         duration: 3,
@@ -26,7 +25,6 @@ const Video = () => {
       rotate: 0,
       transition: {
         type: "ease",
-        // bounce: 0.4,
         damping: 25,
         stiffness: 70,
         duration: 3,
@@ -52,7 +50,6 @@ const Video = () => {
       >
         
         <ReactPlayer
-          // url="https://owocni.pl/assets/homepage/video/popupVideo.mp4"
           url={brandSection?.banner_video}
           playing={true}
           loop={true}
@@ -81,7 +78,6 @@ const Video = () => {
         <div className="popup-overlay" onClick={closePopup}>
           <div className="popup-content">
             <ReactPlayer
-              // url="https://owocni.pl/assets/homepage/video/popupVideo.mp4"
               url={brandSection?.banner_video}
               playing={true}
               loop={true}

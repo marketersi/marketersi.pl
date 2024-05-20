@@ -33,7 +33,6 @@ const PriceListScreen = () => {
     }, 500);
   };
 
-  // check to query string and for type
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
 

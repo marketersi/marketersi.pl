@@ -9,6 +9,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Stars from "@/components/molecules/Ratings";
 import "./our-clients.css";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
+import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default function OurClients() {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -16,7 +18,6 @@ export default function OurClients() {
   const { SliderImages, RatingCard, ClientFeedback, FeedbackSummary } =
     ClientReviews || {};
   const { row1, row2, row3, row4 } = SliderImages || {};
-
 
   const slideAnimationLeft: Variants = {
     offscreen: {
@@ -29,8 +30,6 @@ export default function OurClients() {
       transition: {
         type: "ease",
         bounce: 0.4,
-        // damping: 25,
-        // stiffness: 70,
         duration: 2,
       },
     },
@@ -39,7 +38,6 @@ export default function OurClients() {
   return (
     <div className="OurClients content mt-5">
       <div className="OurClients_Marquee full mobile">
-        {/* Marquee 1 */}
         <Marquee autoFill speed={175}>
           {row1?.map((e, i) => {
             return (
@@ -60,7 +58,6 @@ export default function OurClients() {
             );
           })}
         </Marquee>
-        {/* Marquee 2 */}
         <Marquee autoFill speed={100}>
           {row2?.map((e, i) => {
             return (
@@ -81,7 +78,6 @@ export default function OurClients() {
             );
           })}
         </Marquee>
-        {/* Marquee 3 */}
         <Marquee autoFill speed={100}>
           {row3?.map((e, i) => {
             return (
@@ -102,7 +98,6 @@ export default function OurClients() {
             );
           })}
         </Marquee>
-        {/* Marquee 4 */}
         <Marquee autoFill speed={150}>
           {row4?.map((e, i) => {
             return (
@@ -131,7 +126,6 @@ export default function OurClients() {
         <div className="OurClients_Card_Two">
           <div>
             <Image
-              // src={"/assets/images/strategiamarketingowa/OurClientsImage.svg"}
               src={RatingCard?.rating_image}
               alt="OurClientsImage"
               width={250}
@@ -285,11 +279,9 @@ export const SlideOne = (props) => {
               <div className="OurClients_Slide_Media_Rating">
                 <div>
                   <div className="OurClients_Slide_Star_Reviewer">
-                    {/* Agnieszka Marchewka */}
                     {client_name}
                   </div>
                   <div className="OurClients_Slide_Star_Company">
-                    {/* ubranka dziecięce */}
                     {client_designation}
                   </div>
                 </div>
@@ -318,7 +310,6 @@ export const SlideFour = () => {
 
   return (
     <>
-      {/* Slide 4 */}
       <div className="OurClients_Slide_Last">
         <div className="OurClients_Card_One_Title">
           {FeedbackSummary?.title}
@@ -327,149 +318,11 @@ export const SlideFour = () => {
           {FeedbackSummary?.description}
         </div>
         <div className="OurClients_Card_One_Button_Container">
-          <button
-            className="OurClients_Card_One_Button"
-            onClick={() => {
-              window.location.href = "/marketersi-opinie";
-            }}
-          >
+          <Link className="OurClients_Card_One_Button" href="marketersi-opinie">
             Poznaj wszystkie recenzje
-          </button>
+          </Link>
         </div>
       </div>
     </>
   );
 };
-
-// const SlideTwo = () => {
-//   const { handleNext } = useContext(CarouselContext);
-//   return (
-//     <>
-//       {/* Slide 2 */}
-//       <div className="OurClients_Slide">
-//         <div className="OurClients_Slide_Container">
-//           <div className="OurClients_Slide_Image">
-//             <Image
-//               src={"/assets/images/strategiamarketingowa/OurClientsImage2.png"}
-//               alt="OurClientsImage2"
-//               width={190}
-//               height={275}
-//               style={{ filter: "grayscale(100%)" }}
-//             />
-//           </div>
-//           <div className="OurClients_Slide_Content">
-//             <div className="OurClients_Slide_Title">
-//               Na mobilną jadłodajnię postawiłem oszczędności. Owocni nie mieli
-//               wyjścia,{" "}
-//               <span className="YellowMarkSlide">to musiało się nam udać.</span>
-//             </div>
-//             <div className="OurClients_Slide_Media">
-//               <div className="OurClients_Slide_Media_Video">
-//                 <ReactPlayer
-//                   url={
-//                     "/assets/images/strategiamarketingowa/OurClientsVideo2.mp4"
-//                   }
-//                   playing
-//                   loop
-//                   width="60%"
-//                   height="auto"
-//                   muted={true}
-//                 />
-//               </div>
-//               <div className="OurClients_Slide_Media_Rating">
-//                 <div>
-//                   <div className="OurClients_Slide_Star_Reviewer">
-//                     Piotr Parol
-//                   </div>
-//                   <div className="OurClients_Slide_Star_Company">
-//                     trójmiejski food truck
-//                   </div>
-//                 </div>
-//                 <div className="OurClients_Slide_Star_Rating">
-//                   <Image
-//                     src={"/assets/images/strategiamarketingowa/starrating.avif"}
-//                     alt="starrating"
-//                     width={75}
-//                     height={22}
-//                   />
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="OurClients_Slide_Button">
-//           <div className="OurClients_Slide_Button_Text">Następna</div>
-//           <div className="ArrowButton" onMouseEnter={handleNext}>
-//             <span className="ArrowButton_Arrow">&gt;</span>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-// const SlideThree = () => {
-//   const { handleNext } = useContext(CarouselContext);
-//   return (
-//     <>
-//       {/* Slide 3 */}
-//       <div className="OurClients_Slide">
-//         <div className="OurClients_Slide_Container">
-//           <div className="OurClients_Slide_Image">
-//             <Image
-//               src={"/assets/images/strategiamarketingowa/OurClientsImage3.png"}
-//               alt="OurClientsImage3"
-//               width={190}
-//               height={275}
-//               style={{ filter: "grayscale(100%)" }}
-//             />
-//           </div>
-//           <div className="OurClients_Slide_Content">
-//             <div className="OurClients_Slide_Title">
-//               Całe szczęście, że zdecydowałem się na zmianę agencji. To jest
-//               <span className="YellowMarkSlide">
-//                 zupełnie inna współpraca.”
-//               </span>
-//             </div>
-//             <div className="OurClients_Slide_Media">
-//               <div className="OurClients_Slide_Media_Video">
-//                 <Image
-//                   src={
-//                     "/assets/images/strategiamarketingowa/OurClientsVideo3.avif"
-//                   }
-//                   alt="OurClientsVideo3"
-//                   width={241 * 0.5}
-//                   height={34 * 0.5}
-//                   style={{ marginRight: "70px" }}
-//                 />
-//               </div>
-//               <div className="OurClients_Slide_Media_Rating">
-//                 <div>
-//                   <div className="OurClients_Slide_Star_Reviewer">
-//                     Przemek Majewski
-//                   </div>
-//                   <div className="OurClients_Slide_Star_Company">
-//                     Software house
-//                   </div>
-//                 </div>
-//                 <div className="OurClients_Slide_Star_Rating">
-//                   <Image
-//                     src={"/assets/images/strategiamarketingowa/starrating.avif"}
-//                     alt="starrating"
-//                     width={75}
-//                     height={22}
-//                   />
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="OurClients_Slide_Button">
-//           <div className="OurClients_Slide_Button_Text">Następna</div>
-//           <div className="ArrowButton" onMouseEnter={handleNext}>
-//             <span className="ArrowButton_Arrow">&gt;</span>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };

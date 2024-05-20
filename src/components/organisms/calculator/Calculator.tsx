@@ -8,12 +8,10 @@ const Calculator = () => {
   const [conversionIncrease5, setConversionIncrease5] = useState(0);
 
   useEffect(() => {
-    // Calculate additional revenue for a 1% increase in conversion
     const additionalRevenue1 = visitors * 0.01 * averageOrderValue;
 
     setConversionIncrease1(additionalRevenue1);
 
-    // Calculate additional revenue for a 5% increase in conversion
     const additionalRevenue5 = visitors * 0.05 * averageOrderValue;
 
     setConversionIncrease5(additionalRevenue5);
@@ -38,7 +36,6 @@ const Calculator = () => {
       number = number.toString();
     }
 
-    // Replace dots with commas and vice versa
     return number.replace(/[.,]/g, function (match) {
       return match === "." ? "," : ".";
     });

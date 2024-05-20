@@ -60,45 +60,7 @@ const ImplementationEx3 = () => {
 }
 
 
-      {/* <div className="container names-custom-container">
-        <div className="row">
-          <div className="col-md-12 text-center">
-            <div className="names-client-name copywriter-cname cname-big-mtop underline-down">
-              GDYNIA
-            </div>
-
-            <div className="names-client-desc">
-              Mobilna restauracja w miejskim <br />
-              stylu, czyli nazwa dla food-trucka.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="naming-seo-img">
-        <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/naming-tworzenie-carmnik.jpg"
-          title="Naming dla nowej firmy - foodtrucka"
-          alt="Dobranie dobrego hasła reklamowego dla foodtrucka Carmnik"
-        />
-      </div>
-
-      <div className="container custom-container1 names-custom-push-container">
-        <div className="row">
-          <div className="col-md-12">
-            <p className="theme-desc">
-              Chcieliśmy, by nazwa brzmiała przystępnie i działała „na ulicy”.
-            </p>
-
-            <p className="theme-desc names-custom-mright">
-              Carmnik, czyli car (ang. samochód) + karmnik tworzy konkretny
-              przekaz <br />w zabawnym, działającym na wyobraźnię wydaniu. Karma
-              wraca!
-            </p>
-          </div>
-        </div>
-      </div> */}
-    </section>
+   </section>
   );
 };
 

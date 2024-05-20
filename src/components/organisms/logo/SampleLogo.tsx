@@ -2,27 +2,6 @@ import React from "react";
 import "./logo.css";
 import { useSelector } from "react-redux";
 
-const SampleLogoData = {
-  imageGroup1: [
-    "/assets/images/logo-design/Projekt-loga-konto.jpg.webp",
-    "/assets/images/logo-design/Projekt-logo-agencja-Kotwica.jpg.webp",
-    "/assets/images/logo-design/Logo-firmy-Bohemia.jpg.webp",
-    "/assets/images/logo-design/Projektu-logo-Leopard.jpg.webp",
-    "/assets/images/logo-design/Projekt-logo-Przeznaczenie.jpg.webp",
-  ],
-  imageGroup2: [
-    "/assets/images/logo-design/Projektowanie-logo-cena-Promor.jpg.webp",
-    "/assets/images/logo-design/Projektowanie-logo-cena-Jaglanka.jpg.webp",
-    "/assets/images/logo-design/logo-dla-firmy-appetime6.jpg.webp",
-    "/assets/images/logo-design/Projekty-loga-Varsovie.jpg.webp",
-  ],
-  imageGroup3: [
-    "/assets/images/logo-design/Logo-firmy-Ego.jpg.webp",
-    "/assets/images/logo-design/Projekt-logo-Banda.jpg.webp",
-    "/assets/images/logo-design/logo-firmy-aog13.jpg.webp",
-  ],
-};
-
 const SampleLogo = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { SampleLogoData } = screenData || {};

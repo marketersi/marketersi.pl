@@ -29,7 +29,6 @@ const Question13 = ({ handleNext }) => {
       formSevenInputValue: inputValue,
     };
 
-    console.log("final payload", payload);
     dispatch({ type: POST_EXAMINATION_SURVEY, payload });
     handleNext();
   };

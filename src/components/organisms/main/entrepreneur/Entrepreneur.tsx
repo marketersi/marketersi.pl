@@ -13,51 +13,30 @@ const Entrepreneur = () => {
     <div>
       <Container>
         <div className={style.enter}>
-          
           <ReactPlayer
-        url={section1?.image_url}
-        playing={true}
-        loop={true}
-        muted={true}
-        width="100%"
-        height="auto"
-        className={style.socialVideo}
-        pip={false}
-        playsinline
-      />
+            url={section1?.image_url}
+            playing={true}
+            loop={true}
+            muted={true}
+            width="100%"
+            height="auto"
+            className={style.socialVideo}
+            pip={false}
+            playsinline
+          />
           <div className={style.Content}>
-            <h2>
-              {section1?.title}
-            </h2>
-            <p>
-              {section1?.subtitle_1}
-            </p>
-            <p>
-              {section1?.paragraph_1}
-            </p>
+            <h2>{section1?.title}</h2>
+            <p>{section1?.subtitle_1}</p>
+            <p>{section1?.paragraph_1}</p>
 
-            <p>
-              {section1?.paragraph_2}
-            </p>
-            <p>
-              {section1?.paragraph_3}
-            </p>
+            <p>{section1?.paragraph_2}</p>
+            <p>{section1?.paragraph_3}</p>
             <h4>{section1?.subtitle_2}</h4>
-            <p>
-              {section1?.paragraph_4}
-            </p>
-            <p>
-              {section1?.paragraph_5}
-            </p>
-            <p>
-              {section1?.paragraph_6}
-            </p>
-            <p>
-              {section1?.paragraph_7}
-            </p>
-            <p>
-              {section1?.paragraph_8}
-            </p>
+            <p>{section1?.paragraph_4}</p>
+            <p>{section1?.paragraph_5}</p>
+            <p>{section1?.paragraph_6}</p>
+            <p>{section1?.paragraph_7}</p>
+            <p>{section1?.paragraph_8}</p>
           </div>
         </div>
       </Container>

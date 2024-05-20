@@ -19,7 +19,6 @@ const TresciFooter = () => {
     setIsNavbarCollapsed(!isNavbarCollapsed);
   };
 
-  //   ------------ modal------------
   const [isModal, setIsModal] = useState(false);
 
   const handleModalClose = () => {
@@ -65,7 +64,6 @@ const TresciFooter = () => {
         </div>
       </div>
 
-      {/* -------------------------------------modal---------------------------------- */}
 
       <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </>

@@ -19,7 +19,6 @@ const Question7 = ({ handleNext }) => {
     const payload = {
       selectedRangeValue: rangeValue,
     };
-    console.log("payload range value 1 exam ui", payload);
     dispatch(saveExaminationFormData(payload));
     handleNext();
   };

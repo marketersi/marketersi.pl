@@ -1,12 +1,9 @@
-// components/Accordion.js
 
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import "./accordion.css";
-import { useSelector } from "react-redux";
 
-// Define a type for the items prop
 type AccordionItem = {
   title: string;
   description: string;
