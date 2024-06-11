@@ -1,15 +1,13 @@
 "use client";
 import Image from "next/image";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Marquee from "react-fast-marquee";
 import ReactPlayer from "react-player/file";
 import { ClientCarousel, CarouselContext } from "./ClientCarousel";
-import { Variants, motion } from "framer-motion";
-import { useDispatch, useSelector } from "react-redux";
+// import { Variants, motion } from "framer-motion";
+import { useSelector } from "react-redux";
 import Stars from "@/components/molecules/Ratings";
 import "./our-clients.css";
-import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
-import { redirect } from "next/navigation";
 import Link from "next/link";
 
 export default function OurClients() {
@@ -19,21 +17,21 @@ export default function OurClients() {
     ClientReviews || {};
   const { row1, row2, row3, row4 } = SliderImages || {};
 
-  const slideAnimationLeft: Variants = {
-    offscreen: {
-      x: -100,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "ease",
-        bounce: 0.4,
-        duration: 2,
-      },
-    },
-  };
+  // const slideAnimationLeft: Variants = {
+  //   offscreen: {
+  //     x: -100,
+  //     opacity: 0,
+  //   },
+  //   onscreen: {
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       type: "ease",
+  //       bounce: 0.4,
+  //       duration: 2,
+  //     },
+  //   },
+  // };
 
   return (
     <div className="OurClients content mt-5">
@@ -223,14 +221,15 @@ export default function OurClients() {
           })}
         </Marquee>
       </div>
-      <motion.div
+      {/* to be deleted */}
+      {/* <motion.div
         initial="offscreen"
         whileInView="onscreen"
         variants={slideAnimationLeft}
         className="cartAnimation"
       >
         <img src={RatingCard?.left_animated_image} alt="" />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

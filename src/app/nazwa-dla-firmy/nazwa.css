@@ -148,7 +148,7 @@ img.names-custom-image {
   margin-right: -15px;
   letter-spacing: -0.025em;
   max-width: 800px;
-    margin-inline: auto;
+  margin-inline: auto;
 }
 .pnazw-page .naming-project-includes {
   font-weight: 500;
@@ -259,8 +259,12 @@ img.names-custom-image {
   font-style: italic;
 }
 .pnazw-page .new-wierzymy .img-wierzymy {
+  /* position: absolute;
+  right: -170px; */
+
   position: absolute;
-  right: -170px;
+  right: -245px;
+  width: 700px;
 }
 .projects-gray-section-valuation {
   text-align: left !important;
@@ -284,7 +288,6 @@ img.names-custom-image {
   overflow: visible;
 }
 .projects-thematic-section-gray {
-  
 }
 .iglarki-section-submain {
   font-size: 45px;
@@ -363,7 +366,7 @@ img.names-custom-image {
 }
 
 /* ----------------new------------------ */
-.nazwaContainer{
+.nazwaContainer {
   padding: 0 100px;
 }
 .projects-under-big-header2 {
@@ -380,16 +383,16 @@ img.names-custom-image {
 .pnazw-ctext-size {
   font-size: 26px;
 }
-.theme-quote{
-  font-size: 35px ;
+.theme-quote {
+  font-size: 35px;
 }
-.signature{
+.signature {
   margin-bottom: 50px;
 }
-.custom-after-top-line{
-position: relative;
+.custom-after-top-line {
+  position: relative;
 }
-.custom-after-top-line::after{
+.custom-after-top-line::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -401,7 +404,7 @@ position: relative;
   color: #8d1749;
 }
 .nazwa_footer_Time_btn {
-display: none;
+  display: none;
 }
 
 .nazwa_footer_bottom_right {
@@ -435,345 +438,349 @@ section.projects-gray-opinion-4 {
   margin-bottom: 100px;
 }
 /* ------------------------------------media screen------------------------------- */
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .nazwa_footer_Time_btn {
     display: block;
-    }
+  }
   .nazwaContainer {
     padding: 0 50px;
-}
-.pnazw-page .pnazw-topbanner-title {
-  font-size: 75px;
-  line-height: 70px;
-  text-align: center;
-}
-.pnazw-page .names-top-banner-long-text {
-  text-align: center;
-}
-.pnazw-page .catalog-submit-button .download-catalog-button {
-  margin-inline: auto;
-  display: block;
-  margin-top: 40px;
-}
-.projects-custom-container1 {
-  padding: 50px 0 0;
-}
-.projects-big-header {
-  font-size: 50px;
-  line-height: 50px;
-}
-section#sec0 {
-  padding-inline: 50px;
-}
-.stats-image-cont img {
-  margin-bottom: 50px;
-  margin-inline: auto;
-  display: block;
-}
-img.projects-logotypy-prasa {
-  margin-inline: auto;
-  display: block;
-  margin-block: 30px;
-}
-.opinion-box-image{
-  position: relative;
-}
-.opinion-box-content {
-  width: 100%;
-  position: relative;
-  margin: 0;
-}
-.opinion-box-text {
-  font-size: 30px;
-}
-.col-md-12.projects-empty-opinion-box {
-  display: none;
-}
-.projects-theme-title2{
-  margin: 0;
-  line-height: 50px;
-}
-.projects-theme-subtitle1{
-  font-size: 35px;
-}
-.copywriter-intro-bg-5-label {
-  font-size: 50px;
-  line-height: 50px;
-}
-.custom-container1 {
-  max-width: 100%;
-}
-.pnazw-page .new-wierzymy .img-wierzymy {
-  right: 0px;
-  top: 100px;
-  width: 100%;
-}
-.projects-gray-section-valuation {
-  max-width: 90%;
-  margin: 19px auto 180px 0;
-  line-height: 35px;
-  padding-inline: 50px;
-  font-size: 35px !important;
-}
-.iglarki-section-main-header{
-  font-size: 50px;
-}
-.iglarki-section-submain {
-  font-size: 35px;
-  line-height: 38px;
-  margin-top: 25px;
-}
-.names-client-desc {
-  font-size: 40px;
-  line-height: 40px;
-}
-.theme-quote {
-  font-size: 30px;
-}
-.projects-thematic-section-gray {
-  padding: 0 50px;
-}
-.names-custom-container {
-  max-width: 90%;
-}
-.names-thematic-section-black {
-  padding: 0 50px;
-}
-.copywriter-ending-big {
-  font-size: 40px;
-  line-height: 40px;
-}
-.copywriter-ending-big-2 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-/* .carousel-item {
+  }
+  .pnazw-page .pnazw-topbanner-title {
+    font-size: 75px;
+    line-height: 70px;
+    text-align: center;
+  }
+  .pnazw-page .names-top-banner-long-text {
+    text-align: center;
+  }
+  .pnazw-page .catalog-submit-button .download-catalog-button {
+    margin-inline: auto;
+    display: block;
+    margin-top: 40px;
+  }
+  .projects-custom-container1 {
+    padding: 50px 0 0;
+  }
+  .projects-big-header {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  section#sec0 {
+    padding-inline: 50px;
+  }
+  .stats-image-cont img {
+    margin-bottom: 50px;
+    margin-inline: auto;
+    display: block;
+  }
+  img.projects-logotypy-prasa {
+    margin-inline: auto;
+    display: block;
+    margin-block: 30px;
+  }
+  .opinion-box-image {
+    position: relative;
+  }
+  .opinion-box-content {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  .opinion-box-text {
+    font-size: 30px;
+  }
+  .col-md-12.projects-empty-opinion-box {
+    display: none;
+  }
+  .projects-theme-title2 {
+    margin: 0;
+    line-height: 50px;
+  }
+  .projects-theme-subtitle1 {
+    font-size: 35px;
+  }
+  .copywriter-intro-bg-5-label {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .custom-container1 {
+    max-width: 100%;
+  }
+  .pnazw-page .new-wierzymy .img-wierzymy {
+    /* right: 0px;
+    top: 100px;
+    width: 100%; */
+
+    right: 100px;
+    top: 125px;
+    width: 65%;
+  }
+  .projects-gray-section-valuation {
+    max-width: 90%;
+    margin: 19px auto 180px 0;
+    line-height: 35px;
+    padding-inline: 50px;
+    font-size: 35px !important;
+  }
+  .iglarki-section-main-header {
+    font-size: 50px;
+  }
+  .iglarki-section-submain {
+    font-size: 35px;
+    line-height: 38px;
+    margin-top: 25px;
+  }
+  .names-client-desc {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .theme-quote {
+    font-size: 30px;
+  }
+  .projects-thematic-section-gray {
+    padding: 0 50px;
+  }
+  .names-custom-container {
+    max-width: 90%;
+  }
+  .names-thematic-section-black {
+    padding: 0 50px;
+  }
+  .copywriter-ending-big {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .copywriter-ending-big-2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* .carousel-item {
   float: none;
 } */
-.logoBotSlideImg {
-  width: 60%;
-}
-.copywriter-ending-1 {
-  font-size: 50px;
-  line-height: 50px;
-}
-.nazwa_footer_bottom_left {
-  display: none !important;
-}
-.PDF-d-book {
-  display: none;
-}
-.PDF-m-book {
-  display: block;
-}
+  .logoBotSlideImg {
+    width: 60%;
+  }
+  .copywriter-ending-1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .nazwa_footer_bottom_left {
+    display: none !important;
+  }
+  .PDF-d-book {
+    display: none;
+  }
+  .PDF-m-book {
+    display: block;
+  }
 }
 
-@media only screen and ( max-width: 767px){
+@media only screen and (max-width: 767px) {
   img.owocnych-nazw-text {
     width: 90%;
-}
-img.projects-logotypy-prasa {
-  width: 90%;
-}
-.opinion-box-image {
-  width: 100%;
-}
-.opinion-box-inside-image {
-  width: 100%;
-}
-.download-catalog-button {
-  width: 100%;
-}
-img.names-custom-image {
-  width: 90%;
-}
-.nazwa_footer_bottom_btn {
-  font-size: 16px !important;
-  line-height: 21.2px !important;
-}
-.nazwa_footer_Time_btn {
-  font-size: 14px;
-}
-.nazwa_footer_Time_btn sup {
-  font-size: 12px;
-  font-weight: 500;
-}
-.nazwaContainer {
-  padding: 0 20px;
-}
-.pnazw-page .pnazw-topbanner-title {
-  font-size: 40px;
-  line-height: 40px;
-}
-.pnazw-page .names-top-banner-long-text {
-  font-size: 18px;
-  line-height: 20px;
-}
-.pnazw-page .catalog-submit-button .download-catalog-button {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 23px 20px;
-}
-.projects-big-header {
-  font-size: 35px;
-  line-height: 35px;
-}
-.projects-custom-container1 {
-  padding: 30px 0 0;
-}
-.projects-under-big-header2 {
-  font-size: 25px;
-}
-.theme-desc {
-  margin-bottom: 40px;
-  color: #515151;
-  font-family: "Georgia";
-  font-size: 22px;
-  line-height: 30px;
-}
-section#sec0 {
-  padding: 50px 10px;
-}
-.opinion-box {
-  margin-top: 0px;
-}
-.opinion-box-text {
-  font-size: 22px;
-}
-.download-catalog-button {
-  font-size: 16px;
-}
-.projects-theme-title2 {
-  font-size: 40px;
-  line-height: 40px;
-}
-.projects-theme-subtitle1 {
-  font-size: 25px;
-  line-height: 32px;
-}
-.projects-over-hid {
-  padding: 0 10px;
-}
-section.projects-gray-opinion-2 {
-  padding: 0 10px;
-}
-.names-client-desc {
-  font-size: 30px;
-  line-height: 30px;
-}
-div#sec2 {
-  padding: 0 10px;
-}
-.copywriter-intro-bg-5-label {
-  font-size: 35px;
-  line-height: 40px;
-}
-.projects-thematic-section-gray {
-  padding: 0 10px;
-}
-.projects-gray-section-valuation {
-  max-width: 100%;
-  line-height: 30px;
-  padding-inline: 10px;
-  font-size: 25px !important;
-}
-.new-wierzymy {
-  height: 320px;
-}
-.iglarki-section-main-header {
-  font-size: 35px;
-  line-height: 40px;
-}
-.iglarki-section-submain {
-  font-size: 25px;
-  line-height: 28px;
-}
-.names-client-name {
-  font-size: 25px;
-}
-.names-client-name.iglarki-cname:after {
-  height: 5px;
-  top: 45px;
-}
-.theme-quote {
-  font-size: 25px;
-  line-height: initial;
-}
-.names-custom-container {
-  max-width: 100%;
-  padding: 0 10px;
-}
-.underline-down:after {
-  bottom: 5px;
-  border-bottom: 5px solid #aa2e2d;
-}
-.names-new-btn {
-  padding: 23px 20px;
-}
-.projects-bow-1 {
-  margin-bottom: -7px;
-}
-.names-thematic-section-purple {
-  padding-inline: 10px;
-}
-.names-thematic-section-black {
-  padding: 0 10px;
-}
-.copywriter-ending-big {
-  font-size: 30px;
-  line-height: 30px;
-}
-.copywriter-ending-big-2 {
-  font-size: 25px;
-  line-height: 30px;
-}
-section.profit-sec {
-  padding: 50px 0 50px;
-}
-.inputLayout {
-  gap: 0px;
-  flex-direction: column;
-}
-.inputLayout input {
-  width: 100%;
-  margin-bottom: 20px;
-}
+  }
+  img.projects-logotypy-prasa {
+    width: 90%;
+  }
+  .opinion-box-image {
+    width: 100%;
+  }
+  .opinion-box-inside-image {
+    width: 100%;
+  }
+  .download-catalog-button {
+    width: 100%;
+  }
+  img.names-custom-image {
+    width: 90%;
+  }
+  .nazwa_footer_bottom_btn {
+    font-size: 16px !important;
+    line-height: 21.2px !important;
+  }
+  .nazwa_footer_Time_btn {
+    font-size: 14px;
+  }
+  .nazwa_footer_Time_btn sup {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .nazwaContainer {
+    padding: 0 20px;
+  }
+  .pnazw-page .pnazw-topbanner-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .pnazw-page .names-top-banner-long-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .pnazw-page .catalog-submit-button .download-catalog-button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 23px 20px;
+  }
+  .projects-big-header {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .projects-custom-container1 {
+    padding: 30px 0 0;
+  }
+  .projects-under-big-header2 {
+    font-size: 25px;
+  }
+  .theme-desc {
+    margin-bottom: 40px;
+    color: #515151;
+    font-family: "Georgia";
+    font-size: 22px;
+    line-height: 30px;
+  }
+  section#sec0 {
+    padding: 50px 10px;
+  }
+  .opinion-box {
+    margin-top: 0px;
+  }
+  .opinion-box-text {
+    font-size: 22px;
+  }
+  .download-catalog-button {
+    font-size: 16px;
+  }
+  .projects-theme-title2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .projects-theme-subtitle1 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .projects-over-hid {
+    padding: 0 10px;
+  }
+  section.projects-gray-opinion-2 {
+    padding: 0 10px;
+  }
+  .names-client-desc {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  div#sec2 {
+    padding: 0 10px;
+  }
+  .copywriter-intro-bg-5-label {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .projects-thematic-section-gray {
+    padding: 0 10px;
+  }
+  .projects-gray-section-valuation {
+    max-width: 100%;
+    line-height: 30px;
+    padding-inline: 10px;
+    font-size: 25px !important;
+  }
+  .new-wierzymy {
+    height: 320px;
+  }
+  .iglarki-section-main-header {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .iglarki-section-submain {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  .names-client-name {
+    font-size: 25px;
+  }
+  .names-client-name.iglarki-cname:after {
+    height: 5px;
+    top: 45px;
+  }
+  .theme-quote {
+    font-size: 25px;
+    line-height: initial;
+  }
+  .names-custom-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .underline-down:after {
+    bottom: 5px;
+    border-bottom: 5px solid #aa2e2d;
+  }
+  .names-new-btn {
+    padding: 23px 20px;
+  }
+  .projects-bow-1 {
+    margin-bottom: -7px;
+  }
+  .names-thematic-section-purple {
+    padding-inline: 10px;
+  }
+  .names-thematic-section-black {
+    padding: 0 10px;
+  }
+  .copywriter-ending-big {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .copywriter-ending-big-2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  section.profit-sec {
+    padding: 50px 0 50px;
+  }
+  .inputLayout {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .inputLayout input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-.after-li-ctext{
-  display: none;
-}
-img.Naming {
-  width: 90%;
-}
-.row{
-  margin: 0;
-  padding: 0;
-}
-.sendQuote{
-  padding: 25px;
-  width: 95%;
-}
-.sendQuote h2 {
-  font-size: 24px;
-}
-button.formModalCloseBtn {
-  color: black;
-  top: 25px;
-  right: 15px;
-}
-.quoteBtn {
-  flex-direction: column;
-  gap: 20px;
-}
-.quoteBtn button {
-  font-size: 16px;
-}
-.modalOverlay {
-  overflow: auto;
-}
-section.projects-gray-opinion-4 {
-  margin-bottom: 50px;
-}
+  .after-li-ctext {
+    display: none;
+  }
+  img.Naming {
+    width: 90%;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .sendQuote {
+    padding: 25px;
+    width: 95%;
+  }
+  .sendQuote h2 {
+    font-size: 24px;
+  }
+  button.formModalCloseBtn {
+    color: black;
+    top: 25px;
+    right: 15px;
+  }
+  .quoteBtn {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .quoteBtn button {
+    font-size: 16px;
+  }
+  .modalOverlay {
+    overflow: auto;
+  }
+  section.projects-gray-opinion-4 {
+    margin-bottom: 50px;
+  }
 }
