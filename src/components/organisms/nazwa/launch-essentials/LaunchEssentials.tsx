@@ -1,13 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-
-
 const LaunchEssentials = () => {
   const { isLoading, screenData } = useSelector((state) => state.anatomy);
-  const {launch_essentials} = screenData || {};
+  const { launch_essentials } = screenData || {};
 
- 
   return (
     <section className="menu-target  sec0" id="sec1">
       <div className="container projects-custom-container1">
@@ -45,19 +42,19 @@ const LaunchEssentials = () => {
         </div>
       </div>
 
-      <div className="naming-seo-img naming-tm-100 naming-new-tm-1">
+      {/* <div className="naming-seo-img naming-tm-100 naming-new-tm-1">
         <img
         className="Naming"
           src={launch_essentials?.banner_url}
           title="Naming a zastrzeżenie nazwy firmy"
           alt="Naming czyli tworzenie nazw"
         />
-      </div>
+      </div> */}
 
       <div className="container custom-container1 pnazw-page">
         <div className="row">
           <div className="col-md-12">
-            <div className="names-container-Litery" >
+            <div className="names-container-Litery">
               <div className="names-client-desc names-client-desc-litery">
                 {launch_essentials?.policy_title}
               </div>

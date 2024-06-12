@@ -60,7 +60,7 @@ const LogoDesignScreen = () => {
     <>
       <>
         <LogoBanner openModal={openModal} />
-        <SampleLogo />
+        {/* <SampleLogo /> */}
         <GoodBusiness />
         <PDFCopy />
         <Opinion />

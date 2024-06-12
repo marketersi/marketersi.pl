@@ -16,13 +16,13 @@ const Executive = () => {
             <p>{executive.paragraph_3}</p>
             <p>{executive.paragraph_4}</p>
           </div>
-          <div>
+          {/* <div>
             {executive.video_url && (
               <video muted={true} loop={true} autoPlay className="desktopVideo">
                 <source src={executive.video_url} type="video/mp4" />
               </video>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
@@ -30,5 +30,3 @@ const Executive = () => {
 };
 
 export default Executive;
-
-
