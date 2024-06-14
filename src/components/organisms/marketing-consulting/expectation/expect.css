@@ -35,6 +35,14 @@
   width: 380px;
 }
 
+.leaf_img {
+  width: 200px;
+}
+
+.leaf_img_right {
+  transform: scaleX(-1);
+}
+
 @media only screen and (max-width: 1024px) {
   .wte_header p {
     width: 100%;

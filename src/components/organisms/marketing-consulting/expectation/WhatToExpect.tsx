@@ -24,12 +24,8 @@ const WhatToExpect = () => {
   return (
     <Container className="text-center wte">
       <div className="wte_header">
-        <h2>
-          {title}
-        </h2>
-        <p>
-          {paragraph_1}
-        </p>
+        <h2>{title}</h2>
+        <p>{paragraph_1}</p>
       </div>
 
       <div className="d-flex justify-content-center align-items-center">
@@ -39,36 +35,22 @@ const WhatToExpect = () => {
           className="leaf_img"
         />
         <div className="w-sm-50 mx-sm-5">
-          <p>
-            {paragraph_2}
-          </p>
-          <p>
-            {paragraph_3}
-          </p>
+          <p>{paragraph_2}</p>
+          <p>{paragraph_3}</p>
         </div>
         <img
           src={image_url_right}
           alt="feather image right"
-          className="leaf_img"
+          className="leaf_img_right leaf_img"
         />
       </div>
 
       <div className="wte_end">
-        <p>
-          {paragraph_4}
-        </p>
-        <p>
-          {paragraph_5}
-        </p>
-        <p className="my-5">
-          {paragraph_6}
-        </p>
+        <p>{paragraph_4}</p>
+        <p>{paragraph_5}</p>
+        <p className="my-5">{paragraph_6}</p>
 
-        <img
-          src={brand_logo}
-          alt="brand logo"
-          className="logoImg"
-        />
+        <img src={brand_logo} alt="brand logo" className="logoImg" />
       </div>
     </Container>
   );

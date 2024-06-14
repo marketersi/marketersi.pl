@@ -13,19 +13,25 @@ const GoodTime = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date());
-    }, 1000); 
+    }, 1000);
 
-   
     return () => clearInterval(interval);
   }, []);
-
 
   return (
     <>
       <div className={style.teamContent}>
-        <h2 className={style.goodHeadingMain}>{section8?.section8_title?.split(' ').slice(0, 2).join(' ')} <div className="d-inline-block mx-2 ">{time.toLocaleTimeString([] , { hour: '2-digit', minute: '2-digit', hour12: false })}</div>
-        {section8?.section8_title?.split(' ').slice(2).join(' ')}
-         </h2>
+        <h2 className={style.goodHeadingMain}>
+          {section8?.section8_title?.split(" ").slice(0, 2).join(" ")}{" "}
+          <div className="d-inline-block mx-2 ">
+            {time.toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: false,
+            })}
+          </div>
+          {section8?.section8_title?.split(" ").slice(2).join(" ")}
+        </h2>
         <p>{section8?.section8_discription_1}</p>
         <p>{section8?.section8_discription_2}</p>
       </div>
@@ -37,7 +43,7 @@ const GoodTime = () => {
       </div>
       <div
         className={style.cardCup}
-        style={{ backgroundImage: `url(${section8?.section8_image_1})` }}
+        // style={{ backgroundImage: `url(${section8?.section8_image_1})` }}
       >
         <PersonalCard {...card2} />
       </div>
@@ -50,7 +56,10 @@ const GoodTime = () => {
       <div className={style.teamContent}>
         <p>{section8?.section8_discription_5}</p>
       </div>
-      <div className={style.hardWorkBG} style={{ backgroundImage: `url(${section8?.section8_image_2})` }}>
+      <div
+        className={style.hardWorkBG}
+        // style={{ backgroundImage: `url(${section8?.section8_image_2})` }}
+      >
         <div className={style.cardDataSpace}>
           <PersonalCard {...card4} />
         </div>

@@ -10,20 +10,20 @@ const FreeSpace = () => {
 
   return (
     <>
-      <div className={style.free} style={{ backgroundImage: `url(${section1?.section_one_img})` }}>
+      <div
+        className={style.free}
+        // to be deleted
+        // style={{ backgroundImage: `url(${section1?.section_one_img})` }}
+      >
         <div className={style.teamContent}>
-          <p >
+          <p>
             <span>{section1?.section_subtitle_one}</span>
             {section1?.section_one_para_one}
           </p>
-          <p>
-            {section1?.section_one_para_two}
-          </p>
+          <p>{section1?.section_one_para_two}</p>
 
           <div className={style.mainHeading}>
-            <h2>
-              {section1?.section_title_one}
-            </h2>
+            <h2>{section1?.section_title_one}</h2>
             <motion.div whileHover={{ translateY: 5 }}>
               <a
                 target="_blank"

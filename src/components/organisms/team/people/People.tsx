@@ -25,31 +25,21 @@ const People = () => {
   return (
     <>
       <div className={style.teamContent}>
-        <h2 className={style.peopleTitle}>
-          {section10?.section10_title}
-        </h2>
-        <p className={style.peoplePara}>
-          {section10?.section10_subtitle}
-        </p>
+        <h2 className={style.peopleTitle}>{section10?.section10_title}</h2>
+        <p className={style.peoplePara}>{section10?.section10_subtitle}</p>
       </div>
       <div className={style.peopleCard}>
-        <h3>
-          {section10?.section10_card_text}
-        </h3>
+        <h3>{section10?.section10_card_text}</h3>
       </div>
-      <div className={style.dogImg}>
+      {/* <div className={style.dogImg}>
         <img
           alt=""
           src={section10?.section10_card_image}
         />
-      </div>
+      </div> */}
       <div className={style.teamContent}>
-        <h2 style={{ margin: "0 0 40px" }}>
-          {section11?.section11_title}
-        </h2>
-        <p style={{ textAlign: "center" }}>
-          {section11?.section11_subtitle}
-        </p>
+        <h2 style={{ margin: "0 0 40px" }}>{section11?.section11_title}</h2>
+        <p style={{ textAlign: "center" }}>{section11?.section11_subtitle}</p>
       </div>
       <div className={style.peopleVideo}>
         <svg
@@ -77,17 +67,25 @@ const People = () => {
           playsinline
         />
         <div className={style.peopleVideoContent}>
-          <a className={style.projectBtn} onClick={(e) => {
-                e.preventDefault();
-                navigateToPriceListStrone();
-              }} href="#">
+          <a
+            className={style.projectBtn}
+            onClick={(e) => {
+              e.preventDefault();
+              navigateToPriceListStrone();
+            }}
+            href="#"
+          >
             {section11?.section11_button_text}
           </a>
-          <a className={style.scheduleBtn} onClick={(e) => {
-                e.preventDefault();
-                navigateToPriceListDziałania();
-              }} href="#">
-           {section11?.section11_button_text2}
+          <a
+            className={style.scheduleBtn}
+            onClick={(e) => {
+              e.preventDefault();
+              navigateToPriceListDziałania();
+            }}
+            href="#"
+          >
+            {section11?.section11_button_text2}
             <div>
               <img src="/assets/images/play_arrow.svg" alt="" />
             </div>

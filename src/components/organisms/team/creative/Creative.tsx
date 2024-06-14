@@ -2,11 +2,10 @@
 
 import React from "react";
 import style from "../team.module.css";
-import { motion, Variants,  } from "framer-motion";
+// import { motion, Variants } from "framer-motion";
 import { useSelector } from "react-redux";
 
 const Creative = () => {
-  
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { section5 } = screenData;
 
@@ -14,10 +13,9 @@ const Creative = () => {
     <>
       <section className={style.creative}>
         <div className={style.teamContent}>
-          <h2>
-            {section5?.section_five_title}
-          </h2>
-          <motion.div
+          <h2>{section5?.section_five_title}</h2>
+          {/* to be deleted */}
+          {/* <motion.div
               className={style.orangeBG} 
               initial={{ scale: 1 }}
               animate={{ scale: [1, 1.5, 1] }}
@@ -51,7 +49,7 @@ const Creative = () => {
             className={style.CreativeHeart}
             src={section5?.section_five_imgone}
             alt=""
-          />
+          /> */}
           {/* <img
             className={style.CreativeOnar}
             src={section5?.section_five_imgtwo}

@@ -79,7 +79,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
 
       <div style={{ textAlign: "left" }} className="select-input">
         <Select
-          options={form.dropdown}
+          options={form?.dropdown}
           placeholder="Wybierz"
           isSearchable={false}
           components={{ DropdownIndicator }}

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import Modal from "react-modal";
 
-
 const Receive = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { ReceiveData } = screenData || {};
@@ -78,14 +77,15 @@ const Receive = () => {
             </div>
           </div>
 
-          {image && (
+          {/* ATD */}
+          {/* {image && (
             <img
               src={image}
               className="projects-oferta-veggo-bg"
               alt="Znak Veggo na materiałach drukowanych"
               title="Znak Veggo na materiałach drukowanych"
             />
-          )}
+          )} */}
         </div>
       </section>
 
@@ -104,7 +104,8 @@ const Receive = () => {
           },
         }}
       >
-        <img className="modal_logo_img"
+        <img
+          className="modal_logo_img"
           src="https://www.logofirmowe.pl/Logofirmowe/projektowanie-logo-img/Responsywne.jpg"
           alt="Modal Image"
         />

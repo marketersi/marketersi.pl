@@ -1,279 +1,280 @@
 .bannerVideo {
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  overflow: hidden;
 }
 
 .bannerContent {
-    margin-top: -60px;
+  margin-top: -60px;
 }
 
 .bannerHeading {
-    padding: 100px 100px 250px;
+  padding: 100px 100px 250px;
 }
 
 .bannerHeading h1 {
-    font-size: 100px;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.592);
-    text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.592);
+  text-align: center;
 }
 
 .BannerBotHeading {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 .img20 img {
-    /* position: absolute; */
-    bottom: -162px;
-    left: -120px;
-    width: 60%;
-    margin: -458px 0 0 -230px;
+  /* position: absolute; */
+  bottom: -162px;
+  left: -120px;
+  width: 60%;
+  margin: -458px 0 0 -230px;
 }
 
 .teamContent {
-    max-width: 800px;
-    margin: 0px auto 50px;
+  max-width: 800px;
+  margin: 0px auto 50px;
 }
 
 .bannerBottomContent {
-    padding: 0 0 70px;
+  padding: 0 0 70px;
 }
 
 .bannerBottomContent h4 {
-    font-size: 35px;
-    font-weight: normal;
-    margin: 25px 0;
-    color: #3e3e3e;
+  font-size: 35px;
+  font-weight: normal;
+  margin: 25px 0;
+  color: #3e3e3e;
 }
 
 .BannerBotImg {
-    position: relative;
+  position: relative;
 }
 
 .bannerBottomContent img {
-    position: absolute;
-    top: -270px;
-    left: 70px;
-    width: 100%;
-    z-index: -1;
+  position: absolute;
+  top: -270px;
+  left: 70px;
+  width: 100%;
+  z-index: -1;
 }
 
-
 .bannerBottomContent h2 {
-    font-size: 60px;
-    font-weight: 800;
-    color: #3e3e3e;
-    margin: 0 0 50px;
-
+  font-size: 60px;
+  font-weight: 800;
+  color: #3e3e3e;
+  margin: 0 0 50px;
 }
 
 .bannerBottomContent h2 span {
-    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
-    border-radius: 20px;
-    padding: 0 10px 0 0;
-    display: inline-block;
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+  border-radius: 20px;
+  padding: 0 10px 0 0;
+  display: inline-block;
 }
 
 .teamContent p {
-    font-size: 28px;
-    font-weight: 300;
-    color: #3e3e3e;
-    margin: 0 0 50px;
-    line-height: 50px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #3e3e3e;
+  margin: 0 0 50px;
+  line-height: 50px;
 }
 
 .bannerP {
-    background: red;
+  background: red;
 }
 
 .overlay {
-    height: 856px;
-    width: 100%;
-    position: absolute;
-    background-color: #00000026;
-    top: 0;
-    z-index: -1;
+  height: 856px;
+  width: 100%;
+  position: absolute;
+  background-color: #00000026;
+  top: 0;
+  z-index: -1;
 }
-
 
 /* ============personal card============= */
 .personalCard {
-    background: #f6f6f6;
-    padding: 80px;
-    border-radius: 30px;
-    box-shadow: 4px 4px 15px 0px #f6f6f6, 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-    margin: 0 auto 50px;
-    width: 1090px;
+  background: #f6f6f6;
+  padding: 80px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 15px 0px #f6f6f6, 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  margin: 0 auto 50px;
+  width: 1090px;
 }
 
 .personalCard img {
-    border-radius: 100%;
-    margin: 0 auto;
-    display: block;
-
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .personalCard h4 {
-    color: #989898;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 20px 0 0px;
-    text-align: center;
+  color: #989898;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 0px;
+  text-align: center;
 }
 
 .personalCard p {
-    color: #989898;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
+  color: #989898;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .personalCard h6 {
-    font-size: 40px;
-    font-weight: 500;
-    color: #0a0a0a;
-    line-height: 55px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #0a0a0a;
+  line-height: 55px;
 }
 
 .personalCard h6 span {
-    font-weight: 800;
-    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
-    padding: 0 10px 0 0;
-    border-radius: 20px;
+  font-weight: 800;
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+  padding: 0 10px 0 0;
+  border-radius: 20px;
 }
 
 /* ====================free space============ */
 .free {
-    padding: 100px 0;
-    background-repeat: no-repeat;
-    background-position: -680px 0px;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-position: -680px 0px;
 }
 
 .teamContent p span {
-    font-weight: 500;
-    display: block;
+  font-weight: 500;
+  display: block;
 }
 
 .mainHeading {
-    margin: 100px 0 0;
+  margin: 100px 0 0;
 }
 
 .mainHeading h2,
 .teamContent h2 {
-    font-size: 80px;
-    text-align: center;
-    font-weight: 800;
+  font-size: 80px;
+  text-align: center;
+  font-weight: 800;
 }
 
 .mainHeading h2 span,
 .teamContent h2 span {
-    font-weight: 800;
-    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
-    padding: 0 10px 0 0;
-    border-radius: 20px;
-    display: inline-block;
+  font-weight: 800;
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+  padding: 0 10px 0 0;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .mainHeading button {
-    border: 3px solid #ffc600;
-    padding: 10px 50px;
-    border-radius: 100px;
-    font-size: 23px;
-    font-weight: 700;
-    color: black;
-    background: #ffc600;
-    margin: 50px auto 0;
-    display: block;
-    box-shadow: 0 0 0 0 black, 0em 0.2em 0 0 black;
-    border: 2px solid black;
+  border: 3px solid #ffc600;
+  padding: 10px 50px;
+  border-radius: 100px;
+  font-size: 23px;
+  font-weight: 700;
+  color: black;
+  background: #ffc600;
+  margin: 50px auto 0;
+  display: block;
+  box-shadow: 0 0 0 0 black, 0em 0.2em 0 0 black;
+  border: 2px solid black;
 }
 
 .mainHeading button:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .mainHeading a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* ==================support===================== */
 .Support {
-    padding: 0 0 100px;
-    /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwierzymy.06ee3ca4.jpg&w=1080&q=75); */
-    background-repeat: no-repeat;
-    background-position: 670px 0;
+  /* padding: 0 0 100px;
+  background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwierzymy.06ee3ca4.jpg&w=1080&q=75);
+  background-repeat: no-repeat;
+  background-position: 670px 0; */
+
+  padding: 0 0 100px;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-
 .Support h4 {
-    font-size: 50px;
-    line-height: 70px;
-    font-weight: normal;
-    margin: 0 0 0 -50px;
-    max-width: 610px;
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: normal;
+  margin: 0 0 0 -50px;
+  max-width: 610px;
 }
 
 .Support p {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 /* =========================Image slider ============================================= */
 .imageSlider {
-    padding: 50px 0 100px;
+  padding: 50px 0 100px;
 }
 
 .imageSlider {
-    position: relative;
+  position: relative;
 }
 
 .slideAnimateImg {
-    margin: -200px 0 0 80px
+  margin: -200px 0 0 80px;
 }
 
 .teamContent h2 {
-    font-size: 60px;
-    text-align: center;
-    font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 800;
 }
 
 .teamContent h2 span {
-    font-weight: 800;
-    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
-    padding: 0 10px 0 0;
-    border-radius: 20px;
-    display: inline-block;
+  font-weight: 800;
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
+  padding: 0 10px 0 0;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 /* ==========================creative===================== */
 .creative {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .creative h2 {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 .CreativeOnar {
-    margin: -550px 0 0 270px;
-    width: 100%;
+  margin: -550px 0 0 270px;
+  width: 100%;
 }
 
 .CreativeHeart {
-    margin: -1200px 0 0 -150px;
-    width: 400px;
+  margin: -1200px 0 0 -150px;
+  width: 400px;
 }
 
 /* ========== */
 .caring img {
-    width: 60%;
-    margin-inline: auto;
-    display: block;
+  width: 60%;
+  margin-inline: auto;
+  display: block;
 }
 
 /* .caringImg {
@@ -281,622 +282,619 @@
 } */
 
 .caring {
-    padding: 0 0 150px;
-    width: 100%;
-    overflow: hidden;
+  padding: 0 0 150px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .caringCard {
-    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-    width: 300px;
-    border-radius: 20px;
-    padding: 30px;
-    margin: 0 auto 50px;
-    background: white;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  width: 300px;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 auto 50px;
+  background: white;
 }
 
 .caringCard h4 {
-    font-size: 26px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .caringCard p {
-    font-size: 21px;
-    font-weight: normal;
-    text-align: center;
-    color: #3e3e3e;
-    font-style: italic;
-    font-family: Georgia;
-    margin: 15px 0 0;
+  font-size: 21px;
+  font-weight: normal;
+  text-align: center;
+  color: #3e3e3e;
+  font-style: italic;
+  font-family: Georgia;
+  margin: 15px 0 0;
 }
 
 .cartTop {
-    margin: -50px 0 0;
+  margin: -50px 0 0;
 }
 
 .carRow {
-    padding: 50px 100px;
+  padding: 50px 100px;
 }
 
 .creative .orangeBG {
-    position: relative;
-    z-index: -6;
-    margin: -150px 0 0 -100px;
+  position: relative;
+  z-index: -6;
+  margin: -150px 0 0 -100px;
 }
 
 .creativePara {
-    margin: 100px 0 !important;
+  margin: 100px 0 !important;
 }
 
 /* ===================Culture==================== */
 .cultureCard {
-    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-    width: 1000px;
-    margin: 200px auto 100px;
-    background: #f6f6f6;
-    border-radius: 30px;
-    padding: 30px;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  width: 1000px;
+  margin: 200px auto 100px;
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 30px;
 }
 
 .culturedContent {
-    margin-top: -200px;
+  margin-top: 0;
 }
 
 .cultureCard img {
-    margin: -100px auto 20px;
-    display: block;
+  margin: -100px auto 20px;
+  display: block;
 }
 
 .cultureCard h2 {
-    font-size: 45px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 0 30px;
-    max-width: 600px;
-    margin: 0 auto 30px;
-
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 30px;
+  max-width: 600px;
+  margin: 0 auto 30px;
 }
 
 .cultureCard h2 span {
-    font-weight: 800;
-    padding: 0 0 0 10px;
-    border-radius: 20px;
-    background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
-
+  font-weight: 800;
+  padding: 0 0 0 10px;
+  border-radius: 20px;
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
 }
 
 .cultureImg {
-    margin: -600px 0 0 -250px;
+  margin: -600px 0 0 -250px;
 }
 
 /* =======================Good Time===================== */
 .goodHeadingMain {
-    margin: 100px 0 70px;
+  margin: 100px 0 70px;
 }
 
 .cardDataSpace {
-    margin: 100px 0 80px;
+  margin: 100px 0 80px;
 }
 
 .cardCup {
-    /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75); */
-    background-repeat: no-repeat;
-    background-position: 135% 0px;
-    padding: 150px 0 100px;
+  /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75); */
+  background-repeat: no-repeat;
+  background-position: 135% 0px;
+  padding: 150px 0 100px;
 }
 
 .hardWorkBG {
-    /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75); */
-    background-repeat: no-repeat;
-    background-position: -250px 160px;
-    padding: 0px 0 2px;
+  /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75); */
+  background-repeat: no-repeat;
+  background-position: -250px 160px;
+  padding: 0px 0 2px;
 }
 
 /* ===============================people============================= */
 .peopleCard {
-    box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-    width: 980px;
-    margin: 100px auto 100px;
-    background: #f6f6f6;
-    border-radius: 30px;
-    padding: 70px;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  width: 980px;
+  margin: 100px auto 100px;
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 70px;
 }
 
 .peopleCard h3 {
-    font-size: 50px;
-    text-align: center;
-    line-height: 70px;
-    font-weight: 600;
-    color: #3e3e3e;
-    margin: 0 0 200px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 600;
+  color: #3e3e3e;
+  margin: 0 0 200px;
 }
 
 .dogImg {
-    padding: 0 0 0 200px;
+  padding: 0 0 0 200px;
 }
 
 .dogImg img {
-    margin: -300px auto 100px;
-    display: block;
-    width: 50%;
+  margin: -300px auto 100px;
+  display: block;
+  width: 50%;
 }
 
 .peopleVideo {
-    position: relative;
+  position: relative;
 }
 
 .peopleVideo svg {
-    position: absolute;
-    top: -3px !important;
-    width: 350px;
-    left: 39%;
-    z-index: 1;
+  position: absolute;
+  top: -3px !important;
+  width: 350px;
+  left: 39%;
+  z-index: 1;
 }
 
 .peopleVideoContent {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: #00000069;
-    padding: 25% 0 0;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #00000069;
+  padding: 25% 0 0;
+  z-index: 0;
 }
 
 .peopleVideoContent .projectBtn {
-    border: 4px solid #ffc600;
-    border-radius: 50px;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: block;
-    width: 250px;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
+  border: 4px solid #ffc600;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  width: 250px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
 }
 
 .peopleVideoContent .projectBtn:hover {
-    background: #ffc600;
-    color: black;
+  background: #ffc600;
+  color: black;
 }
 
 .peopleVideoContent .scheduleBtn {
-    display: grid;
-    gap: 10px;
-    padding: 0 0 0 10px;
-    width: 250px;
-    margin: 30px auto;
-    text-decoration: none;
-    font-size: 20px;
-    grid-template-columns: 85% 15%;
-    font-weight: 600;
-    color: white;
+  display: grid;
+  gap: 10px;
+  padding: 0 0 0 10px;
+  width: 250px;
+  margin: 30px auto;
+  text-decoration: none;
+  font-size: 20px;
+  grid-template-columns: 85% 15%;
+  font-weight: 600;
+  color: white;
 }
 
 .peopleVideoContent .scheduleBtn:hover {
-    background: #ffc600;
-    border-radius: 100px;
+  background: #ffc600;
+  border-radius: 100px;
 }
 
 .peopleVideoContent .scheduleBtn div {
-    padding: 2px;
-    background-color: #ffc600;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-
+  padding: 2px;
+  background-color: #ffc600;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
 }
 
 .peopleVideoContent .scheduleBtn img {
-    width: 20px;
-    margin: 4px auto;
-    display: block;
+  width: 20px;
+  margin: 4px auto;
+  display: block;
 }
 
 .peopleTitle {
-    margin: 0 0 50px;
-    font-size: 90px !important;
+  margin: 0 0 50px;
+  font-size: 90px !important;
 }
 
 .peoplePara {
-    margin: 0 0 0px;
+  margin: 0 0 0px;
 }
 
 .freePara {
-    margin: 150px 0 0px !important;
+  margin: 150px 0 0px !important;
 }
 
 .banner {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 /* -------------------------------------media screen -------------------------------- */
 @media only screen and (max-width: 1360px) {
-    .bannerBottomContent img {
-        margin: -200px 0 0;
-        width: 100%;
-    }
+  .bannerBottomContent img {
+    margin: -200px 0 0;
+    width: 100%;
+  }
 
-    .img20 img {
-        margin: -314px 0 0 -230px;
-    }
+  .img20 img {
+    margin: -314px 0 0 -230px;
+  }
 
-    .bannerHeading {
-        padding: 0px 100px 200px;
-    }
+  .bannerHeading {
+    padding: 0px 100px 200px;
+  }
 
-    .overlay {
-        background-color: #00000000;
-    }
+  .overlay {
+    background-color: #00000000;
+  }
 
-    .bannerBottomContent h2 {
-        font-size: 50px;
-    }
+  .bannerBottomContent h2 {
+    font-size: 50px;
+  }
 
-    .bannerContent {
-        margin-top: 0px;
-    }
+  .bannerContent {
+    margin-top: 0px;
+  }
 
-    .dogImg img {
-        width: 100%;
-    }
+  .dogImg img {
+    width: 100%;
+  }
 
-    .free {
-        background-size: 70%;
-    }
+  .free {
+    background-size: 70%;
+  }
 
-    .CreativeOnar {
-        width: 90%;
-    }
+  .CreativeOnar {
+    width: 90%;
+  }
 
-    .slideAnimateImg {
-        margin: -200px 0 0 50px;
-    }
+  .slideAnimateImg {
+    margin: -200px 0 0 50px;
+  }
 
-    .cardCup {
-        background-position: 165% -50px;
-    }
-
-
+  .cardCup {
+    background-position: 165% -50px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    .hardWorkBG {
-        background-position: -140px 110px;
-        background-size: 400px;
-    }
+  .hardWorkBG {
+    background-position: -140px 110px;
+    background-size: 400px;
+  }
 
-    .bannerHeading h1 {
-        font-size: 60px;
-    }
+  .bannerHeading h1 {
+    font-size: 60px;
+  }
 
-    .img20 img {
-        margin: -354px 0 0 -150px;
-    }
+  .img20 img {
+    margin: -354px 0 0 -150px;
+  }
 
-    .personalCard {
-        padding: 40px;
-        width: 100%;
-    }
+  .personalCard {
+    padding: 40px;
+    width: 100%;
+  }
 
-    .free {
-        padding: 100px 40px;
-    }
+  .free {
+    padding: 100px 40px;
+  }
 
-    .Support h4 {
-        margin: 0 0 0 0px;
-    }
+  .Support h4 {
+    margin: 0 0 0 0px;
+  }
 
-    .Support {
-        padding: 0 40px 100px;
-        background-position: 350px 130px;
-        background-size: 600px;
-    }
+  .Support {
+    padding: 0 40px 100px;
+    background-position: 350px 130px;
+    background-size: 600px;
+  }
 
-    .slideAnimateImg {
-        width: 250px;
-        margin: -100px 0 0 50px;
-    }
+  .slideAnimateImg {
+    width: 250px;
+    margin: -100px 0 0 50px;
+  }
 
-    .personalCard h6 {
-        text-align: center;
-        font-size: 30px;
-        line-height: 45px;
-    }
+  .personalCard h6 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-    .creative h2 {
-        font-size: 60px;
-    }
+  .creative h2 {
+    font-size: 60px;
+  }
 
-    .teamContent {
-        padding: 0 40px;
-    }
+  .teamContent {
+    padding: 0 40px;
+  }
 
-    .CreativeHeart {
-        margin: -1150px 0 0 -40px;
-        width: 300px;
-    }
+  .CreativeHeart {
+    margin: -1150px 0 0 -40px;
+    width: 300px;
+  }
 
-    .cartTop {
-        margin: 0px 0 0;
-    }
+  .cartTop {
+    margin: 0px 0 0;
+  }
 
-    .caring {
-        padding: 0 0 100px;
-    }
+  .caring {
+    padding: 0 0 100px;
+  }
 
-    .cultureCard {
-        width: 100%;
-    }
+  .cultureCard {
+    width: 100%;
+  }
 
-    .cultureImg {
-        margin: -600px 0 0 -160px;
-        width: 250px;
-    }
+  .cultureImg {
+    margin: -600px 0 0 -160px;
+    width: 250px;
+  }
 
-    .culturedContent {
-        margin-top: 0px;
-    }
+  .culturedContent {
+    margin-top: 0px;
+  }
 
-    .cardCup {
-        background-position: 285% -50px;
-    }
+  .cardCup {
+    background-position: 285% -50px;
+  }
 
-    .peopleCard {
-        width: 100%;
-        padding: 40px;
-    }
+  .peopleCard {
+    width: 100%;
+    padding: 40px;
+  }
 
-    .peopleVideo svg {
-        width: 190px;
-    }
+  .peopleVideo svg {
+    width: 190px;
+  }
 
-    .caringCard {
-        width: 400px;
-    }
+  .caringCard {
+    width: 400px;
+  }
 
-    .CreativeOnar {
-        width: 100%;
-    }
+  .CreativeOnar {
+    width: 100%;
+  }
 
-    .teamContent {
-        margin: 0px auto 50px;
-    }
-
+  .teamContent {
+    margin: 0px auto 50px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .bannerHeading {
-        padding: 0px 20px 20px;
-    }
+  .bannerHeading {
+    padding: 0px 20px 20px;
+  }
 
-    .bannerHeading h1 {
-        font-size: 35px;
-    }
+  .bannerHeading h1 {
+    font-size: 35px;
+  }
 
-    .img20 img {
-        margin: -13px 0 0 -60px;
-    }
+  .img20 img {
+    margin: -13px 0 0 -60px;
+  }
 
-    .teamContent {
-        padding: 0 20px;
-    }
+  .teamContent {
+    padding: 0 20px;
+  }
 
-    .bannerBottomContent img {
-        margin: -60px 0 0 auto;
-        width: 70%;
-        display: block;
-        top: 0;
-    }
+  .bannerBottomContent img {
+    margin: -60px 0 0 auto;
+    width: 70%;
+    display: block;
+    top: 0;
+  }
 
-    .bannerBottomContent h4 {
-        font-size: 28px;
-    }
+  .bannerBottomContent h4 {
+    font-size: 28px;
+  }
 
-    .bannerBottomContent h2 {
-        font-size: 35px;
-        word-wrap: break-word;
-    }
+  .bannerBottomContent h2 {
+    font-size: 35px;
+    word-wrap: break-word;
+  }
 
-    .teamContent p {
-        font-size: 22px;
-        line-height: 40px;
-    }
+  .teamContent p {
+    font-size: 22px;
+    line-height: 40px;
+  }
 
-    .personalCard {
-        padding: 30px;
-        width: 100%;
-    }
+  .personalCard {
+    padding: 30px;
+    width: 100%;
+  }
 
-    .personalCard h6 {
-        font-size: 25px;
-        line-height: 35px;
-    }
+  .personalCard h6 {
+    font-size: 25px;
+    line-height: 35px;
+  }
 
-    .free {
-        padding: 50px 40px;
-    }
+  .free {
+    padding: 50px 40px;
+  }
 
-    .free {
-        padding: 0px 20px;
-        background-repeat: no-repeat;
-        background-position: 290px 65%;
-    }
+  .free {
+    padding: 0px 20px;
+    background-repeat: no-repeat;
+    background-position: 290px 65%;
+  }
 
-    .teamContent h2 {
-        font-size: 35px;
-        word-wrap: break-word;
-    }
+  .teamContent h2 {
+    font-size: 35px;
+    word-wrap: break-word;
+  }
 
-    .Support {
-        padding: 00 20px 0px;
-        background-position: 10px 200px;
-        background-size: 100%;
-        margin-bottom: 100px;
-    }
+  .Support {
+    padding: 00 20px 0px;
+    background-position: 10px 200px;
+    background-size: 100%;
+    margin-bottom: 100px;
+  }
 
-    .Support p {
-        margin-top: 180px !important;
-    }
+  .Support p {
+    margin-top: 180px !important;
+  }
 
-    .Support h4 {
-        font-size: 30px;
-        line-height: 50px;
-    }
+  .Support h4 {
+    font-size: 30px;
+    line-height: 50px;
+  }
 
-    .slideAnimateImg {
-        width: 100px;
-        margin: -20px 0 0 20px;
-    }
+  .slideAnimateImg {
+    width: 100px;
+    margin: -20px 0 0 20px;
+  }
 
-    .CreativeHeart {
-        width: 150px;
-        margin: -450px 0 0 -40px;
-    }
+  .CreativeHeart {
+    width: 150px;
+    margin: -450px 0 0 -40px;
+  }
 
-    .CreativeOnar {
-        margin: -310px 0 0 80px;
-    }
+  .CreativeOnar {
+    margin: -310px 0 0 80px;
+  }
 
-    .caringCard {
-        width: 70%;
-    }
+  .caringCard {
+    width: 70%;
+  }
 
-    .caringCard h4 {
-        font-size: 20px;
-    }
+  .caringCard h4 {
+    font-size: 20px;
+  }
 
-    .caringCard p {
-        font-size: 16px;
-    }
+  .caringCard p {
+    font-size: 16px;
+  }
 
-    .caring img {
-        width: 70%;
-        margin: 0 auto;
-        display: block;
-    }
+  .caring img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
 
-    .cartRow img {
-        width: 70%;
-        margin: 0 auto 20px;
-        display: block;
-    }
+  .cartRow img {
+    width: 70%;
+    margin: 0 auto 20px;
+    display: block;
+  }
 
-    .cultureCard img {
-        width: 100%;
-    }
+  .cultureCard img {
+    width: 100%;
+  }
 
-    .cultureImg {
-        display: none;
-    }
+  .cultureImg {
+    display: none;
+  }
 
-    .cultureCard h2 {
-        font-size: 30px;
-    }
+  .cultureCard h2 {
+    font-size: 30px;
+  }
 
-    .peopleCard h3 {
-        font-size: 25px;
-        line-height: 50px;
-    }
+  .peopleCard h3 {
+    font-size: 25px;
+    line-height: 50px;
+  }
 
-    .dogImg {
-        padding: 0 0 0 0px;
-        width: 100%;
-        overflow: hidden;
-        margin-top: -200px;
-    }
+  .dogImg {
+    padding: 0 0 0 0px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -200px;
+  }
 
-    .dogImg img {
-        padding: 0 0 0 0px;
-        width: 130%;
-        margin: 0px auto 100px;
-    }
+  .dogImg img {
+    padding: 0 0 0 0px;
+    width: 130%;
+    margin: 0px auto 100px;
+  }
 
-    .peopleVideo svg {
-        width: 70px;
-        display: none;
-    }
+  .peopleVideo svg {
+    width: 70px;
+    display: none;
+  }
 
-    .peopleVideoContent .projectBtn {
-        font-size: 16px;
-    }
+  .peopleVideoContent .projectBtn {
+    font-size: 16px;
+  }
 
-    .peopleVideoContent {
-        padding: 10% 0 0;
-    }
+  .peopleVideoContent {
+    padding: 10% 0 0;
+  }
 
-    .cardDataSpace {
-        margin: 50px 0 0px;
-    }
+  .cardDataSpace {
+    margin: 50px 0 0px;
+  }
 
-    .hardWorkBG {
-        background-image: none !important;
-    }
+  .hardWorkBG {
+    background-image: none !important;
+  }
 
-    .caring {
-        padding: 0 0 50px;
-    }
+  .caring {
+    padding: 0 0 50px;
+  }
 
-    .cardCup {
-        padding: 0px 0 0;
-    }
+  .cardCup {
+    padding: 0px 0 0;
+  }
 
-    .peopleTitle {
-        margin: 0 0 0px;
-        font-size: 35px !important;
-    }
+  .peopleTitle {
+    margin: 0 0 0px;
+    font-size: 35px !important;
+  }
 
-    .peoplePara {
-        margin: 50px 0 0px !important;
-    }
+  .peoplePara {
+    margin: 50px 0 0px !important;
+  }
 
-    .bannerBottomContent {
-        padding: 0 0 0px;
-    }
+  .bannerBottomContent {
+    padding: 0 0 0px;
+  }
 
-    .freePara {
-        margin: 130px 0 0px !important;
-    }
+  .freePara {
+    margin: 130px 0 0px !important;
+  }
 
-    .mainHeading {
-        margin: 50px 50px 0 0px;
-    }
+  .mainHeading {
+    margin: 50px 50px 0 0px;
+  }
 
-    .mainHeading h2 {
-        text-align: left;
-    }
+  .mainHeading h2 {
+    text-align: left;
+  }
 
-    .peopleCard {
-        margin: 100px auto 0px;
-    }
+  .peopleCard {
+    margin: 100px auto 0px;
+  }
 
-    .bannerVideo {
-        width: 100% !important;
-    }
-    .bannerVideo video{
-        width: 190% !important;
-        margin-inline: -10px;
-        display: block;
-    }
+  .bannerVideo {
+    width: 100% !important;
+  }
+  .bannerVideo video {
+    width: 190% !important;
+    margin-inline: -10px;
+    display: block;
+  }
 
-    .zespolVideo {
-        width: 100% !important;
-        overflow: hidden;
-    }
+  .zespolVideo {
+    width: 100% !important;
+    overflow: hidden;
+  }
 
-    .creativePara {
-        margin: 50px 0 100px !important;
-    }
+  .creativePara {
+    margin: 50px 0 100px !important;
+  }
 
-    .BannerBotHeading {
-        padding-left: 0px;
-    }
+  .BannerBotHeading {
+    padding-left: 0px;
+  }
 
-    .BannerBotImg {
-        min-height: 250px;
-    }           
+  .BannerBotImg {
+    min-height: 250px;
+  }
 }
