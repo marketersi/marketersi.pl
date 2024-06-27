@@ -30,7 +30,6 @@ const ContactScreen = () => {
   const dispatch = useDispatch();
   const router = useRouter();
 
-
   if (screenData) {
     console.log("contact screen data from UI => ", project);
   }
@@ -116,7 +115,7 @@ const ContactScreen = () => {
                 </div>
 
                 <div className="icons">
-                  <Image src="/assets/images/contact/1 614011205.avif" alt="" />
+                  <Image src={contact_us?.social_media_content} alt="" />
                 </div>
                 <div className="bottom">
                   <div className="botum">
