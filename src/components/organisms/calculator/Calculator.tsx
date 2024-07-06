@@ -108,7 +108,7 @@ const Calculator = () => {
 
         <Col xxl={6}  className="car text-center p-sm-4 p-3 second-card ">
           <img
-            src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FZysk.923f65ad.png&w=750&q=75"
+            src="https://images.prismic.io/marketersi/Zokfoh5LeNNTw2Je_Marketersi-1b.png?auto=format,compress"
             alt=""
           />
 

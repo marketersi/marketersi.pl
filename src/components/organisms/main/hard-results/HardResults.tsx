@@ -123,15 +123,15 @@ const Entrepreneur = () => {
               <Image
                 src={section7?.image_url_1}
                 alt="rating image"
-                width="auto"
+                width="100%"
                 height="auto"
               />
-              <Image
+              {/* <Image
                 src={section7?.image_url_2}
                 alt="rating image"
                 width="auto"
                 height="auto"
-              />
+              /> */}
             </div>
           </div>
         </div>

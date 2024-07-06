@@ -14,17 +14,17 @@ const Footer = () => {
             <div className={style.footerCol}>
               <div className={style.footerLogo}>
                 <Image
-                  src="/assets/images/logo.avif"
+                  src="https://images.prismic.io/marketersi/Zn0rnpbWFbowe74p_Marketersi-logo.png?auto=format,compress"
                   alt="My Image"
-                  width="auto"
+                  width="100%"
                   height="auto"
                 />
               </div>
               <div className={style.footerBrandLogo}>
                 <Image
-                  src="/assets/images/Logosy-Footer.svg"
+                  src="https://images.prismic.io/marketersi/Zok7Ex5LeNNTw2Za_Marketersi-2.png?auto=format,compress"
                   alt="My Image"
-                  width="auto"
+                  width="100%"
                   height="auto"
                 />
               </div>
@@ -32,7 +32,7 @@ const Footer = () => {
             <div className={style.footerCol}>
               <Row className="mb-sm-5">
                 <Col sm={3} xs={6}>
-                  <div className={style.footerRightMenu }>
+                  <div className={style.footerRightMenu}>
                     <h3>Fajne marki</h3>
                     <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
                     <Link href="/projektowanie-logo">Projektowanie logo</Link>
@@ -40,7 +40,9 @@ const Footer = () => {
                   </div>
                 </Col>
                 <Col sm={3} xs={6}>
-                <div className={`${style.footerRightMenu} ${style.mobileRightMenu}`}>
+                  <div
+                    className={`${style.footerRightMenu} ${style.mobileRightMenu}`}
+                  >
                     <h3>Sprawne strony</h3>
                     {/* <Link href="/#">Tworzenie stron</Link> */}
                     <Link href="/projektowanie-ux">Projektowanie UX</Link>
@@ -58,7 +60,9 @@ const Footer = () => {
                   </div>
                 </Col>
                 <Col sm={3} xs={6}>
-                <div className={`${style.footerRightMenu} ${style.mobileRightMenu}`}>
+                  <div
+                    className={`${style.footerRightMenu} ${style.mobileRightMenu}`}
+                  >
                     <h3>Przekonujące treści</h3>
                     <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
                     {/* <Link href="/#">Jakościowe artykuły</Link> */}
@@ -70,12 +74,14 @@ const Footer = () => {
                   <div className={style.footerRightMenu}>
                     <h3>Marketersi</h3>
                     <div className={style.footerCennik}>
-                    <Link href="/Zespol">Zespół</Link>
-                    {/* <Link href="/#">Klienci</Link> */}
-                    {/* <Link href="/#">Kariera</Link> */}
-                    <Link href="/kontakt-marketersi">Kontakt</Link>
-                    <Link href="/cennik" className={style.CennikBrn}>Cennik</Link>
-                    {/* <Link href="/#">Realizacje</Link> */}
+                      <Link href="/Zespol">Zespół</Link>
+                      {/* <Link href="/#">Klienci</Link> */}
+                      {/* <Link href="/#">Kariera</Link> */}
+                      <Link href="/kontakt-marketersi">Kontakt</Link>
+                      <Link href="/cennik" className={style.CennikBrn}>
+                        Cennik
+                      </Link>
+                      {/* <Link href="/#">Realizacje</Link> */}
                     </div>
                   </div>
                 </Col>
@@ -86,7 +92,7 @@ const Footer = () => {
                       Badanie strony i marketingu przez ekspertów [Bezpłatne]
                     </Link> */}
                     <Link href="/czy-oplaca-sie-agencja-marketingowa">
-                    Policz czy Ci się to opłaca?
+                      Policz czy Ci się to opłaca?
                     </Link>
                     {/* <Link href="/#">Test skuteczności strony (Krótki)</Link> */}
                     {/* <Link href="/#">Konsultacja marketingu</Link> */}
