@@ -98,8 +98,8 @@
 /* 4. MainContentTwo */
 .MainContentTwo {
   margin-bottom: 80px;
-  background-image: url(https://images.prismic.io/marketersi/0e530cd3-7759-4996-8f47-9be27ed2ea7f_Strategia-Marketingowa-przyklad.avif?auto=compress,format);
-  background-position: 0px -200px;
+  background-image: url(https://images.prismic.io/marketersi/Zo0UOR5LeNNTw7vb_Untitleddesign-1-.png?auto=format,compress);
+  /* background-position: 0px -200px; */
   background-repeat: no-repeat;
 }
 
@@ -1028,7 +1028,6 @@ img.strategyImg {
 }
 /* 16. OurClients */
 
-
 /* 17. Price */
 .Price {
   margin-bottom: 100px;
@@ -1449,7 +1448,6 @@ img.strategyImg {
 
 /* *** */
 
-
 /* .OurClients_Slide_Last {
   padding-inline: 180px;
   padding-block: 110px;
@@ -1629,6 +1627,11 @@ img.strategyImg {
   bottom: 0;
 }
 
+.WhatRecieveImage1 img {
+  width: 100%;
+  object-fit: contain;
+}
+
 /* -----------------------------------------media screen ------------------------------------------------- */
 @media only screen and (max-width: 1360px) {
   .MainHeading_Container {
@@ -1740,6 +1743,7 @@ img.strategyImg {
 
   .WhatRecieveImage1 img {
     width: 100%;
+    object-fit: contain;
   }
 
   .feature img {
@@ -2217,11 +2221,11 @@ img.strategyImg {
   }
   .clientReviewHeading h2 {
     font-size: 40px;
-}
-.WhatRecieve_Content_Two {
-  font-size: 22px;
-  line-height: 33.2px;
-}
+  }
+  .WhatRecieve_Content_Two {
+    font-size: 22px;
+    line-height: 33.2px;
+  }
 }
 
 .AnswerAll_Image img {
