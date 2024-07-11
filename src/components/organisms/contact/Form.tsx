@@ -43,12 +43,12 @@ const ContactForm = () => {
         () => {
           console.log("SUCCESS!");
           toast.success(
-            "Thank you for contacting us! We will connect with you soon."
+            "Dziękujemy za skontaktowanie się z nami! Wkrótce się z Tobą skontaktujemy."
           );
         },
         (error) => {
           console.log("FAILED...", error.text);
-          toast.error("Oops! Something went wrong. Please try again later.");
+          toast.error("Ups! Coś poszło nie tak. Spróbuj ponownie później.");
         }
       );
     reset();

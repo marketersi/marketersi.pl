@@ -15,7 +15,7 @@ const ContactCard = ({ title, name, phone, email, image, id }) => {
         <a href={`mailto:${email}`}>{email}</a>
       </div>
       <a
-        href="tel:"
+        href={`tel:${phone}`}
         id={id === 1 ? "card_btn_active" : ""}
         className="card_btn"
       >
