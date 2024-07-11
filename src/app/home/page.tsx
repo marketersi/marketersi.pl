@@ -9,11 +9,19 @@ import React, { useEffect } from "react";
 import Order from "@/components/organisms/main/order/Order";
 import Video from "@/components/organisms/main/video/Video";
 import OurClients from "@/components/organisms/main/ourclients/OurClients";
-import "./home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
-import Loader from "@/components/organisms/animation/Loader";
+import BounceLoader from "react-spinners/BounceLoader";
+import "./home.css";
 
+interface HomeState {
+  isLoading: boolean;
+  screenData: any;
+}
+
+export interface RootState {
+  home: HomeState;
+}
 const HomeScreen = () => {
   const { isLoading, screenData } = useSelector(
     (state: RootState) => state.home
@@ -30,17 +38,23 @@ const HomeScreen = () => {
 
   return (
     <>
-      <div>
-        <Hero />
-        <Video />
-        <RatingCaption />
-        <MarkSide />
-        <OurClients />
-        <Entrepreneur />
-        <Numbers />
-        <HardResult />
-        <Order />
-      </div>
+      {isLoading ? (
+        <div className="loader-container">
+          <BounceLoader color="#00bfff" size={50} />
+        </div>
+      ) : (
+        <div>
+          <Hero />
+          <Video />
+          <RatingCaption />
+          <MarkSide />
+          <OurClients />
+          <Entrepreneur />
+          <Numbers />
+          <HardResult />
+          <Order />
+        </div>
+      )}
     </>
   );
 };

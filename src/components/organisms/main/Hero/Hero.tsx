@@ -1,21 +1,17 @@
 "use client";
-
 import React, { useEffect } from "react";
-import style from "./hero.module.css";
-import { Container, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { RootState } from "@/app/home/page";
+import style from "./hero.module.css";
 
 const Hero = () => {
-  const { isLoading, screenData } = useSelector((state) => state.home);
+  const { screenData } = useSelector((state: RootState) => state.home);
   const { heroSection } = screenData;
-
-  if (screenData) {
-    console.log("screen data from hero ", screenData);
-  }
 
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -57,7 +53,7 @@ const Hero = () => {
           <h1>{heroSection?.title}</h1>
           <div className={style.subtitleContainer}>
             <h6>{heroSection?.subtitle}</h6>
-           
+
             <p>{heroSection?.description}</p>
           </div>
           <div className={style.heroBtn}>
