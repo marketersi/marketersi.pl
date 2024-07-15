@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const teamSlice = createSlice({
-  name: "team",
+  name: 'team',
   initialState: {
-    isLoading: false,
+    isLoading: true,
     screenData: {},
   },
   reducers: {

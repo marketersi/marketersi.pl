@@ -33,6 +33,7 @@ const ContactForm = () => {
       from_email: data.email,
       to_name: "Marketersi",
       message: data.message,
+      from_phone: data.telephone,
     };
 
     emailjs

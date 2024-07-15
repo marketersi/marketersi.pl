@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const contactSlice = createSlice({
   name: "contact",
   initialState: {
-    isLoading: false,
+    isLoading: true,
     screenData: {},
 
     isContactUsLoading: false,

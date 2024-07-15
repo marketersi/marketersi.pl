@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const examinationSlice = createSlice({
-  name: "examination",
+  name: 'examination',
   initialState: {
-    isLoading: false,
+    isLoading: true,
     screenData: {},
 
     isFormSubmit: false,
@@ -46,7 +46,7 @@ const examinationSlice = createSlice({
     // Save Price list form data
     saveExaminationFormData: (state, { payload }) => {
       state.formData = { ...state.formData, ...payload };
-      console.log("Examination form data", state.formData);
+      console.log('Examination form data', state.formData);
     },
 
     clearExaminationFormData: (state) => {

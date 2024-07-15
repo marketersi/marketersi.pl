@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const strategySlice = createSlice({
-  name: "strategy",
+  name: 'strategy',
   initialState: {
-    isLoading: false,
+    isLoading: true,
     screenData: {},
   },
   reducers: {
