@@ -1,15 +1,15 @@
-"use client";
-import React, { useEffect } from "react";
-import ZamowHero from "@/components/organisms/zamow/zamow-hero/ZamowHero";
-import CustomerRating from "@/components/organisms/zamow/customer-rating/CustomerRating";
-import Accordion from "@/components/organisms/zamow/accordion/Accordion";
-import { Container } from "react-bootstrap";
-import Results from "@/components/organisms/zamow/results/Results";
-import "./zamow.css";
-import { motion } from "framer-motion";
-import { FETCH_EXAMINATION_SCREEN_DATA } from "@/redux/zamow/zamowAction";
-import { useDispatch, useSelector } from "react-redux";
-import Loader from "@/components/organisms/animation/Loader";
+'use client';
+import React, { useEffect } from 'react';
+import ZamowHero from '@/components/organisms/zamow/zamow-hero/ZamowHero';
+import CustomerRating from '@/components/organisms/zamow/customer-rating/CustomerRating';
+import Accordion from '@/components/organisms/zamow/accordion/Accordion';
+import { Container } from 'react-bootstrap';
+import Results from '@/components/organisms/zamow/results/Results';
+import './zamow.css';
+import { motion } from 'framer-motion';
+import { FETCH_EXAMINATION_SCREEN_DATA } from '@/redux/zamow/zamowAction';
+import { useDispatch, useSelector } from 'react-redux';
+import BounceLoader from 'react-spinners/BounceLoader';
 
 const BookExamination = () => {
   const { isLoading, screenData } = useSelector((state) => state.examination);
@@ -17,7 +17,7 @@ const BookExamination = () => {
   const dispatch = useDispatch();
 
   if (screenData) {
-    console.log("Examination screen data from UI => ", screenData);
+    console.log('Examination screen data from UI => ', screenData);
   }
 
   useEffect(() => {
@@ -25,8 +25,15 @@ const BookExamination = () => {
   }, [dispatch]);
 
   const handleBackToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  if (isLoading)
+    return (
+      <div className="loader-container">
+        <BounceLoader color="#00bfff" size={50} />
+      </div>
+    );
 
   return (
     <>

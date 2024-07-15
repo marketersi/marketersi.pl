@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const consultingSlice = createSlice({
-  name: "consulting",
+  name: 'consulting',
   initialState: {
-    isLoading: false,
+    isLoading: true,
     screenData: {},
   },
   reducers: {
