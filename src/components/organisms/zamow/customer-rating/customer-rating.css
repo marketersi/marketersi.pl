@@ -6,6 +6,10 @@
   gap: 40px;
 }
 
+.brand-img-container img {
+  width: 70%;
+}
+
 .emphasized-text {
   font-size: 42px;
   font-weight: 400;
@@ -39,6 +43,12 @@ p.brand-description {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.percentage-gif {
+  width: 320px;
+  height: auto;
+  transform: rotate(-5deg);
 }
 
 @media only screen and (max-width: 1024px) {
