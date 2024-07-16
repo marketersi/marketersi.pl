@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "./customer-rating.css";
-import { Variants, motion } from "framer-motion";
-import { useSelector } from "react-redux";
-import Stars from "@/components/molecules/Ratings";
+import React, { useEffect, useState } from 'react';
+import './customer-rating.css';
+import { Variants, motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
+import Stars from '@/components/molecules/Ratings';
 
 const CustomerRating = () => {
   const { isLoading, screenData } = useSelector((state) => state.examination);
@@ -15,10 +15,10 @@ const CustomerRating = () => {
       opacity: 0,
     },
     onscreen: {
-      y: 0,
+      y: -25,
       opacity: 1,
       transition: {
-        type: "ease",
+        type: 'ease',
         bounce: 0.4,
         damping: 25,
         stiffness: 70,
@@ -34,22 +34,23 @@ const CustomerRating = () => {
       setMobile(isMobile());
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   function isMobile() {
-    return typeof window !== "undefined" && window.innerWidth <= 768;
+    return typeof window !== 'undefined' && window.innerWidth <= 768;
   }
 
   return (
     <section className="container">
       <div className="brand-img-container">
         <img src={ratingSection?.brand_image_1} alt="" />
-        <img src={ratingSection?.barnd_image_2} alt="" />
+        {/* to be deleted */}
+        {/* <img src={ratingSection?.barnd_image_2} alt="" /> */}
       </div>
       <p className=" brand-description">
         {ratingSection?.rating_text}
@@ -93,7 +94,11 @@ const CustomerRating = () => {
       )}
 
       <div className="image-container">
-        <img src={ratingSection?.rating_image_1} alt="" />
+        <img
+          src={ratingSection?.rating_image_1}
+          alt=""
+          className="percentage-gif"
+        />
         <motion.img
           src={ratingSection?.rating_image_2}
           alt=""

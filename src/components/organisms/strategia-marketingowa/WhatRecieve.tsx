@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { useState } from "react";
-import { useSelector } from "react-redux";
+import Image from 'next/image';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function WhatRecieve() {
   const { isLoading, screenData } = useSelector((state) => state.strategy);
@@ -39,7 +39,7 @@ export default function WhatRecieve() {
       {/* Image 1 */}
       <div
         className="full WhatRecieveImage1"
-        style={{ marginBottom: "30px", textAlign: "center" }}
+        style={{ marginBottom: '30px', textAlign: 'center' }}
       >
         <Image
           src={WhatReceive?.image_url_1}
@@ -64,8 +64,8 @@ export default function WhatRecieve() {
         <div
           className={`${
             WhatRecieve_Dropdown_Show
-              ? "Analysis_Card_Content_Button"
-              : "Analysis_Card_Content_Button_Clicked"
+              ? 'Analysis_Card_Content_Button'
+              : 'Analysis_Card_Content_Button_Clicked'
           }`}
           onClick={() => {
             setWhatRecieve_Dropdown_Show(!WhatRecieve_Dropdown_Show);
@@ -90,12 +90,13 @@ export default function WhatRecieve() {
           {WhatReceive?.description_9}
         </div>
       </div>
-      <div className="feature" style={{ textAlign: "center" }}>
+      <div className="feature" style={{ textAlign: 'center' }}>
         <Image
           src={WhatReceive?.image_url_2}
           alt="WhatRecieveImage2"
           height={520}
           width={855}
+          style={{ width: 'auto' }}
         />
       </div>
     </div>

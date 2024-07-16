@@ -1,9 +1,9 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const AnatomyGuide = () => {
   const { isLoading, screenData } = useSelector((state) => state.anatomy);
-  const {anatomy_guide} = screenData || {};
+  const { anatomy_guide } = screenData || {};
   return (
     <section id="sec0">
       <div className="container custom-container1">
@@ -37,7 +37,7 @@ const AnatomyGuide = () => {
         <div className="row">
           <div className="col-md-12">
             <p className="theme-desc projects-theme-desc-p projects-mq-book-fix">
-            {anatomy_guide?.paragraph3}
+              {anatomy_guide?.paragraph3}
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ const AnatomyGuide = () => {
               <div className="row">
                 <div className="col-lg-6 p-sm-0">
                   <p className="theme-desc projects-mq-book-fix">
-                  {anatomy_guide?.paragraph4}
+                    {anatomy_guide?.paragraph4}
                   </p>
 
                   <img
@@ -59,7 +59,8 @@ const AnatomyGuide = () => {
                     title="Logotypy prasy, opinie o firmie Owocni"
                     alt="Jak nazwać firmę? Prasa o naszych efektach"
                   />
-                  <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
+                  {/* to be deleted */}
+                  {/* <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
                   Jeśli chcesz możesz pobrać darmowy egzemplarz.
                     <a
                       href="/files/resources/Broszura-NazwaB.pdf"
@@ -68,7 +69,7 @@ const AnatomyGuide = () => {
                     >
                       Kliknij tutaj (PDF)
                     </a>
-                  </p>
+                  </p> */}
                 </div>
                 <div className="col-lg-6 projects-lprasa-container p-0">
                   <img
@@ -78,7 +79,7 @@ const AnatomyGuide = () => {
                     alt="Książka przydatna przy tworzeniu nazwy"
                   />
                   <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-m-book">
-                  Jeśli chcesz możesz pobrać darmowy egzemplarz.
+                    Jeśli chcesz możesz pobrać darmowy egzemplarz.
                     <a
                       href="/files/resources/Broszura-NazwaB.pdf"
                       className="red-link"
