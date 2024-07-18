@@ -5,7 +5,7 @@
 .mainVideoDiv video {
   position: absolute;
   left: 12%;
-  top: -120px;
+  top: -10px;
   border-radius: 50px;
   width: 75% !important;
   z-index: 0;
