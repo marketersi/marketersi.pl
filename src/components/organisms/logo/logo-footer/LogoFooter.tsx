@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import "./logo-footer.css";
+import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import './logo-footer.css';
 
 const LogoFooterData = {
   pagesLinks: [
-    { id: 1, label: "1", content: "Co otrzymam" },
-    { id: 2, label: "2", content: "Jak to działa" },
-    { id: 3, label: "3", content: "Galeria" },
-    { id: 4, label: "4", content: "Przykłady realizacji" },
+    { id: 1, label: '1', content: 'Co otrzymam' },
+    { id: 2, label: '2', content: 'Jak to działa' },
+    { id: 3, label: '3', content: 'Galeria' },
+    { id: 4, label: '4', content: 'Przykłady realizacji' },
   ],
-  downloadButtonText: "Pobierz wersję PDF",
-  formButtonText: "Otrzymaj ofertę",
+  downloadButtonText: 'Pobierz wersję PDF',
+  formButtonText: 'Otrzymaj ofertę',
 };
 
 const LogoFooter = ({ openModal }) => {
@@ -19,10 +19,10 @@ const LogoFooter = ({ openModal }) => {
   const pathname = usePathname();
 
   const buttonsData = [
-    { id: 1, label: "1", content: "Co otrzymam" },
-    { id: 2, label: "2", content: "Jak to działa" },
-    { id: 3, label: "3", content: "Galeria" },
-    { id: 4, label: "4", content: "Przykłady realizacji" },
+    { id: 1, label: '1', content: 'Co otrzymam' },
+    { id: 2, label: '2', content: 'Jak to działa' },
+    { id: 3, label: '3', content: 'Galeria' },
+    { id: 4, label: '4', content: 'Przykłady realizacji' },
   ];
 
   const [activeButton, setActiveButton] = useState(1);
@@ -39,7 +39,7 @@ const LogoFooter = ({ openModal }) => {
             <Link
               key={button.id}
               href={`#sec${button.id}`}
-              className={activeButton === button.id ? "activeLink" : ""}
+              className={activeButton === button.id ? 'activeLink' : ''}
               onClick={() => handleButtonClick(button.id)}
             >
               <button>{button.label}</button>
@@ -48,18 +48,18 @@ const LogoFooter = ({ openModal }) => {
           ))}
         </div>
         <div className="nazwa_footer_bottom_right">
-          <a href="https://drive.google.com/uc?authuser=0&id=1sXRhdpQRI228rKk2CcuDTtpnF8DhAj2Q&export=download">
+          {/* to be deleted */}
+          {/* <a href="https://drive.google.com/uc?authuser=0&id=1sXRhdpQRI228rKk2CcuDTtpnF8DhAj2Q&export=download">
             <button className="nazwa_footer_bottom_PDF">
               Pobierz wersję PDF
             </button>
-          </a>
+          </a> */}
 
           <button className="nazwa_footer_bottom_Offer" onClick={openModal}>
             Otrzymaj ofertę
           </button>
         </div>
       </div>
-      
     </>
   );
 };

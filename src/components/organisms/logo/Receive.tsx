@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import Modal from "react-modal";
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import Modal from 'react-modal';
 
 const Receive = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -53,9 +53,10 @@ const Receive = () => {
                       <ul className="projects-includes-ul">
                         {points?.map((point, i) => (
                           <li className="projects-includes-li" key={i}>
-                            {i === 1 ? (
+                            {/* to be deleted */}
+                            {/* {i === 1 ? (
                               <>
-                                {point}{" "}
+                                {point}{' '}
                                 <div
                                   onClick={() => handleButtonClick(i)}
                                   className="orange_clickable"
@@ -65,7 +66,9 @@ const Receive = () => {
                               </>
                             ) : (
                               point
-                            )}
+                            )} */}
+
+                            {point}
                           </li>
                         ))}
                       </ul>
@@ -95,12 +98,12 @@ const Receive = () => {
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
           },
           content: {
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
           },
         }}
       >

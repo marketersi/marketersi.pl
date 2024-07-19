@@ -1,28 +1,28 @@
-import React from "react";
-import style from "../opinie.module.css";
-import { Row, Col } from "react-bootstrap";
-import { motion, Variants } from "framer-motion";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from '../opinie.module.css';
+import { Row, Col } from 'react-bootstrap';
+// import { motion, Variants } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 const Teams = () => {
   const { screenData } = useSelector((state) => state.opinion);
   const teams = screenData.teams || {};
 
-  const springUp: Variants = {
-    offscreen: {
-      x: -100,
-    },
-    onscreen: {
-      x: 100,
-      transition: {
-        type: "ease",
-        bounce: 1,
-        damping: 10,
-        stiffness: 200,
-        duration: 2,
-      },
-    },
-  };
+  // const springUp: Variants = {
+  //   offscreen: {
+  //     x: -100,
+  //   },
+  //   onscreen: {
+  //     x: 100,
+  //     transition: {
+  //       type: 'ease',
+  //       bounce: 1,
+  //       damping: 10,
+  //       stiffness: 200,
+  //       duration: 2,
+  //     },
+  //   },
+  // };
 
   return (
     <>
@@ -30,12 +30,14 @@ const Teams = () => {
         <div className={style.teamsContainer}>
           <div className={style.teamsTopContent}>
             <h2>{teams.title}</h2>
-            <img src={teams.img_one} alt="" />
+            {/* to be deleted */}
+            {/* <img src={teams.img_one} alt="" /> */}
           </div>
           <div className={style.teamsCard}>
             <Row>
               <Col lg={6}>
-                <img className={style.maleImg} src={teams.img_two} alt="" />
+                {/* to be deleted */}
+                {/* <img className={style.maleImg} src={teams.img_two} alt="" /> */}
                 <h4 className={style.teamLeftContent}>{teams.para_four}</h4>
               </Col>
               <Col lg={6}>
@@ -47,7 +49,8 @@ const Teams = () => {
               </Col>
             </Row>
           </div>
-          <motion.img
+          {/* to be deleted */}
+          {/* <motion.img
             style={{ margin: "-500px 0 0 -160px", width: "450px" }}
             src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbottom.eef04a74.png&w=750&q=75"
             alt=""
@@ -55,7 +58,7 @@ const Teams = () => {
             whileInView="onscreen"
             variants={springUp}
             className={style.animatedCar}
-          />
+          /> */}
         </div>
       </div>
     </>
