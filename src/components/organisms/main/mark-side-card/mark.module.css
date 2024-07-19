@@ -32,7 +32,7 @@
     /* padding: 0 0 0 10px; */
 }
 .markCard li:hover{
-    background: #ffc600;
+    background: #00bfff;
     border-radius: 100px;
     padding: 0 0 0px 10px;
 }
@@ -46,7 +46,7 @@
 .playIcon{
     width: 30px;
     height: 30px;
-    background: #ffc600;
+    background: #00bfff;
     border-radius: 100%;
     padding: 5px;
 }
