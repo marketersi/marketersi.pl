@@ -1,8 +1,7 @@
-
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
-import "./accordion.css";
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import './accordion.css';
 
 type AccordionItem = {
   title: string;
@@ -32,7 +31,7 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items, title, image }) => {
             <div key={index} className="accordion-item">
               <div
                 className={`accordion-title ${
-                  index === activeIndex ? "active" : ""
+                  index === activeIndex ? 'active' : ''
                 }`}
                 onClick={() => handleClick(index)}
               >
@@ -44,7 +43,13 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items, title, image }) => {
                 )}
               </div>
               {index === activeIndex && (
-                <div className="accordion-content">{item.content}</div>
+                <div className="accordion-content">
+                  {item?.content.split('\\n\\n').map((para, idx) => (
+                    <div key={idx} style={{ margin: '10px 0' }}>
+                      {para}
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           ))}
