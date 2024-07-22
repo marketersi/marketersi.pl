@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const logoSlice = createSlice({
-  name: "logo",
+  name: 'logo',
   initialState: {
-    isLoading: false,
+    isLoading: true,
     screenData: {},
   },
   reducers: {
