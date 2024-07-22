@@ -1,6 +1,6 @@
-import React from "react";
-import style from "../opinie.module.css";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from '../opinie.module.css';
+import { useSelector } from 'react-redux';
 
 const Experts = () => {
   const { screenData } = useSelector((state) => state.opinion);
