@@ -1,12 +1,12 @@
-"use client";
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useForm } from "react-hook-form";
-import { POST_CONTACT } from "@/redux/kontakt/contactActions";
+'use client';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useForm } from 'react-hook-form';
+import { POST_CONTACT } from '@/redux/kontakt/contactActions';
 
-import emailjs from "@emailjs/browser";
-import dotenv from "dotenv";
-import { toast } from "react-toastify";
+import emailjs from '@emailjs/browser';
+import dotenv from 'dotenv';
+import { toast } from 'react-toastify';
 dotenv.config();
 
 const ContactForm = () => {
@@ -31,7 +31,7 @@ const ContactForm = () => {
     const templateParams = {
       from_name: data.name,
       from_email: data.email,
-      to_name: "Marketersi",
+      to_name: 'Marketersi',
       message: data.message,
       from_phone: data.telephone,
     };
@@ -42,14 +42,14 @@ const ContactForm = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          console.log('SUCCESS!');
           toast.success(
-            "Dziękujemy za skontaktowanie się z nami! Wkrótce się z Tobą skontaktujemy."
+            'Dziękujemy za wypełnienie formularza. Skontaktujemy się z Tobą w ciągu 24 godzin w dniach roboczych (od poniedziałku do piątku).'
           );
         },
         (error) => {
-          console.log("FAILED...", error.text);
-          toast.error("Ups! Coś poszło nie tak. Spróbuj ponownie później.");
+          console.log('FAILED...', error.text);
+          toast.error('Ups! Coś poszło nie tak. Spróbuj ponownie później.');
         }
       );
     reset();
@@ -71,27 +71,27 @@ const ContactForm = () => {
         required
         placeholder="Wiadomość"
         className="form_text_area"
-        {...register("message", { required: true })}
+        {...register('message', { required: true })}
       ></textarea>
       <div className=" small_forms d-sm-flex gap-1">
         <input
           required
           placeholder="Imię"
           className=" form_inputs"
-          {...register("name", { required: true })}
+          {...register('name', { required: true })}
         />
         <input
           required
           placeholder="Mail"
           className="form_inputs"
           type="email"
-          {...register("email", { required: true })}
+          {...register('email', { required: true })}
         />
         <input
           placeholder="Telefon"
           className="form_inputs"
           pattern="\d{7,15}"
-          {...register("telephone")}
+          {...register('telephone')}
         />
       </div>
 
