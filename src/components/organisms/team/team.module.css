@@ -111,6 +111,9 @@
   border-radius: 100%;
   margin: 0 auto;
   display: block;
+  /* test */
+  width: 75%;
+  height: auto;
 }
 
 .personalCard h4 {
@@ -582,6 +585,10 @@
     width: 100%;
   }
 
+  .personalCard img {
+    width: 30%;
+  }
+
   .free {
     padding: 100px 40px;
   }
@@ -708,6 +715,10 @@
   .personalCard {
     padding: 30px;
     width: 100%;
+  }
+
+  .personalCard img {
+    width: 25%;
   }
 
   .personalCard h6 {

@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import style from "../team.module.css";
-import ReactPlayer from "react-player";
-import { Container, Image, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from '../team.module.css';
+import ReactPlayer from 'react-player';
+import { Container, Image, Row, Col } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const Banner = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
@@ -14,24 +14,21 @@ const Banner = () => {
     <div className={style.banner}>
       <div className={style.zespolVideo}>
         <ReactPlayer
-        url={herosection?.background_video}
-        playing={true}
-        loop={true}
-        muted={true}
-        width="100%"
-        height="auto"
-        playsinline
-        className={style.bannerVideo}
-      />
-        
+          url={herosection?.background_video}
+          playing={true}
+          loop={true}
+          muted={true}
+          width="100%"
+          height="auto"
+          playsinline
+          className={style.bannerVideo}
+        />
       </div>
       <div className={style.overlay}></div>
-      
+
       <Container>
         <div className={style.bannerHeading}>
-          <h1>
-            {herosection?.main_title}
-          </h1>
+          <h1>{herosection?.main_title}</h1>
         </div>
         <div className={style.img20}>
           <img src={herosection?.left_image} alt="" />
@@ -44,9 +41,10 @@ const Banner = () => {
                 <h2>{herosection?.title_2}</h2>
               </div>
             </Col>
+            {/* to be deleted */}
             <Col xxl={6} lg={5} className="order-lg-2 order-1">
               <div className={style.BannerBotImg}>
-                <img src={herosection?.right_image} alt="" />
+                {/* <img src={herosection?.right_image} alt="" /> */}
               </div>
             </Col>
           </Row>

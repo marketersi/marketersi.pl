@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Col, Row, Image, Nav } from "react-bootstrap";
-import style from "./header.module.css";
-import Link from "next/link";
+import React from 'react';
+import { Container, Col, Row, Image, Nav } from 'react-bootstrap';
+import style from './header.module.css';
+import Link from 'next/link';
 
 const HeaderDropDown1 = () => {
   return (
@@ -14,7 +14,12 @@ const HeaderDropDown1 = () => {
                 <h3>Fajne marki</h3>
                 <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
                 <Link href="/projektowanie-logo">Projektowanie logo</Link>
-                {/* <a href="/">Identyfikacja spółki</a> */}
+                <Link href="/Kreatywny-montaz-video">
+                  Kreatywny montaż video
+                </Link>
+                <Link href="/profesjonalne-nagrywanie-filmow">
+                  Profesjonalne nagrywanie filmów
+                </Link>
               </div>
             </Col>
             <Col sm={4}>

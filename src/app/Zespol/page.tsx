@@ -32,7 +32,8 @@ const Team = () => {
       <TeamComponents.PersonalCard {...card1} />
       <TeamComponents.FreeSpace />
       <TeamComponents.Support />
-      <TeamComponents.ImageSlider />
+      {/* to be deleted */}
+      {/* <TeamComponents.ImageSlider /> */}
       <OurClients />
       <section className={style.Customers}>
         <div className={`${style.teamContent} mb-sm-5`}>

@@ -15,7 +15,7 @@ export const API_ENDPOINTS = {
   LOGO_SCREEN: 'api/projektowanie',
 
   // additional screens
-  CREATIVE_VIDEO_EDITING_SCREEN: '',
+  CREATIVE_VIDEO_EDITING_SCREEN: 'api/get-home-screen-setting',
   PROFESSIONAL_VIDEO_RECORDING_SCREEN: '',
 };
 
