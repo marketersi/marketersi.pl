@@ -16,6 +16,7 @@ export const API_ENDPOINTS = {
 
   // additional screens
   CREATIVE_VIDEO_EDITING_SCREEN: '',
+  PROFESSIONAL_VIDEO_RECORDING_SCREEN: '',
 };
 
 export const API_ENDPOINTS_POST = {
