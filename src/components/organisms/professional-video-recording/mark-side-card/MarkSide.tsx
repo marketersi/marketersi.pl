@@ -9,7 +9,7 @@ import { Variants, motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 
 const MarkSide = () => {
-  const { screenData } = useSelector((state) => state.videoEditing);
+  const { screenData } = useSelector((state) => state.videoRecording);
   const companySection = screenData.companySection || {};
   const companyCard = screenData.companyCard || [];
 

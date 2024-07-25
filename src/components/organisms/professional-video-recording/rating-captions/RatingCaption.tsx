@@ -4,7 +4,7 @@ import { Container, Image } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
 const RatingCaption = () => {
-  const { screenData } = useSelector((state) => state.videoEditing);
+  const { screenData } = useSelector((state) => state.videoRecording);
   const { brandSection, companySection } = screenData;
 
   return (

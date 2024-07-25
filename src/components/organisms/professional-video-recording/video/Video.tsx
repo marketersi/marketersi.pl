@@ -6,7 +6,7 @@ import style from './video.module.css';
 import { useSelector } from 'react-redux';
 
 const Video = () => {
-  const { screenData } = useSelector((state) => state.videoEditing);
+  const { screenData } = useSelector((state) => state.videoRecording);
   const { brandSection } = screenData;
 
   const slideAnimationTop: Variants = {

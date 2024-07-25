@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
 const Numbers = () => {
-  const { screenData } = useSelector((state) => state.videoEditing);
+  const { screenData } = useSelector((state) => state.videoRecording);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section2, section3 } = imageswithdescription || {};
 

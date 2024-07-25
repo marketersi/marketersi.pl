@@ -8,7 +8,9 @@ import { useSelector } from 'react-redux';
 import Stars from '@/components/molecules/Ratings';
 
 const Order = () => {
-  const { isLoading, screenData } = useSelector((state) => state.videoEditing);
+  const { isLoading, screenData } = useSelector(
+    (state) => state.videoRecording
+  );
   const { ratingSection } = screenData;
 
   return (
