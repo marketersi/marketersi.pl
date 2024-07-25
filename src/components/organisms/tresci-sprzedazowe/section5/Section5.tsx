@@ -1,6 +1,6 @@
-import React from "react";
-import { Form } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { Form } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const Section5 = () => {
   const { screenData } = useSelector((state) => state.sales);
@@ -42,6 +42,7 @@ const Section5 = () => {
                 src={steps?.image_1}
                 title="Teksty reklamowe Owocnych to gwarancja sukcesu"
                 alt="Marketing, który osiąga zamierzony cel"
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
 
@@ -56,7 +57,6 @@ const Section5 = () => {
             </div>
           </div>
           <div className="row">
-
             <div className="col-lg-6 copywriter-intro-box copywriting-hide-1 order-lg-1 order-2">
               <div className="copywriter-intro-header-left">
                 <strong>{steps?.title_2}</strong>
@@ -72,15 +72,17 @@ const Section5 = () => {
                 src={steps?.image_2}
                 title="Skuteczny copywriting wymaga odpowiedniej wiedzy"
                 alt="Slogany reklamowe, które przyciągają użytkowników"
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
-            </div>
-            <div className="row">
+          </div>
+          <div className="row">
             <div className="col-lg-6 copywriter-text-right">
               <img
                 src={steps?.image_3}
                 title="Teksty reklamowe, które przekonają odbiorców do Twojej firmy"
                 alt="Pisanie oferty musi trafić w rozum i serce klienta"
+                style={{ width: '100%', height: 'auto' }}
               />
             </div>
 

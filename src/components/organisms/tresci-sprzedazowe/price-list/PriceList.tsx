@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const PriceList = () => {
   const { screenData } = useSelector((state) => state.sales);
@@ -55,17 +55,19 @@ const PriceList = () => {
               className="copywriter-owocni"
               title="Agencja reklamowa przygotuje teksty reklamowe dla Ciebie"
               alt="Logo firmy Owocni, która zajmuje się copywritingiem"
+              style={{ width: '100%', height: 'auto' }}
             />
           </div>
         </div>
       </div>
-      <div className="copywriter-wierzymy-container">
+      {/* to be deleted */}
+      {/* <div className="copywriter-wierzymy-container">
         <img
           src={pricingSection?.banner_img}
           title="Odpowiednie slogany reklamowe wzmocnią pozycję Twojej firmy"
           alt="Owocni oferują pisanie tekstów dla małych firm"
         />
-      </div>
+      </div> */}
     </>
   );
 };

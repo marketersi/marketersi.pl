@@ -1,14 +1,14 @@
-"use client";
-import Image from "next/image";
-import { useContext } from "react";
-import Marquee from "react-fast-marquee";
-import ReactPlayer from "react-player/file";
-import { ClientCarousel, CarouselContext } from "./ClientCarousel";
+'use client';
+import Image from 'next/image';
+import { useContext } from 'react';
+import Marquee from 'react-fast-marquee';
+import ReactPlayer from 'react-player/file';
+import { ClientCarousel, CarouselContext } from './ClientCarousel';
 // import { Variants, motion } from "framer-motion";
-import { useSelector } from "react-redux";
-import Stars from "@/components/molecules/Ratings";
-import "./our-clients.css";
-import Link from "next/link";
+import { useSelector } from 'react-redux';
+import Stars from '@/components/molecules/Ratings';
+import './our-clients.css';
+import Link from 'next/link';
 
 export default function OurClients() {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -46,10 +46,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -66,10 +66,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -86,10 +86,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -106,10 +106,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -147,10 +147,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -168,10 +168,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -189,10 +189,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -210,10 +210,10 @@ export default function OurClients() {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
-                  filter: "grayscale(100%)",
-                  opacity: "0.5",
+                  width: '50%',
+                  height: '50%',
+                  filter: 'grayscale(100%)',
+                  opacity: '0.5',
                 }}
                 key={i}
               />
@@ -257,7 +257,7 @@ export const SlideOne = (props) => {
               alt="OurClientsImage1"
               width={190}
               height={275}
-              style={{ filter: "grayscale(100%)" }}
+              style={{ filter: 'grayscale(100%)' }}
             />
           </div>
           <div className="OurClients_Slide_Content">
