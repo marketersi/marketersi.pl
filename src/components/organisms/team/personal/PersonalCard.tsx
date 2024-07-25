@@ -17,9 +17,7 @@ const PersonalCard = (props) => {
                 <p>{designation}</p>
               </Col>
               <Col lg={9}>
-                <h6>
-                  {quate_one}
-                </h6>
+                <h6>{quate_one}</h6>
               </Col>
             </Row>
           </div>

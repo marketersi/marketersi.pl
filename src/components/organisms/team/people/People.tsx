@@ -1,25 +1,25 @@
-"use client";
+'use client';
 
-import React from "react";
-import style from "../team.module.css";
-import ReactPlayer from "react-player";
-import { useSelector } from "react-redux";
-import { useRouter } from "next/navigation";
+import React from 'react';
+import style from '../team.module.css';
+import ReactPlayer from 'react-player';
+import { useSelector } from 'react-redux';
+import { useRouter } from 'next/navigation';
 
 const People = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { section10, section11 } = screenData || {};
   if (screenData) {
-    console.log("Team screen data from UI => ", section10);
+    console.log('Team screen data from UI => ', section10);
   }
 
   const router = useRouter();
 
   const navigateToPriceListStrone = () => {
-    router.push("/cennik?type=Strone");
+    router.push('/cennik?type=Strone');
   };
   const navigateToPriceListDziałania = () => {
-    router.push("/cennik?type=Działania");
+    router.push('/cennik?type=Działania');
   };
 
   return (
@@ -38,8 +38,8 @@ const People = () => {
         />
       </div> */}
       <div className={style.teamContent}>
-        <h2 style={{ margin: "0 0 40px" }}>{section11?.section11_title}</h2>
-        <p style={{ textAlign: "center" }}>{section11?.section11_subtitle}</p>
+        <h2 style={{ margin: '0 0 40px' }}>{section11?.section11_title}</h2>
+        <p style={{ textAlign: 'center' }}>{section11?.section11_subtitle}</p>
       </div>
       <div className={style.peopleVideo}>
         <svg

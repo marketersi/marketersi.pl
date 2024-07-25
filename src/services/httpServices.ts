@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from 'axios';
 
 export const axiosInstance = axios.create({
-  baseURL: "https://marketersi.phpteam.in/",
+  baseURL: 'https://marketersi.phpteam.in/',
   headers: {},
 });
