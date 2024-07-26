@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import style from "../main.module.css";
-import ReactPlayer from "react-player";
-import { Container, Image, Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from '../main.module.css';
+import ReactPlayer from 'react-player';
+import { Container, Image, Row, Col } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const Entrepreneur = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -82,7 +82,7 @@ const Entrepreneur = () => {
             />
             <h2 className={style.brandingHeading}>{section7?.title}</h2>
             <p>{section7?.paragraph_1}</p>
-            <ReactPlayer
+            {/* <ReactPlayer
               url={section7?.video_url_3}
               playing={true}
               loop={true}
@@ -91,7 +91,9 @@ const Entrepreneur = () => {
               muted={true}
               pip={false}
               playsinline
-            />
+            /> */}
+            {/* to be added an image and the above video to be removed */}
+            <img src={section7?.video_url_3} className={style.girlImage} />
             <p>{section7?.paragraph_2}</p>
             <p>{section7?.paragraph_3}</p>
             {/* <ReactPlayer

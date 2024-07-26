@@ -238,6 +238,11 @@ img.hardImg {
   font-size: 55px !important;
 }
 
+.girlImage {
+  width: 100%;
+  height: auto;
+}
+
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
   .enter img {
@@ -342,7 +347,7 @@ img.hardImg {
     font-size: 28px;
     text-align: center !important;
   }
-  .Content p{
+  .Content p {
     font-size: 22px;
     line-height: 40px;
   }
@@ -355,5 +360,4 @@ img.hardImg {
   .enter {
     padding: 0px 0 50px;
   }
-
 }
