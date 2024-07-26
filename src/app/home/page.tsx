@@ -38,7 +38,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      {true ? (
+      {isLoading ? (
         <div className="loader-container">
           <BounceLoader color="#00bfff" size={50} />
         </div>
