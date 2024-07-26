@@ -7,7 +7,7 @@ import { Container, Image, Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 
 const HardResult = () => {
-  const { screenData } = useSelector((state) => state.videoEditing);
+  const { screenData } = useSelector((state) => state.videoRecording);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section4, section5, section6, section7 } =
     imageswithdescription || {};
