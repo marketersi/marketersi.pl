@@ -1,55 +1,66 @@
-"use client";
+'use client';
 
-import React from "react";
-import style from "./mark.module.css";
-import { Row, Col, Image } from "react-bootstrap";
-import ReactPlayer from "react-player";
-import Link from "next/link";
-import { Variants, motion } from "framer-motion";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from './mark.module.css';
+import { Row, Col, Image } from 'react-bootstrap';
+import ReactPlayer from 'react-player';
+import Link from 'next/link';
+import { Variants, motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 const MarkSide = () => {
-  const { isLoading, screenData } = useSelector((state) => state.home);
+  const { screenData } = useSelector((state) => state.home);
   const companySection = screenData.companySection || {};
   const companyCard = screenData.companyCard || [];
 
   const links1 = [
     {
-      label: "Nazwa dla firmy",
-      path: "/nazwa-dla-firmy",
+      label: 'Profesjonalne nagrywanie filmów',
+      path: '/profesjonalne-nagrywanie-filmow',
     },
     {
-      label: "Projektowanie logo",
-      path: "/projektowanie-logo",
+      label: 'Kreatywny montaż video',
+      path: '/Kreatywny-montaz-video',
     },
     {
-      label: "Identyfikacja spółki",
-      path: "/",
+      label: 'Tworzenie stron',
+      path: '/',
     },
   ];
   const links2 = [
     {
-      label: "Projektowanie UX",
-      path: "/projektowanie-ux",
+      label: 'Nazwa dla firmy',
+      path: '/nazwa-dla-firmy',
     },
     {
-      label: "Tworzenie stron",
-      path: "/",
+      label: 'Projektowanie logo',
+      path: '/projektowanie-logo',
     },
-    
+    {
+      label: 'Projektowanie UX',
+      path: '/projektowanie-ux',
+    },
+    {
+      label: 'Treści i hasła sprzedażowe',
+      path: '/tresci-sprzedazowe',
+    },
   ];
   const links3 = [
     {
-      label: "Strategia marketingowa",
-      path: "/strategia-marketingowa",
+      label: 'Strategia marketingowa',
+      path: '/strategia-marketingowa',
     },
     {
-      label: "Działania marketingowe",
-      path: "/",
+      label: 'Działania marketingowe',
+      path: '/',
     },
     {
-      label: "Konsultacja marketingu",
-      path: "/konsultacje",
+      label: 'Konsultacja marketingu',
+      path: '/konsultacje',
+    },
+    {
+      label: 'Marketing międzynarodowy',
+      path: '/',
     },
   ];
 
@@ -110,7 +121,7 @@ const Card = ({ data, links }) => {
       y: 0,
       opacity: 1,
       transition: {
-        type: "ease",
+        type: 'ease',
         bounce: 0.4,
         duration: 2,
       },

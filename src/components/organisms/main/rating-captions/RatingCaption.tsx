@@ -1,7 +1,7 @@
-import React from "react";
-import style from "./rating.module.css";
-import { Container, Image } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from './rating.module.css';
+import { Container, Image } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const RatingCaption = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
@@ -33,9 +33,7 @@ const RatingCaption = () => {
             height={300}
           />
           <p>
-            <span>
-              {brandSection?.banner_text}
-            </span>
+            <span>{brandSection?.banner_text}</span>
           </p>
         </div>
         <div className={style.ratingLogoImg}>
@@ -53,15 +51,9 @@ const RatingCaption = () => {
           />
         </div>
         <div className={style.ratingCOntent}>
-          <h2>
-            {companySection?.main_title}
-          </h2>
-          <p>
-            {companySection?.subtitle1}
-          </p>
-          <p>
-            {companySection?.subtitle2}
-          </p>
+          <h2>{companySection?.main_title}</h2>
+          <p>{companySection?.subtitle1}</p>
+          <p>{companySection?.subtitle2}</p>
         </div>
       </Container>
     </div>
