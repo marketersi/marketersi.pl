@@ -81,6 +81,7 @@ const HardResult = () => {
               playsinline
             />
             <h2 className={style.brandingHeading}>{section7?.title}</h2>
+
             <p>{section7?.paragraph_1}</p>
             <ReactPlayer
               url={section7?.video_url_3}

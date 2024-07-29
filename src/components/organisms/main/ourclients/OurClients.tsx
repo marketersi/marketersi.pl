@@ -293,7 +293,7 @@ export const SlideOne = (props) => {
         </div>
         <div className="OurClients_Slide_Button">
           <div className="OurClients_Slide_Button_Text">Następna</div>
-          <div className="ArrowButton" onMouseEnter={handleNext}>
+          <div className="ArrowButton" onClick={handleNext}>
             <span className="ArrowButton_Arrow">&gt;</span>
           </div>
         </div>
