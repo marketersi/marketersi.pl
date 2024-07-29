@@ -690,7 +690,7 @@ section.black-sec-form {
   padding: 10px 20px;
   border: navajowhite;
   /* background: #438d07; */
-  background: #00bbff;
+  background: var(--brand-blue);
   color: white;
   font-size: 22px;
   /* box-shadow: 0px 4px 0 #295a01; */

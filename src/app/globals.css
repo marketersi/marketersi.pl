@@ -12,6 +12,12 @@ body {
   box-sizing: border-box;
 }
 
+/* color constant */
+:root {
+  --brand-blue: #00bbff;
+  --brand-blue-hover: #009ad2;
+}
+
 /* Loader spinner */
 .loader-container {
   display: flex;

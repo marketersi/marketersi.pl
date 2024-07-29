@@ -118,7 +118,7 @@ img.projects-main-image-logop {
 .download-catalog-button-2 {
   width: 100%;
   /* background: #f2c22f; */
-  background: #00bbff;
+  background: var(--brand-blue);
   border: transparent;
   padding: 16px 3px;
   /* color: black; */
@@ -633,7 +633,7 @@ img.projects-main-image-logop {
 .download-catalog-button {
   width: 415px;
   /* background: #f2c22f; */
-  background-color: #00bbff;
+  background-color: var(--brand-blue);
   border: transparent;
   padding: 16px 3px;
   /* color: black; */

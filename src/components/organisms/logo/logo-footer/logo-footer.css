@@ -71,7 +71,7 @@ button.nazwa_footer_bottom_PDF {
 }
 button.nazwa_footer_bottom_Offer {
   /* background: #ddbd54; */
-  background-color: #00bbff;
+  background-color: var(--brand-blue);
 }
 
 /* --------------------modal--------------------- */
