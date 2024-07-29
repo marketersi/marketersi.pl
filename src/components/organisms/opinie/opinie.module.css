@@ -308,7 +308,7 @@
 }
 
 .ratingCardContent::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -30px;
   top: 0;
@@ -613,7 +613,7 @@
 
 /* ==========================expert=============================== */
 .expert {
-  background-image: linear-gradient(180deg, #fcfcfc 53%, #e3e3e3);
+  /* background-image: linear-gradient(180deg, #fcfcfc 53%, #e3e3e3); */
   padding: 100px 0;
 }
 
@@ -672,6 +672,10 @@ img.opinionBnnaerImg {
 
 .emoFace {
   position: relative;
+}
+
+.expertLogo img {
+  width: 100%;
 }
 
 /* ------------------------------media screen ------------------------------- */

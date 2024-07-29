@@ -12,6 +12,12 @@ body {
   box-sizing: border-box;
 }
 
+/* color constant */
+:root {
+  --brand-blue: #00bbff;
+  --brand-blue-hover: #009ad2;
+}
+
 /* Loader spinner */
 .loader-container {
   display: flex;
@@ -218,7 +224,8 @@ body {
   border: 0.1em solid #000000;
 }
 .ArrowButton:hover {
-  transform: translateY(0.3em);
+  /* update */
+  /* transform: translateY(0.3em); */
   box-shadow: none;
 }
 .ArrowButton_Arrow {

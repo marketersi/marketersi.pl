@@ -1543,7 +1543,8 @@ img.strategyImg {
 }
 
 .ArrowButton:hover {
-  transform: translateY(0.3em);
+  /* update */
+  /* transform: translateY(0.3em); */
   box-shadow: none;
 }
 
