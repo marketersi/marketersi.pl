@@ -1,20 +1,15 @@
-import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "./ExampleCarouselImage";
-import { useSelector } from "react-redux";
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from './ExampleCarouselImage';
 
-
-
-const ProfitSlider = ({ images}) => {
-
-
+const ProfitSlider = ({ images }) => {
   return (
     <>
       <section className="profit-sec">
         <Carousel>
-          {images?.map((image, index) => (
+          {images?.map((image) => (
             <Carousel.Item>
-              <ExampleCarouselImage src={image} alt="Second slide"/>
+              <ExampleCarouselImage src={image} alt="Second slide" />
               <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
           ))}

@@ -1,23 +1,8 @@
 import React, { useState } from 'react';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import './logo-footer.css';
 
-const LogoFooterData = {
-  pagesLinks: [
-    { id: 1, label: '1', content: 'Co otrzymam' },
-    { id: 2, label: '2', content: 'Jak to działa' },
-    { id: 3, label: '3', content: 'Galeria' },
-    { id: 4, label: '4', content: 'Przykłady realizacji' },
-  ],
-  downloadButtonText: 'Pobierz wersję PDF',
-  formButtonText: 'Otrzymaj ofertę',
-};
-
 const LogoFooter = ({ openModal }) => {
-  const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
-  const pathname = usePathname();
-
   const buttonsData = [
     { id: 1, label: '1', content: 'Co otrzymam' },
     { id: 2, label: '2', content: 'Jak to działa' },
