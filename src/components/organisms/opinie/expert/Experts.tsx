@@ -1,6 +1,6 @@
 import React from 'react';
-import style from '../opinie.module.css';
 import { useSelector } from 'react-redux';
+import style from '../opinie.module.css';
 
 const Experts = () => {
   const { screenData } = useSelector((state) => state.opinion);
@@ -14,7 +14,8 @@ const Experts = () => {
             <h2>{experts.title}</h2>
             <div className={style.expertLogo}>
               <img src={experts.image_1} alt="" />
-              <img src={experts.image_2} alt="" />
+              {/* to be deleted */}
+              {/* <img src={experts.image_2} alt="" /> */}
             </div>
           </div>
         </div>
