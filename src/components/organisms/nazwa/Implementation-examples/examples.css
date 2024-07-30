@@ -91,7 +91,7 @@
 }
 
 .projects-client-opinion-p {
-  font-family: "Arial";
+  font-family: 'Arial';
   color: #e3e3e3;
   font-size: 30px;
   margin-bottom: 30px;
@@ -100,7 +100,7 @@
 .theme-desc {
   margin-bottom: 40px;
   color: #515151;
-  font-family: "Georgia";
+  font-family: 'Georgia';
   font-size: 26px;
   line-height: 33px;
   letter-spacing: -0.025em;
@@ -108,7 +108,7 @@
 
 .opinion-box-text {
   font-size: 40px;
-  font-family: "Georgia";
+  font-family: 'Georgia';
   color: rgb(81, 81, 81);
   line-height: 1.25;
   text-align: center;
@@ -124,7 +124,7 @@
 
 .download-catalog-button {
   width: 415px;
-  background: #f2c22f;
+  background: var(--brand-blue);
   border: transparent;
   padding: 15px 3px;
   color: black;
@@ -136,7 +136,6 @@
   display: inline;
   letter-spacing: -0.025em;
 }
-
 
 /* section */
 
@@ -157,9 +156,8 @@
   padding-bottom: 55px;
 }
 
-
 .names-client-desc {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-size: 48px;
   font-weight: 900 !important;
   letter-spacing: -0.025em;
@@ -189,14 +187,14 @@
 }
 
 .signed-quote-image {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-style: Italic;
   letter-spacing: -0.025em;
 }
 
 .theme-quote {
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #000000;
   font-weight: 400;
   font-style: italic;
@@ -212,7 +210,7 @@
 .signature {
   text-align: center;
   margin-bottom: 70px;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   font-style: Italic;
   font-size: 19px;
   margin-top: -10px;
@@ -220,7 +218,7 @@
 }
 
 .names-client-name {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 10px;
@@ -240,7 +238,7 @@
 
 /* section 7 */
 .opinion-box {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   padding: 15px 0px;
   position: relative;
 }
@@ -258,7 +256,6 @@
 }
 
 .projects-opinion-1-new {
-  
 }
 
 .projects-opinion-5 {
@@ -270,15 +267,15 @@
 }
 
 .names-new-btn {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-weight: 600;
   letter-spacing: -0.025em;
   font-size: 24px;
   line-height: 25px;
   padding: 23px 40px;
   width: auto;
-  background-color: #f2c22f;
-  border: 1px solid #f2c22f;
+  background-color: var(--brand-blue);
+  border: 1px solid var(--brand-blue);
 }
 
 /* section 8 */
@@ -309,7 +306,6 @@
   color: white;
 }
 
-
 .names-custom-gray-text {
   margin-right: -125px;
   margin-left: -125px;
@@ -331,7 +327,6 @@
   margin-bottom: -5px !important;
 }
 
-
 .names-color-purple-med {
   color: #75133d;
 }
@@ -342,7 +337,7 @@
 
 .signed-quote {
   margin: 24px 0px;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
 }
 
 .names-color-purple-dark {
@@ -392,7 +387,7 @@
 }
 
 .underline-down:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -10px;
   left: calc(50% - 84px);

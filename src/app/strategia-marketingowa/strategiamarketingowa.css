@@ -273,7 +273,7 @@ img.strategyImg {
 }
 
 .Testimonial_Card_Content_Button {
-  background-color: #ff9600;
+  background-color: var(--brand-blue);
   color: #2b2b2b;
   cursor: pointer;
   font-size: 24px;
@@ -1130,8 +1130,8 @@ img.strategyImg {
 }
 
 .Price_Card_Main_Button {
-  background-color: #4e7c1d;
-  border: 2px solid #4e7c1d;
+  background-color: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0) 0px 0px 0px 0px;
   color: #ffffff;

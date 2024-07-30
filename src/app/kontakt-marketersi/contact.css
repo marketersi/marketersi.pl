@@ -115,8 +115,8 @@ a.form_number_content {
 }
 
 .btn button {
-  background-color: #d21e00;
-  border: 3px solid #d21e00;
+  background-color: var(--brand-blue);
+  border: 3px solid var(--brand-blue);
   color: white;
   font-size: 23px;
   width: 280px;
@@ -128,7 +128,7 @@ a.form_number_content {
 /* section_secound */
 .btn button:hover {
   background-color: transparent;
-  color: #d21e00;
+  color: var(--brand-blue);
 }
 
 .absolute-left-Image {

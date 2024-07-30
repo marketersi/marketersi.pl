@@ -27,8 +27,8 @@
   text-align: left;
 }
 .nazwa_footer_bottom_btn {
-  background-color: #aa2e2d;
-  border: 0.666667px solid #aa2e2d;
+  background-color: var(--brand-blue);
+  border: 0.666667px solid var(--brand-blue);
   box-shadow: #c1c1c1 5px 5px 0px -1px;
   cursor: pointer;
   padding: 4px 15px;
@@ -38,6 +38,6 @@
   line-height: 31.2px;
   text-align: center;
 }
-.nazwa_footer_bottom .activeLink{
+.nazwa_footer_bottom .activeLink {
   color: black;
 }

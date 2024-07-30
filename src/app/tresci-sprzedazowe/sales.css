@@ -90,9 +90,9 @@ section.sales_banner {
 }
 
 .copywriter-page .old-btn .btn.btn-green {
-  background-color: #438d07;
-  border-color: #438d07;
-  box-shadow: 0 4px 0 0 #31600b;
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+  box-shadow: 0 4px 0 0 var(--brand-blue-hover);
   color: #fff;
   padding: 10px 20px;
   font-size: 22px;
@@ -793,7 +793,7 @@ img.copywriter-owocni {
 
 .download-catalog-button {
   width: 415px;
-  background: #f2c22f;
+  background: var(--brand-blue);
   border: transparent;
   padding: 16px 3px;
   color: black;
