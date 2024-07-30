@@ -437,6 +437,12 @@ img.Naming {
 section.projects-gray-opinion-4 {
   margin-bottom: 100px;
 }
+
+.projects-logotypy-prasa {
+  width: 100%;
+  height: auto;
+}
+
 /* ------------------------------------media screen------------------------------- */
 @media only screen and (max-width: 1024px) {
   .nazwa_footer_Time_btn {
@@ -473,6 +479,7 @@ section.projects-gray-opinion-4 {
     margin-inline: auto;
     display: block;
   }
+
   img.projects-logotypy-prasa {
     margin-inline: auto;
     display: block;

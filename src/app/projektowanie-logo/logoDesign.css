@@ -1225,6 +1225,11 @@ img.zooImage.position-relative {
   left: -120px !important;
 }
 
+.projects-ksiazka-projektowanie-logo {
+  width: 60%;
+  height: auto;
+}
+
 /* -------------------------------------------------media screen ---------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
   .top-section-banner {
