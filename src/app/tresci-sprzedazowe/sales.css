@@ -90,9 +90,9 @@ section.sales_banner {
 }
 
 .copywriter-page .old-btn .btn.btn-green {
-  background-color: #438d07;
-  border-color: #438d07;
-  box-shadow: 0 4px 0 0 #31600b;
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+  box-shadow: 0 4px 0 0 var(--brand-blue-hover);
   color: #fff;
   padding: 10px 20px;
   font-size: 22px;

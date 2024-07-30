@@ -1,13 +1,11 @@
-import React from "react";
-import ProfitSlider from "./ProfitSlider";
-import { useSelector } from "react-redux";
+import React from 'react';
+import ProfitSlider from './ProfitSlider';
+import { useSelector } from 'react-redux';
 
 const Profit = () => {
-
-  const {  screenData } = useSelector((state) => state.sales);
+  const { screenData } = useSelector((state) => state.sales);
   const { sliderSection } = screenData || {};
   const { images } = sliderSection || {};
-
 
   return (
     <div>
@@ -43,7 +41,9 @@ const Profit = () => {
 
         <div className="clearfix"></div>
       </section>
-      <ProfitSlider images={images} />
+
+      {/*  to be deleted */}
+      {/* <ProfitSlider images={images} /> */}
     </div>
   );
 };

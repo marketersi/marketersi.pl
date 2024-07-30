@@ -1,7 +1,7 @@
-import React from "react";
-import style from "../opinie.module.css";
-import { Row, Col } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import style from '../opinie.module.css';
+import { Row, Col } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const Personally = () => {
   const { screenData } = useSelector((state) => state.opinion);
@@ -19,11 +19,13 @@ const Personally = () => {
                   src={atMarketersi?.img_1}
                   alt=""
                 />
-                <img
+
+                {/* to be deleted */}
+                {/* <img
                   className={style.personallHand}
                   src={atMarketersi?.img_2}
                   alt=""
-                />
+                /> */}
               </Col>
               <Col lg={8}>
                 <h2>{atMarketersi?.title}</h2>

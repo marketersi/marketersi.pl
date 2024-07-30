@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import style from "../team.module.css";
-import { motion } from "framer-motion";
-import { useSelector } from "react-redux";
+'use client';
+import React from 'react';
+import style from '../team.module.css';
+import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 const FreeSpace = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
@@ -26,8 +26,9 @@ const FreeSpace = () => {
             <h2>{section1?.section_title_one}</h2>
             <motion.div whileHover={{ translateY: 5 }}>
               <a
-                target="_blank"
-                href="https://docs.google.com/document/d/1xMLse-SaH8O0qUs4j3S7JlEbR2YGRhsUO6Dgt7_DC2U/edit"
+                // target="_blank"
+                // href="https://docs.google.com/document/d/1xMLse-SaH8O0qUs4j3S7JlEbR2YGRhsUO6Dgt7_DC2U/edit"
+                href="mailto:studio@marketersi.pl"
               >
                 <button>Rekrutacja</button>
               </a>
