@@ -78,7 +78,8 @@ const AnatomyGuide = () => {
                     title="Książka o tym jak nazwać firmę"
                     alt="Książka przydatna przy tworzeniu nazwy"
                   />
-                  <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-m-book">
+                  {/* to be deleted */}
+                  {/* <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-m-book">
                     Jeśli chcesz możesz pobrać darmowy egzemplarz.
                     <a
                       href="/files/resources/Broszura-NazwaB.pdf"
@@ -87,7 +88,7 @@ const AnatomyGuide = () => {
                     >
                       Kliknij tutaj (PDF)
                     </a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
