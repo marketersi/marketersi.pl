@@ -793,7 +793,7 @@ img.copywriter-owocni {
 
 .download-catalog-button {
   width: 415px;
-  background: #f2c22f;
+  background: var(--brand-blue);
   border: transparent;
   padding: 16px 3px;
   color: black;

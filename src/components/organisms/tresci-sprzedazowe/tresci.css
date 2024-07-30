@@ -198,8 +198,8 @@ contact-inputs textarea {
   margin-bottom: 30px;
 }
 
-.copywriter-green-background {
-  background-color: #438d07 !important;
+.copywriter-blue-background {
+  background-color: var(--brand-blue);
   color: white !important;
 }
 
