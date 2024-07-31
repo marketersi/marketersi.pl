@@ -9,11 +9,10 @@
   border-radius: 50px;
   width: 75% !important;
   z-index: 0;
-
 }
 
 .youtubeIcon {
-  background: rgba(156, 0, 0, .95);
+  background: rgba(156, 0, 0, 0.95);
   width: 130px;
   height: 75px;
   border-radius: 18px;
@@ -80,10 +79,11 @@
   .mainVideoDiv video {
     left: 20%;
     border-radius: 20px;
+    top: 0;
   }
 
   .youtubeIcon {
-    top: 0;
+    /* top: 0; */
     width: 50px;
     height: 35px;
     border-radius: 10px;
