@@ -432,6 +432,7 @@
 }
 
 .peopleVideo svg {
+  display: none;
   position: absolute;
   top: -3px !important;
   width: 350px;
@@ -439,14 +440,20 @@
   z-index: 1;
 }
 
+.peopleVideo video {
+  display: none;
+}
+
 .peopleVideoContent {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   height: 100%;
   width: 100%;
-  background: #00000069;
-  padding: 25% 0 0;
+  /* background: #00000069; */
+  /* padding: 25% 0 0; */
   z-index: 0;
+
+  padding: 80px 0;
 }
 
 .peopleVideoContent .projectBtn {
