@@ -7,7 +7,7 @@ const LottieAnimation = () => {
   const [direction, setDirection] = useState(1);
 
   const defaultOptions = {
-    loop: false,
+    loop: true,
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
