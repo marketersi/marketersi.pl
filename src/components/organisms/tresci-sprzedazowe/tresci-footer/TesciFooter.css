@@ -86,12 +86,12 @@ a.activeLink {
     font-size: 16px;
     line-height: 17px;
     background-color: #fff;
-    border: 0.666667px solid #438d07;
+    border: 0.666667px solid var(--brand-blue);
     box-shadow: #c1c1c1 5px 5px 0px -1px;
   }
   .tresci_contact_footer_btn a {
     text-decoration: none;
-    color: #438d07;
+    color: var(--brand-blue);
   }
 
   .nazwa_footer_bottom {

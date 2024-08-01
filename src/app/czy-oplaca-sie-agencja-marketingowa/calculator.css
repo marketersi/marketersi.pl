@@ -48,7 +48,8 @@
   border: none;
   border-radius: 10px;
   background: rgb(255 198 0);
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   z-index: 1;
 }
 
@@ -97,9 +98,8 @@
   outline: none;
 }
 
-
 .CalTopInput input::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -110,7 +110,7 @@
   border-radius: 5px;
 }
 .CalBotInput input::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -121,7 +121,6 @@
   border-radius: 5px;
 }
 
-
 .custom-range {
   height: 8px;
   outline: none;
@@ -130,7 +129,7 @@
   position: relative;
 }
 
-input[type="range"] {
+input[type='range'] {
   width: 100%;
   -webkit-appearance: none;
   background-color: #ecbcb7;
@@ -139,7 +138,7 @@ input[type="range"] {
   height: 8px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 14px;
   width: 14px;
@@ -150,30 +149,30 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /** FF*/
-input[type="range"]::-moz-range-progress {
+input[type='range']::-moz-range-progress {
   background-color: #3f4b5c;
 }
 
-input[type="range"]::-moz-range-track {
+input[type='range']::-moz-range-track {
   background-color: #b7e7ec;
 }
 
 /* IE*/
-input[type="range"]::-ms-fill-lower {
+input[type='range']::-ms-fill-lower {
   background-color: #3f4b5c;
 }
 
-input[type="range"]::-ms-fill-upper {
+input[type='range']::-ms-fill-upper {
   background-color: #b7e7ec;
 }
 
 /* custom input */
-input[type="number"].no-spinner {
+input[type='number'].no-spinner {
   -moz-appearance: textfield;
 }
 
-input[type="number"].no-spinner::-webkit-inner-spin-button,
-input[type="number"].no-spinner::-webkit-outer-spin-button {
+input[type='number'].no-spinner::-webkit-inner-spin-button,
+input[type='number'].no-spinner::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -193,7 +192,8 @@ input[type="number"].no-spinner::-webkit-outer-spin-button {
 
 .warranty_card {
   background: #ffc600;
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, .15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   border-radius: 30px;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -227,12 +227,12 @@ section.warranty h2 {
   font-size: 24px;
   text-decoration: none;
   color: white;
-  background: #d21e00;
+  background: var(--brand-blue);
   padding: 10px 30px;
   border-radius: 50px;
   font-weight: 500;
-  box-shadow: 0 5px 0 #981a04;
-  border: 2px solid #981a04;
+  box-shadow: 0 5px 0 var(--brand-blue-hover);
+  border: 2px solid var(--brand-blue-hover);
 }
 
 .warranty_card_content a:hover {
@@ -245,7 +245,7 @@ section.warranty h2 {
   .second-card {
     width: 80%;
     margin: 0 auto;
-}
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -344,7 +344,7 @@ section.warranty h2 {
   }
   .second-card h3 {
     font-size: 16px;
-}
+  }
 }
 
 @media screen and (max-width: 400px) {
