@@ -54,13 +54,13 @@
   top: 0;
   color: #fff;
   text-decoration: none;
-  background: #d21e00;
-  border: 2px solid #981a05;
-  box-shadow: 0 0 0 0 #981a05, 0 4px 0 0 #981a05;
+  background: var(--brand-blue);
+  border: 2px solid var(--brand-blue-hover);
+  box-shadow: 0 0 0 0 var(--brand-blue-hover), 0 4px 0 0 var(--brand-blue-hover);
 }
 
 .zamow-hero-btn:hover {
-  box-shadow: 0 2px 0 0 #981a05;
+  box-shadow: 0 2px 0 0 var(--brand-blue-hover);
 }
 
 .line-container {
@@ -108,12 +108,11 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .zamow-hero-btn {
     position: static;
     margin: 20px 0 0;
-}
-
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -133,8 +132,8 @@
   .zamow-hero-btn {
     position: static;
     margin: 20px 0 0;
-}
-.zh_next_btn_container p {
-  display: none;
-}
+  }
+  .zh_next_btn_container p {
+    display: none;
+  }
 }
