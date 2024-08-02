@@ -597,10 +597,17 @@
 }
 
 .personallMan {
-  position: absolute;
+  /* position: absolute;
   width: 400px;
   z-index: 1;
-  left: 0;
+  left: 0; */
+
+  position: absolute;
+  width: 550px;
+  z-index: 1;
+  left: -10px;
+  top: 20%;
+  border-radius: 10px;
 }
 
 .personallHand {

@@ -35,19 +35,19 @@
 .selectInputStyle {
   border-radius: 100px;
   width: 75%;
-  border: "1px solid rgb(201, 201, 201)";
+  border: '1px solid rgb(201, 201, 201)';
   padding: 8px 12px;
 }
 
 .cennikBtn {
   padding: 8px 16px;
-  background: #d21e00;
+  background: var(--brand-blue);
   font-size: 18px;
   border-radius: 50px;
   color: white;
   border: none;
   font-weight: 500;
-  box-shadow: 0 6px 0px #981a04;
+  box-shadow: 0 6px 0px var(--brand-blue-hover);
   margin: 20px auto;
 }
 
@@ -93,7 +93,6 @@
   margin: auto;
 }
 
-
 @media only screen and (max-width: 1024px) {
   .BtnStyle {
     width: 100%;
@@ -127,23 +126,23 @@
     inset: 0;
     padding: 30px 20px !important;
   }
-  .cennik-modal-content div{
+  .cennik-modal-content div {
     display: block;
   }
-  .cennik-modal-btn{
+  .cennik-modal-btn {
     display: block;
     width: 100%;
     margin-bottom: 20px;
     font-size: 18px;
   }
-  .cennik-modal-title{
+  .cennik-modal-title {
     font-size: 24px;
   }
   .cennik-modal-content p {
     font-size: 16px;
-}
-.additional-input-container {
-  flex-direction: column;
-  gap: 15px;
-}
+  }
+  .additional-input-container {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

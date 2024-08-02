@@ -22,6 +22,10 @@ const MarkSide = () => {
       label: 'Kreatywny montaż video',
       path: '/Kreatywny-montaz-video',
     },
+    {
+      label: 'Tworzenia stron i design UX',
+      path: '/projektowanie-ux',
+    },
   ];
   const links2 = [
     {
@@ -32,10 +36,7 @@ const MarkSide = () => {
       label: 'Projektowanie logo',
       path: '/projektowanie-logo',
     },
-    {
-      label: 'Tworzenia stron i design UX',
-      path: '/projektowanie-ux',
-    },
+
     {
       label: 'Treści i hasła sprzedażowe',
       path: '/tresci-sprzedazowe',
