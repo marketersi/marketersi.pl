@@ -99,4 +99,7 @@
     .markImg1{
         width: 90% !important;
     }
+    .markCard h3{
+        font-size: 40px;
+    }
 }
