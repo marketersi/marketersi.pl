@@ -415,8 +415,8 @@ img.names-custom-image {
 .nazwa_footer_Time_btn {
   background: white;
   padding: 7px 10px;
-  border: 2px solid #498800;
-  color: #498800;
+  border: 2px solid var(--brand-blue);
+  color: var(--brand-blue);
   box-shadow: #c1c1c1 5px 5px 0px -1px;
   font-size: 20px;
   font-weight: 700;
