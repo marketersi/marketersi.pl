@@ -49,9 +49,10 @@ const CustomersOpinion = () => {
       <Teams />
       <Brands />
       <Rating />
-      <Accordion data={AccordionOne} />
+      {/* to be deleted */}
+      {/* <Accordion data={AccordionOne} />
       <GoogleReview />
-      <Accordion data={AccordionTwo} />
+      <Accordion data={AccordionTwo} /> */}
       <References />
       <Personally />
       <Experts />
