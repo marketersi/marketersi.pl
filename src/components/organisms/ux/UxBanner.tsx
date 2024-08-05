@@ -1,6 +1,6 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import ReactPlayer from "react-player";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import ReactPlayer from 'react-player';
 
 const UxBanner = () => {
   const { screenData } = useSelector((state) => state.ux);
@@ -11,7 +11,7 @@ const UxBanner = () => {
       <section>
         <div id="header" className="UXBannerContainer">
           <div className="row">
-            <div className="col-xxl-6 order-xxl-1 order-2">
+            <div className="col-xxl-12 order-2">
               <h1 className="titleHead">
                 <span>
                   {HeroSection?.title1}
@@ -45,12 +45,12 @@ const UxBanner = () => {
                 <span>ę</span>
               </span> */}
             </div>
-            <div className="col-xxl-6 order-xxl-2 order-1">
+            <div className="col-xxl-12  order-1">
               <ReactPlayer
                 muted={true}
                 playing={true}
                 loop={true}
-                width="80%"
+                width="50%"
                 height="auto"
                 url={HeroSection?.video_url}
                 className="UXheroVideo"
