@@ -122,7 +122,7 @@ h6 {
 }
 
 #numbers div p {
-  margin-top: 50px;
+  margin-top: 20px;
   color: #515151;
   font-size: 20px;
   font-size: min(3vw, 18px);
@@ -1405,7 +1405,7 @@ section.arrowContainer {
   margin: auto;
   display: block;
   margin-bottom: 200px;
-  max-width: 100vw;
+  max-width: 65vw;
 }
 
 #guarantee .rowD {
@@ -2026,7 +2026,7 @@ section.arrowContainer {
 }
 
 #ImageSection {
-  margin-top: 100px;
+  margin-top: 200px;
   perspective: 500px;
   height: 4000px;
   /*transform: perspective(0);*/
@@ -2069,7 +2069,7 @@ section.arrowContainer {
   color: #fff;
   font-family: "Playfair Display", serif;
   text-align: center;
-  /* transform: translateY(-320px); */
+  transform: translateY(-300px);
 }
 
 #ImageSection > div .shadow {
