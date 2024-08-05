@@ -214,6 +214,8 @@ img.names-custom-image {
 } */
 
 .names-container-Litery:after {
+  /* to be deleted hence display none*/
+  display: none;
   content: '';
   background-image: url(https://cdn.owocni.pl/img/projektowanie-nazw-img/Litery.jpg);
   background-repeat: no-repeat;

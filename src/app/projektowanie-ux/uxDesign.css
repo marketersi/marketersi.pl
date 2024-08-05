@@ -25,11 +25,12 @@ h6 {
 #header > div div {
   position: relative;
   left: 10px;
+  margin-inline: auto;
 }
 
 #header > div div .titleHead {
   font-size: min(14vw, 100px);
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   margin: auto;
   font-weight: 900;
   line-height: 1;
@@ -60,7 +61,7 @@ h6 {
   color: #515151;
   font-size: min(5vw, 32px);
   line-height: 1.2;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   margin-left: 70px;
   font-weight: 400;
   margin-top: 0;
@@ -139,7 +140,7 @@ h6 {
 
 #messagesSection h2 {
   font-size: 100px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   line-height: 1;
   color: #333;
@@ -176,7 +177,7 @@ h6 {
   padding: 20px 0;
   color: #515151;
   font-size: clamp(16px, 30px, 40px);
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   text-align: center;
   font-weight: normal;
   letter-spacing: -0.5px;
@@ -304,7 +305,7 @@ h6 {
 
 #boxySection .title {
   font-size: 100px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   max-width: 1200px;
   margin: auto;
@@ -318,7 +319,7 @@ h6 {
   -webkit-transition: color 0.5s, border-right-color 0.5s;
   -o-transition: color 0.5s, border-right-color 0.5s;
   transition: color 0.5s, border-right-color 0.5s;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-size: 85px;
   text-align: center;
@@ -420,8 +421,8 @@ h6 {
   margin: auto;
 }
 
-#boxySection [type="checkbox"]:checked,
-#boxySection [type="checkbox"]:not(:checked) {
+#boxySection [type='checkbox']:checked,
+#boxySection [type='checkbox']:not(:checked) {
   position: absolute;
   left: -9999px;
 }
@@ -915,7 +916,7 @@ h6 {
 }
 
 #boxySection .text::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 50vh;
@@ -1217,7 +1218,7 @@ h6 {
 
 #maciej .contentText h2 {
   font-size: 78px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   line-height: 1;
   color: #333;
@@ -1229,7 +1230,7 @@ h6 {
   text-align: center;
   color: #373737;
   font-size: clamp(22px, 35px, 40px);
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
 }
 
 #maciej .contentText .btn-neon {
@@ -1263,8 +1264,8 @@ h6 {
 }
 
 #maciej .contentText .btn-neon .light:after {
-  background-image: url("https://propozycje.owocni.pl/ux/CTA-Makieta-UX-Swiatlo.dde9f5cf.png");
-  content: "";
+  background-image: url('https://propozycje.owocni.pl/ux/CTA-Makieta-UX-Swiatlo.dde9f5cf.png');
+  content: '';
   width: 916px;
   height: 615px;
   z-index: -1;
@@ -1299,7 +1300,7 @@ h6 {
 #textArrow {
   color: #373737;
   font-size: min(4.5vw, 35px);
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   line-height: 1.1;
   margin-top: 100px;
 }
@@ -1389,7 +1390,7 @@ section.arrowContainer {
   position: relative;
   color: #373737;
   font-size: 38px;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   margin-top: 100px;
   width: 1200px;
   margin: auto;
@@ -1469,7 +1470,7 @@ section.arrowContainer {
 
 #videoSection > :nth-child(1) {
   text-align: center;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   color: #333;
   line-height: 1;
 }
@@ -1482,7 +1483,7 @@ section.arrowContainer {
   font-size: clamp(50px, 100px, 120px);
   padding: 100px 0 50px 0;
   letter-spacing: -1px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   max-width: 1000px;
   margin-inline: auto;
@@ -1564,7 +1565,7 @@ section.arrowContainer {
 
 #videoSection > :nth-child(2) h2 {
   font-size: 87px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   font-weight: 100;
   margin: auto;
@@ -1633,7 +1634,7 @@ section.arrowContainer {
 
 #videoSection .textWithArrow div h3 {
   text-align: right;
-  font-family: "Arial", serif;
+  font-family: 'Arial', serif;
   line-height: 1;
   margin-bottom: 40px;
   font-weight: 100;
@@ -1665,7 +1666,7 @@ section.arrowContainer {
   display: block;
   width: var(--progress, 0%);
   height: 5px;
-  content: "";
+  content: '';
   background: #1ec19b;
   transform-origin: right;
   animation: gradient calc(var(--time) * 1ms) linear infinite;
@@ -1685,7 +1686,7 @@ section.arrowContainer {
   display: block;
   width: 100%;
   height: 5px;
-  content: "";
+  content: '';
   background: #ee8aa1;
   max-width: 150px;
   margin-left: auto;
@@ -1708,7 +1709,7 @@ section.arrowContainer {
 /* ------------What Get Section----------- */
 
 #WhatGet {
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   color: #333;
   text-align: center;
   max-width: 1000px;
@@ -1842,7 +1843,7 @@ section.arrowContainer {
   position: absolute;
   display: block;
   transform: translate(10px, 50px);
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   background: linear-gradient(0deg, #e3e3e3 0%, white 40%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;
@@ -1853,7 +1854,7 @@ section.arrowContainer {
   font-size: 330px;
   font-weight: bold;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   background: linear-gradient(0deg, #e3e3e3 0%, white 40%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1864,7 +1865,7 @@ section.arrowContainer {
   padding: 100px 0 0px 0;
   letter-spacing: -1px;
   font-weight: 900;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   line-height: min(10vw, 100px);
 }
 
@@ -1880,7 +1881,7 @@ section.arrowContainer {
 
 #stage > div:nth-child(1) {
   text-align: center;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   color: #333;
   line-height: 1;
 }
@@ -1967,7 +1968,7 @@ section.arrowContainer {
 #stage .number {
   height: 500px;
   width: 500px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 330px;
   font-weight: bold;
   background: radial-gradient(circle, #e3e3e3 58%, rgba(227, 227, 227, 0) 100%);
@@ -1985,7 +1986,7 @@ section.arrowContainer {
 #stage .stageD {
   padding: 30px 250px;
   width: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #333;
 }
 
@@ -2006,7 +2007,7 @@ section.arrowContainer {
 
 #stage .stageD > div .subtitle {
   font-size: min(4.5vw, 36px);
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   color: #515151;
   margin: 40px 0 20px 0;
 }
@@ -2048,7 +2049,7 @@ section.arrowContainer {
   font-weight: 400;
   font-size: 55px;
   color: #333;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 200px;
 }
@@ -2067,7 +2068,7 @@ section.arrowContainer {
   line-height: 100px;
   font-size: 100px;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   transform: translateY(-300px);
 }
@@ -2103,7 +2104,7 @@ section.arrowContainer {
   font-size: 55px;
   font-size: min(9vw, 55px);
   color: #333;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 200px;
 }
@@ -2195,7 +2196,7 @@ section.arrowContainer {
 }
 
 #highResult h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: normal;
   color: #373737;
   letter-spacing: -1px;
@@ -2270,13 +2271,13 @@ section.arrowContainer {
 
 /* -------------------- FAQ section --------------- */
 .header__top__left {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   max-width: 800px;
   margin-inline: auto;
 }
 
 #faq .header__top__left h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 66px;
   text-align: center;
   color: #333;
@@ -2331,7 +2332,7 @@ section.arrowContainer {
 }
 
 #faq .header__top__left {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 66px;
   text-align: center;
   color: #333;
@@ -2375,7 +2376,7 @@ section.arrowContainer {
 }
 
 #faq .faq-item[data-v-7b10b9fb]:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   left: 0;
@@ -2431,7 +2432,7 @@ section.arrowContainer {
 #faq .faq-item__handle[data-v-7b10b9fb]:after,
 #faq .faq-item__handle[data-v-7b10b9fb]:before {
   position: absolute;
-  content: "";
+  content: '';
   background: #333;
   width: 24px;
   height: 2px;
@@ -2897,12 +2898,12 @@ section.goodProcess {
 .goodProcess h3 {
   font-size: min(12.5vw, 68px);
   margin: 40px 0 -10px;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
 }
 
 .goodProcess .subtitle {
   font-size: min(4.5vw, 36px);
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   color: #515151;
   margin: 40px 0 20px 0;
   max-width: 400px;
@@ -2943,7 +2944,7 @@ section.goodProcess {
   color: gray;
   position: relative;
   background-color: #f4f4f4;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   line-height: 0.8;
 }
