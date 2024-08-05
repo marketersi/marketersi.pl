@@ -48,10 +48,10 @@
 
 // export default LottieAnimation;
 
-import { useState, useEffect } from 'react';
-import Lottie from 'react-lottie';
-import blackLogo from './blackLogo.json';
-import whiteLogo from './whiteLogo.json';
+import { useState, useEffect } from "react";
+import Lottie from "react-lottie";
+import blackLogo from "./blackLogo.json";
+import whiteLogo from "./whiteLogo.json";
 
 const LottieAnimation = () => {
   const [isPaused, setIsPaused] = useState(false);
@@ -63,20 +63,20 @@ const LottieAnimation = () => {
     autoplay: true,
     animationData, // Use the current animation data
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
+      preserveAspectRatio: "xMidYMid slice",
     },
   };
 
   const handleMouseEnter = () => {
     setDirection(1);
     setIsPaused(false);
-    setAnimationData(whiteLogo); // Change to white logo on hover
+    setAnimationData(blackLogo); // Change to white logo on hover
   };
 
   const handleMouseLeave = () => {
     setDirection(-1);
     setIsPaused(false);
-    setAnimationData(blackLogo); // Change back to black logo on mouse leave
+    setAnimationData(whiteLogo); // Change back to black logo on mouse leave
   };
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const LottieAnimation = () => {
       <Lottie
         options={defaultOptions}
         height={150}
-        width={400}
+        width={420}
         isPaused={isPaused}
         direction={direction}
       />

@@ -4,12 +4,25 @@
   line-height: 39.936px;
   padding-block: 30px;
 }
+
 .OurClients_Slide:hover .OurClients_Slide_Image img {
   filter: grayscale(0%) !important;
 }
+
 .cartAnimation {
   margin: -390px 0 0 -320px;
 }
+
 .cartAnimation img {
   width: 350px;
+}
+
+@media (max-width:768px) {
+
+  .rating_image {
+
+    margin-inline: auto;
+    display: block;
+
+  }
 }

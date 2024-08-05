@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { Button, Col, Row, Image, Nav } from 'react-bootstrap';
-import style from './header.module.css';
-import HeaderDropDown1 from './HeaderDropDown1';
-import HeaderDropDown2 from './HeaderDropDown2';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState } from "react";
+import { Button, Col, Row, Image, Nav } from "react-bootstrap";
+import style from "./header.module.css";
+import HeaderDropDown1 from "./HeaderDropDown1";
+import HeaderDropDown2 from "./HeaderDropDown2";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faAngleRight,
   faChevronDown,
-} from '@fortawesome/free-solid-svg-icons';
-import LottieAnimation from '../../molecules/LottieAnimation';
+} from "@fortawesome/free-solid-svg-icons";
+import LottieAnimation from "../../molecules/LottieAnimation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,7 +107,9 @@ const Header = () => {
               </div>
             </Col>
             <Col sm={3}>
-              <LottieAnimation />
+              <Link href="/">
+                <LottieAnimation />
+              </Link>
               {/* <div className={style.logo}>
                 <Link href="/">
                   <Image
@@ -157,7 +159,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <nav className={`${style.nav} ${isMenuOpen ? style.open : ''}`}>
+          <nav className={`${style.nav} ${isMenuOpen ? style.open : ""}`}>
             <ul className={style.mobileMenuList}>
               <li>
                 <div className="dropdown">
@@ -228,7 +230,7 @@ const Header = () => {
               </li>
               <li onClick={handleMenuItemClick}>
                 <Link onClick={handleMenuItemClick} href="/Zespol">
-                  Zespół{' '}
+                  Zespół{" "}
                 </Link>
               </li>
               <li onClick={handleMenuItemClick}>
@@ -290,7 +292,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className={style.menuIcon} onClick={toggleMenu}>
-            <span>Menu</span> {isMenuOpen ? '✖' : '☰'}
+            <span>Menu</span> {isMenuOpen ? "✖" : "☰"}
           </div>
         </header>
       </div>
