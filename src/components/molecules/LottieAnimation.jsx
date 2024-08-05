@@ -82,7 +82,7 @@ const LottieAnimation = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsPaused(true); // Pause the animation after it plays initially
-    }, 3000); // Adjust the time based on your animation length
+    }, 10000); // Adjust the time based on your animation length
 
     return () => clearTimeout(timer); // Cleanup the timer on unmount
   }, []);

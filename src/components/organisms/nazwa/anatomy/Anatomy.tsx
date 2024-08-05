@@ -1,9 +1,9 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Anatomy = () => {
   const { isLoading, screenData } = useSelector((state) => state.anatomy);
-  const {anatomy} = screenData || {};
+  const { anatomy } = screenData || {};
   return (
     <section className="top-section-ending projects-over-hid">
       <div className="container projects-custom-container1">
@@ -14,14 +14,15 @@ const Anatomy = () => {
             </h2>
 
             <p className="theme-desc text-center p-0 projects-under-big-header2 ">
-             {anatomy?.description1}
+              {anatomy?.description1}
             </p>
 
             <p className="theme-desc text-center p-0 projects-under-big-header">
               {anatomy?.description2}
             </p>
 
-            <p className="theme-desc text-center p-0 names-features-image naming-tm-100">
+            {/* to be deleted */}
+            {/* <p className="theme-desc text-center p-0 names-features-image naming-tm-100">
               <img
                 className="owocnych-nazw-text"
                 src={anatomy?.title_image_url}
@@ -30,7 +31,7 @@ const Anatomy = () => {
               />
               <br className="dont-delete" />
               {anatomy?.below_text}
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
