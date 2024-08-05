@@ -266,6 +266,7 @@
   left: 50px;
   top: -68px;
   z-index: 1;
+  display: none;
 }
 
 .faceMotion {
