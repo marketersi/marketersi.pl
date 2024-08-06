@@ -32,11 +32,11 @@ const Caring = () => {
   return (
     <>
       <div className={style.caring}>
-        <img
+        {/* <img
           src={section6?.image_6}
           className={style.caringImg}
           alt="ghjk"
-        />
+        /> */}
         <Container>
           <Row className={style.cartRow}>
             <Col lg={4}>

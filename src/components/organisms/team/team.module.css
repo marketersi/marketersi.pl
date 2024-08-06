@@ -30,7 +30,7 @@
   bottom: -162px;
   left: -120px;
   width: 60%;
-  margin: -458px 0 0 -230px;
+  margin: -340px 0 0 -230px;
 }
 
 .teamContent {
@@ -296,7 +296,7 @@
   width: 300px;
   border-radius: 20px;
   padding: 30px;
-  margin: 0 auto 50px;
+  margin: 50px auto 50px;
   background: white;
 }
 
@@ -478,7 +478,7 @@
 .peopleVideoContent .scheduleBtn {
   display: grid;
   gap: 10px;
-  padding: 0 0 0 10px;
+  padding: 0 10px;
   width: 250px;
   margin: 30px auto;
   text-decoration: none;
