@@ -23,8 +23,8 @@ const Systemically = () => {
                 </p>
               </div>
               <div className="imgs col-xxl-5 order-xxl-2 order-1">
-                <img src={Systematically.right_image} alt="" />
-                <img src={Systematically.image} alt=""  className="mobile"/>
+                {/* <img src={Systematically.right_image} alt="" />
+                <img src={Systematically.image} alt=""  className="mobile"/> */}
               </div>
             </div>
           </div>

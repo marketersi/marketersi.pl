@@ -54,14 +54,15 @@ const GoodProcess = () => {
         </div>
         <div className="process3">
         <div className="three order6">
-          <ReactPlayer
+          {/* <ReactPlayer
             url={stage_3?.video_url}
             playing={true}
             loop={true}
             muted={true}
             className="processVideo"
             playsinline
-          />
+          /> */}
+          <img src={stage_3?.video_url} alt="" />
 
           <h3>{stage_3?.title}</h3>
           <p className="subtitle">{stage_3?.subtitle}</p>

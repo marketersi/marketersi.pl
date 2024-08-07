@@ -352,6 +352,7 @@
 .cultureCard img {
   margin: -100px auto 20px;
   display: block;
+  width: 60%;
 }
 
 .cultureCard h2 {
