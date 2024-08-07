@@ -18,7 +18,7 @@ const NazwaHero = () => {
       <div className="nazwaContainer ">
         <div className="top-section-banner-text">
           <div className="row">
-            <div className="col-lg-5 order-lg-1 order-2">
+            <div className="col-lg-12 order-2">
               <div className="top-banner-text projects-top-banner-text naming-top-banner-text">
                 <h1 className="top-banner-title projects-top-banner-title pnazw-topbanner-title">
                   {heroSection?.title}
@@ -40,7 +40,7 @@ const NazwaHero = () => {
                 </button>
               </div>
             </div>
-            <div className="col-lg-7 order-lg-2 order-1">
+            <div className="col-lg-12  order-1">
               <ReactPlayer
                 url={heroSection?.background_video}
                 playing={true}
