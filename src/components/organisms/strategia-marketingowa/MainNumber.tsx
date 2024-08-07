@@ -10,7 +10,7 @@ export default function MainNumber() {
   return (
     <div className="MainNumber content">
       <div className="MainNumber_Container">
-        <div className="MainNumber_One">
+        {/* <div className="MainNumber_One">
           <div className="MainNumber_One_Content">
             {MainNumber?.info_1}
           </div>
@@ -27,7 +27,7 @@ export default function MainNumber() {
               }}
             />
           </div>
-        </div>
+        </div> */}
         <div className="MainNumber_Two">
           <div className="MainNumber_Two_Content">
             {MainNumber?.info_2}

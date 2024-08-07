@@ -1284,6 +1284,7 @@ img.strategyImg {
   grid-column: feature;
 }
 
+
 .full {
   grid-column: full;
 }
@@ -1748,7 +1749,7 @@ img.strategyImg {
   }
 
   .feature img {
-    width: 100%;
+    width: 60% !important;
   }
 
   .QuoteOne_Image img {
@@ -1886,6 +1887,7 @@ img.strategyImg {
 
   .feature img {
     height: auto;
+
   }
 
   .Testimonial_Card_Content {
