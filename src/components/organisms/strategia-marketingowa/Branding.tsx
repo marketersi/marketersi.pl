@@ -7,10 +7,10 @@ export default function Branding() {
   return (
     <div className="Branding content">
       <div className="Branding_Container full">
-        <div className="Branding_Content_Container">
+        {/* <div className="Branding_Content_Container">
           <div className="Branding_Title">{Branding?.title}</div>
           <div className="Branding_Text">{Branding?.description}</div>
-        </div>
+        </div> */}
         {/* to be deleted */}
         {/* <div className="Branding_Image">
           <Image

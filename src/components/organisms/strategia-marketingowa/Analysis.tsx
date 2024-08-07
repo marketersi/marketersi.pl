@@ -72,14 +72,14 @@ export default function Analysis() {
           <div className="Analysis1_Dropdown_Text3">
             {ButtonData?.description_2}
           </div>
-          <div className="Analysis1_Dropdown_Image">
+          {/* <div className="Analysis1_Dropdown_Image">
             <Image
               src={ButtonData?.image}
               alt="AnalysisDropdownOne_1"
               height={778 * 0.9}
               width={1438 * 0.9}
             />
-          </div>
+          </div> */}
           <div className="Analysis1_Grid">
             <div className="Analysis1_GridItem1">
               {ButtonData?.CardGrid?.Card1?.map((point, i) => {
@@ -172,25 +172,25 @@ export default function Analysis() {
           <div className="Analysis2_Dropdown_Text2">
             {Card2?.ButtonData?.description_2}
           </div>
-          <div className="Analysis2_Dropdown_Image1">
+          {/* <div className="Analysis2_Dropdown_Image1">
             <Image
               src={Card2?.ButtonData?.image_1}
               alt="AnalysisDropdownTwo_1"
               height={433 * 0.9}
               width={835 * 0.9}
             />
-          </div>
+          </div> */}
           <div className="Analysis2_Dropdown_Text3">
             {Card2?.ButtonData?.description_3}
           </div>
-          <div className="Analysis2_Dropdown_Image2">
+          {/* <div className="Analysis2_Dropdown_Image2">
             <Image
               src={Card2?.ButtonData?.image_2}
               alt="AnalysisDropdownTwo_2.avif"
               height={433 * 0.9}
               width={835 * 0.9}
             />
-          </div>
+          </div> */}
           <div className="Analysis2_Dropdown_Text4">
             {Card2?.ButtonData?.description_4}
           </div>
@@ -251,14 +251,14 @@ export default function Analysis() {
           <div className="Analysis3_Dropdown_Text3">
             {Card3?.ButtonData?.description_3}
           </div>
-          <div className="Analysis3_Dropdown_Image">
+          {/* <div className="Analysis3_Dropdown_Image">
             <Image
               src={Card3?.ButtonData?.image}
               alt="AnalysisDropdownThree_1"
               height={610 * 0.8}
               width={1438 * 0.8}
             />
-          </div>
+          </div> */}
           <div className="Analysis3_Grid">
             {Card3?.ButtonData?.CardGrid.map((card, index) => (
               <div key={index} className={`Analysis3_GridItem${index + 1}`}>
@@ -275,14 +275,14 @@ export default function Analysis() {
 
       {/* Card 4 */}
       <div className="Analysis_Card full mt-5">
-        <div>
+        {/* <div>
           <Image
             src={Card4?.main_image}
             alt="AnalysisImage4"
             height={401}
             width={652}
           />
-        </div>
+        </div> */}
         <div className="Analysis_Card_Content_Odd">
           <div className="Analysis_Card_Content_Title">{Card4?.title}</div>
           <div className="Analysis_Card_Content_Text">{Card4?.subtitle}</div>

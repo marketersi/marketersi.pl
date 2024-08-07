@@ -16,6 +16,12 @@
 .cartAnimation img {
   width: 350px;
 }
+.OurClients_Slide_Media_Video {
+  width: 150px;
+}
+.OurClients_Slide_Media_Video img{
+  width: 70px;
+}
 
 @media (max-width:768px) {
 

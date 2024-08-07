@@ -20,11 +20,11 @@ const Section5 = () => {
         </div>
 
         <div className="copywriter-text-center copywriter-standard-mb-40">
-          <img
+          {/* <img
             src={howItWorksSection?.image}
             title="Pisanie oferty dla klienta"
             alt="Proces pracy copywritera podzielony na etapy"
-          />
+          /> */}
         </div>
         <div className="container">
           <div className="row">

@@ -265,7 +265,7 @@ export const SlideOne = (props) => {
             <div className="OurClients_Slide_Title desktop_title">{review}</div>
             <div className="OurClients_Slide_Media">
               <div className="OurClients_Slide_Media_Video">
-                <ReactPlayer
+                {/* <ReactPlayer
                   url={video_url}
                   playing
                   loop
@@ -274,9 +274,9 @@ export const SlideOne = (props) => {
                   muted={true}
                   pip={false}
                   playsinline
-                />
+                /> */}
                 {/* ajdjasjkd */}
-                {/* <img src={video_url} /> */}
+                <img className="ourClientImg" src={video_url} alt=""/>
               </div>
               <div className="OurClients_Slide_Media_Rating">
                 <div>
