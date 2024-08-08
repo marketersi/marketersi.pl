@@ -23,16 +23,16 @@ const NazwaHero = () => {
                 <h1 className="top-banner-title projects-top-banner-title pnazw-topbanner-title">
                   {heroSection?.title}
                 </h1>
-                <h2 className="top-banner-long-text names-top-banner-long-text">
+                <h2 className="top-banner-long-text names-top-banner-long-text text-center">
                   {heroSection?.subtitle1}
                 </h2>
-                <h2 className="top-banner-long-text names-top-banner-long-text pnazw-second-maintext">
+                <h2 className="top-banner-long-text names-top-banner-long-text pnazw-second-maintext text-center">
                   {heroSection?.subtitle2}
                 </h2>
               </div>
               <div className="catalog-submit-button text-left projects-catalog-submit-buttom">
                 <button
-                  className="download-catalog-button"
+                  className="download-catalog-button nazwaHeroBtn"
                   type="button"
                   onClick={() => setIsModal(true)}
                 >
@@ -41,7 +41,7 @@ const NazwaHero = () => {
               </div>
             </div>
             <div className="col-lg-12  order-1">
-              <ReactPlayer
+              {/* <ReactPlayer
                 url={heroSection?.background_video}
                 playing={true}
                 loop={true}
@@ -50,7 +50,8 @@ const NazwaHero = () => {
                 height="auto"
                 className="heroVideo"
                 playsinline
-              />
+              /> */}
+              <img src={heroSection?.background_video} alt="" className="nazwaHeroImg"/>
             </div>
 
             <div className="col-md-12 part-sec"></div>
