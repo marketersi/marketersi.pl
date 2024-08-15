@@ -14,6 +14,7 @@ import OptionBox2 from '@/components/organisms/tresci-sprzedazowe/options-box2/O
 import { FETCH_SALES_SCREEN_DATA } from '@/redux/tresci/salescontentAction';
 import BounceLoader from 'react-spinners/BounceLoader';
 import './nazwa.css';
+import { ToastContainer } from 'react-toastify';
 
 const NazwaDlaFirmy = () => {
   const { isLoading, screenData } = useSelector((state) => state.anatomy);
@@ -54,6 +55,7 @@ const NazwaDlaFirmy = () => {
       <ImplementationExamples />
 
       <NazwaFooter />
+      <ToastContainer />
     </>
   );
 };
