@@ -24,7 +24,7 @@
   box-shadow: 0px 3px 0px #c1c1c1;
   border: 2px solid #eaeaea;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .headerLeftBtn a {
@@ -51,7 +51,7 @@
 
 .dropBtn {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 24px;
   display: flex;
@@ -88,7 +88,7 @@
   background: #00bfff;
   color: rgb(1, 1, 1);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   transition: transform 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s,
     box-shadow 0.05s cubic-bezier(0.5, 1, 0.7, 0.7) 0s,
@@ -153,7 +153,7 @@
 
 .navbar:hover .navRightMenu {
   color: rgb(9, 9, 9);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar:hover .navRightMenu a {
