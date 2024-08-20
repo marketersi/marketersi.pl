@@ -18,6 +18,14 @@ import LottieAnimation from "../../molecules/LottieAnimation";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -50,7 +58,8 @@ const Header = () => {
   };
   return (
     <>
-      <header className={style.navbar}>
+      <header className={style.navbar}  onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
         <div className={style.hover}></div>
         <div className={style.navigation}>
           <Row className="align-items-center w-100">
@@ -106,9 +115,9 @@ const Header = () => {
                 </div>
               </div>
             </Col>
-            <Col sm={3}>
+            <Col sm={4} >
               <Link href="/">
-                <LottieAnimation />
+                <LottieAnimation  isHovered={isHovered}/>
               </Link>
               {/* <div className={style.logo}>
                 <Link href="/">
@@ -121,7 +130,7 @@ const Header = () => {
                 </Link>
               </div> */}
             </Col>
-            <Col sm={5}>
+            <Col sm={4}>
               <div className={style.rightNav}>
                 <Nav className="">
                   <Nav.Link className={style.navRightMenu}>
@@ -151,12 +160,13 @@ const Header = () => {
           </Button>
           <div className={style.mobileLogo}>
             <Link href="/">
-              <Image
+            <LottieAnimation />
+              {/* <Image
                 src="https://images.prismic.io/marketersi/984f6871-6a21-41ee-b875-ebac79cfec29_marketersi_logo.png?auto=compress,format"
                 alt="My Image"
                 width={150}
                 height="auto"
-              />
+              /> */}
             </Link>
           </div>
           <nav className={`${style.nav} ${isMenuOpen ? style.open : ""}`}>

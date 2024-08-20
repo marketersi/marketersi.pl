@@ -2804,7 +2804,9 @@ video.mobileVideo {
   #messagesSection h2 {
     font-size: 40px;
   }
-
+  #header > div div{
+    left: 0;
+  }
   #header > div div .titleHead .UX {
     top: -60px;
     left: 140px;
@@ -3109,6 +3111,9 @@ section.goodProcess {
 }
 
 @media only screen and (max-width: 768px) {
+  .process3 img{
+    width: 100%;
+  }
   section.goodProcess {
     padding: 0 1rem;
     row-gap: 0;

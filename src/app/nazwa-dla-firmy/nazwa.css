@@ -631,7 +631,7 @@ section.projects-gray-opinion-4 {
   .pnazw-page .catalog-submit-button .download-catalog-button {
     font-size: 16px;
     line-height: 20px;
-    padding: 23px 20px;
+    padding: 15px 10px;
   }
   .projects-big-header {
     font-size: 35px;
@@ -792,5 +792,8 @@ section.projects-gray-opinion-4 {
   }
   section.projects-gray-opinion-4 {
     margin-bottom: 50px;
+  }
+  .nazwa_footer_bottom_right {
+    gap: 10px;
   }
 }

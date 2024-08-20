@@ -1567,8 +1567,8 @@ img.zooImage.position-relative {
   }
 
   .theme-title1 {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 35px;
+    line-height: 40px;
   }
 
   img.projects-ksiazka-projektowanie-logo {
@@ -1592,7 +1592,8 @@ img.zooImage.position-relative {
   }
 
   .projects-co-otrzymasz {
-    font-size: 45px;
+    font-size: 35px;
+    margin: 0;
   }
 
   .projects-oferta-veggo-cont {
@@ -1768,5 +1769,8 @@ img.zooImage.position-relative {
   }
   .modal_logo_img {
     width: 90%;
+  }
+  img.projects-main-image-logop{
+    max-width: 100%;
   }
 }

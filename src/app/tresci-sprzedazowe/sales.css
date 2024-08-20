@@ -1153,6 +1153,9 @@ section#sec1 {
 }
 
 @media only screen and (max-width: 767px) {
+  .copywriter-custom-container-2{
+    padding: 20px;
+  }
   .top-banner-title {
     font-size: 40px;
   }
@@ -1182,7 +1185,7 @@ section#sec1 {
   }
 
   .projects-opinion-box-container {
-    padding: 30px;
+    padding: 20px;
   }
 
   .opinion-box-text {
