@@ -891,7 +891,7 @@ div.glow {
 /* -------------------------------media screen---------------------- */
 @media only screen and (max-width: 767px) {
   .first_heading_txt {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
   }
   .orders_number.mobile {
@@ -940,6 +940,7 @@ div.glow {
 
   .card {
     width: 100%;
+    height: auto;
   }
 
   .logo img {

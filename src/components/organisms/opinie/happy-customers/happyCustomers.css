@@ -37,6 +37,7 @@
 
 @media only screen and (max-width: 1024px) {
   .customer_replies_container {
+    padding: 30px;
     margin-top: 0;
     width: 100%;
   }

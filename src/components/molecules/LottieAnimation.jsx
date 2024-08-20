@@ -91,8 +91,8 @@ const LottieAnimation = () => {
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <Lottie
         options={defaultOptions}
-        height={150}
-        width={420}
+        height={120}
+        width={350}
         isPaused={isPaused}
         direction={direction}
       />

@@ -29,6 +29,7 @@ const Form = () => {
   // };
 
   const onSubmit = (data) => {
+    console.log('Submitted form data:', data);
     const templateParams = {
       from_name: data.name,
       from_email: data.email,
@@ -43,7 +44,7 @@ const Form = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log('SUCCESS!', emailjs);
           toast.success(
             'Dziękujemy za wypełnienie formularza. Skontaktujemy się z Tobą w ciągu 24 godzin w dniach roboczych (od poniedziałku do piątku).'
           );

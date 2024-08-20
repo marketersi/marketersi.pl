@@ -10,7 +10,7 @@ const UxBanner = () => {
     <>
       <section>
         <div id="header" className="UXBannerContainer">
-          <div className="row">
+          <div className="row m-0">
             <div className="col-xxl-12 order-2">
               <h1 className="titleHead">
                 <span>
