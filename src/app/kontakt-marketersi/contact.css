@@ -269,7 +269,7 @@ a.card_btn:hover {
 /* section four  */
 
 .container_fluid_plus {
-  background-image: linear-gradient(173deg, #f4f4f4 65%, #fbb1b6);
+  background-image: linear-gradient(173deg, #f4f4f4 65%, #bceeff);
   padding-bottom: 10rem;
   padding-left: 50px;
   padding-right: 50px;
@@ -342,7 +342,7 @@ a.card_btn:hover {
 /* section :right */
 
 .right_box_bottom {
-  background-image: linear-gradient(132deg, #faaeb4 4%, #fd8a92 38%);
+  background-image: linear-gradient(132deg, #35b0dc 4%, #69c4e4 38%);
   height: auto;
   width: 95%;
   border-radius: 4%;
@@ -364,7 +364,7 @@ a.card_btn:hover {
 }
 
 .map_content p {
-  color: #d21e00;
+  color: #004761;
   font-size: 14px;
   margin: 0;
 }
@@ -465,7 +465,7 @@ a.card_btn:hover {
   height: 25px;
   border-radius: 100%;
   text-align: center;
-  color: #d21e00;
+  color: var(--brand-blue);
   position: absolute;
   background: white;
   padding: 0px;
@@ -497,7 +497,7 @@ a.card_btn:hover {
   background: white;
   border-radius: 100%;
   padding: 0 8px;
-  border: 1px solid #d21e00;
+  border: 1px solid var(--brand-blue);
   cursor: pointer;
 }
 
@@ -505,7 +505,7 @@ div.glow {
   position: absolute;
   height: 25px;
   width: 25px;
-  background: #d21e00;
+  background: var(--brand-blue);
   border-radius: 100%;
   z-index: -1;
   animation: mymove 1s infinite;
@@ -542,7 +542,7 @@ div.glow {
 } */
 
 .plus_icon_container.active span {
-  background: red;
+  background: var(--brand-blue);
   color: white;
 }
 

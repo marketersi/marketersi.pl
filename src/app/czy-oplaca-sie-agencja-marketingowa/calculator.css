@@ -47,7 +47,7 @@
 .second-card {
   border: none;
   border-radius: 10px;
-  background: rgb(255 198 0);
+  /* background: rgb(255 198 0); */
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   z-index: 1;
@@ -72,7 +72,7 @@
 .second-card h6 {
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: var(--brand-blue);
   margin-top: 0 0 16px;
 }
 
@@ -91,7 +91,7 @@
   font-weight: 900;
   width: 9rem;
   background: none;
-  color: #a51904;
+  color: var(--brand-blue);
 }
 
 .calc_input:focus {
@@ -106,7 +106,7 @@
   left: 0;
   width: calc((var(--value) - 10) / (9999 - 10) * 100%);
   height: 8px;
-  background-color: #a51904;
+  background-color: var(--brand-blue);
   border-radius: 5px;
 }
 .CalBotInput input::before {
@@ -117,7 +117,7 @@
   left: 0;
   width: calc((var(--value) - 10) / (99999 - 10) * 100%);
   height: 8px;
-  background-color: #a51904;
+  background-color: var(--brand-blue);
   border-radius: 5px;
 }
 
@@ -132,7 +132,7 @@
 input[type='range'] {
   width: 100%;
   -webkit-appearance: none;
-  background-color: #ecbcb7;
+  background-color: #b4ecff;
   z-index: 1;
   position: relative;
   height: 8px;
@@ -143,7 +143,7 @@ input[type='range']::-webkit-slider-thumb {
   height: 14px;
   width: 14px;
   border-radius: 999999px;
-  background: #a51904;
+  background: var(--brand-blue);
   cursor: pointer;
   position: relative;
 }
@@ -191,7 +191,7 @@ input[type='number'].no-spinner::-webkit-outer-spin-button {
 }
 
 .warranty_card {
-  background: #ffc600;
+  /* background: #ffc600; */
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   border-radius: 30px;

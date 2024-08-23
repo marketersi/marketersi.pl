@@ -9,6 +9,7 @@ const GoodProcess = () => {
 
   return (
     <>
+    
       <section className="goodProcess">
       <div className="one">
           <div className="number">1</div>

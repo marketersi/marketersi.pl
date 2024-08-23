@@ -43,12 +43,12 @@ const RatingCaption = () => {
             width="auto"
             height="auto"
           />
-          <Image
+          {/* <Image
             src={brandSection?.brand_logo2}
             alt="rating image"
             width="auto"
             height="auto"
-          />
+          /> */}
         </div>
         <div className={style.ratingCOntent}>
           <h2>{companySection?.main_title}</h2>

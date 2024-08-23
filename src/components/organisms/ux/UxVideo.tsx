@@ -3,9 +3,9 @@ import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 import { ModalForm } from "../tresci-sprzedazowe/ModalForm";
 
-
 const UxVideo = () => {
   const { screenData } = useSelector((state) => state.ux);
+  const GoodProcess = screenData.GoodProcess || {};
   const UXVideo = screenData["UX-Video"] || {};
 
   const Videotab = UXVideo.Videotab || [];
@@ -27,7 +27,10 @@ const UxVideo = () => {
         const currentTime = playerRef.current.getCurrentTime();
         const progress = (currentTime / duration) * 100;
         setProgress(progress);
-        document.documentElement.style.setProperty('--progress', `${progress}%`);
+        document.documentElement.style.setProperty(
+          "--progress",
+          `${progress}%`
+        );
       }
     }, 100);
 
@@ -64,7 +67,7 @@ const UxVideo = () => {
                 className="videoBg"
                 src="https://propozycje.owocni.pl/ux/VideoUX.98555e54.46666926.png"
               />
-              {Videotab.map((video) => (
+              {Videotab.map((video:any) => (
                 <React.Fragment key={video.id}>
                   {selectedTab === video.id && (
                     <ReactPlayer
@@ -83,13 +86,19 @@ const UxVideo = () => {
             </div>
             <div className="textWithArrow col-lg-4">
               <div className="textVideo">
-                {Videotab.map((video) => (
+                {Videotab.map((video:any) => (
                   <div
                     key={video.id}
                     className={selectedTab === video.id ? "active" : ""}
                     onClick={() => setSelectedTab(video.id)}
                   >
-                    <h3 style={{ '--progress': `${selectedTab === video.id ? progress : 0}%` }}>
+                    <h3
+                      style={{
+                        "--progress": `${
+                          selectedTab === video.id ? progress : 0
+                        }%`,
+                      }}
+                    >
                       {video.title}
                     </h3>
                   </div>
@@ -139,9 +148,14 @@ const UxVideo = () => {
           <p className="textAnimation">{UXVideo?.paragraph_5}</p>
           <a className="send-offer-button js--triggerAnimation">
             <span>
-              <span onClick={() => setIsModal(true)}> {UXVideo?.button_text}</span>
+              <span onClick={() => setIsModal(true)}>
+                {" "}
+                {UXVideo?.button_text}
+              </span>
             </span>
           </a>
+          <h2 className="uxVideoTitle ">{GoodProcess.title}</h2>
+          <p className="uxVideoPara">{GoodProcess.paragraph}</p>
         </div>
       </section>
       <ModalForm isOpen={isModal} onClose={handleModalClose} />
