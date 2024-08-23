@@ -15,7 +15,7 @@ const UxBanner = () => {
               <h1 className="titleHead">
                 <span>
                   {HeroSection?.title1}
-                  <span className="UX"> {HeroSection?.styled_title}</span>
+                  {/* <span className="UX"> {HeroSection?.styled_title}</span> */}
                 </span>
                 <br />
                 {HeroSection?.title2}

@@ -2560,7 +2560,7 @@ section.dCard {
 }
 
 .projects-custom-typed-text {
-  font-size: clamp(40px, 50px, 100px);
+  font-size: clamp(40px, 30px, 100px);
   margin-block: 100px;
   color: #dd4203;
 }
@@ -2708,6 +2708,7 @@ video.mobileVideo {
 
   #guarantee > img {
     max-width: 50%;
+    margin-inline: 50px;
   }
 
   #guarantee .rowD {
@@ -2796,6 +2797,15 @@ video.mobileVideo {
 }
 
 @media only screen and (max-width: 767px) {
+  #videoSection > :nth-child(2) #videos .videoBg {
+    width: 100%;
+    margin-left: 80px;
+  }
+  #guarantee > img {
+    max-width: 90%;
+    margin-inline: 0px;
+    margin-bottom: 50px;
+  }
   video.mobileVideo {
     display: block;
     width: 100%;
@@ -3011,6 +3021,11 @@ section.goodProcess {
   transform: rotate(10deg);
   color: #37ba9e;
 }
+.uxVideoTitle{
+  font-size: 85px;
+  margin-top: 50px;
+  font-weight: 900;
+}
 
 @media only screen and (max-width: 1360px) {
   .desktop {
@@ -3026,7 +3041,7 @@ section.goodProcess {
   }
 
   #guarantee {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   #guarantee .rowD h2 {
@@ -3111,6 +3126,12 @@ section.goodProcess {
 }
 
 @media only screen and (max-width: 768px) {
+  .uxVideoTitle{
+    font-size: 45px;
+  }
+  #WhatGet{
+    padding-inline: 30px;
+  }
   .process3 img{
     width: 100%;
   }

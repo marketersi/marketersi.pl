@@ -58,9 +58,9 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  img.leaf_img {
+  /* img.leaf_img {
     display: none;
-  }
+  } */
   .logoImg {
     width: 90%;
   }
@@ -75,5 +75,8 @@
   .wte p {
     font-size: 22px;
     width: 90%;
+  }
+  .toExpect{
+    flex-direction: column;
   }
 }

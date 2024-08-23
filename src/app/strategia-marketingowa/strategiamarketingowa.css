@@ -99,7 +99,7 @@
 .MainContentTwo {
   margin-bottom: 80px;
   background-image: url(https://images.prismic.io/marketersi/Zo0UOR5LeNNTw7vb_Untitleddesign-1-.png?auto=format,compress);
-  background-position: 650px 320px;
+  background-position: 500px 320px;
   background-repeat: no-repeat;
   background-size: 1000px;
 }
@@ -257,9 +257,9 @@ img.strategyImg {
 
 .Testimonial_Card_Content {
   background-color: white;
-  padding: 50px;
-  margin-left: -250px;
-  margin-block: 80px;
+  padding: 30px;
+  margin-left: -150px;
+  margin-block: 50px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.38) 0px 0px 50px 0px;
 }
@@ -267,8 +267,8 @@ img.strategyImg {
 .Testimonial_Card_Content_Title {
   color: #010101;
   font-family: Georgia;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 35px;
+  line-height: 1.4;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -277,7 +277,7 @@ img.strategyImg {
   background-color: var(--brand-blue);
   color: #2b2b2b;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
@@ -681,7 +681,7 @@ img.strategyImg {
 
 /* 10. WhatRecieve */
 .WhatRecieve {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .WhatRecieve_Title_One {
@@ -1888,6 +1888,7 @@ img.strategyImg {
 
   .feature img {
     height: auto;
+    width: 100% !important;
 
   }
 

@@ -11,7 +11,7 @@ const Systemically = () => {
         <div id="guaranteeWrapper">
           <div id="guarantee">
             
-            <img src={Systematically.image} alt="" className="desktop"/>
+            <img src={Systematically.image} alt="" />
 
             <div className="rowD row">
               <div className="col-xxl-7 order-xxl-1 order-2">

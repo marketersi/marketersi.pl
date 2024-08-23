@@ -28,7 +28,7 @@ const WhatToExpect = () => {
         <p>{paragraph_1}</p>
       </div>
 
-      <div className="d-flex justify-content-center align-items-center">
+      <div className="d-flex justify-content-center align-items-center toExpect">
         <img
           src={image_url_left}
           alt="feather image left"
