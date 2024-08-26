@@ -68,14 +68,14 @@ const ProjectsValue = () => {
             </p>
           </div>
         </div>
-        {galleryImage && (
+        {/* {galleryImage && (
           <img
             src={galleryImage}
             className="img-background-logop"
             alt="Jakie są najlepsze przykłady logo?"
             title="Przykłady logo dla firm o różnej działalności"
           />
-        )}
+        )} */}
       </section>
     </>
   );

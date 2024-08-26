@@ -21,13 +21,13 @@ const ImplementationEx7 = () => {
         </div>
       </div>
 
-      <div className="naming-seo-img">
+      {/* <div className="naming-seo-img">
         <img
           src={example5?.image}
           title="Logo firmy Star finance jako przykład tego jak pracują Owocni"
           alt="Nazwa dla nowej firmy na przykładzie Star finance"
         />
-      </div>
+      </div> */}
 
       <div className="container names-custom-container margin-bottom-whitespace-fix">
         <div className="row">

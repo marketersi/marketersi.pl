@@ -43,7 +43,7 @@ const Enexo = () => {
               src={EnexoData?.image}
               title="Projektowanie logo - freelancer wykonał je dla Enexo"
               alt="Wizerunek Twojej marki - freelancer czy zatrudnienie agencji?"
-              style={{ left: "-76px", position: "relative", maxWidth: "none" }}
+              style={{ position: "relative", maxWidth: "none" }}
             />
             
           </div>

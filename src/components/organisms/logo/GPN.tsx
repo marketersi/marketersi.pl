@@ -13,7 +13,7 @@ const GPN = () => {
       <section className="projects-thematic-section-blue">
         <div className="container custom-container-blue projects-over-hid">
           <div className="row">
-            <div className="col-md-12 projects-h-100"></div>
+            {/* <div className="col-md-12 projects-h-100"></div> */}
             {/* ignore */}
             <div className="col-md-12 projects-blue-section-m-text projects-rwd-hide-text2">
               <p className="theme-desc text-center projects-blue-text2">
@@ -21,29 +21,29 @@ const GPN = () => {
               </p>
             </div>
 
-            <div className="col-md-4 text-center projects-rwd-hide-img1">
+            {/* <div className="col-md-4 text-center projects-rwd-hide-img1">
               <img
                 src={companyLogo && companyLogo.length > 0  ? companyLogo[0] : ''}
                 alt="Wycena projektu logo na przykładzie profesjonalnej realizacji dla GPNT"
                 title="Cennik logo na przykładzie logo GPNT"
               />
-            </div>
+            </div> */}
 
-            <div className="col-md-4 text-center">
+            {/* <div className="col-md-4 text-center">
               <img
                 src={companyLogo && companyLogo.length > 1  ? companyLogo[1] : ''}
                 alt="Profesjonalny projekt logo wykonany przez specjalistów"
                 title="Projekt logo na przykładzie GPN-T"
               />
-            </div>
+            </div> */}
 
-            <div className="col-md-4 text-center">
+            {/* <div className="col-md-4 text-center">
               <img
                 src={companyLogo && companyLogo.length > 2  ? companyLogo[2] : ''}
                 alt="Dwa szczegółowe przykłady projektu logo na przykładzie GPN-T"
                 title="Projekty loga na przykładzie GPN-T"
               />
-            </div>
+            </div> */}
 
             <div className="col-xs-12 text-center projects-rwd-hide-img2">
               <img
@@ -59,7 +59,7 @@ const GPN = () => {
               </p>
             </div>
 
-            <div className="col-xl-3 col-md-6 col-xs-12 projects-blue-img-rwd z-index-2">
+            {/* <div className="col-xl-3 col-md-6 col-xs-12 projects-blue-img-rwd z-index-2">
               <a
                 href=" https://www.youtube.com/watch?v=a6h9eJTJmCw"
                 data-lity=""
@@ -73,9 +73,9 @@ const GPN = () => {
                   </div>
                 </div>
               </a>
-            </div>
+            </div> */}
 
-            <div className="col-xl-2 col-md-6 col-xs-12 projects-blue-img-rwd">
+            {/* <div className="col-xl-2 col-md-6 col-xs-12 projects-blue-img-rwd">
               <div className="projects-blue-cont-image1">
                 <img
                   src={productLogo && productLogo.length > 0 ? productLogo[0] : ''}
@@ -84,9 +84,9 @@ const GPN = () => {
                   title="Grafik logo prezentuje czcionki, których można użyć w logo"
                 />
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-6 col-md-12 projects-blue-img-rwd">
+            {/* <div className="col-xl-6 col-md-12 projects-blue-img-rwd">
               <div className="">
                 <img
                   src={productLogo && productLogo.length > 1 ? productLogo[1] : ''}
@@ -95,7 +95,7 @@ const GPN = () => {
                   title="Przykładowe loga do których użyty został papier firmowy"
                 />
               </div>
-            </div>
+            </div> */}
             <div className="col-md-12 projects-h-50"></div>
           </div>
         </div>

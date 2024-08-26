@@ -275,14 +275,14 @@ export default function Analysis() {
 
       {/* Card 4 */}
       <div className="Analysis_Card full mt-5">
-        {/* <div>
+        <div>
           <Image
             src={Card4?.main_image}
             alt="AnalysisImage4"
-            height={401}
-            width={652}
+            height={301}
+            width={500}
           />
-        </div> */}
+        </div>
         <div className="Analysis_Card_Content_Odd">
           <div className="Analysis_Card_Content_Title">{Card4?.title}</div>
           <div className="Analysis_Card_Content_Text">{Card4?.subtitle}</div>

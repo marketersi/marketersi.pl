@@ -34,13 +34,13 @@ const FreeShops = () => {
           </div>
         </div>
 
-        <div className="custom-container1-image">
+        {/* <div className="custom-container1-image">
           <img
             src={FreeShopsData?.mainImage}
             alt="Projektowanie logo przez profesjonalnego grafika"
             title="Projektowanie logo - grafik powinien się tym zająć"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">
@@ -55,7 +55,7 @@ const FreeShops = () => {
           </div>
         </div>
 
-        <div className="image-810-container">
+        {/* <div className="image-810-container">
           <div className="image-810">
             <img
               className=" position-relative shopImage"
@@ -65,7 +65,7 @@ const FreeShops = () => {
               style={{ left: "-363px", position: "relative", maxWidth: "none" }}
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">

@@ -23,7 +23,7 @@ const ImplementationEx4 = () => {
               <img
                 src={item.image}
                 title="Nowa nazwa dla produktu - Biomba"
-                alt="Biomba jako dobry przykład nazw produktów"
+                alt=""
               />
             </div>
 

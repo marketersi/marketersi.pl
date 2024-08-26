@@ -44,14 +44,14 @@ const StepByStep = () => {
           </div>
         </div>
 
-        {image && (
+        {/* {image && (
           <img
             src={image}
             className="img-background-logop"
             alt="Projekt logo dla nowo powstącej sieci lokali gastronomicznych"
             title="Projekt logo dla nowo powstącej sieci lokali gastronomicznych"
           />
-        )}
+        )} */}
 
         <div className="container custom-container1">
           <div className="row">
@@ -65,7 +65,7 @@ const StepByStep = () => {
               <p className="theme-desc projects-theme-desc-p projects-push-top-50">
                 {secondaryImageTitle && secondaryImageTitle}
               </p>
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 {secondaryImage && (
                   <img
                     src={secondaryImage}
@@ -74,7 +74,7 @@ const StepByStep = () => {
                     title="Przykłady tego, co potrafi projektowanie graficzne w przypadku logo"
                   />
                 )}
-              </div>
+              </div> */}
 
               <p className="theme-desc projects-theme-desc-p">
                 {secondaryImageSubtitle && secondaryImageSubtitle}
@@ -104,7 +104,7 @@ const StepByStep = () => {
           className="image-810-container"
           style={{ zIndex: 1, marginTop: 0 }}
         >
-          <div className="image-810">
+          {/* <div className="image-810">
        
             {bannerImage && (
               <img
@@ -125,7 +125,7 @@ const StepByStep = () => {
               alt="Tworzenie identyfikacji wizualnej i wizytówki"
               title="Jak stworzyć własne logo na przykładzie Appetime"
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="clearfix"></div>

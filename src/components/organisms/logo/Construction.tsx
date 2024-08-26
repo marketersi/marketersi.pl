@@ -27,14 +27,14 @@ const Construction = () => {
             </div>
           </div>
         </div>
-
+{/* 
         <div className="custom-container1-image">
           <img
             src={ConstructionData?.image_1}
             alt="Szczegółowy pomysł na logo firmy wykonany przez grafików"
             title="Przykładowe logo firmy na podstawie pomysłu"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">
@@ -56,7 +56,7 @@ const Construction = () => {
               src={ConstructionData?.image_2}
               title="Przykładowy projekt logo firmy Core"
               alt="Nowy branding zapewni firmie Core nowych klientów"
-              style={{ left: "-165px", position: "relative", maxWidth: "none" }}
+              style={{ position: "relative", maxWidth: "none" }}
             />
             
           </div>

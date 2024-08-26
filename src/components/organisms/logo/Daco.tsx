@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import "./logo.css"
 
 const Daco = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -34,11 +35,11 @@ const Daco = () => {
         <div className="image-810-container">
           <div className="image-810">
             <img
-              className="shopImage position-relative"
+              className="position-relative"
               src={DacoData?.image}
               title="Projekt logo dla firmy Daco"
               alt="Profesjonalny projekt logo dla firmy Daco"
-              style={{ left: "-308px", position: "relative", maxWidth: "none" }}
+              style={{ position: "relative", maxWidth: "none" }}
             />
           </div>
         </div>

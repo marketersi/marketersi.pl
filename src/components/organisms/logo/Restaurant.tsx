@@ -30,7 +30,7 @@ const Restaurant = () => {
           </div>
         </div>
 
-        <div className="image-810-container">
+        {/* <div className="image-810-container">
           <div className="image-810">
             <img
               className="desktop-810 position-relative"
@@ -41,7 +41,7 @@ const Restaurant = () => {
             />
            
           </div>
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">
@@ -64,7 +64,7 @@ const Restaurant = () => {
                 src={RestaurantData?.image_2}
                 title="Rzeczy ważne przy projektu logo na przykładzie Bohemii"
                 alt="Profesjonalny znak wyróżni Twoją markę "
-                style={{ left: "-75px" }}
+               
               />
             </a>
            

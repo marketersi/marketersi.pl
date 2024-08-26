@@ -29,13 +29,13 @@ const ZooGarden = () => {
           </div>
         </div>
 
-        <div className="custom-container1-image">
+        {/* <div className="custom-container1-image">
           <img
             src={ZooGardenData?.image_1}
             alt="Zmiana starego znaku firmowego poprzez projektowanie logo firmy"
             title="Prezentacja, jak projektowanie logo firmy może odmienić stary znak firmowy"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">
@@ -50,7 +50,7 @@ const ZooGarden = () => {
           </div>
         </div>
 
-        <div className="image-810-container">
+        {/* <div className="image-810-container">
           <div className="image-810">
             <img
               className="zooImage position-relative"
@@ -60,7 +60,7 @@ const ZooGarden = () => {
               style={{ left: "-291px", position: "relative", maxWidth: "none" }}
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">

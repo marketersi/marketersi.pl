@@ -10,10 +10,11 @@ const CarouselContext = createContext({
 const ClientCarousel = ({ slides, options }) => {
   const [emblaRef, embla] = useEmblaCarousel(options);
   const handleNext = () => {
-    embla.scrollNext();
+    embla && embla.scrollNext();
   };
+
   const handlePrev = () => {
-    embla.scrollPrev();
+    embla && embla.scrollPrev();
   };
 
   return (
@@ -23,13 +24,17 @@ const ClientCarousel = ({ slides, options }) => {
           <div className="embla__container">
             {slides?.map((e, index) => (
               <div className="embla__slide" key={index}>
-                {index === slides.length - 1 ? (
+               
+                {index === slides.length  ? (
                   <SlideFour />
                 ) : (
                   <SlideOne {...e} />
                 )}
               </div>
             ))}
+             <div className="embla__slide">
+            <SlideFour />
+            </div>
           </div>
         </div>
       </div>
