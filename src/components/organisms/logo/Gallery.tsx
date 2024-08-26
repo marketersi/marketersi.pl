@@ -52,7 +52,7 @@ const Gallery = ({ openModal }) => {
         <div className="container projects-custom-container1">
           <div className="row">
             <div className="col-md-12 part-sec text-center">
-              <div className="galeriaImageContainer">
+              {/* <div className="galeriaImageContainer">
                 {imageGroup &&
                   imageGroup.map((image, index) => (
                     <img
@@ -63,7 +63,7 @@ const Gallery = ({ openModal }) => {
                       title="Projekt logo na przykładzie Voyage"
                     />
                   ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

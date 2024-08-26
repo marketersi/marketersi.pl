@@ -21,13 +21,13 @@ const ImplementationEx8 = () => {
         </div>
       </div>
 
-      <div className="naming-seo-img">
+      {/* <div className="naming-seo-img">
         <img
           src={example6?.image_1}
           title="Jak podejść do nazwy dla nowej firmy? Przykład logotypu"
           alt="Victoria Coburg - dostępność domen"
         />
-      </div>
+      </div> */}
 
       <div className="container names-custom-container">
         <div className="row">
@@ -51,7 +51,7 @@ const ImplementationEx8 = () => {
         </div>
       </div>
 
-      <div className="naming-seo-img text-center coburg-imgs">
+      {/* <div className="naming-seo-img text-center coburg-imgs">
         <img
           src={example6?.image_2}
           title="Projektowanie nowej nazwy i logo - Victoria Coburg"
@@ -62,7 +62,7 @@ const ImplementationEx8 = () => {
           title="Dobra nazwa dla firmy na przykładzie Victoria Coburg"
           alt="Tworzenie nazw firm na przykładzie Victoria Coburg"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

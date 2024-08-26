@@ -172,7 +172,7 @@
 
 .teamLeftContent {
   margin: 250px 0 0 250px;
-  color: #fbbe01;
+  color: var(--brand-blue);
   font-size: 35px;
   text-align: right;
   line-height: 50px;
@@ -194,7 +194,7 @@
 }
 
 .teamsCardContent h5 span {
-  color: #fbbe01;
+  color: var(--brand-blue);
 }
 
 .teamsCardContent p {
@@ -294,7 +294,7 @@
 
 .ratingBlackCard h6 {
   font-size: 20px;
-  color: #fbbe01;
+  color: var(--brand-blue);
   margin: 50px 0 25px;
 }
 
@@ -332,7 +332,7 @@
 
 .topBtn p {
   color: white;
-  background: #fbbe01;
+  background: var(--brand-blue);
   font-weight: 500;
   font-size: 28px;
   padding: 10px 20px;
@@ -387,7 +387,7 @@
 .googleMenu ul li .playBG {
   width: 40px;
   height: 40px;
-  background-color: #fbbe01;
+  background-color: var(--brand-blue);
   border-radius: 100%;
   text-align: center;
 }
@@ -470,7 +470,7 @@
 .opinionContent h3 {
   font-size: 32px;
   font-weight: 700;
-  color: #fbbe01;
+  color: var(--brand-blue);
 }
 
 .opinionContent h4 {
@@ -482,7 +482,7 @@
 }
 
 .opinionContent h4 span {
-  background: #fbbe01;
+  background: var(--brand-blue);
   font-weight: 800;
   padding: 0 10px;
   border-radius: 20px;
@@ -533,7 +533,7 @@
 }
 
 .referenceCard p span {
-  background: #fbbe01;
+  background: var(--brand-blue);
   padding: 0 10px;
   border-radius: 20px;
   display: block;
@@ -594,7 +594,7 @@
 .personallyCard .contact a {
   font-size: 30px;
   font-weight: 600;
-  color: #fbbe01;
+  color: var(--brand-blue);
 }
 
 .personallMan {
@@ -655,7 +655,7 @@
 .googlePlay {
   width: 35px;
   height: 35px;
-  background: #fbbe01;
+  background: var(--brand-blue);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -64,7 +64,7 @@
 .opinion-box-content {
   padding: 50px 25px;
   /* width: 64%; */
-  width: 66%;
+  width: 50%;
   background-color: white;
   float: right;
   margin: 50px 0px 50px 0px;
@@ -107,7 +107,7 @@
 }
 
 .opinion-box-text {
-  font-size: 40px;
+  font-size: 35px;
   font-family: 'Georgia';
   color: rgb(81, 81, 81);
   line-height: 1.25;

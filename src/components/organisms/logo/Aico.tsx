@@ -23,13 +23,13 @@ const Aico = () => {
           </div>
         </div>
 
-        <div className="custom-container1-image">
+        {/* <div className="custom-container1-image">
           <img
             src={AicoData?.image_1}
             alt="Księga znaku - użycie w celu zaprojektowania nowego logo"
             title="Księga znaku dająca pomysł na znak firmowy"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container1">
           <div className="row">
@@ -54,7 +54,7 @@ const Aico = () => {
               src={AicoData?.image_2}
               title="Przykład pracy przy projektowaniu logo na bazie Aico"
               alt="Aico jako przykład procesu w projektowaniu logo"
-              style={{ left: "-224px", position: "relative", maxWidth: "none" }}
+              style={{ position: "relative", maxWidth: "none" }}
             />
           </div>
         </div>

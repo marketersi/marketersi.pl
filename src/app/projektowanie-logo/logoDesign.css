@@ -770,7 +770,9 @@ img.projects-main-image-logop {
   width: 810px;
   margin: auto;
 }
-
+.image-810 img{
+  width: 100%;
+}
 .desktop-810 {
   display: inline-block;
 }

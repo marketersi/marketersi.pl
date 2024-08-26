@@ -52,8 +52,8 @@ const HappyCustomers = () => {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
+                  width: "100%",
+                  height: "100%",
                   filter: "grayscale(100%)",
                   opacity: "0.5",
                 }}
@@ -73,8 +73,8 @@ const HappyCustomers = () => {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
+                  width: "100%",
+                  height: "100%",
                   filter: "grayscale(100%)",
                   opacity: "0.5",
                 }}
@@ -94,8 +94,8 @@ const HappyCustomers = () => {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
+                  width: "100%",
+                  height: "100%",
                   filter: "grayscale(100%)",
                   opacity: "0.5",
                 }}
@@ -115,8 +115,8 @@ const HappyCustomers = () => {
                 height={0}
                 sizes="100vw"
                 style={{
-                  width: "50%",
-                  height: "50%",
+                  width: "100%",
+                  height: "100%",
                   filter: "grayscale(100%)",
                   opacity: "0.5",
                 }}

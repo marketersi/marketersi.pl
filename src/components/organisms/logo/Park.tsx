@@ -28,14 +28,14 @@ const Park = () => {
               </p>
             </div>
 
-            <div className="col-md-12 text-center custom-margin-bottom-40">
+            {/* <div className="col-md-12 text-center custom-margin-bottom-40">
               <img
                 src={ParkData?.logoImage}
                 className="starelogo"
                 alt="Prezentacja projektu logo, starego"
                 title="Przykład starego projektu logo Gdańskiego Parku"
               />
-            </div>
+            </div> */}
 
             <div className="col-md-12 text-center projects-h-100">
               <p className="projects-new-blue-text text-center">
@@ -46,12 +46,12 @@ const Park = () => {
         </div>
       </section>
 
-      <img
+      {/* <img
         src={ParkData?.bannerImage}
         className="img-background-logop park-img w-100"
         alt="Nowe logo Gdańskiego Parku wykonane przez profesjonalistów"
         title="Nowy logotyp dla firmy na przykładzie nowego logo Gdańskiego Parku"
-      />
+      /> */}
     </>
   );
 };

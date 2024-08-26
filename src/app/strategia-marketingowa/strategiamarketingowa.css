@@ -1038,7 +1038,7 @@ img.strategyImg {
   color: #333333;
   font-size: 62px;
   font-weight: 700;
-  line-height: 55.8px;
+  line-height: 1.4;
   text-align: center;
   margin-bottom: 35px;
 }
@@ -1462,7 +1462,8 @@ img.strategyImg {
 }
 
 .OurClients_Slide_Media {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 1fr;
 }
 
 .OurClients_Slide_Title {
@@ -1534,7 +1535,7 @@ img.strategyImg {
   justify-content: center;
   gap: 0.52em;
   border-radius: 5.21em;
-  background-color: #ffc600;
+  background-color: var(--brand-blue);
   padding: 0.52em;
   font-weight: bold;
   box-shadow: 0px 0.15em black;
@@ -2137,7 +2138,7 @@ img.strategyImg {
 
   .Price_Title {
     font-size: 40px;
-    line-height: 45.8px;
+    line-height: 1.4;
   }
 
   .Price_Container {
