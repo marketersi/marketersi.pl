@@ -31,43 +31,35 @@ const Footer = () => {
             </div>
             <div className={style.footerCol}>
               <Row className="mb-sm-5">
-                <Col sm={3} xs={6}>
+                <Col sm={4} xs={6}>
                   <div className={style.footerRightMenu}>
-                    <h3>Fajne marki</h3>
+                    <h3>BĄDŹ widoczny</h3>
+                    <Link href="/projektowanie-ux">Tworzenie stron i design UX</Link>
+                    <Link href="/profesjonalne-nagrywanie-filmow">Profesjonalne nagrywanie filmów</Link>
+                    <Link href="/Kreatywny-montaz-video">Kreatywny montaż video</Link>
+                  </div>
+                </Col>
+                <Col sm={4} xs={6}>
+                  <div
+                    className={`${style.footerRightMenu} ${style.mobileRightMenu}`}
+                  >
+                    <h3>ZOSTAŃ zapamiętany</h3>
+                    <Link href="/tresci-sprzedazowe">Treści i hasła sprzedażowe</Link>
                     <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
-                    <Link href="/projektowanie-logo">Projektowanie logo</Link>
-                    {/* <Link href="/#">Identyfikacja spółki</Link> */}
+                    <Link href="/projektowanie">Projektowanie logo</Link>
                   </div>
                 </Col>
-                <Col sm={3} xs={6}>
-                  <div
-                    className={`${style.footerRightMenu} ${style.mobileRightMenu}`}
-                  >
-                    <h3>Sprawne strony</h3>
-                    {/* <Link href="/#">Tworzenie stron</Link> */}
-                    <Link href="/projektowanie-ux">Projektowanie UX</Link>
-                    {/* <Link href="/#">Audyt strony www</Link> */}
-                  </div>
-                </Col>
-                <Col sm={3} xs={6}>
+                <Col sm={4} xs={6}>
                   <div className={style.footerRightMenu}>
-                    <h3>Wydajny marketing</h3>
+                    <h3>ODBLOKUJ zyski</h3>
                     <Link href="/strategia-marketingowa">
-                      Strategia marketingowa
+                    Strategia marketingowa
                     </Link>
-                    {/* <Link href="/#">Działania marketingowe</Link> */}
                     <Link href="/konsultacje">Konsultacja marketingu</Link>
+                    <Link href="/">Marketing międzynarodowy</Link>
                   </div>
                 </Col>
-                <Col sm={3} xs={6}>
-                  <div
-                    className={`${style.footerRightMenu} ${style.mobileRightMenu}`}
-                  >
-                    <h3>Przekonujące treści</h3>
-                    <Link href="/tresci-sprzedazowe">Treści sprzedażowe</Link>
-                    {/* <Link href="/#">Jakościowe artykuły</Link> */}
-                  </div>
-                </Col>
+                
               </Row>
               <Row>
                 <Col sm={3}>
@@ -75,27 +67,22 @@ const Footer = () => {
                     <h3>Marketersi</h3>
                     <div className={style.footerCennik}>
                       <Link href="/Zespol">Zespół</Link>
-                      {/* <Link href="/#">Klienci</Link> */}
-                      {/* <Link href="/#">Kariera</Link> */}
                       <Link href="/kontakt-marketersi">Kontakt</Link>
                       <Link href="/cennik" className={style.CennikBrn}>
                         Cennik
                       </Link>
-                      {/* <Link href="/#">Realizacje</Link> */}
                     </div>
                   </div>
                 </Col>
                 <Col sm={9}>
                   <div className={style.footerRightMenu}>
                     <h3>Przydatne rzeczy</h3>
-                    {/* <Link href="/#">
-                      Badanie strony i marketingu przez ekspertów [Bezpłatne]
-                    </Link> */}
                     <Link href="/czy-oplaca-sie-agencja-marketingowa">
                       Policz czy Ci się to opłaca?
                     </Link>
-                    {/* <Link href="/#">Test skuteczności strony (Krótki)</Link> */}
-                    {/* <Link href="/#">Konsultacja marketingu</Link> */}
+                    <Link href="/zamow">
+                    Zamów bezpłatne badanie
+                    </Link>
                   </div>
                 </Col>
               </Row>
