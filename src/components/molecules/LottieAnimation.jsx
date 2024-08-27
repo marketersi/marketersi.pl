@@ -60,7 +60,7 @@ const LottieAnimation = ({isHovered}) => {
   const [animationData, setAnimationData] = useState(whiteLogo); // State for animation data
 
   const defaultOptions = {
-    loop: true,
+    loop: false,
     autoplay: true,
     animationData: isHovered ? blackLogo : whiteLogo,
     rendererSettings: {

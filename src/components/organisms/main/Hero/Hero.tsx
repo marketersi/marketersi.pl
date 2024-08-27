@@ -42,7 +42,18 @@ const Hero = () => {
         loop={true}
         width="100%"
         height="auto"
-        className={style.heroVideo}
+        className={`${style.heroVideo} ${style.desktop}`}
+        muted={true}
+        pip={false}
+        playsinline
+      />
+      <ReactPlayer
+        url="https://marketersi.cdn.prismic.io/marketersi/Zs2piUaF0TcGJa5e_TWARZE-1--1-.mp4"
+        playing={true}
+        loop={true}
+        width="100%"
+        height="auto"
+        className={`${style.heroVideo} ${style.mobile}`}
         muted={true}
         pip={false}
         playsinline
@@ -67,7 +78,9 @@ const Hero = () => {
                 initial="initial"
                 animate="animate"
                 variants={animationVariantsLeft}
-              ></motion.div>
+              >
+                <img src="/assets/images/play_arrow.svg" alt="" />
+              </motion.div>
             </Link>
           </div>
           {/* <div className={style.heroBottomImg}>

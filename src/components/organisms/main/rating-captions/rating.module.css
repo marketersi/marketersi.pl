@@ -116,6 +116,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .rating {
+background-color: #f4f4f4;
+  }
   .ratingImg img {
     width: 100px;
   }

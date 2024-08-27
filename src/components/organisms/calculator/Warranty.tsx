@@ -31,9 +31,9 @@ const Warranty = () => {
               {warranty?.card?.buttonText}
             </a>
           </div>
-          {/* <div className="warranty_card_img">
-            <img src={warranty?.card?.image} alt="" />
-          </div> */}
+          <div className="warranty_card_img">
+            <img src={warranty?.card?.image} alt="vb" />
+          </div>
         </div>
       </section>
     </>
