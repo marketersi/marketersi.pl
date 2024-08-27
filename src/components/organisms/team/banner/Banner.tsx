@@ -30,9 +30,9 @@ const Banner = () => {
         <div className={style.bannerHeading}>
           <h1>{herosection?.main_title}</h1>
         </div>
-        <div className={style.img20}>
+        {/* <div className={style.img20}>
           <img src={herosection?.left_image} alt="" />
-        </div>
+        </div> */}
         <div className={style.bannerBottomContent}>
           <Row>
             <Col xxl={6} lg={7} className="order-lg-1 order-2">
@@ -45,6 +45,7 @@ const Banner = () => {
             <Col xxl={6} lg={5} className="order-lg-2 order-1">
               <div className={style.BannerBotImg}>
                 {/* <img src={herosection?.right_image} alt="" /> */}
+                <img src={herosection?.left_image} alt="" />
               </div>
             </Col>
           </Row>

@@ -47,7 +47,7 @@
 .second-card {
   border: none;
   border-radius: 10px;
-  /* background: rgb(255 198 0); */
+  background: rgb(244 244 244);
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   z-index: 1;
