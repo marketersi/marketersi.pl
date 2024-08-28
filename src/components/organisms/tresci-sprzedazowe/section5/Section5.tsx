@@ -110,7 +110,7 @@ const Section5 = () => {
             <div>
               <a
                 className="copywriting-bg-white-subheader-link"
-                href="#"
+                href="https://drive.google.com/uc?authuser=0&id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&export"
                 target="_blank"
                 rel="noopener noreferrer"
               >

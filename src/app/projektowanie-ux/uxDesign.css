@@ -1461,9 +1461,11 @@ section.arrowContainer {
 }
 
 /* ------------------Video Section--------------- */
-
+.uxvideoImg{
+  width: 50%;
+}
 #videoSection {
-  padding: 0 0 100px 0;
+  padding: 0 0 0px 0;
   max-width: 1100px;
   margin-inline: auto;
 }
@@ -1525,7 +1527,6 @@ section.arrowContainer {
   padding: 50px 0;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
   position: relative;
 }
 
@@ -3238,5 +3239,8 @@ section.goodProcess {
     width: 100%;
     overflow: hidden;
     height: auto;
+  }
+  .uxvideoImg{
+    width: 100%;
   }
 }

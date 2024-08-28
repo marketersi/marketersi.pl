@@ -61,7 +61,7 @@ const UxVideo = () => {
           </p>
         </div>
         <div>
-          <div className="row">
+          {/* <div className="row">
             <div id="videos" className="col-lg-8">
               <img
                 className="videoBg"
@@ -105,9 +105,9 @@ const UxVideo = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="para">
+          {/* <div className="para">
             <img
               className="sp"
               src="https://propozycje.owocni.pl/ux/sp.995a6077.webp"
@@ -138,7 +138,8 @@ const UxVideo = () => {
               alt=""
               style={{ transform: "scale(0.5, 0.5)" }}
             />
-          </div>
+          </div> */}
+          <img src="https://images.prismic.io/marketersi/Zs63VEaF0TcGJcxA_Marketersi-10.png?auto=format,compress" alt="" className="uxvideoImg"/>
         </div>
       </section>
       <section>

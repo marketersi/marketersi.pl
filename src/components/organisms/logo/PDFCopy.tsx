@@ -64,17 +64,18 @@ const PDFCopy = () => {
               </p>
               <p className="theme-desc projects-custom-lineheight">
                 {/* to be deleted */}
-                {/* {imageSubtitle && imageSubtitle} <br /> */}
-                {/* {imageLink && imageLinkText && (
+                {imageSubtitle && imageSubtitle} <br />
+                {imageLink && imageLinkText && (
                   <a
-                    href="https://drive.google.com/uc?authuser=0&id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&export=download"
+                    href="https://drive.google.com/uc?authuser=0&id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&export"
+                    target='_blank'
                     style={{ textDecoration: 'none' }}
                   >
                     <span className="orange-link">
                       <strong>{imageLinkText}</strong>
                     </span>
                   </a>
-                )} */}
+                )}
               </p>
             </div>
           </div>
