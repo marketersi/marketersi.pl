@@ -60,16 +60,16 @@ const AnatomyGuide = () => {
                     alt="Jak nazwać firmę? Prasa o naszych efektach"
                   />
                   {/* to be deleted */}
-                  {/* <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
+                  <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
                   Jeśli chcesz możesz pobrać darmowy egzemplarz.
                     <a
                       href="/files/resources/Broszura-NazwaB.pdf"
-                      className="red-link"
+                      className="red-link d-block"
                       target="_blank"
                     >
                       Kliknij tutaj (PDF)
                     </a>
-                  </p> */}
+                  </p>
                 </div>
                 <div className="col-lg-6 projects-lprasa-container p-0">
                   <img
