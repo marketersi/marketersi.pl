@@ -524,8 +524,9 @@ body {
   margin-inline: auto;
   margin-top: 20px;
 }
-video{
-  filter: contrast(0.998);
+video {
+  -webkit-filter: contrast(0.979);
+  filter: contrast(0.979);
 }
 @media only screen and (max-width: 1024px) {
   .brandImgBtn {

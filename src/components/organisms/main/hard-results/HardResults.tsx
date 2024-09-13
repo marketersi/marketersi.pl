@@ -19,25 +19,26 @@ const Entrepreneur = () => {
           <div className={style.Content}>
             <h2 className={style.hardMB}>{section4?.title}</h2>
             <h3 className={style.gradientBG}>- {section4?.subtitle}</h3>
-            <img src={section4?.image_url} alt="" className={style.hardImg} />
+            {/* <img src={section4?.image_url} alt="" className={style.hardImg} /> */}
             <p>{section4?.paragraph_1}</p>
             <p>{section4?.paragraph_2}</p>
           </div>
 
           <Row className="mb-5">
-            <Col lg={6} className="order-lg-1 order-2">
+            <Col lg={12} >
               <h4>{section5?.quote}</h4>
             </Col>
-            <Col lg={6} className="order-lg-2 order-1">
+            <Col lg={12} >
               <ReactPlayer
                 url={section5?.video_url}
                 playing={true}
                 loop={true}
-                width="100%"
+                width="75%"
                 height="auto"
                 muted={true}
                 pip={false}
                 playsinline
+                style={{margin:"0 auto"}}
               />
             </Col>
           </Row>
@@ -45,21 +46,23 @@ const Entrepreneur = () => {
             <p>{section5?.paragraph_1}</p>
             <p>{section5?.paragraph_2}</p>
           </div>
-          <Row className="mt-5 pt-5 mb-5 pb-5">
-            <Col lg={7}>
+          <Row className="mt-5 pt-5 mb-5 pb-5 helmet">
+            <Col lg={12}>
               <ReactPlayer
                 url={section6?.video_url}
                 playing={true}
                 loop={true}
-                width="100%"
+                width="75%"
                 height="auto"
                 muted={true}
                 pip={false}
                 playsinline
+                className="helmetVideo"
+                style={{margin: "0 auto"}}
               />
             </Col>
-            <Col lg={5}>
-              <h4 className="text-end">{section6?.quote}</h4>
+            <Col lg={12}>
+              <h4 >{section6?.quote}</h4>
             </Col>
           </Row>
 

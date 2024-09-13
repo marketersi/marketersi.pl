@@ -25,11 +25,11 @@ export default function Testimonial() {
     <div className="Testimonial content">
       <div className="Testimonial_Card feature">
         <div>
-          <Image
+          <img
             src={testimonial?.image_url}
             alt="TestimonialImage"
-            width={700}
-            height={640}
+            style={{width: "700px", height: "auto"}}
+            
           />
         </div>
         <div className="Testimonial_Card_Content">
