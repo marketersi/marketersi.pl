@@ -20,6 +20,8 @@ h6 {
   position: relative;
   max-width: 95vw;
   z-index: -2;
+  margin: 0 auto;
+  display: block;
 }
 
 #header > div div {
@@ -2857,6 +2859,9 @@ video.mobileVideo {
     font-size: clamp(40px, 50px, 100px);
     margin-block: 80px;
     color: #dd4203;
+  }
+  .UXheroVideo {
+    width: 100% !important;
   }
 }
 

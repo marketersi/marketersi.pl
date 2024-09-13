@@ -276,11 +276,10 @@ export default function Analysis() {
       {/* Card 4 */}
       <div className="Analysis_Card full mt-5">
         <div>
-          <Image
+          <img
             src={Card4?.main_image}
             alt="AnalysisImage4"
-            height={301}
-            width={500}
+            style={{ width: '600px', height: 'auto' }}
           />
         </div>
         <div className="Analysis_Card_Content_Odd">

@@ -154,12 +154,12 @@
 
 .navbar:hover .navRightMenu {
   color: rgb(9, 9, 9);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .navbar:hover .navRightMenu a {
   color: rgb(9, 9, 9);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .dropMenu {
@@ -477,14 +477,14 @@
     top: 130px;
   }
   .dropBtn {
-    font-size: 16px;
+    font-size: 14px;
   }
   .navbar {
     padding: 20px 20px;
   }
   .navRightMenu {
     display: inline;
-    font-size: 16px;
+    font-size: 14px;
   }
   .headerRightBtn {
     padding: 10px 10px;
