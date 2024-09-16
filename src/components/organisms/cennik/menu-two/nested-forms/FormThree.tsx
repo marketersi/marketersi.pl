@@ -96,7 +96,7 @@ const FormThree = ({ form }) => {
           />
           <input
             type="text"
-            placeholder="Telefon"
+            placeholder="Nr. telefonu (opcjonalnie)"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />

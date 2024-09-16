@@ -73,7 +73,7 @@
 
 .additional-input-container input {
   padding: 8px 16px;
-  outline-color: rgb(210, 30, 0);
+  outline-color: var(--brand-blue);
   border: none;
   border-color: hsl(0, 0%, 80%);
   font-size: 18px;
