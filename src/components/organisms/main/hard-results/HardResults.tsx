@@ -5,13 +5,14 @@ import style from '../main.module.css';
 import ReactPlayer from 'react-player';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const Entrepreneur = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section4, section5, section6, section7 } =
     imageswithdescription || {};
-
+    const osClass = useOsClass();
   return (
     <div>
       <Container>
@@ -28,7 +29,7 @@ const Entrepreneur = () => {
             <Col lg={12} >
               <h4>{section5?.quote}</h4>
             </Col>
-            <Col lg={12} >
+            <Col lg={12} className={osClass}>
               <ReactPlayer
                 url={section5?.video_url}
                 playing={true}
@@ -47,7 +48,7 @@ const Entrepreneur = () => {
             <p>{section5?.paragraph_2}</p>
           </div>
           <Row className="mt-5 pt-5 mb-5 pb-5 helmet">
-            <Col lg={12}>
+            <Col lg={12} className={osClass}>
               <ReactPlayer
                 url={section6?.video_url}
                 playing={true}
@@ -73,16 +74,7 @@ const Entrepreneur = () => {
             </p>
             <p>{section6?.paragraph_2}</p>
             <p>{section6?.paragraph_3}</p>
-            <ReactPlayer
-              url={section7?.video_url_1}
-              playing={true}
-              loop={true}
-              width="100%"
-              height="auto"
-              muted={true}
-              pip={false}
-              playsinline
-            />
+            <div className={osClass}></div>
             <h2 className={style.brandingHeading}>{section7?.title}</h2>
             <p>{section7?.paragraph_1}</p>
             {/* <ReactPlayer

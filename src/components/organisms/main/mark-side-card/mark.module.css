@@ -66,7 +66,15 @@
     margin-top: 30px;
     display: block;
 }
-
+.win-player video {
+    -webkit-filter: contrast(0.999);
+    filter: contrast(0.999);
+  }
+  
+  .mac video {
+    -webkit-filter: contrast(0.979);
+    filter: contrast(0.979);
+  }
 /* .markImg1{
     width: 65% !important;
 } */

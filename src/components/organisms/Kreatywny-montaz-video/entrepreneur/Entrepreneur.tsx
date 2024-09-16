@@ -3,17 +3,20 @@ import ReactPlayer from 'react-player';
 import { Container } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import style from '../main.module.css';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const Entrepreneur = () => {
   const { screenData } = useSelector((state) => state.videoEditing);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section1 } = imageswithdescription || {};
 
+  const osClass = useOsClass();
   return (
     <div>
       <Container>
         <div className={style.enter}>
-          <ReactPlayer
+        <div className={osClass}>
+        <ReactPlayer
             url={section1?.image_url}
             playing={true}
             loop={true}
@@ -24,6 +27,7 @@ const Entrepreneur = () => {
             pip={false}
             playsinline
           />
+            </div>
           <div className={style.Content}>
             <h2>{section1?.title}</h2>
             <p>{section1?.subtitle_1}</p>

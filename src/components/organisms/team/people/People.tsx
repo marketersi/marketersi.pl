@@ -5,6 +5,7 @@ import style from '../team.module.css';
 import ReactPlayer from 'react-player';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const People = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
@@ -21,6 +22,7 @@ const People = () => {
   const navigateToPriceListDziałania = () => {
     router.push('/cennik?type=Działania');
   };
+  const osClass = useOsClass();
 
   return (
     <>
@@ -56,6 +58,7 @@ const People = () => {
             stroke="#E3E3E3"
           ></path>
         </svg>
+        <div className={osClass}>
         <ReactPlayer
           url={section11?.section11_video}
           playing={true}
@@ -66,6 +69,7 @@ const People = () => {
           className={style.heroVideo}
           playsinline
         />
+        </div>
         <div className={style.peopleVideoContent}>
           <a
             className={style.projectBtn}

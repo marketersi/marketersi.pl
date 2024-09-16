@@ -6,13 +6,14 @@ import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import Image from 'next/image';
 import style from './hero.module.css';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const Hero = () => {
   const { screenData } = useSelector((state) => state.videoRecording);
   const { heroSection } = screenData;
-
+  const osClass = useOsClass();
   return (
-    <div>
+    <div className={osClass}>
       <ReactPlayer
         url={heroSection?.background_video}
         playing={true}

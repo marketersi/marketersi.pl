@@ -3,16 +3,18 @@ import style from "../main.module.css";
 import ReactPlayer from "react-player";
 import { Container, Image } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import useOsClass from "@/components/molecules/useOsClass";
 
 const Entrepreneur = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section1 } = imageswithdescription || {};
-
+  const osClass = useOsClass();
   return (
     <div>
       <Container>
         <div className={style.enter}>
+          <div className={osClass}>
           <ReactPlayer
             url={section1?.image_url}
             playing={true}
@@ -24,6 +26,7 @@ const Entrepreneur = () => {
             pip={false}
             playsinline
           />
+          </div>
           <div className={style.Content}>
             <h2>{section1?.title}</h2>
             <p>{section1?.subtitle_1}</p>

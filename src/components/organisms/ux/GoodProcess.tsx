@@ -1,3 +1,4 @@
+import useOsClass from "@/components/molecules/useOsClass";
 import React from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
@@ -6,7 +7,7 @@ const GoodProcess = () => {
   const { screenData } = useSelector((state) => state.ux);
   const GoodProcess = screenData.GoodProcess || {};
   const { stage_1, stage_2, stage_3 } = screenData.GoodProcess?.Stages || {};
-
+  const osClass = useOsClass();
   return (
     <>
     
@@ -15,7 +16,7 @@ const GoodProcess = () => {
           <div className="number">1</div>
         </div>
         <div className="process1">
-          <div className="one ">
+          <div className={`one ${osClass}`}>
             <ReactPlayer
               url={stage_1?.video_url}
               playing={true}
@@ -35,7 +36,7 @@ const GoodProcess = () => {
           <div className="number">2</div>
         </div>
         <div className="process2">
-        <div className="two ">
+        <div className={`two ${osClass}`}>
           <ReactPlayer
             url={stage_2?.video_url}
             playing={true}

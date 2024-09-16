@@ -5,12 +5,13 @@ import style from "../main.module.css";
 import ReactPlayer from "react-player";
 import { Container, Image } from "react-bootstrap";
 import { useSelector } from "react-redux";
+import useOsClass from "@/components/molecules/useOsClass";
 
 const Entrepreneur = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section2, section3 } = imageswithdescription || {};
-
+  const osClass = useOsClass();
   return (
     <div>
       <Container>
@@ -43,6 +44,7 @@ const Entrepreneur = () => {
             <p>
               {section2?.paragraph_4}
             </p>
+            <div className={osClass}>
             <ReactPlayer
               url={section3?.video_url}
               playing={true}
@@ -54,6 +56,7 @@ const Entrepreneur = () => {
               pip={false}
               playsinline
             />
+              </div>
             <p>
               {section3?.paragraph_1}
             </p>
