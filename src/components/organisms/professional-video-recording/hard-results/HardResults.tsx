@@ -5,13 +5,15 @@ import style from '../main.module.css';
 import ReactPlayer from 'react-player';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const HardResult = () => {
   const { screenData } = useSelector((state) => state.videoRecording);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section4, section5, section6, section7 } =
     imageswithdescription || {};
-
+    const osClass = useOsClass();
+    
   return (
     <div>
       <Container>
@@ -28,7 +30,7 @@ const HardResult = () => {
             <Col lg={6} className="order-lg-1 order-2">
               <h4>{section5?.quote}</h4>
             </Col>
-            <Col lg={6} className="order-lg-2 order-1">
+            <Col lg={6} className={`order-lg-2 order-1 ${osClass}`}>
               <ReactPlayer
                 url={section5?.video_url}
                 playing={true}
@@ -46,7 +48,7 @@ const HardResult = () => {
             <p>{section5?.paragraph_2}</p>
           </div>
           <Row className="mt-5 pt-5 mb-5 pb-5">
-            <Col lg={7}>
+            <Col lg={7} className={osClass}>
               <ReactPlayer
                 url={section6?.video_url}
                 playing={true}
@@ -70,6 +72,7 @@ const HardResult = () => {
             </p>
             <p>{section6?.paragraph_2}</p>
             <p>{section6?.paragraph_3}</p>
+            <div className={osClass}>
             <ReactPlayer
               url={section7?.video_url_1}
               playing={true}
@@ -80,8 +83,10 @@ const HardResult = () => {
               pip={false}
               playsinline
             />
+            </div>
             <h2 className={style.brandingHeading}>{section7?.title}</h2>
             <p>{section7?.paragraph_1}</p>
+            <div className={osClass}>
             <ReactPlayer
               url={section7?.video_url_3}
               playing={true}
@@ -92,6 +97,7 @@ const HardResult = () => {
               pip={false}
               playsinline
             />
+            </div>
             <p>{section7?.paragraph_2}</p>
             <p>{section7?.paragraph_3}</p>
             {/* <ReactPlayer

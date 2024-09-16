@@ -5,12 +5,14 @@ import style from '../main.module.css';
 import ReactPlayer from 'react-player';
 import { Container } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const Numbers = () => {
   const { screenData } = useSelector((state) => state.videoEditing);
   const imageswithdescription = screenData?.imageswithdescription;
   const { section2, section3 } = imageswithdescription || {};
 
+  const osClass = useOsClass();
   return (
     <div>
       <Container>
@@ -25,6 +27,7 @@ const Numbers = () => {
             <p>{section2?.line_3}</p>
             <p>{section2?.paragraph_3}</p>
             <p>{section2?.paragraph_4}</p>
+            <div className="osClass">
             <ReactPlayer
               url={section3?.video_url}
               playing={true}
@@ -36,6 +39,7 @@ const Numbers = () => {
               pip={false}
               playsinline
             />
+            </div>
             <p>{section3?.paragraph_1}</p>
             <p>{section3?.paragraph_2}</p>
             <p>{section3?.paragraph_3}</p>

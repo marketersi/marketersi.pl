@@ -11,6 +11,7 @@ import { useRouter } from "next/navigation";
 import { ToastContainer } from "react-toastify";
 import BounceLoader from "react-spinners/BounceLoader";
 import "./contact.css";
+import useOsClass from "@/components/molecules/useOsClass";
 
 const ContactScreen = () => {
   const { isLoading, screenData, contactUsResponse, isContactUsLoading } =
@@ -44,7 +45,7 @@ const ContactScreen = () => {
       router.push("/dziekujemy");
     }
   }, [contactUsResponse?.status]);
-
+const osClass = useOsClass();
   return (
     <>
       {isLoading ? (
@@ -57,8 +58,8 @@ const ContactScreen = () => {
             <div className="container">
               <div className="row">
                 <div className="col-lg-6 Form_content_section">
+                  <div className={osClass}>
                   <ReactPlayer
-                    // url="/assets/images/contact/Serce2_lpslwb.webm"
                     url="https://marketersi.cdn.prismic.io/marketersi/ZoZe9x5LeNNTwyEm_StarsF4F4F4v2.mp4"
                     playing={true}
                     loop={true}
@@ -67,6 +68,7 @@ const ContactScreen = () => {
                     className="bg_video"
                     playsinline
                   />
+                  </div>
                   <p className="first_sect_p">{contact_us?.sub_title}</p>
                   <h1 className="first_heading_txt">
                     {contact_us?.main_title}

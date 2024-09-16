@@ -1,11 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import ReactPlayer from 'react-player';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const UxBanner = () => {
   const { screenData } = useSelector((state) => state.ux);
   const HeroSection = screenData.HeroSection || {};
-
+  const osClass = useOsClass();
   return (
     <>
       <section>
@@ -45,7 +46,7 @@ const UxBanner = () => {
                 <span>ę</span>
               </span> */}
             </div>
-            <div className="col-xxl-12  order-1">
+            <div className={`col-xxl-12  order-1 ${osClass}`}>
               <ReactPlayer
                 muted={true}
                 playing={true}

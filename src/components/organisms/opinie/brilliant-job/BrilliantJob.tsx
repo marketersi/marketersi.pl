@@ -9,9 +9,12 @@ import {
   CarouselContext,
 } from "../../strategia-marketingowa/ClientCarouselNext";
 import { useContext } from "react";
+import useOsClass from "@/components/molecules/useOsClass";
 
 const SlideOne = () => {
   const { handleNext } = useContext(CarouselContext);
+
+  const osClass = useOsClass();
   return (
     <>
       <Row>
@@ -31,7 +34,7 @@ const SlideOne = () => {
             </h3>
             <div className={style.jobReview}>
               <Row>
-                <Col sm={2}>
+                <Col sm={2} className={osClass}>
                   <ReactPlayer
                     url="https://owocni.pl/assets/nasi-klienci/video/Iglarki-logo.mp4"
                     playing={true}
@@ -84,7 +87,7 @@ const SlideTwo = () => {
             </h3>
             <div className={style.jobReview}>
               <Row>
-                <Col sm={2}>
+                <Col sm={2} className={osClass}>
                   <ReactPlayer
                     url="https://owocni.pl/assets/nasi-klienci/video/Iglarki-logo.mp4"
                     playing={true}

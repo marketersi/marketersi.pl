@@ -4,6 +4,7 @@ import ReactPlayer from 'react-player';
 import { Variants, motion } from 'framer-motion';
 import style from './video.module.css';
 import { useSelector } from 'react-redux';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const Video = () => {
   const { screenData } = useSelector((state) => state.videoRecording);
@@ -40,6 +41,7 @@ const Video = () => {
   const closePopup = () => {
     setPopupOpen(false);
   };
+  const osClass = useOsClass();
   return (
     <>
       <motion.div
@@ -48,6 +50,7 @@ const Video = () => {
         whileInView="onscreen"
         variants={slideAnimationTop}
       >
+        <div className={osClass}>
         <ReactPlayer
           url={brandSection?.banner_video}
           playing={true}
@@ -58,6 +61,7 @@ const Video = () => {
           pip={false}
           playsinline
         />
+        </div>
         <div className={style.youtubeIcon} onClick={openPopup}>
           <svg
             className="h-[60%] w-full"
@@ -75,7 +79,7 @@ const Video = () => {
 
       {isPopupOpen && (
         <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content">
+          <div className={`popup-content ${osClass}`}>
             <ReactPlayer
               url={brandSection?.banner_video}
               playing={true}

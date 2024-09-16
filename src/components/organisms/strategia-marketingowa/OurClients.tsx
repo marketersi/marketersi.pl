@@ -3,9 +3,11 @@ import { useContext } from 'react';
 import Marquee from 'react-fast-marquee';
 import ReactPlayer from 'react-player/file';
 import { ClientCarousel, CarouselContext } from './ClientCarousel';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const SlideOne = () => {
   const { handleNext } = useContext(CarouselContext);
+  const osClass = useOsClass();
   return (
     <>
       {/* Slide 1 */}
@@ -26,7 +28,7 @@ const SlideOne = () => {
               <span className="YellowMarkSlide">Genialna robota.”</span>
             </div>
             <div className="OurClients_Slide_Media">
-              <div className="OurClients_Slide_Media_Video">
+              <div className={`OurClients_Slide_Media_Video ${osClass}`}>
                 <ReactPlayer
                   url={
                     '/assets/images/strategiamarketingowa/OurClientsVideo1.mp4'
@@ -72,6 +74,7 @@ const SlideOne = () => {
 };
 const SlideTwo = () => {
   const { handleNext } = useContext(CarouselContext);
+  const osClass = useOsClass();
   return (
     <>
       {/* Slide 2 */}
@@ -93,7 +96,7 @@ const SlideTwo = () => {
               <span className="YellowMarkSlide">to musiało się nam udać.</span>
             </div>
             <div className="OurClients_Slide_Media">
-              <div className="OurClients_Slide_Media_Video">
+              <div className={`OurClients_Slide_Media_Video ${osClass}`}>
                 <ReactPlayer
                   url={
                     '/assets/images/strategiamarketingowa/OurClientsVideo2.mp4'

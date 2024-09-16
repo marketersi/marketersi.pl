@@ -3,11 +3,12 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 import "./reviewCard.css";
+import useOsClass from "@/components/molecules/useOsClass";
 
 const ReviewCard = () => {
   const { screenData } = useSelector((state) => state.opinion);
   const BrilliantJob = screenData.BrilliantJob || [];
-
+  const osClass = useOsClass();
   return (
     <div className="review">  
     <div className="review_container">
@@ -28,7 +29,7 @@ const ReviewCard = () => {
           </div>
         </div>
         <div className="rc_review">{BrilliantJob[0]?.review}</div>
-        <div className="rc_video_container">
+        <div className={`rc_video_container ${osClass}`}>
           <ReactPlayer
             muted={true}
             playing={true}

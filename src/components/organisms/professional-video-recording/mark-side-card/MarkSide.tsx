@@ -7,12 +7,13 @@ import ReactPlayer from 'react-player';
 import Link from 'next/link';
 import { Variants, motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const MarkSide = () => {
   const { screenData } = useSelector((state) => state.videoRecording);
   const companySection = screenData.companySection || {};
   const companyCard = screenData.companyCard || [];
-
+  const osClass = useOsClass();
   const links1 = [
     {
       label: 'Nazwa dla firmy',
@@ -67,7 +68,7 @@ const MarkSide = () => {
             <Card data={companyCard[0]} links={links1} />
           </div>
         </Col>
-        <Col lg={4}>
+        <Col lg={4} className={osClass}>
           <ReactPlayer
             url={companySection?.image_2}
             playing={true}

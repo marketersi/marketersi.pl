@@ -1,17 +1,20 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './mark.module.css';
 import { Row, Col, Image } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import Link from 'next/link';
 import { Variants, motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
+import useOsClass from '@/components/molecules/useOsClass';
 
 const MarkSide = () => {
   const { screenData } = useSelector((state) => state.home);
   const companySection = screenData.companySection || {};
   const companyCard = screenData.companyCard || [];
+
+  const osClass = useOsClass();
 
   const links1 = [
     {
@@ -64,16 +67,17 @@ const MarkSide = () => {
         <Col lg={4}>
           <div className={style.mark}>
             <Image
+            className={osClass}
               src={companySection?.image_1}
               alt="rating image"
               width="auto"
               height="auto"
-              className={style.markImg1}
+              // className={style.markImg1}
             />
             <Card data={companyCard[0]} links={links1} />
           </div>
         </Col>
-        <Col lg={4}>
+        <Col lg={4} className={osClass}>
           <ReactPlayer
             url={companySection?.image_2}
             playing={true}
