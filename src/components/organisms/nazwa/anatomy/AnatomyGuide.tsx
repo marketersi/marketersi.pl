@@ -63,7 +63,7 @@ const AnatomyGuide = () => {
                   <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
                   Jeśli chcesz możesz pobrać darmowy egzemplarz.
                     <a
-                      href="/files/resources/Broszura-NazwaB.pdf"
+                      href="https://marketersi.cdn.prismic.io/marketersi/ZufO-bVsGrYSvYd5_Zabezpieczony-MARKETERSI-EbookYoutube.pdf"
                       className="red-link d-block"
                       target="_blank"
                     >

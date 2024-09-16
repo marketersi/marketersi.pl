@@ -110,13 +110,14 @@ const PriceListScreen = () => {
                                 ...buttonStyle,
                                 backgroundColor:
                                   isRed === 1
-                                    ? '#f0a0a0'
+                                    ? '#00BFFF'
+                                    // ? '#f0a0a0'
                                     : buttonStyle.backgroundColor,
                                 color:
                                   isRed === 1 ? 'white' : buttonStyle.color,
                                 border:
                                   isRed === 1
-                                    ? '1px solid red'
+                                    ? '1px solid #00BFFF'
                                     : buttonStyle.border,
                               }}
                             >
@@ -135,13 +136,13 @@ const PriceListScreen = () => {
                                 ...buttonStyle,
                                 backgroundColor:
                                   isRed === 2
-                                    ? '#f0a0a0'
+                                    ? '#00BFFF'
                                     : buttonStyle.backgroundColor,
                                 color:
                                   isRed === 2 ? 'white' : buttonStyle.color,
                                 border:
                                   isRed === 2
-                                    ? '1px solid red'
+                                    ? '1px solid #00BFFF'
                                     : buttonStyle.border,
                               }}
                             >
@@ -162,13 +163,13 @@ const PriceListScreen = () => {
                                 ...buttonStyle,
                                 backgroundColor:
                                   isRed === 3
-                                    ? '#f0a0a0'
+                                    ? '#00BFFF'
                                     : buttonStyle.backgroundColor,
                                 color:
                                   isRed === 3 ? 'white' : buttonStyle.color,
                                 border:
                                   isRed === 3
-                                    ? '1px solid red'
+                                    ? '1px solid #00BFFF'
                                     : buttonStyle.border,
                               }}
                             >
@@ -186,13 +187,13 @@ const PriceListScreen = () => {
                                 ...buttonStyle,
                                 backgroundColor:
                                   isRed === 4
-                                    ? '#f0a0a0'
+                                    ? '#00BFFF'
                                     : buttonStyle.backgroundColor,
                                 color:
                                   isRed === 4 ? 'white' : buttonStyle.color,
                                 border:
                                   isRed === 4
-                                    ? '1px solid red'
+                                    ? '1px solid #00BFFF'
                                     : buttonStyle.border,
                               }}
                             >
