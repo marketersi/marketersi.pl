@@ -8,7 +8,6 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/home/page";
 import style from "./hero.module.css";
-import useOsClass from "@/components/molecules/useOsClass";
 
 const Hero = () => {
   const { screenData } = useSelector((state: RootState) => state.home);
@@ -33,11 +32,21 @@ const Hero = () => {
       controls.start("hidden");
     }
   }, [controls, inView]);
-  const osClass = useOsClass();
+
   return (
     <div>
       <div className={style.HerVideoOverlay}></div>
-      <div className={osClass}></div>
+      <ReactPlayer
+        url={heroSection?.background_video}
+        playing={true}
+        loop={true}
+        width="100%"
+        height="auto"
+        className={`${style.heroVideo} ${style.desktop}`}
+        muted={true}
+        pip={false}
+        playsinline
+      />
       <ReactPlayer
         url="https://marketersi.cdn.prismic.io/marketersi/Zs2piUaF0TcGJa5e_TWARZE-1--1-.mp4"
         playing={true}

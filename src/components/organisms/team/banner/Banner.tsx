@@ -11,6 +11,8 @@ const Banner = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { herosection } = screenData;
 const  osClass = useOsClass();
+
+
   return (
     <div className={style.banner}>
       <div className={style.zespolVideo}>
