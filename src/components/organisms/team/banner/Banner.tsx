@@ -10,11 +10,22 @@ import useOsClass from '@/components/molecules/useOsClass';
 const Banner = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { herosection } = screenData;
-  const osClass = useOsClass();
+const  osClass = useOsClass();
   return (
     <div className={style.banner}>
       <div className={style.zespolVideo}>
-        <div className={osClass}></div>
+        <div className={osClass}>
+        <ReactPlayer
+          url={herosection?.background_video}
+          playing={true}
+          loop={true}
+          muted={true}
+          width="100%"
+          height="auto"
+          playsinline
+          className={style.bannerVideo}
+        />
+        </div>
       </div>
       <div className={style.overlay}></div>
 
