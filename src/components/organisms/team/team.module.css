@@ -709,6 +709,7 @@
 
   .teamContent {
     padding: 0 20px;
+    margin: 40px auto 0;
   }
 
   .bannerBottomContent img {
@@ -730,6 +731,7 @@
   .teamContent p {
     font-size: 22px;
     line-height: 40px;
+    margin: 0;
   }
 
   .personalCard {
