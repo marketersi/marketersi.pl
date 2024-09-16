@@ -110,7 +110,7 @@ const Section5 = () => {
             <div>
               <a
                 className="copywriting-bg-white-subheader-link"
-                href="https://drive.google.com/uc?authuser=0&id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&export"
+                href="https://marketersi.cdn.prismic.io/marketersi/ZufO-bVsGrYSvYd5_Zabezpieczony-MARKETERSI-EbookYoutube.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
