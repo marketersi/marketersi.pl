@@ -169,7 +169,7 @@
   z-index: 11111;
   width: 100%;
   left: 0;
-  top: 150px;
+  top: 130px;
   box-shadow: none;
   height: 90vh;
   padding: 50px 0;
@@ -196,17 +196,17 @@
 }
 
 .headerMenu h3 {
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 300;
   color: #c6c6c6;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .headerMenu a {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #484848;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
   text-decoration: none;
 }
@@ -340,116 +340,7 @@
   display: none;
 }
 
-/* ---------------------hover animations -------------------------------- */
-/* .navigation{
-  position: relative;
-  z-index: 11;
-}
-.navbar{
-  position: relative;
-  overflow: hidden;
-}
-.hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 14px;
-  background: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  animation-name: fadeFromTop; 
-  animation-duration: 300ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
 
-.navbar:hover .hover {
-  opacity: 1; 
-  animation-name: fadeFromBottom; 
-}
-
-.navbar:not(:hover) .hover {
-  animation-name: fadeFromTop; 
-}
-
-@keyframes fadeFromTop {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes fadeFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-} */
-/* .navbar{
-  overflow: hidden;
-  z-index: 11111;
-  position: relative;
-}
-.dropMenu {
-  background: #fff;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  opacity: 0;
-  animation-name: fadeFromTop; 
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-.headerDrop1:hover .dropMenu {
-  opacity: 1; 
-  display: block;
-  animation-name: fadeFromBottom; 
-  
-}
-
-.headerDrop1:not(:hover) .dropMenu {
-  animation-name: fadeFromTop; 
-}
-
-@keyframes fadeFromTop {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes fadeFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}  */
 
 /* ------------------------------------media screen-------------------------------------------------------- */
 @media screen and (max-width: 1450px) {
