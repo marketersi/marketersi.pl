@@ -49,7 +49,7 @@ const CustomerReview2 = () => {
             </div>
           </div>
 
-          <div className="col-md-12 projects-empty-opinion-box"></div>
+          {/* <div className="col-md-12 projects-empty-opinion-box"></div> */}
         </div>
       </div>
       <ModalForm isOpen={isModal} onClose={handleModalClose} />

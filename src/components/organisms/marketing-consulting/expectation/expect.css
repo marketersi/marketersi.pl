@@ -79,4 +79,8 @@
   .toExpect{
     flex-direction: column;
   }
+  .leaf_img_right {
+display: none;
+  }
+  
 }
