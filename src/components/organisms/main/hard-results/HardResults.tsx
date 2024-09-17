@@ -76,7 +76,8 @@ const Entrepreneur = () => {
             <p>{section6?.paragraph_3}</p>
             <div className={osClass}>
             <ReactPlayer
-              url={section7?.video_url_1}
+              // url={section7?.video_url_1}
+              url={section6?.video_url}
               playing={true}
               loop={true}
               width="100%"
@@ -85,6 +86,20 @@ const Entrepreneur = () => {
               pip={false}
               playsinline
             />
+            <ReactPlayer
+                // url={section6?.video_url}
+                // url={section7?.video_url_1}
+                url="https://marketersi.cdn.prismic.io/marketersi/ZulT-rVsGrYSvbDr_ZjIQfEMTzAJOCdrt_MariaBilal2-1-.mp4"
+                playing={true}
+                loop={true}
+                width="75%"
+                height="auto"
+                muted={true}
+                pip={false}
+                playsinline
+                className="helmetVideo"
+                style={{margin: "0 auto"}}
+              />
             </div>
             <h2 className={style.brandingHeading}>{section7?.title}</h2>
             <p>{section7?.paragraph_1}</p>

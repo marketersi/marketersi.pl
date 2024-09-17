@@ -594,4 +594,13 @@ video {
   .OurClients_Slide {
     padding-inline: 30px;
   }
+  .android video{
+    -webkit-filter: contrast(0.999);
+    filter: contrast(0.999);
+  }
+  
+  .iphone video {
+    /* -webkit-filter: contrast(0.979); */
+    filter: contrast(0.999);
+  }
 }

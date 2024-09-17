@@ -270,7 +270,7 @@ img.strategyImg {
   font-size: 35px;
   line-height: 1.4;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .Testimonial_Card_Content_Button {
@@ -283,6 +283,8 @@ img.strategyImg {
   text-align: center;
   padding: 25px 20px;
   border: none;
+  margin: 0 auto;
+  display: block;
 }
 
 /* 8. ResultMax */

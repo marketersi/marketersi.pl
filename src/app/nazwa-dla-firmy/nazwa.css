@@ -43,7 +43,7 @@
   width: auto;
   border: 1px solid var(--brand-blue);
   background-color: var(--brand-blue);
-  margin-top: 40px;
+  margin-top: 0px;
   color: white;
 }
 
@@ -444,7 +444,9 @@ section.projects-gray-opinion-4 {
   width: 100%;
   height: auto;
 }
-
+.projects-empty-opinion-box {
+  display: none;
+}
 /* ------------------------------------media screen------------------------------- */
 @media only screen and (max-width: 1024px) {
   .nazwa_footer_Time_btn {
