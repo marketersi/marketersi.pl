@@ -485,6 +485,10 @@ body {
     font-size: 20.6px;
     padding-inline: 10px;
   }
+  .OurClients_Marquee.full.mobile {
+    margin-top: -100px;
+    margin-bottom: 140px;
+}
 }
 
 /* Brand Carousal Button */

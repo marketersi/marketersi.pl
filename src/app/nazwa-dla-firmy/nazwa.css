@@ -580,9 +580,7 @@ section.projects-gray-opinion-4 {
   .nazwa_footer_bottom_left {
     display: none !important;
   }
-  .PDF-d-book {
-    display: none;
-  }
+
   .PDF-m-book {
     display: block;
   }
@@ -804,5 +802,8 @@ section.projects-gray-opinion-4 {
   }
   .nazwa_footer_bottom_right {
     gap: 10px;
+  }
+  .names-container-Litery {
+    padding: 50px 10px 1px 10px;
   }
 }
