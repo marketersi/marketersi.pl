@@ -418,3 +418,9 @@
 .nazwa_cardtwo_text {
   color: #b7bcc1;
 }
+
+@media (max-width: 768px) {
+  .naming-seo-img img{
+    max-width: 93%;
+  }
+}

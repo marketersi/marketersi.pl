@@ -1637,7 +1637,10 @@ img.strategyImg {
   width: 100%;
   object-fit: contain;
 }
-
+.StrategyActionImage img {
+  width: 100%;
+  height: auto;
+}
 /* -----------------------------------------media screen ------------------------------------------------- */
 @media only screen and (max-width: 1360px) {
   .MainHeading_Container {
@@ -1681,6 +1684,8 @@ img.strategyImg {
   .Testimonial_Card_Content {
     margin-left: 0;
     margin-block: 0px;
+    max-width: 800px;
+    margin-inline: auto;
   }
 
   .Analysis_Card {
