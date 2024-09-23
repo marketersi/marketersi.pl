@@ -22,7 +22,7 @@ const Footer = () => {
               </div>
               <div className={style.footerBrandLogo}>
                 <Image
-                  src="https://images.prismic.io/marketersi/Zok7Ex5LeNNTw2Za_Marketersi-2.png?auto=format,compress"
+                  src="https://images.prismic.io/marketersi/ZvEEw7VsGrYSvqPY_Footer-brand-logo.png?auto=format,compress"
                   alt="My Image"
                   width="100%"
                   height="auto"

@@ -18,6 +18,10 @@ const MarkSide = () => {
 
   const links1 = [
     {
+      label: 'Tworzenia stron i design UX',
+      path: '/projektowanie-ux',
+    },
+    {
       label: 'Profesjonalne nagrywanie filmów',
       path: '/profesjonalne-nagrywanie-filmow',
     },
@@ -25,25 +29,21 @@ const MarkSide = () => {
       label: 'Kreatywny montaż video',
       path: '/Kreatywny-montaz-video',
     },
-    {
-      label: 'Tworzenia stron i design UX',
-      path: '/projektowanie-ux',
-    },
   ];
   const links2 = [
     {
-      label: 'Nazwa dla firmy',
-      path: '/nazwa-dla-firmy',
+      label: 'Treści i hasła sprzedażowe',
+      path: '/tresci-sprzedazowe',
     },
     {
       label: 'Projektowanie logo',
       path: '/projektowanie-logo',
     },
-
     {
-      label: 'Treści i hasła sprzedażowe',
-      path: '/tresci-sprzedazowe',
+      label: 'Nazwa dla firmy',
+      path: '/nazwa-dla-firmy',
     },
+
   ];
   const links3 = [
     {
@@ -64,21 +64,10 @@ const MarkSide = () => {
   return (
     <div>
       <Row className="m-0">
-        <Col lg={4}>
-          <div className={style.mark}>
-            <Image
-            className={osClass}
-              src={companySection?.image_1}
-              alt="rating image"
-              width="auto"
-              height="auto"
-              // className={style.markImg1}
-            />
-            <Card data={companyCard[0]} links={links1} />
-          </div>
-        </Col>
         <Col lg={4} className={osClass}>
-          <ReactPlayer
+          
+            
+            <ReactPlayer
             url={companySection?.image_2}
             playing={true}
             loop={true}
@@ -89,7 +78,20 @@ const MarkSide = () => {
             pip={false}
             playsinline={true}
           />
+            <Card data={companyCard[0]} links={links1} />
           
+        </Col>
+        <Col lg={4} >
+        <div className={style.mark}>
+        <Image
+            className={osClass}
+              src={companySection?.image_1}
+              alt="rating image"
+              width="auto"
+              height="auto"
+              // className={style.markImg1}
+            />
+            </div>
           <Card data={companyCard[1]} links={links2} />
         </Col>
         <Col lg={4}>
