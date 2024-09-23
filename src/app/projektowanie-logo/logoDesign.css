@@ -846,13 +846,13 @@ img.projects-main-image-logop {
 
 @media (min-width: 1115px) {
   .projects-thematic-section-blue {
-    padding-top: 270px;
+    padding-top: 100px;
   }
 }
 
 .projects-thematic-section-blue {
-  background-color: #021934;
-  min-height: 500px;
+  /* background-color: #021934; */
+  /* min-height: 500px; */
   position: relative;
   z-index: 1;
   padding-bottom: 50px;
@@ -883,6 +883,8 @@ img.projects-main-image-logop {
 
 .projects-blue-img-rwd {
   text-align: right;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .projects-blue-video {

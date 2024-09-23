@@ -27,8 +27,8 @@ const Construction = () => {
             </div>
           </div>
         </div>
-{/* 
-        <div className="custom-container1-image">
+
+        {/* <div className="custom-container1-image">
           <img
             src={ConstructionData?.image_1}
             alt="Szczegółowy pomysł na logo firmy wykonany przez grafików"

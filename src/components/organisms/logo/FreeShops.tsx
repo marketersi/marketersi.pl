@@ -34,13 +34,14 @@ const FreeShops = () => {
           </div>
         </div>
 
-        {/* <div className="custom-container1-image">
+        <div className="custom-container1-image">
           <img
+          className="w-100"
             src={FreeShopsData?.mainImage}
             alt="Projektowanie logo przez profesjonalnego grafika"
             title="Projektowanie logo - grafik powinien się tym zająć"
           />
-        </div> */}
+        </div>
 
         <div className="container custom-container1">
           <div className="row">

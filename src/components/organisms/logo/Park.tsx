@@ -22,26 +22,26 @@ const Park = () => {
               </p>
             </div>
 
-            <div className="col-md-12 text-center projects-h-50">
+            {/* <div className="col-md-12 text-center projects-h-50">
               <p className="projects-new-blue-logo text-center">
                 <strong>Stare logo</strong>
               </p>
-            </div>
+            </div> */}
 
-            {/* <div className="col-md-12 text-center custom-margin-bottom-40">
+            <div className="col-md-12 text-center custom-margin-bottom-40">
               <img
                 src={ParkData?.logoImage}
-                className="starelogo"
+                className=" w-100 starelogo"
                 alt="Prezentacja projektu logo, starego"
                 title="Przykład starego projektu logo Gdańskiego Parku"
               />
-            </div> */}
+            </div>
 
-            <div className="col-md-12 text-center projects-h-100">
+            {/* <div className="col-md-12 text-center projects-h-100">
               <p className="projects-new-blue-text text-center">
                 <strong>Nowe logo</strong>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

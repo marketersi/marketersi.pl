@@ -86,11 +86,11 @@ const GPN = () => {
               </div>
             </div> */}
 
-            {/* <div className="col-xl-6 col-md-12 projects-blue-img-rwd">
+            {/* <div className="col-xl-12 col-md-12 projects-blue-img-rwd">
               <div className="">
                 <img
-                  src={productLogo && productLogo.length > 1 ? productLogo[1] : ''}
-                  className="projects-blue-cont-image2 z-index-1"
+                  src={productLogo && productLogo.length > 2 ? productLogo[2] : ''}
+                  className="w-100 mt-5 projects-blue-cont-image2 z-index-1"
                   alt="Materiały firmowe z przykładami identyfikacji wizualnej"
                   title="Przykładowe loga do których użyty został papier firmowy"
                 />
