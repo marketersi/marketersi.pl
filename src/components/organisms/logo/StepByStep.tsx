@@ -65,16 +65,16 @@ const StepByStep = () => {
               <p className="theme-desc projects-theme-desc-p projects-push-top-50">
                 {secondaryImageTitle && secondaryImageTitle}
               </p>
-              {/* <div className="mb-4">
+              <div className="mb-4">
                 {secondaryImage && (
                   <img
                     src={secondaryImage}
-                    className="appetime-img-p appetime-img"
+                    className="appetime-img-p appetime-img w-100"
                     alt="Wykonanie specjalnego projektu logo"
                     title="Przykłady tego, co potrafi projektowanie graficzne w przypadku logo"
                   />
                 )}
-              </div> */}
+              </div>
 
               <p className="theme-desc projects-theme-desc-p">
                 {secondaryImageSubtitle && secondaryImageSubtitle}
@@ -84,7 +84,7 @@ const StepByStep = () => {
               </p>
             </div>
 
-            <div
+            {/* <div
               className="col-md-12 projects-custom-text-inside-img-2 projects-appetime-hide-img z-index-2"
               style={{ marginBottom: "-430px" }}
             >
@@ -96,7 +96,7 @@ const StepByStep = () => {
               <p className="signature projects-rwd-push">
                 {bannerImageSubtitle && bannerImageSubtitle}
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 

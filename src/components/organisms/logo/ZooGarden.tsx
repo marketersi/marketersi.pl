@@ -29,13 +29,14 @@ const ZooGarden = () => {
           </div>
         </div>
 
-        {/* <div className="custom-container1-image">
+        <div className="custom-container1-image">
           <img
+           className="w-100"
             src={ZooGardenData?.image_1}
             alt="Zmiana starego znaku firmowego poprzez projektowanie logo firmy"
             title="Prezentacja, jak projektowanie logo firmy może odmienić stary znak firmowy"
           />
-        </div> */}
+        </div>
 
         <div className="container custom-container1">
           <div className="row">
