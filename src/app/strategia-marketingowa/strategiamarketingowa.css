@@ -2000,7 +2000,7 @@ img.strategyImg {
   .Analysis2_Dropdown_Image2 img,
   .Analysis_Card img,
   .Analysis3_Dropdown_Image img {
-    width: 100%;
+    width: 100% !important;
     height: auto;
   }
 

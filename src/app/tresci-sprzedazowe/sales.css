@@ -1515,7 +1515,10 @@ section#sec1 {
     margin-top: 30px;
   }
   .copywriter-image-box-4 {
-    margin-top: -40px;
+    margin-top: 0px;
+}
+.copywriter-image-box-5 {
+  margin-top: 30px;
 }
 }
 
