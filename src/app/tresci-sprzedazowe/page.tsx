@@ -69,9 +69,9 @@ const Sales = () => {
       <div className="copywriter-custom-subheader-2 text-center">
         {projectSection1?.sub_title}
       </div>
-      <Orange />
-      <Motus />
-      <OptionBox2 optionBox2={customerReview} />
+      {/* <Orange /> */}
+      {/* <Motus /> */}
+      {/* <OptionBox2 optionBox2={customerReview} /> */}
       <Concept366 />
       <OptionBox2 optionBox2={customerReview3} />
       <Robo />

@@ -15,14 +15,14 @@ const Concept366 = () => {
           alt=""
         />
 
-        <div className="copywriter-text-center copywriter-standard-mt-80">
+        {/* <div className="copywriter-text-center copywriter-standard-mt-80">
           <img
             src={projectSection4?.logo_image}
             className="smaller-logos"
             title="Przykład realizacji przez agencję reklamową dla klienta"
             alt="Reklama dla klienta Owocnych"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container2">
           <div className="row">
@@ -44,9 +44,9 @@ const Concept366 = () => {
           </div>
         </div>
 
-        <div className="copywriter-custom-img-text text-center copywriter-standard-mtb-40">
+        {/* <div className="copywriter-custom-img-text text-center copywriter-standard-mtb-40">
           {projectSection4?.title_2}
-        </div>
+        </div> */}
 
         <div className="container custom-container2">
           <div className="row">
@@ -64,19 +64,20 @@ const Concept366 = () => {
             title="Copywriterzy Owocnych przygotowali hasła reklamowe"
             alt="Przykład realizacji tekstów reklamowych dla klienta"
             layout="responsive"
+            style={{maxWidth:"1000px", width:"100%", margin: "50px auto 0"}}
           />
         </div>
 
-        <div className="copywriter-text-center copywriter-standard-mtb-40">
+        {/* <div className="copywriter-text-center copywriter-standard-mtb-40">
           <img
             src={projectSection4?.image_2}
             title="Hasło reklamowe dla klienta Owocnych"
             alt="Jeden z tekstów reklamowych na strony internetowe"
             layout="responsive"
           />
-        </div>
+        </div> */}
 
-        <div className="container custom-container2">
+        {/* <div className="container custom-container2">
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-ikony-theme">
@@ -84,18 +85,18 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="copywriter-text-center">
+        {/* <div className="copywriter-text-center">
           <img
             src={projectSection4?.image_3}
             title="Zrealizowane teksty reklamowe dla klienta Owocnych"
             alt="Content marketing - przykład"
             layout="responsive"
           />
-        </div>
+        </div> */}
 
-        <div className="container custom-container2 copywriter-standard-mt-80">
+        {/* <div className="container custom-container2 copywriter-standard-mt-80">
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-custom-img-text">
@@ -107,9 +108,9 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="copywriter-bg-10" style={{ position: "relative" }}>
+        {/* <div className="copywriter-bg-10" style={{ position: "relative" }}>
           <img
             className="copywriter-fotel"
             src={projectSection4?.right_image}
@@ -117,7 +118,7 @@ const Concept366 = () => {
             alt="Przykładowe zrealizowane dotychczas teksty na stronę"
           />
 
-        </div>
+        </div> */}
 
         <br />
 
