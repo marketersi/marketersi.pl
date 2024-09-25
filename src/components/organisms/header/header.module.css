@@ -365,6 +365,9 @@
 .blackMenu .navRightMenu a{
   color: white;
 }
+.blackMenu:hover .headerLeftBtn a{
+  color: black;
+}
 /* ------------------------------------media screen-------------------------------------------------------- */
 @media screen and (max-width: 1450px) {
   .headerRightBtn {
