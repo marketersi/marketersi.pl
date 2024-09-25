@@ -303,7 +303,7 @@
 .mobileMenuList li a {
   color: #202020;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -320,7 +320,7 @@
   background: transparent;
   width: 100%;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .menuItem {
