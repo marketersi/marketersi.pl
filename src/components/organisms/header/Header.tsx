@@ -241,6 +241,11 @@ const Header = () => {
                         Konsultacja marketingu
                         </Link>
                       </div>
+                      <div className={style.menuItem}>
+                        <Link onClick={handleMenuItemClick} href="/">
+                        Marketing międzynarodowy
+                        </Link>
+                      </div>
                      
                     </div>
                   )}
