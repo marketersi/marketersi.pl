@@ -71,7 +71,7 @@ const Hero = () => {
             <Link href="/cennik">
               <button>Wyceń projekt</button>
             </Link>
-            <Link href="/konsultacje">
+            <Link href="/konsultacje" className={style.umow}>
               <span>Umów konsultację</span>
               <motion.div
                 className={style.heroPlay}
