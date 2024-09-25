@@ -22,14 +22,14 @@
   background: transparent;
   color: white;
   box-shadow: 0px 3px 0px #c1c1c1;
-  border: 2px solid #eaeaea;
+  border: 2px solid black;
   font-weight: 500;
   font-size: 16px;
 }
 
 .headerLeftBtn a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .headerLeftBtn:hover a,
@@ -159,7 +159,7 @@
 
 .navbar:hover .navRightMenu a {
   color: rgb(9, 9, 9);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dropMenu {
@@ -353,8 +353,17 @@
   gap: 5px;
 }
 /* ---------------------------------new menu css-------------------------- */
-.blackMenu{
-  /* background-color: red; */
+.blackMenu .headerLeftBtn{
+  border-color: white;
+}
+.blackMenu .headerLeftBtn a{
+  color: white;
+}
+.blackMenu .dropBtn{
+  color: white;
+}
+.blackMenu .navRightMenu a{
+  color: white;
 }
 /* ------------------------------------media screen-------------------------------------------------------- */
 @media screen and (max-width: 1450px) {

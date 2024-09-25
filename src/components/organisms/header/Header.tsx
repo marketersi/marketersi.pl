@@ -14,24 +14,26 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import LottieAnimation from "../../molecules/LottieAnimation";
+import {usePathname} from 'next/navigation';
+
 
 const Header = () => {
-  const [currentPath, setCurrentPath] = useState(""); // State to hold the current path
-  const [isMounted, setIsMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
+  const pathname = usePathname(); // Hook to get the current path
+  console.log('pathname ===>', pathname);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const { pathname } = window.location; // Get the current path from window
-      setCurrentPath(pathname); // Set the path in state
-      setIsMounted(true); // Set mounted state to true
-    }
-  }, []);
+  // switch - if-else condition to check the screen name from path
+  const screenName = pathname.split("/").pop();
+  console.log('screenName ===>', screenName);
 
-  console.log("Current Path:==============>", currentPath);
+  const specialScreens = ['', 'Zespol',]; 
+
+  const specialPage = specialScreens.includes(screenName);
+
+
 
 
   const handleMouseEnter = () => {
@@ -73,19 +75,12 @@ const Header = () => {
   };
 
 
-   // Conditionally apply class based on the current path
-   const isHomePage = currentPath === "/";
-   const isContactPage = currentPath === "/kontakt-marketersi";
-   const isCennikPage = currentPath === "/cennik";
  
-   // Don't render the header if not mounted to avoid router errors
-   if (!isMounted) return null;
+
   return (
     <>
      <header
-        className={`${style.navbar} ${isCennikPage ? style.blackMenu : ""} ${
-          isContactPage ? style.contactPage : ""
-        } ${isCennikPage ? style.cennikPage : ""}`}
+        className={`${style.navbar} ${specialPage ? style.blackMenu : ""} `}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -112,7 +107,7 @@ const Header = () => {
 
                 <div className={style.headerDrop1} onMouseLeave={handleCloseDropdown}>
                   <div className={style.dropBtn} onMouseEnter={handleOpenDropdown}>
-                    Przydatne rzeczy <span></span>
+                    Przydatne <br /> rzeczy <span></span>
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
                   {isDropdownOpen && (
@@ -285,9 +280,9 @@ const Header = () => {
                         >
                           Policz czy Ci się to opłaca?
                         </Link>
-                        <Link onClick={handleMenuItemClick} href="/konsultacje">
+                        {/* <Link onClick={handleMenuItemClick} href="/konsultacje">
                           Konsultacja marketingu
-                        </Link>
+                        </Link> */}
                       </div>
                       <div className={style.menuItem}>
                         <Link
