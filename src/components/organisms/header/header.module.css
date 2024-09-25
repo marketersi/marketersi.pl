@@ -50,7 +50,7 @@
 }
 
 .dropBtn {
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
@@ -130,7 +130,7 @@
 
 .navRightMenu a {
   text-decoration: none;
-  color: white;
+  color: black;
   position: relative;
 }
 
@@ -340,8 +340,22 @@
   display: none;
 }
 
-
-
+.callButton{
+  background-color: var(--brand-blue) !important;
+}
+.callButton a{
+  color: white !important;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+/* ---------------------------------new menu css-------------------------- */
+.blackMenu{
+  /* background-color: red; */
+}
 /* ------------------------------------media screen-------------------------------------------------------- */
 @media screen and (max-width: 1450px) {
   .headerRightBtn {
@@ -395,7 +409,7 @@
   }
   .nav {
     position: absolute;
-    top: 96px;
+    top: 106px;
     left: 0;
     right: 0;
     background-color: #fff;
@@ -423,4 +437,7 @@
 }
 
 @media (max-width: 768px) {
+  .nav {
+    top: 80px;
+  }
 }

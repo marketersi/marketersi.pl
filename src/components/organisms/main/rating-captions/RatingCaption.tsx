@@ -16,13 +16,30 @@ const RatingCaption = () => {
             alt="rating image"
             width="auto"
             height="auto"
+            className={style.desktop}
           />
           <Image
             src={brandSection?.brand_image2}
             alt="rating image"
             width={300}
             height="auto"
+            className={style.desktop}
           />
+          <Image
+            src={brandSection?.brand_image2}
+            alt="rating image"
+            width={300}
+            height="auto"
+            className={style.mobile}
+          />
+          <Image
+            src={brandSection?.brand_image1}
+            alt="rating image"
+            width="auto"
+            height="auto"
+            className={style.mobile}
+          />
+          
         </div>
 
         <div className={style.ratingMainImg}>

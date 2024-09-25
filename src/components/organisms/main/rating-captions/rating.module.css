@@ -91,7 +91,9 @@
   border-radius: 50px;
   display: inline-block;
 }
-
+.mobile{
+display: none;
+}
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
   .ratingImg img {
@@ -116,6 +118,12 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .mobile{
+    display: block;
+    }
+    .desktop{
+      display: none;
+      }
   .rating {
 background-color: #f4f4f4;
   }

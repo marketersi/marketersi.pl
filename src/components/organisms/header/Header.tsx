@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Col, Row, Image, Nav } from "react-bootstrap";
 import style from "./header.module.css";
 import HeaderDropDown1 from "./HeaderDropDown1";
@@ -16,9 +16,24 @@ import {
 import LottieAnimation from "../../molecules/LottieAnimation";
 
 const Header = () => {
+  const [currentPath, setCurrentPath] = useState(""); // State to hold the current path
+  const [isMounted, setIsMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const { pathname } = window.location; // Get the current path from window
+      setCurrentPath(pathname); // Set the path in state
+      setIsMounted(true); // Set mounted state to true
+    }
+  }, []);
+
+  console.log("Current Path:==============>", currentPath);
+
+
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -56,10 +71,24 @@ const Header = () => {
   const handleMenuItemClickDP = () => {
     handleCloseDropdown();
   };
+
+
+   // Conditionally apply class based on the current path
+   const isHomePage = currentPath === "/";
+   const isContactPage = currentPath === "/kontakt-marketersi";
+   const isCennikPage = currentPath === "/cennik";
+ 
+   // Don't render the header if not mounted to avoid router errors
+   if (!isMounted) return null;
   return (
     <>
-      <header className={style.navbar}  onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+     <header
+        className={`${style.navbar} ${isCennikPage ? style.blackMenu : ""} ${
+          isContactPage ? style.contactPage : ""
+        } ${isCennikPage ? style.cennikPage : ""}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         <div className={style.hover}></div>
         <div className={style.navigation}>
           <Row className="align-items-center w-100">
@@ -69,87 +98,55 @@ const Header = () => {
                   <Link href="/cennik">Cennik</Link>
                 </Button>
 
-                <div
-                  className={style.headerDrop1}
-                  onMouseLeave={handleCloseDropdown}
-                >
-                  <div
-                    className={style.dropBtn}
-                    onMouseEnter={handleOpenDropdown}
-                  >
+                <div className={style.headerDrop1} onMouseLeave={handleCloseDropdown}>
+                  <div className={style.dropBtn} onMouseEnter={handleOpenDropdown}>
                     Usługi i <br /> realizacje <span></span>
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
                   {isDropdownOpen && (
-                    <div
-                      className={style.dropMenu}
-                      onClick={handleMenuItemClickDP}
-                    >
+                    <div className={style.dropMenu} onClick={handleCloseDropdown}>
                       <HeaderDropDown1 />
                     </div>
                   )}
                 </div>
 
-                <div
-                  className={style.headerDrop1}
-                  onMouseLeave={handleCloseDropdown}
-                >
-                  <div
-                    className={style.dropBtn}
-                    onMouseEnter={handleOpenDropdown}
-                  >
-                    Przydatne
-                    <br />
-                    rzeczy
-                    <span></span>
+                <div className={style.headerDrop1} onMouseLeave={handleCloseDropdown}>
+                  <div className={style.dropBtn} onMouseEnter={handleOpenDropdown}>
+                    Przydatne rzeczy <span></span>
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
                   {isDropdownOpen && (
-                    <div
-                      className={style.dropMenu}
-                      onClick={handleMenuItemClickDP}
-                    >
+                    <div className={style.dropMenu} onClick={handleCloseDropdown}>
                       <HeaderDropDown2 />
                     </div>
                   )}
                 </div>
               </div>
             </Col>
-            <Col sm={4} >
+            <Col sm={4}>
               <Link href="/">
-                <LottieAnimation  isHovered={isHovered}/>
+                <LottieAnimation isHovered={isHovered} />
               </Link>
-              {/* <div className={style.logo}>
-                <Link href="/">
-                  <Image
-                    src="https://images.prismic.io/marketersi/984f6871-6a21-41ee-b875-ebac79cfec29_marketersi_logo.png?auto=compress,format"
-                    alt="My Image"
-                    width={300}
-                    height="auto"
-                  />
-                </Link>
-              </div> */}
             </Col>
             <Col sm={4}>
               <div className={style.rightNav}>
-                <Nav className="">
+                <Nav>
                   <Nav.Link className={style.navRightMenu}>
-                    <Link href="/Zespol">Zespół </Link>
+                    <Link href="/Zespol">Zespół</Link>
                   </Nav.Link>
                   <Nav.Link className={style.navRightMenu}>
                     <Link href="/kontakt-marketersi">Kontakt</Link>
                   </Nav.Link>
                 </Nav>
-                <motion.div whileHover={{ translateY: 5 }}>
-                  <Button className={style.headerRightBtn}>
-                    <Link href="/zamow">Zamów bezpłatne badanie</Link>
-                  </Button>
-                </motion.div>
+                <Button className={style.headerRightBtn}>
+                  <Link href="/zamow">Zamów bezpłatne badanie</Link>
+                </Button>
               </div>
             </Col>
           </Row>
         </div>
       </header>
+
       {/* --------------------------------mobile header-------------------------- */}
       <div className={style.mobileHeader}>
         <header className={style.header}>
@@ -160,7 +157,7 @@ const Header = () => {
           </Button>
           <div className={style.mobileLogo}>
             <Link href="/">
-            <LottieAnimation />
+              <LottieAnimation />
               {/* <Image
                 src="https://images.prismic.io/marketersi/984f6871-6a21-41ee-b875-ebac79cfec29_marketersi_logo.png?auto=compress,format"
                 alt="My Image"
@@ -191,6 +188,38 @@ const Header = () => {
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
+                          href="/projektowanie-ux"
+                        >
+                          Tworzenie stron i design UX
+                        </Link>
+                      </div>
+                      <div className={style.menuItem}>
+                        <Link
+                          onClick={handleMenuItemClick}
+                          href="/profesjonalne-nagrywanie-filmow"
+                        >
+                          Profesjonalne nagrywanie filmów
+                        </Link>
+                      </div>
+                      <div className={style.menuItem}>
+                        <Link
+                          onClick={handleMenuItemClick}
+                          href="/Kreatywny-montaz-video"
+                        >
+                          Kreatywny montaż video
+                        </Link>
+                      </div>
+                      <div className={style.menuItem}>
+                        <Link
+                          onClick={handleMenuItemClick}
+                          href="/tresci-sprzedazowe"
+                        >
+                         Treści i hasła sprzedażowe
+                        </Link>
+                      </div>
+                      <div className={style.menuItem}>
+                        <Link
+                          onClick={handleMenuItemClick}
                           href="/nazwa-dla-firmy"
                         >
                           Nazwa dla firmy
@@ -202,14 +231,7 @@ const Header = () => {
                           Projektowanie logo
                         </Link>
                       </div>
-                      <div className={style.menuItem}>
-                        <Link
-                          onClick={handleMenuItemClick}
-                          href="/projektowanie-ux"
-                        >
-                          Projektowanie UX
-                        </Link>
-                      </div>
+
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
@@ -218,22 +240,13 @@ const Header = () => {
                           Strategia marketingowa
                         </Link>
                       </div>
+
                       <div className={style.menuItem}>
-                        <Link
-                          onClick={handleMenuItemClick}
-                          href="/tresci-sprzedazowe"
-                        >
-                          Treści sprzedażowe
+                        <Link onClick={handleMenuItemClick} href="/konsultacje">
+                        Konsultacja marketingu
                         </Link>
                       </div>
-                      <div className={style.menuItem}>
-                        <Link
-                          onClick={handleMenuItemClick}
-                          href="/marketersi-opinie"
-                        >
-                          Opinie klientów
-                        </Link>
-                      </div>
+                     
                     </div>
                   )}
                 </div>
@@ -297,6 +310,24 @@ const Header = () => {
               <li>
                 <Link onClick={handleMenuItemClick} href="/cennik">
                   Cennik
+                </Link>
+              </li>
+              <li className={style.callButton}>
+                <Link onClick={handleMenuItemClick} href="tel:570 964 200">
+                  <svg
+                    enableBackground="new 0 0 139 139"
+                    height="25px"
+                    id="Phone"
+                    version="1.1"
+                    viewBox="0 0 139 139"
+                    width="25px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="white"
+                    // style={{ marginRight: 5 }}
+                  >
+                    <path d="M67.317,81.952c-9.284-7.634-15.483-17.054-18.742-22.414l-2.431-4.583c0.85-0.912,7.332-7.853,10.141-11.619  c3.53-4.729-1.588-9-1.588-9S40.296,19.933,37.014,17.076c-3.282-2.861-7.06-1.272-7.06-1.272  c-6.898,4.457-14.049,8.332-14.478,26.968C15.46,60.22,28.705,78.216,43.028,92.148c14.346,15.734,34.043,31.504,53.086,31.486  c18.634-0.425,22.508-7.575,26.965-14.473c0,0,1.59-3.775-1.268-7.06c-2.86-3.284-17.265-17.688-17.265-17.688  s-4.268-5.119-8.998-1.586c-3.525,2.635-9.855,8.496-11.38,9.917C84.171,92.749,73.582,87.104,67.317,81.952z" />
+                  </svg>
+                  Zadzwoń 570 964 200
                 </Link>
               </li>
             </ul>
