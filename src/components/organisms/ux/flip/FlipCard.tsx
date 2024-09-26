@@ -73,10 +73,10 @@ const FlipCard = ({
       //   </div>
       // </div>
       <div className="card">
-         <Image
+         <img
                 src={frontImageUrl}
                 alt={name}
-                layout="fill"
+                style={{width: '100%', height: 'auto'}}
               />
       </div>
     );

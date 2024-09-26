@@ -56,12 +56,7 @@
   background: transparent;
   width: 100%;
 }
-.heroBtn .umow {
-  border: 3px solid #00bfff;
-  border-radius: 50px;
-  padding: 10px 20px;
-  font-size: 18px !important;
-}
+
 
 .heroBtn button:hover {
   background: #00bfff;
@@ -317,6 +312,12 @@
   }
   .heroVideo:before {
     height: 50%;
+  }
+  .heroBtn .umow {
+    border: 3px solid #00bfff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px !important;
   }
 }
 @media screen and (max-width: 400px) {
