@@ -24,7 +24,7 @@ const HeaderDropDown2 = () => {
                   Policz czy Ci się to opłaca?
                 </Link>
                 {/* <a href="/">Test skuteczności strony (Krótki)</a> */}
-                <Link href="/konsultacje">Konsultacja marketingu</Link>
+               
               </div>
             </Col>
             {/* <Col sm={4}>
