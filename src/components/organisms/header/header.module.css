@@ -205,7 +205,7 @@
 }
 
 .headerMenu a {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   color: #484848;
   margin-bottom: 15px;
@@ -445,8 +445,8 @@
 
  
   .mobileLeftBtn {
-    box-shadow: 0px 3px 0px #ffffff;
-    border: 2px solid #ffffff;
+    box-shadow: 0px 3px 0px var(--brand-blue);
+    border: 2px solid var(--brand-blue);
   }
 }
 
