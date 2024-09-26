@@ -73,14 +73,14 @@ const Hero = () => {
             </Link>
             <Link href="/konsultacje" className={style.umow}>
               <span>Umów konsultację</span>
-              <motion.div
+              {/* <motion.div
                 className={style.heroPlay}
                 initial="initial"
                 animate="animate"
                 variants={animationVariantsLeft}
               >
                 <img src="/assets/images/play_arrow.svg" alt="" />
-              </motion.div>
+              </motion.div> */}
             </Link>
           </div>
           {/* <div className={style.heroBottomImg}>

@@ -36,7 +36,7 @@ const Personally = () => {
                   <h4>{atMarketersi.cont_title}</h4>
                   <p>{atMarketersi?.cont_name}</p>
                   <p>Tel. {atMarketersi?.cont_number}</p>
-                  <a href={`mailto:${atMarketersi?.write_to_us?.email}`}>
+                  <a href="mailto:studio@marketersi.pl">
                     {atMarketersi?.write_to_us?.text}
                   </a>
                 </div>
