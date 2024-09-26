@@ -4,7 +4,7 @@ import FlipCard from "./FlipCard";
 import "./flip.css";
 
 const Flip = () => {
-  const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  // const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const { screenData } = useSelector((state) => state.ux);
   const { cardOne, cardTwo, cardThree, cardFour } = screenData.market || {};
 
@@ -15,13 +15,13 @@ const Flip = () => {
     { ...cardFour, bgColor: "#ffc700", textColor: "#ffc700" },
   ];
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cardsData.length);
-    }, 5000);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentCardIndex((prevIndex) => (prevIndex + 1) % cardsData.length);
+  //   }, 5000);
 
-    return () => clearInterval(intervalId);
-  }, [cardsData.length]);
+  //   return () => clearInterval(intervalId);
+  // }, [cardsData.length]);
 
   return (
     <div className="flipCardContainer">
@@ -35,7 +35,7 @@ const Flip = () => {
           textColor={card.textColor}
           bgColor={card.bgColor}
           typingText={card.back_title}
-          isFlipping={currentCardIndex === index}
+          // isFlipping={currentCardIndex === index}
         />
       ))}
     </div>

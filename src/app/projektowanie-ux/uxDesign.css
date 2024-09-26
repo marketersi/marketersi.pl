@@ -2818,7 +2818,7 @@ video.mobileVideo {
     font-size: 40px;
   }
   #header > div div{
-    left: 0;
+    left: 2px;
   }
   #header > div div .titleHead .UX {
     top: -60px;
