@@ -29,12 +29,12 @@ const Flip = () => {
         <FlipCard
           key={index}
           frontImageUrl={card.image}
-          backImageUrl={card.back_image}
-          backTopImg={card.back_image_2}
+          // backImageUrl={card.back_image}
+          // backTopImg={card.back_image_2}
           name={card.text}
-          textColor={card.textColor}
-          bgColor={card.bgColor}
-          typingText={card.back_title}
+          // textColor={card.textColor}
+          // bgColor={card.bgColor}
+          // typingText={card.back_title}
           // isFlipping={currentCardIndex === index}
         />
       ))}

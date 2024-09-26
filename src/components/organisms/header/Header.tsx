@@ -143,7 +143,7 @@ const Header = () => {
       </header>
 
       {/* --------------------------------mobile header-------------------------- */}
-      <div className={style.mobileHeader}>
+      <div className={`${style.mobileHeader} ${specialPage ? style.blackMenu : ""}`}>
         <header className={style.header}>
           <Button className={style.mobileLeftBtn}>
             <Link onClick={handleMenuItemClick} href="/cennik">
