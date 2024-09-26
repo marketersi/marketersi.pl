@@ -445,8 +445,8 @@
 
  
   .mobileLeftBtn {
-    box-shadow: 0px 3px 0px #ffffff;
-    border: 2px solid #ffffff;
+    box-shadow: 0px 3px 0px var(--brand-blue);
+    border: 2px solid var(--brand-blue);
   }
 }
 
