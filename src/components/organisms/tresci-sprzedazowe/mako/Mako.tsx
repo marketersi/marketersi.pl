@@ -48,7 +48,7 @@ const Mako = () => {
 
         <div className="copywriter-text-center copywriter-standard-mt-80 copywriter-standard-mb-140">
           <img
-            className="copywriter-seo-img"
+            className="copywriter-seo-img lingu"
             src={projectSection7?.bannar_image_1}
             title="W jaki sposób copywriter pracuje nad hasłem reklamowym"
             alt="Przykłady warsztatu pracy copywritera "
@@ -74,19 +74,19 @@ const Mako = () => {
           </div>
         </div>
 
-        <div className="copywriter-text-center copywriter-standard-mtb-40 copywriter-standard-mb-80">
+        {/* <div className="copywriter-text-center copywriter-standard-mtb-40 copywriter-standard-mb-80">
           <img
             src={projectSection7?.divider_image}
             title=""
             alt=""
           />
-        </div>
+        </div> */}
 
         <div className="copywriter-custom-header-3 text-center copywriter-rwd-mtb-40">
           {projectSection7?.bannar_img_title_2}
         </div>
 
-        <div className="copywriter-text-center copywriter-standard-mtb-40">
+        {/* <div className="copywriter-text-center copywriter-standard-mtb-40">
           <img
             src={projectSection7?.bannar_image_2}
             title="Skuteczność to podstawa jeśli chodzi o usługi copywriterskie"
@@ -101,7 +101,7 @@ const Mako = () => {
             title="Tworzenie haseł reklamowych na przykładzie Mako"
             alt="Przykłądowa realizacja agencji Owocni"
           />
-        </div>
+        </div> */}
 
         <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
