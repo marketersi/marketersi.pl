@@ -135,12 +135,15 @@
   margin: 10px auto 0 auto;
 }
 .heroVideo:before {
-  background: #00000080;
+  /* background: #00000080; */
+  background: #00b3ee;
   width: 100%;
   height: 99%;
   content: '';
   position: absolute;
   z-index: 0;
+  /* background: url('https://images.prismic.io/marketersi/ZvZp-bVsGrYSwD_H_heroimg.png?auto=format,compress') no-repeat center;
+    background-size: cover; */
 }
 .mobile{
   display: none;
@@ -192,7 +195,7 @@
   }
 
   .heroVideo {
-    background: black;
+    background: #f4f4f4;
     padding: 170px 0 200px;
   }
 
@@ -251,6 +254,8 @@
   .heroVideo {
     padding: 180px 0 250px;
     top: -180px;
+    background: url('https://images.prismic.io/marketersi/ZvZp-bVsGrYSwD_H_heroimg.png?auto=format,compress') no-repeat center;
+    background-size: cover;
   }
 
   .hero {

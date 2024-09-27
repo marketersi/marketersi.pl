@@ -71,6 +71,7 @@ const FormThree = ({ form }) => {
       >
         {form?.section_4_title}
       </h2>
+      <p style={{fontSize: "20px"}}>Komu mamy je wysłać?</p>
       <div className="componentThree_input-container">
         <form onSubmit={handleSubmit}>
           <input
@@ -100,7 +101,7 @@ const FormThree = ({ form }) => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
-          <input
+          {/* <input
             type="text"
             placeholder="Strona internetowa"
             value={website}
@@ -109,7 +110,7 @@ const FormThree = ({ form }) => {
               backgroundColor: website && "#effeeb",
               outline: website && "1px solid #effeeb",
             }}
-          />
+          /> */}
           <div>
             <button className="cennikBtn" type="submit">
               Zapisz się na konsultację

@@ -147,9 +147,9 @@ const FormOne = ({ setCurrentComponent, form }) => {
         >
           {form?.section_2_title_2}
         </h2>
-        <p className={isButtonClicked && !selectedOption2 ? "red-title" : ""}>
+        {/* <p className={isButtonClicked && !selectedOption2 ? "red-title" : ""}>
           {form?.section_2_subtitle}
-        </p>
+        </p> */}
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
             options={optionsTwo}
