@@ -24,7 +24,7 @@ const Concept366 = () => {
           />
         </div> */}
 
-        <div className="container custom-container2">
+        {/* <div className="container custom-container2">
           <div className="row">
             <div className="col-md-12 text-center">
               <div className="names-client-name copywriter-black copywriter-green-underline copywriter-cname">
@@ -42,13 +42,13 @@ const Concept366 = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="copywriter-custom-img-text text-center copywriter-standard-mtb-40">
           {projectSection4?.title_2}
         </div> */}
 
-        <div className="container custom-container2">
+        {/* <div className="container custom-container2">
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-ikony-subtheme copywriter-custom-font-size copywriter-rwd-mtb-40">
@@ -56,9 +56,9 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="copywriter-text-center copywriter-rwd-mtb-40">
+        {/* <div className="copywriter-text-center copywriter-rwd-mtb-40">
           <img
             src={projectSection4?.image_1}
             title="Copywriterzy Owocnych przygotowali hasła reklamowe"
@@ -66,7 +66,7 @@ const Concept366 = () => {
             layout="responsive"
             style={{maxWidth:"1000px", width:"100%", margin: "50px auto 0"}}
           />
-        </div>
+        </div> */}
 
         {/* <div className="copywriter-text-center copywriter-standard-mtb-40">
           <img
@@ -122,13 +122,13 @@ const Concept366 = () => {
 
         <br />
 
-        <div className="copywriter-text-center copywriter-standard-mt-40">
+        {/* <div className="copywriter-text-center copywriter-standard-mt-40">
           <img
             src={projectSection5?.logo_image}
             title="Własna firma - współpraca z agencją reklamową Owocni"
             alt="Slogany reklamowe przykład współpracy"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container2">
           <div className="row">
@@ -153,7 +153,7 @@ const Concept366 = () => {
         <div className="copywriter-text-center copywriter-standard-mtb-40 copywriter-standard-mb-80 copywriter-rwd-mtb-40 content-marketing">
           <img
             src={projectSection5?.image_1}
-            className="copywriter-seo-img"
+            className="copywriter-seo-img lingu"
             title="Copywriter oferta i przykład jednej z realizacji"
             alt="Zrealizowane teksty na stronę jednego z klientów"
             layout="responsive"
@@ -173,16 +173,16 @@ const Concept366 = () => {
           </div>
         </div>
 
-        <div className="copywriter-text-center copywriter-standard-mt-40">
+        {/* <div className="copywriter-text-center copywriter-standard-mt-40">
           <img
             src={projectSection5?.bannar_image}
             title="Copywriterzy przygotowali teksty reklamowe dla studia"
             alt="Przykład prac klienta agencji marketingowej"
             layout="responsive"
           />
-        </div>
+        </div> */}
 
-        <div className="container custom-container2 copywriter-standard-mb-80">
+        {/* <div className="container custom-container2 copywriter-standard-mb-80">
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-custom-text-akuku-2 copywriter-standard-mb-40 copywriter-standard-mt-m80 new-mt-2">
@@ -193,7 +193,7 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"

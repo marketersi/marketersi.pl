@@ -34,7 +34,7 @@ const Flip = () => {
           name={card.text}
           // textColor={card.textColor}
           // bgColor={card.bgColor}
-          // typingText={card.back_title}
+          typingText={card.back_title}
           // isFlipping={currentCardIndex === index}
         />
       ))}

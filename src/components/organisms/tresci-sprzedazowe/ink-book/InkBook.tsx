@@ -16,13 +16,13 @@ const InkBook = () => {
           alt=""
         />
 
-        <div className="copywriter-text-center copywriter-standard-mt-80">
+        {/* <div className="copywriter-text-center copywriter-standard-mt-80">
           <img
             src={projectSection8?.logo_image}
             title="Logo klienta agencji Owocni"
             alt="Copywriting cena opracowania materiałów reklamowych"
           />
-        </div>
+        </div> */}
 
         <div className="container custom-container2">
           <div className="row">
@@ -53,6 +53,7 @@ const InkBook = () => {
             src={projectSection8?.bannar_image_1}
             title="Content marketing dla firmy Moko"
             alt="Przykładowe teksty reklamowe dla klienta Owocnych"
+            className="lingu"
           />
         </div>
 
@@ -60,7 +61,7 @@ const InkBook = () => {
           {qualities?.title}
         </div>
 
-        <div className="container text-center copywriter-reading-container copywriter-standard-mb-80">
+        {/* <div className="container text-center copywriter-reading-container copywriter-standard-mb-80">
           <div className="row">
             <div className="col-md-4">
               <img src={qualities?.image_1} alt="" />
@@ -83,15 +84,15 @@ const InkBook = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="copywriter-text-center">
+        {/* <div className="copywriter-text-center">
           <img
             src={qualities?.bottom_image}
             title="Reklama dla firmy Moko"
             alt="Realizacja reklamy dla Moko"
           />
-        </div>
+        </div> */}
       </section>
     </>
   );

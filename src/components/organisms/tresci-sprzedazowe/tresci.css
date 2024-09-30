@@ -388,7 +388,7 @@ contact-inputs textarea {
 .copywriter-after-img-1 {
   position: relative;
   z-index: 1;
-  margin-bottom: 283px;
+  margin-bottom: 100px;
   margin-top: 100px;
 }
 
@@ -400,7 +400,7 @@ contact-inputs textarea {
   display: none;
 }
 
-.copywriter-after-img-1:after {
+/* .copywriter-after-img-1:after {
   content: '';
   width: 500px;
   height: 620px;
@@ -413,7 +413,7 @@ contact-inputs textarea {
   background-position: left;
   z-index: -1;
   background-size: 80%;
-}
+} */
 
 .copywriter-border-870 {
   border-top: 2px solid #373737;
@@ -459,7 +459,7 @@ contact-inputs textarea {
   max-width: 315px;
 }
 
-.copywriter-after-img-2:after {
+/* .copywriter-after-img-2:after {
   content: '';
   width: 769px;
   height: 620px;
@@ -471,8 +471,13 @@ contact-inputs textarea {
   top: -80px;
   background-position: left;
   z-index: -1;
+} */
+.lingu{
+  max-width: 1000px !important;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
 }
-
 .copywriter-custom-header-3 {
   font-family: 'Georgia';
   font-size: 78px;

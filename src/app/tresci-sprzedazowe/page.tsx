@@ -72,7 +72,7 @@ const Sales = () => {
       {/* <Orange /> */}
       {/* <Motus /> */}
       {/* <OptionBox2 optionBox2={customerReview} /> */}
-      {/* <Concept366 /> */}
+      <Concept366 />
       <OptionBox2 optionBox2={customerReview3} />
       <Robo />
       <Mako />
