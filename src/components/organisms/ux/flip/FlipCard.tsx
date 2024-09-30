@@ -10,7 +10,7 @@ const FlipCard = ({
     // textColor,
     // bgColor,
     // isFlipping,
-    // typingText,
+    typingText,
   }) => {
     // const [isFlipped, setIsFlipped] = useState(false);
     // const [animateImage, setAnimateImage] = useState(false);
@@ -78,6 +78,7 @@ const FlipCard = ({
                 alt={name}
                 style={{width: '100%', height: 'auto'}}
               />
+              <h3 className="typingEffect">{typingText}</h3>
       </div>
     );
   };
