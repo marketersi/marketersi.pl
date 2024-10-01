@@ -23,7 +23,10 @@
   color: rgb(255 255 255);
   border-radius: 4px;
   width: fit-content;
-  margin: 0 auto;
+  margin: 25px auto 0;
+}
+.slider_section {
+  padding: 0 30px;
 }
 
 .ss_input-container input {
@@ -91,6 +94,7 @@
 .user-details_section p {
   font-size: 18px;
   color: rgb(45, 45, 45);
+  margin: 20px 0 30px;
 }
 
 .uds_input-container {
@@ -102,12 +106,12 @@
   padding: 8px 16px;
   margin: 0 auto 18px auto;
   border-radius: 20px;
-  width: 40%;
+  width: 50%;
   border: 1px solid rgb(201, 201, 201);
 }
 
 .form4Btn {
-  width: 40%;
+  width: 50%;
 }
 
 .user-details_section button {
