@@ -39,7 +39,7 @@ const FeedbackForm = ({ setCurrentComponent, formThree }) => {
     <div className="feedback_section">
       <form onSubmit={handleNext}>
         <h2>{formThree?.section3_title}</h2>
-        <p>{formThree?.section3_subtitle1}</p>
+        <p className="mt-3 mb-4">{formThree?.section3_subtitle1}</p>
         <textarea
           rows="5"
           cols="50"
@@ -51,7 +51,7 @@ const FeedbackForm = ({ setCurrentComponent, formThree }) => {
             outline: textAreaValue.length > 10 ? "none" : "",
           }}
         ></textarea>
-        <p className="mt-2">{formThree?.section3_textareaTitle}</p>
+        <p className="mt-4 mb-4">{formThree?.section3_textareaTitle}</p>
         <input
           type="text"
           className="fs_input"

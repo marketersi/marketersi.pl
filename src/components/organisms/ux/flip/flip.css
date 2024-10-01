@@ -1,7 +1,7 @@
 .card {
     perspective: 1000px;
     width: 270px;
-    height: 300px;
+    /* height: 300px; */
     margin: 20px;
     border: none;
     background-color: transparent;
@@ -120,11 +120,12 @@
 }
 
 .typingEffect{
-    font-size: 20px;
-    /* font-weight: 600; */
+    font-size: 18px;
+    font-weight: normal;
     color: gray;
-    text-transform: uppercase;
+    text-transform: inherit;
     margin-top: 20px;
+    line-height: 1.4;
 }
 .flipCardContainer{
     margin-top: 0px;
