@@ -78,7 +78,7 @@ const UserDetailsSection = () => {
         <div className="uds_input-container">
           <input
             type="text"
-            placeholder="Imię"
+            placeholder="Imię:"
             value={name}
             onChange={(e) => setName(e.target.value)}
             style={{
@@ -88,7 +88,7 @@ const UserDetailsSection = () => {
           />
           <input
             type="text"
-            placeholder="Email"
+            placeholder="Email:"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             style={{
@@ -98,7 +98,7 @@ const UserDetailsSection = () => {
             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           />
           <input
-            type="text"
+            type="text:"
             placeholder="Tel: (Opcjonalnie)"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}

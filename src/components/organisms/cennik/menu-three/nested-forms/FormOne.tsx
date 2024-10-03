@@ -8,12 +8,18 @@ const SliderForm = ({ setCurrentComponent }) => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
   const { formTwo } = screenData?.cardMenu?.menuThree || "";
   const { rangeArray } = screenData?.cardMenu?.menuThree?.formTwo || {};
+  const [sliderValue, setSliderValue] = useState(0); 
 
+  // const { rangeArray } = formTwo || [];
   const totalSections = rangeArray.length;
 
   const handleSliderChange = (e) => {
-    const sliderValue = e.target.value;
-    const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
+    const value = e.target.value;
+    setSliderValue(value); 
+  };
+
+  const handleSliderFinalChange = () => {
+    const calculatedSection = Math.floor((sliderValue / 110) * totalSections);
     setCurrentSection(calculatedSection);
   };
 
@@ -52,8 +58,11 @@ const SliderForm = ({ setCurrentComponent }) => {
           />
           <input
             type="range"
-            onChange={handleSliderChange}
-            value={(currentSection / (totalSections - 1)) * 100}
+            step="0.1"
+            onInput={handleSliderChange} 
+            onMouseUp={handleSliderFinalChange} 
+            onTouchEnd={handleSliderFinalChange} 
+            value={sliderValue}
             className="slider-input"
             style={{
               backgroundColor: rangeArray[currentSection]?.backgroundColor,
