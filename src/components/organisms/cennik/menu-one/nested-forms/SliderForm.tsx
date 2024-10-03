@@ -41,8 +41,13 @@ const SliderForm = ({ setCurrentComponent, formTwo }:any) => {
           {rangeArray[currentSection]?.label}
         </p>
         <div className="range_description">
-          {rangeArray[currentSection]?.description}
-        </div>
+  {rangeArray[currentSection]?.description ? (
+    rangeArray[currentSection].description.split('/').map((part, index) => (
+      <span key={index}>{part}</span>
+    ))
+  ) : null}
+</div>
+
       </div>
 
       <div className="space-between"></div>

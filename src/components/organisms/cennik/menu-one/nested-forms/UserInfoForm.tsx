@@ -75,7 +75,7 @@ const UserInfoForm = ({ formFour }) => {
         <div className="uds_input-container">
           <input
             type="text"
-            placeholder="Imię"
+            placeholder="Imię:"
             value={name}
             onChange={(e) => setName(e.target.value)}
             style={{
@@ -85,7 +85,7 @@ const UserInfoForm = ({ formFour }) => {
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Email:"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             style={{
@@ -96,7 +96,7 @@ const UserInfoForm = ({ formFour }) => {
           />
           <input
             type="text"
-            placeholder="Nr. telefonu (opcjonalnie)"
+            placeholder="Nr. telefonu: (opcjonalnie)"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
