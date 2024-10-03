@@ -51,7 +51,7 @@ const FeedbackSection = ({ setCurrentComponent }) => {
             outline: textAreaValue.length > 10 ? "none" : "",
           }}
         ></textarea>
-        <p className="mt-2">{formThree?.form3_inputTitle}</p>
+        <h2 className="mt-4 mb-4">{formThree?.form3_inputTitle}</h2>
         <input
           type="text"
           className="fs_input"

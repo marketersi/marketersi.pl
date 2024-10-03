@@ -1,20 +1,21 @@
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
-const SliderForm = ({ setCurrentComponent, formTwo }) => {
+const SliderForm = ({ setCurrentComponent, formTwo }:any) => {
   const [currentSection, setCurrentSection] = useState(0);
-
-  // const { formTwo } = screenData?.cardMenu?.menuOne || "";
-  // const { rangeArray } = screenData?.cardMenu?.menuOne?.formTwo || {};
+  const [sliderValue, setSliderValue] = useState(0); 
 
   const { rangeArray } = formTwo || [];
-
   const totalSections = rangeArray.length;
 
   const handleSliderChange = (e) => {
-    const sliderValue = e.target.value;
-    const calculatedSection = Math.floor((sliderValue / 100) * totalSections);
+    const value = e.target.value;
+    setSliderValue(value); 
+  };
+
+  const handleSliderFinalChange = () => {
+    const calculatedSection = Math.floor((sliderValue / 110) * totalSections);
     setCurrentSection(calculatedSection);
   };
 
@@ -39,7 +40,9 @@ const SliderForm = ({ setCurrentComponent, formTwo }) => {
         >
           {rangeArray[currentSection]?.label}
         </p>
-        <div className="range_description">{rangeArray[currentSection]?.description}</div>
+        <div className="range_description">
+          {rangeArray[currentSection]?.description}
+        </div>
       </div>
 
       <div className="space-between"></div>
@@ -51,8 +54,11 @@ const SliderForm = ({ setCurrentComponent, formTwo }) => {
           />
           <input
             type="range"
-            onChange={handleSliderChange}
-            value={(currentSection / (totalSections - 1)) * 100}
+            step="0.1"
+            onInput={handleSliderChange} 
+            onMouseUp={handleSliderFinalChange} 
+            onTouchEnd={handleSliderFinalChange} 
+            value={sliderValue}
             className="slider-input"
             style={{
               backgroundColor: rangeArray[currentSection]?.backgroundColor,

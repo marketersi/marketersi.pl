@@ -24,7 +24,7 @@ const FormZero = ({ setCurrentComponent }) => {
         {value ? (
           <span role="img" aria-label="selected-emoji">
             <Image
-              src={"/assets/images/strategiamarketingowa/dropdownok.png"}
+              src={"https://images.prismic.io/marketersi/ZufV4LVsGrYSvYfY_dropdownok.png?auto=format,compress"}
               alt="arrow"
               width={30}
               height={30}
@@ -32,7 +32,7 @@ const FormZero = ({ setCurrentComponent }) => {
           </span>
         ) : (
           <Image
-            src={"/assets/images/strategiamarketingowa/dropdownarrow.png"}
+            src={"https://images.prismic.io/marketersi/ZufUa7VsGrYSvYfJ_dropdownarrow.png?auto=format,compress"}
             alt="arrow"
             width={30}
             height={30}
