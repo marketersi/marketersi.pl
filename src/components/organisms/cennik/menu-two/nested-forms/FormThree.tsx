@@ -76,7 +76,7 @@ const FormThree = ({ form }) => {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Imię"
+            placeholder="Imię:"
             value={name}
             onChange={(e) => setName(e.target.value)}
             style={{
@@ -86,7 +86,7 @@ const FormThree = ({ form }) => {
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder="Email:"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             style={{
@@ -97,7 +97,7 @@ const FormThree = ({ form }) => {
           />
           <input
             type="text"
-            placeholder="Nr. telefonu (opcjonalnie)"
+            placeholder="Nr. telefonu (opcjonalnie):"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
@@ -113,7 +113,7 @@ const FormThree = ({ form }) => {
           /> */}
           <div>
             <button className="cennikBtn" type="submit">
-              Zapisz się na konsultację
+            Wyślijcie mi 3 propozycje cenowe
             </button>
           </div>
         </form>

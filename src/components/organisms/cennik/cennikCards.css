@@ -213,7 +213,6 @@ button.custom-modal-btn a {
 }
 
 input[type='range'] {
-  /* width: 100%; */
   -webkit-appearance: none;
   background: #9b8993;
   z-index: 1;
@@ -242,6 +241,9 @@ input[type='range']:active::-webkit-slider-thumb {
 input[type='range']:focus::-webkit-slider-thumb {
   box-shadow: 0 0 0 12px rgb(255, 255, 255);
 }
+
+
+
 
 /* slider range input */
 
