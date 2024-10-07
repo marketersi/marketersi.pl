@@ -93,7 +93,10 @@
   width: 60%;
   margin: auto;
 }
-
+.cennik_description{
+  display: block;
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 1024px) {
   .BtnStyle {
     width: 100%;
