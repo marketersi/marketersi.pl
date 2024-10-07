@@ -155,4 +155,11 @@ background-color: #f4f4f4;
   .ratingMainImg img {
     margin: -120px 0 -90px;
   }
+  .ratingMainImg p span {
+    font-size: 12px;
+padding: 5px 10px;
+  }
+  .ratingMainImg p  {
+    margin-top: 90px;
+  }
 }

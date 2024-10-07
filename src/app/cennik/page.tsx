@@ -85,7 +85,10 @@ const PriceListScreen = () => {
               <h2 className="mt-5 heading-style">{title}</h2>
               <div className="mt-3">
                 <p className="subheading">
-                  <span>{sub_title}</span>
+                {sub_title ? (
+        sub_title.split('/').map((part, index) => (
+                  <span className='cennik_description'  key={index}>{part.trim()}</span>
+                ))) : null}
                 </p>
               </div>
 
