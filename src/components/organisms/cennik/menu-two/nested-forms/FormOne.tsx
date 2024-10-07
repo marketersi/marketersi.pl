@@ -95,7 +95,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
     <>
       <div>
         <h2
-          className={`card-heading ${
+          className={`card-heading mb-3 ${
             isButtonClicked && !selectedOption ? "red-title" : ""
           }`}
         >
@@ -141,7 +141,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
           />
         </div>
         <h2
-          className={`card-heading mt-4 mb-2 ${
+          className={`card-heading mt-5 mb-3 ${
             isButtonClicked && !selectedOption2 ? "red-title" : ""
           }`}
         >
