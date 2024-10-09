@@ -47,13 +47,13 @@ const Competitions = () => {
           <div>
             {CompetitionData.compt_description1}
 
-            {CompetitionData.compt_description3}
+            {/* {CompetitionData.compt_description3} */}
           </div>
           <p>
             {CompetitionData.compt_description2}
           </p>
           <p>
-            {CompetitionData.compt_description3}...
+            {CompetitionData.compt_description3}
           </p>
         </div>
       </section>
