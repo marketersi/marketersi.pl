@@ -146,7 +146,8 @@ const ReferenceCardArray = [
 export default function References() {
   const { screenData } = useSelector((state) => state.opinion);
   const Reference = screenData.Reference || {};
-
+  // const ReferenceCard = screenData.Reference. || [];
+console.log(ReferenceCard, "23456789======>")
   const [startIndex, setStartIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
   const reviewsPerPage = 6;
@@ -187,10 +188,10 @@ export default function References() {
 
           <div className={style.referenceCardSec}>
             <Row className={style.rowTransition}>
-              {ReferenceCardArray.slice(
+              {Reference?.ReferenceCard?.slice(
                 startIndex,
                 showAll
-                  ? ReferenceCardArray.length
+                  ? Reference?.ReferenceCard?.length
                   : startIndex + reviewsPerPage
               ).map((e, i) => {
                 return (
