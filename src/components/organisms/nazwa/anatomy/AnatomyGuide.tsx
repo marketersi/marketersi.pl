@@ -46,7 +46,7 @@ const AnatomyGuide = () => {
       <div className="container custom-container1">
         <div className="row">
           <div className="col-md-12 projects-custom-container-second-prasa">
-            <div className="container-fluid p-0">
+            <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6 p-sm-0">
                   <p className="theme-desc projects-mq-book-fix">
@@ -61,7 +61,7 @@ const AnatomyGuide = () => {
                   />
                   {/* to be deleted */}
                   <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
-                  Jeśli chcesz możesz pobrać darmowy egzemplarz.
+                    Jeśli chcesz możesz pobrać darmowy egzemplarz.
                     <a
                       href="https://marketersi.cdn.prismic.io/marketersi/ZufO-bVsGrYSvYd5_Zabezpieczony-MARKETERSI-EbookYoutube.pdf"
                       className="red-link d-block"
