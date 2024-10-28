@@ -1,22 +1,20 @@
-import React from "react";
-import '../tresci.css'
-import { useSelector } from "react-redux";
+import React from 'react';
+import '../tresci.css';
+import { useSelector } from 'react-redux';
 
 const Mako = () => {
-
   const { isLoading, screenData } = useSelector((state) => state.sales);
   const { projects } = screenData || {};
   const { projectSection7 } = projects || {};
 
-  
   return (
     <>
       <section className="thematic-section">
-        <img
+        {/* <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           className="projects-bow-2"
           alt=""
-        />
+        /> */}
 
         <div className="copywriter-text-center copywriter-standard-mt-80">
           <img
@@ -103,11 +101,11 @@ const Mako = () => {
           />
         </div> */}
 
-        <img
+        {/* <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           className="projects-rotate-bow projects-bow-1"
           alt=""
-        />
+        /> */}
       </section>
     </>
   );

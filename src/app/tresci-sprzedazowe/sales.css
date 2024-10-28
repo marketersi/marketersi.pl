@@ -17,7 +17,7 @@ section.sales_banner {
   background-position: -1px 0px;
   z-index: -1;
 }
-.copywriter-top-section-banner img{
+.copywriter-top-section-banner img {
   width: 75%;
   float: right;
   margin-top: 100px;
@@ -661,7 +661,7 @@ img.copywriter-owocni {
 }
 
 .copywriter-green-underline:after {
-  background: linear-gradient(to right, #438d07 0%, #438d07 100%);
+  background: var(--brand-blue);
 }
 
 /* ==============================sales motus-section========================== */
@@ -814,7 +814,7 @@ section#sec1 {
     width: 100%;
     float: inherit;
     margin-top: 0px;
-}
+  }
   .copywriter-top-section-banner {
     position: relative;
     top: 0;
@@ -1144,10 +1144,10 @@ section#sec1 {
 }
 
 @media only screen and (max-width: 767px) {
-  .copywriter-ksiazka-img{
+  .copywriter-ksiazka-img {
     margin-top: 50px;
   }
-  .copywriter-custom-container-2{
+  .copywriter-custom-container-2 {
     padding: 20px;
   }
   .top-banner-title {
@@ -1511,15 +1511,15 @@ section#sec1 {
     background: black;
     padding: 50px 0 50px;
   }
-  .copywriter-image-box-3{
+  .copywriter-image-box-3 {
     margin-top: 30px;
   }
   .copywriter-image-box-4 {
     margin-top: 0px;
-}
-.copywriter-image-box-5 {
-  margin-top: 30px;
-}
+  }
+  .copywriter-image-box-5 {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
