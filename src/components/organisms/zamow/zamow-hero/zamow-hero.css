@@ -136,4 +136,12 @@
   .zh_next_btn_container p {
     display: none;
   }
+
+  .zemow-hero-input::placeholder {
+    font-size: 16px;
+  }
+
+  .zemow-hero-input {
+    font-size: 16;
+  }
 }

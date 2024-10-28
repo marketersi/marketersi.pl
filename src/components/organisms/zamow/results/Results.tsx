@@ -1,8 +1,7 @@
-import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
-import "./results.css";
-import { useSelector } from "react-redux";
-
+import React from 'react';
+import { Card, Col, Row } from 'react-bootstrap';
+import './results.css';
+import { useSelector } from 'react-redux';
 
 const Results = () => {
   const { isLoading, screenData } = useSelector((state) => state.examination);
