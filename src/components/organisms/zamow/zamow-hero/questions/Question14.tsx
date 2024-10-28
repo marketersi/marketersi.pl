@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Col, Row } from "react-bootstrap";
-import { useSelector } from "react-redux";
-import { saveAs } from "file-saver";
+import React, { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { Col, Row } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import { saveAs } from 'file-saver';
 
 const Question14 = () => {
   const { screenData } = useSelector((state) => state.examination);
@@ -11,17 +11,17 @@ const Question14 = () => {
 
   const handleDownloadPDF = async () => {
     const pdfUrl =
-      "https://marketersi.cdn.prismic.io/marketersi/ZfgO6smUzjad_UM9_marketersi.pdf";
+      'https://marketersi.cdn.prismic.io/marketersi/ZfgO6smUzjad_UM9_marketersi.pdf';
     if (pdfUrl) {
       try {
         const response = await fetch(pdfUrl);
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error('Network response was not ok');
         }
         const blob = await response.blob();
-        saveAs(blob, "brochure.pdf");
+        saveAs(blob, 'brochure.pdf');
       } catch (error) {
-        console.error("Error downloading PDF:", error);
+        console.error('Error downloading PDF:', error);
       }
     }
   };

@@ -98,6 +98,7 @@ const CustomerRating = () => {
           src={ratingSection?.rating_image_1}
           alt=""
           className="percentage-gif"
+          style={{ backgroundColor: '#f4f4f4' }}
         />
         <motion.img
           src={ratingSection?.rating_image_2}
