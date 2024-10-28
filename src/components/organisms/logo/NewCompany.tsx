@@ -27,7 +27,7 @@ const NewCompany = () => {
 
   return (
     <>
-      <div className="halfc-bottom"></div>
+      {/* <div className="halfc-bottom"></div> */}
       <section className="names-thematic-section-black names-thematic-section-black-fix">
         <div className="copywriter-ending-main-theme text-center">
           {title && title}

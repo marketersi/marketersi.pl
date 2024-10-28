@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Park = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -28,10 +28,10 @@ const Park = () => {
               </p>
             </div> */}
 
-            <div className="col-md-12 text-center custom-margin-bottom-40">
+            <div className="col-md-12 text-center custom-margin-bottom-40 image-810">
               <img
                 src={ParkData?.logoImage}
-                className=" w-100 starelogo"
+                className="w-100 starelogo"
                 alt="Prezentacja projektu logo, starego"
                 title="Przykład starego projektu logo Gdańskiego Parku"
               />

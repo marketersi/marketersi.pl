@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 const Gallery = ({ openModal }) => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -32,7 +32,7 @@ const Gallery = ({ openModal }) => {
           />
         )}
 
-        <div
+        {/* <div
           className="container projects-custom-container1 project-pbottom-30 galeria-margin-top"
           id="sec3"
         >
@@ -45,7 +45,7 @@ const Gallery = ({ openModal }) => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="clearfix"></div>
 

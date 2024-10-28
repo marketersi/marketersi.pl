@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const StepByStep = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -65,7 +65,7 @@ const StepByStep = () => {
               <p className="theme-desc projects-theme-desc-p projects-push-top-50">
                 {secondaryImageTitle && secondaryImageTitle}
               </p>
-              <div className="mb-4">
+              <div className="mb-4 image-810">
                 {secondaryImage && (
                   <img
                     src={secondaryImage}
