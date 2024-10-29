@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Concept366 = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
@@ -9,11 +9,11 @@ const Concept366 = () => {
   return (
     <>
       <section className="thematic-section">
-        <img
+        {/* <img
           src="https://images.prismic.io/marketersi/ce15d2cf-1440-47e9-a3de-1f63749c8095_luk.png?auto=compress,format"
           className="projects-bow-2"
           alt=""
-        />
+        /> */}
 
         {/* <div className="copywriter-text-center copywriter-standard-mt-80">
           <img
@@ -143,9 +143,7 @@ const Concept366 = () => {
             </div>
 
             <div className="col-md-12">
-              <p className="theme-desc">
-                {projectSection5?.description}
-              </p>
+              <p className="theme-desc">{projectSection5?.description}</p>
             </div>
           </div>
         </div>
@@ -194,13 +192,13 @@ const Concept366 = () => {
             </div>
           </div>
         </div> */}
-
+        {/* 
         <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           alt=""
           className="projects-rotate-bow projects-bow-1"
           layout="responsive"
-        />
+        /> */}
       </section>
     </>
   );

@@ -344,7 +344,7 @@ img.names-custom-image {
   margin-bottom: 50px;
 }
 .names-client-name.iglarki-cname:after {
-  background: linear-gradient(to right, #aa2e2d 0%, #aa2e2d 100%);
+  background: var(--brand-blue);
   width: 168px;
   height: 10px;
   content: '';
@@ -400,7 +400,7 @@ img.names-custom-image {
   bottom: -10px;
   left: calc(50% - 84px);
   width: 170px;
-  border-bottom: 6px solid #aa2e2d;
+  border-bottom: 6px solid var(--brand-blue);
 }
 .names-color-purple {
   color: #8d1749;
@@ -587,7 +587,7 @@ section.projects-gray-opinion-4 {
 }
 
 @media only screen and (max-width: 767px) {
-  .pnazw-page .new-wierzymy .img-wierzymy{
+  .pnazw-page .new-wierzymy .img-wierzymy {
     right: inherit;
     top: inherit;
     position: relative;

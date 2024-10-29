@@ -41,6 +41,7 @@ const Anatomy = () => {
           src={anatomy?.banner_url}
           title="Składowe tworzenia nazwy"
           alt="Przepis na dobrą nazwę"
+          style={{ boxShadow: 'none' }}
         />
       </div>
     </section>

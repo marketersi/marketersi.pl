@@ -472,11 +472,12 @@ contact-inputs textarea {
   background-position: left;
   z-index: -1;
 } */
-.lingu{
+.lingu {
   max-width: 1000px !important;
   width: 100%;
   margin: 0 auto;
   display: block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .copywriter-custom-header-3 {
   font-family: 'Georgia';
@@ -548,7 +549,7 @@ contact-inputs textarea {
 }
 
 .names-thematic-section-black {
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
 .copywriter-ending-big {
@@ -600,12 +601,12 @@ section.profit-sec {
   font-weight: 900;
   line-height: 123px;
   letter-spacing: -0.025em;
-  color: white;
+  color: black;
   margin-bottom: 50px;
 }
 
 section.black-sec-form {
-  background: black;
+  /* background: black; */
   padding: 100px 0;
 }
 
@@ -655,6 +656,8 @@ section.black-sec-form {
   background: white;
   padding: 40px;
   margin-inline: auto;
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15), 0 0 0 0 #fff,
+    inset 2px 2px 2px 0 #fff, inset -2px -2px 2px 0 #c7c7c7;
 }
 
 .inputLayout {
@@ -739,9 +742,9 @@ button.formModalCloseBtn {
 }
 
 .copywriter-custom-text-2 {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 @media screen and (max-width: 768px) {

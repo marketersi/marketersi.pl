@@ -37,19 +37,19 @@ const ImplementationExamples = () => {
       {/* <ImplementationEx6 /> */}
 
       {/* Curved Image */}
-      <img
+      {/* <img
         src="https://cdn.owocni.pl/img/single-projektowanie-nazw/luk-purple.png"
         className="cname-big-mtop-2 projects-bow-1"
         alt=""
-      ></img>
+      ></img> */}
 
       <ImplementationEx7 />
-      <img
+      {/* <img
         src="https://cdn.owocni.pl/img/single-projektowanie-nazw/luk-black.png"
         className="projects-bow-1 names-bow-bgcolor-purple"
         style={{ marginTop: '-127px' }}
         alt=""
-      ></img>
+      ></img> */}
 
       <ImplementationEx8 />
 

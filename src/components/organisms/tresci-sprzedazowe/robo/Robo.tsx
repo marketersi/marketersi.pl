@@ -1,6 +1,6 @@
-import React from "react";
-import "../tresci.css";
-import { useSelector } from "react-redux";
+import React from 'react';
+import '../tresci.css';
+import { useSelector } from 'react-redux';
 
 const Robo = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
@@ -10,11 +10,11 @@ const Robo = () => {
   return (
     <>
       <section className="thematic-section">
-        <img
+        {/* <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           className="projects-bow-2"
           alt=""
-        />
+        /> */}
 
         <div className="container custom-container2">
           <div className="row">
@@ -107,12 +107,12 @@ const Robo = () => {
             </div>
           </div>
         </div>
-
+        {/* 
         <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           alt=""
           className="projects-rotate-bow projects-bow-1"
-        />
+        /> */}
       </section>
     </>
   );

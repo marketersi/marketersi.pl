@@ -1,7 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
-
-
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const ProjectsValue = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -55,16 +53,14 @@ const ProjectsValue = () => {
         />
         <div className="projects-custom-container3">
           <div className="projects-container-textright projects-rwd-tcenter">
-            <h5 className="projects-custom-h5">
-              {imageTitle && imageTitle}
-            </h5>
+            <h5 className="projects-custom-h5">{imageTitle && imageTitle}</h5>
 
             <p className="theme-desc projects-theme-desc-p valuePara">
               {imageSubtitle && imageSubtitle}
             </p>
 
             <p className="theme-desc text-center projects-co-otrzymasz-sub projects-happy-clients-margin">
-              {galleryTitle && galleryTitle}
+              {/* {galleryTitle && galleryTitle} */}
             </p>
           </div>
         </div>

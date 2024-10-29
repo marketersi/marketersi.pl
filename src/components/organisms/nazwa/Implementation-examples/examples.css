@@ -170,6 +170,8 @@
 
 .naming-seo-img img {
   max-width: 50%;
+  /* added */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .pnazw-page .pnazw-names-quote-margin {
@@ -294,7 +296,8 @@
 
 /* 9 */
 .names-thematic-section-purple {
-  background-color: #160209;
+  /* asked to remove */
+  /* background-color: #160209; */
   padding-bottom: 150px;
 }
 
@@ -354,7 +357,7 @@
 
 /* 10 */
 .names-thematic-section-black {
-  background-color: #000000;
+  /* background-color: #000000; */
   margin-top: -50px;
 }
 
@@ -392,7 +395,7 @@
   bottom: -10px;
   left: calc(50% - 84px);
   width: 170px;
-  border-bottom: 6px solid #aa2e2d;
+  border-bottom: 6px solid var(--brand-blue);
 }
 
 .nazwa_cardone_color {
@@ -420,7 +423,7 @@
 }
 
 @media (max-width: 768px) {
-  .naming-seo-img img{
+  .naming-seo-img img {
     max-width: 93%;
   }
 }

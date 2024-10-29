@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const InkBook = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
@@ -10,11 +10,11 @@ const InkBook = () => {
   return (
     <>
       <section className="thematic-section copywriter-standard-pb-80">
-        <img
+        {/* <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           className="projects-bow-2"
           alt=""
-        />
+        /> */}
 
         {/* <div className="copywriter-text-center copywriter-standard-mt-80">
           <img

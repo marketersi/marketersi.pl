@@ -1,7 +1,7 @@
-import React from "react";
-import "./selected-projects.css";
-import { Col, Container, Row } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import React from 'react';
+import './selected-projects.css';
+import { Col, Container, Row } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 
 const SelectedProjects = () => {
   const { screenData } = useSelector((state) => state.consulting);
@@ -30,6 +30,8 @@ const SelectedProjects = () => {
           banner_image,
         } = item || {};
 
+        const showFlags = index === 0;
+
         if (index % 2 !== 0) {
           return (
             <div className="my-5" key={index}>
@@ -50,10 +52,12 @@ const SelectedProjects = () => {
                     <h2>{info}</h2>
                     <div>
                       <p>{catagory}</p>
-                      <div>
-                        <img src={flag_logo_1} className="me-1" />
-                        <img src={flag_logo_2} />
-                      </div>
+                      {showFlags && (
+                        <div>
+                          <img src={flag_logo_1} className="me-1" />
+                          <img src={flag_logo_2} />
+                        </div>
+                      )}
                     </div>
                   </div>
                 </Col>
@@ -73,10 +77,12 @@ const SelectedProjects = () => {
                     <h2>{info}</h2>
                     <div>
                       <p>{catagory}</p>
-                      <div>
-                        <img src={flag_logo_1} alt="" className="me-1" />
-                        <img src={flag_logo_2} alt="" />
-                      </div>
+                      {showFlags && (
+                        <div>
+                          <img src={flag_logo_1} alt="" className="me-1" />
+                          <img src={flag_logo_2} alt="" />
+                        </div>
+                      )}
                     </div>
                   </div>
                 </Col>
