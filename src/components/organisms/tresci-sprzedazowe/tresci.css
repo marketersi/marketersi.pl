@@ -742,9 +742,9 @@ button.formModalCloseBtn {
 }
 
 .copywriter-custom-text-2 {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 @media screen and (max-width: 768px) {

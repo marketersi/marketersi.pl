@@ -284,6 +284,8 @@ img.projects-main-image-logop {
 
 .opinion-box {
   margin-top: 85px;
+  display: flex;
+  align-items: center;
 }
 
 .opinion-box:nth-child(odd) .opinion-box-image {
@@ -1242,6 +1244,10 @@ img.zooImage.position-relative {
     max-width: 100%;
   }
 
+  .opinion-box {
+    display: block;
+  }
+
   img.projects-main-image-logop {
     max-width: 80%;
   }
@@ -1530,6 +1536,7 @@ img.zooImage.position-relative {
 
   .opinion-box {
     margin-top: 50px !important;
+    display: block;
   }
 
   .copywriter-ending-1 {

@@ -49,7 +49,7 @@ const Section5 = () => {
             <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
                 <strong>{steps?.title_1}</strong>
-                {steps?.sub_title_1}
+                <p>{steps?.sub_title_1}</p>
               </div>
               <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
                 {steps?.description_1}
@@ -60,7 +60,7 @@ const Section5 = () => {
             <div className="col-lg-6 copywriter-intro-box copywriting-hide-1 order-lg-1 order-2">
               <div className="copywriter-intro-header-left">
                 <strong>{steps?.title_2}</strong>
-                {steps?.sub_title_2}
+                <p>{steps?.sub_title_2}</p>
               </div>
               <div className="copywriter-intro-description-left copywriter-rwd-mtb-40">
                 {steps?.description_2}
@@ -89,7 +89,7 @@ const Section5 = () => {
             <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
                 <strong>{steps?.title_3}</strong> <br />
-                {steps?.sub_title_3}
+                <p>{steps?.sub_title_3}</p>
               </div>
               <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
                 {steps?.description_3}
