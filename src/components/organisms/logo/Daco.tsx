@@ -13,26 +13,26 @@ const Daco = () => {
           <div className="row">
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle projects-theme-subtitle-rwd">
-               {DacoData?.title}
+              PIEKUTKA <br/>KATOWICE
               </h5>
 
               <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
                 {DacoData?.subtitle}
               </h3>
-              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td">
+              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td mb-4 mobilelefttext">
                 {DacoData?.text1}
               </p>
-              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc mb-4 mobilelefttext">
               {DacoData?.text2}
               </p>
-              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc mobilelefttext">
               {DacoData?.text3}
               </p>
             </div>
           </div>
         </div>
 
-        <div className="image-810-container">
+        <div className="image-810-container mt-0">
           <div className="image-810">
             <img
               className="position-relative"
@@ -57,7 +57,7 @@ const Daco = () => {
           <div className="row">
             <div className="col-md-12">
               <p className="signature">{DacoData?.quoteAuthor}</p>
-              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc mt-0 mb-4 pt-3 mobilenormalfont mobilelefttextimp">
                 {DacoData?.quoteText}
               </p>
             </div>

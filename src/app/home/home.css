@@ -3,7 +3,7 @@
 /* * */
 .content {
   --gap: clamp(1rem, 6vw, 3rem);
-  --content: min(77ch, 100% - var(--gap) * 2);
+  --content: min(85ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
   --feature: minmax(0, 5rem);
   --full: minmax(var(--gap), 1fr);
@@ -29,14 +29,16 @@
 .full {
   grid-column: full;
 }
-
+.WidthContetnt{
+  max-width:1100px;
+  width: 100%;
+  margin: auto;
+  }
+  
 /* Modal */
 .Modal {
   position: absolute;
-  top: 10px;
-  left: 40px;
-  right: 40px;
-  bottom: 20px;
+  
   background-color: #161616;
 }
 .Overlay {
@@ -64,7 +66,7 @@
   line-height: 30px;
   text-align: center;
   padding-inline: 100px;
-  margin-top: -60px;
+  
 }
 .ModalCard {
   max-width: 1280px;
@@ -137,6 +139,15 @@
   border: none;
   font-size: x-large;
 }
+.bannerVideoMain{
+  position: absolute;
+  
+  margin: auto;
+  transform-origin: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* *** */
 
@@ -199,4 +210,26 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+.overflow-fulldiv {
+  overflow: hidden;
+}
+.overflow-div {
+  overflow-x: hidden;
+}
+
+.webcentertext h4{text-align: center;}
+h4.webcentertext{text-align: center;}
+
+@media screen and (max-width:767px){
+  .bannerVideoMain{
+    position: relative;
+    width: 80vw!important;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:600px){
+  .mobile-helmet .main_contentFont__BG7kb, .mobile-center.main_hardBottomContent__0Begz{text-align: center !important;}
+  
 }

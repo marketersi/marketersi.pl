@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.optonsahgasds {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  line-height: 40px !important;
+  margin-bottom: 30px !important;
+}
+.mi-btn {
+  font-size: 24px !important;
+}
+.wrapper-btn{
+  display: flex;
+  align-items: center;
+  gap:5px;
+}
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .copywriter-page .copywriter-form-div {
   text-align: center;
 }
@@ -25,14 +47,14 @@
 }
 
 .contact-form-2020 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .contact-form-2020 .header-text {
   font-size: 30px;
   line-height: 34px;
   letter-spacing: -0.025em;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #0d0701;
   text-align: left;
@@ -173,7 +195,7 @@ contact-inputs textarea {
   width: 30px;
   height: 30px;
   background: url(https://form2020.owocni.pl/img/check.svg) no-repeat;
-  content: '';
+  content: "";
   background-size: 100%;
 }
 
@@ -184,6 +206,42 @@ contact-inputs textarea {
 
 /* =============optios============== */
 .opinion-box {
+<<<<<<< HEAD
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.projects-client-opinion-p {
+  font-family: "Georgia";
+  font-size: 32px !important;
+  line-height: 40px !important;
+  font-weight: 400 !important;
+}
+
+.copywriter-blue-background {
+  background-color: var(--brand-blue);
+  color: white !important;
+  margin-top: 0px;
+    text-decoration: none;
+    background-color: #00bfff;
+    cursor: pointer;
+    padding: 8px 20px;
+    display: inline-flex;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 0 4px 0 0 var(--brand-blue-hover);
+    transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out, box-shadow .15sease-in-out;
+    border: none;
+=======
   margin-top: 85px;
 }
 
@@ -192,15 +250,16 @@ contact-inputs textarea {
 }
 
 .projects-client-opinion-p {
-  font-family: 'Arial';
+  font-family: "Arial";
   color: #e3e3e3;
   font-size: 30px;
   margin-bottom: 30px;
 }
 
-.copywriter-blue-background {
-  background-color: var(--brand-blue);
+.copywriter-green-background {
+  background-color: #438d07 !important;
   color: white !important;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 /* =============concept 366============== */
@@ -209,6 +268,8 @@ contact-inputs textarea {
   margin-top: -1px;
 }
 
+<<<<<<< HEAD
+=======
 .copywriter-standard-mt-80 {
   margin-top: 100px;
 }
@@ -218,12 +279,17 @@ contact-inputs textarea {
   margin-bottom: 60px;
 }
 
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .copywriter-ikony-subtheme {
   font-size: 36px;
   letter-spacing: -0.01em;
   line-height: 40px;
-  font-family: 'RobotoLight';
+  font-family: "RobotoLight";
+<<<<<<< HEAD
+  max-width: 700px;
+=======
   max-width: 500px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-ikony-theme {
@@ -231,25 +297,33 @@ contact-inputs textarea {
   letter-spacing: -0.01em;
   line-height: 76px;
   margin-bottom: 30px;
-  font-family: 'RobotoLight';
+  font-family: "RobotoLight";
   text-align: center;
 }
 
 .copywriter-standard-mt-80 {
+<<<<<<< HEAD
+  margin-top: 0px;
+=======
   margin-top: 100px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-custom-img-text {
   letter-spacing: -0.01em;
   font-size: 99px;
-  font-family: 'RobotoLight';
+  font-family: "RobotoLight";
   line-height: 99px;
 }
 
 .copywriter-custom-img-text-sm {
   letter-spacing: -0.01em;
   font-size: 36px;
+<<<<<<< HEAD
+  max-width: 700px;
+=======
   max-width: 500px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-bg-10 .copywriter-fotel {
@@ -258,9 +332,13 @@ contact-inputs textarea {
   top: -250px;
 }
 
+<<<<<<< HEAD
+
+=======
 .copywriter-standard-mt-40 {
   margin-top: 60px;
 }
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 .copywriter-bg-10 {
   background: none;
@@ -278,13 +356,41 @@ contact-inputs textarea {
 }
 
 .copywriter-custom-text-akuku {
-  font-family: 'Georgia';
+<<<<<<< HEAD
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+.natura-text {
+  font-size: 61px;
+  line-height: 74px;
+}
+
+.copywriter-custom-subtext-akuku {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 48px;
+  line-height: 50px;
+}
+.banner-subtitle-text {
+  font-weight: 400;
+  font-size: 61px;
+  line-height: 74px;
+  font-family: "Georgia", serif;
+  font-style: italic;
+}
+
+.copywriter-standard-mb-80 {
+  margin-bottom: 60px;
+=======
+  font-family: "Georgia";
   font-size: 69px;
   line-height: 77px;
 }
 
 .copywriter-custom-subtext-akuku {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: italic;
   font-size: 50px;
   line-height: 50px;
@@ -292,6 +398,7 @@ contact-inputs textarea {
 
 .copywriter-standard-mb-80 {
   margin-bottom: 100px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-page .new-mt-2 {
@@ -303,7 +410,7 @@ contact-inputs textarea {
 }
 
 .copywriter-custom-text-akuku-2 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 57px;
   line-height: 55px;
   text-align: right;
@@ -311,7 +418,7 @@ contact-inputs textarea {
 }
 
 .copywriter-custom-subtext-akuku-2 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: italic;
   font-size: 31px;
   line-height: 34px;
@@ -320,10 +427,13 @@ contact-inputs textarea {
   padding-left: 30%;
 }
 
+<<<<<<< HEAD
+=======
 .copywriter-custom-margin {
   margin-right: -30px;
 }
 
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .copywriter-bg-16 {
   background-image: url(https://cdn.owocni.pl/img/single-copywriter/Pisanie-tekstow-reklamowych.jpg);
   background-repeat: no-repeat;
@@ -340,9 +450,15 @@ contact-inputs textarea {
 
 .copywriter-inside-img-text {
   padding-top: 400px;
+<<<<<<< HEAD
+  color: #333;
+  font-size: 85px;
+
+=======
   color: #373737;
   font-size: 85px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   line-height: 90px;
   letter-spacing: -0.025em;
   max-width: 570px;
@@ -353,6 +469,44 @@ contact-inputs textarea {
   display: none;
   margin-top: 50px;
 }
+<<<<<<< HEAD
+.banner-title {
+  max-width: 900px !important;
+}
+.turbokids-text-1 {
+  font-weight: 400 !important;
+  font-family: Georgia !important;
+  font-size: 61px !important;
+  line-height: 74px !important ;
+  margin-bottom: 0px;
+}
+
+.turbokids-text-2 {
+  font-weight: 400 !important;
+  font-family: "Georgia", serif !important;
+  font-style: italic !important;
+  font-size: 61px !important;
+  line-height: 74px !important;
+}
+
+.copywriter-custom-text-turbokids-1 {
+  color: #333;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 60px;
+}
+
+.copywriter-custom-subtext-turbokids-1 {
+  color: #333;
+  text-align: left;
+
+  font-size: 47px;
+  letter-spacing: -0.025em;
+  line-height: 56px;
+=======
 
 .copywriter-standard-mb-m100 {
   margin-bottom: -100px;
@@ -361,7 +515,7 @@ contact-inputs textarea {
 .copywriter-custom-text-turbokids-1 {
   color: #373737;
   text-align: right;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-size: 47px;
   letter-spacing: -0.025em;
   line-height: 56px;
@@ -371,10 +525,11 @@ contact-inputs textarea {
 .copywriter-custom-subtext-turbokids-1 {
   color: #373737;
   text-align: right;
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   font-size: 30px;
   letter-spacing: -0.025em;
   line-height: 36px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .pl-20 {
@@ -388,7 +543,11 @@ contact-inputs textarea {
 .copywriter-after-img-1 {
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
   margin-bottom: 100px;
+=======
+  margin-bottom: 283px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-top: 100px;
 }
 
@@ -400,8 +559,13 @@ contact-inputs textarea {
   display: none;
 }
 
+<<<<<<< HEAD
 /* .copywriter-after-img-1:after {
   content: '';
+=======
+.copywriter-after-img-1:after {
+  content: "";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   width: 500px;
   height: 620px;
   position: absolute;
@@ -413,11 +577,19 @@ contact-inputs textarea {
   background-position: left;
   z-index: -1;
   background-size: 80%;
+<<<<<<< HEAD
 } */
+
+.copywriter-border-870 {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+=======
+}
 
 .copywriter-border-870 {
   border-top: 2px solid #373737;
   border-bottom: 2px solid #373737;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   max-width: 870px;
   margin: 0 auto;
   padding-top: 15px;
@@ -430,17 +602,33 @@ contact-inputs textarea {
   font-size: 45px;
   line-height: 49px;
   letter-spacing: -0.01em;
-  font-family: 'Georgia';
+  font-family: "Georgia";
 }
 
 .copywriter-after-img-2 {
   position: relative;
   z-index: 2;
+<<<<<<< HEAD
+  margin-bottom: 55px;
+}
+/* Font: Georgia, weight 400 (bolded), size 61px, line-height 74px */
+
+.copywriter-custom-text-4 {
+  font-size: 44px;
+  color: #333;
+  line-height: 48px;
+  font-weight: 400;
+  margin-top: 70px;
+}
+
+.copywriter-custom-subtext-4 {
+  color: #333;
+=======
   margin-bottom: 100px;
 }
 
 .copywriter-custom-text-4 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: italic;
   font-size: 58px;
   color: #373737;
@@ -452,6 +640,7 @@ contact-inputs textarea {
 
 .copywriter-custom-subtext-4 {
   color: #373737;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   font-size: 25px;
   line-height: 33px;
   letter-spacing: -0.01em;
@@ -459,8 +648,13 @@ contact-inputs textarea {
   max-width: 315px;
 }
 
+<<<<<<< HEAD
 /* .copywriter-after-img-2:after {
   content: '';
+=======
+.copywriter-after-img-2:after {
+  content: "";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   width: 769px;
   height: 620px;
   position: absolute;
@@ -471,16 +665,28 @@ contact-inputs textarea {
   top: -80px;
   background-position: left;
   z-index: -1;
+<<<<<<< HEAD
 } */
 .lingu {
-  max-width: 1000px !important;
+  max-width: 900px !important;
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto 0;
   display: block;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .copywriter-custom-header-3 {
-  font-family: 'Georgia';
+  font-size: 44px;
+  text-align: center;
+  line-height: 48px;
+  color: #353434;
+  max-width: 900px;
+  margin-inline: auto;
+  font-weight: 400;
+=======
+}
+
+.copywriter-custom-header-3 {
+  font-family: "Georgia";
   font-size: 78px;
   letter-spacing: -0.01em;
   line-height: 82px;
@@ -488,6 +694,7 @@ contact-inputs textarea {
   margin-bottom: 50px;
   max-width: 800px;
   margin-inline: auto;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .mako-big-img {
@@ -502,19 +709,23 @@ contact-inputs textarea {
 
 /* =============Ink book============== */
 .copywriter-custom-header-4 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 88px;
   letter-spacing: -0.01em;
   line-height: 74px;
   color: #353434;
   margin-top: 30px;
+<<<<<<< HEAD
+  max-width: 900px;
+=======
   max-width: 1000px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-inline: auto;
   margin-bottom: 50px;
 }
 
 .copywriter-custom-subheader-4 {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-size: 61px;
   letter-spacing: -0.01em;
   line-height: 74px;
@@ -524,12 +735,21 @@ contact-inputs textarea {
 }
 
 .copywriter-reading-container {
+<<<<<<< HEAD
+  max-width: 900px;
+}
+
+/* .copywriter-standard-pb-80 {
+  padding-bottom: 100px;
+} */
+=======
   max-width: 800px;
 }
 
 .copywriter-standard-pb-80 {
   padding-bottom: 100px;
 }
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 /* ===========================profit slider=============== */
 .copywriter-ending-white-bg {
@@ -549,7 +769,11 @@ contact-inputs textarea {
 }
 
 .names-thematic-section-black {
+<<<<<<< HEAD
   /* background-color: #000000; */
+=======
+  background-color: #000000;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-ending-big {
@@ -557,9 +781,13 @@ contact-inputs textarea {
   font-size: 60px;
   line-height: 60px;
   font-weight: 600;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin-inline: auto;
+<<<<<<< HEAD
+  max-width: 900px;
+=======
   max-width: 800px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-top: 50px;
 }
 
@@ -571,7 +799,11 @@ contact-inputs textarea {
   margin-top: 70px;
   margin-bottom: 70px;
   font-style: italic;
+<<<<<<< HEAD
+  max-width: 900px;
+=======
   max-width: 800px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-inline: auto;
   font-weight: 400;
 }
@@ -596,17 +828,35 @@ section.profit-sec {
 }
 
 .copywriter-ending-1 {
-  font-size: 129px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  line-height: 123px;
-  letter-spacing: -0.025em;
+<<<<<<< HEAD
+  font-size: 85px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 97px;
+  margin-top: 20px;
   color: black;
   margin-bottom: 50px;
 }
 
+/* ===================================faq==================================== */
+.accordion-item.active {
+  background-color: #00bfff;
+}
+
+.accordion-title {
+  padding: 25px 25px;
+=======
+  font-size: 129px;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  line-height: 123px;
+  letter-spacing: -0.025em;
+  color: white;
+  margin-bottom: 50px;
+}
+
 section.black-sec-form {
-  /* background: black; */
+  background: black;
   padding: 100px 0;
 }
 
@@ -618,11 +868,59 @@ section.black-sec-form {
 
 .accordion-title {
   padding: 15px 0px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   cursor: pointer;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
+  gap: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.accordion-title {
+  border-bottom: 1px solid lightgray;
+}
+.accordion-title svg {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.accordion-content {
+  padding: 25px 25px;
+  font-size: 24px;
+  background: transparent;
+  line-height: 36px;
+  font-weight: 400;
+}
+.faqcontent {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+}
+.faqContainer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.faqContainer .mailidys {
+  margin-top: 0;
+  color: #000;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+=======
   font-size: 16px;
   font-weight: 500;
   border-bottom: 2px solid lightgray;
@@ -648,16 +946,25 @@ section.black-sec-form {
 
 .faqContainer .accordion-item:before {
   background-color: transparent;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 /* -----------form------------ */
 .sendQuote {
+<<<<<<< HEAD
+  max-width: 630px;
+  background: white;
+  padding: 34px;
+  margin-inline: auto;
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15), 0 0 0 0 #fff,
+    inset 2px 2px 2px 0 #fff, inset -2px -2px 2px 0 #c7c7c7;
+  margin-bottom: 70px;
+=======
   max-width: 600px;
   background: white;
   padding: 40px;
   margin-inline: auto;
-  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15), 0 0 0 0 #fff,
-    inset 2px 2px 2px 0 #fff, inset -2px -2px 2px 0 #c7c7c7;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .inputLayout {
@@ -675,7 +982,11 @@ section.black-sec-form {
 .sendQuote textarea {
   width: 100%;
   margin-bottom: 20px;
+<<<<<<< HEAD
+  padding: 10px 10px 10px;
+=======
   padding: 10px 10px 0;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   resize: none;
 }
 
@@ -688,15 +999,20 @@ section.black-sec-form {
 }
 
 .sendQuote h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 40px;
+<<<<<<< HEAD
+  text-align: center;
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .quoteBtn button {
   padding: 10px 20px;
   border: navajowhite;
+<<<<<<< HEAD
   /* background: #438d07; */
   background: var(--brand-blue);
   color: white;
@@ -706,6 +1022,21 @@ section.black-sec-form {
   border-radius: 10px;
 }
 
+.btn-hover button:hover {
+  transition: 0.5s;
+  box-shadow: none;
+  outline: none;
+}
+
+=======
+  background: #438d07;
+  color: white;
+  font-size: 22px;
+  box-shadow: 0px 4px 0 #295a01;
+  border-radius: 10px;
+}
+
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .quoteBtn {
   display: flex;
   align-items: center;
@@ -737,14 +1068,22 @@ button.formModalCloseBtn {
 
 /* business tool */
 .copywriter-custom-text-1 {
+<<<<<<< HEAD
+=======
   width: 75%;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin: 0 auto;
 }
 
 .copywriter-custom-text-2 {
-  width: 80%;
+<<<<<<< HEAD
   margin: 0 auto;
   /* margin-top: 30px; */
+=======
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 @media screen and (max-width: 768px) {
@@ -782,4 +1121,12 @@ button.formModalCloseBtn {
     right: 4%;
     color: black;
   }
+<<<<<<< HEAD
+  .accordion-content {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }

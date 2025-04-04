@@ -14,9 +14,9 @@ import WebSite from "@/components/organisms/ux/WebSite";
 import Slider from "@/components/organisms/ux/UxSlider/Slider";
 import Executive from "@/components/organisms/ux/Executive";
 import UxAccordion from "@/components/organisms/ux/accordion/UxAccordion";
+import items from "@/components/organisms/ux/accordion/Data";
 import { useDispatch } from "react-redux";
 import { FETCH_UX_SCREEN_DATA } from "@/redux/ux/uxDesignAction";
-import Process from "@/components/organisms/ux/Process";
 
 const UXDesignScreen = () => {
   const dispatch = useDispatch();
@@ -34,7 +34,6 @@ const UXDesignScreen = () => {
       <Complex />
       <Systemically />
       <UxVideo />
-      <Process />
       <GoodProcess />
       <WebSite />
       <Slider />

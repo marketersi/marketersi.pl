@@ -16,9 +16,10 @@ const CardFour = () => {
       {currentComponent === 1 && (
         <SliderSection setCurrentComponent={setCurrentComponent} />
       )}
-      {currentComponent === 2 && (
+        {currentComponent === 2 && (
         <FeedbackSection setCurrentComponent={setCurrentComponent} />
       )}
+      
       {currentComponent === 3 && <UserDetailsSection />}
     </>
   );

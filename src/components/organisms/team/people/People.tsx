@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 
 import React from 'react';
@@ -6,42 +7,92 @@ import ReactPlayer from 'react-player';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
 import useOsClass from '@/components/molecules/useOsClass';
+=======
+"use client";
+
+import React from "react";
+import style from "../team.module.css";
+import ReactPlayer from "react-player";
+import { useSelector } from "react-redux";
+import { useRouter } from "next/navigation";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const People = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { section10, section11 } = screenData || {};
   if (screenData) {
+<<<<<<< HEAD
     console.log('Team screen data from UI => ', section10);
+=======
+    console.log("Team screen data from UI => ", section10);
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   }
 
   const router = useRouter();
 
   const navigateToPriceListStrone = () => {
+<<<<<<< HEAD
     router.push('/cennik?type=Strone');
   };
-  const navigateToPriceListDziałania = () => {
-    router.push('/cennik?type=Działania');
-  };
+  // const navigateToPriceListDziałania = () => {
+  //   router.push('/cennik?type=Działania');
+  // };
   const osClass = useOsClass();
 
   return (
     <>
-      <div className={style.teamContent}>
+     <section className= {`${style.topmobilespace2} WidthContent1 container`}>
+     <div className={`${style.teamContent}`}>
         <h2 className={style.peopleTitle}>{section10?.section10_title}</h2>
-        <p className={style.peoplePara}>{section10?.section10_subtitle}</p>
+        <p className={`${style.peoplePara} text-center`}>{section10?.section10_subtitle}</p>
       </div>
       <div className={style.peopleCard}>
         <h3>{section10?.section10_card_text}</h3>
       </div>
       {/* <div className={style.dogImg}>
+=======
+    router.push("/cennik?type=Strone");
+  };
+  const navigateToPriceListDziałania = () => {
+    router.push("/cennik?type=Działania");
+  };
+
+  return (
+    <>
+      <div className={style.teamContent}>
+        <h2 className={style.peopleTitle}>
+          {section10?.section10_title}
+        </h2>
+        <p className={style.peoplePara}>
+          {section10?.section10_subtitle}
+        </p>
+      </div>
+      <div className={style.peopleCard}>
+        <h3>
+          {section10?.section10_card_text}
+        </h3>
+      </div>
+      <div className={style.dogImg}>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         <img
           alt=""
           src={section10?.section10_card_image}
         />
+<<<<<<< HEAD
       </div> */}
-      <div className={style.teamContent}>
-        <h2 style={{ margin: '0 0 40px' }}>{section11?.section11_title}</h2>
+      <div  className={style.teamContent}>
+        <h2 className= {`${style.topmobilespace3}`} style={{ margin: '0 0 40px' }}>{section11?.section11_title}</h2>
         <p style={{ textAlign: 'center' }}>{section11?.section11_subtitle}</p>
+=======
+      </div>
+      <div className={style.teamContent}>
+        <h2 style={{ margin: "0 0 40px" }}>
+          {section11?.section11_title}
+        </h2>
+        <p style={{ textAlign: "center" }}>
+          {section11?.section11_subtitle}
+        </p>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
       </div>
       <div className={style.peopleVideo}>
         <svg
@@ -58,7 +109,10 @@ const People = () => {
             stroke="#E3E3E3"
           ></path>
         </svg>
+<<<<<<< HEAD
         <div className={osClass}>
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         <ReactPlayer
           url={section11?.section11_video}
           playing={true}
@@ -67,35 +121,56 @@ const People = () => {
           width="100%"
           height="auto"
           className={style.heroVideo}
+<<<<<<< HEAD
           playsinline
         />
         </div>
         <div className={style.peopleVideoContent}>
           <a
             className={style.projectBtn}
-            onClick={(e) => {
-              e.preventDefault();
-              navigateToPriceListStrone();
-            }}
-            href="#"
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   navigateToPriceListStrone();
+            // }}
+            href="/cennik"
           >
             {section11?.section11_button_text}
           </a>
           <a
             className={style.scheduleBtn}
-            onClick={(e) => {
-              e.preventDefault();
-              navigateToPriceListDziałania();
-            }}
-            href="#"
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   navigateToPriceListDziałania();
+            // }}
+            href="/konsultacja-marketingu"
           >
-            {section11?.section11_button_text2}
+            Umów bezpłatną konsultację
+            
+          </a>
+        </div>
+      </div>
+     </section>
+=======
+        />
+        <div className={style.peopleVideoContent}>
+          <a className={style.projectBtn} onClick={(e) => {
+                e.preventDefault();
+                navigateToPriceListStrone();
+              }} href="#">
+            {section11?.section11_button_text}
+          </a>
+          <a className={style.scheduleBtn} onClick={(e) => {
+                e.preventDefault();
+                navigateToPriceListDziałania();
+              }} href="#">
+           {section11?.section11_button_text2}
             <div>
               <img src="/assets/images/play_arrow.svg" alt="" />
             </div>
           </a>
         </div>
       </div>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
     </>
   );
 };

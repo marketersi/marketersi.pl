@@ -4,10 +4,10 @@ import './logo-footer.css';
 
 const LogoFooter = ({ openModal }) => {
   const buttonsData = [
-    { id: 1, label: '1', content: 'Co otrzymam' },
-    { id: 2, label: '2', content: 'Jak to działa' },
-    { id: 3, label: '3', content: 'Galeria' },
-    { id: 4, label: '4', content: 'Przykłady realizacji' },
+    { id: 1, label: '1', content: 'Co zyskam?' },
+    { id: 2, label: '2', content: 'Jak to wygląda?' },
+    
+    { id: 3, label: '3', content: 'Przykładowe realizacje' },
   ];
 
   const [activeButton, setActiveButton] = useState(1);
@@ -27,8 +27,11 @@ const LogoFooter = ({ openModal }) => {
               className={activeButton === button.id ? 'activeLink' : ''}
               onClick={() => handleButtonClick(button.id)}
             >
-              <button>{button.label}</button>
-              {activeButton === button.id && <span>{button.content}</span>}
+              <button className={activeButton === button.id ? 'activeButton' : ''}>
+                {button.label}
+              </button>
+              
+              {activeButton === button.id && <span className="buttonContent">{button.content}</span>}
             </Link>
           ))}
         </div>
@@ -41,7 +44,7 @@ const LogoFooter = ({ openModal }) => {
           </a> */}
 
           <button className="nazwa_footer_bottom_Offer" onClick={openModal}>
-            Otrzymaj ofertę
+          Otrzymaj ofertę
           </button>
         </div>
       </div>

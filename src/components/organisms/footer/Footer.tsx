@@ -34,9 +34,16 @@ const Footer = () => {
                 <Col sm={4} xs={6}>
                   <div className={style.footerRightMenu}>
                     <h3>BĄDŹ widoczny</h3>
-                    <Link href="/projektowanie-ux">Tworzenie stron i design UX</Link>
-                    <Link href="/profesjonalne-nagrywanie-filmow">Profesjonalne nagrywanie filmów</Link>
-                    <Link href="/Kreatywny-montaz-video">Kreatywny montaż video</Link>
+                    <Link href="/tworzenie-stron-i-design-ux">
+                      Tworzenie stron i design UX
+                    </Link>
+                    <Link href="/video-marketing">
+                      {" "}
+                      Video marketing
+                    </Link>
+                    <Link href="/kreatywny-montaz-wideo">
+                      Kreatywny montaż wideo
+                    </Link>
                   </div>
                 </Col>
                 <Col sm={4} xs={6}>
@@ -44,29 +51,30 @@ const Footer = () => {
                     className={`${style.footerRightMenu} ${style.mobileRightMenu}`}
                   >
                     <h3>ZOSTAŃ zapamiętany</h3>
-                    <Link href="/tresci-sprzedazowe">Treści i hasła sprzedażowe</Link>
+                    <Link href="/tresci-i-hasla-sprzedazowe">
+                      Treści i hasła sprzedażowe
+                    </Link>
                     <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
-                    <Link href="/projektowanie">Projektowanie logo</Link>
+                    <Link href="/projektowanie-logo">Projektowanie logo</Link>
                   </div>
                 </Col>
                 <Col sm={4} xs={6}>
                   <div className={style.footerRightMenu}>
                     <h3>ODBLOKUJ zyski</h3>
                     <Link href="/strategia-marketingowa">
-                    Strategia marketingowa
+                      Strategia marketingowa
                     </Link>
-                    <Link href="/konsultacje">Konsultacja marketingu</Link>
+                    <Link href="/konsultacja-marketingu">Konsultacja marketingu</Link>
                     <Link href="/">Marketing międzynarodowy</Link>
                   </div>
                 </Col>
-                
               </Row>
               <Row>
                 <Col sm={3}>
                   <div className={style.footerRightMenu}>
                     <h3>Marketersi</h3>
                     <div className={style.footerCennik}>
-                      <Link href="/Zespol">Zespół</Link>
+                      <Link href="/Kim-jestesmy">Kim jesteśmy?</Link>
                       <Link href="/kontakt-marketersi">Kontakt</Link>
                       <Link href="/cennik" className={style.CennikBrn}>
                         Cennik
@@ -77,12 +85,10 @@ const Footer = () => {
                 <Col sm={9}>
                   <div className={style.footerRightMenu}>
                     <h3>Przydatne rzeczy</h3>
-                    <Link href="/czy-oplaca-sie-agencja-marketingowa">
+                    <Link href="/policz-czy-ci-sie-to-oplaca">
                       Policz czy Ci się to opłaca?
                     </Link>
-                    <Link href="/zamow">
-                    Zamów bezpłatne badanie
-                    </Link>
+                    <Link href="/zamow-bezplatne-badanie">Zamów bezpłatne badanie</Link>
                   </div>
                 </Col>
               </Row>
@@ -91,16 +97,15 @@ const Footer = () => {
           <div className={style.copyright}>
             <div className={style.copyrightText}>
               <p>
-                &copy; {currentYear} - marketersi.pl | Tak się robi marketing!
+                &copy; {currentYear} - marketersi.pl | Marketing, który działa! Regulamin | Polityka prywatności
               </p>
             </div>
-            <div className={style.copyrightMenu}>
+            {/* <div className={style.copyrightMenu}>
               <p>
                 <Link href="/#">Regulamin |</Link>
-                <Link href="/#"> Polityka prywatnosci | </Link>
-                <Link href="/#">Mapav</Link>
+                <Link href="/#"> Polityka prywatnosci </Link>
               </p>
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>

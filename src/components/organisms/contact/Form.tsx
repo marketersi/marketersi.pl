@@ -69,7 +69,7 @@ const ContactForm = () => {
       </a>
       <textarea
         required
-        placeholder="Wiadomość"
+        placeholder="Napisz jak możemy Ci pomóc, a my zajmiemy się resztą."
         className="form_text_area"
         {...register('message', { required: true })}
       ></textarea>
@@ -88,7 +88,7 @@ const ContactForm = () => {
           {...register('email', { required: true })}
         />
         <input
-          placeholder="Telefon"
+          placeholder="Nr telefonu"
           className="form_inputs"
           pattern="\d{7,15}"
           {...register('telephone')}

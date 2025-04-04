@@ -31,15 +31,15 @@ const PDFCopy = () => {
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12 projects-push-content-top">
-              <p className="theme-desc projects-theme-desc-p projects-mq-book-fix">
+              <p className="theme-desc projects-mq-book-fix">
                 {normalText && normalText}
               </p>
             </div>
           </div>
         </div>
 
-        <div className="container">
-          <div className="row">
+        <div className="container custom-container1">
+          <div className="row align-items-center additional-gap">
             <div className="col-xl-6 projects-lprasa-container">
               {image && (
                 <img
@@ -51,7 +51,7 @@ const PDFCopy = () => {
               )}
             </div>
             <div className="col-xl-6">
-              <p className="theme-desc projects-custom-lineheight projects-custom-margin pGuid">
+              <p className="theme-desc projects-custom-lineheight pGuid">
                 {imageTitle && imageTitle}
               </p>
               <p className="projects-custom-lineheight projects-prasa-margin">
@@ -64,7 +64,7 @@ const PDFCopy = () => {
               </p>
               <p className="theme-desc projects-custom-lineheight">
                 {/* to be deleted */}
-                {imageSubtitle && imageSubtitle} <br />
+                {imageSubtitle && imageSubtitle}
                 {imageLink && imageLinkText && (
                   <a
                     // href="https://drive.google.com/uc?authuser=0&id=1bU_jwyc1R4WqXkZDaDmuMPj-U30pZUwm&export"
@@ -72,8 +72,11 @@ const PDFCopy = () => {
                     target='_blank'
                     style={{ textDecoration: 'none' }}
                   >
-                    <span className="orange-link">
-                      <strong>{imageLinkText}</strong>
+                    <span className="orange-link" style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 400, fontSize: '16px', lineHeight: '21px' , color:'#00BFFF',borderColor:'#00BFFF' }}>
+                    <strong>
+                      Kliknij tutaj, aby pobrać (PDF)
+                     </strong>
+
                     </span>
                   </a>
                 )}

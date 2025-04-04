@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import Modal from 'react-modal';
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import Modal from "react-modal";
 
 const Receive = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -22,7 +22,9 @@ const Receive = () => {
           <div className="row">
             <div className="col-md-12">
               <h3 className="projects-co-otrzymasz no-after">
-                {title && title}
+                {/* {title && title} */}
+                Gotowy na efekty, <br />
+                które Cię zachwycą?
               </h3>
 
               <div className="projects-empty-20px"></div>
@@ -31,11 +33,14 @@ const Receive = () => {
           </div>
         </div>
 
-        <div className="container custom-container2">
+        <div className="mid-space-container">
           <div className="row">
             <div className="col-md-12">
               <p className="projets-custom-theme-desc projects-co-otrzymasz-sub2 text-center projects-margin-b-60">
-                {subtitle && subtitle}
+                {/* {subtitle && subtitle} */}
+                Każdy projekt logo w Marketersi <br /> to nie tylko unikalny
+                symbol Twojej marki, <br /> 
+                ale także pełny zestaw materiałów, dla spojnego wizerunku firmy.
               </p>
 
               <div className="projects-empty-20px"></div>
@@ -46,7 +51,7 @@ const Receive = () => {
         <div className="projects-oferta-veggo-cont">
           <div className="container custom-container2">
             <div className="row">
-              <div className="col-md-12 projects-theme-desc-p">
+              <div className="col-md-12">
                 <div className="container-fluid">
                   <div className="row">
                     <div className="col-sm-12 projects-includes">
@@ -98,12 +103,12 @@ const Receive = () => {
         onRequestClose={() => setModalIsOpen(false)}
         style={{
           overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
           },
           content: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           },
         }}
       >

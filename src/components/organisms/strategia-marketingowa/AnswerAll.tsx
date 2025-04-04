@@ -6,8 +6,8 @@ export default function AnswerAll() {
   const { FAQsection } = screenData;
 
   return (
-    <div className="AnswerAll content">
-      <div className="AnswerAll_Title">{FAQsection?.title}</div>
+    <div className="AnswerAll WidthContent">
+      <div className="AnswerAll_Title">Odpowiedź jest zawsze jedna:</div>
       <div className="AnswerAll_Image feature" style={{ textAlign: "center" }}>
         <Image
           src={FAQsection?.image_url}

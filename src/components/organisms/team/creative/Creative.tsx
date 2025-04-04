@@ -2,21 +2,39 @@
 
 import React from "react";
 import style from "../team.module.css";
+<<<<<<< HEAD
 // import { motion, Variants } from "framer-motion";
 import { useSelector } from "react-redux";
 
 const Creative = () => {
+=======
+import { motion, Variants,  } from "framer-motion";
+import { useSelector } from "react-redux";
+
+const Creative = () => {
+  
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   const { isLoading, screenData } = useSelector((state) => state.team);
   const { section5 } = screenData;
 
   return (
     <>
-      <section className={style.creative}>
+<<<<<<< HEAD
+      <section className={`${style.creative} WidthContent mobile-padlr`}>
         <div className={style.teamContent}>
-          <h2>{section5?.section_five_title}</h2>
+          <h2 className="mt-0">{section5?.section_five_title}</h2>
           {/* to be deleted */}
           {/* <motion.div
               className={style.orangeBG} 
+=======
+      <section className={style.creative}>
+        <div className={style.teamContent}>
+          <h2>
+            {section5?.section_five_title}
+          </h2>
+          <motion.div
+              className={style.orangeBG} // Add your existing class
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               initial={{ scale: 1 }}
               animate={{ scale: [1, 1.5, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -49,13 +67,27 @@ const Creative = () => {
             className={style.CreativeHeart}
             src={section5?.section_five_imgone}
             alt=""
+<<<<<<< HEAD
           /> */}
+=======
+          />
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           {/* <img
             className={style.CreativeOnar}
             src={section5?.section_five_imgtwo}
             alt=""
           /> */}
 
+<<<<<<< HEAD
+          <p className={style.customersPara2}>
+            {section5?.section_five_para}
+            <span style={{ display: "inline", margin: "100px 0" }}>
+              {" "}
+              
+            </span>
+          </p>
+          <h2>{section5?.section_five_paratwo}</h2>
+=======
           <p className={style.creativePara}>
             {section5?.section_five_para}
             <span style={{ display: "inline", margin: "100px 0" }}>
@@ -63,6 +95,7 @@ const Creative = () => {
               {section5?.section_five_paratwo}
             </span>
           </p>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         </div>
       </section>
     </>

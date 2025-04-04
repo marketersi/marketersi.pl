@@ -7,12 +7,14 @@ const ImplementationExample1 = () => {
   const { example1 } = implementation || {};
   return (
     <section className="projects-thematic-section-gray menu-target" id="sec3">
-      <div className="iglarki-section-main-header text-center pnazw-custom-lineheight">
-        <span>
-          <strong>{bnc_implementation?.title}</strong>
-        </span>{' '}
+      <div className="iglarki-section-main-header  pnazw-custom-lineheight text-center mbrediuce">
+        <span className="">
+          {/* <strong>{bnc_implementation?.title}</strong> */}
+        
+          Przykładowe realizacje. <br />Tworzymy to, <br />co zapada w pamięć
+        </span>
         <br />
-        <div className="iglarki-section-submain">
+        <div className="iglarki-section-submain mobileBreduce">
           {bnc_implementation?.subtitle}
         </div>
       </div>
@@ -26,9 +28,9 @@ const ImplementationExample1 = () => {
         />
       </div> */}
 
-      <div className="names-client-name copywriter-cname names-iglarki-name iglarki-cname">
+      <div className=" names-client-name copywriter-cname names-iglarki-name iglarki-cname mbrediuce2">
         {/* GDYNIA */}
-        {example1?.title}
+        {example1?.title} 
       </div>
 
       <div className="names-client-desc names-client-iglarki">

@@ -1,31 +1,56 @@
 .bannerVideo {
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: -1;
-  top: 0;
-  overflow: hidden;
+  margin-top: -130px;
+  
+}
+
+@media(min-width:1451px){
+  .WidthContent{
+    max-width:900px;
+    margin: 0 auto;
+  } 
 }
 
 .bannerContent {
-  margin-top: -60px;
-}
-.zespolVideo{
-  min-height: 650px;
+  
 }
 
-.bannerHeading {
-  padding: 100px 100px 100px;
+.bannerHeading{
+  margin-top: 70px;
+  margin-bottom: 86px;
+}
+.textContentBg{
+  background: #6d7278;
+  color: #ffc600;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 40px;
+  width: fit-content;
+  margin: auto;
+}
+.peopleTitle{
+  margin-bottom: 60px;
 }
 
 .bannerHeading h1 {
-  font-size: 100px;
-  font-weight: 900;
-  color: #3e3e3e;
+  font-size: 85px;
+  font-weight: 700;
+ line-height: 77px;
   text-align: center;
+  max-width: 900px;
+  margin: auto;
 }
-
+.MainTitle{
+  font-size: 85px;
+  font-weight: 700;
+ line-height: 77px;
+  text-align: center;
+  margin-bottom: 70px;
+}
 .BannerBotHeading {
-  padding-left: 50px;
+  
 }
 
 .img20 img {
@@ -36,20 +61,20 @@
   margin: -340px 0 0 -230px;
 }
 
-.teamContent {
-  max-width: 800px;
-  margin: 0px auto 50px;
+.teamContent{max-width: 900px; margin: 70px auto 45px;}
+.teamContent1 {
+  
+  margin: 40px auto;
 }
 
-.bannerBottomContent {
-  padding: 0 0 70px;
-}
+
 
 .bannerBottomContent h4 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: normal;
   margin: 25px 0;
-  color: #3e3e3e;
+  line-height: 27px;
+  
 }
 
 .BannerBotImg {
@@ -65,25 +90,32 @@
 }
 
 .bannerBottomContent h2 {
-  font-size: 60px;
-  font-weight: 800;
-  color: #3e3e3e;
-  margin: 0 0 50px;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 72px;
+  margin: 0 0px;
 }
 
 .bannerBottomContent h2 span {
-  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), var(--brand-blue));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 198, 2, 0),
+    var(--brand-blue)
+  );
   border-radius: 20px;
   padding: 0 10px 0 0;
   display: inline-block;
 }
 
 .teamContent p {
+  
+}
+.textContent{
   font-size: 28px;
   font-weight: 300;
-  color: #3e3e3e;
-  margin: 0 0 50px;
+  margin: 0 0 0px;
   line-height: 50px;
+  text-align: center;
 }
 
 .bannerP {
@@ -91,7 +123,7 @@
 }
 
 .overlay {
-  height: 856px;
+  height: 100vh;
   width: 100%;
   position: absolute;
   background-color: #00000026;
@@ -99,15 +131,22 @@
   z-index: -1;
 }
 
+
 /* ============personal card============= */
 .personalCard {
   background: #f6f6f6;
-  padding: 80px;
+  padding: 50px;
   border-radius: 30px;
   box-shadow: 4px 4px 15px 0px #f6f6f6, 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-  margin: 0 auto 50px;
-  width: 1090px;
+  margin: 0 auto 0px;
+  max-width: 900px;
+
+  
+}
+
+.personalCard .row{
+  align-items: center;
 }
 
 .personalCard img {
@@ -137,31 +176,40 @@
 .personalCard h6 {
   font-size: 40px;
   font-weight: 500;
-  color: #0a0a0a;
-  line-height: 55px;
+  line-height: 52px;
 }
 
 .personalCard h6 span {
   font-weight: 800;
-  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), var(--brand-blue));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 198, 2, 0),
+    var(--brand-blue)
+  );
   padding: 0 10px 0 0;
   border-radius: 20px;
 }
 
 /* ====================free space============ */
 .free {
-  padding: 100px 0;
+  
   background-repeat: no-repeat;
   background-position: -680px 0px;
 }
-
+.customersPara2{
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
 .teamContent p span {
   font-weight: 500;
   display: block;
 }
 
 .mainHeading {
-  margin: 100px 0 0;
+  margin:70px 0 0;
 }
 
 .mainHeading h2,
@@ -174,7 +222,11 @@
 .mainHeading h2 span,
 .teamContent h2 span {
   font-weight: 800;
-  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), var(--brand-blue));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 198, 2, 0),
+    var(--brand-blue)
+  );
   padding: 0 10px 0 0;
   border-radius: 20px;
   display: inline-block;
@@ -184,15 +236,17 @@
   border: 3px solid var(--brand-blue);
   padding: 10px 50px;
   border-radius: 100px;
-  font-size: 23px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 500;
   color: black;
   background: var(--brand-blue);
-  margin: 50px auto 0;
+  margin: 70px auto 0;
   display: block;
+  line-height: 30px;
   box-shadow: 0 0 0 0 black, 0em 0.2em 0 0 black;
   border: 2px solid black;
 }
+
 
 .mainHeading button:hover {
   box-shadow: none;
@@ -202,30 +256,32 @@
 .mainHeading a {
   text-decoration: none;
 }
+.WidthContent .additionalSpace{
+  margin: 40px 0!important;
+}
 
 /* ==================support===================== */
 .Support {
-  /* padding: 0 0 100px;
-  background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwierzymy.06ee3ca4.jpg&w=1080&q=75);
-  background-repeat: no-repeat;
-  background-position: 670px 0; */
-
-  padding: 0 0 100px;
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
+ 
+display: flex;
+flex: 1 1 0;
+align-items: center;
+  padding: 0 0 70px;
+ 
 }
 
 .Support h4 {
   font-size: 50px;
   line-height: 70px;
   font-weight: normal;
-  margin: 0 0 0 -50px;
-  max-width: 610px;
-}
+ 
 
+}
+.Support img{
+  width: 100%;
+}
 .Support p {
-  max-width: 500px;
+  max-width: 700px;
 }
 
 /* =========================Image slider ============================================= */
@@ -242,14 +298,20 @@
 }
 
 .teamContent h2 {
-  font-size: 60px;
+  font-size: 85px;
+  font-weight: 700;
+ line-height: 77px;
   text-align: center;
-  font-weight: 800;
+  
 }
 
 .teamContent h2 span {
   font-weight: 800;
-  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), var(--brand-blue));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 198, 2, 0),
+    var(--brand-blue)
+  );
   padding: 0 10px 0 0;
   border-radius: 20px;
   display: inline-block;
@@ -263,9 +325,7 @@
   overflow: hidden;
 }
 
-.creative h2 {
-  font-size: 80px;
-}
+
 
 .CreativeOnar {
   margin: -550px 0 0 270px;
@@ -288,19 +348,15 @@
     width: 115% !important;
 } */
 
-.caring {
-  padding: 0 0 150px;
-  width: 100%;
-  overflow: hidden;
-}
+
+.caring {padding: 0 0 0px; width: 100%; overflow: hidden;}
+.caring .cartRow{max-width: 1050px; margin:0 auto;}
 
 .caringCard {
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
-    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-  width: 300px;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff, 2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   border-radius: 20px;
   padding: 30px;
-  margin: 50px auto 50px;
+  margin: 50px 15px 15px;
   background: white;
 }
 
@@ -314,10 +370,11 @@
   font-size: 21px;
   font-weight: normal;
   text-align: center;
-  color: #3e3e3e;
+  color: rgb(159, 159, 159);
   font-style: italic;
   font-family: Georgia;
   margin: 15px 0 0;
+  line-height: 21px;
 }
 
 .cartTop {
@@ -335,18 +392,24 @@
 }
 
 .creativePara {
-  margin: 100px 0 !important;
+  margin: 70px 0 !important;
 }
 
 /* ===================Culture==================== */
 .cultureCard {
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
-  width: 1000px;
-  margin: 200px auto 100px;
+  width: 900px;
+  margin: 100px auto 70px;
   background: #f6f6f6;
   border-radius: 30px;
-  padding: 30px;
+  padding: 40px 50px;
+}
+.culturedContent p{
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 30px;
 }
 
 .culturedContent {
@@ -360,39 +423,65 @@
 }
 
 .cultureCard h2 {
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  
+  margin: 0 auto 0px;
+}
+.cultureCard h3 {
+  font-size: 40px;
   font-weight: 600;
   text-align: center;
-  margin: 0 0 30px;
-  max-width: 600px;
-  margin: 0 auto 30px;
+  line-height: 56px;
+  
+  margin: 0 auto 0px;
+}
+.goodHeadingMain{
+  font-size: 74px;
+  line-height: 80px;
+font-weight: 900;
+text-align: center;
 }
 
 .cultureCard h2 span {
   font-weight: 800;
   padding: 0 0 0 10px;
   border-radius: 20px;
-  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), var(--brand-blue));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 198, 2, 0),
+    var(--brand-blue)
+  );
 }
-
+.teamContent p{
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+}
 .cultureImg {
   margin: -600px 0 0 -250px;
 }
 
 /* =======================Good Time===================== */
 .goodHeadingMain {
-  margin: 100px 0 70px;
+  margin: 70px 0 85px;
 }
 
 .cardDataSpace {
-  margin: 100px 0 80px;
+  margin: 70px 0;
+}
+.WidthContent1 .container{
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
 
 .cardCup {
   /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75); */
   background-repeat: no-repeat;
   background-position: 135% 0px;
-  padding: 150px 0 100px;
+  
 }
 
 .hardWorkBG {
@@ -401,13 +490,16 @@
   background-position: -250px 160px;
   padding: 0px 0 2px;
 }
+.personalCard .row{
+  align-items: center;
+}
 
 /* ===============================people============================= */
 .peopleCard {
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
   width: 980px;
-  margin: 100px auto 100px;
+  margin: 70px auto;
   background: #f6f6f6;
   border-radius: 30px;
   padding: 70px;
@@ -418,8 +510,7 @@
   text-align: center;
   line-height: 70px;
   font-weight: 600;
-  color: #3e3e3e;
-  margin: 0 0 200px;
+  margin: 0 ;
 }
 
 .dogImg {
@@ -457,7 +548,7 @@
   /* background: #00000069; */
   /* padding: 25% 0 0; */
   z-index: 0;
-  padding: 30px 0 60px;
+  padding: 0px 0 60px;
 }
 
 .peopleVideoContent .projectBtn {
@@ -466,74 +557,62 @@
   padding: 10px 20px;
   text-decoration: none;
   display: block;
-  width: 250px;
-  font-size: 20px;
-  font-weight: 600;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
   text-align: center;
   color: #000;
   margin: 0 auto;
 }
-
+.bannerBottomContent1{
+  display: none;
+}
 .peopleVideoContent .projectBtn:hover {
   background: var(--brand-blue);
   color: #fff;
 }
 
 .peopleVideoContent .scheduleBtn {
-  display: grid;
-  gap: 10px;
-  padding: 0 10px;
-  width: 250px;
-  margin: 30px auto;
+  border: 4px solid var(--brand-blue);
+  border-radius: 50px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 20px;
-  grid-template-columns: 85% 15%;
-  font-weight: 600;
+  display: block;
+  width: fit-content;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
   color: #000;
+  margin: 20px auto 0;
 }
 
 .peopleVideoContent .scheduleBtn:hover {
   background: var(--brand-blue);
-  border-radius: 100px;
-  color:#fff;
+  color: #fff;
 }
 
-.peopleVideoContent .scheduleBtn div {
-  padding: 2px;
-  background-color: var(--brand-blue);
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-}
-
-.peopleVideoContent .scheduleBtn img {
-  width: 20px;
-  margin: 4px auto;
-  display: block;
-}
-
-.peopleTitle {
-  margin: 0 0 50px;
-  font-size: 90px !important;
-}
 
 .peoplePara {
   margin: 0 0 0px;
 }
 
 .freePara {
-  margin: 150px 0 0px !important;
+  margin: 70px 0 0px !important;
 }
 
-.banner {
-  max-width: 100% !important;
-  overflow-x: hidden !important;
-}
+
 
 /* -------------------------------------media screen -------------------------------- */
+@media only screen and (max-width: 1450px) {
+  .Support h4 {font-size:46px;}
+  .bannerBottomContent h2 {font-size:58px;}
+}
+
 @media only screen and (max-width: 1360px) {
   .bannerBottomContent img {
-    margin:  0;
+    margin: 0;
     width: 100%;
   }
 
@@ -542,7 +621,7 @@
   }
 
   .bannerHeading {
-    padding: 0px 100px 200px;
+    padding: 0px 100px 0px;
   }
 
   .overlay {
@@ -576,6 +655,8 @@
   .cardCup {
     background-position: 165% -50px;
   }
+
+  
 }
 
 @media only screen and (max-width: 1024px) {
@@ -686,21 +767,23 @@
   }
   .zespolVideo {
     min-height: 500px;
-}
+  }
 }
 @media only screen and (max-width: 900px) {
   .zespolVideo {
     min-height: 400px;
-}
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .bannerHeading {
-    padding: 0px 20px 20px;
+    padding: 0px 15px 0px;
+    margin: 0px 0 30px;
   }
 
   .bannerHeading h1 {
-    font-size: 35px;
+    font-size: 44px;
+    line-height: 48px;
   }
 
   .img20 img {
@@ -708,30 +791,41 @@
   }
 
   .teamContent {
-    padding: 0 20px;
-    margin: 40px auto 0;
+    padding: 0 0px;
+    margin: 40px auto 40px;
+  }
+  .bannerBottomContent1{
+    display: block;
+  }
+  .bannerBottomContent{
+    display: none;
   }
 
-  .bannerBottomContent img {
-    margin:  auto;
-    width: 100%;
+  .bannerBottomContent1 img {
+    margin: auto;
+    width: 80%;
     display: block;
     top: 0;
   }
+  
 
-  .bannerBottomContent h4 {
-    font-size: 28px;
+  .bannerBottomContent1 h4 {
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 
-  .bannerBottomContent h2 {
-    font-size: 35px;
+  .bannerBottomContent1 h2 {
+    font-size: 40px;
+    line-height: 40px;
     word-wrap: break-word;
+    text-align: center;
+    margin-top: 40px;
   }
 
   .teamContent p {
-    font-size: 22px;
-    line-height: 40px;
-    margin: 0;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 20px;
   }
 
   .personalCard {
@@ -744,8 +838,13 @@
   }
 
   .personalCard h6 {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .MainTitle{
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 40px;
   }
 
   .free {
@@ -759,15 +858,27 @@
   }
 
   .teamContent h2 {
-    font-size: 35px;
+    font-size: 44px;
     word-wrap: break-word;
+    line-height: 48px;
+    margin-top: 40px;
+    text-align: center!important;
   }
 
   .Support {
-    padding: 00 20px 0px;
+    padding: 0 20px 0px;
     background-position: 10px 200px;
     background-size: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .mainHeading button{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+  .Support img{
+    width: 100%;
   }
 
   .Support p {
@@ -776,8 +887,8 @@
   }
   .zespolVideo {
     min-height: 350px;
-}
-  .OurClients{
+  }
+  .OurClients {
     margin-bottom: 80px;
   }
 
@@ -801,7 +912,7 @@
   }
 
   .caringCard {
-    width: 70%;
+    width: 80%;
   }
 
   .caringCard h4 {
@@ -833,7 +944,12 @@
   }
 
   .cultureCard h2 {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+  .cultureCard h3 {
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .peopleCard h3 {
@@ -860,11 +976,18 @@
   }
 
   .peopleVideoContent .projectBtn {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .peopleVideoContent .scheduleBtn{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .cultureCard{
+    padding: 30px 20px;
   }
 
   .peopleVideoContent {
-    padding: 10% 0 0;
+    padding: 0% 0 0;
   }
 
   .cardDataSpace {
@@ -873,6 +996,11 @@
 
   .hardWorkBG {
     background-image: none !important;
+  }
+  .goodHeadingMain{
+    font-size: 40px;
+    line-height: 46px;
+    margin: 40px 0;
   }
 
   .caring {
@@ -897,7 +1025,7 @@
   }
 
   .freePara {
-    margin: 130px 0 0px !important;
+    margin: 40px 0 0px !important;
   }
 
   .mainHeading {
@@ -924,7 +1052,6 @@
   .zespolVideo {
     width: 100% !important;
     overflow: hidden;
-    
   }
 
   .creativePara {
@@ -939,8 +1066,55 @@
     min-height: 0px;
   }
 }
-@media only screen and (max-width: 450px) {
-  .zespolVideo {
-    min-height: 250px;
-}
+@media only screen and (max-width: 600px) {
+  /* .zespolVideo{min-height: 250px;} */
+
+  .bannerHeading h1, .bannerBottomContent1 h2, .MainTitle, .mainHeading h2, .teamContent h2, .Support h4, .ClinetsHead, .goodHeadingMain{font-size:30px !important; line-height:26px !important; font-weight:700 !important;}
+
+  .teamContent p, .personalCard h6, .teamContent p, .peopleCard h3{font-size: 22px !important; line-height: 32px !important; font-weight:300 !important; padding: 0; margin: 30px 0 ; text-align: center;}
+
+  .zespolVideo{min-height:1px !important; margin-top:-55px;}
+
+
+  .bannerVideo video{width: 100% !important; height: 330px !important; object-fit: cover; margin: 130px auto 0;}
+  .bannerHeading{padding:40px 0 0;}
+  .BannerBotHeading, .Support h4{text-align: center;}
+  
+
+  .Support .teamContent{margin-top:0;}
+  .teamContent{padding-left:0; padding-right:0; margin-top:30px; margin-bottom:30px;}
+
+  .creativePara{margin-bottom:45px !important;}
+  .personalCard{padding:30px 15px 0px;}
+  .personalCard h4, .caringCard h4, .caringCard p, .cultureCard h2, .cultureCard h3{font-size:22px; line-height:32px;}
+  .creative .creative h2{margin-top:0;}
+  .caring .cartRow{max-width:100%;}
+  .caringCard{width: 100%; margin: 0 0 30px;}
+  .caring{padding-bottom:0;}
+  .teamContent1{margin-top:15px;}
+  .peopleCard{margin: 40px auto 0px; padding:10px 15px;}
+  .peopleVideoContent .projectBtn{width:100%;}
+  .OurClients{margin-top: 60px;}
+  .MainTitle, .bannerBottomContent1, .Support{margin-bottom:30px;}
+  .bannerBottomContent1, .teamContent h2{margin-top:30px;}
+  .personalCard p{margin-bottom:0;}
+  .freePara{margin-top:30px !important;}
+  .customersPara{margin-bottom:30px !important;}
+  .cultureCard{margin:82px auto 30px;}
+  .caring .cartRow .col-lg-4{padding:0;}
+  .OurClients.WidthContent .OurClients_Card_Two{margin-bottom:30px !important;}
+  .personalCard{margin-bottom:0;}
+  .cardDataSpace{margin-top:30px;}
+  .OurClients_Card_Two{padding:15px}
+
+  .mobilenormalfont{font-weight:300;}
+  .textContentBg{font-size: 12px; padding: 5px 10px;}
+  /* .topmobilespace{margin-top:70px;} */
+  .topmobilespace{padding:5px 12px 0;}
+  .topmobilespace .free{padding:0;}
+  .topmobilespace .freePara{text-align: left;}
+  .topmobilespace2{padding-top:25px;}
+  .mobilelefttext{text-align: left !important;}
+  .topmobilespace3{margin-top:50px !important;}
+  
 }

@@ -23,6 +23,8 @@ const FormOne = ({ setCurrentComponent, form }) => {
     label: option.value,
   }));
 
+  console.log(optionsTwo , 'optionsTwooptionsTwo')
+
   const handleSelectChange = (selectedOption) => {
     setSelectedOption(selectedOption);
   };
@@ -32,7 +34,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
       selectedOption &&
       selectedOption.value === optionsTwo[0].value
     ) {
-      setIsModalOpen(true);
+      setIsModalOpen(false);
     }
   };
   const closeModal = () => {
@@ -48,7 +50,7 @@ const FormOne = ({ setCurrentComponent, form }) => {
       <components.DropdownIndicator {...props}>
         {value ? (
           <Image
-            src={"https://images.prismic.io/marketersi/ZufV4LVsGrYSvYfY_dropdownok.png?auto=format,compress"}
+            src={"https://images.prismic.io/marketersi/ZufUa7VsGrYSvYfJ_dropdownarrow.png?auto=format,compress"}
             alt="arrow"
             width={30}
             height={30}
@@ -147,12 +149,13 @@ const FormOne = ({ setCurrentComponent, form }) => {
         >
           {form?.section_2_title_2}
         </h2>
-        {/* <p className={isButtonClicked && !selectedOption2 ? "red-title" : ""}>
+         <p className={isButtonClicked && !selectedOption2 ? "red-title" : ""}>
           {form?.section_2_subtitle}
-        </p> */}
+        </p> 
         <div style={{ textAlign: "left" }} className="select-input">
           <Select
-            options={optionsTwo}
+           options={optionsTwo}
+          // options={optionsTwo.slice(0, 4)} // Pehle 4 elements le raha hai
             placeholder="Wybierz"
             isSearchable={false}
             components={{ DropdownIndicator }}
@@ -184,18 +187,20 @@ const FormOne = ({ setCurrentComponent, form }) => {
               }),
               menu: (provided, state) => ({
                 ...provided,
+               // maxHeight: "150px", // Adjust the height as needed
                 backgroundColor: selectedOption2 ? "#effeeb" : "#fff",
               }),
             }}
           />
           <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} />
         </div>
+        
         <motion.button
           className="cennikBtn"
           whileHover={{ translateY: 5 }}
           onClick={handleButtonClick}
         >
-          Dalej (Prawie koniec)
+          Kontynuuj (prawie gotowe)
         </motion.button>
       </div>
     </>

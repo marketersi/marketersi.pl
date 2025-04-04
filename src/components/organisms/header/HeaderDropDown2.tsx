@@ -20,11 +20,10 @@ const HeaderDropDown2 = () => {
             <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Narzędzia</h3>
-                <Link href="/czy-oplaca-sie-agencja-marketingowa">
+                <Link href="/policz-czy-ci-sie-to-oplaca">
                   Policz czy Ci się to opłaca?
                 </Link>
                 {/* <a href="/">Test skuteczności strony (Krótki)</a> */}
-               
               </div>
             </Col>
             {/* <Col sm={4}>
@@ -42,7 +41,7 @@ const HeaderDropDown2 = () => {
             <Row className="mt-4">
               <Col sm={4}>
                 <div className={style.headerMenu}>
-                  <h3>Hity na blogu:</h3>
+                  <h3>Tajniki sprzedaży</h3>
                   {/* <a href="/">Notatki z przełomowych książek</a> */}
                   <Link href="/marketingowa-psychologia-sprzedazy">
                     {/* 10 Faktów psychologii: Strony www */}

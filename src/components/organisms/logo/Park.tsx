@@ -12,12 +12,12 @@ const Park = () => {
             <div className="col-md-12 projects-custom-espace"></div>
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle">
-                {ParkData?.title}
+              PUPILOTKA <br/>LEGIONOWO
               </h5>
               <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
                 {ParkData?.subtitle}
               </h3>
-              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-margin-2">
+              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-margin-2 mobilelefttext">
                 {ParkData?.text}
               </p>
             </div>
@@ -42,6 +42,16 @@ const Park = () => {
                 <strong>Nowe logo</strong>
               </p>
             </div> */}
+          </div>
+        </div>
+        <div className="container">
+          <div className="col-md-12">
+            <h5 className="theme-quote signed-quote signed-quote-image">
+            „To logo idealnie pasuje do naszego salonu – jest przyjazne, ciepłe i przyciąga uwagę, tak jak chcieliśmy.”
+            </h5>
+            <p className="signature">– Sylwia Margas, właścicielka
+
+            </p>
           </div>
         </div>
       </section>

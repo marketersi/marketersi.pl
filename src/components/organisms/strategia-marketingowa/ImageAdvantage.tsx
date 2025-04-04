@@ -10,7 +10,7 @@ export default function ImageAdvantage() {
     useState(true);
 
   return (
-    <div className="ImageAdvantage content">
+    <div className="ImageAdvantage WidthContent mb-4 pb-1">
       <div className="ImageAdvantage_Title feature">
         {imagesAdvantage?.title}
       </div>
@@ -49,10 +49,10 @@ export default function ImageAdvantage() {
         className="ImageAdvantage_Dropdown"
         hidden={ImageAdvantage_Dropdown_Show}
       >
-        <div className="ImageAdvantage_Dropdown_ContentOne">
+        <div className="ImageAdvantage_Dropdown_ContentOne mobilelefttext">
           {imagesAdvantage?.paragraph_1}
         </div>
-        <div className="ImageAdvantage_Dropdown_ContentTwo">
+        <div className="ImageAdvantage_Dropdown_ContentTwo mobilelefttext">
           {imagesAdvantage?.paragraph_2}
         </div>
       </div>

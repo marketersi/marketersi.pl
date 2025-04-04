@@ -1,6 +1,10 @@
 import React from "react";
 import style from "../team.module.css";
 import { useSelector } from "react-redux";
+<<<<<<< HEAD
+import { Col, Row } from "react-bootstrap";
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const Support = () => {
   
@@ -9,6 +13,22 @@ const Support = () => {
 
   return (
     <>
+<<<<<<< HEAD
+      <section className="container">
+      <Row className={style.Support}>
+        <Col md={7} className={style.teamContent}>
+          <h4>
+          Każdy projekt <br/>realizujemy kompleksowo.
+          </h4>
+          
+        </Col>
+        <Col md={5} className={style.imagebox}>
+          <img src={section2?.section_two_image} alt="" />
+
+        </Col>
+      </Row>
+      </section>
+=======
       <div className={style.Support}  style={{ backgroundImage: `url(${section2?.section_two_image})` }}>
         <div className={style.teamContent}>
           <h4>
@@ -20,6 +40,7 @@ const Support = () => {
           </p>
         </div>
       </div>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
     </>
   );
 };

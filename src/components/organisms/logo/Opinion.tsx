@@ -27,9 +27,9 @@ const Opinion = () => {
                 </div>
              
                 <div className="opinion-box-content opinion-box-content-fix opinion-box-content-left projects-opinion-1">
-                  <div className="opinion-box-text projects-custom-opinion projects-black-text-opinion">
+                  <div className="opinion-box-text projects-custom-opinion projects-black-text-opinion mobilenormalfont">
                     
-                    {imageText && imageText}
+                    {imageText && imageText} 
                   </div>
                 </div>
                 <div className="clearfix"></div>

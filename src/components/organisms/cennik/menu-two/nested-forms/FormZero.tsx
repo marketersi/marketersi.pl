@@ -29,7 +29,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
       <components.DropdownIndicator {...props}>
         {value ? (
           <Image
-            src={"https://images.prismic.io/marketersi/ZufV4LVsGrYSvYfY_dropdownok.png?auto=format,compress"}
+            src={"https://images.prismic.io/marketersi/ZufUa7VsGrYSvYfJ_dropdownarrow.png?auto=format,compress"}
             alt="arrow"
             width={30}
             height={30}
@@ -79,45 +79,45 @@ const FormZero = ({ setCurrentComponent, form }) => {
       >
         {form?.section_1_title_1}
       </h2>
-      <div style={{ textAlign: "left" }} className="select-input">
-        <Select
-          options={optionsOne}
-          placeholder="Wybierz"
-          isSearchable={false}
-          components={{ DropdownIndicator }}
-          onChange={handleSelectChange}
-          styles={{
-            clearIndicator: (baseStyles, state) => ({
-              ...baseStyles,
-              display: "none",
-            }),
-            indicatorSeparator: (baseStyles, state) => ({
-              ...baseStyles,
-              display: "none",
-            }),
-            control: (baseStyles, state) => ({
-              ...baseStyles,
-              paddingLeft: "10px",
-              borderRadius: "20px",
-              paddingBlock: "3px",
-              backgroundColor: selectedOption
-                ? "#effeeb"
-                : baseStyles.backgroundColor,
-              outline: selectedOption ? "2px solid #effeeb" : "none",
-            }),
-            dropdownIndicator: (provided, state) => ({
-              ...provided,
-              padding: "0",
-              paddingLeft: "3px",
-              paddingRight: "3px",
-            }),
-            menu: (provided, state) => ({
-              ...provided,
-              backgroundColor: selectedOption ? "#effeeb" : "#fff",
-            }),
-          }}
-        />
-      </div>
+        <div style={{ textAlign: "left" }} className="select-input">
+          <Select
+            options={optionsOne}
+            placeholder="Wybierz"
+            isSearchable={false}
+            components={{ DropdownIndicator }}
+            onChange={handleSelectChange}
+            styles={{
+              clearIndicator: (baseStyles, state) => ({
+                ...baseStyles,
+                display: "none",
+              }),
+              indicatorSeparator: (baseStyles, state) => ({
+                ...baseStyles,
+                display: "none",
+              }),
+              control: (baseStyles, state) => ({
+                ...baseStyles,
+                paddingLeft: "10px",
+                borderRadius: "20px",
+                paddingBlock: "3px",
+                backgroundColor: selectedOption
+                  ? "#effeeb"
+                  : baseStyles.backgroundColor,
+                outline: selectedOption ? "2px solid #effeeb" : "none",
+              }),
+              dropdownIndicator: (provided, state) => ({
+                ...provided,
+                padding: "0",
+                paddingLeft: "3px",
+                paddingRight: "3px",
+              }),
+              menu: (provided, state) => ({
+                ...provided,
+                backgroundColor: selectedOption ? "#effeeb" : "#fff",
+              }),
+            }}
+          />
+        </div>
       <h2
         className={`card-heading mt-4 mb-3 ${
           isButtonClicked && !selectedOption2 ? "red-title" : ""
@@ -169,7 +169,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
         whileHover={{ translateY: 5 }}
         onClick={handleButtonClick}
       >
-        Rozpocznij kalkulację
+        Rozpocznij wycenę
       </motion.button>
     </div>
   );

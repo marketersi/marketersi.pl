@@ -1,12 +1,12 @@
-'use client';
-import React, { useEffect } from 'react';
-import style from './team-page.module.css';
-import * as TeamComponents from '@/components/organisms/team/team-components/TeamComponents';
-import { useDispatch, useSelector } from 'react-redux';
-import { FETCH_TEAM_SCREEN_DATA } from '@/redux/zespol/teamAction';
-import OurClients from '../../components/organisms/main/ourclients/OurClients';
-import { FETCH_HOME_SCREEN_DATA } from '@/redux/home/homeAction';
-import BounceLoader from 'react-spinners/BounceLoader';
+"use client";
+import React, { useEffect } from "react";
+import style from "./team-page.module.css";
+import * as TeamComponents from "@/components/organisms/team/team-components/TeamComponents";
+import { useDispatch, useSelector } from "react-redux";
+import { FETCH_TEAM_SCREEN_DATA } from "@/redux/zespol/teamAction";
+import OurClients from "../../components/organisms/main/ourclients/OurClients";
+import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
+import Loader from "@/components/organisms/animation/Loader";
 
 const Team = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
@@ -19,12 +19,9 @@ const Team = () => {
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
   }, [dispatch]);
 
-  if (isLoading)
-    return (
-      <div className="loader-container">
-        <BounceLoader color="#00bfff" size={50} />
-      </div>
-    );
+  // if (isLoading) {
+  //   return <Loader />;
+  // }
 
   return (
     <>
@@ -32,9 +29,9 @@ const Team = () => {
       <TeamComponents.PersonalCard {...card1} />
       <TeamComponents.FreeSpace />
       <TeamComponents.Support />
-      {/* to be deleted */}
-      {/* <TeamComponents.ImageSlider /> */}
+      <TeamComponents.ImageSlider />
       <OurClients />
+      <TeamComponents.Review />
       <section className={style.Customers}>
         <div className={`${style.teamContent} mb-sm-5`}>
           <p className={style.customersPara}>

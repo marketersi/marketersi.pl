@@ -15,32 +15,53 @@ const NazwaHero = () => {
   };
   return (
     <section className="pnazw-page">
-      <div className="nazwaContainer ">
-        <div className="top-section-banner-text">
-          <div className="row">
-            <div className="col-lg-12 order-2">
+      <div className="nazwaContainer">
+        <div className="top-section-banner-text container-fluid1 UXBannerContainer banner-nazwa">
+          <div className="row align-items-center">
+            <div className="col-md-7">
               <div className="top-banner-text projects-top-banner-text naming-top-banner-text">
+                {/* <h1 className="top-banner-title projects-top-banner-title pnazw-topbanner-title">
+                Nazwij Swoją <span className="indent-20">
+                Przyszłość z</span> 
+                <span className="indent-40">
+                Marketersi:</span> <span className="indent-60">
+                Nazwy, Które</span> <span className="indent-80">
+                Definiują</span> 
+                <span className="underlineText indent-100">
+                Sukces
+                </span>
+                </h1> */}
                 <h1 className="top-banner-title projects-top-banner-title pnazw-topbanner-title">
-                  {heroSection?.title}
+                  {/* Nazwij Swoją
+                  <br />
+                  Przyszłość
+                  <br /> */}
+                  Stwórzmy nazwę, <br />która wyrazi <br />charakter <br />Twojej firmy.
+                  {/* z Marketersi. <br /> Nazwy, Które <br /> Definiują Sukces. */}
                 </h1>
-                <h2 className="top-banner-long-text names-top-banner-long-text text-center">
-                  {heroSection?.subtitle1}
+                <h2 className="nazwa-heading">
+                Nazwy, które realnie wspierają wzrost marki.<br/>
+                Nasze propozycje pozostają w pamięci na lata.
                 </h2>
-                <h2 className="top-banner-long-text names-top-banner-long-text pnazw-second-maintext text-center">
-                  {heroSection?.subtitle2}
+                <h2 className="nazwa-heading">
+                Gwarantujemy 100% satysfakcji
+                <br/>
+                tworzymy, aż Cię zachwycimy.
+
                 </h2>
               </div>
               <div className="catalog-submit-button text-left projects-catalog-submit-buttom">
                 <button
-                  className="download-catalog-button nazwaHeroBtn"
+                  className="download-catalog-button nazwaHeroBtn banner-btn"
                   type="button"
                   onClick={() => setIsModal(true)}
                 >
-                  <strong>Wyślijcie mi niezobowiązującą ofertę</strong>
+                  Brzmi świetnie. Wyślijcie mi ofertę
                 </button>
               </div>
             </div>
-            <div className="col-lg-12  order-1">
+            <div className="col-md-5">
+          
               {/* <ReactPlayer
                 url={heroSection?.background_video}
                 playing={true}
@@ -51,10 +72,17 @@ const NazwaHero = () => {
                 className="heroVideo"
                 playsinline
               /> */}
-              <img src={heroSection?.background_video} alt="" className="nazwaHeroImg"/>
+              <img
+                src={heroSection?.background_video}
+                alt=""
+                className="nazwaHeroImg"
+              />
             </div>
+          </div>
 
-            <div className="col-md-12 part-sec"></div>
+          <div className="row align-items-start">
+
+              <div className="col-md-12 part-sec"></div>
 
             <div className="clearfix"></div>
           </div>

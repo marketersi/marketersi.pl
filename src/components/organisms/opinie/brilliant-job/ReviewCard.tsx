@@ -3,12 +3,19 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 import "./reviewCard.css";
+<<<<<<< HEAD
 import useOsClass from "@/components/molecules/useOsClass";
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const ReviewCard = () => {
   const { screenData } = useSelector((state) => state.opinion);
   const BrilliantJob = screenData.BrilliantJob || [];
+<<<<<<< HEAD
   const osClass = useOsClass();
+=======
+
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   return (
     <div className="review">  
     <div className="review_container">
@@ -29,7 +36,11 @@ const ReviewCard = () => {
           </div>
         </div>
         <div className="rc_review">{BrilliantJob[0]?.review}</div>
+<<<<<<< HEAD
         <div className={`rc_video_container ${osClass}`}>
+=======
+        <div className="rc_video_container">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <ReactPlayer
             muted={true}
             playing={true}
@@ -37,7 +48,10 @@ const ReviewCard = () => {
             width="100%"
             height="auto"
             url={BrilliantJob[0]?.video_url}
+<<<<<<< HEAD
             playsinline
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           />
         </div>
       </div>

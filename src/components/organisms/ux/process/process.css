@@ -5,7 +5,8 @@
     align-items: flex-start;
     /* Ensures the circles start from the top */
     width: 98vw;
-    margin-top: 340px;
+    margin-top: 0px;
+    display: none;
 }
 
 .line {
@@ -20,13 +21,13 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #b6b6b6;
+    background-color:#00bfff;
     position: absolute;
     animation: blinkAndZoom 2s infinite;
 }
 .bottomImg {
     position: absolute;
-    top: calc(100% - -5420px);
+    top: calc(100% - -4500px);
     transform: rotate(210deg);
     width: calc(5% + 100px);
     left: calc(55% - 150px);

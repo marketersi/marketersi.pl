@@ -14,23 +14,23 @@ const Enexo = () => {
           <div className="row">
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle">
-                {EnexoData?.title}
+              LINGUSFERA <br/> WARSZAWA
               </h5>
 
               <h3 className="projects-theme-title-2 text-left">
                 {EnexoData?.subtitle}
               </h3>
-              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc projects-custom-margin-2">
+              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc projects-custom-margin-2  mb-4 mobilelefttext">
                 {EnexoData?.text1}
                 
               </p>
-              <p className="theme-desc projects-theme-desc-p">
+              <p className="theme-desc projects-theme-desc-p mb-4 mobilelefttext">
                 {EnexoData?.text2}
               </p>
-              <p className="theme-desc projects-theme-desc-p">
+              <p className="theme-desc projects-theme-desc-p mb-4 mobilelefttext">
                 {EnexoData?.text3}
               </p>
-              <p className="theme-desc projects-theme-desc-p">
+              <p className="theme-desc projects-theme-desc-p mobilelefttext">
                 {EnexoData?.text4}
               </p>
             </div>

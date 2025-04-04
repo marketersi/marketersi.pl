@@ -30,6 +30,7 @@ import { FETCH_LOGO_SCREEN_DATA } from '@/redux/projektowanie-logo/logoAction';
 import { FETCH_SALES_SCREEN_DATA } from '@/redux/tresci/salescontentAction';
 import { ModalForm } from '@/components/organisms/tresci-sprzedazowe/ModalForm';
 import BounceLoader from 'react-spinners/BounceLoader';
+import Lex from '@/components/organisms/logo/Lex';
 
 const LogoDesignScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
@@ -74,9 +75,11 @@ const LogoDesignScreen = () => {
       <Receive />
       <Guarantee openModal={openModal} />
       <LogoAccordion items={accordionData} title={title} image={description} />
-      <ProjectValue />
+      <ProjectValue openModal={openModal} />
       <Gallery openModal={openModal} />
       <StepByStep />
+      <section className="logo-stef mb-4">
+      
       <FreeShops />
       <Enexo />
       <Daco />
@@ -85,12 +88,13 @@ const LogoDesignScreen = () => {
       <Construction />
       <Restaurant />
       <Park />
-      <GPN />
-      <NewCompany />
+      <Lex />
+      </section>
+      {/* <GPN /> */}
+      {/* <NewCompany /> */}
       <section className="black-sec-form">
-        <div className="copywriter-ending-1 text-center">
-          Zróbmy razem <br />
-          coś fajnego
+        <div className="copywriter-ending-1 text-center mt-0 mobilechangeFont">
+        Przekształćmy <br/> Twoje wizje <br />w sukcesy!
         </div>
         <Form />
       </section>

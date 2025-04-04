@@ -11,12 +11,14 @@ export default function SurveyModal(props) {
 
   const { isLoading, screenData } = useSelector((state) => state.priceList);
   const { Form } = screenData?.cardMenu?.MenuTwo || {};
+  console.log(Form , 'Form-dsaaaaaaaaaaaaaaaaa')
+  console.log(screenData?.cardMenu?.MenuTwo , 'Form-dsaaaaaaaaaaaaaaaaaddddddddddddddd')
 
   return (
     <ReactModal
       isOpen={props.showModal}
       contentLabel="Form Modal"
-      className="Modal content"
+      className="Modal"
       overlayClassName="Overlay"
     >
       <div className="ModalTitle">

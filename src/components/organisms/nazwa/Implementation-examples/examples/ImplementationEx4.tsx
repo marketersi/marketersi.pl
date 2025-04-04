@@ -6,13 +6,13 @@ const ImplementationEx4 = () => {
   const { implementation } = screenData || {};
   const { example3 } = implementation || {};
   return (
-    <section className="projects-gray-opinion-5">
-      {example3?.map((item, index) => {
+    <section className="projects-gray-opinion-5 projects-push-content-top primadentdiv">
+      {example3?.slice(0, 6).map((item, index) => {
         return (
           <div key={index} className="container names-custom-container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <div className="names-client-name copywriter-cname custom-after-top-line cname-big-mtop">
+                <div className="cname-pb names-client-name copywriter-cname custom-after-top-line cname-big-mtop">
                   {item.title}
                 </div>
                 <div className="names-client-desc">{item.subtitle}</div>
@@ -41,7 +41,7 @@ const ImplementationEx4 = () => {
             <div className="container ">
               <div className="row">
                 <div className="col-md-12">
-                  <p className="theme-desc">{item.para}</p>
+                  <p className="theme-desc max-900 mobilelefttext">{item.para}</p>
                 </div>
               </div>
             </div>
