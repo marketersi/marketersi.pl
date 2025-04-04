@@ -41,7 +41,6 @@
   margin: 0 23px 0 auto;
   width: 36rem;
   padding: 2rem 3rem;
-
   border-radius: 0.9rem;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
@@ -148,7 +147,6 @@ a.form_number_content {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-around;
-
   padding: 0 5rem 5rem 5rem;
 }
 

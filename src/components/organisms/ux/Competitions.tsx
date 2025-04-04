@@ -2,7 +2,20 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 
+<<<<<<< HEAD
 
+=======
+const CompetitionsData = {
+  title: "Konkurencja w wersji ",
+  titleStyle: "hiper",
+  image:
+    "https://propozycje.owocni.pl/ux/Podkreslenie-konkurencja.0db36d83.png",
+  description1: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description2: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description3: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+  description4: "Oto internet. Tu walutą jest ludzka uwaga. Walczy o nią",
+};
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const Competitions = () => {
   const { screenData } = useSelector((state) => state.ux);
@@ -47,6 +60,7 @@ const Competitions = () => {
           <div>
             {CompetitionData.compt_description1}
 
+<<<<<<< HEAD
             {/* {CompetitionData.compt_description3} */}
           </div>
           <p className="">
@@ -54,6 +68,15 @@ const Competitions = () => {
           </p>
           <p>
             {CompetitionData.compt_description3}
+=======
+            {CompetitionData.compt_description3}
+          </div>
+          <p>
+            {CompetitionData.compt_description2}
+          </p>
+          <p>
+            {CompetitionData.compt_description3}...
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           </p>
         </div>
       </section>

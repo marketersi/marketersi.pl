@@ -4,10 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import "../tresci.css";
 import { SEND_ME_A_QUOTE } from "@/redux/tresci/salescontentAction";
 import { useRouter } from "next/navigation";
+<<<<<<< HEAD
 import emailjs from "@emailjs/browser";
 import dotenv from "dotenv";
 import { toast } from "react-toastify";
 dotenv.config();
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const Form = () => {
   const {
@@ -23,6 +26,7 @@ const Form = () => {
   const dispatch = useDispatch();
   const router = useRouter();
 
+<<<<<<< HEAD
   // const onSubmit = (data) => {
   //   dispatch({ type: SEND_ME_A_QUOTE, payload: data });
   //   reset();
@@ -54,6 +58,11 @@ const Form = () => {
           toast.error("Ups! Coś poszło nie tak. Spróbuj ponownie później.");
         }
       );
+=======
+  const onSubmit = (data) => {
+    console.log(data);
+    dispatch({ type: SEND_ME_A_QUOTE, payload: data });
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
     reset();
   };
 
@@ -65,33 +74,55 @@ const Form = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <div className="sendQuote sentquote-form">
         <h2>
           Wypełnij i otrzymaj ofertę dopasowaną do Ciebie. Całkowicie bez
           zobowiązań.
+=======
+      <div className="sendQuote">
+        <h2>
+          Napisz kilka słów o swoim projekcie i otrzymaj niezobowiązującą
+          ofertę.
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         </h2>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="inputLayout">
             <input
               required
+<<<<<<< HEAD
               placeholder="Twoje imię"
+=======
+              placeholder="Imię"
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               {...register("name", { required: true })}
             />
             <input
               required
+<<<<<<< HEAD
               placeholder="Email"
+=======
+              placeholder="Mail"
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               type="email"
               {...register("email", { required: true })}
             />
             <input
+<<<<<<< HEAD
               placeholder="Nr telefonu"
             //  pattern="\d{7,15}"
               {...register("phone")}
               Nr telefonu
+=======
+              placeholder="Tel."
+              pattern="\d{7,15}"
+              {...register("phone")}
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             />
           </div>
           <textarea
             {...register("message")}
+<<<<<<< HEAD
             placeholder="Opowiedz nam o swoim projekcie. Czego potrzebujesz? Zajmiemy się resztą!"
           />
 
@@ -111,6 +142,16 @@ const Form = () => {
               src="https://images.prismic.io/marketersi/Z5xxjpbqstJ9-Emr_NEWSHIELDGRAPHIC.png?auto=format,compress"
               alt="shield"
               className="sheildPng"
+=======
+            placeholder="Napisz kilka słów o swoim projekcie"
+          />
+
+          <div className="quoteBtn">
+            <button type="submit">Wyślijcie mi niezobowiązującą ofertę</button>
+            <img
+              src="https://images.prismic.io/marketersi/ZfL0JUmNsf2sHk-N_Group1.png?auto=format,compress"
+              alt=""
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             />
           </div>
         </form>

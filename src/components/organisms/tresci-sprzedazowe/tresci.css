@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -17,6 +18,8 @@
   align-items: center;
   gap:5px;
 }
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .copywriter-page .copywriter-form-div {
   text-align: center;
 }
@@ -203,6 +206,7 @@ contact-inputs textarea {
 
 /* =============optios============== */
 .opinion-box {
+<<<<<<< HEAD
   margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
@@ -237,6 +241,25 @@ contact-inputs textarea {
     box-shadow: 0 4px 0 0 var(--brand-blue-hover);
     transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out, box-shadow .15sease-in-out;
     border: none;
+=======
+  margin-top: 85px;
+}
+
+.projects-empty-opinion-box {
+  height: 120px;
+}
+
+.projects-client-opinion-p {
+  font-family: "Arial";
+  color: #e3e3e3;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.copywriter-green-background {
+  background-color: #438d07 !important;
+  color: white !important;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 /* =============concept 366============== */
@@ -245,12 +268,28 @@ contact-inputs textarea {
   margin-top: -1px;
 }
 
+<<<<<<< HEAD
+=======
+.copywriter-standard-mt-80 {
+  margin-top: 100px;
+}
+
+.copywriter-standard-mtb-40 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .copywriter-ikony-subtheme {
   font-size: 36px;
   letter-spacing: -0.01em;
   line-height: 40px;
   font-family: "RobotoLight";
+<<<<<<< HEAD
   max-width: 700px;
+=======
+  max-width: 500px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-ikony-theme {
@@ -263,7 +302,11 @@ contact-inputs textarea {
 }
 
 .copywriter-standard-mt-80 {
+<<<<<<< HEAD
   margin-top: 0px;
+=======
+  margin-top: 100px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-custom-img-text {
@@ -276,7 +319,11 @@ contact-inputs textarea {
 .copywriter-custom-img-text-sm {
   letter-spacing: -0.01em;
   font-size: 36px;
+<<<<<<< HEAD
   max-width: 700px;
+=======
+  max-width: 500px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-bg-10 .copywriter-fotel {
@@ -285,7 +332,13 @@ contact-inputs textarea {
   top: -250px;
 }
 
+<<<<<<< HEAD
 
+=======
+.copywriter-standard-mt-40 {
+  margin-top: 60px;
+}
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 .copywriter-bg-10 {
   background: none;
@@ -303,6 +356,7 @@ contact-inputs textarea {
 }
 
 .copywriter-custom-text-akuku {
+<<<<<<< HEAD
   font-weight: 400;
   font-size: 44px;
   line-height: 48px;
@@ -329,6 +383,22 @@ contact-inputs textarea {
 
 .copywriter-standard-mb-80 {
   margin-bottom: 60px;
+=======
+  font-family: "Georgia";
+  font-size: 69px;
+  line-height: 77px;
+}
+
+.copywriter-custom-subtext-akuku {
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.copywriter-standard-mb-80 {
+  margin-bottom: 100px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-page .new-mt-2 {
@@ -357,6 +427,13 @@ contact-inputs textarea {
   padding-left: 30%;
 }
 
+<<<<<<< HEAD
+=======
+.copywriter-custom-margin {
+  margin-right: -30px;
+}
+
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .copywriter-bg-16 {
   background-image: url(https://cdn.owocni.pl/img/single-copywriter/Pisanie-tekstow-reklamowych.jpg);
   background-repeat: no-repeat;
@@ -373,9 +450,15 @@ contact-inputs textarea {
 
 .copywriter-inside-img-text {
   padding-top: 400px;
+<<<<<<< HEAD
   color: #333;
   font-size: 85px;
 
+=======
+  color: #373737;
+  font-size: 85px;
+  font-family: "Roboto";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   line-height: 90px;
   letter-spacing: -0.025em;
   max-width: 570px;
@@ -386,6 +469,7 @@ contact-inputs textarea {
   display: none;
   margin-top: 50px;
 }
+<<<<<<< HEAD
 .banner-title {
   max-width: 900px !important;
 }
@@ -422,6 +506,30 @@ contact-inputs textarea {
   font-size: 47px;
   letter-spacing: -0.025em;
   line-height: 56px;
+=======
+
+.copywriter-standard-mb-m100 {
+  margin-bottom: -100px;
+}
+
+.copywriter-custom-text-turbokids-1 {
+  color: #373737;
+  text-align: right;
+  font-family: "Roboto", serif;
+  font-size: 47px;
+  letter-spacing: -0.025em;
+  line-height: 56px;
+  margin-bottom: 30px;
+}
+
+.copywriter-custom-subtext-turbokids-1 {
+  color: #373737;
+  text-align: right;
+  font-family: "Roboto", serif;
+  font-size: 30px;
+  letter-spacing: -0.025em;
+  line-height: 36px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .pl-20 {
@@ -435,7 +543,11 @@ contact-inputs textarea {
 .copywriter-after-img-1 {
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
   margin-bottom: 100px;
+=======
+  margin-bottom: 283px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-top: 100px;
 }
 
@@ -447,8 +559,13 @@ contact-inputs textarea {
   display: none;
 }
 
+<<<<<<< HEAD
 /* .copywriter-after-img-1:after {
   content: '';
+=======
+.copywriter-after-img-1:after {
+  content: "";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   width: 500px;
   height: 620px;
   position: absolute;
@@ -460,11 +577,19 @@ contact-inputs textarea {
   background-position: left;
   z-index: -1;
   background-size: 80%;
+<<<<<<< HEAD
 } */
 
 .copywriter-border-870 {
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
+=======
+}
+
+.copywriter-border-870 {
+  border-top: 2px solid #373737;
+  border-bottom: 2px solid #373737;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   max-width: 870px;
   margin: 0 auto;
   padding-top: 15px;
@@ -483,6 +608,7 @@ contact-inputs textarea {
 .copywriter-after-img-2 {
   position: relative;
   z-index: 2;
+<<<<<<< HEAD
   margin-bottom: 55px;
 }
 /* Font: Georgia, weight 400 (bolded), size 61px, line-height 74px */
@@ -497,6 +623,24 @@ contact-inputs textarea {
 
 .copywriter-custom-subtext-4 {
   color: #333;
+=======
+  margin-bottom: 100px;
+}
+
+.copywriter-custom-text-4 {
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 58px;
+  color: #373737;
+  line-height: 63px;
+  letter-spacing: -0.01em;
+  margin-bottom: 160px;
+  max-width: 650px;
+}
+
+.copywriter-custom-subtext-4 {
+  color: #373737;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   font-size: 25px;
   line-height: 33px;
   letter-spacing: -0.01em;
@@ -504,8 +648,13 @@ contact-inputs textarea {
   max-width: 315px;
 }
 
+<<<<<<< HEAD
 /* .copywriter-after-img-2:after {
   content: '';
+=======
+.copywriter-after-img-2:after {
+  content: "";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   width: 769px;
   height: 620px;
   position: absolute;
@@ -516,6 +665,7 @@ contact-inputs textarea {
   top: -80px;
   background-position: left;
   z-index: -1;
+<<<<<<< HEAD
 } */
 .lingu {
   max-width: 900px !important;
@@ -532,6 +682,19 @@ contact-inputs textarea {
   max-width: 900px;
   margin-inline: auto;
   font-weight: 400;
+=======
+}
+
+.copywriter-custom-header-3 {
+  font-family: "Georgia";
+  font-size: 78px;
+  letter-spacing: -0.01em;
+  line-height: 82px;
+  color: #353434;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-inline: auto;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .mako-big-img {
@@ -552,7 +715,11 @@ contact-inputs textarea {
   line-height: 74px;
   color: #353434;
   margin-top: 30px;
+<<<<<<< HEAD
   max-width: 900px;
+=======
+  max-width: 1000px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-inline: auto;
   margin-bottom: 50px;
 }
@@ -568,12 +735,21 @@ contact-inputs textarea {
 }
 
 .copywriter-reading-container {
+<<<<<<< HEAD
   max-width: 900px;
 }
 
 /* .copywriter-standard-pb-80 {
   padding-bottom: 100px;
 } */
+=======
+  max-width: 800px;
+}
+
+.copywriter-standard-pb-80 {
+  padding-bottom: 100px;
+}
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 /* ===========================profit slider=============== */
 .copywriter-ending-white-bg {
@@ -593,7 +769,11 @@ contact-inputs textarea {
 }
 
 .names-thematic-section-black {
+<<<<<<< HEAD
   /* background-color: #000000; */
+=======
+  background-color: #000000;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .copywriter-ending-big {
@@ -603,7 +783,11 @@ contact-inputs textarea {
   font-weight: 600;
   font-family: "Playfair Display", serif;
   margin-inline: auto;
+<<<<<<< HEAD
   max-width: 900px;
+=======
+  max-width: 800px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-top: 50px;
 }
 
@@ -615,7 +799,11 @@ contact-inputs textarea {
   margin-top: 70px;
   margin-bottom: 70px;
   font-style: italic;
+<<<<<<< HEAD
   max-width: 900px;
+=======
+  max-width: 800px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin-inline: auto;
   font-weight: 400;
 }
@@ -640,6 +828,7 @@ section.profit-sec {
 }
 
 .copywriter-ending-1 {
+<<<<<<< HEAD
   font-size: 85px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -656,11 +845,36 @@ section.profit-sec {
 
 .accordion-title {
   padding: 25px 25px;
+=======
+  font-size: 129px;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  line-height: 123px;
+  letter-spacing: -0.025em;
+  color: white;
+  margin-bottom: 50px;
+}
+
+section.black-sec-form {
+  background: black;
+  padding: 100px 0;
+}
+
+/* ===================================faq==================================== */
+
+.accordion-item {
+  margin-bottom: 5px;
+}
+
+.accordion-title {
+  padding: 15px 0px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   cursor: pointer;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
   gap: 40px;
   font-size: 24px;
   font-weight: 400;
@@ -706,10 +920,38 @@ section.profit-sec {
   text-align: center;
   display: block;
   text-decoration: none;
+=======
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid lightgray;
+}
+
+.accordion-title.active {
+  background-color: transparent;
+}
+
+.accordion-content {
+  padding: 20px 0;
+  font-size: 14px;
+  background: transparent;
+  border-top: 1px solid lightgray;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.faqContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faqContainer .accordion-item:before {
+  background-color: transparent;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 /* -----------form------------ */
 .sendQuote {
+<<<<<<< HEAD
   max-width: 630px;
   background: white;
   padding: 34px;
@@ -717,6 +959,12 @@ section.profit-sec {
   box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.15), 0 0 0 0 #fff,
     inset 2px 2px 2px 0 #fff, inset -2px -2px 2px 0 #c7c7c7;
   margin-bottom: 70px;
+=======
+  max-width: 600px;
+  background: white;
+  padding: 40px;
+  margin-inline: auto;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .inputLayout {
@@ -734,7 +982,11 @@ section.profit-sec {
 .sendQuote textarea {
   width: 100%;
   margin-bottom: 20px;
+<<<<<<< HEAD
   padding: 10px 10px 10px;
+=======
+  padding: 10px 10px 0;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   resize: none;
 }
 
@@ -751,12 +1003,16 @@ section.profit-sec {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 40px;
+<<<<<<< HEAD
   text-align: center;
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .quoteBtn button {
   padding: 10px 20px;
   border: navajowhite;
+<<<<<<< HEAD
   /* background: #438d07; */
   background: var(--brand-blue);
   color: white;
@@ -772,6 +1028,15 @@ section.profit-sec {
   outline: none;
 }
 
+=======
+  background: #438d07;
+  color: white;
+  font-size: 22px;
+  box-shadow: 0px 4px 0 #295a01;
+  border-radius: 10px;
+}
+
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 .quoteBtn {
   display: flex;
   align-items: center;
@@ -803,12 +1068,22 @@ button.formModalCloseBtn {
 
 /* business tool */
 .copywriter-custom-text-1 {
+<<<<<<< HEAD
+=======
+  width: 75%;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   margin: 0 auto;
 }
 
 .copywriter-custom-text-2 {
+<<<<<<< HEAD
   margin: 0 auto;
   /* margin-top: 30px; */
+=======
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 @media screen and (max-width: 768px) {
@@ -846,9 +1121,12 @@ button.formModalCloseBtn {
     right: 4%;
     color: black;
   }
+<<<<<<< HEAD
   .accordion-content {
     padding: 15px;
     font-size: 16px;
     line-height: 24px;
   }
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }

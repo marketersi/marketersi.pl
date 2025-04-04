@@ -244,7 +244,6 @@ const Header = () => {
                           Projektowanie logo
                         </Link>
                       </div>
-
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}

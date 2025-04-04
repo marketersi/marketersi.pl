@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 
-
 const Restaurant = () => {
   const {isLoading, screenData} = useSelector((state) => state.logo);
   const {RestaurantData} = screenData || {};

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -43,10 +44,31 @@ const ThanksMessage = () => {
         <img
           className={style.maiImg}
           src="/assets/images/Thanks/envolope.png"
+=======
+"use client"
+import React from "react";
+import { useRouter } from "next/navigation";
+import style from "./thanks.module.css";
+
+const ThanksMessage = () => {
+  const router = useRouter();
+
+  const handleGoBack = () => {
+    router.back(); // This will navigate to the previous page
+  };
+
+  return (
+    <div className={style.thanks}>
+      <div className={style.thanksContainer}>
+        <img
+          className={style.maiImg}
+          src="/assets/images/Thanks/mail-animation.svg"
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           alt=""
         />
         <img
           className={style.profileImg}
+<<<<<<< HEAD
           src="/assets/images/Thanks/girl.jpg"
           alt=""
         />
@@ -67,6 +89,29 @@ const ThanksMessage = () => {
         </h5>
 
         <button onClick={handleGoToOpinie}>Poznaj opinie klientów</button>
+=======
+          src="https://www.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMarta-owocni.08d79858.png&w=128&q=75"
+          alt=""
+        />
+        <h2>Dzięki za wiadomość</h2>
+        <h4>
+          Hej tu Marta. O ile nie jest to weekend i jest przed godziną 16,
+          odpiszę na Twoją wiadomość jeszcze dziś.
+        </h4>
+        <div className={style.likeButton}>
+          <img src="/assets/images/Thanks/FEppCFCt76d.png" alt="" />
+          <p>Obserwuj</p>
+        </div>
+        <h5>
+          <span>Tymczasem kliknij “lubię to”.</span>
+          Warto mieć fajne towarzystwo na fejsie.
+        </h5>
+        <p>
+          11 tys. użytkowników obserwuje to. <br />
+          Wyprzedź swoich znajomych i obserwuj to.
+        </p>
+        <button onClick={handleGoBack}>Wróć na poprzednią stronę</button>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
       </div>
     </div>
   );

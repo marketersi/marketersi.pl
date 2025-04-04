@@ -26,7 +26,6 @@ const CustomerReview3 = () => {
                   alt="Mężczyzna i stolarstwo"
                 />
               </div>
-
               <div className="opinion-box-content projects-opinion-5 projects-opinion-1-new naming-opinion-text naming-opinion-img">
                 <p className="theme-desc projects-client-opinion-p text-center">
                   <strong>{customer_review?.customer_quote}</strong>

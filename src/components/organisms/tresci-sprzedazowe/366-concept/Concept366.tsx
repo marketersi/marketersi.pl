@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import React from 'react';
 import { useSelector } from 'react-redux';
+=======
+import React from "react";
+import img from "next/img";
+import { useSelector } from "react-redux";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const Concept366 = () => {
   const { isLoading, screenData } = useSelector((state) => state.sales);
@@ -9,6 +15,7 @@ const Concept366 = () => {
   return (
     <>
       <section className="thematic-section">
+<<<<<<< HEAD
         {/* <img
           src="https://images.prismic.io/marketersi/ce15d2cf-1440-47e9-a3de-1f63749c8095_luk.png?auto=compress,format"
           className="projects-bow-2"
@@ -16,15 +23,30 @@ const Concept366 = () => {
         /> */}
 
         {/* <div className="copywriter-text-center copywriter-standard-mt-80">
+=======
+        <img
+          src="https://images.prismic.io/marketersi/ce15d2cf-1440-47e9-a3de-1f63749c8095_luk.png?auto=compress,format"
+          className="projects-bow-2"
+          alt=""
+        />
+
+        <div className="copywriter-text-center copywriter-standard-mt-80">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             src={projectSection4?.logo_image}
             className="smaller-logos"
             title="Przykład realizacji przez agencję reklamową dla klienta"
             alt="Reklama dla klienta Owocnych"
           />
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="container custom-container2">
+=======
+        </div>
+
+        <div className="container custom-container2">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <div className="row">
             <div className="col-md-12 text-center">
               <div className="names-client-name copywriter-black copywriter-green-underline copywriter-cname">
@@ -42,6 +64,7 @@ const Concept366 = () => {
               </p>
             </div>
           </div>
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="copywriter-custom-img-text text-center copywriter-standard-mtb-40">
@@ -49,6 +72,15 @@ const Concept366 = () => {
         </div> */}
 
         {/* <div className="container custom-container2">
+=======
+        </div>
+
+        <div className="copywriter-custom-img-text text-center copywriter-standard-mtb-40">
+          {projectSection4?.title_2}
+        </div>
+
+        <div className="container custom-container2">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-ikony-subtheme copywriter-custom-font-size copywriter-rwd-mtb-40">
@@ -56,28 +88,47 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="copywriter-text-center copywriter-rwd-mtb-40">
+=======
+        </div>
+
+        <div className="copywriter-text-center copywriter-rwd-mtb-40">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             src={projectSection4?.image_1}
             title="Copywriterzy Owocnych przygotowali hasła reklamowe"
             alt="Przykład realizacji tekstów reklamowych dla klienta"
             layout="responsive"
+<<<<<<< HEAD
             style={{maxWidth:"1000px", width:"100%", margin: "50px auto 0"}}
           />
         </div> */}
 
         {/* <div className="copywriter-text-center copywriter-standard-mtb-40">
+=======
+          />
+        </div>
+
+        <div className="copywriter-text-center copywriter-standard-mtb-40">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             src={projectSection4?.image_2}
             title="Hasło reklamowe dla klienta Owocnych"
             alt="Jeden z tekstów reklamowych na strony internetowe"
             layout="responsive"
           />
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="container custom-container2">
+=======
+        </div>
+
+        <div className="container custom-container2">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-ikony-theme">
@@ -85,18 +136,30 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="copywriter-text-center">
+=======
+        </div>
+
+        <div className="copywriter-text-center">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             src={projectSection4?.image_3}
             title="Zrealizowane teksty reklamowe dla klienta Owocnych"
             alt="Content marketing - przykład"
             layout="responsive"
           />
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="container custom-container2 copywriter-standard-mt-80">
+=======
+        </div>
+
+        <div className="container custom-container2 copywriter-standard-mt-80">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-custom-img-text">
@@ -108,9 +171,15 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="copywriter-bg-10" style={{ position: "relative" }}>
+=======
+        </div>
+
+        <div className="copywriter-bg-10" style={{ position: "relative" }}>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             className="copywriter-fotel"
             src={projectSection4?.right_image}
@@ -118,17 +187,29 @@ const Concept366 = () => {
             alt="Przykładowe zrealizowane dotychczas teksty na stronę"
           />
 
+<<<<<<< HEAD
         </div> */}
 
        
 
         {/* <div className="copywriter-text-center copywriter-standard-mt-40">
+=======
+        </div>
+
+        <br />
+
+        <div className="copywriter-text-center copywriter-standard-mt-40">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             src={projectSection5?.logo_image}
             title="Własna firma - współpraca z agencją reklamową Owocni"
             alt="Slogany reklamowe przykład współpracy"
           />
+<<<<<<< HEAD
         </div> */}
+=======
+        </div>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
         <div className="container custom-container2">
           <div className="row">
@@ -137,13 +218,23 @@ const Concept366 = () => {
                 {projectSection5?.underlined_label}
               </div>
 
+<<<<<<< HEAD
               <div className="names-client-desc copywriter-client-desc-margin names-client-01">
+=======
+              <div className="names-client-desc copywriter-client-desc-margin">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                 {projectSection5?.title_1}
               </div>
             </div>
 
             <div className="col-md-12">
+<<<<<<< HEAD
               <p className="theme-desc mobileLefttext">{projectSection5?.description}</p>
+=======
+              <p className="theme-desc">
+                {projectSection5?.description}
+              </p>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             </div>
           </div>
         </div>
@@ -151,13 +242,18 @@ const Concept366 = () => {
         <div className="copywriter-text-center copywriter-standard-mtb-40 copywriter-standard-mb-80 copywriter-rwd-mtb-40 content-marketing">
           <img
             src={projectSection5?.image_1}
+<<<<<<< HEAD
             className="copywriter-seo-img lingu"
+=======
+            className="copywriter-seo-img"
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             title="Copywriter oferta i przykład jednej z realizacji"
             alt="Zrealizowane teksty na stronę jednego z klientów"
             layout="responsive"
           />
         </div>
 
+<<<<<<< HEAD
         <div className="container custom-container2 copywriter-standard-mtb-40 text-center">
           <div className="row">
             <div className="col-md-12 p-0">
@@ -166,22 +262,41 @@ const Concept366 = () => {
                 Z Naturą Za Rękę – Każdego Dnia
               </div>
               <div className="copywriter-custom-subtext-akuku banner-subtitle-text">
+=======
+        <div className="container custom-container2 copywriter-standard-mtb-40">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="copywriter-custom-text-akuku copywriter-standard-mtb-40">
+                {projectSection5?.bannar_title}
+              </div>
+              <div className="copywriter-custom-subtext-akuku">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                 {projectSection5?.bannar_sub_title}
               </div>
             </div>
           </div>
         </div>
 
+<<<<<<< HEAD
         {/* <div className="copywriter-text-center copywriter-standard-mt-40">
+=======
+        <div className="copywriter-text-center copywriter-standard-mt-40">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <img
             src={projectSection5?.bannar_image}
             title="Copywriterzy przygotowali teksty reklamowe dla studia"
             alt="Przykład prac klienta agencji marketingowej"
             layout="responsive"
           />
+<<<<<<< HEAD
         </div> */}
 
         {/* <div className="container custom-container2 copywriter-standard-mb-80">
+=======
+        </div>
+
+        <div className="container custom-container2 copywriter-standard-mb-80">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           <div className="row">
             <div className="col-md-12">
               <div className="copywriter-custom-text-akuku-2 copywriter-standard-mb-40 copywriter-standard-mt-m80 new-mt-2">
@@ -192,14 +307,23 @@ const Concept366 = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
         </div> */}
         {/* 
+=======
+        </div>
+
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           alt=""
           className="projects-rotate-bow projects-bow-1"
           layout="responsive"
+<<<<<<< HEAD
         /> */}
+=======
+        />
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
       </section>
     </>
   );

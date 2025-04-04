@@ -9,12 +9,18 @@ import {
   CarouselContext,
 } from "../../strategia-marketingowa/ClientCarouselNext";
 import { useContext } from "react";
+<<<<<<< HEAD
 import useOsClass from "@/components/molecules/useOsClass";
 
 const SlideOne = () => {
   const { handleNext } = useContext(CarouselContext);
 
   const osClass = useOsClass();
+=======
+
+const SlideOne = () => {
+  const { handleNext } = useContext(CarouselContext);
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   return (
     <>
       <Row>
@@ -34,7 +40,11 @@ const SlideOne = () => {
             </h3>
             <div className={style.jobReview}>
               <Row>
+<<<<<<< HEAD
                 <Col sm={2} className={osClass}>
+=======
+                <Col sm={2}>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                   <ReactPlayer
                     url="https://owocni.pl/assets/nasi-klienci/video/Iglarki-logo.mp4"
                     playing={true}
@@ -43,7 +53,10 @@ const SlideOne = () => {
                     width="100%"
                     height="auto"
                     className={style.heroVideo}
+<<<<<<< HEAD
                     playsinline
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                   />
                 </Col>
                 <Col sm={10}>
@@ -87,7 +100,11 @@ const SlideTwo = () => {
             </h3>
             <div className={style.jobReview}>
               <Row>
+<<<<<<< HEAD
                 <Col sm={2} className={osClass}>
+=======
+                <Col sm={2}>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                   <ReactPlayer
                     url="https://owocni.pl/assets/nasi-klienci/video/Iglarki-logo.mp4"
                     playing={true}
@@ -96,7 +113,10 @@ const SlideTwo = () => {
                     width="100%"
                     height="auto"
                     className={style.heroVideo}
+<<<<<<< HEAD
                     playsinline
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                   />
                 </Col>
                 <Col sm={10}>

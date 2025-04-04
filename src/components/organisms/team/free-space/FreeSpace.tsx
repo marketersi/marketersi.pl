@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 'use client';
 import React from 'react';
 import style from '../team.module.css';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
+=======
+"use client";
+import React from "react";
+import style from "../team.module.css";
+import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 
 const FreeSpace = () => {
   const { isLoading, screenData } = useSelector((state) => state.team);
@@ -10,6 +18,7 @@ const FreeSpace = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <section className= {`${style.topmobilespace} WidthContent`}>
       <div
         className={style.free}
@@ -34,13 +43,38 @@ const FreeSpace = () => {
                 href="mailto:studio@marketersi.pl"
               >
                 <button>Dołącz do nas</button>
+=======
+      <div className={style.free} style={{ backgroundImage: `url(${section1?.section_one_img})` }}>
+        <div className={style.teamContent}>
+          <p >
+            <span>{section1?.section_subtitle_one}</span>
+            {section1?.section_one_para_one}
+          </p>
+          <p>
+            {section1?.section_one_para_two}
+          </p>
+
+          <div className={style.mainHeading}>
+            <h2>
+              {section1?.section_title_one}
+            </h2>
+            <motion.div whileHover={{ translateY: 5 }}>
+              <a
+                target="_blank"
+                href="https://docs.google.com/document/d/1xMLse-SaH8O0qUs4j3S7JlEbR2YGRhsUO6Dgt7_DC2U/edit"
+              >
+                <button>Rekrutacja</button>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               </a>
             </motion.div>
           </div>
           <p className={style.freePara}>{section2?.sub_title_discription}</p>
         </div>
       </div>
+<<<<<<< HEAD
       </section>
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
     </>
   );
 };
