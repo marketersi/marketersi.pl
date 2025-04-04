@@ -24,11 +24,11 @@ const Numbers = () => {
             <h4>{section2?.subtitle}</h4>
             <p className={style.numberMB}>{section2?.line_1}</p>
             <p className={style.numberMB}>{section2?.line_2}</p>
-            <p>{section2?.line_3}</p>
+            <p className={style.numberMB}>{section2?.line_3}</p>
             <p>{section2?.paragraph_3}</p>
             <p>{section2?.paragraph_4}</p>
             <div className="osClass">
-            <ReactPlayer
+            {/* <ReactPlayer
               url={section3?.video_url}
               playing={true}
               loop={true}
@@ -38,7 +38,7 @@ const Numbers = () => {
               className={style.numberVideo}
               pip={false}
               playsinline
-            />
+            /> */}
             </div>
             <p>{section3?.paragraph_1}</p>
             <p>{section3?.paragraph_2}</p>

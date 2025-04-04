@@ -4,8 +4,9 @@
 }
 
 .Content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .enter img {
@@ -14,9 +15,9 @@
 }
 
 .Content h2 {
-  font-size: 90px;
+  font-size: 85px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   color: #333333;
   margin: 0 0 70px -50px;
 }
@@ -24,7 +25,7 @@
 .Content h3 {
   font-size: 50px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   color: #333333;
   margin: 0 0 70px -50px;
 }
@@ -35,6 +36,7 @@
   font-weight: 500;
   color: #333333;
   margin: 0 0 50px 0px;
+  
 }
 
 .Content h4 span {
@@ -98,6 +100,8 @@
   padding: 0 10px;
   border-radius: 100px;
   display: inline-block;
+  width: 77%;
+  margin: 20px auto 0!important;
 }
 
 .hardMB {
@@ -109,6 +113,7 @@
   text-align: left;
   font-weight: 500;
   color: #333333;
+  font-weight: 50px;
   margin: 0 0 50px 0px;
   line-height: normal;
 }
@@ -235,7 +240,12 @@ img.hardImg {
 }
 
 .brandingHeading {
-  font-size: 55px !important;
+  font-size: 35px !important;
+}
+.fontSmall{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
 /* -------------------------------media screen---------------------- */
@@ -298,6 +308,10 @@ img.hardImg {
   img.hardImg {
     width: 90%;
   }
+  .pinkBG {
+    padding: 0px 0;
+    
+  }
 
   .ratingLogoImg {
     display: block;
@@ -342,7 +356,7 @@ img.hardImg {
     font-size: 28px;
     text-align: center !important;
   }
-  .Content p{
+  .Content p {
     font-size: 22px;
     line-height: 40px;
   }
@@ -355,5 +369,4 @@ img.hardImg {
   .enter {
     padding: 0px 0 50px;
   }
-
 }

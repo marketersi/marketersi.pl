@@ -9,18 +9,18 @@ const Guarantee = ({ openModal }) => {
   return (
     <>
       <section>
-        <div className="container projects-custom-white-container menu-target text-center">
+        <div className="container projects-custom-white-container text-center">
           <div className="projects-big-100">100%</div>
           {title && <div className="projects-big-sub100">{title}</div>}
           {subtitle && <div className="projects-big-text100">{subtitle}</div>}
 
           <button
-            className="download-catalog-button-2 projects-download-catalog-button projects-button-margin send-offer-button js--triggerAnimation"
+            className="download-catalog-button-2 projects-download-catalog-button send-offer-button js--triggerAnimation"
             type="button"
             fdprocessedid="jeqyl"
             onClick={openModal}
           >
-            <strong>{buttontext && buttontext}</strong>
+            Brzmi świetnie. Wyślijcie mi ofertę
           </button>
         </div>
       </section>

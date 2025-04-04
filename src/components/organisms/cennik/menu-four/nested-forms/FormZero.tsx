@@ -24,7 +24,7 @@ const FormZero = ({ setCurrentComponent }) => {
         {value ? (
           <span role="img" aria-label="selected-emoji">
             <Image
-              src={"https://images.prismic.io/marketersi/ZufV4LVsGrYSvYfY_dropdownok.png?auto=format,compress"}
+              src={"https://images.prismic.io/marketersi/ZufUa7VsGrYSvYfJ_dropdownarrow.png?auto=format,compress"}
               alt="arrow"
               width={30}
               height={30}
@@ -44,17 +44,18 @@ const FormZero = ({ setCurrentComponent }) => {
 
   const handleSelectChange = (selectedOption) => {
     setSelectedOption(selectedOption);
-    if (
-      selectedOption &&
-      selectedOption.value === dropdown[dropdown.length - 1].value
-    ) {
-      setIsModalOpen(true);
-    }
+    // if (
+    //   selectedOption &&
+    //   selectedOption.value === dropdown[dropdown.length - 1].value
+    // )
+    //  {
+    //   setIsModalOpen(true);
+    // }
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   const dispatch = useDispatch();
 
@@ -124,8 +125,8 @@ const FormZero = ({ setCurrentComponent }) => {
       {selectedOption && selectedOption.value === dropdown[1].value && (
         <div className="additional-input-container">
           <div>
-          <h2>Podaj adres strony:</h2>
-          <p>Lub wpisz jej nazwę</p>
+          <h2>Wpisz adres strony:</h2>
+          <p>Lub nazwę:</p>
           </div>
           <input type="text" />
         </div>
@@ -139,7 +140,7 @@ const FormZero = ({ setCurrentComponent }) => {
       </motion.button>
 
       {/* Modal */}
-      <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} />
+      {/* <CennikModal isOpen={isModalOpen} onRequestClose={closeModal} /> */}
     </div>
   );
 };

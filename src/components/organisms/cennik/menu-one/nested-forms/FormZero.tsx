@@ -10,6 +10,20 @@ const FormZero = ({ setCurrentComponent, form }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  const [isInputValid, setIsInputValid] = useState(true); // State to track validation
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleValidation = () => {
+    if (inputValue.trim() === "") {-
+      setIsInputValid(false); // Mark as invalid if input is blank
+    } else {
+      setIsInputValid(true); // Valid input
+    }
+  };
 
   const DropdownIndicator = (props) => {
     const { selectProps } = props;
@@ -19,7 +33,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
       <components.DropdownIndicator {...props}>
         {value ? (
           <Image
-            src={"https://images.prismic.io/marketersi/ZufV4LVsGrYSvYfY_dropdownok.png?auto=format,compress"}
+            src={"https://images.prismic.io/marketersi/ZufUa7VsGrYSvYfJ_dropdownarrow.png?auto=format,compress"}
             alt="arrow"
             width={30}
             height={30}
@@ -42,7 +56,7 @@ const FormZero = ({ setCurrentComponent, form }) => {
       selectedOption &&
       selectedOption.value === form.dropdown[form.dropdown.length - 1].value
     ) {
-      setIsModalOpen(true);
+      setIsModalOpen(false);
     }
   };
 
@@ -117,10 +131,16 @@ const FormZero = ({ setCurrentComponent, form }) => {
         />
       </div>
 
-      {selectedOption && selectedOption.value === form.dropdown[0].value && (
+      {selectedOption && selectedOption.value !== form.dropdown[0].value && (
         <div className="additional-input-container">
-          <h2>Podaj adres strony:</h2>
-          <input type="text" />
+          <h2 className={`card-heading`}>
+            Wpisz adres strony:
+          </h2>
+          <input type="text" 
+          value={inputValue}
+          onChange={handleInputChange}
+          onBlur={handleValidation} // Validate on blur (when input loses focus)
+          />
         </div>
       )}
 

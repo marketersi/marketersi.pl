@@ -34,7 +34,12 @@ export default function OurClients() {
   // };
 
   return (
-    <div className="OurClients content mt-5 mobile-mt">
+    <>
+    <div className="overflow-div">
+    <section className="WidthContent1">
+      {/* <h2 className="ClinetsHead bottommorespace">Jak wygląda współpraca z Marketersi?</h2>
+      <p className="ClinetsPara">Zapytaliśmy setkę naszych klientów i oto, co usłyszeliśmy:</p> */}
+    <div className="OurClients WidthContent mobile-mt">
       <div className="OurClients_Marquee full mobile">
         <Marquee autoFill speed={175}>
           {row1?.map((e, i) => {
@@ -121,7 +126,7 @@ export default function OurClients() {
         <div className="OurClients_Card_One">
           <ClientCarousel slides={ClientFeedback} />
         </div>
-        <div className="OurClients_Card_Two">
+        <div className="OurClients_Card_Two mb-0">
           <div>
             <Image
               src={RatingCard?.rating_image}
@@ -232,6 +237,9 @@ export default function OurClients() {
         <img src={RatingCard?.left_animated_image} alt="" />
       </motion.div> */}
     </div>
+    </section>
+    </div>
+    </>
   );
 }
 
@@ -251,19 +259,22 @@ export const SlideOne = (props) => {
       {/* Slide 1 */}
       <div className="OurClients_Slide">
         <div className="OurClients_Slide_Title mobile_title">{review}</div>
+        
         <div className="OurClients_Slide_Container">
-          <div className="OurClients_Slide_Image">
+          
+            <div className="OurClints_Slide_Image part">
             <Image
               src={image_url}
               alt="OurClientsImage1"
-              width={190}
-              height={275}
-              style={{ filter: "grayscale(100%)" }}
+              width={400}
+              height={500}
+              className="OurClients_Slide_Img"
             />
-          </div>
-          <div className="OurClients_Slide_Content">
-            <div className="OurClients_Slide_Title desktop_title">{review}</div>
+            </div>
+          
+          <div className="OurClients_Slide_Content part">
             <div className="OurClients_Slide_Media">
+            
               <div className="OurClients_Slide_Media_Video">
                 {/* <ReactPlayer
                   url={video_url}
@@ -279,6 +290,9 @@ export const SlideOne = (props) => {
                 <img className="ourClientImg" src={video_url} alt=""/>
               </div>
               <div className="OurClients_Slide_Media_Rating">
+              <div className="OurClients_Slide_Star_Rating">
+                  <Stars rating={rating} />
+                </div>
                 <div>
                   <div className="OurClients_Slide_Star_Reviewer">
                     {client_name}
@@ -287,19 +301,20 @@ export const SlideOne = (props) => {
                     {client_designation}
                   </div>
                 </div>
-                <div className="OurClients_Slide_Star_Rating">
-                  <Stars rating={rating} />
-                </div>
+                
               </div>
             </div>
-          </div>
-        </div>
-        <div className="OurClients_Slide_Button">
+            <div className="OurClients_Slide_Title desktop_title">{review}</div>
+            <div className="OurClients_Slide_Button">
           <div className="OurClients_Slide_Button_Text">Następna</div>
           <div className="ArrowButton" onClick={handleNext}>
             <span className="ArrowButton_Arrow">&gt;</span>
           </div>
         </div>
+          </div>
+          
+        </div>
+        
       </div>
     </>
   );

@@ -14,10 +14,10 @@ export default function Analysis() {
   const [Analysis4_Dropdown_Show, setAnalysis4_Dropdown_Show] = useState(true);
 
   return (
-    <div className="Analysis content">
+    <div className="Analysis WidthContent2">
       {/* Card 1 */}
-      <div className="Analysis_Card full">
-        <div className="Analysis_Card_Content">
+      <div className="Analysis_Card full row">
+        <div className="Analysis_Card_Content col-md-5">
           <div className="Analysis_Card_Content_Title">{Card1?.title}</div>
           <div className="Analysis_Card_Content_Text">{Card1?.subtitle}</div>
           <div className="Analysis_Card_Content_Table">
@@ -49,7 +49,7 @@ export default function Analysis() {
           </div>
         </div>
 
-        <div className="Analysis_Card_img_order">
+        <div className="Analysis_Card_img_order col-md-7">
           <Image
             src={Card1?.main_image}
             alt="AnalysisImage1"
@@ -61,15 +61,15 @@ export default function Analysis() {
       {/* Dropdown 1 */}
       <div className="full" hidden={Analysis1_Dropdown_Show}>
         <div className="Analysis1_Dropdown_Container">
-          <div className="Analysis1_Dropdown_Text1">
+          <div className="Analysis1_Dropdown_Text1 mobilelefttext">
             {ButtonData?.description_1}
           </div>
-          <div className="Analysis1_Dropdown_Text2">
+          <div className="Analysis1_Dropdown_Text2 mobilelefttext">
             {ButtonData?.ButtonPoints?.map((e, index) => {
               return <div key={index}>{e}</div>;
             })}
           </div>
-          <div className="Analysis1_Dropdown_Text3">
+          <div className="Analysis1_Dropdown_Text3 mobilelefttext">
             {ButtonData?.description_2}
           </div>
           {/* <div className="Analysis1_Dropdown_Image">
@@ -122,8 +122,8 @@ export default function Analysis() {
       </div>
 
       {/* Card 2 */}
-      <div className="Analysis_Card full">
-        <div className="analysis_card_img2">
+      <div className="Analysis_Card full row">
+        <div className="analysis_card_img2 col-md-6">
           <Image
             src={Card2?.main_image}
             alt="AnalysisImage2"
@@ -131,7 +131,7 @@ export default function Analysis() {
             width={652}
           />
         </div>
-        <div className="Analysis_Card_Content_Odd">
+        <div className="Analysis_Card_Content_Odd col-md-6">
           <div className="Analysis_Card_Content_Title">{Card2?.title}</div>
           <div className="Analysis_Card_Content_Text">{Card2?.subtitle}</div>
           <div className="Analysis_Card_Content_Table_Odd">
@@ -166,10 +166,10 @@ export default function Analysis() {
       {/* Dropdown 2 */}
       <div className="full" hidden={Analysis2_Dropdown_Show}>
         <div className="Analysis2_Dropdown_Container">
-          <div className="Analysis2_Dropdown_Text1">
+          <div className="Analysis2_Dropdown_Text1 mobilelefttext">
             {Card2?.ButtonData?.description_1}
           </div>
-          <div className="Analysis2_Dropdown_Text2">
+          <div className="Analysis2_Dropdown_Text2 mobilelefttext">
             {Card2?.ButtonData?.description_2}
           </div>
           {/* <div className="Analysis2_Dropdown_Image1">
@@ -180,7 +180,7 @@ export default function Analysis() {
               width={835 * 0.9}
             />
           </div> */}
-          <div className="Analysis2_Dropdown_Text3">
+          <div className="Analysis2_Dropdown_Text3 mobilelefttext">
             {Card2?.ButtonData?.description_3}
           </div>
           {/* <div className="Analysis2_Dropdown_Image2">
@@ -191,15 +191,15 @@ export default function Analysis() {
               width={835 * 0.9}
             />
           </div> */}
-          <div className="Analysis2_Dropdown_Text4">
+          <div className="Analysis2_Dropdown_Text4 mobilelefttext">
             {Card2?.ButtonData?.description_4}
           </div>
         </div>
       </div>
 
       {/* Card 3 */}
-      <div className="Analysis_Card full">
-        <div className="Analysis_Card_Content">
+      <div className="Analysis_Card full row">
+        <div className="Analysis_Card_Content col-md-6">
           <div className="Analysis_Card_Content_Title">{Card3?.title}</div>
           <div className="Analysis_Card_Content_Text">{Card3?.subtitle}</div>
           <div className="Analysis_Card_Content_Table">
@@ -230,7 +230,7 @@ export default function Analysis() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="col-md-6">
           <Image
             src={Card3?.main_image}
             alt="AnalysisImage3"
@@ -242,13 +242,13 @@ export default function Analysis() {
       {/* Dropdown 3 */}
       <div className="full" hidden={Analysis3_Dropdown_Show}>
         <div className="Analysis3_Dropdown_Container">
-          <div className="Analysis3_Dropdown_Text1">
+          <div className="Analysis3_Dropdown_Text1 mobilelefttext">
             {Card3?.ButtonData?.description_1}
           </div>
-          <div className="Analysis3_Dropdown_Text2">
+          <div className="Analysis3_Dropdown_Text2 mobilelefttext">
             {Card3?.ButtonData?.description_2}
           </div>
-          <div className="Analysis3_Dropdown_Text3">
+          <div className="Analysis3_Dropdown_Text3 mobilelefttext">
             {Card3?.ButtonData?.description_3}
           </div>
           {/* <div className="Analysis3_Dropdown_Image">
@@ -259,7 +259,7 @@ export default function Analysis() {
               width={1438 * 0.8}
             />
           </div> */}
-          <div className="Analysis3_Grid">
+          <div className="Analysis3_Grid mobiledesignchange">
             {Card3?.ButtonData?.CardGrid.map((card, index) => (
               <div key={index} className={`Analysis3_GridItem${index + 1}`}>
                 <div className="Analysis3_GridItemNumber">
@@ -274,15 +274,15 @@ export default function Analysis() {
       </div>
 
       {/* Card 4 */}
-      <div className="Analysis_Card full mt-5">
-        <div>
+      <div className="Analysis_Card full row">
+        <div className="col-md-6">
           <img
             src={Card4?.main_image}
             alt="AnalysisImage4"
             style={{ width: '600px', height: 'auto' }}
           />
         </div>
-        <div className="Analysis_Card_Content_Odd">
+        <div className="Analysis_Card_Content_Odd col-md-6">
           <div className="Analysis_Card_Content_Title">{Card4?.title}</div>
           <div className="Analysis_Card_Content_Text">{Card4?.subtitle}</div>
           <div className="Analysis_Card_Content_Table_Odd">

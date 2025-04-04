@@ -6,6 +6,8 @@ const CustomerReview = () => {
   const {  screenData } = useSelector((state) => state.anatomy);
   const { implementation } = screenData || {};
   const { example1 } = implementation || {};
+  console.log(implementation);
+  
 
   const [isModal, setIsModal] = useState(false);
 
@@ -24,24 +26,25 @@ const CustomerReview = () => {
                   src={example1?.image_4}
                   title="Kobieta zadowolona z efektu tworzenia nazwy dla firm"
                   alt="Klientka zadowolona z procesu jakim jest tworzenie nazw"
-                />
+                /> 
               </div>
              
-              <div className="opinion-box-content opinion-box-content-left projects-opinion-1 projects-opinion-1-new naming-opinion-text">
+              <div className="opinion-box-content opinion-box-content-left projects-opinion-1 naming-opinion-text">
                 <p className="theme-desc projects-client-opinion-p text-center">
                   <strong>{example1?.customer_quote}</strong>
                 </p>
                 <div className="opinion-box-text">
                   {example1?.customer_description}
                 </div>
-
+                <div className="">
                 <button
                   className="download-catalog-button names-new-btn send-offer-button  js--triggerAnimation pnazw-opinion-btn"
                   type="button"
                   onClick={() => setIsModal(true)}
                 >
-                  <strong>{example1?.review_buttonText}</strong>
+                  Brzmi świetnie. Wyślijcie mi ofertę
                 </button>
+                </div>
               </div>
               <div className="clearfix"></div>
             </div>

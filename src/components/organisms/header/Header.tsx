@@ -14,8 +14,7 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import LottieAnimation from "../../molecules/LottieAnimation";
-import {usePathname} from 'next/navigation';
-
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,18 +22,15 @@ const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const pathname = usePathname(); // Hook to get the current path
-  console.log('pathname ===>', pathname);
+  console.log("pathname ===>", pathname);
 
   // switch - if-else condition to check the screen name from path
   const screenName = pathname.split("/").pop();
-  console.log('screenName ===>', screenName);
+  console.log("screenName ===>", screenName);
 
-  const specialScreens = ['', 'Zespol',]; 
+  const specialScreens = ["", "Zespol"];
 
   const specialPage = specialScreens.includes(screenName);
-
-
-
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -74,12 +70,9 @@ const Header = () => {
     handleCloseDropdown();
   };
 
-
- 
-
   return (
     <>
-     <header
+      <header
         className={`${style.navbar} ${specialPage ? style.blackMenu : ""} `}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -93,25 +86,44 @@ const Header = () => {
                   <Link href="/cennik">Cennik</Link>
                 </Button>
 
-                <div className={style.headerDrop1} onMouseLeave={handleCloseDropdown}>
-                  <div className={style.dropBtn} onMouseEnter={handleOpenDropdown}>
-                    Usługi i <br /> realizacje <span></span>
+                <div
+                  className={style.headerDrop1}
+                  onMouseLeave={handleCloseDropdown}
+                >
+                  <div
+                    className={style.dropBtn}
+                    onMouseEnter={handleOpenDropdown}
+                  >
+                    Oferta i<br /> realizacje <span></span>
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
                   {isDropdownOpen && (
-                    <div className={style.dropMenu} onClick={handleCloseDropdown}>
+                    <div
+                      className={style.dropMenu}
+                      onClick={handleCloseDropdown}
+                    >
                       <HeaderDropDown1 />
                     </div>
                   )}
                 </div>
 
-                <div className={style.headerDrop1} onMouseLeave={handleCloseDropdown}>
-                  <div className={style.dropBtn} onMouseEnter={handleOpenDropdown}>
+                <div
+                  className={style.headerDrop1}
+                  onMouseLeave={handleCloseDropdown}
+                  onMouseEnter={handleOpenDropdown}
+
+                >
+                  <div
+                    className={style.dropBtn}
+                  >
                     Przydatne <br /> rzeczy <span></span>
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
                   {isDropdownOpen && (
-                    <div className={style.dropMenu} onClick={handleCloseDropdown}>
+                    <div
+                      className={style.dropMenu}
+                      onClick={handleCloseDropdown}
+                    >
                       <HeaderDropDown2 />
                     </div>
                   )}
@@ -125,16 +137,18 @@ const Header = () => {
             </Col>
             <Col sm={4}>
               <div className={style.rightNav}>
-                <Nav>
+                <Nav className="d-flex align-items-center flex-nowrap">
                   <Nav.Link className={style.navRightMenu}>
-                    <Link href="/Zespol">Zespół</Link>
+                    <Link href="/Kim-jestesmy">
+                      Kim <br /> jesteśmy?
+                    </Link>
                   </Nav.Link>
                   <Nav.Link className={style.navRightMenu}>
                     <Link href="/kontakt-marketersi">Kontakt</Link>
                   </Nav.Link>
                 </Nav>
                 <Button className={style.headerRightBtn}>
-                  <Link href="/zamow">Zamów bezpłatne badanie</Link>
+                  <Link href="/zamow-bezplatne-badanie">Zamów bezpłatne badanie</Link>
                 </Button>
               </div>
             </Col>
@@ -143,7 +157,11 @@ const Header = () => {
       </header>
 
       {/* --------------------------------mobile header-------------------------- */}
-      <div className={`${style.mobileHeader} ${specialPage ? style.blackMenu : ""}`}>
+      <div
+        className={`${style.mobileHeader} ${
+          specialPage ? style.blackMenu : ""
+        }`}
+      >
         <header className={style.header}>
           <Button className={style.mobileLeftBtn}>
             <Link onClick={handleMenuItemClick} href="/cennik">
@@ -169,7 +187,7 @@ const Header = () => {
                     onClick={toggleDropdown}
                     className={style.MobileDropdownBtn}
                   >
-                    Usługi
+                    Oferta
                     <span>
                       {isOpen ? (
                         <FontAwesomeIcon icon={faAngleDown} />
@@ -183,7 +201,7 @@ const Header = () => {
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
-                          href="/projektowanie-ux"
+                          href="/tworzenie-stron-i-design-ux"
                         >
                           Tworzenie stron i design UX
                         </Link>
@@ -191,25 +209,25 @@ const Header = () => {
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
-                          href="/profesjonalne-nagrywanie-filmow"
+                          href="/video-marketing"
                         >
-                          Profesjonalne nagrywanie filmów
+                          Video marketing
                         </Link>
                       </div>
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
-                          href="/Kreatywny-montaz-video"
+                          href="/kreatywny-montaz-wideo"
                         >
-                          Kreatywny montaż video
+                          Kreatywny montaż wideo
                         </Link>
                       </div>
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
-                          href="/tresci-sprzedazowe"
+                          href="/tresci-i-hasla-sprzedazowe"
                         >
-                         Treści i hasła sprzedażowe
+                          Treści i hasła sprzedażowe
                         </Link>
                       </div>
                       <div className={style.menuItem}>
@@ -226,7 +244,6 @@ const Header = () => {
                           Projektowanie logo
                         </Link>
                       </div>
-
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
@@ -237,23 +254,23 @@ const Header = () => {
                       </div>
 
                       <div className={style.menuItem}>
-                        <Link onClick={handleMenuItemClick} href="/konsultacje">
-                        Konsultacja marketingu
+                        <Link onClick={handleMenuItemClick} href="/konsultacja-marketingu">
+                          Konsultacja marketingu
                         </Link>
                       </div>
                       <div className={style.menuItem}>
                         <Link onClick={handleMenuItemClick} href="/">
-                        Marketing międzynarodowy
+                          Marketing międzynarodowy
                         </Link>
                       </div>
-                     
                     </div>
                   )}
                 </div>
               </li>
               <li onClick={handleMenuItemClick}>
-                <Link onClick={handleMenuItemClick} href="/Zespol">
-                  Zespół{" "}
+                <Link onClick={handleMenuItemClick} href="/Kim-jestesmy">
+                  Kim 
+                  jesteśmy?
                 </Link>
               </li>
               <li onClick={handleMenuItemClick}>
@@ -281,7 +298,7 @@ const Header = () => {
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
-                          href="/czy-oplaca-sie-agencja-marketingowa"
+                          href="/policz-czy-ci-sie-to-oplaca"
                         >
                           Policz czy Ci się to opłaca?
                         </Link>
@@ -341,4 +358,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header; 

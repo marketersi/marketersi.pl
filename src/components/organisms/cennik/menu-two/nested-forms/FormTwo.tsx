@@ -42,7 +42,7 @@ const FormTwo = ({ setCurrentComponent, form }) => {
       ></textarea>
       <div className="">
         <button className="cennikBtn" onClick={handleNext}>
-          Ostatnie pytanie
+          Ostatni krok
         </button>
       </div>
 
@@ -54,7 +54,7 @@ const FormTwo = ({ setCurrentComponent, form }) => {
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        <h4>{form?.model_title}</h4>
+        
         <p>{form?.modal_description}</p>
         <div className="cenikBtnDiv">
           <button onClick={closeModal}>{form?.button_text}</button>

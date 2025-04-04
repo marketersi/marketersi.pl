@@ -1,24 +1,27 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import "./anatomy.css";
 
 const Anatomy = () => {
   const { isLoading, screenData } = useSelector((state) => state.anatomy);
-  const { anatomy } = screenData || {};
+  const { anatomy, anatomy_guide } = screenData || {};
   return (
-    <section className="top-section-ending projects-over-hid">
-      <div className="container projects-custom-container1">
+    <section className="top-section-ending projects-over-hid second-section paddtopbotom">
+      <div className="container width900">
         <div className="row">
           <div className="col-md-12">
-            <h2 className="theme-title1 projects-big-header custom-projects-margin-top">
-              {anatomy?.title}
+            <h2 className="projects-big-header custom-projects-margin-top custom-font-size text-center">
+              {/* {anatomy?.title} */}
+             
+              Twoja marka to więcej niż <br/>tylko biznes - to opowieść, <br/>która czeka, <br/>aby zostać opowiedziana.
             </h2>
 
-            <p className="theme-desc text-center p-0 projects-under-big-header2 ">
+            <p className="text-center p-0 projects-under-big-header2">
               {anatomy?.description1}
             </p>
 
-            <p className="theme-desc text-center p-0 projects-under-big-header">
-              {anatomy?.description2}
+            <p className="text-center p-0 projects-under-big-header mb-5">
+            {anatomy_guide?.paragraph1}
             </p>
 
             {/* to be deleted */}

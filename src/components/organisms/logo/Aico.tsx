@@ -11,14 +11,15 @@ const Aico = () => {
           <div className="row">
             <div className="col-md-12">
               <h5 className="theme-subtitle projects-clients-theme-subtitle projects-theme-subtitle-rwd">
-                {AicoData?.title}
+                {/* {AicoData?.title} */}
+                AVRON <br/> ŁÓDŹ
               </h5>
               <h3 className="projects-theme-title-2 text-left projects-custom-theme-desc">
                 {AicoData?.subtitle}
               </h3>
-              <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc">
+              {/* <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc">
                 {AicoData?.text1}
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -34,20 +35,23 @@ const Aico = () => {
         <div className="container custom-container1">
           <div className="row">
             <div className="col-md-12">
-              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc projects-custom-m0-top">
+            <p className="theme-desc projects-theme-desc-p projects-custom-push-top-td projects-custom-theme-desc  mb-4 mobilelefttext">
+                {AicoData?.text1}
+              </p>
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc projects-custom-m0-top mb-4 mobilelefttext">
                 {AicoData?.text2}
               </p>
-              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc mb-4 mobilelefttext">
                 {AicoData?.text3}
               </p>
-              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc">
+              <p className="theme-desc projects-theme-desc-p projects-custom-theme-desc mobilelefttext">
                 {AicoData?.text4}
               </p>
             </div>
           </div>
         </div>
 
-        <div className="image-810-container">
+        <div className="image-810-container mt-0">
           <div className="image-810">
             <img
               className="desktop-810 position-relative"

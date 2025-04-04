@@ -33,6 +33,10 @@ const HomeScreen = () => {
   }
 
   useEffect(() => {
+    console.log("hellll@@@@@@@@@@@@@@@")
+  }, []);
+
+  useEffect(() => {
     dispatch({ type: FETCH_HOME_SCREEN_DATA });
   }, [dispatch]);
 
@@ -44,9 +48,12 @@ const HomeScreen = () => {
         </div>
       ) : (
         <div>
-          <Hero />
+          <div className='overflow-fulldiv'>
+            <Hero />
           <Video />
           <RatingCaption />
+          </div>
+      
           <MarkSide />
           <OurClients />
           <Entrepreneur />

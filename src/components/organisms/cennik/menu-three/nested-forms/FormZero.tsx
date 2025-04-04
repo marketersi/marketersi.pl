@@ -23,7 +23,7 @@ const FormZero = ({ setCurrentComponent }) => {
       <components.DropdownIndicator {...props}>
         {value ? (
           <Image
-            src={"https://images.prismic.io/marketersi/ZufV4LVsGrYSvYfY_dropdownok.png?auto=format,compress"}
+            src={"https://images.prismic.io/marketersi/ZufUa7VsGrYSvYfJ_dropdownarrow.png?auto=format,compress"}
             alt="arrow"
             width={30}
             height={30}
@@ -112,8 +112,8 @@ const FormZero = ({ setCurrentComponent }) => {
       {selectedOption && selectedOption.value === dropdown[1].value && (
         <div className="additional-input-container">
           <div>
-          <h2>Podaj adres strony:</h2>
-          <p>Lub wpisz jej nazwę</p>
+          <h2>Wpisz adres strony:</h2>
+          <p>Lub nazwę:</p>
           </div>
           <input type="text" />
         </div>

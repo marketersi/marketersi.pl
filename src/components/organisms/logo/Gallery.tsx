@@ -8,8 +8,8 @@ const Gallery = ({ openModal }) => {
 
   return (
     <>
-      <section
-        className="thematic-section projects-gray-background menu-target"
+      {/* <section
+        className=" thematic-section projects-gray-background menu-target"
         id="sec3"
       >
         <div className="catalog-submit-button projects-catalog-submit-buttom logo-button-box during-page-offer">
@@ -19,18 +19,18 @@ const Gallery = ({ openModal }) => {
             fdprocessedid="bcd6ip"
             onClick={openModal}
           >
-            <strong>{buttonText && buttonText}</strong>
+            Brzmi świetnie. Wyślijcie mi ofertę
           </button>
         </div>
 
         {image && (
           <img
             src={image}
-            className="img-background-logop galeria-logo-style"
+            className="img-background-logop galeria-logo-style ajsdkljaskdjlas"
             alt="Obraz galerii - Dłonie można projektują znak graficzny. Białego niedzwiedzia."
             title="Jak projektuje się dobre logo? Zobacz galerję"
           />
-        )}
+        )} */}
 
         {/* <div
           className="container projects-custom-container1 project-pbottom-30 galeria-margin-top"
@@ -47,27 +47,10 @@ const Gallery = ({ openModal }) => {
           </div>
         </div> */}
 
-        <div className="clearfix"></div>
+        {/* <div className="clearfix"></div>
 
-        <div className="container projects-custom-container1">
-          <div className="row">
-            <div className="col-md-12 part-sec text-center">
-              {/* <div className="galeriaImageContainer">
-                {imageGroup &&
-                  imageGroup.map((image, index) => (
-                    <img
-                      key={index}
-                      src={image}
-                      className="projects-logotyp-fix-size projects-logotyp"
-                      alt="Przykładowy projekt logo Voyage"
-                      title="Projekt logo na przykładzie Voyage"
-                    />
-                  ))}
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </section>
+        
+      </section> */}
     </>
   );
 };

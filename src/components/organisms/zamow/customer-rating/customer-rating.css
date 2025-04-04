@@ -6,6 +6,7 @@
   gap: 40px;
 }
 
+<<<<<<< HEAD
 .brand-img-container img {
   width: 70%;
 }
@@ -13,7 +14,13 @@
 .emphasized-text {
   font-size: 42px;
   font-weight: 400;
+  max-width: 700px;
+=======
+.emphasized-text {
+  font-size: 42px;
+  font-weight: 400;
   max-width: 500px;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 }
 
 .text-color {
@@ -45,12 +52,15 @@ p.brand-description {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .percentage-gif {
   width: 320px;
   height: auto;
   transform: rotate(-5deg);
 }
 
+=======
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
 @media only screen and (max-width: 1024px) {
   .brand-img-container {
     display: block;

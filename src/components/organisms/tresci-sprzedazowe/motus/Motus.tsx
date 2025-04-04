@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { useSelector } from 'react-redux';
 
@@ -9,6 +10,21 @@ const Motus = () => {
   return (
     <div>
       <section className="thematic-section motus-section copywriter-standard-pt-140">
+=======
+import React from 'react'
+import { useSelector } from 'react-redux';
+
+const Motus = () => {
+
+  const { isLoading, screenData } = useSelector((state) => state.sales);
+  const { projects} = screenData || {};
+  const {projectSection2, projectSection3 } = projects || {};
+
+
+  return (
+    <div>
+          <section className="thematic-section motus-section copywriter-standard-pt-140">
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         <div className="copywriter-text-center">
           <img
             src={projectSection2?.logo_image}
@@ -24,12 +40,22 @@ const Motus = () => {
                 {projectSection2?.underlined_label}
               </div>
               <div className="names-client-desc copywriter-client-desc-margin">
+<<<<<<< HEAD
                 {projectSection2?.title}
+=======
+               {projectSection2?.title}
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               </div>
             </div>
 
             <div className="col-md-12">
+<<<<<<< HEAD
               <p className="theme-desc">{projectSection2?.description}</p>
+=======
+              <p className="theme-desc">
+                {projectSection2?.description}
+              </p>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             </div>
           </div>
         </div>
@@ -52,11 +78,17 @@ const Motus = () => {
           <div className="custom-container2 copywriting-text-right">
             <div className="copywriting-custom-subcont">
               <span className="copywriting-img-desc">
+<<<<<<< HEAD
                 <span className="copywriter-custom-red">
                   {projectSection2?.background_image_title}
                 </span>{' '}
                 <br className="dont-delete" />
                 {projectSection2?.quote}
+=======
+                <span className="copywriter-custom-red">{projectSection2?.background_image_title}</span>{" "}
+                <br className="dont-delete" />
+               {projectSection2?.quote}
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               </span>
             </div>
           </div>
@@ -113,7 +145,13 @@ const Motus = () => {
             </div>
 
             <div className="col-md-12">
+<<<<<<< HEAD
               <p className="theme-desc">{projectSection3?.description}</p>
+=======
+              <p className="theme-desc">
+                {projectSection3?.description}
+              </p>
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             </div>
           </div>
         </div>
@@ -140,6 +178,7 @@ const Motus = () => {
           </div>
         </div>
 
+<<<<<<< HEAD
         {/* <img
           src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
           alt=""
@@ -151,3 +190,16 @@ const Motus = () => {
 };
 
 export default Motus;
+=======
+        <img
+          src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
+          alt=""
+          className="projects-rotate-bow projects-bow-1"
+        />
+      </section>
+    </div>
+  )
+}
+
+export default Motus
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936

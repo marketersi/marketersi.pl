@@ -21,21 +21,22 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items, title, image }) => {
 
   return (
     <div id="sec2">
-      <div className="copywriter-intro-bg-5-label text-center">{title}</div>
+      <div className="copywriter-intro-bg-5-label text-center">
+        {/* {title} */}
+      Odpowiedź jest <br/> zawsze jedna 
+      </div>
 
       <img src={image} className="img-background-logop" alt="tak_image" />
 
       <div className="faqContainer">
         {items &&
           items?.map((item, index) => (
-            <div key={index} className="accordion-item">
+            <div key={index} className={`accordion-item ${index === activeIndex ? "active" : ""}`}>
               <div
-                className={`accordion-title ${
-                  index === activeIndex ? 'active' : ''
-                }`}
+                className="accordion-title"
                 onClick={() => handleClick(index)}
               >
-                {item.title}
+                {item.title} 
                 {index === activeIndex ? (
                   <FontAwesomeIcon icon={faMinus} className="icon" />
                 ) : (
@@ -44,12 +45,14 @@ const LogoAccordion: React.FC<AccordionProps> = ({ items, title, image }) => {
               </div>
               {index === activeIndex && (
                 <div className="accordion-content">
-                  {item?.content.split('\\n\\n').map((para, idx) => (
-                    <div key={idx} style={{ margin: '10px 0' }}>
-                      {para}
-                    </div>
-                  ))}
-                </div>
+                {item?.content.split('\\n\\n').map((para, idx) => (
+                  <div
+                    key={idx}
+                    style={{ margin: '10px 0' }}
+                    dangerouslySetInnerHTML={{ __html: para }}
+                  />
+                ))}
+              </div>
               )}
             </div>
           ))}

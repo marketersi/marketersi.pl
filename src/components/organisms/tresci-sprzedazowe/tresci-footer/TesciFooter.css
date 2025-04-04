@@ -27,8 +27,13 @@
   text-align: left;
 }
 .tersci_footer_bottom_btn {
+<<<<<<< HEAD
   background-color: var(--brand-blue);
   border: 0.666667px solid var(--brand-blue);
+=======
+  background-color: #438d07;
+  border: 0.666667px solid #438d07;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   box-shadow: #c1c1c1 5px 5px 0px -1px;
   cursor: pointer;
   padding: 4px 15px;
@@ -86,12 +91,20 @@ a.activeLink {
     font-size: 16px;
     line-height: 17px;
     background-color: #fff;
+<<<<<<< HEAD
     border: 0.666667px solid var(--brand-blue);
+=======
+    border: 0.666667px solid #438d07;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
     box-shadow: #c1c1c1 5px 5px 0px -1px;
   }
   .tresci_contact_footer_btn a {
     text-decoration: none;
+<<<<<<< HEAD
     color: var(--brand-blue);
+=======
+    color: #438d07;
+>>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   }
 
   .nazwa_footer_bottom {

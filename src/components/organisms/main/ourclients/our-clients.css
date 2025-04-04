@@ -1,11 +1,56 @@
 .OurClients_Slide_Title {
-  font-size: 34.28px;
-  font-weight: 800;
-  line-height: 39.936px;
-  padding-block: 30px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 44px;
+  padding-block: 0px;
+  font-family: Georgia, serif;
+}
+.part {
+  display: flex;
+  justify-content: start;
+}
+.OurClints_Slide_Image {
+  flex: 4;
+  overflow: hidden;
 }
 
-.OurClients_Slide:hover .OurClients_Slide_Image img {
+.OurClients_Slide_Img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.OurClients_Slide:hover .OurClients_Slide_Img{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.OurClients_Slide_Content {
+  flex-direction: column;
+  flex: 6;
+  align-items: baseline;
+  margin-left: 50px;
+}
+.ClinetsHead {
+  font-size: 85px;
+  line-height: 77px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.ClinetsPara {
+  font-size: 22px;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+.OurClients_Slide:hover .OurClients_Slide_Image {
   filter: grayscale(0%) !important;
 }
 
@@ -22,21 +67,69 @@
 }
 
 .OurClients_Slide_Media_Video img {
-  width: 150px;
+  max-width: 200px;
+  max-height:100px;
 }
 
-@media (max-width:768px) {
+.overflow-div{overflow-x: hidden;}
 
+/* .ClinetsHead.bottommorespace{margin-bottom:52px !important;} */
+
+@media (max-width: 768px) {
   .rating_image {
     margin-inline: auto;
     display: block;
     margin-bottom: 25px;
+    object-fit: cover;
   }
-  .OurClients_Card_Two_Content{
+  .OurClients_Card_Two_Content {
     margin-bottom: 20px;
     text-align: center;
   }
-  .mobile-mt{
+  .mobile-mt {
     margin-top: 8rem !important;
   }
+  /* .OurClients.WidthContent.mobile-mt {
+    margin-top: 15rem !important;
+  } */
+  .ClinetsHead {
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .ClinetsPara {
+    font-size: 22px;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .OurClients_Slide_Img{
+    height:200px;
+  }
+  .OurClients_Slide_Content{
+    margin-left:0 !important;
+  }
+  .OurClients_Slide_Media_Video img {
+    width: 150px;
 }
+}
+@media (max-width: 767px) {
+  .WidthContent, .WidthContent1{margin:0;}
+}
+@media (max-width: 600px) {
+  .OurClients_Slide_Content{min-height:1px !important; position: static; padding-bottom:0px;}
+  .OurClients_Slide{position: relative; min-height:470px;}
+  .OurClients_Slide_Button{bottom:38px;}
+  .OurClients_Slide_Title.mobile_title{min-height:170px; margin-bottom: 25px;}
+  .OurClients_Slide_Media_Video{width:auto;}
+  .OurClients_Slide_Media_Video img{max-width:80%; max-height:68px; width: auto;}
+  .OurClients_Slide_Button_Text{font-size: 17px;}
+  .ArrowButton{height: 1.2em; width: 1.2em;}
+  .OurClients_Slide_Star_Reviewer{font-size:14px; line-height:20px;}
+  .OurClients_Slide_Star_Company{font-size:13px; line-height:15px;}
+
+  .ClinetsHead{font-size:30px !important; line-height:26px !important; font-weight:700 !important;}
+  
+}  

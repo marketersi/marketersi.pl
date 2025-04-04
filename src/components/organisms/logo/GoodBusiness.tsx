@@ -17,24 +17,30 @@ const GoodBusiness = () => {
   return (
     <>
       <section>
-        <div className="container projects-custom-container1 mt-5">
+        <div className="container projects-custom-container1">
           <div className="row">
             <div className="col-md-12">
               
               <h1 className="theme-title1 projects-big-header">
-                {title && title}
+                {/* {title && title} */}
+                Co łączy loga <br/> McDonald's, Apple <br/> i Chanel, <br/> które rozpoznajesz <br/> w mgnieniu oka?
               </h1>
-              <p className="theme-desc text-center p-0 projects-under-big-header">
-                <strong>{subtitle && subtitle}</strong> <br />
-                {text && text}
+              <p className="theme-desc text-center p-0 projects-under-big-header mb-5 mobilelefttext">
+                {subtitle && subtitle}
+                
               </p>
+              <p className="theme-desc text-center p-0 projects-under-big-header mobilelefttext">
+              {text && text}
+                
+              </p>
+
             </div>
           </div>
         </div>
         {image && (
           <img
             src={image}
-            className="img-background-logop"
+            className="img-background-logop blue-eyes"
             alt="Obrazek przedstawiający anatomię projektowania logo"
             title="Projektowanie logo firmy - przekrź działań"
           />
