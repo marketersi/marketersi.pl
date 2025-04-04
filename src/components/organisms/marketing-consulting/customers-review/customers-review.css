@@ -1,0 +1,40 @@
+.cr_sec {
+  text-align: center;
+}
+
+.cr_header h2 {
+  font-size: 85px;
+  line-height:77px;
+  font-weight: 700;
+  margin: 100px auto 35px;
+  font-family:"Poppins", sans-serif !important;
+}
+
+.cr_header p {
+  font-size: 40px;
+  font-weight: 500;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.SmallContainer {max-width: 900px;}
+
+@media only screen and (max-width: 1024px){
+  .cr_header h2 {
+    font-size: 70px;
+}
+.cr_header p {
+  font-size: 30px;
+  width: 100%;
+}
+}
+@media only screen and (max-width: 767px){
+  .cr_header h2 {
+    font-size: 50px;
+}
+.cr_header p {
+  font-size: 22px;
+}
+
+.cr_header h2{font-size: 30px; line-height: 26px; margin:0;}
+}

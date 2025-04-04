@@ -1,0 +1,48 @@
+.lottieContainer {
+  width: 450px;
+  height: 116px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1450px) {
+  .lottieContainer {
+      width: 410px;
+      height: 106px;
+    }
+}
+
+
+@media (max-width: 1360px) {
+  .lottieContainer {
+      width: 250px;
+      height: 70px;
+    }
+}
+
+@media (max-width: 1311px) {
+  .lottieContainer {
+      width: 200px;
+      height: 54px;
+    }
+}
+
+@media (max-width: 1260px) {
+  .lottieContainer {
+      width: 130px;
+      height: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+  .lottieContainer {
+    width: 200px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lottieContainer {
+    width: 150px;
+    height: 40px;
+  }
+}
