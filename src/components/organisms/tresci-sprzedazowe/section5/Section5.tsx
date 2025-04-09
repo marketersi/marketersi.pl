@@ -20,7 +20,6 @@ const Section5 = () => {
         </div>
 
         <div className="copywriter-text-center copywriter-standard-mb-40">
-<<<<<<< HEAD
           {/* <img
             src={howItWorksSection?.image}
             title="Pisanie oferty dla klienta"
@@ -31,18 +30,6 @@ const Section5 = () => {
           <div className="row">
             <div className="col-md-12 text-center ">
               <div className="copywriter-custom-text-2 main-title">
-=======
-          <img
-            src={howItWorksSection?.image}
-            title="Pisanie oferty dla klienta"
-            alt="Proces pracy copywritera podzielony na etapy"
-          />
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <div className="copywriter-custom-text-2">
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
                 {steps?.main_title}
               </div>
             </div>
@@ -55,34 +42,23 @@ const Section5 = () => {
                 src={steps?.image_1}
                 title="Teksty reklamowe Owocnych to gwarancja sukcesu"
                 alt="Marketing, który osiąga zamierzony cel"
-<<<<<<< HEAD
                 style={{ width: "100%", height: "auto" }}
-=======
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               />
             </div>
 
             <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
                 <strong>{steps?.title_1}</strong>
-<<<<<<< HEAD
                 <p>{steps?.sub_title_1}</p>
               </div>
               <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
                 {/* {steps?.description_1} */}
                 Albo będziesz zadowolony z efektów, albo zwracamy Ci pieniądze.
                 Liczy się to, co zyskasz, a nie liczba znaków.
-=======
-                {steps?.sub_title_1}
-              </div>
-              <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
-                {steps?.description_1}
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               </div>
             </div>
           </div>
           <div className="row">
-<<<<<<< HEAD
             <div className="col-lg-6 copywriter-intro-box copywriting-hide-1 order-lg-1 order-2">
               <div className="copywriter-intro-header-left">
                 {/* <strong>{steps?.title_2}</strong>
@@ -97,16 +73,6 @@ const Section5 = () => {
                 Korzystamy z wiedzy psychologicznej i technik perswazyjnych, aby
                 skutecznie przemawiać do Twoich klientów - zarówno do ich{" "}
                 rozumu, jak i emocji.
-=======
-
-            <div className="col-lg-6 copywriter-intro-box copywriting-hide-1 order-lg-1 order-2">
-              <div className="copywriter-intro-header-left">
-                <strong>{steps?.title_2}</strong>
-                {steps?.sub_title_2}
-              </div>
-              <div className="copywriter-intro-description-left copywriter-rwd-mtb-40">
-                {steps?.description_2}
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               </div>
             </div>
 
@@ -115,41 +81,26 @@ const Section5 = () => {
                 src={steps?.image_2}
                 title="Skuteczny copywriting wymaga odpowiedniej wiedzy"
                 alt="Slogany reklamowe, które przyciągają użytkowników"
-<<<<<<< HEAD
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
           </div>
           <div className="row">
-=======
-              />
-            </div>
-            </div>
-            <div className="row">
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
             <div className="col-lg-6 copywriter-text-right">
               <img
                 src={steps?.image_3}
                 title="Teksty reklamowe, które przekonają odbiorców do Twojej firmy"
                 alt="Pisanie oferty musi trafić w rozum i serce klienta"
-<<<<<<< HEAD
                 style={{ width: "100%", height: "auto" }}
-=======
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               />
             </div>
 
             <div className="col-lg-6 copywriter-intro-box">
               <div className="copywriter-intro-header-right">
-<<<<<<< HEAD
                 <strong>
                   {steps?.title_3} 
                 </strong>
                 <p>{steps?.sub_title_3}</p>
-=======
-                <strong>{steps?.title_3}</strong> <br />
-                {steps?.sub_title_3}
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
               </div>
               <div className="copywriter-intro-description-right copywriter-rwd-mtb-40">
                 {steps?.description_3}
@@ -158,7 +109,6 @@ const Section5 = () => {
           </div>
         </div>
         <div className="container copywriter-container-custom">
-<<<<<<< HEAD
           <div className="row">
             <div className="copywriting-white-text-cont col-md-7">
               <div className="copywriting-bg-white-header">
@@ -194,34 +144,6 @@ const Section5 = () => {
               />
             </div>
           </div>
-=======
-          <div className="copywriting-white-text-cont">
-            <div className="copywriting-bg-white-header">
-              <strong>{knowMoreSection?.title}</strong>
-            </div>
-
-            <div className="copywriting-bg-white-subheader">
-              {knowMoreSection?.para}
-            </div>
-
-            <div>
-              <a
-                className="copywriting-bg-white-subheader-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {knowMoreSection?.bottom_text}
-              </a>
-            </div>
-          </div>
-          <img
-            className="copywriter-ksiazka-img copywriter-rwd-mtb-40"
-            src={knowMoreSection?.bannar_image}
-            title="Przewodnik Owocnych, który tłumaczy, jak napisać tekst"
-            alt="Książka, którą przygotowali copywriterzy Owocnych"
-          />
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
         </div>
       </section>
     </>

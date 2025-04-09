@@ -14,6 +14,7 @@ import Numbers from '@/components/organisms/Kreatywny-montaz-video/numbers/Numbe
 import Entrepreneur from '@/components/organisms/Kreatywny-montaz-video/entrepreneur/Entrepreneur';
 import OurClients from '@/components/organisms/main/ourclients/OurClients';
 import AfterBanner from '@/components/organisms/Kreatywny-montaz-video/after-banner/AfterBanner';
+import CennikCard from '../cennik-card/page'
 
 const CreativeVideoEditingScreen = () => {
   const { isLoading, screenData } = useSelector((state) => state.videoEditing);
@@ -38,11 +39,13 @@ const CreativeVideoEditingScreen = () => {
       <Hero />
       {/* <Video /> */}
       <AfterBanner />
+      <CennikCard/>
       <RatingCaption />
-
+    
       {/* <MarkSide /> */}
       <OurClients />
       <Entrepreneur />
+ 
       <Numbers />
       <HardResult />
       <Order />

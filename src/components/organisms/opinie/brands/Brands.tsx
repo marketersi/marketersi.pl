@@ -14,7 +14,7 @@ const Brands = () => {
     const { onClick } = props;
     return (
       <div className="brandImgBtn">
-        <div className="OurClients_Slide_Button_Text">Następna</div>
+        <div className="OurClients_Slide_Button_Text">Więcej marek</div>
         <div className="ArrowButton" onMouseEnter={onClick}>
           <span className="ArrowButton_Arrow">&gt;</span>
         </div>

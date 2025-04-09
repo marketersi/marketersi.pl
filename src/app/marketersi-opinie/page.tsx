@@ -49,7 +49,7 @@ const CustomersOpinion = () => {
       </div>
       <Teams />
       <Brands />
-      <Rating />
+      <Rating />  
       {/* to be deleted */}
       {/* <Accordion data={AccordionOne} />
       <GoogleReview />
