@@ -5,19 +5,19 @@ const Process = () => {
   const [circlePositions, setCirclePositions] = useState([]);
 
   useEffect(() => {
-    const path = document.getElementById('mypath');
-    const pathLength = path.getTotalLength();
-    const spacing = 20;
-    const numberOfCircles = Math.floor(pathLength / spacing);
+    // const path = document.getElementById('mypath');
+    // const pathLength = path.getTotalLength();
+    // const spacing = 20;
+    // const numberOfCircles = Math.floor(pathLength / spacing);
 
-    let positions = [];
-    for (let i = 0; i <= numberOfCircles; i++) {
-      const distance = i * spacing;
-      const point = path.getPointAtLength(distance);
-      positions.push({ left: point.x, top: point.y });
-    }
+    // let positions = [];
+    // for (let i = 0; i <= numberOfCircles; i++) {
+    //   const distance = i * spacing;
+    //   const point = path.getPointAtLength(distance);
+    //   positions.push({ left: point.x, top: point.y });
+    // }
 
-    setCirclePositions(positions);
+    // setCirclePositions(positions);
   }, []);
 
   return (
