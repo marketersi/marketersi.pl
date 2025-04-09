@@ -1,4 +1,4 @@
-import { usePathname } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import "./NazwaFooter.css";
 import { useState } from "react";
@@ -6,7 +6,7 @@ import { ModalForm } from "../../tresci-sprzedazowe/ModalForm";
 
 const NazwaFooter = () => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
-  const pathname = usePathname();
+  const pathname = useSearchParams();
 
   const [isSelected, setIsSelected] = useState(null);
 

@@ -14,14 +14,14 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import LottieAnimation from "../../molecules/LottieAnimation";
-import { usePathname } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  const pathname = usePathname(); // Hook to get the current path
+  const pathname = useSearchParams(); // Hook to get the current path
   console.log("pathname ===>", pathname);
 
   // switch - if-else condition to check the screen name from path
