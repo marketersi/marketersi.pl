@@ -19,10 +19,6 @@ const TresciFooter = () => {
     setIsNavbarCollapsed(!isNavbarCollapsed);
   };
 
-<<<<<<< HEAD
-=======
-  //   ------------ modal------------
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
   const [isModal, setIsModal] = useState(false);
 
   const handleModalClose = () => {
@@ -38,11 +34,7 @@ const TresciFooter = () => {
             className={isSelected == 1 ? "activeLink" : ""}
             onClick={() => setIsSelected(1)}
           >
-<<<<<<< HEAD
             Jak to wygląda?
-=======
-            Jak to działa?
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           </Link>
           <Link
             href="#sec2"
@@ -50,11 +42,7 @@ const TresciFooter = () => {
             onClick={() => setIsSelected(2)}
           >
             {" "}
-<<<<<<< HEAD
             Przykładowe realizacje
-=======
-            Przykłady realizacji
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           </Link>
         </div>
         <div className="nazwa_footer_bottom_right">
@@ -62,11 +50,7 @@ const TresciFooter = () => {
             className="tersci_footer_bottom_btn"
             onClick={() => setIsModal(true)}
           >
-<<<<<<< HEAD
             Otrzymaj ofertę
-=======
-            Zdobądź wycenę
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
           </button>
         </div>
 
@@ -80,11 +64,6 @@ const TresciFooter = () => {
         </div>
       </div>
 
-<<<<<<< HEAD
-=======
-      {/* -------------------------------------modal---------------------------------- */}
-
->>>>>>> 72f0e3ac1cb034617764abae4f56582be4a3e936
       <ModalForm isOpen={isModal} onClose={handleModalClose} />
     </>
   );

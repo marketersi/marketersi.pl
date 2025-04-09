@@ -29,7 +29,9 @@ const Teams = () => {
       <div className={style.teams}>
         <div className={style.teamsContainer}>
           <div className={style.teamsTopContent}>
-            <h2>{teams.title}</h2>
+            <h2>Twoja firma się liczy,<br/>
+           bez względu<br/>
+            na skalę.  </h2>
             {/* to be deleted */}
             {/* <img src={teams.img_one} alt="" /> */}
           </div>
