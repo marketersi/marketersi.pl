@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
   output: "export",
   env: {
     SERVICE_ID: process.env.SERVICE_ID,
