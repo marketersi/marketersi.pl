@@ -1,7 +1,7 @@
 import react, { useState } from "react";
 import Link from "next/link";
 import "./TesciFooter.css";
-import { useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Modal from "react-modal";
 import Form from "../../tresci-sprzedazowe/form/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +11,7 @@ import { ModalForm } from "../ModalForm";
 
 const TresciFooter = () => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
-  const pathname = useSearchParams();
+  const pathname = usePathname();
 
   const [isSelected, setIsSelected] = useState(null);
 
