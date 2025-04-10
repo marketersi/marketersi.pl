@@ -8,7 +8,7 @@ import CardFive from "@/components/organisms/cennik/menu-five/CardFive";
 import CardSix from "@/components/organisms/cennik/menu-six/CardSix";
 import { FETCH_PRICELIST_SCREEN_DATA } from "@/redux/cennik/pricelistAction";
 import { useDispatch, useSelector } from "react-redux";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import "./cennik.css";
 import { ToastContainer } from "react-toastify";
 import { clearPriceListFormData } from "@/redux/cennik/pricelistSlice";
@@ -36,7 +36,7 @@ const PriceListScreen = () => {
     }, 500);
   };
 
-  const searchParams = usePathname();
+  const searchParams = useSearchParams();
   const type = searchParams.get("type");
 
   useEffect(() => {
