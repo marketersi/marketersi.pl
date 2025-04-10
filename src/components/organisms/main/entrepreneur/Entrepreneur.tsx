@@ -1,6 +1,8 @@
 import React from "react";
 import style from "../main.module.css";
-import ReactPlayer from "react-player";
+import dynamic from 'next/dynamic';
+
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { Container, Image } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";

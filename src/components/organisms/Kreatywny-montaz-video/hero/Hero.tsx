@@ -1,7 +1,9 @@
 "use client";
 import React, { useState, useRef } from "react";
+import dynamic from 'next/dynamic';
+
 import { Container } from "react-bootstrap";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { useSelector } from "react-redux";
 import style from "./hero.module.css";
 

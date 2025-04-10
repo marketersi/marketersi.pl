@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { useSelector } from "react-redux";
 import { ModalForm } from "../tresci-sprzedazowe/ModalForm";
+import dynamic from 'next/dynamic';
 
 const UxVideo = () => {
   const { screenData } = useSelector((state) => state.ux);

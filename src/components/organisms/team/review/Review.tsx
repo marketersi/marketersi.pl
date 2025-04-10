@@ -3,7 +3,8 @@
 import React from "react";
 import style from "../team.module.css";
 import { Carousel, Row, Col } from "react-bootstrap";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
+import dynamic from 'next/dynamic';
 
 const Review = () => {
   return (

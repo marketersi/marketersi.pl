@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useRef } from "react";
+import dynamic from 'next/dynamic';
+
 import { Row, Col, Image, Container } from "react-bootstrap";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";

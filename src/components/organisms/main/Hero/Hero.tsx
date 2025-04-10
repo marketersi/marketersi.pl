@@ -1,7 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
-import ReactPlayer from "react-player";
+import dynamic from 'next/dynamic';
+
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";

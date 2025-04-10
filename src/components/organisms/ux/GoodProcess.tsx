@@ -1,9 +1,10 @@
 import useOsClass from "@/components/molecules/useOsClass";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { useSelector } from "react-redux";
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import dynamic from 'next/dynamic';
 
 gsap.registerPlugin(ScrollTrigger);
 

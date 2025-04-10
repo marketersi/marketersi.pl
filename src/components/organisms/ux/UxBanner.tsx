@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import useOsClass from "@/components/molecules/useOsClass";
 import ProjectuxModal from "../modals/ProjectuxModal";
+import dynamic from 'next/dynamic';
 
 const UxBanner = () => {
   const uxScreenData = useSelector((state) => state.ux.screenData);

@@ -1,6 +1,7 @@
 "use client";
+import dynamic from 'next/dynamic';
 import React, { useEffect } from "react";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { Col, Row, Container, Image } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_CONTACT_SCREEN_DATA } from "@/redux/kontakt/contactActions";

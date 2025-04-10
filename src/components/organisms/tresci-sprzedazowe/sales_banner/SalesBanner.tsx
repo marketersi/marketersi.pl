@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { ModalForm } from "../ModalForm";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import useOsClass from "@/components/molecules/useOsClass";
+import dynamic from 'next/dynamic';
 
 const SalesBanner = () => {
   const { screenData } = useSelector((state) => state.sales);

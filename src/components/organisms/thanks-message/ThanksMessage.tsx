@@ -1,10 +1,13 @@
 "use client";
+import dynamic from 'next/dynamic';
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import style from "./thanks.module.css";
 
 import useWindowSize from "react-use/lib/useWindowSize";
-import Confetti from "react-confetti";
+//import Confetti from "react-confetti";
+const Confetti = dynamic(() => import('react-confetti'), { ssr: false });
+
 
 const ThanksMessage = () => {
   const { width, height } = useWindowSize();

@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
+import dynamic from 'next/dynamic';
 import "./hero.css";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { useSelector } from "react-redux";
 
 const Hero = () => {

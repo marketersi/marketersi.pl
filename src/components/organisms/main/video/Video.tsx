@@ -1,12 +1,13 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from "gsap/ScrollTrigger";
 import style from "./video.module.css";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";
+import dynamic from 'next/dynamic';
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger, useGSAP);

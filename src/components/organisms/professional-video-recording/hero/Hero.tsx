@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import { Container } from "react-bootstrap";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import Image from "next/image";
 import style from "./hero.module.css";
 import useOsClass from "@/components/molecules/useOsClass";
+import dynamic from 'next/dynamic';
 
 const Hero = () => {
   const { screenData } = useSelector((state) => state.videoRecording);

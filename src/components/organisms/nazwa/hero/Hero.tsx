@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import "./nazwa-hero.css";
 import { useSelector } from "react-redux";
 import { ModalForm } from "../../tresci-sprzedazowe/ModalForm";
+import dynamic from 'next/dynamic';
 
 const NazwaHero = () => {
   const { screenData } = useSelector((state) => state.anatomy);

@@ -1,9 +1,10 @@
 import Stars from "@/components/molecules/Ratings";
 import React from "react";
-import ReactPlayer from "react-player";
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { useSelector } from "react-redux";
 import "./reviewCard.css";
 import useOsClass from "@/components/molecules/useOsClass";
+import dynamic from 'next/dynamic';
 
 const ReviewCard = () => {
   const { screenData } = useSelector((state) => state.opinion);

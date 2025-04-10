@@ -49,7 +49,9 @@
 // export default LottieAnimation;
 
 import { useState, useEffect } from "react";
-import Lottie from "react-lottie";
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
+
 import blackLogo from "./blackLogo.json";
 import whiteLogo from "./whiteLogo.json";
 import styles from "./lottieAnimation.module.css";
