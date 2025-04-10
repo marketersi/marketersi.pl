@@ -33,7 +33,7 @@ const HomeScreen = () => {
   }
 
   useEffect(() => {
-    console.log("hellll@@@@@@@@@@")
+    console.log('Home Page Test....')
   }, []);
 
   useEffect(() => {
