@@ -1,0 +1,404 @@
+.cal_sec {
+  padding: 70px 0;
+}
+
+.first-row h1 {
+  font-size:85px;
+  line-height:77px;
+  font-weight:700;
+  margin-bottom:40px;
+}
+
+.first-row p {
+  font-size: 28px;
+  line-height:50px;
+  font-weight: 300;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.first-row p.BoldText{font-weight:bold;}
+
+.second-row h1 {
+  font-size: 85px;
+    line-height:77px;
+    font-weight: 700;
+}
+
+.second-row p {
+  font-size: 28px;
+  line-height:50px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.first-card {
+  padding: 115px 50px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  background-color: rgb(246, 246, 247);
+}
+
+.first-card p {
+  font-weight: 500;
+  font-size: 19px;
+  max-width:152px;
+}
+
+.second-card {
+  border: none;
+  border-radius: 10px;
+  background: rgb(244 244 244);
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  z-index: 1;
+}
+
+.second-card img {
+  margin: -160px 0 0 0;
+  width: 100%;
+}
+
+.second-card h2 {
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.second-card h3 {
+  font-weight: 900;
+  font-size: 26px;
+  margin: 10px 0 0;
+}
+
+.second-card h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brand-blue);
+  margin-top: 0 0 16px;
+}
+
+.second-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+  margin-top: 16px;
+}
+
+.MTBigSpace{margin-top:150px;}
+.topMarg{margin-top:-5px;}
+
+.calc_input {
+  border: none;
+  border-bottom: 1px dotted;
+  text-align: right;
+  font-size: 45px;
+  font-weight: 900;
+  width: 9rem;
+  height:40px;
+  background: none;
+  color: var(--brand-blue);
+}
+
+.calc_input:focus {
+  outline: none;
+}
+
+.CalTopInput input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc((var(--value) - 10) / (9999 - 10) * 100%);
+  height: 8px;
+  background-color: var(--brand-blue);
+  border-radius: 5px;
+}
+.CalBotInput input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc((var(--value) - 10) / (99999 - 10) * 100%);
+  height: 8px;
+  background-color: var(--brand-blue);
+  border-radius: 5px;
+}
+
+.custom-range {
+  height: 8px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #b4ecff;
+  z-index: 1;
+  position: relative;
+  height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 999999px;
+  background: var(--brand-blue);
+  cursor: pointer;
+  position: relative;
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #3f4b5c;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: #b7e7ec;
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #3f4b5c;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background-color: #b7e7ec;
+}
+
+/* custom input */
+input[type="number"].no-spinner {
+  -moz-appearance: textfield;
+}
+
+input[type="number"].no-spinner::-webkit-inner-spin-button,
+input[type="number"].no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator_container {
+  max-width: 900px;
+}
+
+.calculator_container p {
+  margin: 0 0 40px;
+}
+
+/* ---------------------warranty-------------------- */
+.warranty {
+  padding: 30px 0 100px;
+}
+
+.warranty_card {
+  /* background: #ffc600; */
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.15), 0px 0px 0px 0px #fff,
+    2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+  padding: 70px;
+}
+
+section.warranty h2 {
+  font-size: 85px;
+  line-height:77px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 70px;
+}
+
+.warranty_card_img img {
+  width: 100%;
+  margin: 30px 0px -67px 30px;
+}
+
+.warranty_card_content h3 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-right:-150px;
+}
+
+.warranty_card_content p {
+  font-size: 28px;
+  line-height:50px;
+  margin: 40px 0;
+}
+
+.warranty_card_content a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  background: var(--brand-blue);
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 0 5px 0 var(--brand-blue-hover);
+  border: 2px solid var(--brand-blue-hover);
+}
+
+.warranty_card_content a:hover {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+/* -------------------------------media screen---------------------- */
+@media screen and (max-width: 1500px) {
+  .warranty_card{padding:32px 40px;}
+  .warranty_card_img img{margin-bottom:-30px;}
+}
+
+@media screen and (max-width: 1024px) {
+  .first-card {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .second-card h3 {
+    font-size: 26px;
+  }
+
+  .second-card {
+    border-radius: 30px;
+    width: 85%;
+    margin: 0px auto 50px;
+  }
+
+  .second-card h2 {
+    font-size: 55px;
+  }
+
+  .second-row h1 {
+    font-weight: 700;
+    font-size: 60px;
+  }
+
+  .warranty_card {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .first-row h1, .second-row h1, section.warranty h2, .warranty_card_content h3{font-size: 30px;line-height: 26px; margin-bottom:20px;}
+  .first-row p, .second-row p, .warranty_card_content p{font-size: 22px; line-height: 32px; font-weight: 300; margin-bottom:30px;}
+  .warranty_card_content h3{line-height:36px; margin-right:0;}
+  .first-row h1{margin-bottom:36px;}
+  .cal_sec{padding-top:12px;}
+  .MTBigSpace{margin-top: 12px;}
+  .first-card{padding:35px 20px 60px; border-radius:20px; max-width:95%;}
+  .second-card h3{font-size: 20px;}
+  .second-card{width:100%; border-radius:15px;}
+  .second-card img{margin:-80px 0 0 0;}
+  .second-row .p-sm-5{padding: 0 !important;}
+  .calculator_container p.mt-5{margin-top: 20px !important;}
+  .warranty_card{padding:30px;}
+  .cal_sec{padding-bottom:1px;}
+  .warranty{padding-bottom:0; padding-top:12px;}
+  .cal_sec .container{padding:0 12px;}
+  .second-row h1{margin-bottom:30px;}
+  
+}
+
+@media screen and (max-width: 600px) {
+  .first-card p{max-width: 162px; margin-left: auto; margin-right: auto;}
+  .calc_input,  .CalTopInput input[type="range"], .CalBotInput input[type="range"]{width:100%;}
+  .colxsmobile{margin: 12px 0 14px;}
+  /* .mobileBottBDR{border-bottom: 1px solid #d9d9d9; margin-bottom: 30px !important; padding-bottom: 30px;} */
+  .MTBigSpace{margin-left: 0; margin-right: 0;}
+  .first-card{max-width:100%;}
+  .second-card{border-radius:20px; width:90%;}
+  .MTBigSpace2{margin: 0;}
+  .warranty_card_content p{margin-top:0; font-size:18px; line-height:26px;}
+  .warranty_card{padding: 20px; border-radius: 15px; margin-bottom: 40px;}
+  .warranty_card_content a{font-size: 15px; line-height: 20px; margin-left: auto; margin-right: auto; display: block; text-align: center; width: 100%;         padding-left: 10px;
+    padding-right: 10px;}
+  .warranty_card_img img{margin: 30px 0px -22px 0px;}
+
+  section.warranty h2{margin-bottom:50px;}
+  .warranty_card_content h3{margin-right:0; font-size: 20px; line-height: 28px;}
+}
+
+/* @media screen and (max-width: 767px) {
+  .first-card {
+    padding: 50px 30px;
+  }
+
+  .calc_input {
+    width: 100%;
+  }
+
+  p.inputHeading {
+    font-size: 22px !important;
+    font-weight: 600;
+  }
+
+  .second-card h2 {
+    font-size: 35px;
+  }
+
+  .second-row h1 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .second-row span {
+    display: block;
+    font-weight: 900;
+    margin: -30px 0 0;
+  }
+
+  .second-row p {
+    font-size: 22px;
+  }
+
+  section.warranty h2 {
+    font-size: 40px;
+  }
+
+  .second-card img {
+    margin: -90px 0 0 0;
+  }
+
+  .second-row h1 span {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+
+  .warranty_card {
+    padding: 30px;
+  }
+
+  .warranty_card_content h3 {
+    font-size: 40px;
+  }
+
+  .warranty_card_content p {
+    font-size: 20px;
+  }
+
+  .warranty_card_content a {
+    font-size: 18px;
+  }
+
+  .warranty_card_img img {
+    margin: 30px 0px -28px 0px;
+  }
+  .second-card h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .warranty_card_content a {
+    font-size: 16px;
+  }
+
+  .warranty_card_content h3 {
+    font-size: 35px;
+  }
+} */
