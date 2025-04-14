@@ -19,7 +19,7 @@ const Order = () => {
             <h2>{ratingSection?.main_title}</h2>
             <p>{ratingSection?.subtitle_1}</p>
 
-            <Link href="/zamow">
+            <Link href="/zamow-bezplatne-badanie">
               <motion.button whileHover={{ translateY: 5 }}>
                 Zamów badanie teraz
               </motion.button>

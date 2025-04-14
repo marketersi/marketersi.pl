@@ -110,6 +110,10 @@ const HardResult = () => {
               playsinline
             /> */}
             <p>{section7?.paragraph_4}</p>
+
+            <h2 className={style.brandingHeading}>Jestesmy to po to , by sprawic , ze <br/> kazdy kadr w Twoim filmie bedzie  <br/> mial znaczenie</h2>
+
+            <p>Skontaktuj sie z nami , aby dowiedziec sie <br/> wiexej o naszych uskugach i umowic sie na  <br/> konsultacje</p>
             {/* <ReactPlayer
               url={section7?.video_url_5}
               playing={true}

@@ -25,3 +25,13 @@
 .SteperImage img{width:auto; height:110px;}
 .SteperTitle{font-size:17px; font-weight:600; color:#333; text-align: left; margin:0 0 20px;}
 .SteperCont{font-size:13px; line-height:20px; text-align: left; margin-bottom:0;}
+
+.slick-prev::before,
+.slick-next::before {
+  color: black; /* Or your brand color */
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: gray;
+}

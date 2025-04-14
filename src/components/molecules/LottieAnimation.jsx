@@ -3,11 +3,11 @@
 // import animationData from './data.json';
 // import blackLogo from './blackLogo.json';
 // import whiteLogo from './whiteLogo.json';
-
+ 
 // const LottieAnimation = () => {
 //   const [isPaused, setIsPaused] = useState(false);
 //   const [direction, setDirection] = useState(1);
-
+ 
 //   const defaultOptions = {
 //     loop: true,
 //     autoplay: true,
@@ -16,23 +16,23 @@
 //       preserveAspectRatio: 'xMidYMid slice',
 //     },
 //   };
-
+ 
 //   const handleMouseEnter = () => {
 //     setDirection(1);
 //     setIsPaused(false);
 //   };
-
+ 
 //   const handleMouseLeave = () => {
 //     setDirection(-1);
 //     setIsPaused(false);
 //   };
-
+ 
 //   useEffect(() => {
 //     setTimeout(() => {
 //       setIsPaused(true); // Pause the animation after it plays initially
 //     }, 3000); // Adjust the time based on your animation length
 //   }, []);
-
+ 
 //   return (
 //     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 //       <Lottie
@@ -45,22 +45,22 @@
 //     </div>
 //   );
 // };
-
+ 
 // export default LottieAnimation;
-
+'use client';
 import { useState, useEffect } from "react";
 import dynamic from 'next/dynamic';
-const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
-
+import Lottie from 'lottie-react';
+//import Lottie from 'react-lottie'
 import blackLogo from "./blackLogo.json";
 import whiteLogo from "./whiteLogo.json";
 import styles from "./lottieAnimation.module.css";
-
+ 
 const LottieAnimation = ({isHovered}) => {
   // const [isPaused, setIsPaused] = useState(false);
   // const [direction, setDirection] = useState(1);
   const [animationData, setAnimationData] = useState(whiteLogo); // State for animation data
-
+ 
   const defaultOptions = {
     loop: false,
     autoplay: true,
@@ -69,40 +69,49 @@ const LottieAnimation = ({isHovered}) => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
+ 
   // const handleMouseEnter = () => {
   //   setDirection(1);
   //   setIsPaused(false);
   //   setAnimationData(blackLogo); // Change to white logo on hover
   // };
-
+ 
   // const handleMouseLeave = () => {
   //   // setDirection(-1);
   //   setIsPaused(false);
   //   setAnimationData(whiteLogo); // Change back to black logo on mouse leave
   // };
-
+ 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
   //     setIsPaused(true); // Pause the animation after it plays initially
   //   }, 10000); // Adjust the time based on your animation length
-
+ 
   //   return () => clearTimeout(timer); // Cleanup the timer on unmount
   // }, []);
-
+ 
+  const [isClient, setIsClient] = useState(false);
+ 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+ 
+  if (!isClient) return null;
+ 
   return (
     <div
       className={styles.lottieContainer}
+     
       // onMouseEnter={handleMouseEnter}
       // onMouseLeave={handleMouseLeave}
     >
       <Lottie
-        options={defaultOptions}
+       animationData={ isHovered ? blackLogo : whiteLogo}
         // isPaused={isPaused}
         // direction={direction}
       />
     </div>
   );
 };
-
+ 
 export default LottieAnimation;
