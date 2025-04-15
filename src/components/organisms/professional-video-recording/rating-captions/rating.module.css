@@ -1,5 +1,5 @@
 .rating {
-  padding: 100px 0;
+  padding:0 0 100px 0;
 }
 
 .ratingImg {
@@ -78,6 +78,7 @@
   line-height: 50px;
   margin: 0 auto 40px;
   max-width: 900px;
+  letter-spacing: -0.9px;
 }
 
 .ratingCOntent p span {
@@ -118,6 +119,7 @@
   .ratingCOntent p {
     font-size: 22px;
     line-height: 35px;
+    letter-spacing:inherit;
   }
 
   .ratingImg :nth-child(2) {
@@ -133,7 +135,10 @@
     margin: 0 auto 20px;
   }
   .ratingCOntent h2 {
-    font-size: 40px;
-    line-height: 55px;
+    font-size:30px;
+    line-height:26px;
+    font-weight:700;
   }
+
+  .rating{padding-top:0;}
 }

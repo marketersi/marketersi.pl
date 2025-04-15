@@ -41,7 +41,7 @@ const AfterBanner = () => {
         </div>
       {/* </Container> */}
 
-      <div className={style.demoBigcontainer}>
+      <div className={style.democontainer}>
        <StepperSlider/>
       </div>
 {/* 

@@ -43,21 +43,21 @@ const sliderSettings = {
   arrows: true,
   infinite: true, // Autoplay ke liye infinite true hona chahiye
   speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000, // 3 seconds delay
   responsive: [
     {
-      breakpoint: 992,
+      breakpoint: 767,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 600,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
       }
     }
   ]
@@ -66,7 +66,6 @@ const sliderSettings = {
 
 const StepperSlider = () => {
   return (
-    <div className={style.demoBigcontainer}>
       <Slider {...sliderSettings} className={style.SteperSection}>
         {steps.map((step, index) => (
           <div key={index} className={style.SteperBox}>
@@ -79,7 +78,6 @@ const StepperSlider = () => {
           </div>
         ))}
       </Slider>
-    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 .rating {
-  padding: 100px 0;
+  padding:0 0  100px 0;
 }
 
 .ratingImg {
@@ -53,11 +53,11 @@
 }
 
 .ratingCOntent h2 {
-  font-size: 65px;
+  font-size: 60px;
   text-align: center;
   font-weight: 600;
   color: #333333;
-  line-height: 60px;
+  line-height: 64px;
   max-width: 1000px;
   margin: 0 auto 40px;
 }
@@ -136,4 +136,8 @@
     font-size: 40px;
     line-height: 55px;
   }
+
+
+  .rating{padding-top:0;}
+  .ratingCOntent h2{font-size: 30px; line-height: 26px;}
 }

@@ -48,7 +48,7 @@ const HardResult = () => {
             <p>{section5?.paragraph_1}</p>
             <p>{section5?.paragraph_2}</p>
           </div>
-          <Row className="mt-5 pt-5 mb-5 pb-5">
+          <Row className="md:mt-5 md:pt-5 md:mb-5 pb-5">
             <Col lg={7} className={osClass}>
               {/* <ReactPlayer
                 url={section6?.video_url}
@@ -110,10 +110,6 @@ const HardResult = () => {
               playsinline
             /> */}
             <p>{section7?.paragraph_4}</p>
-
-            <h2 className={style.brandingHeading}>Jestesmy to po to , by sprawic , ze <br/> kazdy kadr w Twoim filmie bedzie  <br/> mial znaczenie</h2>
-
-            <p>Skontaktuj sie z nami , aby dowiedziec sie <br/> wiexej o naszych uskugach i umowic sie na  <br/> konsultacje</p>
             {/* <ReactPlayer
               url={section7?.video_url_5}
               playing={true}
@@ -125,7 +121,7 @@ const HardResult = () => {
               playsinline
             /> */}
            
-            <div className={`mb-5 pb-5  ${style.ratingLogoImg}`}>
+            <div className={`mb-3  ${style.ratingLogoImg}`}>
               <Image
                 src={section7?.image_url_1}
                 alt="rating image"

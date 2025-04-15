@@ -4,6 +4,8 @@
   -webkit-transition:background 0.5s;
   transition:background 0.5s;
   display: block;
+  position: relative;
+  z-index: 105;
   -moz-transition:background 0.5s;
   -ms-transition:background 0.5s;
   -o-transition:background 0.5s;
@@ -449,6 +451,8 @@
   }
   .mobileHeader {
     display: block;
+    position: relative;
+    z-index: 9999;
   }
   .nav {
     position: absolute;

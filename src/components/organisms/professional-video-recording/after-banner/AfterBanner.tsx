@@ -22,25 +22,26 @@ const AfterBanner = () => {
           <div className={style.filowBox}>
             <div className={style.filowBoxFirst}>
               <div className={style.filowBoxFirstInner}>
-                <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/Z-0l6XdAxsiBwOCs_Without-BG-80New.png?auto=format,compress" alt="" />
-                <div className={style.filowBoxFirstTitle}>filmów wideo, <br/>publikowanych online <br/>nie osiąga zakładanych <br/>celów marketingowych.</div>
-                <img className={style.filowBoxFirstImg2} src="https://images.prismic.io/marketersi/Z-0lx3dAxsiBwOCn_HubSpot_Logo.svg.png?auto=format,compress" alt="" />
+               
+                <div className={style.filowBoxFirstTitle}>Odbiorcy przeważnie zapamiętują,
+                  <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/Z-0l6XdAxsiBwOCs_Without-BG-80New.png?auto=format,compress" alt="" />
+                  <br/>obejrzanego wideo, <br/>a tylko 10% przeczytanego tekstu.</div>
+                <img className={style.filowBoxFirstImg2} src="https://images.prismic.io/marketersi/Z_zwKuvxEdbNPAWQ_Business-Insider-Logo.png?auto=format,compress" alt="" />
               </div>
             </div>
             <div className={style.filowBoxSecond}>
               <div className={style.filowBoxSecondInner}>
-                <div className={style.filowBoxSecondTitle}>Tworzymy montaż wideo, <br/>który wywołuje emocje, <br/>buduje profesjonalny <br/>wizerunek Twojej marki i <br/>podnosi sprzedaż na lata.</div>
+                <div className={style.filowBoxSecondTitle}>Tworzymy filmy, które <br />budują zaufanie, <br />przyciągają nowych <br />klientów i zwiększają <br />sprzedaż.</div>
               </div>
             </div>
           </div>
-
 
           
 
         </div>
       {/* </Container> */}
 
-      <div className={style.demoBigcontainer}>
+      <div className={style.democontainer}>
        <StepperSlider/>
       </div>
 {/* 
