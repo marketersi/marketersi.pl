@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-//import Slider from "react-slick";
-//import "./slider.css";
+import Slider from "react-slick";
+import "./slider.css";
 import { useSelector } from "react-redux";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -58,7 +58,7 @@ const CoverFlowSlider = () => {
   return (
     <div className="slider-container">
       <></>
-      {/* <Slider {...settings} className="UxSlider" ref={carousel}>
+      <Slider {...settings} className="UxSlider" ref={carousel}>
   {slider?.images?.map((e, index) => {
     return (
       <div key={index} className={index === slideIndex ? "slide slide-active" : "slide"}>
@@ -68,7 +68,7 @@ const CoverFlowSlider = () => {
       </div>
     );
   })}
-</Slider>; */}
+</Slider>;
     </div>
   );
 };

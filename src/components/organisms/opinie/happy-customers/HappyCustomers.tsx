@@ -1,6 +1,6 @@
 import React from "react";
 import "./happyCustomers.css";
-//import Slider from "react-slick";
+import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import { useSelector } from "react-redux";
@@ -130,8 +130,8 @@ const HappyCustomers = () => {
         <div className="customer_replies_container">
           <h1>{customerReplies.title}</h1>
           <div>
-            <></>
-            {/* <Slider {...settings}>
+         
+            <Slider {...settings}>
               {customerReplies.reviews?.map((customerReply, index) => (
                 <div key={index}>
                   {customerReply.map((reply, idx) => (
@@ -141,7 +141,7 @@ const HappyCustomers = () => {
                   ))}
                 </div>
               ))}
-            </Slider> */}
+            </Slider>
           </div>
         </div>
       </div>
