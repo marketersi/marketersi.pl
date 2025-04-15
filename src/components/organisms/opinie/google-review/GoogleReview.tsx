@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "../opinie.module.css";
 import { Col, Row } from "react-bootstrap";
 import GoogleCard from "./GoogleCard";
-import Slider from "react-slick";
+//import Slider from "react-slick";
 
 function isMobile() {
   return typeof window !== "undefined" && window.innerWidth <= 768;
@@ -92,18 +92,19 @@ export default function GoogleReview() {
                   </Row>
                 </div>
               ) : (
-                <Slider {...settings}>
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                  <GoogleCard />
-                </Slider>
+                <></>
+                // <Slider {...settings}>
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                //   <GoogleCard />
+                // </Slider>
               )}
 
               {!showAll && (
