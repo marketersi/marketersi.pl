@@ -1,8 +1,8 @@
 import React from "react";
 import style from "../opinie.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
+//import Slider from "react-slick";
 import { useSelector } from "react-redux";
 
 const Brands = () => {
@@ -43,11 +43,12 @@ const Brands = () => {
                 <div className={style.brandSlide} key={i}>
                 <h4>{e.brand_title}</h4>
                 <div className={style.brandSlideItem}>
-                  <Slider {...settings}>
+                  <></>
+                  {/* <Slider {...settings}>
                     {e.image.map((e, i) => {
                       return <img src={e} key={i} />;
                     })}
-                  </Slider>
+                  </Slider> */}
                 </div>
               </div>
                 </div>
