@@ -2,7 +2,7 @@
 import React from 'react'
 import style from '../main.module.css'
 import { Container, Image } from "react-bootstrap";
-//import Slider from 'react-slick';
+import Slider from 'react-slick';
 
 
 const Reviews = () => {
@@ -39,17 +39,17 @@ const AutoSlider = () => {
 
 
    return (
-    <></>
-    // <Slider {...settings}>
-    //   <div>
-    //     <h3>Slide 1</h3>
-    //   </div>
-    //   <div>
-    //     <h3>Slide 2</h3>
-    //   </div>
-    //   <div>
-    //     <h3>Slide 3</h3>
-    //   </div>
-    // </Slider>
+  
+    <Slider {...settings}>
+      <div>
+        <h3>Slide 1</h3>
+      </div>
+      <div>
+        <h3>Slide 2</h3>
+      </div>
+      <div>
+        <h3>Slide 3</h3>
+      </div>
+    </Slider>
    )
 }
