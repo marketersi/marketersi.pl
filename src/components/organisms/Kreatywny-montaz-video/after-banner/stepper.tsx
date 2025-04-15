@@ -1,9 +1,9 @@
 "use client";
 import React from 'react';
-import Slider from 'react-slick';
+//import Slider from 'react-slick';
 import style from './afterbanner.module.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
 
 const steps = [
   {
@@ -67,18 +67,19 @@ const sliderSettings = {
 
 const StepperSlider = () => {
   return (
-      <Slider {...sliderSettings} className={style.SteperSection}>
-        {steps.map((step, index) => (
-          <div key={index} className={style.SteperBox}>
-            <div className={style.SteperNumber}>{step.number}</div>
-            <div className={style.SteperImage}>
-              <img src={step.img} alt={`Step ${step.number}`} />
-            </div>
-            <h4 className={style.SteperTitle}>{step.title}</h4>
-            <p className={style.SteperCont}>{step.desc}</p>
-          </div>
-        ))}
-      </Slider>
+    <></>
+      // <Slider {...sliderSettings} className={style.SteperSection}>
+      //   {steps.map((step, index) => (
+      //     <div key={index} className={style.SteperBox}>
+      //       <div className={style.SteperNumber}>{step.number}</div>
+      //       <div className={style.SteperImage}>
+      //         <img src={step.img} alt={`Step ${step.number}`} />
+      //       </div>
+      //       <h4 className={style.SteperTitle}>{step.title}</h4>
+      //       <p className={style.SteperCont}>{step.desc}</p>
+      //     </div>
+      //   ))}
+      // </Slider>
   );
 };
 
