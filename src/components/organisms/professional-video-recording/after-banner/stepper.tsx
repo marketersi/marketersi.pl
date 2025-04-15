@@ -1,6 +1,8 @@
 "use client";
 import React from 'react';
-import Slider from 'react-slick';
+//import Slider from 'react-slick';
+import dynamic from 'next/dynamic';
+const Slider = dynamic(() => import('react-slick'), { ssr: false });
 import style from './afterbanner.module.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
