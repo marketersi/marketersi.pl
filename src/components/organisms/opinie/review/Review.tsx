@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import style from "../opinie.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
+//import Slider from "react-slick";
 import { useSelector } from "react-redux";
 import Stars from "@/components/molecules/Ratings";
 
@@ -52,11 +52,12 @@ export default function Review() {
     <>
       <div className={style.job}>
         <div className={style.opinionContainer}>
-          <Slider {...settings}>
+          <></>
+          {/* <Slider {...settings}>
             {Review.map((e, i) => {
               return <ReviewCard data={e} key={i} />;
             })}
-          </Slider>
+          </Slider> */}
         </div>
       </div>
     </>

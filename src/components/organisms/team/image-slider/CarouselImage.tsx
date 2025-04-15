@@ -1,8 +1,8 @@
 // ImageCarousel.js
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+//import "slick-carousel/slick/slick.css";
+//import "slick-carousel/slick/slick-theme.css";
 import "./imageslider.css";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
@@ -64,13 +64,14 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <Slider {...settings}>
-      {images.map((image, index) => (
-        <div key={index}>
-          <img src={image} alt={`Slide ${index + 1}`} />
-        </div>
-      ))}
-    </Slider>
+    <></>
+    // <Slider {...settings}>
+    //   {images.map((image, index) => (
+    //     <div key={index}>
+    //       <img src={image} alt={`Slide ${index + 1}`} />
+    //     </div>
+    //   ))}
+    // </Slider>
   );
 };
 
