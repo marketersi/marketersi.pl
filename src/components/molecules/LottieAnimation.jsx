@@ -50,7 +50,8 @@
 'use client';
 import { useState, useEffect } from "react";
 import dynamic from 'next/dynamic';
-import Lottie from 'lottie-react';
+//import Lottie from 'lottie-react';
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 //import Lottie from 'react-lottie'
 import blackLogo from "./blackLogo.json";
 import whiteLogo from "./whiteLogo.json";
