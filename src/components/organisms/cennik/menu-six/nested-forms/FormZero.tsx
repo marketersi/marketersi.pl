@@ -86,7 +86,7 @@ const FormZero = ({ setCurrentComponent }) => {
       <p className={`card-subheading ${isButtonClicked ? "red-title" : ""}`}>
         {formOne?.section1_subtitle}
       </p>
-      <div style={{ textAlign: "left" }} className="select-input">
+      <div style={{ textAlign: "left" }} className="select-input ms-auto me-auto">
         <Select
           options={dropdown}
           placeholder="Wybierz"

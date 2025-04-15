@@ -3,6 +3,7 @@ import style from './afterbanner.module.css';
 import { Container, Image } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import PricingOption from '../../marketing-consulting/pricing/PricingOptions'
+import StepperSlider from './stepper';
 
 const AfterBanner = () => {
   const { screenData } = useSelector((state) => state.videoEditing);
@@ -21,73 +22,27 @@ const AfterBanner = () => {
           <div className={style.filowBox}>
             <div className={style.filowBoxFirst}>
               <div className={style.filowBoxFirstInner}>
-                <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/Z-0l6XdAxsiBwOCs_Without-BG-80New.png?auto=format,compress" alt="" />
-                <div className={style.filowBoxFirstTitle}>filmów wideo, <br/>publikowanych online <br/>nie osiąga zakładanych <br/>celów marketingowych.</div>
-                <img className={style.filowBoxFirstImg2} src="https://images.prismic.io/marketersi/Z-0lx3dAxsiBwOCn_HubSpot_Logo.svg.png?auto=format,compress" alt="" />
+               
+                <div className={style.filowBoxFirstTitle}>Odbiorcy przeważnie zapamiętują,
+                  <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/Z-0l6XdAxsiBwOCs_Without-BG-80New.png?auto=format,compress" alt="" />
+                  <br/>obejrzanego wideo, <br/>a tylko 10% przeczytanego tekstu.</div>
+                <img className={style.filowBoxFirstImg2} src="https://images.prismic.io/marketersi/Z_zwKuvxEdbNPAWQ_Business-Insider-Logo.png?auto=format,compress" alt="" />
               </div>
             </div>
             <div className={style.filowBoxSecond}>
               <div className={style.filowBoxSecondInner}>
-                <div className={style.filowBoxSecondTitle}>Tworzymy montaż wideo, <br/>który wywołuje emocje, <br/>buduje profesjonalny <br/>wizerunek Twojej marki i <br/>podnosi sprzedaż na lata.</div>
+                <div className={style.filowBoxSecondTitle}>Tworzymy filmy, które <br />budują zaufanie, <br />przyciągają nowych <br />klientów i zwiększają <br />sprzedaż.</div>
               </div>
             </div>
           </div>
-
 
           
 
         </div>
       {/* </Container> */}
 
-      <div className={style.demoBigcontainer}>
-        <div className={style.SteperSection}>
-              
-          <div className={style.SteperBox}>
-            <div className={style.SteperNumber}>01</div>
-            <div className={style.SteperImage}>
-              <img src="https://images.prismic.io/marketersi/Z-0nEndAxsiBwODl_step-1.png?auto=format,compress" alt="" />
-            </div>
-            <h4 className={style.SteperTitle}>Analiza Twojej wizji</h4>
-            <p className={style.SteperCont}>Rozmawiamy, analizujemy, słuchamy. Chcemy w pełni zrozumieć Twoją wizję i cele. Omówimy szczegóły surowego materiału, jakie masz oczekiwania wobec efektu końcowego, i dopasujemy styl montażu do charakteru Twojej marki.</p>
-          </div>
-
-          <div className={style.SteperBox}>
-            <div className={style.SteperNumber}>02</div>
-            <div className={style.SteperImage}>
-              <img src="https://images.prismic.io/marketersi/Z-0nkndAxsiBwOD8_step-2.png?auto=format,compress" alt="" />
-            </div>
-            <h4 className={style.SteperTitle}>Przygotowanie koncepcji</h4>
-            <p className={style.SteperCont}>Na podstawie Twoich wskazówek i naszych analiz opracowujemy plan montażu. Wybieramy odpowiednią narrację, dynamikę i efekty wizualne, które najlepiej podkreślą Twoją wizję i zaangażują odbiorców.</p>
-          </div>
-
-          <div className={style.SteperBox}>
-            <div className={style.SteperNumber}>03</div>
-            <div className={style.SteperImage}>
-              <img src="https://images.prismic.io/marketersi/Z-0nyHdAxsiBwOEK_step-3.png?auto=format,compress" alt="" />
-            </div>
-            <h4 className={style.SteperTitle}>Postprodukcja</h4>
-            <p className={style.SteperCont}>Zaczynamy proces łącząc surowy materiał w spójną całość. Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe tworzymy film, który przemówi do Twoich odbiorców. Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją i wyróżniał Twoją markę.</p>
-          </div>
-
-          <div className={style.SteperBox}>
-            <div className={style.SteperNumber}>04</div>
-            <div className={style.SteperImage}>
-              <img src="https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEJ_step-4.png?auto=format,compress" alt="" />
-            </div>
-            <h4 className={style.SteperTitle}>Postprodukcja</h4>
-            <p className={style.SteperCont}>Zaczynamy proces łącząc surowy materiał w spójną całość. Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe tworzymy film, który przemówi do Twoich odbiorców. Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją i wyróżniał Twoją markę.</p>
-          </div>
-
-          <div className={style.SteperBox}>
-            <div className={style.SteperNumber}>05</div>
-            <div className={style.SteperImage}>
-              <img src="https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEI_step-5.png?auto=format,compress" alt="" />
-            </div>
-            <h4 className={style.SteperTitle}>Postprodukcja</h4>
-            <p className={style.SteperCont}>Zaczynamy proces łącząc surowy materiał w spójną całość. Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe tworzymy film, który przemówi do Twoich odbiorców. Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją i wyróżniał Twoją markę.</p>
-          </div>
-
-        </div>
+      <div className={style.democontainer}>
+       <StepperSlider/>
       </div>
 {/* 
       <section className="container pb-5">

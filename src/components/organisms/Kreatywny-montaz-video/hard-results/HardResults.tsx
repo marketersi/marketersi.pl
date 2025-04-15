@@ -48,7 +48,7 @@ const HardResult = () => {
             <p>{section5?.paragraph_1}</p>
             <p>{section5?.paragraph_2}</p>
           </div>
-          <Row className="mt-5 pt-5 mb-5 pb-5">
+          <Row className="md:mt-5 md:pt-5 md:mb-5 pb-5">
             <Col lg={7} className={osClass}>
               {/* <ReactPlayer
                 url={section6?.video_url}
@@ -121,7 +121,7 @@ const HardResult = () => {
               playsinline
             /> */}
            
-            <div className={`mb-5 pb-5  ${style.ratingLogoImg}`}>
+            <div className={`mb-3  ${style.ratingLogoImg}`}>
               <Image
                 src={section7?.image_url_1}
                 alt="rating image"

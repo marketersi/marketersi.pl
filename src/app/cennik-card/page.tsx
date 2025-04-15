@@ -83,9 +83,7 @@ const PriceListScreen = () => {
           <BounceLoader color="#00bfff" size={50} />
         </div>
       ) : (
-        <section className="container pb-5">
-          <div  className="row justify-content-center">
-            <div className="col-xl-8 text-center">
+        <section className="democontainer pb-3 text-center">
               <h2 className="mt-5 heading-style">{title}</h2>
               <div className="mt-3">
                 <p className="subheading">
@@ -99,7 +97,7 @@ const PriceListScreen = () => {
                 </p>
               </div>
 
-              <div className="card cennikFormCard mt-4" style={cardStyle}>
+              <div className="card cennikFormCard mt-4 0" style={cardStyle}>
                 <div className="card-body">
              
                  
@@ -108,8 +106,6 @@ const PriceListScreen = () => {
                   
                 </div>
               </div>
-            </div>
-          </div>
           <ToastContainer />
         </section>
       )}

@@ -1,8 +1,8 @@
 .heroSection{
   position: relative;
-  height: calc(100vh - -130px);
+  height:100vh;
   width: 100%;
-  margin-top:-130px;
+  margin-top:-156px;
 }
 
 .hero {
@@ -15,6 +15,9 @@
 
 .heroVideo video {
   display: block;
+  width:100%;
+  height:100% !important;
+  object-fit: cover;
 }
 
 .videoButtonFix{
@@ -23,7 +26,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
- 
   text-align: center;
 }
 
@@ -42,6 +44,23 @@
 
 .youtubeIcon svg {
   width: 30px;
+}
+
+.youtubeIconSort {
+  background: rgba(156, 0, 0, 0.95);
+    width: 30px;
+    height: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+}
+
+
+.youtubeIconSort svg {
+  width: 10px;
 }
 
 .hero h1 {
@@ -155,7 +174,7 @@
 
 .heroVideo {
   width: 100%;
-  /* height: 100%; */
+  height: 100% !important;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -178,6 +197,8 @@
   position: absolute;
   z-index: 0;
 }
+
+/* .videoButtonFix p{background:#fff; padding:3px 10px;} */
 
 /* ----------------------------------media screen------------------------------------ */
 @media screen and (max-width: 1520px) {
@@ -265,12 +286,13 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .heroVideo {
-    padding: 180px 0 170px;
-  }
+@media screen and (max-width: 991px) {
+  .heroSection{margin-top:-68px;}
+  .heroVideo{padding:0px;}
+}
 
-  .hero {
+@media screen and (max-width: 767px) {
+    .hero {
     max-height: 540px;
   }
 
@@ -337,7 +359,7 @@
     height: 50%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .heroImg3 {
     margin: -170px 0 0 180px;
     width: 180px;
@@ -347,10 +369,16 @@
     margin: -236px 0 0 240px;
     width: 180px;
   }
-  .heroVideo {
-    padding: 180px 0 250px;
-  }
-  .hero {
-    max-height: 580px;
-  }
+
+  .hero_heroSection__dk8dQ{margin-top: -53px;}
+  
+
+  /* .heroSection{height: 230px;} */
+  .heroSection{margin-top: -53px;}
+  .videoButtonFix{max-width: 310px; margin-top: 30px; width: 100%;}
+  
+  .youtubeIcon{width: 80px; height: 40px; border-radius: 6px;}
+  .youtubeIcon svg{width: 20px;}
+  
+
 }
