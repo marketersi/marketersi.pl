@@ -44,9 +44,10 @@ const Teams = () => {
               </Col>
               <Col lg={6}>
                 <div className={style.teamsCardContent}>
-                  <h5>{teams.para_one}</h5>
-                  <p>{teams.para_two}</p>
-                  <p>{teams.para_three}</p>
+                  {/* <h5>{teams.para_one}</h5> */}
+                  <h5>Nie ma dla nas za dużych ani za małych firm</h5>
+                  <p>Realizujemy duże, złożone projekty dla korporacji.</p>
+                  <p>Ale to właśnie z mniejszymi biznesami współpracujemy najczęściej.</p>
                 </div>
               </Col>
             </Row>

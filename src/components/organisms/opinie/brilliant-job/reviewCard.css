@@ -1,8 +1,8 @@
 .review_container {
   display: flex;
-  width: 60rem;
+  max-width:900px;
   margin: 0 auto;
-  gap: 50px;
+  gap: 20px;
   background-color: white;
 }
 

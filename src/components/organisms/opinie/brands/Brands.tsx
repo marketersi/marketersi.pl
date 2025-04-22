@@ -10,6 +10,8 @@ const Brands = () => {
   const brands = screenData.brands || {};
   const brand = brands.brand || [];
 
+  console.log(brand , 'brand@1223')
+
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
@@ -34,7 +36,9 @@ const Brands = () => {
     <>
       <div className={style.brands}>
         <div className={style.opinionContainer}>
-          <h2>{brands.title}</h2>
+          <h2>“Marki, które wybrały skuteczność.
+Zobacz, dla kogo tworzymy marketing, który sprzedaje.”
+</h2>
           {brand?.map((e, i) => {
             return (
               <>

@@ -15,7 +15,7 @@ const HardResult = () => {
     const osClass = useOsClass();
     
   return (
-    <div>
+    <div className={style.hardResulth2}>
       <Container>
         <div className={style.hardResult}>
           <div className={style.Content}>
@@ -26,29 +26,33 @@ const HardResult = () => {
             <p>{section4?.paragraph_2}</p>
           </div>
 
-          <Row className="mb-5">
-            <Col lg={6} className="order-lg-1 order-2">
-              <h4>{section5?.quote}</h4>
-            </Col>
-            <Col lg={6} className={`order-lg-2 order-1 ${osClass}`}>
-              {/* <ReactPlayer
-                url={section5?.video_url}
-                playing={true}
-                loop={true}
-                width="100%"
-                height="auto"
-                muted={true}
-                pip={false}
-                playsinline
-              /> */}
-            </Col>
-          </Row>
+          <div className={style.Content}>
+            <Row className="mb-0">
+              <Col lg={12} className="order-lg-1 order-2">
+                <p>{section5?.quote}</p>
+              </Col>
+              {/* <Col lg={6} className={`order-lg-2 order-1 ${osClass}`}> */}
+                {/* <ReactPlayer
+                  url={section5?.video_url}
+                  playing={true}
+                  loop={true}
+                  width="100%"
+                  height="auto"
+                  muted={true}
+                  pip={false}
+                  playsinline
+                /> */}
+              {/* </Col> */}
+            </Row>
+          </div>
           <div className={style.Content}>
             <p>{section5?.paragraph_1}</p>
             <p>{section5?.paragraph_2}</p>
           </div>
-          <Row className="md:mt-5 md:pt-5 md:mb-5 pb-5 row">
-            <Col lg={7} className={osClass}>
+
+          <div className={style.Content}>
+          <Row className="md:mt-5 md:pt-5 md:mb-0 pb-0 row">
+            {/* <Col lg={7} className={osClass}> */}
               {/* <ReactPlayer
                 url={section6?.video_url}
                 playing={true}
@@ -59,17 +63,18 @@ const HardResult = () => {
                 pip={false}
                 playsinline
               /> */}
-            </Col>
-            <Col lg={5}>
-              <h4 className="text-end">{section6?.quote}</h4>
+            {/* </Col> */}
+            <Col lg={12}>
+              <p className="">{section6?.quote}</p>
             </Col>
           </Row>
 
+          </div>
+
           <div className={style.Content}>
-            <p>
-              <span className='CustomGap'>{section6?.subtitle}</span> <br />
-              {section6?.paragraph_1}
-            </p>
+            <p>{section6?.subtitle}</p>
+            <p>{section6?.paragraph_1}</p>
+            
             <p>{section6?.paragraph_2}</p>
             <p>{section6?.paragraph_3}</p>
             <div className={osClass}>
@@ -84,7 +89,9 @@ const HardResult = () => {
               playsinline
             /> */}
             </div>
-            <h2 className={style.brandingHeading}>{section7?.title}</h2>
+            <div className={style.customDivCont}>
+              <h2 className={style.brandingHeading}>{section7?.title}</h2>
+            </div>
             <p>{section7?.paragraph_1}</p>
             <div className={osClass}>
             {/* <ReactPlayer
@@ -121,10 +128,13 @@ const HardResult = () => {
               pip={false}
               playsinline
             /> */}
-            <h3>{section7?.bottom_title}</h3>
-            <h4 className={style.hardBottomContent}>
-              {section7?.quoted_title}
-            </h4>
+            <div className={style.fontCustomAdd}>
+              <h3>{section7?.bottom_title}</h3>
+            
+              <h4 className={style.hardBottomContent}>
+                {section7?.quoted_title}
+              </h4>
+            </div>
             <div className={`mb-3  ${style.ratingLogoImg}`}>
               <Image
                 src={section7?.image_url_1}

@@ -12,10 +12,15 @@
 }
 
 .opinionContent h1 {
-  font-size: 60px;
+  font-size: 74px;
+  line-height:77px;
   font-weight: 700;
-  color: white;
+  color: #333;
 }
+
+
+
+
 
 /* ===================job=============== */
 .brilliant {
@@ -689,6 +694,9 @@ img.opinionBnnaerImg {
 }
 
 /* ------------------------------media screen ------------------------------- */
+
+
+
 @media only screen and (max-width: 1024px) {
   .opinionContent h1 {
     font-size: 50px;

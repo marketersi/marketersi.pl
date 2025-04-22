@@ -9,6 +9,39 @@ const AfterBanner = () => {
   const { screenData } = useSelector((state) => state.videoEditing);
   const { brandSection, companySection } = screenData;
 
+
+  const steps = [
+    {
+    number: "01",
+    title: "Analiza Twojej wizji",
+    img: "https://images.prismic.io/marketersi/Z-0nEndAxsiBwODl_step-1.png?auto=format,compress",
+    desc: "Rozmawiamy, analizujemy, słuchamy. Chcemy w pełni zrozumieć Twoją wizję i cele. Omówimy szczegóły surowego materiału..."
+    },
+    {
+    number: "02",
+    title: "Przygotowanie koncepcji",
+    img: "https://images.prismic.io/marketersi/Z-0nkndAxsiBwOD8_step-2.png?auto=format,compress",
+    desc: "Na podstawie Twoich wskazówek i naszych analiz opracowujemy plan montażu..."
+    },
+    {
+    number: "03",
+    title: "Postprodukcja",
+    img: "https://images.prismic.io/marketersi/Z-0nyHdAxsiBwOEK_step-3.png?auto=format,compress",
+    desc: "Zaczynamy proces łącząc surowy materiał w spójną całość..."
+    },
+    {
+    number: "04",
+    title: "Postprodukcja",
+    img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEJ_step-4.png?auto=format,compress",
+    desc: "Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją..."
+    },
+    {
+    number: "05",
+    title: "Postprodukcja",
+    img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEI_step-5.png?auto=format,compress",
+    desc: "Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe..."
+    }
+    ];
   
 
   return (
@@ -40,9 +73,24 @@ const AfterBanner = () => {
 
         </div>
       {/* </Container> */}
-
+{/* 
       <div className={style.democontainer}>
        <StepperSlider/>
+      </div> */}
+
+      <div className={style.democontainer}>
+        <div className={style.SteperBoxListing}>
+          {steps.map((step, index) => (
+          <div key={index} className={style.SteperBox}>
+          <div className={style.SteperNumber}>{step.number}</div>
+          <div className={style.SteperImage}>
+          <img src={step.img} alt={`Step ${step.number}`} />
+          </div>
+          <h4 className={style.SteperTitle}>{step.title}</h4>
+          <p className={style.SteperCont}>{step.desc}</p>
+          </div>
+          ))}
+        </div>
       </div>
 {/* 
       <section className="container pb-5">

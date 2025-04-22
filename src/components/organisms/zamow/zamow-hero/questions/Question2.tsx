@@ -22,10 +22,10 @@ const Question2 = ({ handleNext }) => {
 
   return (
     <div className="zh_question">
-      <h2>{formTwo?.title} </h2>
+      <h2>Nazwa Twojej firmy?</h2> 
       <textarea
         rows={1}
-        placeholder="Wpisz tu swoją odpowiedź"
+        placeholder="Wpisz odpowiedź tutaj"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
@@ -37,9 +37,9 @@ const Question2 = ({ handleNext }) => {
           style={{ cursor: !inputValue ? "not-allowed" : "pointer" }}
           disabled={!inputValue}
         >
-          OK
+            Zatwierdź
         </motion.button>
-        <p>Wciśnij Enter</p>
+        {/* <p>Wciśnij Enter</p> */}
       </div>
     </div>
   );

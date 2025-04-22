@@ -53,8 +53,10 @@ const CustomerRating = () => {
         {/* <img src={ratingSection?.barnd_image_2} alt="" /> */}
       </div>
       <p className=" brand-description">
-        {ratingSection?.rating_text}
-        {<Stars rating={ratingSection?.rating} />}
+        {/* {ratingSection?.rating_text} */}
+        Firmy oceniają nasze badania na {<Stars rating={ratingSection?.rating} />}
+       
+        i mówią o nich tak:
       </p>
 
       {!mobile && (
@@ -111,7 +113,12 @@ const CustomerRating = () => {
       </div>
 
       <p className=" brand-description">
-        {ratingSection?.question} <br /> <b>{ratingSection?.answer}</b>
+        {/* {ratingSection?.question} <br /> <b>{ratingSection?.answer}</b> */}
+        “Gdy zapytaliśmy klientów: Czy po zastosowaniu naszych<br />
+       rekomendacji zauważyli mierzalną poprawę wyników?
+       <b>94% klientów odpowiedziało TAK!”
+       </b>
+
       </p>
     </section>
   );

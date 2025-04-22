@@ -53,9 +53,9 @@ const Question7 = ({ handleNext }) => {
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-          {formSeven?.buttonText}
+                Zatwierdź
         </motion.button>
-        <p>Wciśnij Enter</p>
+        {/* <p>Wciśnij Enter</p> */}
       </div>
     </div>
   );

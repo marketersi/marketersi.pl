@@ -10,24 +10,26 @@ const Banner = () => {
   return (
     <>
       <div className={style.opinionBanner}>
-        <Container>
-          <Row>
-            <Col lg={4} md={6}>
+        <Container className="customContainer">
+          <div className="bannerflex">
+            <div className="customWidth">
               <div className={style.opinionContent}>
-                <h1>{banner.title}</h1>
+                {/* <h1>{banner.title}</h1> */}
+                <h1>Opinie <br />klientów  <br />o Marketersi.pl</h1>
               </div>
-            </Col>
-            <Col lg={4} md={6} className="d-flex align-item-center">
-              <img src={banner.image_1} alt="" />
-            </Col>
-            <Col lg={4} md={12}>
-              <img
+            </div>
+            <div className="customWidth2">
+            <img
                 className={style.opinionBnnaerImg}
                 src={banner.image_2}
                 alt=""
               />
-            </Col>
-          </Row>
+              
+            </div>
+            <div className="customWidth3">
+              <img src={banner.image_1} alt="" />
+            </div>
+          </div>
         </Container>
       </div>
     </>

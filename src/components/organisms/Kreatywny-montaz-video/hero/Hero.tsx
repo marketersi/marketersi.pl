@@ -37,7 +37,8 @@ const Hero = () => {
     <div className={style.heroSection}>
     <ReactPlayer
   ref={playerRef}
-  url={heroSection?.background_video}
+  //url={heroSection?.background_video}
+  url='https://marketersi.cdn.prismic.io/marketersi/Z3zMopbqstJ99Gc4_MARKETERSI-16-9-2-.mp4'
   playing={isPlaying}
   loop={true}
   width="100%"
