@@ -13,7 +13,7 @@ const Numbers = () => {
   const { section2, section3 } = imageswithdescription || {};
   const osClass = useOsClass();
   return (
-    <div>
+    <div className={style.numbersDiv}>
       <Container>
         <div className={style.numbers}>
           <div className={style.Content}>

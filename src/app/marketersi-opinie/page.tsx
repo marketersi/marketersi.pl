@@ -45,7 +45,6 @@ const CustomersOpinion = () => {
       <ReviewCard />
       <div className="review">
         <Review />
-        
       </div>
       <Teams />
       <Brands />

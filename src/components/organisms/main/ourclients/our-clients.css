@@ -131,5 +131,12 @@
   .OurClients_Slide_Star_Company{font-size:13px; line-height:15px;}
 
   .ClinetsHead{font-size:30px !important; line-height:26px !important; font-weight:700 !important;}
+
+  .OurClients_Card_Two{margin-top:45px; margin-bottom:45px !important;}
+
+  .mobile-mt{margin-top:0 !important;}
+  .OurClients_Card_One{margin-bottom:0;}
+  .OurClients_Card_Container{margin-top:0;}
+  .OurClients_Marquee.full.mobile{margin-top: 0; margin-bottom: 0;}
   
 }  

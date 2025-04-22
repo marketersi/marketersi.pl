@@ -31,7 +31,7 @@ const Question5 = ({ handleNext }) => {
       </div>
       <textarea
         rows={1}
-        placeholder="Wpisz tu swoją odpowiedź"
+        placeholder="Wpisz odpowiedź tutaj"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
@@ -44,9 +44,9 @@ const Question5 = ({ handleNext }) => {
           style={{ cursor: !inputValue ? "not-allowed" : "pointer" }}
           disabled={!inputValue}
         >
-          OK
+          Zatwierdź
         </motion.button>
-        <p>Wciśnij Enter</p>
+        {/* <p>Wciśnij Enter</p> */}
       </div>
     </div>
   );

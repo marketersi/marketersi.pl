@@ -73,10 +73,12 @@ export default ZamowHero;
 
 const FormZero = ({ heroSection, handleNextQuestion }) => {
   const [inputValue, setInputValue] = useState("");
+  const [toggle, settoggle] = useState("");
 
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {
+   
     const payload = {
       formZeroInputValue: inputValue,
     };
@@ -86,14 +88,20 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
     handleNextQuestion();
   };
 
+  const clickButton = ()=>{
+    settoggle(true)
+  }
+
   return (
     <>
       <h1>{heroSection?.title}</h1>
       <p>{heroSection?.info}</p>
       <p style={{ fontSize: "16px" }}>{heroSection?.sub_info}</p>
-      <div className="input-container">
+
+{toggle?
+     <div className="input-container">
         <input
-          placeholder="Wpisz tu adres strony www."
+          placeholder="Podaj adres swojej strony www."
           className="zemow-hero-input"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
@@ -104,9 +112,35 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
           whileTap={{ scale: 0.9 }}
           onClick={handleButtonClick}
         >
-          Rozpocznij.
+        Start
         </motion.button>
-      </div>
+
+      
+      </div> 
+:
+      <div className="banner-buttons">
+       
+        <motion.button
+          //className="zamow-hero-btn"
+          className="banner-btn"
+          whileHover={{ scale: 0.97 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={clickButton}
+        >
+         Badanie strony
+        </motion.button>
+
+        <motion.button
+          //className="zamow-hero-btn"
+            className="banner-btn"
+          whileHover={{ scale: 0.97 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={clickButton}
+        >
+        Badanie marketingu
+        </motion.button>
+        </div>
+}
     </>
   );
 };

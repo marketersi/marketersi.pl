@@ -9,7 +9,7 @@ const Question6 = ({ handleNext }) => {
   
   return (
     <div className="zh_question Thanks">
-      <h2>{formSix?.title}</h2>
+         <h2>Nazwa Twojej firmy?</h2> 
       <p>
        {formSix?.description}
       </p>
@@ -19,9 +19,10 @@ const Question6 = ({ handleNext }) => {
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-          {formSix?.buttonText}
+          {/* {formSix?.buttonText} */}
+          Zatwierdź
         </motion.button>
-        <p>Wciśnij Enter</p>
+        {/* <p>Wciśnij Enter</p> */}
       </div>
     </div>
   );

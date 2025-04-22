@@ -19,7 +19,7 @@
   text-align: center;
   font-weight: 700;
   color: #333333;
-  margin: 70px 0 35px 0;
+  margin:70px 0 35px 0;
 }
 
 .Content h3 {
@@ -31,9 +31,10 @@
 }
 
 .Content h4 {
-  font-size: 35px;
+  font-size: 28px;
+  line-height:50px;
+  font-weight: 600;
   text-align: left;
-  font-weight: 500;
   color: #333333;
   margin: 0 0 50px 0px;
 }
@@ -61,6 +62,7 @@
   color: #333333;
   line-height: 50px;
   margin: 0 0 40px;
+  margin-bottom:40px !important;
 }
 
 .Content p span {
@@ -130,6 +132,12 @@
 img.hardImg {
   margin: 0 0 50px;
 }
+
+
+.numbersDiv .Content h2{margin-top:-18px;}
+.hardResulth2 .Content h2{margin-top:30px; margin-left: -10px; margin-right: -10px;}
+.hardResulth2 .Content h3{margin-left:-34px; margin-right:-34px; margin-top:20px;}
+.hardResulth2 h4{font-size: 28px; font-weight: 300; line-height: 50px;}
 
 /* ================================================== order================================= */
 .order {
@@ -231,9 +239,12 @@ img.hardImg {
   display: block;
 }
 
-.brandingHeading {
+/* .brandingHeading {
   font-size: 55px !important;
-}
+} */
+.hardResulth2 .customDivCont h2{}
+.fontCustomAdd h3{font-size: 85px; line-height: 77px; font-weight: 700; margin-bottom:40px;}
+.fontCustomAdd h4{text-align: center;}
 
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
@@ -283,9 +294,9 @@ img.hardImg {
 
 @media screen and (max-width: 767px) {
   .Content h2 {
-    font-size: 30px !important;
-    line-height:26px;
-    font-weight:700;
+    font-size: 34px !important;
+    line-height: 34px;
+    font-weight: 600;
     margin:40px 0;
   }
 
@@ -294,7 +305,10 @@ img.hardImg {
     margin: 20px 0 40px 0px;
   }
 
-  .Content h4{font-size:25px; margin-bottom:35px;}
+  .Content h4{font-weight: 700; font-size: 22px; line-height: 24px;}
+  .numbersDiv .Content h2{margin-top:0;}
+  .numberMB{margin-bottom:40px !important;}
+  
 
   img.hardImg {
     width: 90%;
@@ -350,7 +364,8 @@ img.hardImg {
     line-height: 32px;
   }
   .hardBottomContent {
-    font-size: 35px !important;
+    font-size: 24px !important;
+    line-height:24px !important;
   }
   .numbers {
     padding: 0px 0 0px;
@@ -358,5 +373,11 @@ img.hardImg {
   .enter {
     padding: 0px 0 0px;
   }
+
+
+  .hardResulth2 .Content h2, .hardResulth2 .Content h3{margin-left:0; margin-right:0;}
+  
+  .hardResulth2 .Content h3{margin-top:0; font-size:34px; line-height:34px;}
+  .hardBottomContent h4{font-size: 24px !important; line-height: 24px !important;}
   
 }

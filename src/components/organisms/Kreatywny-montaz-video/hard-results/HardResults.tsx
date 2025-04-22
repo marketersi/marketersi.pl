@@ -25,52 +25,57 @@ const HardResult = () => {
             <p>{section4?.paragraph_2}</p>
           </div>
 
-          <Row className="mb-5">
-            <Col lg={6} className="order-lg-1 order-2">
-              <h4>{section5?.quote}</h4>
-            </Col>
-            <Col lg={6} className="order-lg-2 order-1">
-            <div className={osClass}>
-            {/* <ReactPlayer
-                url={section5?.video_url}
-                playing={true}
-                loop={true}
-                width="100%"
-                height="auto"
-                muted={true}
-                pip={false}
-                playsinline
-              /> */}
-            </div>
-            </Col>
-          </Row>
+          <div className={style.Content}>
+
+            <Row className="mb-0">
+              <Col lg={12} className="order-lg-1 order-2">
+                <p>{section5?.quote}</p>
+              </Col>
+              {/* <Col lg={6} className="order-lg-2 order-1">
+              <div className={osClass}>
+              <ReactPlayer
+                  url={section5?.video_url}
+                  playing={true}
+                  loop={true}
+                  width="100%"
+                  height="auto"
+                  muted={true}
+                  pip={false}
+                  playsinline
+                />
+              </div>
+              </Col> */}
+            </Row>
+          </div>
           <div className={style.Content}>
             <p>{section5?.paragraph_1}</p>
             <p>{section5?.paragraph_2}</p>
           </div>
-          <Row className="md:mt-5 md:pt-5 md:mb-5 pb-5">
-            <Col lg={7} className={osClass}>
-              {/* <ReactPlayer
-                url={section6?.video_url}
-                playing={true}
-                loop={true}
-                width="100%"
-                height="auto"
-                muted={true}
-                pip={false}
-                playsinline
-              /> */}
-            </Col>
-            <Col lg={5}>
-              <h4 className="text-end">{section6?.quote}</h4>
-            </Col>
-          </Row>
+
+          <div className={style.Content}>
+            <Row className="md:mt-5 md:pt-5 md:mb-0 pb-0">
+              {/* <Col lg={7} className={osClass}>
+                <ReactPlayer
+                  url={section6?.video_url}
+                  playing={true}
+                  loop={true}
+                  width="100%"
+                  height="auto"
+                  muted={true}
+                  pip={false}
+                  playsinline
+                />
+              </Col> */}
+              <Col lg={12}>
+                <p className="">{section6?.quote}</p>
+              </Col>
+            </Row>
+          </div>
 
           <div className={osClass}>
           <div className={style.Content}>
             <p>
-              <span>{section6?.subtitle}</span> <br />
-              {section6?.paragraph_1}
+              {section6?.subtitle} {section6?.paragraph_1}
             </p>
             <p>{section6?.paragraph_2}</p>
             <p>{section6?.paragraph_3}</p>
@@ -84,7 +89,7 @@ const HardResult = () => {
               pip={false}
               playsinline
             /> */}
-            <h2 className={style.brandingHeading}>{section7?.title}</h2>
+            <h2 className={style.brandingHeading2}>{section7?.title}</h2>
 
             <p>{section7?.paragraph_1}</p>
             {/* <ReactPlayer
@@ -120,6 +125,9 @@ const HardResult = () => {
               pip={false}
               playsinline
             /> */}
+
+<h2 className={style.brandingHeading2}>Jestesmy to po to , by sprawic , ze kazdy kadr w Twoim filmie bedzie mial znaczenie</h2>
+<p>Skontaktuj sie z nami aby dowiedziec sie wiecej a naszych uslugach sie na konsulttacje</p>
            
             <div className={`mb-3  ${style.ratingLogoImg}`}>
               <Image

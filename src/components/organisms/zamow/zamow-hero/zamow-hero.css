@@ -11,6 +11,20 @@
   padding: 70px 0px 30px;
 }
 
+
+.banner-btn{
+  margin: 0 10px;
+  padding: 11px 18px;
+  font-size: 22px;
+  border-radius: 30px;
+ 
+  color: #fff;
+  text-decoration: none;
+  background: var(--brand-blue);
+  border: 2px solid var(--brand-blue-hover);
+  box-shadow: 0 0 0 0 var(--brand-blue-hover), 0 4px 0 0 var(--brand-blue-hover);
+}
+
 .zamow-hero p {
   line-height: 1.4;
   font-weight: 300;
