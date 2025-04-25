@@ -50,7 +50,7 @@ const BookExamination = () => {
               className="btt_btn"
               whileHover={{ translateY: 5 }}
             >
-              Powrót na górę
+             Wróć na górę
             </motion.button>
           </div>
         </Container>

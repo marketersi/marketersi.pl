@@ -18,7 +18,7 @@ const Question4 = ({ handleNext }) => {
       <p>
         {formFour?.descriptionTwo}
       </p>
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleNext}
           className="zh_next_btn"

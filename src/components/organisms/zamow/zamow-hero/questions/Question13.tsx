@@ -35,9 +35,12 @@ const Question13 = ({ handleNext }) => {
 
   return (
     <div className="zh_question working_container">
-      <h2>{formThirteen?.title} </h2>
-      <p>{formThirteen?.description_1}</p>
-      <p>{formThirteen?.description_2}</p>
+      <h2>Ostatnie pytanie: <br/> Twój numer telefonu? </h2>
+      <p>Czasami potrzebujemy krótkiej konsultacji przed badaniem. <br/>
+      </p>
+      <p>Jeśli pojawią się dodatkowe pytania, łatwiej będzie je szybko wyjaśnić.  <br/></p>
+
+      <p>Twój numer posłuży tylko do tego celu.   <br/></p>
       <textarea
         rows={1}
         placeholder="Wpisz tu swoją odpowiedź"
@@ -47,7 +50,7 @@ const Question13 = ({ handleNext }) => {
       <p className="input_description">
         Shift + Enter aby przejść do następnej linii
       </p>
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

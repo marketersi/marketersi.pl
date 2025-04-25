@@ -116,7 +116,7 @@ const CustomerRating = () => {
         {/* {ratingSection?.question} <br /> <b>{ratingSection?.answer}</b> */}
         “Gdy zapytaliśmy klientów: Czy po zastosowaniu naszych<br />
        rekomendacji zauważyli mierzalną poprawę wyników?
-       <b>94% klientów odpowiedziało TAK!”
+       <b>93% klientów odpowiedziało TAK!”
        </b>
 
       </p>

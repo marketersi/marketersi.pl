@@ -29,7 +29,7 @@ const Question2 = ({ handleNext }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

@@ -25,8 +25,13 @@ const Question9 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      <h2>{formNine?.title}</h2>
-      <p className="goal_description">{formNine?.description}</p>
+      {/* <h2>{formNine?.title}</h2> */}
+      <h2>Jaki jest Twój cel?Jaki byłby idealny,<br/>
+miesięczny przychód Twojej firmy?
+</h2>
+      <p className="goal_description">Weź pod uwagę aktualne możliwości operacyjne swojej firmy.
+Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
+</p>
 
       <div className="income_show">{rangeValue} zł</div>
 
@@ -47,7 +52,7 @@ const Question9 = ({ handleNext }) => {
         className="income_range"
       />
 
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

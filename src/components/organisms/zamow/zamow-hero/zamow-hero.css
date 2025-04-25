@@ -106,8 +106,7 @@
   height: 100%;
   background: linear-gradient(
     90deg,
-    rgb(249, 146, 23) 0%,
-    rgb(249, 54, 0) 100%
+    #00BFFF
   );
 }
 
@@ -146,10 +145,16 @@
   .zamow-hero-btn {
     position: static;
     margin: 20px 0 0;
+    color: red;
   }
   .zh_next_btn_container p {
     display: none;
   }
+  .zh_next_btn_container {
+    display: flex;
+    justify-content: center;
+  }
+  
 
   .zemow-hero-input::placeholder {
     font-size: 16px;

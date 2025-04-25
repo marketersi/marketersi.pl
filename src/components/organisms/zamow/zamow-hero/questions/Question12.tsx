@@ -22,8 +22,8 @@ const Question12 = ({ handleNext }) => {
 
   return (
     <div className="zh_question working_container">
-      <h2>{formTwelve?.title}</h2>
-      <p>{formTwelve?.subtitle}</p>
+      <h2>Dzięki!<br/>Zostały już tylko 2 pytania.</h2>
+      <p>Podaj e-mail do wysyłki wyników.</p>
       <textarea
         rows={1}
         placeholder="Wpisz tu swoją odpowiedź"
@@ -33,7 +33,7 @@ const Question12 = ({ handleNext }) => {
       <p className="input_description">
         Shift + Enter aby przejść do następnej linii
       </p>
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

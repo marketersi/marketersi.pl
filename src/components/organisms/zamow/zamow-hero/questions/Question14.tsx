@@ -48,18 +48,21 @@ const Question14 = () => {
       {showGif && <img src="/assets/congrats.gif" className="congrats_gif" />}
 
       <div className="question_14">
-        <h2>{summary?.title}</h2>
-        <p>{summary?.description}</p>
+        <h2>Gotowe!</h2>
+        <p>Teraz czas na ruch po naszej stronie.<br/>
+Sprawdzimy Twoją sytuację<br/>
+i wrócimy z konkretem.<br/>
+</p>
 
-        <h6>{summary?.info_1} </h6>
-        <h6>{summary?.info_2} </h6>
+        <h6>Jeśli możemy pomóc – umówimy Cię z ekspertem, który wskaże najlepszą drogę </h6>
+        <h6>Jeśli okaże się, że to nie to – dostaniesz od nas wartościowe wskazówki, które możesz wdrożyć samodzielnie. </h6>
       </div>
       <div className="marketing_book">
         <Row>
           <Col lg={6}>
             <img src={summary?.image} alt="" />
           </Col>
-          <Col lg={6}>
+          {/* <Col lg={6}>
             <h3>{summary?.image_description}</h3>
             <div>
               <div className="zh_next_btn_container">
@@ -82,7 +85,7 @@ const Question14 = () => {
               </div>
               <div className="zh_next_btn_container"></div>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </div>
     </>
