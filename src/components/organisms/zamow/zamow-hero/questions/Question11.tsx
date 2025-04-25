@@ -21,9 +21,11 @@ const Question11 = ({ handleNext }) => {
 
   return (
     <div className="zh_marketing_container">
-      <h2>{formEleven?.title}</h2>
+      <h2>Już prawie gotowe! Kiedy chcesz zacząć działać<br/>
+i wprowadzić zmiany, które przełożą się na Twoje zyski?
+</h2>
       <div className="checkBOxContainer">
-        <Row>
+        {/* <Row>
           {formEleven?.options.map((option, index) => (
             <Col key={index} sm={6}>
               <label
@@ -36,7 +38,71 @@ const Question11 = ({ handleNext }) => {
               </label>
             </Col>
           ))}
-        </Row>
+        </Row> */}
+         <Row>
+         
+            <Col  sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick('Od razu')}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">Od razu</div>
+              </label>
+            </Col>
+            <Col  sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick('W ciągu 2 tygodni')}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">W ciągu 2 tygodni</div>
+              </label>
+            </Col>
+            <Col  sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick('W ciągu 1 miesiąca')}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">W ciągu 1 miesiąca</div>
+              </label>
+            </Col>
+            <Col  sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick('W ciągu 3 miesięcy')}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">W ciągu 3 miesięcy</div>
+              </label>
+            </Col>
+            <Col  sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick('W ciągu 6 miesięcy')}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">W ciągu 6 miesięcy</div>
+              </label>
+            </Col>
+            <Col  sm={6}>
+              <label
+                className="checkbox style-d"
+                onClick={() => handleButtonClick('Na razie nieokreślone')}
+              >
+                <input type="checkbox" />
+                <div className="checkbox__checkmark"></div>
+                <div className="checkbox__body">Na razie nieokreślone</div>
+              </label>
+            </Col>
+          
+        </Row> 
       </div>
     </div>
   );

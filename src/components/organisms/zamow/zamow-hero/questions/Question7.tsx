@@ -7,10 +7,10 @@ const Question7 = ({ handleNext }) => {
   const { screenData } = useSelector((state) => state.examination);
   const { formSeven } = screenData?.surveyQuestions || {};
 
-  const [rangeValue, setRangeValue] = useState(0);
+  const [rangeValue, setRangeValue] = useState(1);
 
-  const handleRangeChange = (event) => {
-    setRangeValue(parseInt(event.target.value, 10));
+  const handleRangeChange = (e) => {
+    setRangeValue(Number(e.target.value));
   };
 
   const dispatch = useDispatch();
@@ -25,35 +25,47 @@ const Question7 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      <h2>{formSeven?.title}</h2>
-      <p className="goal_description">{formSeven?.subtitle}</p>
-      <p className="range_description">{formSeven?.info}</p>
+      <h2>Jaki jest szacunkowy miesięczny przychód<br/>
+      Twojej firmy generowany dzięki stronie?</h2>
+      {/* <h2>{formSeven?.title}</h2> */}
+      <p className="goal_description">Te informacje pozwolą nam dokładnie ocenić<br/>
+Twoją sytuację i dobrać najlepsze rozwiązania.
+</p>
+      {/* <p className="goal_description">{formSeven?.subtitle}</p> */}
+      <p className="range_description">(Wszystkie dane są poufne.)</p>
+      {/* <p className="range_description">{formSeven?.info}</p> */}
+      
+
 
       <div className="income_show">{rangeValue} zł</div>
-      {rangeValue === 0 && (
+
+      {rangeValue === 1 && (
         <img
           className="tri_arrow"
           src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
           alt=""
         />
       )}
+
       <input
-        min={0}
+        min={1}
         max={100000}
         type="range"
-        step={1000}
+        step={1}
         value={rangeValue}
         onChange={handleRangeChange}
         className="income_range"
+        
       />
 
-      <div className="zh_next_btn_container">
+
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-                Zatwierdź
+               Dalej
         </motion.button>
         {/* <p>Wciśnij Enter</p> */}
       </div>

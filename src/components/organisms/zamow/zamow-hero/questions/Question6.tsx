@@ -11,9 +11,13 @@ const Question6 = ({ handleNext }) => {
     <div className="zh_question Thanks">
          <h2>Nazwa Twojej firmy?</h2> 
       <p>
-       {formSix?.description}
+       {/* {formSix?.description} */}
+       Jeszcze moment<br/>
+i wszystko dopniemy<br/>
+na ostatni guzik.<br/>
+
       </p>
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleNext}
           className="zh_next_btn"

@@ -22,8 +22,11 @@ const Question10 = ({ handleNext }) => {
 
   return (
     <div className="zh_question working_container">
-      <h2>{formTen?.title}</h2>
-      <p>{formTen?.description}</p>
+      <h2>Jak oceniasz skuteczność<br/>
+swojej obecnej strony?
+</h2>
+      <p>Bądź szczery – im więcej wiemy, tym lepiej dopasujemy rozwiązania.
+      </p>
       <textarea
         rows={1}
         placeholder="Wpisz tu swoją odpowiedź"
@@ -33,7 +36,7 @@ const Question10 = ({ handleNext }) => {
       <p className="input_description">
         Shift + Enter aby przejść do następnej linii
       </p>
-      <div className="zh_next_btn_container">
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

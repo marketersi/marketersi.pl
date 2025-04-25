@@ -22,12 +22,31 @@ const Question5 = ({ handleNext }) => {
 
   return (
     <div className="zh_question question_container">
-      <h2>{formFive?.title}</h2>
-      <p className="question_description">{formFive?.listHeading}</p>
-      <div className="list_p">
+    <h2
+  style={{
+    fontFamily: "Poppins",
+    fontWeight: 400,
+    fontSize: "35px",
+    lineHeight: "34px"
+  }}
+>
+  Jak możemy Ci pomóc?
+</h2>
+
+      {/* <p className="question_description">{formFive?.listHeading}</p> */}
+       <p className="question_description">Możesz napisać krótko, np. Moja strona nie przyciąga klientów</p> 
+      {/* <div className="list_p">
         {formFive?.listItems.map((item, index) => (
           <p key={index}>{item}</p>
         ))}
+      </div> */}
+
+<div className="list_p">
+       
+          <p>Nie wiem, jak wyróżnić moją ofertę</p>
+          <p>Nie wiem, co zmienić, żeby strona działała lepiej</p>
+          <p>itp</p>
+        
       </div>
       <textarea
         rows={1}
@@ -35,8 +54,8 @@ const Question5 = ({ handleNext }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <p className="input_bottom_content">{formFive?.textbelowInput}</p>
-      <div className="zh_next_btn_container">
+ 
+      <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"
