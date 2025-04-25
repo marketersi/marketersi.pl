@@ -16,7 +16,10 @@ const ReferenceCard = ({
             src="https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstar.c3a29cce.jpg&w=128&q=100"
             alt=""
           /> */}
-          <Stars rating={rating_no} />
+          <div className={style.StarBox}>
+            <Stars rating={rating_no} />
+          </div>
+          
           <div>
             <h6>{customer_name},</h6>
             <p>{customer_designation}</p>

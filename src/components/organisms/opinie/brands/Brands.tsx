@@ -36,9 +36,7 @@ const Brands = () => {
     <>
       <div className={style.brands}>
         <div className={style.opinionContainer}>
-          <h2>“Marki, które wybrały skuteczność.
-Zobacz, dla kogo tworzymy marketing, który sprzedaje.”
-</h2>
+          <h2>Marki, które <br />wybrały skuteczność. <br />Zobacz, dla kogo <br />tworzymy marketing, <br />który sprzedaje.</h2>
           {brand?.map((e, i) => {
             return (
               <>

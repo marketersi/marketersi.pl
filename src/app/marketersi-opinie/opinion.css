@@ -71,6 +71,14 @@
   
   .customContainer{max-width:1450px;}  
   .opinionBanner > .customContainer{max-width:1590px;}
+   
+}
+
+@media only screen and (max-width: 767px) {
+  .bannerflex{display: grid;  grid-template-columns: repeat(2,1fr);  row-gap:10px; gap:10px;}
+  .customWidth{min-width:1px;}
+  .customWidth2, .customWidth3{width:100%;}
+  .customWidth3{grid-column-start: 1; grid-column-end:3;}
   
   
 }

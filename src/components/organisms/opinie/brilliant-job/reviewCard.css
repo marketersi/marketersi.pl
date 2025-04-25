@@ -1,10 +1,14 @@
 .review_container {
-  display: flex;
+  
   max-width:900px;
   margin: 0 auto;
-  gap: 20px;
   background-color: white;
+  padding: 35px;
+  border-radius: 35px;
+  box-shadow:0px 5px 12px 1px rgba(0, 0, 0, 0.06);
 }
+
+.FlexDiv{display: flex; gap: 20px;}
 
 .rc_rating_container {
   display: flex;
@@ -17,20 +21,47 @@
 }
 
 .rc_review {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 42px;
-  margin: 32px 0;
+  font-size: 35px;
+    font-weight: 600;
+    line-height: 44px;
+    padding-block: 0;
+    margin-top:20px;
+    font-family: Georgia, serif;
+}
+
+.webhide{display: none;}
+
+.reviewer_image_container {
+  flex: 4 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
 }
 
 .reviewer_image_container img {
-  width: 250px;
+  filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    max-width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.review_container:hover img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
 .review_content_container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex: 6 1;
+  align-items: baseline;
 }
 
 .rc_rating_container img {
@@ -39,12 +70,34 @@
 }
 
 .reviewer_name {
-  font-weight: 700;
-  line-height: 1;
-  font-size: 14px;
+  font-size: 10.624px;
+    font-weight: 600;
+    line-height: 10.624px;
 }
 
 .reviewer_company {
-  line-height: 1;
-  font-size: 14px;
+  font-size: 10.624px;
+  font-weight: 300;
+  line-height: 10.624px;
+}
+
+.OurClients_Slide_Media{margin-bottom:10px;}
+.OurClients_Slide_Media img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+
+@media only screen and (max-width: 767px) {
+/* .review_container{padding:0 15px; width: 92vw !important; max-width: 92vw !important; margin: 0 auto !important;} */
+
+.webhide{display: block;}
+.mobilehide{display: none;}
+.rc_review{font-size: 24px; line-height: 24px; padding-top: 0; margin:0;}
+
+.rc_rating_container{display: block;}
+.FlexDiv{display: grid !important; grid-template-columns: 40% 60%; grid-gap: 20px !important; gap: 20px !important; margin-top:30px;}
+.reviewer_name{font-size: 14px; line-height: 20px;}
+.reviewer_company{font-size: 13px; line-height: 15px;}
+.OurClients_Slide_Media img{max-width: 80%; max-height: 68px; width: auto;}
 }

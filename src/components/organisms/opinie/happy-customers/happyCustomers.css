@@ -1,8 +1,8 @@
 .customer_replies_container {
   background-color: white;
-  border-radius: 32px;
-  padding: 50px;
-  width: 65%;
+  border-radius: 35px;
+  padding: 30px;
+  width: 900px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 0px;
@@ -55,19 +55,25 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .customer_replies_container h1 {
-    font-size: 35px;
-  }
+  .customer_replies_container{border-radius:15px; padding:30px 15px;}
+  .replies h1{font-size:30px; line-height:26px;}
   .review_container {
     flex-direction: column;
   }
   .single_review_card {
     padding: 10px;
     font-size: 18px;
-    width: 100%;
+    width: calc(100% - 2px);
+    margin-left:0;
+    margin-right:0;
   }
   .question h4 {
     font-size: 22px;
     font-weight: 400;
   }
+
+  .review_container{padding:40px 25px; width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important; margin: 0 auto !important; border-radius:15px; display: grid;}
+  .customer_replies_container{width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important;}
+  .replies .slick-arrow{display:none !important}
+  .review{padding:50px 0 0;}
 }
