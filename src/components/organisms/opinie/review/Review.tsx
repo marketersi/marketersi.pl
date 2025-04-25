@@ -70,7 +70,9 @@ const ReviewCard = ({ data }) => {
       <img className={style.reviewMainImg} src={data.client_image} alt="" />
       <img className={style.reviewLogoImg} src={data.client_logo} alt="" />
       <div className={style.star}>
-        <Stars rating={data.rating_no} size="16px" noShadow />
+        <div className={style.StarBox}>
+          <Stars rating={data.rating_no} size="16px" noShadow />
+        </div>
         <div>
           <h6>{data.client_name}</h6>
           <p>{data.designation}</p>

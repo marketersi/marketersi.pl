@@ -29,23 +29,27 @@ const Teams = () => {
       <div className={style.teams}>
         <div className={style.teamsContainer}>
           <div className={style.teamsTopContent}>
-            <h2>Twoja firma się liczy,<br/>
-           bez względu<br/>
+            <h2>Twoja firma się <br/>
+           liczy, bez względu<br/>
             na skalę.  </h2>
             {/* to be deleted */}
             {/* <img src={teams.img_one} alt="" /> */}
           </div>
           <div className={style.teamsCard}>
-            <Row>
+            <Row className='align-items-center'>
               <Col lg={6}>
                 {/* to be deleted */}
                 {/* <img className={style.maleImg} src={teams.img_two} alt="" /> */}
-                <h4 className={style.teamLeftContent}>{teams.para_four}</h4>
+                <img className={style.maleImg} src="https://images.prismic.io/marketersi/aAi6wfIqRLdaBgOy_1745402535287.jpg?auto=format,compress" alt="" />
+                {/* <h4 className={style.teamLeftContent}>{teams.para_four}</h4> */}
               </Col>
               <Col lg={6}>
                 <div className={style.teamsCardContent}>
                   {/* <h5>{teams.para_one}</h5> */}
-                  <h5>Nie ma dla nas za dużych ani za małych firm</h5>
+                  <h5>
+                    <span>Nie ma dla nas za dużych ani za małych firm</span>
+                    <span className={style.FullSpan}>Są tylko ważne</span>
+                  </h5>
                   <p>Realizujemy duże, złożone projekty dla korporacji.</p>
                   <p>Ale to właśnie z mniejszymi biznesami współpracujemy najczęściej.</p>
                 </div>
