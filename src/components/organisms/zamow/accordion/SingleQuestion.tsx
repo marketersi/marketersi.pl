@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./accordion.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 
 const SingleQuestion = ({ question, answer, isOpen, onQuestionClick }) => {
@@ -16,9 +16,9 @@ const SingleQuestion = ({ question, answer, isOpen, onQuestionClick }) => {
         <h4>{question}</h4>
         <button className="btn" onClick={onQuestionClick}>
           {isOpen ? (
-            <FontAwesomeIcon icon={faMinusCircle} className="icon" />
+            <FontAwesomeIcon icon={faMinus} className="icon" />
           ) : (
-            <FontAwesomeIcon icon={faPlusCircle} className="icon" />
+            <FontAwesomeIcon icon={faPlus} className="icon" />
           )}
         </button>
       </header>
