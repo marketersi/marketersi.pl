@@ -10,7 +10,7 @@ const Question6 = ({ handleNext }) => {
   return (
     <div className="zh_question Thanks">
          <h2>Nazwa Twojej firmy?</h2> 
-      <p>
+      <p className="lineheight34px">
        {/* {formSix?.description} */}
        Jeszcze moment<br/>
 i wszystko dopniemy<br/>

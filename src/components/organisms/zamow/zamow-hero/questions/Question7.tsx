@@ -25,14 +25,14 @@ const Question7 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      <h2>Jaki jest szacunkowy miesięczny przychód<br/>
+      <h2 className="lineheight34px">Jaki jest szacunkowy miesięczny przychód<br/>
       Twojej firmy generowany dzięki stronie?</h2>
       {/* <h2>{formSeven?.title}</h2> */}
-      <p className="goal_description">Te informacje pozwolą nam dokładnie ocenić<br/>
+      <p className="goal_description lineheight34px">Te informacje pozwolą nam dokładnie ocenić<br/>
 Twoją sytuację i dobrać najlepsze rozwiązania.
 </p>
       {/* <p className="goal_description">{formSeven?.subtitle}</p> */}
-      <p className="range_description">(Wszystkie dane są poufne.)</p>
+      <p className="range_description lineheight34px">(Wszystkie dane są poufne.)</p>
       {/* <p className="range_description">{formSeven?.info}</p> */}
       
 
@@ -40,11 +40,14 @@ Twoją sytuację i dobrać najlepsze rozwiązania.
       <div className="income_show">{rangeValue} zł</div>
 
       {rangeValue === 1 && (
-        <img
-          className="tri_arrow"
-          src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
-          alt=""
-        />
+        <>
+          <div className="CircleAnimation"></div>
+          <img
+            className="tri_arrow"
+            src="https://images.prismic.io/marketersi/aAtQ4_IqRLdaBm2v_preze2.png?auto=format,compress"
+            alt=""
+          />
+        </>
       )}
 
       <input

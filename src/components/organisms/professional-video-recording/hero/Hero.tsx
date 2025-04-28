@@ -48,7 +48,7 @@ const Hero = () => {
   muted={false}
   pip={false}
   playsinline
-  controls={true}
+  //controls={true}
   config={{
     youtube: {
       playerVars: {

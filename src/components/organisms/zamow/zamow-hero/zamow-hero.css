@@ -6,9 +6,9 @@
 }
 
 .zamow-hero.col {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 70px 0px 30px;
+  padding: 70px 0px;
 }
 
 
@@ -26,12 +26,23 @@
 }
 
 .zamow-hero p {
+  font-size: 25px;
   line-height: 1.4;
   font-weight: 300;
   color: rgb(45 45 45);
-  font-size: 25px;
   margin: 0 0 40px;
 }
+
+.zamow-hero p.smalltextp {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.zamow-hero p.mbCustom{margin-bottom:15px;}
+.zamow-hero p.lineheight34px{line-height:34px;}
+.zamow-hero .FontChangeP{font-size:25px; line-height:34px; font-weight:300;}
+.zamow-hero .FontChangeP span{font-weight:400;}
+.zamow-hero p.lineheight34px .fontweight400{font-weight:400;}
 
 .custom-color {
   color: #d21e00;
@@ -42,8 +53,7 @@
   position: relative;
   width: 70%;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 70px;
 }
 
 .zemow-hero-input {
@@ -56,7 +66,7 @@
 }
 
 .zemow-hero-input:focus {
-  outline: 2px solid #981a05;
+  outline: 2px solid #00BFFF;
 }
 
 .zamow-hero-btn {
@@ -80,7 +90,7 @@
 .line-container {
   display: flex;
   align-items: center;
-  width: 75%;
+  max-width:900px;
   margin: 0 auto;
 }
 
@@ -89,6 +99,10 @@
   height: 1px;
   background-color: #000;
   margin-left: 10px;
+}
+
+.zamow-hero .zh_next_btn_container {
+  justify-content: center;
 }
 
 /* progress bar */
@@ -121,6 +135,8 @@
   font-weight: bold;
 }
 
+.showmobilebr{display: none;}
+
 @media only screen and (max-width: 1024px) {
   .zamow-hero-btn {
     position: static;
@@ -145,7 +161,7 @@
   .zamow-hero-btn {
     position: static;
     margin: 20px 0 0;
-    color: red;
+    color: #fff;
   }
   .zh_next_btn_container p {
     display: none;
@@ -163,4 +179,14 @@
   .zemow-hero-input {
     font-size: 16;
   }
+
+  .zamow-hero h1{font-size: 30px; line-height: 26px; margin-bottom:20px;}
+  .zamow-hero p.mbCustom, .zamow-hero p.smalltextp{max-width:250px; margin-left: auto; margin-right: auto;}
+  .showmobilebr{display: block;}
+  .banner-buttons .banner-btn:first-child{margin-bottom:20px;}
+  .banner-btn{padding: 6px 22px; font-size: 18px;}
+  .zamow-hero.col{padding:40px 0 45px;}
+  .input-container{margin-left:0; margin-right:0; width:100%;}
+  
+  
 }

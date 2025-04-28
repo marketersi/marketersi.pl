@@ -46,7 +46,7 @@ const CustomerRating = () => {
   }
 
   return (
-    <section className="container">
+    <section className="container CustomContainer">
       <div className="brand-img-container">
         <img src={ratingSection?.brand_image_1} alt="" />
         {/* to be deleted */}
@@ -54,7 +54,7 @@ const CustomerRating = () => {
       </div>
       <p className=" brand-description">
         {/* {ratingSection?.rating_text} */}
-        Firmy oceniają nasze badania na {<Stars rating={ratingSection?.rating} />}
+        Firmy oceniają nasze badania na {<Stars rating={ratingSection?.rating} />}<br />
        
         i mówią o nich tak:
       </p>
@@ -115,7 +115,7 @@ const CustomerRating = () => {
       <p className=" brand-description">
         {/* {ratingSection?.question} <br /> <b>{ratingSection?.answer}</b> */}
         “Gdy zapytaliśmy klientów: Czy po zastosowaniu naszych<br />
-       rekomendacji zauważyli mierzalną poprawę wyników?
+       rekomendacji zauważyli mierzalną poprawę wyników?<br />
        <b>93% klientów odpowiedziało TAK!”
        </b>
 

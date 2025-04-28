@@ -25,7 +25,7 @@ const Question10 = ({ handleNext }) => {
       <h2>Jak oceniasz skuteczność<br/>
 swojej obecnej strony?
 </h2>
-      <p>Bądź szczery – im więcej wiemy, tym lepiej dopasujemy rozwiązania.
+      <p className="lineheight34px"><span className="fontweight400">Bądź szczery –</span> im więcej wiemy, tym lepiej dopasujemy rozwiązania.
       </p>
       <textarea
         rows={1}
