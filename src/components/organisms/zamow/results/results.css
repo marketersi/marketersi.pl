@@ -1,10 +1,11 @@
 .free-test {
   padding: 70px 0;
+  max-width:900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.p-container {
-  margin: 0 auto;
-  width: 80%;
+.p-container{
   text-align: justify;
 }
 
@@ -42,15 +43,31 @@
 .results-card p {
   font-weight: 300;
   font-size: 22px;
-  width: 50%;
+  width: 150px;
   text-align: center;
 }
 
+
+
 .result-title {
   text-align: center;
-  font-weight: 300;
-  font-size: 60px;
+  font-weight:normal;
+  font-size:62px;
+  line-height:1;
   margin-bottom: 30px;
+
+}
+
+.SectionTitle{
+  font-weight:normal;
+  font-size:62px;
+  line-height:1;
+}
+
+.mobileBR{display: none;}
+
+@media only screen and (min-width: 1680px) {
+  .result-title, .SectionTitle{font-size:65px;}
 }
 
 .result-subtitle {
@@ -63,8 +80,9 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .result-title {
-    font-size: 32px;
+  .result-title, .SectionTitle {
+    font-size: 25px;
+    margin-bottom:5px;
   }
   .free-test h2 {
     font-size: 35px;
@@ -73,4 +91,9 @@
     width: 100%;
     text-align: left;
   }
+
+  .mobileBR{display: block;}
+  .mobileP{margin-top:30px; display:block;}
+  .free-test{padding:0 0 20px;}
+  .free-test p{font-size:20px;}
 }

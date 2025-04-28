@@ -36,11 +36,14 @@ Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
       <div className="income_show">{rangeValue} zł</div>
 
       {rangeValue === 0 && (
-        <img
-          className="tri_arrow"
-          src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
-          alt=""
-        />
+        <>
+          <div className="CircleAnimation"></div>
+          <img
+            className="tri_arrow"
+            src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
+            alt=""
+          />
+        </>
       )}
       <input
         min={0}

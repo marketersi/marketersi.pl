@@ -22,16 +22,7 @@ const Question5 = ({ handleNext }) => {
 
   return (
     <div className="zh_question question_container">
-    <h2
-  style={{
-    fontFamily: "Poppins",
-    fontWeight: 400,
-    fontSize: "35px",
-    lineHeight: "34px"
-  }}
->
-  Jak możemy Ci pomóc?
-</h2>
+    <h2 className="threeTitle">Jak możemy Ci pomóc?</h2>
 
       {/* <p className="question_description">{formFive?.listHeading}</p> */}
        <p className="question_description">Możesz napisać krótko, np. Moja strona nie przyciąga klientów</p> 

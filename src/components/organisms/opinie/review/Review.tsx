@@ -32,8 +32,8 @@ export default function Review() {
     const { onClick } = props;
     return (
       <div className="brand_Slide_ButtonNext">
-        <div className="OurClients_Slide_Button_Text">Następna</div>
-        <div className="ArrowButton" onMouseEnter={onClick}>
+        <div className="OurClients_Slide_Button_Text">Następna opinia</div>
+        <div className="ArrowButton" onClick={onClick}>
           <span className="ArrowButton_Arrow">&gt;</span>
         </div>
       </div>

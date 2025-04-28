@@ -34,9 +34,9 @@ const Question13 = ({ handleNext }) => {
   };
 
   return (
-    <div className="zh_question working_container">
+    <div className="zh_question working_container thrteenstepDiv">
       <h2>Ostatnie pytanie: <br/> Twój numer telefonu? </h2>
-      <p>Czasami potrzebujemy krótkiej konsultacji przed badaniem. <br/>
+      <p className="fontweight400">Czasami potrzebujemy krótkiej konsultacji przed badaniem. <br/>
       </p>
       <p>Jeśli pojawią się dodatkowe pytania, łatwiej będzie je szybko wyjaśnić.  <br/></p>
 

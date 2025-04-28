@@ -21,7 +21,7 @@ const Question11 = ({ handleNext }) => {
 
   return (
     <div className="zh_marketing_container">
-      <h2>Już prawie gotowe! Kiedy chcesz zacząć działać<br/>
+      <h2><span>Już prawie gotowe!</span> Kiedy chcesz zacząć działać<br/>
 i wprowadzić zmiany, które przełożą się na Twoje zyski?
 </h2>
       <div className="checkBOxContainer">
