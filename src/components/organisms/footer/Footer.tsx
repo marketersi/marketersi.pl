@@ -64,7 +64,7 @@ const Footer = () => {
                     <Link href="/strategia-marketingowa">
                       Strategia marketingowa
                     </Link>
-                    <Link href="/konsultacja-marketingu">Konsultacja marketinguu</Link>
+                    <Link href="/konsultacja-marketingu">Konsultacja marketingu</Link>
                     <Link href="/">Marketing międzynarodowy</Link>
                   </div>
                 </Col>
