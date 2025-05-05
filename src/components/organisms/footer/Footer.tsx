@@ -37,10 +37,7 @@ const Footer = () => {
                     <Link href="/tworzenie-stron-i-design-ux">
                       Tworzenie stron i design UX
                     </Link>
-                    <Link href="/video-marketing">
-                      {" "}
-                      Video marketing
-                    </Link>
+                    <Link href="/video-marketing"> Video marketing</Link>
                     <Link href="/kreatywny-montaz-wideo">
                       Kreatywny montaż wideo
                     </Link>
@@ -54,7 +51,7 @@ const Footer = () => {
                     <Link href="/tresci-i-hasla-sprzedazowe">
                       Treści i hasła sprzedażowe
                     </Link>
-                    <Link href="/nazwa-dla-firmy">Nazwa dla firmy</Link>
+                    <Link href="/nazwa-dla-firmy">Nazwa dla firmyy</Link>
                     <Link href="/projektowanie-logo">Projektowanie logo</Link>
                   </div>
                 </Col>
@@ -64,7 +61,9 @@ const Footer = () => {
                     <Link href="/strategia-marketingowa">
                       Strategia marketingowa
                     </Link>
-                    <Link href="/konsultacja-marketingu">Konsultacja marketingu</Link>
+                    <Link href="/konsultacja-marketingu">
+                      Konsultacja marketingu
+                    </Link>
                     <Link href="/">Marketing międzynarodowy</Link>
                   </div>
                 </Col>
@@ -88,7 +87,9 @@ const Footer = () => {
                     <Link href="/policz-czy-ci-sie-to-oplaca">
                       Policz czy Ci się to opłaca?
                     </Link>
-                    <Link href="/zamow-bezplatne-badanie">Zamów bezpłatne badanie</Link>
+                    <Link href="/zamow-bezplatne-badanie">
+                      Zamów bezpłatne badanie
+                    </Link>
                   </div>
                 </Col>
               </Row>
@@ -97,7 +98,8 @@ const Footer = () => {
           <div className={style.copyright}>
             <div className={style.copyrightText}>
               <p>
-                &copy; {currentYear} - marketersi.pl | Marketing, który działa! Regulamin | Polityka prywatności
+                &copy; {currentYear} - marketersi.pl | Marketing, który działa!
+                Regulamin | Polityka prywatności
               </p>
             </div>
             {/* <div className={style.copyrightMenu}>
