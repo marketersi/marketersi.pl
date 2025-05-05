@@ -147,17 +147,23 @@ export default function References() {
   const { screenData } = useSelector((state) => state.opinion);
   const Reference = screenData.Reference || {};
   // const ReferenceCard = screenData.Reference. || [];
-console.log(ReferenceCard, "23456789======>")
+  console.log(ReferenceCard, "23456789======>");
   const [startIndex, setStartIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
   const reviewsPerPage = 6;
 
+  // const handleNext = () => {
+  //   if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
+  //     setStartIndex(startIndex + reviewsPerPage);
+  //   }
+  // };
   const handleNext = () => {
-    if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
+    if (startIndex < ReferenceCard.length / reviewsPerPage) {
       setStartIndex(startIndex + reviewsPerPage);
+    } else {
+      setStartIndex(0);
     }
   };
-
   const handleShowAll = () => {
     setStartIndex(0);
     setShowAll(!showAll);
@@ -170,9 +176,15 @@ console.log(ReferenceCard, "23456789======>")
           <div className={style.opinionContent}>
             {/* <h3>{Reference?.heading}</h3> */}
             {/* <h2>{Reference?.title}</h2> */}
-            <h2>Budujemy relacje <br />na lata.</h2>
+            <h2>
+              Budujemy relacje <br />
+              na lata.
+            </h2>
             {/* <h4>{Reference?.subtitle}</h4> */}
-            <h4>Sprawdź, co mówią <br />o nas firmy, które <br />nam zaufały.</h4>
+            <h4>
+              Sprawdź, co mówią <br />o nas firmy, które <br />
+              nam zaufały.
+            </h4>
           </div>
           <Row>
             {Reference?.referenceImage?.map((e, i) => {
@@ -206,15 +218,25 @@ console.log(ReferenceCard, "23456789======>")
 
             {!showAll && (
               <div className={style.buttonContainer}>
-                <div  onClick={handleNext} className={style.showAllbtn}>
+                <div onClick={handleNext} className={style.showAllbtn}>
                   {showAll ? null : "Następne opinie"}
                   <div className={style.googlePlay}>
                     {/* <img src="https://www.owocni.pl/assets/arrow.svg" alt="" /> */}
-                    <svg data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><title/><path d="M51.66,32,19,0,12.66,6.62,38.91,32,12.66,57.38,19,64Z" data-name="&lt;Compound Path&gt;" id="_Compound_Path_"/></svg>
+                    <svg
+                      data-name="Layer 1"
+                      id="Layer_1"
+                      viewBox="0 0 64 64"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title />
+                      <path
+                        d="M51.66,32,19,0,12.66,6.62,38.91,32,12.66,57.38,19,64Z"
+                        data-name="&lt;Compound Path&gt;"
+                        id="_Compound_Path_"
+                      />
+                    </svg>
                   </div>
                 </div>
-
-                
 
                 {/* <div className="ArrowButton" onClick={handleNext}>
                   <span className="ArrowButton_Arrow">&gt;</span>
