@@ -1,8 +1,8 @@
-import React from 'react';
-import style from '../opinie.module.css';
-import { Row, Col } from 'react-bootstrap';
+import React from "react";
+import style from "../opinie.module.css";
+import { Row, Col } from "react-bootstrap";
 // import { motion, Variants } from 'framer-motion';
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
 const Teams = () => {
   const { screenData } = useSelector((state) => state.opinion);
@@ -29,18 +29,25 @@ const Teams = () => {
       <div className={style.teams}>
         <div className={style.teamsContainer}>
           <div className={style.teamsTopContent}>
-            <h2>Twoja firma się <br/>
-           liczy, bez względu<br/>
-            na skalę.  </h2>
+            <h2>
+              Twoja firma się liczy, <br />
+              bez względu
+              <br />
+              na skalę.{" "}
+            </h2>
             {/* to be deleted */}
             {/* <img src={teams.img_one} alt="" /> */}
           </div>
           <div className={style.teamsCard}>
-            <Row className='align-items-center'>
+            <Row className="align-items-center">
               <Col lg={6}>
                 {/* to be deleted */}
                 {/* <img className={style.maleImg} src={teams.img_two} alt="" /> */}
-                <img className={style.maleImg} src="https://images.prismic.io/marketersi/aAi6wfIqRLdaBgOy_1745402535287.jpg?auto=format,compress" alt="" />
+                <img
+                  className={style.maleImg}
+                  src="https://images.prismic.io/marketersi/aAi6wfIqRLdaBgOy_1745402535287.jpg?auto=format,compress"
+                  alt=""
+                />
                 {/* <h4 className={style.teamLeftContent}>{teams.para_four}</h4> */}
               </Col>
               <Col lg={6}>
@@ -51,7 +58,10 @@ const Teams = () => {
                     <span className={style.FullSpan}>Są tylko ważne</span>
                   </h5>
                   <p>Realizujemy duże, złożone projekty dla korporacji.</p>
-                  <p>Ale to właśnie z mniejszymi biznesami współpracujemy najczęściej.</p>
+                  <p>
+                    Ale to właśnie z mniejszymi biznesami współpracujemy
+                    najczęściej.
+                  </p>
                 </div>
               </Col>
             </Row>

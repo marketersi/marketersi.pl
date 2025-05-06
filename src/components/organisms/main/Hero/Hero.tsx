@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
@@ -14,10 +14,10 @@ import $ from "jquery"; // Import jQuery
 
 const Hero = () => {
   const { screenData } = useSelector((state: RootState) => state.home);
-  
+
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const { heroSection } = screenData;
-  console.log(heroSection , 'heroSection')
+  console.log(heroSection, "heroSection");
 
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -31,7 +31,6 @@ const Hero = () => {
     hidden: { opacity: 0.5, x: 200, y: 200, transition: { duration: 2 } },
   };
 
-
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -43,10 +42,8 @@ const Hero = () => {
 
   useEffect(() => {
     // Ensure jQuery selects the element correctly and triggers play
-    $('#play').trigger('play');
-
+    $("#play").trigger("play");
   }, []);
-
 
   useEffect(() => {
     if (inView) {
@@ -70,7 +67,7 @@ const Hero = () => {
         pip={false}
         playsinline
       /> */}
-{/* <ReactPlayer
+      {/* <ReactPlayer
 key={new Date().toISOString()}
   url={heroSection?.background_video}
  // url='https://www.youtube.com/watch?v=dQw4w9WgXcQ?vq=small'
@@ -97,21 +94,21 @@ key={new Date().toISOString()}
   }}
 /> */}
 
-        <video
-        id='play'
-     
-      src={heroSection?.background_video}
-      //autoPlay
-      loop
-      muted
-      playsinline
-      style={{userSelect:'none'}}
-      preload="metadata"
-      className={`${style.heroVideo} ${style.desktop}`}
-      onEnded={(e) => e.target.play()} // Ensures looping in Safari
-      controlsList="nodownload"
-
-    ><source src={heroSection?.background_video} type="video/mp4"></source></video>
+      <video
+        id="play"
+        src={heroSection?.background_video}
+        //autoPlay
+        loop
+        muted
+        playsinline
+        style={{ userSelect: "none" }}
+        preload="metadata"
+        className={`${style.heroVideo} ${style.desktop}`}
+        onEnded={(e) => e.target.play()} // Ensures looping in Safari
+        controlsList="nodownload"
+      >
+        <source src={heroSection?.background_video} type="video/mp4"></source>
+      </video>
 
       <ReactPlayer
         url={heroSection?.mobile_video}
@@ -124,19 +121,19 @@ key={new Date().toISOString()}
         className={`${style.heroVideo} ${style.mobile}`}
         muted={true}
         pip={true}
-       // playsinline
+        // playsinline
         playsinline={true}
         preload="auto"
-       // controls={true}
+        // controls={true}
         config={{
           file: {
             attributes: {
-              preload: 'auto',
-              controlsList: "nodownload", 
+              preload: "auto",
+              controlsList: "nodownload",
               disablePictureInPicture: true,
-               crossOrigin:"anonymous"
-            }
-          }
+              crossOrigin: "anonymous",
+            },
+          },
         }}
       />
 

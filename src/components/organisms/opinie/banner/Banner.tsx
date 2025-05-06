@@ -15,17 +15,21 @@ const Banner = () => {
             <div className="customWidth">
               <div className={style.opinionContent}>
                 {/* <h1>{banner.title}</h1> */}
-                <h1>Opinie <br />klientów  <br />o Marketersi.pl</h1>
+                <h1>
+                  Opinie <br />
+                  klientów <br />o Marketersi.pl
+                </h1>
               </div>
             </div>
+
             <div className="customWidth2">
-            <img
+              <img
                 className={style.opinionBnnaerImg}
                 src={banner.image_2}
                 alt=""
               />
-              
             </div>
+
             <div className="customWidth3">
               <img src={banner.image_1} alt="" />
             </div>

@@ -150,34 +150,14 @@ export default function References() {
   console.log(ReferenceCard, "23456789======>");
   const [startIndex, setStartIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
-  // const reviewsPerPage = 6;
-  const getReviewsPerPage = () => {
-    if (typeof window !== "undefined") {
-      return window.innerWidth < 576 ? 4 : 6; // 4 for mobile (less than 576px), 6 for others
-    }
-    return 6;
-  };
-  const [reviewsPerPage, setReviewsPerPage] = useState(getReviewsPerPage());
-  React.useEffect(() => {
-    const handleResize = () => {
-      setReviewsPerPage(getReviewsPerPage());
-    };
+  const reviewsPerPage = 6;
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  // const handleNext = () => {
-  //   if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
-  //     setStartIndex(startIndex + reviewsPerPage);
-  //   }
-  // };
   const handleNext = () => {
-    if (startIndex < ReferenceCard.length / reviewsPerPage) {
+    if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
       setStartIndex(startIndex + reviewsPerPage);
-    } else {
-      setStartIndex(0);
     }
   };
+
   const handleShowAll = () => {
     setStartIndex(0);
     setShowAll(!showAll);
@@ -190,10 +170,7 @@ export default function References() {
           <div className={style.opinionContent}>
             {/* <h3>{Reference?.heading}</h3> */}
             {/* <h2>{Reference?.title}</h2> */}
-            <h2>
-              Budujemy relacje <br />
-              na lata.
-            </h2>
+            <h2>Budujemy relacje na lata.</h2>
             {/* <h4>{Reference?.subtitle}</h4> */}
             <h4>
               Sprawdź, co mówią <br />o nas firmy, które <br />
@@ -203,7 +180,7 @@ export default function References() {
           <Row>
             {Reference?.referenceImage?.map((e, i) => {
               return (
-                <Col xs={6} sm={4} key={i}>
+                <Col sm={4} key={i}>
                   <div className={style.tesco}>
                     <img src={e.image} alt="" />
                     <h4>{e.name}</h4>
@@ -223,7 +200,7 @@ export default function References() {
                   : startIndex + reviewsPerPage
               ).map((e, i) => {
                 return (
-                  <Col xs={6} sm={4} key={i}>
+                  <Col sm={4} key={i}>
                     <ReferenceCard {...e} />
                   </Col>
                 );
@@ -233,7 +210,7 @@ export default function References() {
             {!showAll && (
               <div className={style.buttonContainer}>
                 <div onClick={handleNext} className={style.showAllbtn}>
-                  {showAll ? null : "Następne opinie"}
+                  {showAll ? null : "Pokaz wszystkie"}
                   <div className={style.googlePlay}>
                     {/* <img src="https://www.owocni.pl/assets/arrow.svg" alt="" /> */}
                     <svg
@@ -252,8 +229,28 @@ export default function References() {
                   </div>
                 </div>
 
+                <div onClick={handleNext} className={style.showAllbtn}>
+                  {showAll ? null : "Następne opinie"}
+                  <div className={style.googlePlay}>
+                    <svg
+                      data-name="Layer 1"
+                      id="Layer_1"
+                      viewBox="0 0 64 64"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title />
+                      <path
+                        d="M51.66,32,19,0,12.66,6.62,38.91,32,12.66,57.38,19,64Z"
+                        data-name="&lt;Compound Path&gt;"
+                        id="_Compound_Path_"
+                      />
+                    </svg>
+                    {/* <span className="ArrowButton_Arrow">&gt;</span> */}
+                  </div>
+                </div>
+
                 {/* <div className="ArrowButton" onClick={handleNext}>
-                  <span className="ArrowButton_Arrow">&gt;</span>
+                <span className="ArrowButton_Arrow">&gt;</span>
                 </div> */}
               </div>
             )}

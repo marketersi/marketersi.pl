@@ -24,8 +24,6 @@ h6 {
   display: block;
 }
 
-
-
 #header > div div .titleHead {
   font-size: 85px;
   margin: auto;
@@ -35,11 +33,9 @@ h6 {
   position: relative;
   margin-bottom: 30px;
 }
-#header .titleHead  span{
+#header .titleHead span {
   display: block;
 }
-
-
 
 #header > div div .titleHead .UX {
   color: #fff;
@@ -53,7 +49,6 @@ h6 {
 }
 
 #header > div div .subitle {
-  
   color: #333;
   font-size: 29px;
   line-height: 44px;
@@ -61,7 +56,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
-#header .subitle span{
+#header .subitle span {
   margin-left: 20px;
 }
 
@@ -88,7 +83,7 @@ h6 {
 #header > div div .subitle:nth-child(3) {
   padding-left: 0px;
   padding-bottom: 0px;
- 
+
   margin-top: 30px;
 }
 
@@ -124,7 +119,7 @@ h6 {
 #numbers div p {
   margin-top: 20px;
   color: #333;
-font-weight: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
 }
@@ -147,7 +142,6 @@ font-weight: 400;
   line-height: 77px;
   color: #333;
   position: relative;
-  
 }
 
 #messagesSection h2 span img {
@@ -157,8 +151,6 @@ font-weight: 400;
   bottom: -35px;
   width: 38%;
 }
-
-
 
 #messagesSection .text2 {
   padding-top: 50px;
@@ -171,11 +163,10 @@ font-weight: 400;
   line-height: 50px;
   padding: 20px 0;
   color: #515151;
-  font-size:28px;
-  
+  font-size: 28px;
+
   text-align: center;
   font-weight: 300;
- 
 }
 
 #messagesSection .slotContainer {
@@ -1169,7 +1160,7 @@ font-weight: 400;
   display: flex;
   position: relative;
   max-width: 1200px;
-  
+
   justify-content: center;
   margin: 100px auto 40px;
 }
@@ -1205,14 +1196,13 @@ font-weight: 400;
 }
 
 #maciej .contentText {
- 
   margin-top: 0px;
   max-width: 900px;
 }
 
 #maciej .contentText h2 {
   font-size: 85px;
-margin-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 700;
   line-height: 77px;
   color: #333;
@@ -1227,7 +1217,6 @@ margin-bottom: 30px;
   font-size: 28px;
   font-weight: 300;
   line-height: 50px;
-  
 }
 
 #maciej .contentText .btn-neon {
@@ -1256,10 +1245,11 @@ margin-bottom: 30px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   box-shadow: 0 4px 0 0 var(--brand-blue-hover);
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: none;
 }
-#maciej .contentText .btn-neon:hover{
+#maciej .contentText .btn-neon:hover {
   box-shadow: none;
   outline: none;
 }
@@ -1305,7 +1295,7 @@ margin-bottom: 30px;
 
 /* --------------------Text Arrow----------------- */
 
-#textArrow{
+#textArrow {
   max-width: 900px;
   width: 100%;
   margin: auto;
@@ -1336,7 +1326,6 @@ section.arrowContainer {
 }
 
 #textArrow h2 {
-  
   font-size: 85px;
   text-align: center;
   font-weight: 700;
@@ -1344,10 +1333,7 @@ section.arrowContainer {
   max-width: 1000px;
   margin-inline: auto;
   line-height: 77px;
-  
 }
-
-
 
 #textArrow .rowD .orange {
   color: #ff5000 !important;
@@ -1362,11 +1348,10 @@ section.arrowContainer {
   margin: 0;
 }
 
-#textArrow .rowD{
+#textArrow .rowD {
   margin: 70px 0;
-  
 }
-#textArrow .rowD p{
+#textArrow .rowD p {
   text-align: center;
   font-size: 28px;
   line-height: 50px;
@@ -1403,8 +1388,7 @@ section.arrowContainer {
 
 #guarantee {
   position: relative;
-  
- 
+
   margin-top: 100px;
   width: 1200px;
   margin: auto;
@@ -1420,7 +1404,7 @@ section.arrowContainer {
 #guarantee > img {
   margin: auto;
   display: block;
-  
+
   max-width: 55%;
 }
 
@@ -1455,7 +1439,6 @@ section.arrowContainer {
   padding-bottom: 30px;
   display: block;
   font-weight: 300;
-  
 }
 
 #guarantee .rowD .imgs {
@@ -1474,8 +1457,6 @@ section.arrowContainer {
   top: 350px;
 }
 
-
-
 .mobile {
   display: none;
 }
@@ -1492,9 +1473,8 @@ section.arrowContainer {
 
 #videoSection > :nth-child(1) {
   text-align: center;
-  
+
   color: #333;
-  
 }
 
 #videoSection > :nth-child(1) .mobile {
@@ -1504,7 +1484,7 @@ section.arrowContainer {
 #videoSection > :nth-child(1) h2 {
   font-size: 85px;
   padding: 20px 0 40px 0;
-  
+
   text-transform: uppercase;
   font-weight: 700;
   max-width: 900px;
@@ -1519,8 +1499,6 @@ section.arrowContainer {
   line-height: 50px;
   margin-bottom: 40px;
 }
-
-
 
 #videoSection > :nth-child(1) p > span:not(:nth-child(1)) {
   font-weight: 700;
@@ -1728,13 +1706,12 @@ section.arrowContainer {
 
 /* ------------What Get Section----------- */
 
-.img-block{
+.img-block {
   max-width: 1200px;
   margin: 80px auto;
 }
 
 #WhatGet {
-  
   color: #333;
   max-width: 1000px;
   margin-inline: auto;
@@ -1749,7 +1726,7 @@ section.arrowContainer {
   font-weight: 300;
 }
 
-#WhatGet p:first-child{
+#WhatGet p:first-child {
   font-weight: bold;
   margin-top: 0;
 }
@@ -1764,16 +1741,17 @@ section.arrowContainer {
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
-  border-radius:6px ;
-  -webkit-border-radius:6px ;
-  -moz-border-radius:6px ;
-  -ms-border-radius:6px ;
-  -o-border-radius:6px ;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
   box-shadow: 0 4px 0 0 var(--brand-blue-hover);
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: none;
 }
-#WhatGet a:hover{
+#WhatGet a:hover {
   box-shadow: none;
   outline: none;
 }
@@ -2241,9 +2219,8 @@ section.arrowContainer {
 }
 
 #highResult h2 {
-  
   font-weight: 700;
-  
+
   line-height: 77px;
   text-align: center;
   font-size: 85px;
@@ -2273,7 +2250,7 @@ section.arrowContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
+
   margin: auto;
   position: relative;
   margin-top: 40px;
@@ -2298,8 +2275,6 @@ section.arrowContainer {
   margin: 30px 0;
   text-align: center;
 }
-
-
 
 /* -------------------- FAQ section --------------- */
 .header__top__left {
@@ -2604,8 +2579,6 @@ video.mobileVideo {
   display: none;
 }
 
-
-
 /* ----------------------------------media screen ----------------------- */
 @media only screen and (min-width: 1451px) {
   .col-xxl-7 {
@@ -2623,15 +2596,15 @@ video.mobileVideo {
 
 @media only screen and (max-width: 1366px) {
   .UXheroVideo {
-    width:100% !important;
+    width: 100% !important;
     margin-inline: auto;
   }
 
   #header > div div .titleHead {
     padding-left: 0;
-    margin-bottom:15px;
-    font-size:60px;
-    line-height:60px;
+    margin-bottom: 15px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   #header > div div .titleHead .UX {
@@ -2642,13 +2615,14 @@ video.mobileVideo {
     margin-left: 0px;
   }
 
-
   #header > div div .subitle:nth-child(3) {
     padding-left: 0px;
     padding-bottom: 10px;
-    margin-top:10px;
+    margin-top: 10px;
   }
-  .buttonux{margin-top:15px;}
+  .buttonux {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2716,7 +2690,7 @@ video.mobileVideo {
 
   #maciej .contentText h2 {
     font-size: 65px;
-    list-style:65px;
+    list-style: 65px;
   }
 
   #maciej .contentText .btn-neon {
@@ -2726,8 +2700,6 @@ video.mobileVideo {
   #textArrow {
     margin-top: 0px;
   }
-
-  
 
   #textArrow h2 {
     line-height: 70px;
@@ -2849,27 +2821,27 @@ video.mobileVideo {
     width: 100%;
     margin-left: 80px;
   }
-  .img-block{
+  .img-block {
     max-width: 1200px;
     margin: 10px auto;
   }
-  .img-block .row{
+  .img-block .row {
     flex-direction: column-reverse;
   }
-  #header .titleHead  span{
+  #header .titleHead span {
     display: inline-block;
   }
-  
-  #header .titleHead  span:nth-child(1) {
+
+  #header .titleHead span:nth-child(1) {
     margin-left: 0px;
   }
-  #header .titleHead  span:nth-child(2) {
+  #header .titleHead span:nth-child(2) {
     margin-left: 0px;
   }
-  #header .titleHead  span:nth-child(3) {
+  #header .titleHead span:nth-child(3) {
     margin-left: 0px;
   }
-  #header > div div .titleHead{
+  #header > div div .titleHead {
     font-size: min(10vw, 100px);
   }
   #guarantee > img {
@@ -2881,15 +2853,15 @@ video.mobileVideo {
     display: block;
     width: 100%;
   }
-  #header > div div .subitle:nth-child(3){
+  #header > div div .subitle:nth-child(3) {
     margin-top: 20px;
   }
-  #WhatGet a{
+  #WhatGet a {
     font-size: 19px;
   }
   #messagesSection h2 {
     font-size: 40px;
-    line-height:40px;
+    line-height: 40px;
   }
   #header > div div {
     left: 2px;
@@ -2909,9 +2881,9 @@ video.mobileVideo {
 
   #maciej .contentText h2 {
     font-size: 35px;
-    line-height:35px;
-    margin-bottom:0;
-    padding-bottom:0;
+    line-height: 35px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   #messagesSection {
@@ -2997,30 +2969,27 @@ video.mobileVideo {
 
 /* ----------------------------------------goodProcess------------------------------ */
 section.goodProcess {
-  
   grid-template-columns: 100%;
   margin-block: 100px;
   padding: 0;
   position: relative;
 }
 .goodProcess svg {
-  
   overflow: visible;
-  
+
   /* Fix Safari rendering bug */
   transform: translateZ(0);
 }
 
 .goodProcess path {
-  stroke-width:2;
+  stroke-width: 2;
   stroke: #00bfff;
-  
 }
 .goodProcess h3 {
   font-size: 58px;
-  
+
   font-weight: 400;
-  line-height:72px;
+  line-height: 72px;
   margin-top: 20px;
 }
 
@@ -3029,26 +2998,23 @@ section.goodProcess {
   font-weight: 500;
   line-height: 29px;
   margin: 10px 0 18px 0;
-  
 }
-.number img{
+.number img {
   background-color: #f4f4f4;
 }
-.goodProcess svg{
+.goodProcess svg {
   position: absolute;
   left: 0%;
   margin-top: 0px;
   z-index: -1;
   top: 6%;
- 
 }
-.circleBox{
+.circleBox {
   position: absolute;
   margin-top: 260px;
   left: 43%;
   transform: translate(-50%, -50%);
 }
-
 
 /* .circle {
   transform-origin: center;
@@ -3128,24 +3094,21 @@ section.goodProcess {
   -o-border-radius: 50%;
   z-index: -1;
 } */
-.cricleBox img{
-  width:30px;
+.cricleBox img {
+  width: 30px;
   object-fit: contain;
   height: auto;
   padding: 10px;
 }
 
 .two .subtitle {
-  
 }
 
 .three .subtitle {
   max-width: 100%;
 }
 
-
 .two .processVideo {
- 
 }
 
 .goodProcess p {
@@ -3159,33 +3122,27 @@ section.goodProcess {
 }
 
 .number {
- display: flex; 
- justify-content: center;
- margin-bottom: 150px;
-  
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
 }
-.two .number{
-  margin: 150px 0 ;
+.two .number {
+  margin: 150px 0;
 }
-.three .number{
-  margin:380px 0 150px;
+.three .number {
+  margin: 380px 0 150px;
 }
 
-
-
-
-.afterImage{
-  
+.afterImage {
   font-size: 85px;
   line-height: 77px;
   font-weight: 700;
   text-align: center;
-  margin:40px auto 80px;
+  margin: 40px auto 80px;
   position: relative;
   background-color: #f4f4f4;
   padding: 10px 50px;
   /* top: 126px; */
- 
 }
 
 .imgs img {
@@ -3197,7 +3154,6 @@ section.goodProcess {
   margin: 120px 0;
   max-width: 600px;
   margin-left: 120px;
-  
 }
 
 .process2 {
@@ -3205,11 +3161,10 @@ section.goodProcess {
   max-width: 600px;
   margin-left: auto;
   margin-right: 120px;
-  
 }
 
 .process3 {
-  margin:120px 0;
+  margin: 120px 0;
   max-width: 600px;
   margin-left: 120px;
 }
@@ -3237,21 +3192,21 @@ section.goodProcess {
 .uxVideoTitle {
   font-size: 85px;
   padding: 90px 0 70px 0;
-  
+
   font-weight: 700;
   max-width: 900px;
   margin-inline: auto;
   line-height: 85px;
   text-align: center;
 }
-.uxVideoPara{
+.uxVideoPara {
   font-size: 38px;
-    
-    color: #333;
-    text-align: center;
-    font-weight: 300;
-    line-height: 42px;
-    padding-bottom: 0px;
+
+  color: #333;
+  text-align: center;
+  font-weight: 300;
+  line-height: 42px;
+  padding-bottom: 0px;
 }
 /* @media screen and (max-width:1450px){
   #header > div div .subitle{
@@ -3259,15 +3214,24 @@ section.goodProcess {
   }
 } */
 
-
-.processVideoOne .processVideo{height:auto !important; width: auto !important; display: flex; justify-content: center;}
-.processVideoOne .win video{object-fit: cover; width:690px !important; height: 436px !important;}
-
-
+.processVideoOne .processVideo {
+  width: 690px !important;
+  height: 371px !important;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.processVideoOne .win video {
+  object-fit: cover;
+}
 
 @media only screen and (max-width: 1520px) {
-#header > div div .subitle{font-size:26px;}
-.buttonux{font-size:26px;}
+  #header > div div .subitle {
+    font-size: 26px;
+  }
+  .buttonux {
+    font-size: 26px;
+  }
 }
 
 @media only screen and (max-width: 1360px) {
@@ -3291,10 +3255,10 @@ section.goodProcess {
     margin-top: 100px;
   }
 
-  .processVideoOne .win video {
+  /* .processVideoOne .win video {
     width: 600px !important;
     height: 380px !important;
-}
+} */
 }
 
 @media only screen and (max-width: 1024px) {
@@ -3332,6 +3296,7 @@ section.goodProcess {
   .processVideo {
     width: 100% !important;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .number {
@@ -3372,22 +3337,29 @@ section.goodProcess {
     margin-bottom: 0;
   }
 
-  .circleBox{display: none;}
+  .circleBox {
+    display: none;
+  }
+
+  .processVideoOne .processVideo {
+    width: 600px !important;
+    height: 370px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .uxVideoTitle {
     font-size: 34px;
-        padding: 0;
-        line-height:34px;
-        margin-top: 50px;
-        margin-bottom:20px;
+    padding: 0;
+    line-height: 34px;
+    margin-top: 50px;
+    margin-bottom: 20px;
   }
-  .uxVideoPara{
-    padding: 20px 15px ;
+  .uxVideoPara {
+    padding: 20px 15px;
     margin: 0;
   }
-  #guarantee{
+  #guarantee {
     flex-direction: column-reverse;
   }
   #WhatGet {
@@ -3401,7 +3373,7 @@ section.goodProcess {
     row-gap: 0;
     margin-block: 0;
   }
-  
+
   #videoSection > :nth-child(1) h2 {
     font-size: 34px;
     padding: 0;
@@ -3425,7 +3397,7 @@ section.goodProcess {
 
   #maciej .contentText p {
     font-size: 20px;
-    line-height:36px;
+    line-height: 36px;
     margin-top: 40px;
   }
 
@@ -3511,101 +3483,379 @@ section.goodProcess {
 
   section.arrowContainer.mobilelefttext {
     margin-top: 0;
-}
-
- 
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .UXBannerContainer, #messagesSection, .uxVideoTitle, .uxVideoPara, section.goodProcess, #maciej .contentText, .card, .numberContainer, section.arrowContainer, #guarantee .rowD, #videoSection, .img-block, .slider-container, #highResult, .faqContainer, .flipCardContainer{width:92vw; max-width:92vw; margin: 0 auto 30px; padding:0 12px;}
-  .uxVideoTitle{margin-top:50px; padding-left:0; padding-right:0;}
-  #header > div div .titleHead{font-size:30px; line-height:26px; text-align: center; margin-bottom:0;}
-  #header > div div .titleHead br:first-child{display: none;}
-  .subitle{text-align: center;}
-  #header > div{gap:20px;}
-  .buttonux, #maciej .contentText .btn-neon, #WhatGet a{font-size: 15px; line-height:20px; margin-left: auto; margin-right: auto; display: block; text-align: center; width:100%;}
-  .faqContainer{max-width:92vw !important; padding-left:12px !important; padding-right:12px !important;}
-  .faqContainer .send-offer-button{font-size:15px !important; line-height:20px !important; margin:20px 0 !important; width:92vw; justify-content: center;}
-  #maciej .contentText .btn-neon{margin-top:20px;}
-  #numbers{grid-template-columns: repeat(1,1fr);}
-  #numbers div{padding:0;}
-  
-  .flipCardContainer{display: block !important;}
-  .card{max-width:100% !important; padding:0 !important; margin-left:auto !important;  margin-right:auto !important;}
+  .UXBannerContainer,
+  #messagesSection,
+  .uxVideoTitle,
+  .uxVideoPara,
+  section.goodProcess,
+  #maciej .contentText,
+  .card,
+  .numberContainer,
+  section.arrowContainer,
+  #guarantee .rowD,
+  #videoSection,
+  .img-block,
+  .slider-container,
+  #highResult,
+  .faqContainer,
+  .flipCardContainer {
+    width: 92vw;
+    max-width: 92vw;
+    margin: 0 auto 30px;
+    padding: 0 12px;
+  }
+  .uxVideoTitle {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #header > div div .titleHead {
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #header > div div .titleHead br:first-child {
+    display: none;
+  }
+  .subitle {
+    text-align: center;
+  }
+  #header > div {
+    gap: 20px;
+  }
+  .buttonux,
+  #maciej .contentText .btn-neon,
+  #WhatGet a {
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .faqContainer {
+    max-width: 92vw !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .faqContainer .send-offer-button {
+    font-size: 15px !important;
+    line-height: 20px !important;
+    margin: 20px 0 !important;
+    width: 92vw;
+    justify-content: center;
+  }
+  #maciej .contentText .btn-neon {
+    margin-top: 20px;
+  }
+  #numbers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #numbers div {
+    padding: 0;
+  }
+
+  .flipCardContainer {
+    display: block !important;
+  }
+  .card {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
   /* #maciej .contentText .btn-neon{margin-top:20px; font-size:22px; line-height:28px;} */
-  section.arrowContainer{margin-top:60px;}
-  #WhatGet{padding:0 12px;}
+  section.arrowContainer {
+    margin-top: 60px;
+  }
+  #WhatGet {
+    padding: 0 12px;
+  }
 
-  .UXBannerContainer .row.m-0{margin-left:-12px !important; margin-right:-12px !important;}
-  
-  #header > div div .subitle, #numbers div p, #messagesSection .text2 > p, #messagesSection .text2 > div, .typingEffect, #maciej .contentText p, #textArrow .rowD p, #guarantee .rowD p b, #guarantee .rowD p, #WhatGet p, #videoSection > :nth-child(1) p, .uxVideoPara, #highResult p, .copywriter-custom-subheader{font-size: 22px !important; line-height:32px !important; margin-bottom: 15px  !important; padding:0; margin:30px 0; color:#333;}
+  .UXBannerContainer .row.m-0 {
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+  }
 
-  #numbers div p, .typingEffect{font-weight:300 !important;}
+  #header > div div .subitle,
+  #numbers div p,
+  #messagesSection .text2 > p,
+  #messagesSection .text2 > div,
+  .typingEffect,
+  #maciej .contentText p,
+  #textArrow .rowD p,
+  #guarantee .rowD p b,
+  #guarantee .rowD p,
+  #WhatGet p,
+  #videoSection > :nth-child(1) p,
+  .uxVideoPara,
+  #highResult p,
+  .copywriter-custom-subheader {
+    font-size: 22px !important;
+    line-height: 32px !important;
+    margin-bottom: 15px !important;
+    padding: 0;
+    margin: 30px 0;
+    color: #333;
+  }
 
-  #guarantee .rowD p{text-align: center;}
-  #WhatGet p.textAnimation{text-align: center;}
+  #numbers div p,
+  .typingEffect {
+    font-weight: 300 !important;
+  }
 
-  #textArrow h2{font-size:30px; line-height:26px; margin-bottom:0;}
-  #textArrow .rowD{margin:30px 0 0;}
-  #guarantee{margin-bottom:0; margin-top:20px;}
-  #guarantee .rowD h2{font-size:30px; line-height:26px; width:100%; margin-bottom:30px; text-align: center; max-width:100%; margin-left: auto;  margin-right: auto; font-weight:700;}
-  #guarantee .rowD p, #WhatGet p{font-size: 28px; line-height: 40px;}
-  #WhatGet p.textAnimation:first-child{margin-top:20px;}
-  #numbers div img, .flipCardContainer img{max-width:60%;}
-  .numberContainer{margin-bottom:0px;}
-  .uxVideoTitle{font-size:30px; line-height:26px; max-width:97%;}
-  .img-block .uxVideoPara{width:100%; max-width:100%;}
-  
-  .number{max-width:80px; margin:0 auto 0; display: none;}
-  .number img{max-width:100%;}
-  .circleBox{display: none;}
-  .processVideo{height: 190px !important;}
+  #guarantee .rowD p {
+    text-align: center;
+  }
+  #WhatGet p.textAnimation {
+    text-align: center;
+  }
+
+  #textArrow h2 {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  #textArrow .rowD {
+    margin: 30px 0 0;
+  }
+  #guarantee {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  #guarantee .rowD h2 {
+    font-size: 30px;
+    line-height: 26px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+  }
+  #guarantee .rowD p,
+  #WhatGet p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  #WhatGet p.textAnimation:first-child {
+    margin-top: 20px;
+  }
+  #numbers div img,
+  .flipCardContainer img {
+    max-width: 60%;
+  }
+  .numberContainer {
+    margin-bottom: 0px;
+  }
+  .uxVideoTitle {
+    font-size: 30px;
+    line-height: 26px;
+    max-width: 97%;
+  }
+  .img-block .uxVideoPara {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .number {
+    max-width: 80px;
+    margin: 0 auto 0;
+    display: none;
+  }
+  .number img {
+    max-width: 100%;
+  }
+  .circleBox {
+    display: none;
+  }
+  .processVideo {
+    height: 190px !important;
+  }
   /* .goodProcess h3{font-size:30px; line-height:26px; font-weight:700; margin-top:15px; margin-bottom:10px; text-align: center;} */
-  #videoSection > :nth-child(1) h2{margin-bottom:25px;}
-  .goodProcess .subtitle, .goodProcess h3{font-size:22px; line-height:32px; font-weight:300; text-align: center; margin-top:5px; margin-bottom:10px;}
-  
-  .goodProcess p{font-size:22px; line-height:32px; font-weight:300; text-align: center;}
-  .two .number, .three .number{margin:0 auto;}
-  .process1, .process2{margin:10px 0;}
-  .afterImage{font-size:30px; line-height:26px; margin-bottom:10px;}
-  .slider-container{margin-left:auto !important; margin-right:auto !important;}
-  .slider-container .slick-slide{padding-right:0 !important;}
-  #highResult{margin-top:50px !important;}
-  #highResult h2{line-height:26px; font-size:30px; max-width:90%; margin-left:auto; margin-right: auto;}
-  #highResult .row{margin:0 -12px;}
-  h2.textAnimation{font-size:30px !important; margin: 0 0 40px !important; line-height:26px !important; font-weight:700 !important;}
-  .takImages{width:32% !important; margin-bottom:20px !important;}
-  #messagesSection h2 span img{right: 52px; bottom: -10px;}
-  #messagesSection .text2{padding-top:0;}
-  #maciej{margin-top:30px; margin-bottom:0px;}
-  #maciej .contentText h2{font-size:30px; line-height:26px; margin-bottom:40px; max-width:90%; margin-left:auto;  margin-right:auto;}
+  #videoSection > :nth-child(1) h2 {
+    margin-bottom: 25px;
+  }
+  .goodProcess .subtitle,
+  .goodProcess h3 {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 
-  .accordion-title{gap:15px !important; padding:15px !important; font-size:15px !important; line-height:22px !important;}
-  .accordion-content{padding:15px !important;}
-  .faqContainer .accordion-item{margin-bottom:0 !important; padding:0 !important;}
-  .faqContainer{padding-bottom:10px !important; padding-top:0 !important;}
-  .processVideo video{width:100%; height: auto;}
-  .goodProcess svg{display: none;}
-  .accordion-content p{font-size:14px !important; line-height:18px !important;}
-  #guaranteeWrapper{padding-bottom:0 !important;}
-  #guarantee > img{margin:0 auto 10px; max-width:80%;}
-  section.arrowContainer{margin-top:10px !important; margin-bottom:0;}
-  #numbers div{margin-bottom:20px;}
-  .UXheroVideo video{width: 100% !important;}
-  .accordion-title svg{font-size: 14px; line-height: 14px; height: 15px; width: 15px; min-width: 15px;}
-  .faqContainer .mailidys{font-size: 18px; margin-bottom: 6px; line-height: 20px;}
-  #textArrow .rowD p{text-align: left;}
-  .copywriter-text-center.copywriter-standard-mtb-40{margin-bottom: 0;}
-  .copywriter-custom-headerOne.text-center{margin-top: 50px !important;}
-  .copywriter-what-we-do{margin-top:0;}
-  .copywriter-intro-sm-text{margin-top: 0;}
-  .copywriter-intro-sm-text b{font-weight:600;}
-  #textArrow .rowD p{text-align: center;}
- 
-  .mobilelefttext #textArrow .rowD p{text-align: left;}
-  .processVideoOne .processVideo{height: auto !important; aspect-ratio: 16 / 10.1;}
-  .topgapestart{margin-top:30px;} 
-  .topgapestart .processVideo{margin-bottom:10px;}
+  .goodProcess p {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .two .number,
+  .three .number {
+    margin: 0 auto;
+  }
+  .process1,
+  .process2 {
+    margin: 10px 0;
+  }
+  .afterImage {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  .slider-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .slider-container .slick-slide {
+    padding-right: 0 !important;
+  }
+  #highResult {
+    margin-top: 50px !important;
+  }
+  #highResult h2 {
+    line-height: 26px;
+    font-size: 30px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #highResult .row {
+    margin: 0 -12px;
+  }
+  h2.textAnimation {
+    font-size: 30px !important;
+    margin: 0 0 40px !important;
+    line-height: 26px !important;
+    font-weight: 700 !important;
+  }
+  .takImages {
+    width: 32% !important;
+    margin-bottom: 20px !important;
+  }
+  #messagesSection h2 span img {
+    right: 52px;
+    bottom: -10px;
+  }
+  #messagesSection .text2 {
+    padding-top: 0;
+  }
+  #maciej {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  #maciej .contentText h2 {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  .processVideoOne .win video{width: 335px !important; height: 212px !important;}
+  .accordion-title {
+    gap: 15px !important;
+    padding: 15px !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+  .accordion-content {
+    padding: 15px !important;
+  }
+  .faqContainer .accordion-item {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+  }
+  .faqContainer {
+    padding-bottom: 10px !important;
+    padding-top: 0 !important;
+  }
+  .processVideo video {
+    width: 100%;
+    height: auto;
+  }
+  .goodProcess svg {
+    display: none;
+  }
+  .accordion-content p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  #guaranteeWrapper {
+    padding-bottom: 0 !important;
+  }
+  #guarantee > img {
+    margin: 0 auto 10px;
+    max-width: 80%;
+  }
+  section.arrowContainer {
+    margin-top: 10px !important;
+    margin-bottom: 0;
+  }
+  #numbers div {
+    margin-bottom: 20px;
+  }
+  .UXheroVideo video {
+    width: 100% !important;
+  }
+  .accordion-title svg {
+    font-size: 14px;
+    line-height: 14px;
+    height: 15px;
+    width: 15px;
+    min-width: 15px;
+  }
+  .faqContainer .mailidys {
+    font-size: 18px;
+    margin-bottom: 6px;
+    line-height: 20px;
+  }
+  #textArrow .rowD p {
+    text-align: left;
+  }
+  .copywriter-text-center.copywriter-standard-mtb-40 {
+    margin-bottom: 0;
+  }
+  .copywriter-custom-headerOne.text-center {
+    margin-top: 50px !important;
+  }
+  .copywriter-what-we-do {
+    margin-top: 0;
+  }
+  .copywriter-intro-sm-text {
+    margin-top: 0;
+  }
+  .copywriter-intro-sm-text b {
+    font-weight: 600;
+  }
+  #textArrow .rowD p {
+    text-align: center;
+  }
+
+  .mobilelefttext #textArrow .rowD p {
+    text-align: left;
+  }
+  /* .processVideoOne .processVideo{height: auto !important; aspect-ratio: 16 / 10.1;} */
+  .topgapestart {
+    margin-top: 30px;
+  }
+  .topgapestart .processVideo {
+    margin-bottom: 10px;
+  }
+
+  /* .processVideoOne .win video{width: 335px !important; height: 212px !important;} */
+  .processVideoOne .processVideo {
+    width: 300px !important;
+    height: 184px !important;
+    margin: 0 auto 20px;
+  }
 }

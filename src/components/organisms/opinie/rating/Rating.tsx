@@ -53,10 +53,10 @@ const Rating = () => {
             <Row>
               <Col sm={5}>
                 <Row className={style.rowmobileflex}>
-                  <Col sm={6}  md={12}>
+                  <Col sm={6} md={12}>
                     <img src={ratings.banner_image} alt="" />
                   </Col>
-                  <Col sm={6}  md={12} className={style.colmobileshow}>
+                  <Col sm={6} md={12} className={style.colmobileshow}>
                     <div className={style.topBtn}>
                       <h4>{ratings.title}</h4>
                       <p>{ratings.highlighted_text}</p>
@@ -67,11 +67,18 @@ const Rating = () => {
               <Col sm={7}>
                 <div className={style.ratingCardContent}>
                   <h6>{ratings?.paragraph_1}</h6>
-                  
+
                   {/* <p className={style.textwhite}>{ratings?.paragraph_2}</p> */}
-                  <p className={style.textwhite}>Realizujemy 100% projektów <br />na czas.</p>
+                  <p className={style.textwhite}>
+                    Realizujemy 100% projektów <br />
+                    na czas.
+                  </p>
                   {/* <p>{ratings?.paragraph_3}</p> */}
-                  <p>Nasi klienci mogą liczyć <br />na pewne i przewidywalne <br />efekty.</p>
+                  <p className={style.textChange}>
+                    Nasi klienci mogą liczyć <br />
+                    na pewne i przewidywalne <br />
+                    efekty.
+                  </p>
                 </div>
               </Col>
             </Row>
@@ -80,7 +87,10 @@ const Rating = () => {
               <p>{ratings.highlighted_text}</p>
             </div>
             {/* <p className={style.textsmallP}>{ratings.description}</p> */}
-            <p className={style.textsmallP}>Skuteczność, rzetelność i dbałość o każdy detal to nasze priorytety, które wyróżniają nas na polskim rynku.</p>
+            <p className={style.textsmallP}>
+              Skuteczność, rzetelność i dbałość o każdy detal to nasze
+              priorytety, które wyróżniają nas na polskim rynku.
+            </p>
           </div>
         </div>
       </div>

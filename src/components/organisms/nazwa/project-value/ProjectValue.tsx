@@ -54,7 +54,6 @@ const ProjectValue = () => {
             </p>
           </div>
 
-          
           <div>
             <img
               className="img-wierzymy"
@@ -63,8 +62,6 @@ const ProjectValue = () => {
               alt="Wierzymy, że dobry naming pomaga"
             />
           </div>
-
-      
         </div>
 
         <div className="container custom-container1">

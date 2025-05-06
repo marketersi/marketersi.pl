@@ -1,7 +1,7 @@
-import React from 'react';
-import style from '../opinie.module.css';
-import { Row, Col } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import React from "react";
+import style from "../opinie.module.css";
+import { Row, Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Personally = () => {
   const { screenData } = useSelector((state) => state.opinion);
@@ -30,8 +30,18 @@ const Personally = () => {
               <Col lg={8}>
                 <h2>{atMarketersi?.title}</h2>
                 <p>{atMarketersi?.para_1}</p>
-                <p>{atMarketersi?.para_2}</p>
-                <p>{atMarketersi?.para_3}</p>
+                {/* <p>{atMarketersi?.para_2}</p> */}
+                <p>
+                  Od samego początku działalności dbamy o to, by budować trwałe
+                  i wartościowe relacje z naszymi klientami. Każdego dnia
+                  realizujemy projekty, pamiętając, że za nimi stoją realne
+                  potrzeby i cele biznesowe.
+                </p>
+                {/* <p>{atMarketersi?.para_3}</p> */}
+                <p>
+                  Dla mnie jednak najważniejsze jest, by efekty naszej pracy
+                  zawsze przekładały się na konkretne korzyści dla klientów.
+                </p>
                 <div className={style.contact}>
                   <h4>{atMarketersi.cont_title}</h4>
                   <p>{atMarketersi?.cont_name}</p>
