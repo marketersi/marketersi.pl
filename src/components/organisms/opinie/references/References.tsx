@@ -150,11 +150,28 @@ export default function References() {
   console.log(ReferenceCard, "23456789======>");
   const [startIndex, setStartIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
-  const reviewsPerPage = 6;
+  // const reviewsPerPage = 6;
+  const getReviewsPerPage = () => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 576 ? 4 : 6; // 4 for mobile (less than 576px), 6 for others
+    }
+    return 6;
+  };
+  const [reviewsPerPage, setReviewsPerPage] = useState(getReviewsPerPage());
+  React.useEffect(() => {
+    const handleResize = () => {
+      setReviewsPerPage(getReviewsPerPage());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleNext = () => {
-    if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
+    if (startIndex < ReferenceCard.length / reviewsPerPage) {
       setStartIndex(startIndex + reviewsPerPage);
+    } else {
+      setStartIndex(0);
     }
   };
 
@@ -180,7 +197,7 @@ export default function References() {
           <Row>
             {Reference?.referenceImage?.map((e, i) => {
               return (
-                <Col sm={4} key={i}>
+                <Col xs={6} sm={4} key={i}>
                   <div className={style.tesco}>
                     <img src={e.image} alt="" />
                     <h4>{e.name}</h4>
@@ -200,7 +217,7 @@ export default function References() {
                   : startIndex + reviewsPerPage
               ).map((e, i) => {
                 return (
-                  <Col sm={4} key={i}>
+                  <Col xs={6} sm={4} key={i}>
                     <ReferenceCard {...e} />
                   </Col>
                 );
