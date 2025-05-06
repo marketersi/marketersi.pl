@@ -150,8 +150,22 @@ export default function References() {
   console.log(ReferenceCard, "23456789======>");
   const [startIndex, setStartIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
-  const reviewsPerPage = 6;
+  // const reviewsPerPage = 6;
+  const getReviewsPerPage = () => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 576 ? 4 : 6; // 4 for mobile (less than 576px), 6 for others
+    }
+    return 6;
+  };
+  const [reviewsPerPage, setReviewsPerPage] = useState(getReviewsPerPage());
+  React.useEffect(() => {
+    const handleResize = () => {
+      setReviewsPerPage(getReviewsPerPage());
+    };
 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // const handleNext = () => {
   //   if (startIndex + reviewsPerPage < ReferenceCardArray.length) {
   //     setStartIndex(startIndex + reviewsPerPage);
