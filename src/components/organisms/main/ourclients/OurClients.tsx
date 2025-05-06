@@ -236,9 +236,9 @@ export default function OurClients() {
       >
         <img src={RatingCard?.left_animated_image} alt="" />
       </motion.div> */}
-    </div>
-    </section>
-    </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

@@ -203,7 +203,7 @@ export default function References() {
           <Row>
             {Reference?.referenceImage?.map((e, i) => {
               return (
-                <Col sm={4} key={i}>
+                <Col xs={6} sm={4} key={i}>
                   <div className={style.tesco}>
                     <img src={e.image} alt="" />
                     <h4>{e.name}</h4>
@@ -223,7 +223,7 @@ export default function References() {
                   : startIndex + reviewsPerPage
               ).map((e, i) => {
                 return (
-                  <Col sm={4} key={i}>
+                  <Col xs={6} sm={4} key={i}>
                     <ReferenceCard {...e} />
                   </Col>
                 );

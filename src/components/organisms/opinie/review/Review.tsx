@@ -40,19 +40,24 @@ export default function Review() {
     );
   }
 
+  // var settings = {
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: mobile ? 1 : 3,
+  //   slidesToScroll: 3,
+  //   nextArrow: <SampleNextArrow />,
+  // };
   var settings = {
     infinite: true,
     speed: 500,
     slidesToShow: mobile ? 1 : 3,
-    slidesToScroll: 3,
+    slidesToScroll: mobile ? 1 : 3, // ← Fix this line
     nextArrow: <SampleNextArrow />,
   };
-
   return (
     <>
       <div className={style.job}>
         <div className={style.opinionContainer}>
-
           <Slider {...settings}>
             {Review.map((e, i) => {
               return <ReviewCard data={e} key={i} />;
