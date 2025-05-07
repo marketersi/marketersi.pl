@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import '../tresci.css';
-import { ModalForm } from '../ModalForm';
+import React, { useState } from "react";
+import "../tresci.css";
+import { ModalForm } from "../ModalForm";
 
 const OptionBox2 = ({ optionBox2 }) => {
   const {
-    background_image = '',
-    description = '',
-    title = '',
-    btn_title = '',
+    background_image = "",
+    description = "",
+    title = "",
+    btn_title = "",
   } = optionBox2 || {};
 
   const [isModal, setIsModal] = useState(false);
@@ -34,12 +34,15 @@ const OptionBox2 = ({ optionBox2 }) => {
                   <p className="text-center optonsahgasds review-card-text">
                     {/* {title} */}
                     <strong>Gwarantowane rezultaty albo zwrot pieniędzy</strong>
-                  </p> 
+                  </p>
                   <div className="opinion-box-text copywriter-opinion-box-text">
                     {/* {description} */}
-                    Nie obiecujemy Ci tylko słów - obiecujemy rezultaty. Gwarantujemy, że nasze treści przyniosą wymierne efekty, albo zwrócimy Ci 100% inwestycji. Tak, jesteśmy aż tak pewni skuteczności naszych tekstów.
+                    Nie obiecujemy Ci tylko słów - obiecujemy rezultaty.
+                    Gwarantujemy, że nasze treści przyniosą wymierne efekty,
+                    albo zwrócimy Ci 100% inwestycji. Tak, jesteśmy aż tak pewni
+                    skuteczności naszych tekstów.
                   </div>
-          
+
                   <button
                     onClick={() => setIsModal(true)}
                     className=" download-catalog-button projects-opinion-button copywriter-blue-background copywriter-new-btn copywriter-standard-mt-10 send-offer-button js--triggerAnimation"
@@ -48,12 +51,10 @@ const OptionBox2 = ({ optionBox2 }) => {
                     {/* <strong>{btn_title}</strong> */}
                     Brzmi świetnie. Wyślijcie mi ofertę.
                   </button>
-                
                 </div>
                 <div className="clearfix"></div>
               </div>
             </div>
-           
           </div>
         </div>
       </section>

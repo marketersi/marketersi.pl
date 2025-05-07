@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-
 const Opinion = () => {
   const { isLoading, screenData } = useSelector((state) => state.logo);
   const { OpinionData } = screenData || {};
@@ -15,7 +14,6 @@ const Opinion = () => {
             <div className="col-md-12">
               <div className="opinion-box">
                 <div className="opinion-box-image opinion-box-image-right right-image-opinion-fix custom-text-align-right">
-                  
                   {image && (
                     <img
                       src={image}
@@ -25,17 +23,15 @@ const Opinion = () => {
                     />
                   )}
                 </div>
-             
+
                 <div className="opinion-box-content opinion-box-content-fix opinion-box-content-left projects-opinion-1">
                   <div className="opinion-box-text projects-custom-opinion projects-black-text-opinion mobilenormalfont">
-                    
-                    {imageText && imageText} 
+                    {imageText && imageText}
                   </div>
                 </div>
                 <div className="clearfix"></div>
               </div>
             </div>
-
           </div>
         </div>
       </section>

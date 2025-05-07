@@ -23,8 +23,7 @@ const StandOut = () => {
     title,
   } = WhyUs || {};
 
-
-  console.log(title , 'title')
+  console.log(image_url_1, "image_url_1");
   const [mobile, setMobile] = useState(isMobile());
 
   useEffect(() => {
@@ -48,10 +47,7 @@ const StandOut = () => {
     <div className="so_sec">
       <Container className="text-center">
         <div className="so_header">
-       
-
-<h1 style={{ whiteSpace: "pre-line" }}>{titlee}</h1>
-
+          <h1 style={{ whiteSpace: "pre-line" }}>{titlee}</h1>
 
           <p>
             <em>{subtitle}</em>

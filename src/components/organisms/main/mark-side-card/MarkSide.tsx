@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useRef } from "react";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
 import { Row, Col, Image, Container } from "react-bootstrap";
-const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";
@@ -20,12 +20,18 @@ const MarkSide = () => {
   const osClass = useOsClass();
 
   const links1 = [
-    { label: "Tworzenie stron i design UX", path: "/tworzenie-stron-i-design-ux" },
+    {
+      label: "Tworzenie stron i design UX",
+      path: "/tworzenie-stron-i-design-ux",
+    },
     { label: "Video marketing", path: "/video-marketing" },
     { label: "Kreatywny montaż wideo", path: "/kreatywny-montaz-wideo" },
   ];
   const links2 = [
-    { label: "Treści i hasła sprzedażowe", path: "/tresci-i-hasla-sprzedazowe" },
+    {
+      label: "Treści i hasła sprzedażowe",
+      path: "/tresci-i-hasla-sprzedazowe",
+    },
     { label: "Projektowanie logo", path: "/projektowanie-logo" },
     { label: "Nazwa dla firmy", path: "/nazwa-dla-firmy" },
   ];
@@ -112,15 +118,15 @@ const Card = ({ data, links }) => {
           return (
             <li key={i}>
               <Link href={e.path}>
-              <span>{e.label}</span>
-              <div className={style.playIcon}>
-                <Image
-                  src="/assets/images/play_arrow.svg"
-                  alt="rating image"
-                  width="auto"
-                  height="auto"
-                />
-              </div>
+                <span>{e.label}</span>
+                <div className={style.playIcon}>
+                  <Image
+                    src="/assets/images/play_arrow.svg"
+                    alt="rating image"
+                    width="auto"
+                    height="auto"
+                  />
+                </div>
               </Link>
             </li>
           );

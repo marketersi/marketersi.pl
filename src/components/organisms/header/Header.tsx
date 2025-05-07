@@ -111,11 +111,8 @@ const Header = () => {
                   className={style.headerDrop1}
                   onMouseLeave={handleCloseDropdown}
                   onMouseEnter={handleOpenDropdown}
-
                 >
-                  <div
-                    className={style.dropBtn}
-                  >
+                  <div className={style.dropBtn}>
                     Przydatne <br /> rzeczy <span></span>
                     <FontAwesomeIcon icon={faAngleDown} />
                   </div>
@@ -140,7 +137,7 @@ const Header = () => {
                 <Nav className="d-flex align-items-center flex-nowrap">
                   <Nav.Link className={style.navRightMenu}>
                     <Link href="/Kim-jestesmy">
-                      Kim <br /> jesteśmy?
+                      Kim <br /> jesteśmy
                     </Link>
                   </Nav.Link>
                   <Nav.Link className={style.navRightMenu}>
@@ -148,7 +145,9 @@ const Header = () => {
                   </Nav.Link>
                 </Nav>
                 <Button className={style.headerRightBtn}>
-                  <Link href="/zamow-bezplatne-badanie">Zamów bezpłatne badanie</Link>
+                  <Link href="/zamow-bezplatne-badanie">
+                    Zamów bezpłatne badanie
+                  </Link>
                 </Button>
               </div>
             </Col>
@@ -255,7 +254,10 @@ const Header = () => {
                       </div>
 
                       <div className={style.menuItem}>
-                        <Link onClick={handleMenuItemClick} href="/konsultacja-marketingu">
+                        <Link
+                          onClick={handleMenuItemClick}
+                          href="/konsultacja-marketingu"
+                        >
                           Konsultacja marketingu
                         </Link>
                       </div>
@@ -270,8 +272,7 @@ const Header = () => {
               </li>
               <li onClick={handleMenuItemClick}>
                 <Link onClick={handleMenuItemClick} href="/Kim-jestesmy">
-                  Kim 
-                  jesteśmy?
+                  Kim jesteśmy
                 </Link>
               </li>
               <li onClick={handleMenuItemClick}>
@@ -359,4 +360,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;
