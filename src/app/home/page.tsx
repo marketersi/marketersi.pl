@@ -13,6 +13,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 import BounceLoader from "react-spinners/BounceLoader";
 import "./home.css";
+import { Provider } from 'react-redux';
+import store from "@/store/store";
 
 interface HomeState {
   isLoading: boolean;
@@ -48,18 +50,20 @@ const HomeScreen = () => {
         </div>
       ) : (
         <div>
-          <div className="overflow-fulldiv">
-            <Hero />
-            <Video />
-            <RatingCaption />
-          </div>
+          <Provider store={store}>
+            <div className="overflow-fulldiv">
+              <Hero />
+              <Video />
+              <RatingCaption />
+            </div>
 
-          <MarkSide />
-          <OurClients />
-          <Entrepreneur />
-          <Numbers />
-          <HardResult />
-          <Order />
+            <MarkSide />
+            <OurClients />
+            <Entrepreneur />
+            <Numbers />
+            <HardResult />
+            <Order />
+          </Provider>
         </div>
       )}
     </>

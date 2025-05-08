@@ -154,7 +154,7 @@ const GoodProcess = () => {
               playing
               loop
               muted
-              className="processVideo"
+              className="processVideo13"
               playsInline
             />
             <h3>{stage_2?.title}</h3>

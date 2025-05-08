@@ -294,18 +294,6 @@ const ContactMap = () => {
           </div>
         </div>
       )}
-
-      {/* <div className="map_button">
-        <Link className="nasiBtn" href="/owocni-opinie">
-          Nasi klienci
-        </Link>
-        <div className="map_play" onClick={handleShowRandomFeedbacks}>
-          <span>Następna opinia</span>
-          <div className="play">
-            <Image src="/assets/images/play_arrow.svg" />
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

@@ -26,12 +26,19 @@ const Order = () => {
             </Link>
           </div>
           <div className={style.orderImg}>
-            <img
+            {/* <img
               src={ratingSection?.image_url}
               alt="My Image"
               width="auto"
               height="auto"
-            />
+            /> */}
+            <img
+                src={ratingSection?.image_url || "https://images.prismic.io/marketersi/Zs2kJ0aF0TcGJa3B_naukowiec.png?auto=format,compress"}
+                alt="My Image"
+                width="auto"
+                height="auto"
+              />
+
             <div className={style.ratingContent}>
               <p>{ratingSection?.subtitle_2}</p>
               <div className={style.rating}>
