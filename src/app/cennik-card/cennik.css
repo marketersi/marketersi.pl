@@ -124,6 +124,13 @@ textarea{resize: none;}
 .democontainer{max-width: 900px; margin: 0 auto;}
 
 
+
+.custom-radio{border: 1px solid #d9d9d9; padding: 15px; position: relative; margin-bottom: 14px; cursor: pointer;}
+.radio-circle{ width:30px; height:30px; position:relative; border-radius: 15px; border:2px solid #d1d1d1; margin:15px auto;}
+.radio-circle.selected{background-color:#fff;}
+.radio-circle.selected:after{content:''; position: absolute; top:4px; left:4px; width:18px; height:18px; border-radius:12px; background-color:#00bfff;}
+
+
 @media only screen and (max-width: 1024px) {
   .BtnStyle {
     width: 100%;

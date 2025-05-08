@@ -13,10 +13,14 @@
 
 .opinionContent h1 {
   font-size: 63px;
-  line-height: 63px;
-  font-weight: 800;
+  line-height:63px;
+  font-weight:800;
   color: #333;
 }
+
+
+
+
 
 /* ===================job=============== */
 .brilliant {
@@ -67,8 +71,8 @@
 }
 
 .cardReview {
-  width: calc(100% - 2px);
-  border: 1px solid #d9d9d9;
+  width:calc(100% - 2px);
+  border:1px solid #d9d9d9;
 }
 
 .reviewMainImg {
@@ -95,29 +99,31 @@
 .cardReview .star {
   display: flex;
   align-items: center;
-  padding: 10px 15px;
+  padding:10px 15px;
 }
 
 .cardReview .star div h6 {
   font-size: 0.78rem;
-  line-height: 0.78rem;
+  line-height:0.78rem;
   font-weight: 500;
-  margin: 0px;
+  margin:0px;
 }
-
+  
 .cardReview .star p {
   font-size: 0.78rem;
-  line-height: 0.78rem;
-  font-weight: 300;
-  padding: 0;
-  margin-bottom: 0;
+  line-height:0.78rem;
+  font-weight:300;
+  padding:0;
+  margin-bottom:0;
   min-height: 1px;
 }
 
+
+
 .cardReview p {
   font-size: 15px;
-  padding: 0 15px;
-  min-height: 190px;
+  padding:0 15px;
+  min-height:190px;
 }
 
 .cardReview p span {
@@ -128,12 +134,8 @@
   display: inline-block;
 }
 
-.StarBox {
-  min-width: 96px;
-}
-.StarBox svg {
-  width: 13px !important;
-}
+.StarBox{min-width:96px;}
+.StarBox svg{width:13px !important;}
 
 /* ===========================teams================== */
 .teams {
@@ -150,7 +152,7 @@
 .teamsCard {
   background-color: rgb(0, 0, 0);
   padding: 20px;
-  border-radius: 30px;
+  border-radius:30px;
   position: relative;
 }
 
@@ -165,7 +167,7 @@
   font-size: 85px;
   line-height: 77px;
   font-weight: 700;
-  margin: 0 -5px 40px;
+  margin: 0 -5px 40px;  
   color: #000;
   /* text-align: center; */
 }
@@ -207,9 +209,9 @@
 }
 
 .teamsCardContent h5 {
-  margin: 0 0 50px;
-  font-size: 35px;
-  line-height: 46px;
+  margin:0 0 50px;
+  font-size:35px;
+  line-height:46px;
   color: white;
   font-weight: 700;
 }
@@ -219,17 +221,15 @@
   display: block;
 }
 
-.teamsCardContent h5 span.FullSpan {
-  color: #00bfff;
-}
+.teamsCardContent h5 span.FullSpan{ color:#00BFFF;}
 
 .teamsCardContent p {
-  font-size: 27px;
-  line-height: 38px;
+  font-size:27px;
+  line-height:38px;
   font-weight: 300;
-  color: rgb(125, 125, 125);
+  color:rgb(125, 125, 125);
   margin: 0 0 50px;
-  padding: 0;
+  padding:0;
 }
 
 /* ================================brand========================================= */
@@ -239,10 +239,10 @@
 }
 
 .brands h2 {
-  font-size: 56px;
-  line-height: 67px;
-  font-weight: 700;
-  margin: 0 0 100px 0;
+  font-size:56px;
+  line-height:67px;
+  font-weight:700;
+  margin:0 0 100px 0;
 }
 
 .brands h2 span {
@@ -253,15 +253,17 @@
   display: inline-block;
 }
 
+
+
 .brandSlide {
   margin: 0 0 100px;
 }
 
 .brandSlide h4 {
   font-size: 32px;
-  line-height: 32px;
+  line-height:32px;
   font-weight: 700;
-  margin: 0 -154px 70px 0;
+  margin:0 -154px 70px 0;
 }
 
 .brandSlideItem img {
@@ -283,7 +285,7 @@
 
 .ratingBlackCard {
   background-color: rgb(0, 0, 0);
-  padding: 26px 50px 50px;
+  padding:26px 50px 50px;
   border-radius: 30px;
   position: relative;
 }
@@ -321,62 +323,51 @@
 
 .ratingBlackCard h6 {
   font-size: 22px;
-  line-height: 34px;
-  font-weight: 400;
+  line-height:34px;
+  font-weight:400;
   color: var(--brand-blue);
   margin: 50px 0 25px;
 }
 
 .ratingBlackCard p {
-  font-size: 32px;
-  line-height: 32px;
+  font-size:32px;
+  line-height:32px;
   color: rgb(255, 255, 255);
   font-weight: 300;
-  margin-right: -22px;
+  margin-right:-22px;
 }
 
-.ratingBlackCard p.textChange {
-  color: rgb(125, 125, 125);
-}
+.ratingBlackCard p.textChange{color: rgb(125, 125, 125);}
 
-.ratingBlackCard p.textwhite {
-  color: #fff;
-  margin-bottom: 25px;
-  margin-right: -30px;
-}
-.ratingBlackCard p.textsmallP {
-  font-size: 25px;
-  line-height: 37px;
-  font-weight: 300;
-  color: rgb(125, 125, 125);
-  margin-top: 30px;
-}
+.ratingBlackCard p.textwhite{color:#fff; margin-bottom:25px; margin-right:-30px;}
+.ratingBlackCard p.textsmallP{font-size:25px; line-height:37px; font-weight:300; color: rgb(125, 125, 125); margin-top:30px;}
+
 
 .ratingCardContent {
   position: relative;
 }
 
 .ratingCardContent::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -30px;
   top: 0;
   height: 100%;
   width: 3px;
-  background: #00bfff;
+  background:#00BFFF;
 }
 
 .topBtn {
   display: flex;
   gap: 30px;
   align-items: center;
-  margin-top: 40px;
+  margin-top:40px;
 }
 
 .topBtn h4 {
-  color: #00bfff;
-  font-size: 36px;
-  line-height: 54px;
+  color: #00BFFF;
+  font-size:36px;
+  line-height:54px;
   font-weight: 700;
 }
 
@@ -546,14 +537,14 @@
 
 .tesco h4 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size:2rem;
+  font-weight:300;
 }
 
 .tesco p {
   text-align: center;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight:300;
 }
 
 .tesco img {
@@ -581,7 +572,7 @@
 .referenceCard .cardTop p {
   font-size: 13px;
 }
-.cardTop svg {
+.cardTop svg{
   font-size: 15px;
 }
 .referenceCard p {
@@ -624,7 +615,7 @@
 
 .personallyCard h2 {
   font-size: 61px;
-  line-height: 68px;
+  line-height:68px;
   font-weight: 700;
   color: white;
   margin: 0 0 50px;
@@ -632,7 +623,7 @@
 
 .personallyCard p {
   font-size: 27px;
-  line-height: 41px;
+  line-height:41px;
   font-weight: 300;
   color: rgb(125, 125, 125);
   margin: 0 0 50px;
@@ -640,14 +631,14 @@
 
 .personallyCard .contact h4 {
   font-size: 28px;
-  line-height: 42px;
+  line-height:42px;
   font-weight: 600;
   color: white;
 }
 
 .personallyCard .contact p {
   font-size: 28px;
-  line-height: 42px;
+  line-height:42px;
   font-weight: 400;
   color: white;
   margin: 0 0 10px;
@@ -655,7 +646,7 @@
 
 .personallyCard .contact a {
   font-size: 26px;
-  line-height: 29px;
+  line-height:29px;
   font-weight: 400;
   color: var(--brand-blue);
 }
@@ -701,12 +692,12 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  margin: 10px 0 30px 0;
+  margin:10px 0 30px 0;
 }
 
 .buttonContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 .showAllbtn {
@@ -732,7 +723,7 @@
 }
 .googlePlay svg {
   width: 20px;
-  height: 20px;
+  height:20px;
 }
 
 /* .StarBox{min-width:115px;} */
@@ -757,27 +748,19 @@ img.opinionBnnaerImg {
   width: 100%;
 }
 
-.colmobileshow {
-  display: none;
-}
+.colmobileshow{display: none;}
 
 /* ------------------------------media screen ------------------------------- */
 
 @media only screen and (max-width: 1600px) {
-  .opinionContent h1 {
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 76px;
-  }
-  .personallMan {
-    width: 460px;
-  }
+  .opinionContent h1{margin-left:0; margin-right:0;}
+  .personallMan{width:460px;}
 }
 @media only screen and (max-width: 1200px) {
-  .personallMan {
+  .personallMan{
     width: 340px;
     margin-right: -300px;
-  }
+}
 }
 @media only screen and (max-width: 991px) {
   .personallMan {
@@ -858,6 +841,8 @@ img.opinionBnnaerImg {
     line-height: 45px;
   }
 
+  
+
   .personallHand {
     width: 400px;
     bottom: 0px;
@@ -875,9 +860,11 @@ img.opinionBnnaerImg {
     margin-inline: auto;
     display: block;
   }
+
 }
 
-@media only screen and (max-width: 767px) {
+
+  @media only screen and (max-width: 767px) {
   .emoFace {
     width: 200px;
   }
@@ -892,6 +879,8 @@ img.opinionBnnaerImg {
     font-size: 40px;
     text-align: center;
   } */
+
+  
 
   .teamsTopContent h2 {
     font-size: 40px;
@@ -968,15 +957,15 @@ img.opinionBnnaerImg {
     padding: 20px 0 50px;
   }
 
-  .google h2 {
+  .google h2{
     font-size: 30px;
-    line-height: 26px;
-    margin-bottom: 20px;
+    line-height:26px;
+    margin-bottom:20px;
   }
 
   .google h4 {
     font-size: 22px;
-    line-height: 20px;
+    line-height:20px;
   }
 
   .googleMenu ul li {
@@ -998,7 +987,7 @@ img.opinionBnnaerImg {
     padding-right: 0 !important;
   }
 
-  .showAllbtn {
+    .showAllbtn {
     justify-content: flex-end;
   }
   .personallyCard {
@@ -1055,212 +1044,60 @@ img.opinionBnnaerImg {
     width: 200px;
     max-width: 450px;
   }
-  .opinionContent h1 {
-    font-size: 22px;
-    line-height: 22px;
-    text-align: left;
-    margin-left: 0;
-    margin-right: -15px;
-  }
-  .opinionBanner {
-    padding: 20px 0 0;
-  }
-  .opinionBanner img {
-    margin-top: 0;
-    width: 90%;
-  }
-  .job,
-  .teamsContainer,
-  .opinionContainer,
-  .ratingContainer,
-  .personallyContainer {
-    width: calc(92vw - 24px) !important;
-    max-width: calc(92vw - 24px) !important;
-  }
-  .opinionContainer {
-    max-width: none;
-  }
-  .opinionContainer .slick-slide {
-    padding-right: 0;
-  }
-  .teamsTopContent h2 {
-    max-width: 100%;
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 26px;
-  }
-  .teamsCard {
-    border-radius: 15px;
-  }
-  .maleImg {
-    margin: 0;
-    max-width: 100%;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .teamsCardContent {
-    margin: 0;
-  }
-  .teamsCardContent h5 {
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 20px;
-  }
-  .teamsCardContent p {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .teams {
-    padding: 26px 0 40px;
-  }
-  .brands h2 {
-    font-size: 30px;
-    line-height: 26px;
-    margin-bottom: 24px;
-  }
-  .brandSlide {
-    margin-bottom: 30px;
-  }
-  .brandSlide h4 {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
+  .opinionContent h1{font-size: 22px; line-height:22px; text-align: left; margin-left: 0; margin-right: -15px;}
+  .opinionBanner{padding:20px 0 0;}
+  .opinionBanner img{margin-top:0; width:90%;}
+  .job, .teamsContainer, .opinionContainer, .ratingContainer, .personallyContainer{width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important;}
+  .opinionContainer{max-width:none;}
+  .opinionContainer .slick-slide{padding-right:0;}
+  .teamsTopContent h2{max-width:100%; margin-bottom:20px; font-size:30px; line-height:26px;}
+  .teamsCard{border-radius:15px;}
+  .maleImg{margin:0; max-width:100%; width:100%; margin-bottom:30px;}
+  .teamsCardContent{margin:0;}
+  .teamsCardContent h5{font-size:22px; line-height:28px; margin-bottom:20px;}
+  .teamsCardContent p{font-size:20px; margin-bottom:20px;}
+  .teams{padding:26px 0 40px;}
+  .brands h2{font-size:30px; line-height:26px; margin-bottom:24px;}
+  .brandSlide{margin-bottom:30px;}
+  .brandSlide h4{font-size:20px; margin-bottom:30px;}
 
-  .ratingBlackCard img {
-    margin: 0 auto 0;
-  }
-  .ratingBlackCard h6 {
-    margin-top: 20px;
-    font-size: 17px;
-    line-height: 22px;
-    margin-bottom: 14px;
-  }
-  .topBtn {
-    display: block;
-  }
-  .ratingBlackCard p {
-    margin-right: 0;
-  }
-  .ratingBlackCard .topBtn p {
-    text-align: center;
-  }
-  .brands .brandSlideItem {
-    padding-right: 120px;
-  }
-  .tesco {
-    padding: 20px 0;
-  }
-  .referenceCardSec {
-    margin-top: 0;
-  }
-  .referenceCard {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .personallyCard h2 {
-    font-size: 30px;
-    line-height: 26px;
-    margin-bottom: 25px;
-  }
-  .personallyCard p {
-    margin-bottom: 35px;
-    line-height: 30px;
-  }
-  .contact {
-    margin-bottom: 0;
-  }
-  .personallyCard .contact h4,
-  .personallyCard .contact p,
-  .personallyCard .contact a {
-    font-size: 22px;
-    line-height: 28px;
-    margin-bottom: 3px;
-  }
-  .personallyCard .contact p,
-  .personallyCard .contact a {
-    font-weight: 300;
-  }
-  .expert {
-    padding-top: 40px;
-  }
-  .expertContent h2 {
-    font-size: 24px;
-    line-height: 24px;
-  }
+  .ratingBlackCard img{margin:0 auto 0;}
+  .ratingBlackCard h6{margin-top:20px; font-size:17px; line-height:22px; margin-bottom:14px;}
+  .topBtn{display: block;}
+  .ratingBlackCard p{margin-right:0;}
+  .ratingBlackCard .topBtn p{text-align: center;}
+  .brands .brandSlideItem{padding-right:120px;}
+  .tesco{padding:20px 0;}
+  .referenceCardSec{margin-top:0;}
+  .referenceCard{width:100%; margin-bottom:40px;}
+  .personallyCard h2{font-size:30px; line-height:26px; margin-bottom:25px;}
+  .personallyCard p{margin-bottom:35px; line-height:30px;}
+  .contact{margin-bottom:0;}
+  .personallyCard .contact h4, .personallyCard .contact p, .personallyCard .contact a{font-size:22px; line-height:28px; margin-bottom:3px;}
+  .personallyCard .contact p, .personallyCard .contact a{font-weight:300;}
+  .expert{padding-top:40px;}
+  .expertContent h2{font-size:24px; line-height:24px;}
 
-  .topBtn {
-    display: none;
-    margin-top: 14px;
-  }
-  .topBtn h4 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-  .brands h2 {
-    margin-right: -5px;
-  }
-  .ratingBlackCard .topBtn p {
-    font-size: 15px;
-    line-height: 20px;
-    padding: 3px 5px;
-  }
+  
+  .topBtn{display: none; margin-top:14px;}
+  .topBtn h4{font-size:20px; line-height:20px;}
+  .brands h2{margin-right:-5px;}
+  .ratingBlackCard .topBtn p{font-size:15px; line-height: 20px; padding: 3px 5px;}
 
-  .colmobileshow {
-    display: flex;
-  }
-  .colmobileshow .topBtn {
-    display: block;
-  }
-  .ratingBlackCard p {
-    margin-bottom: 0;
-  }
-  .rowmobileflex {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -5px;
-  }
-  .rowmobileflex > div {
-    flex: 0 0 auto;
-    width: 50%;
-    padding: 0 5px;
-  }
+  .colmobileshow{display:flex;}
+  .colmobileshow .topBtn{display: block;}
+  .ratingBlackCard p{margin-bottom:0;}
+  .rowmobileflex{display: flex; flex-wrap: wrap; margin:0 -5px;}
+  .rowmobileflex > div{flex: 0 0 auto; width: 50%; padding:0 5px;}
 
-  .ratingBlackCard p.textwhite {
-    margin-right: 0;
-    font-size: 21px;
-    line-height: 28px;
-    margin-bottom: 10px;
-  }
-  .ratingBlackCard p.textChange {
-    font-size: 18px;
-    line-height: 25px;
-  }
-  .ratingBlackCard .textsmallP {
-    font-size: 16px !important;
-    line-height: 20px !important;
-  }
-  .ratingCardContent::before {
-    display: none;
-  }
-  .brandSlide h4 {
-    margin-right: 0;
-  }
-  .cardReview {
-    margin-bottom: 20px;
-  }
-  .showAllbtn {
-    font-size: 14px;
-    gap: 7px;
-  }
-  .googlePlay {
-    width: 20px;
-    height: 20px;
-  }
-  .googlePlay svg {
-    width: 12px;
-    height: 12px;
-  }
-  .personallyCard p {
-    font-size: 20px;
-  }
+  .ratingBlackCard p.textwhite{margin-right:0; font-size:21px; line-height:28px; margin-bottom:10px;}
+  .ratingBlackCard p.textChange{font-size:18px; line-height:25px;}
+  .ratingBlackCard .textsmallP{font-size:16px !important; line-height:20px !important;}
+  .ratingCardContent::before{display: none;}
+  .brandSlide h4{margin-right:0;}
+  .cardReview{margin-bottom:20px;}
+  .showAllbtn{font-size: 14px; gap: 7px;}
+  .googlePlay{width: 20px; height: 20px;}
+  .googlePlay svg{width:12px; height:12px;}
+  .personallyCard p{font-size: 20px;}
 }
