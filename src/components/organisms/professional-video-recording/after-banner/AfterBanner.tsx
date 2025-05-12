@@ -10,33 +10,33 @@ const { brandSection, companySection } = screenData;
 const steps = [
 {
 number: "01",
-title: "Analiza Twojej wizji",
+title: "Analiza Twoich potrzeb",
 img: "https://images.prismic.io/marketersi/Z-0nEndAxsiBwODl_step-1.png?auto=format,compress",
-desc: "Rozmawiamy, analizujemy, słuchamy. Chcemy w pełni zrozumieć Twoją wizję i cele. Omówimy szczegóły surowego materiału..."
+desc: "Rozmawiamy, analizujemy, słuchamy. Chcemy w pełni zrozumieć Twoją wizję, markę i odbiorców. Naszym celem jest stworzenie rozwiązania, które idealnie wpisze się w Twoje cele biznesowe."
 },
 {
 number: "02",
 title: "Przygotowanie koncepcji",
 img: "https://images.prismic.io/marketersi/Z-0nkndAxsiBwOD8_step-2.png?auto=format,compress",
-desc: "Na podstawie Twoich wskazówek i naszych analiz opracowujemy plan montażu..."
+desc: "Przygotowujemy kreatywny plan, który będzie fundamentem całego projektu. Storyboard, wybór lokacji, styl wizualny – każdy element jest przemyślany, by idealnie pasował do Twojej marki."
 },
 {
 number: "03",
-title: "Postprodukcja",
+title: "Tworzenie scenariusza",
 img: "https://images.prismic.io/marketersi/Z-0nyHdAxsiBwOEK_step-3.png?auto=format,compress",
-desc: "Zaczynamy proces łącząc surowy materiał w spójną całość..."
+desc: "Na tym etapie zamieniamy pomysły w konkretne kroki. Scenariusz i plan techniczny zapewniają, że realizacja przebiegnie sprawnie, a film będzie przemawiać językiem Twoich odbiorców."
 },
 {
 number: "04",
-title: "Postprodukcja",
+title: "Realizacja zdjęć",
 img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEJ_step-4.png?auto=format,compress",
-desc: "Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją..."
+desc: "Zgrana ekipa, profesjonalny sprzęt i dbałość o szczegóły – to nasza recepta na idealne ujęcia. Pracujemy dynamicznie, ale z pełnym profesjonalizmem, dostarczając materiał, który wyróżni Twoją markę."
 },
 {
 number: "05",
 title: "Postprodukcja",
 img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEI_step-5.png?auto=format,compress",
-desc: "Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe..."
+desc: "Magia na ekranie: montaż, efekty wizualne i dźwiękowe. Prezentujemy wersję roboczą, zbieramy uwagi i dopracowujemy każdy detal, by stworzyć film, który zachwyci i na długo zapadnie w pamięć."
 }
 ];
 return (

@@ -1,11 +1,10 @@
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from "react-modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { color } from "framer-motion";
 
 const FeedbackSection = ({ setCurrentComponent }) => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
@@ -18,17 +17,25 @@ const FeedbackSection = ({ setCurrentComponent }) => {
 
   const dispatch = useDispatch();
 
+  // Ref for scroll to top
+  const topRef = useRef(null);
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
 
-  
-    // Count the number of letters (excluding spaces) in the textarea and input field
-    const textAreaLetterCount = textAreaValue.replace(/\s+/g, '').length;
-    const inputLetterCount = inputValue.replace(/\s+/g, '').length;
+  // Count the number of letters (excluding spaces) in the textarea and input field
+  const textAreaLetterCount = textAreaValue.replace(/\s+/g, "").length;
+  const inputLetterCount = inputValue.replace(/\s+/g, "").length;
 
   const handleNext = (e) => {
     e.preventDefault();
+
+    // Scroll to top div
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+
     const payload = {
       formTwoTextAreaValue: textAreaValue,
       formTwoInputValue: inputValue,
@@ -43,39 +50,65 @@ const FeedbackSection = ({ setCurrentComponent }) => {
   };
 
   return (
-    <div className="feedback_section">
+    <div className="feedback_section" style={{ padding: "20px" }}>
+      {/* Scroll target */}
+      <div ref={topRef} style={{ height: "1px" }}></div>
+
       <form onSubmit={handleNext}>
-        <h2><span style={{ color: '#00bbff' }}>Napisz w kilku słowach</span> czym zajmuje się Twój biznes i co jest dla Ciebie ważne?</h2>
-      <p>{formThree?.section3_subtitle1}</p>
-        
+        <h2 style={{ fontSize: "20px", marginBottom: "10px" }}>
+          <span style={{ color: "#00bbff" }}>Napisz w kilku słowach</span> czym zajmuje się Twój biznes i co jest dla Ciebie ważne?
+        </h2>
+        <p style={{ fontSize: "14px", marginBottom: "10px" }}>{formThree?.section3_subtitle1}</p>
+
         <textarea
           rows="5"
           cols="50"
-          className="fs_textarea"
           onChange={(e) => setTextAreaValue(e.target.value)}
           value={textAreaValue}
           style={{
-            backgroundColor: textAreaValue.length > 10 ? "#effeeb" : "",
-            outline: textAreaValue.length > 10 ? "none" : "",
+            width: "100%",
+            padding: "10px",
+            backgroundColor: textAreaValue.length > 10 ? "#effeeb" : "#fff",
+            outline: "none",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            marginBottom: "20px",
           }}
         ></textarea>
-        <h2 className="mt-3">{formThree?.section3_title_2}</h2>
-        <p className="mt-2">{formThree?.section3_subtitle2}</p>
+
+        <h2 style={{ marginTop: "20px", fontSize: "18px" }}>{formThree?.section3_title_2}</h2>
+        <p style={{ marginTop: "10px", marginBottom: "10px" }}>{formThree?.section3_subtitle2}</p>
+
         <input
           type="text"
-          className="fs_input"
           onChange={(e) => setInputValue(e.target.value)}
           value={inputValue}
           style={{
-            backgroundColor: inputValue.length > 10 ? "#effeeb" : "",
-            outline: inputValue.length > 10 ? "none" : "",
+            width: "100%",
+            padding: "10px",
+            backgroundColor: inputValue.length > 10 ? "#effeeb" : "#fff",
+            outline: "none",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            marginBottom: "20px",
           }}
         />
-        <button type="submit"  className="cennikBtn">
-        Ostatni krok
+
+        <button
+          type="submit"
+          style={{
+            backgroundColor: "#00bbff",
+            color: "#fff",
+            padding: "12px 20px",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            fontSize: "16px",
+          }}
+        >
+          Ostatni krok
         </button>
       </form>
-
 
       <Modal
         isOpen={isModalOpen}
@@ -84,50 +117,37 @@ const FeedbackSection = ({ setCurrentComponent }) => {
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        <p>
-        {modalInfo?.modal_info}
-        </p>
-        <div className="cenikBtnDiv">
-          <button onClick={closeModal}>{modalInfo?.modal_button1Text}</button>
+        <p style={{ fontSize: "16px", marginBottom: "20px" }}>{modalInfo?.modal_info}</p>
+        <div className="cenikBtnDiv" style={{ textAlign: "right" }}>
+          <button
+            onClick={closeModal}
+            style={{
+              backgroundColor: "#00bbff",
+              color: "#fff",
+              padding: "10px 16px",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+            }}
+          >
+            {modalInfo?.modal_button1Text}
+          </button>
         </div>
 
-        <div className="close" onClick={closeModal}>
+        <div
+          className="close"
+          onClick={closeModal}
+          style={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            cursor: "pointer",
+            fontSize: "20px",
+          }}
+        >
           <FontAwesomeIcon icon={faXmark} />
         </div>
       </Modal>
-
-      {/* <Modal
-        isOpen={isModalOpen}
-        onRequestClose={closeModal}
-        contentLabel="Example Modal"
-        className="CenikModal"
-        overlayClassName="Overlay"
-      >
-        <div className="cennik-modal-content">
-          <h2 className="cennik-modal-title">
-            {modalInfo?.modal_title}
-          </h2>
-          <p>
-          {modalInfo?.modal_info}
-          </p>
-          <p>
-          {modalInfo?.modal_info_2}
-          </p>
-          <div>
-            <button className="cennik-modal-btn">
-              <Link href="/">{modalInfo?.modal_button1Text}</Link>
-            </button>
-            <button className="cennik-modal-btn" onClick={closeModal}>
-            {modalInfo?.modal_button2Text}
-            </button>
-          </div>
-        </div>
-        
-
-        <div className="close" onClick={closeModal}>
-          <FontAwesomeIcon icon={faXmark} />
-        </div>
-      </Modal> */}
     </div>
   );
 };

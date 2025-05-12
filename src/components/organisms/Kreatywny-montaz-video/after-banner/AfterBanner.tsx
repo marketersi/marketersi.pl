@@ -15,31 +15,31 @@ const AfterBanner = () => {
     number: "01",
     title: "Analiza Twojej wizji",
     img: "https://images.prismic.io/marketersi/Z-0nEndAxsiBwODl_step-1.png?auto=format,compress",
-    desc: "Rozmawiamy, analizujemy, słuchamy. Chcemy w pełni zrozumieć Twoją wizję i cele. Omówimy szczegóły surowego materiału..."
+    desc: "Rozmawiamy, analizujemy, słuchamy. Chcemy w pełni zrozumieć Twoją wizję i cele. Omówimy szczegóły surowego materiału, jakie masz oczekiwania wobec efektu końcowego, i dopasujemy styl montażu do charakteru Twojej marki."
     },
     {
     number: "02",
     title: "Przygotowanie koncepcji",
     img: "https://images.prismic.io/marketersi/Z-0nkndAxsiBwOD8_step-2.png?auto=format,compress",
-    desc: "Na podstawie Twoich wskazówek i naszych analiz opracowujemy plan montażu..."
+    desc: "Na podstawie Twoich wskazówek i naszych analiz opracowujemy plan montażu. Wybieramy odpowiednią narrację, dynamikę i efekty wizualne, które najlepiej podkreślą Twoją wizję i zaangażują odbiorców."
     },
     {
     number: "03",
     title: "Postprodukcja",
     img: "https://images.prismic.io/marketersi/Z-0nyHdAxsiBwOEK_step-3.png?auto=format,compress",
-    desc: "Zaczynamy proces łącząc surowy materiał w spójną całość..."
+    desc: "Zaczynamy proces łącząc surowy materiał w spójną całość. Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe tworzymy film, który przemówi do Twoich odbiorców. Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją i wyróżniał Twoją markę."
     },
     {
     number: "04",
-    title: "Postprodukcja",
+    title: "Realizacja zdjęć",
     img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEJ_step-4.png?auto=format,compress",
-    desc: "Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją..."
+    desc: "Zgrana ekipa, profesjonalny sprzęt i dbałość o szczegóły – to nasza recepta na idealne ujęcia. Pracujemy dynamicznie, ale z pełnym profesjonalizmem, dostarczając materiał, który wyróżni Twoją markę."
     },
     {
     number: "05",
-    title: "Postprodukcja",
+    title: "Tworzenie scenariusza",
     img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEI_step-5.png?auto=format,compress",
-    desc: "Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe..."
+    desc: "Na tym etapie zamieniamy pomysły w konkretne kroki. Scenariusz i plan techniczny zapewniają, że realizacja przebiegnie sprawnie, a film będzie przemawiać językiem Twoich odbiorców."
     }
     ];
   
