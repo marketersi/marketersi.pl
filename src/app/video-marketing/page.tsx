@@ -16,6 +16,7 @@ import HardResult from '@/components/organisms/professional-video-recording/hard
 import Order from '@/components/organisms/main/order/Order';
 import AfterBanner from '@/components/organisms/professional-video-recording/after-banner/AfterBanner';
 import CennikCard from '../cennik-card/page'
+import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
 
 const ProfessionalVideoRecording = () => {
   const { isLoading, screenData } = useSelector(
@@ -27,6 +28,10 @@ const ProfessionalVideoRecording = () => {
 
   useEffect(() => {
     dispatch({ type: FETCH_VIDEO_RECORDING_SCREEN_DATA });
+  }, [dispatch]);
+
+  useEffect(() => {
+    dispatch({ type: FETCH_HOME_SCREEN_DATA });
   }, [dispatch]);
 
   if (isLoading) {
