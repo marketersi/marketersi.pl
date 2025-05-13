@@ -48,9 +48,9 @@ const AfterBanner = () => {
     <div className={style.afterBanner}>
       {/* <Container> */}
         <div className={style.democontainer}>
-          <h1>Kreatywny montaż, <br />który ożywi Twoje Markę</h1>
-
-          <div className={style.BannerSubTitle}>Przekształcimy Twoje wideo w potężne <br />narzędzie marketingowe.</div>
+          {/* <h1>Kreatywny montaż, <br />który ożywi Twoje Markę</h1> */}
+          <h1>Kreatywny montaż, <br />który ożywi <br className={style.mobileBR} />Twoje Markę</h1>
+   <div className={style.BannerSubTitle}>Przekształcimy Twoje wideo <br className={style.mobileBR} />w potężne <br />narzędzie marketingowe.</div>
           <div className={style.BannerSupSubTitle}>Twój film, nasze profesjonalne wykończenie.</div>
 
           <div className={style.filowBox}>
@@ -67,10 +67,6 @@ const AfterBanner = () => {
               </div>
             </div>
           </div>
-
-
-          
-
         </div>
       {/* </Container> */}
 {/* 
@@ -79,17 +75,19 @@ const AfterBanner = () => {
       </div> */}
 
       <div className={style.democontainer}>
-        <div className={style.SteperBoxListing}>
-          {steps.map((step, index) => (
-          <div key={index} className={style.SteperBox}>
-          <div className={style.SteperNumber}>{step.number}</div>
-          <div className={style.SteperImage}>
-          <img src={step.img} alt={`Step ${step.number}`} />
+        <div className={style.SteperBoxListingLat}>
+          <div className={style.SteperBoxListing}>
+            {steps.map((step, index) => (
+            <div key={index} className={style.SteperBox}>
+            <div className={style.SteperNumber}>{step.number}</div>
+            <div className={style.SteperImage}>
+            <img src={step.img} alt={`Step ${step.number}`} />
+            </div>
+            <h4 className={style.SteperTitle}>{step.title}</h4>
+            <p className={style.SteperCont}>{step.desc}</p>
+            </div>
+            ))}
           </div>
-          <h4 className={style.SteperTitle}>{step.title}</h4>
-          <p className={style.SteperCont}>{step.desc}</p>
-          </div>
-          ))}
         </div>
       </div>
 {/* 

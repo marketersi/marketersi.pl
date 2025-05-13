@@ -51,7 +51,8 @@ const RatingCaption = () => {
           />
         </div> */}
         <div className={style.ratingCOntent}>
-          <h2>{companySection?.main_title}</h2>
+          {/* <h2>{companySection?.main_title}</h2> */}
+          <h2>Wyobraź sobie wideo, <br />któremówi więcej  <br />niż słowa...</h2>
           <p>{companySection?.subtitle1}</p>
           <p>{companySection?.subtitle2}</p>
         </div>

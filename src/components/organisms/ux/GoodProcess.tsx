@@ -19,58 +19,58 @@ const GoodProcess = () => {
   console.log(stage_1 , 'stage_1')
 
   useEffect(() => {
-    // const path = document.getElementById("mypath");
-    // if (!path) return;
+    const path = document.getElementById("mypath");
+    if (!path) return;
 
-    // // Ensuring SVG path is loaded and visible before calculating length
-    // const checkSvgLoaded = setInterval(() => {
-    //   if (path.getTotalLength() > 0) {
-    //     clearInterval(checkSvgLoaded);
+    // Ensuring SVG path is loaded and visible before calculating length
+    const checkSvgLoaded = setInterval(() => {
+      if (path.getTotalLength() > 0) {
+        clearInterval(checkSvgLoaded);
 
-    //     const pathLength = path.getTotalLength();
-    //     const spacing = 30;
-    //     const numberOfCircles = Math.floor(pathLength / spacing);
-    //     const leftOffset = 0;
+        const pathLength = path.getTotalLength();
+        const spacing = 30;
+        const numberOfCircles = Math.floor(pathLength / spacing);
+        const leftOffset = 0;
 
-    //     let positions = [];
-    //     for (let i = 0; i <= numberOfCircles; i++) {
-    //       const distance = i * spacing;
-    //       const point = path.getPointAtLength(distance);
-    //       positions.push({ left: point.x + leftOffset, top: point.y });
-    //     }
+        let positions = [];
+        for (let i = 0; i <= numberOfCircles; i++) {
+          const distance = i * spacing;
+          const point = path.getPointAtLength(distance);
+          positions.push({ left: point.x + leftOffset, top: point.y });
+        }
 
-    //     setCirclePositions(positions);
+        setCirclePositions(positions);
 
-    //     setTimeout(() => {
-    //       const circles = document.querySelectorAll(".circle");
+        setTimeout(() => {
+          const circles = document.querySelectorAll(".circle");
 
-    //       if (circles.length > 0) {
-    //         const tl = gsap.timeline({
-    //           scrollTrigger: {
-    //             trigger: sectionRef.current,
-    //             start: "top 82%",
-    //             end: "bottom 160%",
-    //             scrub: true,
-    //             markers: false,
-    //           },
-    //           overwrite: "auto", // Make sure new animations overwrite previous ones
-    //         });
+          if (circles.length > 0) {
+            const tl = gsap.timeline({
+              scrollTrigger: {
+                trigger: sectionRef.current,
+                start: "top 82%",
+                end: "bottom 160%",
+                scrub: true,
+                markers: false,
+              },
+              overwrite: "auto", // Make sure new animations overwrite previous ones
+            });
 
-    //         tl.fromTo(
-    //           circles,
-    //           { scale: 0.3, opacity: 0 },
-    //           {
-    //             scale: 1.8,
-    //             opacity: 1,
-    //             duration: 1.2,
-    //             stagger: 0.1,
-    //             ease: "power1.in",
-    //           }
-    //         );
-    //       }
-    //     }, 500);
-    //   }
-    // }, 50);
+            tl.fromTo(
+              circles,
+              { scale: 0.3, opacity: 0 },
+              {
+                scale: 1.8,
+                opacity: 1,
+                duration: 1.2,
+                stagger: 0.1,
+                ease: "power1.in",
+              }
+            );
+          }
+        }, 500);
+      }
+    }, 50);
   }, []);
 
   return (
@@ -154,7 +154,7 @@ const GoodProcess = () => {
               playing
               loop
               muted
-              className="processVideo13"
+              className="processVideo"
               playsInline
             />
             <h3>{stage_2?.title}</h3>

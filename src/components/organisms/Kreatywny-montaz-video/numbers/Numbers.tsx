@@ -18,7 +18,8 @@ const Numbers = () => {
       <Container>
         <div className={style.numbers}>
           <div className={style.Content}>
-            <h2>{section2?.title}</h2>
+            {/* <h2>{section2?.title}</h2> */}
+            <h2>Odkryj moc wideo <br />z Marketersi!</h2>
             <p>{section2?.paragraph_1}</p>
             <p>{section2?.paragraph_2}</p>
             <h4>{section2?.subtitle}</h4>

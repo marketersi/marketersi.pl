@@ -15,7 +15,7 @@
   font-size: 63px;
   line-height:63px;
   font-weight:800;
-  color: #333;
+  color: #000;
 }
 
 
@@ -140,7 +140,7 @@
 /* ===========================teams================== */
 .teams {
   background: white;
-  padding: 50px 0 100px;
+  padding: 60px 0 100px;
 }
 
 .teamsContainer {

@@ -211,6 +211,9 @@ a.form_number_content {
   font-weight: 300;
 }
 
+.card .mail_id h6 > font:last-child{display: none;}
+
+
 .HeadingStatic{font-size:15px; color:#222; margin-bottom:15px;}
 
 a.card_btn {
@@ -474,7 +477,7 @@ a.card_btn:hover {
   margin: 30px 0 0;
 }
 
-.CountryFlag{position: absolute; left: -16px; width: 5rem; top:50%;  margin-top:46px; max-width: 100%;}
+.CountryFlag{position: absolute; left: -16px; width: 5rem; top:50%;  margin-top:46px; max-width: 100%; display: none;}
 .MapsButtonsDiv{display: flex; justify-content: space-between; align-items: center; margin-top: 40px; grid-gap:20px;}
 .MapsButtons{min-height: 57px; line-height:51px; min-width: 226px; border: 3px solid #008ebd; border-radius: 30px; padding: 0px 10px; text-align: center; font-size: 27px; font-weight: 500; text-decoration: none; color: #fff; background: #00BFFF; box-shadow: 0 8px 0px 0 #008ebd; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;  -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out;}
 .MapsButtons:hover{box-shadow: none;}

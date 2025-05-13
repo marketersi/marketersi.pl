@@ -22,13 +22,13 @@
 
 .single_review_card {
   padding: 16px 16px;
-  border: 1px solid #e9e9e9;
+  border: 1px solid #c5c5c5;
   border-radius: 12px;
   font-size: 22px;
   width: fit-content;
   display: inline-block;
   margin: 8px;
-  font-weight: 600;
+  font-weight:500;
 }
 .accordion-container {
   margin: 0 auto;
@@ -55,14 +55,8 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .customer_replies_container {
-    border-radius: 15px;
-    padding: 30px 15px;
-  }
-  .replies h1 {
-    font-size: 30px;
-    line-height: 26px;
-  }
+  .customer_replies_container{border-radius:15px; padding:30px 15px;}
+  .replies h1{font-size:30px; line-height:26px;}
   .review_container {
     flex-direction: column;
   }
@@ -70,30 +64,16 @@
     padding: 10px;
     font-size: 18px;
     width: calc(100% - 2px);
-    margin-left: 0;
-    margin-right: 0;
+    margin-left:0;
+    margin-right:0;
   }
   .question h4 {
     font-size: 22px;
     font-weight: 400;
   }
 
-  .review_container {
-    padding: 40px 25px;
-    width: calc(92vw - 24px) !important;
-    max-width: calc(92vw - 24px) !important;
-    margin: 0 auto !important;
-    border-radius: 15px;
-    display: grid;
-  }
-  .customer_replies_container {
-    width: calc(92vw - 24px) !important;
-    max-width: calc(92vw - 24px) !important;
-  }
-  .replies .slick-arrow {
-    display: none !important;
-  }
-  .review {
-    padding: 50px 0 0;
-  }
+  .review_container{padding:40px 25px; width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important; margin: 0 auto !important; border-radius:15px; display: grid;}
+  .customer_replies_container{width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important;}
+  .replies .slick-arrow{display:none !important}
+  .review{padding:50px 0 0;}
 }

@@ -59,7 +59,7 @@
   text-align: center;
   color: #333333;
   max-width: 1200px;
-  margin: 0 -170px 40px;
+  margin: 0 0 40px;
 }
 
 .ratingCOntent h2 span {
@@ -140,5 +140,5 @@
 
   .rating{padding-top:0;}
   .ratingCOntent{margin-top:34px;}
-  .ratingCOntent h2{font-size:34px; line-height:34px; font-weight:600; margin-left:0; margin-right:0;}
+  .ratingCOntent h2{font-size:30px; line-height:26px; font-weight:700; margin-left:0; margin-right:0;}
 }

@@ -33,13 +33,13 @@ const Teams = () => {
               Twoja firma się liczy, <br />
               bez względu
               <br />
-              na skalę.{" "}
+              na skalę.
             </h2>
             {/* to be deleted */}
             {/* <img src={teams.img_one} alt="" /> */}
           </div>
           <div className={style.teamsCard}>
-            <Row className="align-items-center">
+            <Row className="align-items-start">
               <Col lg={6}>
                 {/* to be deleted */}
                 {/* <img className={style.maleImg} src={teams.img_two} alt="" /> */}
@@ -54,8 +54,8 @@ const Teams = () => {
                 <div className={style.teamsCardContent}>
                   {/* <h5>{teams.para_one}</h5> */}
                   <h5>
-                    <span>Nie ma dla nas za dużych ani za małych firm</span>
-                    <span className={style.FullSpan}>Są tylko ważne</span>
+                    <span>Nie ma dla nas "za dużych", ani "za małych firm".</span>
+                    <span className={style.FullSpan}>Są tylko ważne.</span>
                   </h5>
                   <p>Realizujemy duże, złożone projekty dla korporacji.</p>
                   <p>

@@ -1434,7 +1434,8 @@ img.strategyImg {
 
 /* Modal */
 .Modal {
-  position: absolute;
+  position: relative;
+  display: block !important;
   width: 650px;
   background-color: #161616;
   border: none;
@@ -1587,7 +1588,7 @@ img.strategyImg {
 
 .ModalCloseButton {
   top: 0;
-  right: 0;
+  right: 10px;
   position: absolute;
   background-color: transparent;
   color: white;
@@ -2592,6 +2593,7 @@ img.strategyImg {
 }
 
 @media(max-width:600px){
+  .ReactModal__Content{padding:0 15px !important;}
   .MainHeading, .MainContentTwo, .Strategy, .Testimonial, .Analysis.WidthContent2, .WhatRecieve_Title_Three, .StrategyAction.container-fluid{width: 92vw; max-width: 92vw; margin: 0 auto 30px; padding: 0 12px;}
   .WidthContent, .WidthContent1, .container{padding:0 12px;}
 
@@ -2694,4 +2696,6 @@ img.strategyImg {
 
   .Price_Card img.price-card-title-image{margin-bottom:-36px;}
   .mobiledesignchange .Analysis3_GridItemNumber{font-size: 90px; margin-bottom: -39px;}
+  .ModalCard{padding:24px 20px;}
+  .ModalTitle{font-size:30px; line-height:26px; font-weight:700;}
 }

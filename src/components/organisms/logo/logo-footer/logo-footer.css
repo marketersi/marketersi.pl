@@ -65,6 +65,7 @@
   font-weight: 600;
   border: none;
   box-shadow: 4px 4px 0 gray;
+  color:#fff;
 }
 button.nazwa_footer_bottom_PDF {
   background: white;
@@ -77,8 +78,8 @@ button.nazwa_footer_bottom_Offer {
 /* --------------------modal--------------------- */
 .ReactModal__Content.ReactModal__Content--after-open {
   background-color: transparent !important;
-  padding: 0 !important;
-  inset: 0 !important;
+  /* padding: 0 !important; */
+  /* inset: 0 !important; */
   border: none !important;
   z-index: 11111111 !important;
   display: flex;

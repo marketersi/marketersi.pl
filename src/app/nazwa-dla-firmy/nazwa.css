@@ -112,7 +112,7 @@
   margin-bottom: 60px;
   font-weight: 300;
   font-size: 28px;
-  line-height: 50px;
+  line-height: 33px;
   margin-inline: auto;
 }
 .custom-container-4{
@@ -131,7 +131,8 @@ img.names-custom-image {
 }
 .red-link {
   color:#00bbff;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   line-height: 21px;
@@ -144,7 +145,7 @@ img.names-custom-image {
   margin-bottom: 30px !important;
 }
 .red-link :hover{
-  text-decoration: dotted;
+  /* text-decoration: dotted; */
 }
 .projects-custom-gray-text {
   color: #848484;

@@ -403,7 +403,7 @@ align-items: center;
   margin: 100px auto 70px;
   background: #f6f6f6;
   border-radius: 30px;
-  padding: 40px 50px;
+  padding: 10px 50px 40px;
 }
 .culturedContent p{
   font-size: 28px;
@@ -417,7 +417,7 @@ align-items: center;
 }
 
 .cultureCard img {
-  margin: -100px auto 20px;
+  margin: 0 auto 20px;
   display: block;
   width: 60%;
 }

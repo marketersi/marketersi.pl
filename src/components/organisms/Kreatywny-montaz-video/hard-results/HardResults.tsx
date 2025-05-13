@@ -89,7 +89,8 @@ const HardResult = () => {
               pip={false}
               playsinline
             /> */}
-            <h2 className={style.brandingHeading2}>{section7?.title}</h2>
+            {/* <h2 className={style.brandingHeading2}>{section7?.title}</h2> */}
+            <h2 className={style.brandingHeading2}>Właśnie dlatego warto inwestować <br />w wysokiej jakości <br />materiały filmowe</h2>
 
             <p>{section7?.paragraph_1}</p>
             {/* <ReactPlayer
@@ -126,9 +127,8 @@ const HardResult = () => {
               playsinline
             /> */}
 
-<h2 className={style.brandingHeading2}>Jestesmy to po to , by sprawic , ze kazdy kadr w Twoim filmie bedzie mial znaczenie</h2>
-<p>Skontaktuj sie z nami aby dowiedziec sie wiecej a naszych uslugach sie na konsulttacje</p>
-           
+            <h2 className={style.brandingHeading2}>Jesteśmy tu po to, by <br />sprawić, że każdy kadr <br />w Twoim filmie <br />będzie miał znaczenie</h2>
+            <p>Skontaktuj się z nami, aby dowiedzieć się <br />więcej o naszych usługach i umówić się <br />na konsultację.</p>
             <div className={`mb-3  ${style.ratingLogoImg}`}>
               <Image
                 src={section7?.image_url_1}

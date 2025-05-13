@@ -267,7 +267,7 @@ const ContactMap = () => {
           </p>
           <div className="MapsButtonsDiv">
 
-            <a href="#" className="MapsButtons">Opinie</a>
+            <a href="https://marketersi.pl/marketersi-opinie" className="MapsButtons">Opinie</a>
 
             <div className="MapsButtonsDivRight">
               <button
