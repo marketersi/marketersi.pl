@@ -75,26 +75,29 @@ const Hero = () => {
             transform: "translate(-50%, -50%)",
             color: "white",
             backgroundColor: "rgba(0, 0, 0, 0.6)",
-            padding: "20px",
-            borderRadius: "10px",
+            padding: "10px 20px",
+            borderRadius: "8px",
             textAlign: "center",
             cursor: "pointer",
-            zIndex: 2,
-            fontSize: "18px",
-            maxWidth: "300px",
+            zIndex: 10,
+            fontSize: "16px",
+            maxWidth: "100%",
+            display:"flex",
+            alignItems:"center",
           }}
         >
-          Kliknij, by obejrzeć z dźwiękiem
-          <div style={{ width: "50px", margin: "10px auto" }}>
+         
+          <div style={{}}>
             <svg
               viewBox="0 0 256 256"
               fill="white"
               xmlns="http://www.w3.org/2000/svg"
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "24px", height: "100%" ,marginRight:"10px"}}
             >
               <path d="M240 128C240.007 130.716 239.31 133.388 237.978 135.756C236.647 138.123 234.725 140.105 232.4 141.51L88.32 229.65C85.8909 231.138 83.1087 231.95 80.2608 232.002C77.4129 232.055 74.6025 231.347 72.12 229.95C69.6611 228.575 67.6128 226.57 66.1856 224.141C64.7585 221.712 64.0041 218.947 64 216.13V39.8701C64.0041 37.053 64.7585 34.2877 66.1856 31.8588C67.6128 29.4299 69.6611 27.4249 72.12 26.0501C74.6025 24.6536 77.4129 23.9451 80.2608 23.9979C83.1087 24.0506 85.8909 24.8626 88.32 26.3501L232.4 114.49C234.725 115.895 236.647 117.877 237.978 120.245C239.31 122.612 240.007 125.284 240 128Z" />
             </svg>
           </div>
+           Kliknij, by obejrzeć z dźwiękiem
         </div>
       )}
 

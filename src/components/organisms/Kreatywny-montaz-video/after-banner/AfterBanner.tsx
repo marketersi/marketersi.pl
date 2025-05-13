@@ -56,7 +56,7 @@ const AfterBanner = () => {
           <div className={style.filowBox}>
             <div className={style.filowBoxFirst}>
               <div className={style.filowBoxFirstInner}>
-                <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/Z-0l6XdAxsiBwOCs_Without-BG-80New.png?auto=format,compress" alt="" />
+                <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/Z-0l6XdAxsiBwOCs_Without-BG-80New.png?auto=format,compress" alt="" /><br/>
                 <div className={style.filowBoxFirstTitle}>filmów wideo, <br/>publikowanych online <br/>nie osiąga zakładanych <br/>celów marketingowych.</div>
                 <img className={style.filowBoxFirstImg2} src="https://images.prismic.io/marketersi/Z-0lx3dAxsiBwOCn_HubSpot_Logo.svg.png?auto=format,compress" alt="" />
               </div>

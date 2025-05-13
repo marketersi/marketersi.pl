@@ -118,6 +118,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";
+import style from "./hero.module.css";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -133,7 +134,6 @@ const Hero = () => {
     const iframe = document.querySelector("iframe");
 
     if (!isPlaying) {
-      // restart from beginning with sound
       if (playerRef.current) playerRef.current.seekTo(0);
       setIsPlaying(true);
 
@@ -149,7 +149,7 @@ const Hero = () => {
 
   return (
     <div
-      style={{ position: "relative", overflow: "hidden" }}
+      className={style.heroSection}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -161,7 +161,7 @@ const Hero = () => {
         muted={!isPlaying}
         width="100%"
         height="100%"
-        className="heroVideo"
+        className={style.heroVideo}
         pip={false}
         playsinline
         controls={false}

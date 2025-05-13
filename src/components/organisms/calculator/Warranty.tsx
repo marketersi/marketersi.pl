@@ -30,11 +30,11 @@ const Warranty = () => {
             {/* <p>{warranty?.card?.subtitle}</p>  */}
             <p>Wiemy, co działa, dlatego <br />bez wahania dajemy Ci <br />solidną gwarancję.</p>
             <a
-              onClick={(e) => {
-                e.preventDefault();
-                navigateToPriceListStrony();
-              }}
-              href="#"
+              // onClick={(e) => {
+              //   e.preventDefault();
+              //   navigateToPriceListStrony();
+              // }}
+              href="https://marketersi.pl/cennik"
             >
               {warranty?.card?.buttonText}
             </a>

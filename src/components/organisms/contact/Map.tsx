@@ -258,7 +258,7 @@ const ContactMap = () => {
 
       {selectedFeedback && (
         <div className="map_content">
-          <p>Social media z realnym efektem</p>
+          <p>Województwo</p>
           <h3>{selectedFeedback?.feedback_title}</h3>
           <h4>{selectedFeedback?.feedback_content}</h4>
           <p>{selectedFeedback?.feedback_subtitle}</p>

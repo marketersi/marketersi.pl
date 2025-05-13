@@ -9,7 +9,7 @@
 .filowBox{display: flex; border-radius:24px; background:#fff; color:#000; min-height:450px; overflow: hidden; margin-top:50px; position: relative;}
 
 .filowBoxFirst{width:50%; text-align: left;  display: flex; align-items: center; padding:15px 20px 75px;}
-.filowBoxFirstImg{max-width:150px; margin-right:15px; margin-bottom:15px;}
+.filowBoxFirstImg{max-width:150px; margin:15px 0;}
 .filowBoxFirstImg2{max-width:160px; position: absolute; bottom: 20px; left: 50%; margin-left: -34%;}
 .filowBoxFirstTitle{font-size:23px; line-height:33px;}
 .filowBoxSecond{background-color:#333; color:#fff; width:50%; display: flex; align-items: center;  padding:15px 20px;}
@@ -57,7 +57,7 @@
     .filowBox{display: block; margin-top:40px;}
     .filowBoxFirst{width:100%; padding:35px 20px 25px;}
     .filowBoxFirstTitle, .filowBoxSecondTitle{font-size: 22px; line-height: 35px;}
-    .filowBoxFirstImg{max-width: 100px; margin-top:-9px;}
+    .filowBoxFirstImg{max-width: 100px;}
     .filowBoxSecond{width:100%;}
     .filowBoxFirstImg2{max-width: 110px; position: static; margin-top: 20px; margin-left:auto;}
 

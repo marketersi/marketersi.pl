@@ -49,9 +49,9 @@ return (
 <div className={style.filowBox}>
 <div className={style.filowBoxFirst}>
 <div className={style.filowBoxFirstInner}>
-<div className={style.filowBoxFirstTitle}>Odbiorcy przeważnie zapamiętują,
+<div className={style.filowBoxFirstTitle}>Odbiorcy przeważnie <br/> zapamiętują, <br/>
 <img className={style.filowBoxFirstImg} src="https://images.prismic.io/marketersi/aAIvpOvxEdbNPOL0_1744973597293.png?auto=format,compress" alt="" />
-<br/>obejrzanego wideo, <br/>a tylko 10% przeczytanego tekstu.</div>
+<br/>obejrzanego wideo, <br/>a tylko 10% <br/> przeczytanego tekstu.</div>
 <img className={style.filowBoxFirstImg2} src="https://images.prismic.io/marketersi/Z_zwKuvxEdbNPAWQ_Business-Insider-Logo.png?auto=format,compress" alt="" />
 </div>
 </div>
