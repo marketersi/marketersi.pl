@@ -2,7 +2,7 @@
 import React, { useState, useRef } from "react";
 import dynamic from 'next/dynamic';
 import { useSelector } from "react-redux";
-
+import style from "./hero.module.css";
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 const Hero = () => {
@@ -33,6 +33,7 @@ const Hero = () => {
 
   return (
     <div
+     className={style.heroSection}
       style={{
         position: "relative",
         width: "100%",

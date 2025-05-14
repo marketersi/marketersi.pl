@@ -44,6 +44,19 @@ const Hero = () => {
     // Ensure jQuery selects the element correctly and triggers play
     $("#play").trigger("play");
   }, []);
+  useEffect(() => {
+    const video = document.getElementById("play") as HTMLVideoElement;
+    if (video) {
+      const tryPlay = async () => {
+        try {
+          await video.play();
+        } catch (err) {
+          console.warn("Autoplay failed. User interaction may be required.");
+        }
+      };
+      tryPlay();
+    }
+  }, []);
 
   useEffect(() => {
     if (inView) {
@@ -94,7 +107,7 @@ key={new Date().toISOString()}
   }}
 /> */}
 
-      <video
+      {/* <video
         id="play"
         src={heroSection?.background_video}
         //autoPlay
@@ -108,7 +121,24 @@ key={new Date().toISOString()}
         controlsList="nodownload"
       >
         <source src={heroSection?.background_video} type="video/mp4"></source>
-      </video>
+      </video> */}
+          <video
+            id="play"
+            src={heroSection?.background_video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            style={{ userSelect: "none" }}
+            className={`${style.heroVideo} ${style.desktop}`}
+            onCanPlay={(e) => e.target.play()} // ensures it plays when ready
+            onEnded={(e) => e.target.play()} // double ensure loop
+            controlsList="nodownload"
+          >
+            <source src={heroSection?.background_video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
 
       <ReactPlayer
         url={heroSection?.mobile_video}
