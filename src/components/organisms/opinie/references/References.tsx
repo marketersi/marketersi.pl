@@ -146,18 +146,16 @@ const ReferenceCardArray = [
 export default function References() {
   const { screenData } = useSelector((state) => state.opinion);
   const Reference = screenData.Reference || {};
-  // const ReferenceCard = screenData.Reference. || [];
-  console.log(ReferenceCard, "23456789======>");
   const [startIndex, setStartIndex] = useState(0);
   const [showAll, setShowAll] = useState(false);
-  // const reviewsPerPage = 6;
   const getReviewsPerPage = () => {
     if (typeof window !== "undefined") {
-      return window.innerWidth < 576 ? 4 : 6; // 4 for mobile (less than 576px), 6 for others
+      return window.innerWidth < 576 ? 4 : 6;
     }
     return 6;
   };
   const [reviewsPerPage, setReviewsPerPage] = useState(getReviewsPerPage());
+
   React.useEffect(() => {
     const handleResize = () => {
       setReviewsPerPage(getReviewsPerPage());
@@ -168,70 +166,67 @@ export default function References() {
   }, []);
 
   const handleNext = () => {
-    if (startIndex < ReferenceCard.length / reviewsPerPage) {
-      setStartIndex(startIndex + reviewsPerPage);
-    } else {
-      setStartIndex(0);
-    }
+    setStartIndex((prevIndex) => (prevIndex + reviewsPerPage) % (Reference?.ReferenceCard || ReferenceCardArray).length);
   };
 
   const handleShowAll = () => {
-    setStartIndex(0);
-    setShowAll(!showAll);
+    setShowAll(true);
   };
+
+  const handleShowLess = () => {
+    setShowAll(false);
+    setStartIndex(0);
+  };
+
+  const displayedReviews = showAll
+    ? Reference?.ReferenceCard || ReferenceCardArray
+    : (Reference?.ReferenceCard || ReferenceCardArray).slice(
+        startIndex,
+        startIndex + reviewsPerPage
+      );
+
+  const totalReviews = Reference?.ReferenceCard?.length || ReferenceCardArray.length;
+  const shouldShowNextButton = !showAll && totalReviews > reviewsPerPage;
+  const shouldShowShowAllButton = !showAll && totalReviews > reviewsPerPage;
+  const shouldShowShowLessButton = showAll && totalReviews > reviewsPerPage;
 
   return (
     <>
       <div className={style.google}>
         <div className={style.opinionContainer}>
           <div className={style.opinionContent}>
-            {/* <h3>{Reference?.heading}</h3> */}
-            {/* <h2>{Reference?.title}</h2> */}
             <h2>Budujemy relacje na lata.</h2>
-            {/* <h4>{Reference?.subtitle}</h4> */}
             <h4>
               Sprawdź, co mówią <br />o nas firmy, które <br />
               nam zaufały.
             </h4>
           </div>
-          <div className={style.brandBoxOpinie}>
-            <Row>
-              {Reference?.referenceImage?.map((e, i) => {
-                return (
-                  <Col xs={4} sm={4} key={i}>
-                    <div className={style.tesco}>
-                      <img src={e.image} alt="" />
-                      <h4>{e.name}</h4>
-                      <p>{e.year}</p>
-                    </div>
-                  </Col>
-                );
-              })}
-            </Row>
-          </div>
+          <Row>
+            {Reference?.referenceImage?.map((e, i) => (
+              <Col xs={6} sm={4} key={i}>
+                <div className={style.tesco}>
+                  <img src={e.image} alt={e.name} />
+                  <h4>{e.name}</h4>
+                  <p>{e.year}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
 
           <div className={style.referenceCardSec}>
             <Row className={style.rowTransition}>
-              {Reference?.ReferenceCard?.slice(
-                startIndex,
-                showAll
-                  ? Reference?.ReferenceCard?.length
-                  : startIndex + reviewsPerPage
-              ).map((e, i) => {
-                return (
-                  <Col xs={6} sm={4} key={i}>
-                    <ReferenceCard {...e} />
-                  </Col>
-                );
-              })}
+              {displayedReviews.map((e, i) => (
+                <Col xs={6} sm={4} key={i}>
+                  <ReferenceCard {...e} />
+                </Col>
+              ))}
             </Row>
 
-            {!showAll && (
-              <div className={style.buttonContainer}>
-                <div onClick={handleNext} className={style.showAllbtn}>
-                  {showAll ? null : "Pokaz wszystkie"}
+            <div className={style.buttonContainer}>
+              {shouldShowShowAllButton && (
+                <div onClick={handleShowAll} className={style.showAllbtn}>
+                  Pokaz wszystkie
                   <div className={style.googlePlay}>
-                    {/* <img src="https://www.owocni.pl/assets/arrow.svg" alt="" /> */}
                     <svg
                       data-name="Layer 1"
                       id="Layer_1"
@@ -247,9 +242,11 @@ export default function References() {
                     </svg>
                   </div>
                 </div>
+              )}
 
+              {shouldShowNextButton && !showAll && (
                 <div onClick={handleNext} className={style.showAllbtn}>
-                  {showAll ? null : "Następne opinie"}
+                  Następne opinie
                   <div className={style.googlePlay}>
                     <svg
                       data-name="Layer 1"
@@ -264,15 +261,31 @@ export default function References() {
                         id="_Compound_Path_"
                       />
                     </svg>
-                    {/* <span className="ArrowButton_Arrow">&gt;</span> */}
                   </div>
                 </div>
+              )}
 
-                {/* <div className="ArrowButton" onClick={handleNext}>
-                <span className="ArrowButton_Arrow">&gt;</span>
-                </div> */}
-              </div>
-            )}
+              {shouldShowShowLessButton && (
+                <div onClick={handleShowLess} className={style.showAllbtn}>
+                  Pokaż mniej
+                  <div className={style.googlePlay}>
+                    <svg
+                      data-name="Layer 1"
+                      id="Layer_1"
+                      viewBox="0 0 64 64"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title />
+                      <path
+                        d="M51.66,32,19,0,12.66,6.62,38.91,32,12.66,57.38,19,64Z"
+                        data-name="&lt;Compound Path&gt;"
+                        id="_Compound_Path_"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
