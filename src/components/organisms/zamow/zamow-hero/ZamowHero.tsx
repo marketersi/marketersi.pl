@@ -96,13 +96,12 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
     <>
       <h1>{heroSection?.title}</h1>
       {/* <p>{heroSection?.info}</p> */}
-       <p className="mbCustom">Odkryj nowe horyzonty rozwoju Twojej firmy</p>
-       
-       <p className="smalltextp">W Marketersi oferujemy Ci unikalną możliwość spojrzenia<br/>
+       <p className="mbCustom">Odkryj nowe horyzonty rozwoju Twojej firmy <br />W Marketersi oferujemy Ci unikalną możliwość spojrzenia<br/>
         na Twoją stronę internetową <br className="showmobilebr" />i strategie marketingowe<br/>
         z nowej perspektywy
         </p> 
       {/* <p style={{ fontSize: "16px" }}>{heroSection?.sub_info}</p> */}
+      <p className="smalltextp">100% poufności – Twoje zgłoszenie jest bezpieczne.</p>
 
 {toggle?
      <div className="input-container">

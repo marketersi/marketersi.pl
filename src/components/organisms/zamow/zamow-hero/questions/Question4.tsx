@@ -13,7 +13,7 @@ const Question4 = ({ handleNext }) => {
       </h2> */}
 
       <h2 className="">
-        <strong>Anna</strong> <span>, zanim zdecydujesz się kontynuować,</span> <span>prosimy pamiętaj o tym, że:</span>
+        <strong>Anna,</strong> <span>zanim zdecydujesz się kontynuować,</span> <span>prosimy pamiętaj o tym, że:</span>
       </h2>
 
       {/* <p>

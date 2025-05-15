@@ -104,6 +104,11 @@ p.range_description {
 .list_p {
   margin: 0px 0 50px;
 }
+
+.list_p{list-style: none; margin-left:24px; padding:0;}
+.list_p li{padding-left:30px; position: relative;}
+.list_p li:before{content:'-'; position: absolute; top:6px; left:0;}
+
 .question_description {
   text-align: left;
 }
@@ -350,7 +355,7 @@ input[type='range']::-webkit-slider-thumb::before {
 }
 /* -------------------------------question 9---------------------- */
 .goal_description {
-  margin: 0 0 40px !important;
+  margin: 0 0 5px !important;
 }
 .range_container {
   position: relative;

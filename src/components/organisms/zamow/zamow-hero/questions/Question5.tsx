@@ -25,20 +25,21 @@ const Question5 = ({ handleNext }) => {
     <h2 className="threeTitle">Jak możemy Ci pomóc?</h2>
 
       {/* <p className="question_description">{formFive?.listHeading}</p> */}
-       <p className="question_description">Możesz napisać krótko, np. Moja strona nie przyciąga klientów</p> 
+       <p className="question_description">Możesz napisać krótko, np. “Moja strona nie przyciąga klientów”</p> 
       {/* <div className="list_p">
         {formFive?.listItems.map((item, index) => (
           <p key={index}>{item}</p>
         ))}
       </div> */}
 
-<div className="list_p">
+        <ul className="list_p">
        
-          <p>Nie wiem, jak wyróżnić moją ofertę</p>
-          <p>Nie wiem, co zmienić, żeby strona działała lepiej</p>
-          <p>itp</p>
+          <li><p>“Nie wiem, jak wyróżnić moją ofertę”</p></li>
+          <li><p>“Nie wiem, co zmienić, żeby strona działała lepiej”</p></li>
+          <li><p>itp.</p></li>
         
-      </div>
+      </ul>
+
       <textarea
         rows={1}
         placeholder="Wpisz odpowiedź tutaj"

@@ -18,10 +18,6 @@
   color: #000;
 }
 
-
-
-
-
 /* ===================job=============== */
 .brilliant {
   background: white;
@@ -86,7 +82,7 @@
 }
 
 .reviewLogoImg {
-  width: 70%;
+  max-width: 70%;
   margin: 20px auto 10px;
   filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;
@@ -517,10 +513,10 @@
 }
 
 .opinionContent h4 {
-  font-size: 30px;
+  font-size: 32px;
+  line-height: 32px;
   font-weight: 700;
-  color: black;
-  line-height: 30px;
+  color: #212529;
   padding: 0 0 25px;
 }
 
@@ -1092,7 +1088,7 @@ img.opinionBnnaerImg {
 
   .ratingBlackCard p.textwhite{margin-right:0; font-size:21px; line-height:28px; margin-bottom:10px;}
   .ratingBlackCard p.textChange{font-size:18px; line-height:25px;}
-  .ratingBlackCard .textsmallP{font-size:16px !important; line-height:20px !important;}
+  .ratingBlackCard .textsmallP{font-size:16px !important; line-height:24px !important;  max-width:186px;}
   .ratingCardContent::before{display: none;}
   .brandSlide h4{margin-right:0;}
   .cardReview{margin-bottom:20px;}
@@ -1100,4 +1096,21 @@ img.opinionBnnaerImg {
   .googlePlay{width: 20px; height: 20px;}
   .googlePlay svg{width:12px; height:12px;}
   .personallyCard p{font-size: 20px;}
+
+  .reviewLogoImg{margin:8px 15px 0;}
+
+  .google h4{margin-bottom:10px; padding-bottom:0;}
+  .google .brandBoxOpinie h4{font-size:16px; margin-bottom:0px;}
+  .tesco img{margin-bottom:4px;}
+  .tesco p{font-size:12px;}
+  .StarBox{min-width: 55px;}
+  .StarBox svg{width:9px !important; margin-right:2px;}
+  .referenceCard{margin-bottom:26px;}
+  .referenceCard p{font-size:9px;}
+  .referenceCard .cardTop h6{font-size:9px;}
+  .referenceCard .cardTop p{font-size:8px; margin-bottom:4px;}
+  .Personally{position: relative; padding-bottom:0;}
+  .Personally:after{content:''; position: absolute; left:0; right:0; bottom:0; height:40%; z-index:-1; background: linear-gradient(to bottom,   rgba(0,0,0,0) 0%, rgba(244,244,244,1) 100%);
+}
+  
 }
