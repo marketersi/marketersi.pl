@@ -64,14 +64,14 @@ const Question4 = ({ handleNext }) => {
       {/* <p>{formFour?.descriptionOne}</p>
       <p>{formFour?.descriptionTwo}</p> */}
 
-      <p className="FontChangeP">
+      {/* <p className="FontChangeP">
         Jeśli Twoja firma nie zakwalifikuje się do bezpłatnych badań z ekspertami,
         wyślemy Ci ogólne wskazówki, które pomogą Ci usprawnić Twoją stronę internetową.
       </p>
       <p className="FontChangeP">
         <span>Ale jeśli zdecydujemy się na badanie Twojej strony</span> to zrobimy to w ciągu 5-7 dni roboczych.
-      </p>
-
+      </p> */}
+        <p className="FontChangeP">Jeśli Twoja firma nie zakwalifikuje się do bezpłatnych badań z ekspertami, wyślemy Ci ogólne wskazówki, które pomogą Ci usprawnić Twoją stronę internetową. <div className="textsecond"><span>Ale jeśli zdecydujemy się na badanie Twojej strony</span> to zrobimy to w ciągu 5-7 dni roboczych.</div></p>
       <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleNext}
