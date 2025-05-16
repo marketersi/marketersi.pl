@@ -22,7 +22,8 @@ const Question12 = ({ handleNext }) => {
 
   return (
     <div className="zh_question working_container">
-      <h2>Dzięki!<br/>Zostały już tylko 2 pytania.</h2>
+      {/* <h2>Dzięki!<br/>Zostały już tylko 2 pytania.</h2> */}
+      <h2>Świetnie<br/>Zostały już tylko 2 pytania.</h2>
       <p>Podaj e-mail do wysyłki wyników.</p>
       <textarea
         rows={1}
@@ -30,9 +31,9 @@ const Question12 = ({ handleNext }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <p className="input_description">
+      {/* <p className="input_description">
         Shift + Enter aby przejść do następnej linii
-      </p>
+      </p> */}
       <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}

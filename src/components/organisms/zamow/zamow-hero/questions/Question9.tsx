@@ -29,18 +29,19 @@ const Question9 = ({ handleNext }) => {
       <h2>Jaki jest Twój cel?Jaki byłby idealny,<br/>
 miesięczny przychód Twojej firmy?
 </h2>
-      <p className="goal_description">Weź pod uwagę aktualne możliwości operacyjne swojej firmy.
+      <p className="goal_description">Weź pod uwagę aktualne możliwości operacyjne swojej firmy. <br />
 Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
 </p>
 
-      <div className="income_show">{rangeValue} zł</div>
+      <div className="income_show martop30">{rangeValue} zł</div>
 
       {rangeValue === 0 && (
         <>
           <div className="CircleAnimation"></div>
           <img
             className="tri_arrow"
-            src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
+            // src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
+            src="https://images.prismic.io/marketersi/aAtQ4_IqRLdaBm2v_preze2.png?auto=format,compress"
             alt=""
           />
         </>
@@ -68,5 +69,6 @@ Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
     </div>
   );
 };
+
 
 export default Question9;

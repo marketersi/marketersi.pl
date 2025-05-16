@@ -47,9 +47,9 @@ const Question13 = ({ handleNext }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <p className="input_description">
+      {/* <p className="input_description">
         Shift + Enter aby przejść do następnej linii
-      </p>
+      </p> */}
       <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}

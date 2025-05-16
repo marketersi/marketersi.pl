@@ -137,6 +137,8 @@
 
 .showmobilebr{display: none;}
 
+.martop30{margin-top:40px !important;}
+
 @media only screen and (max-width: 1024px) {
   .zamow-hero-btn {
     position: static;

@@ -33,7 +33,7 @@ const Question4 = ({ handleNext }) => {
           whileHover={{ translateY: 5 }}
         >
          {/* {formFour?.buttonText} */}
-         Zatwierdź
+         Tak, wszystko jasne – kontynuuję
         </motion.button>
         {/* <p>Wciśnij Enter</p> */}
       </div>
