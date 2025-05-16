@@ -22,9 +22,10 @@ const Question10 = ({ handleNext }) => {
 
   return (
     <div className="zh_question working_container">
-      <h2>Jak oceniasz skuteczność<br/>
+      {/* <h2>Jak oceniasz skuteczność<br/>
 swojej obecnej strony?
-</h2>
+</h2> */}
+<h2>Jak oceniasz skuteczność swojego obecnego marketingu?</h2>
       <p className="lineheight34px"><span className="fontweight400">Bądź szczery –</span> im więcej wiemy, tym lepiej dopasujemy rozwiązania.
       </p>
       <textarea

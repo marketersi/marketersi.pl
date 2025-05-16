@@ -201,17 +201,19 @@ export default function References() {
               nam zaufały.
             </h4>
           </div>
-          <Row>
-            {Reference?.referenceImage?.map((e, i) => (
-              <Col xs={6} sm={4} key={i}>
-                <div className={style.tesco}>
-                  <img src={e.image} alt={e.name} />
-                  <h4>{e.name}</h4>
-                  <p>{e.year}</p>
-                </div>
-              </Col>
-            ))}
-          </Row>
+          <div className={style.brandBoxOpinie}>
+            <Row>
+              {Reference?.referenceImage?.map((e, i) => (
+                <Col xs={4} sm={4} key={i}>
+                  <div className={style.tesco}>
+                    <img src={e.image} alt={e.name} />
+                    <h4>{e.name}</h4>
+                    <p>{e.year}</p>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </div>
 
           <div className={style.referenceCardSec}>
             <Row className={style.rowTransition}>

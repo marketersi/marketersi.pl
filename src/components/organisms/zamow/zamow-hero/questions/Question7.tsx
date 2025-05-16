@@ -25,9 +25,12 @@ const Question7 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      <h2 className="lineheight34px">Jaki jest szacunkowy miesięczny przychód<br/>
-      Twojej firmy generowany dzięki stronie?</h2>
-      {/* <h2>{formSeven?.title}</h2> */}
+      {/* <h2 className="lineheight34px">Jaki jest szacunkowy miesięczny przychód<br/>
+      Twojej firmy generowany dzięki stronie?</h2> */}
+
+     <h2 className="lineheight34px">Jaki jest szacunkowy miesięczny przychód Twojej firmy?
+      </h2> 
+               {/* <h2>{formSeven?.title}</h2> */}
       <p className="goal_description lineheight34px">Te informacje pozwolą nam dokładnie ocenić<br/>
 Twoją sytuację i dobrać najlepsze rozwiązania.
 </p>

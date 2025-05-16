@@ -643,14 +643,18 @@ button.zh_preview_btn {
     font-size: 11px;
   }
   .zh_question{width:100%; margin:0;}
-  .zamow-hero.col{max-width:100%; padding:30px 12px 45px;}
-  .zh_question h2{font-size:30px; line-height:26px; font-weight:700;}
-  .zamow-hero .FontChangeP{font-size: 22px; line-height: 32px; font-weight: 300;}
+  .zamow-hero.col{max-width:100%; padding:30px 12px 90px;}
+  .zh_question h2{font-size:30px; line-height:28px; font-weight:500; margin-bottom:30px;}
+  .zamow-hero .FontChangeP{font-size:16px; line-height:22px; font-weight: 300;}
+  .zh_question textarea{padding-left:0;}
+  .zamow-hero .zh_next_btn_container{justify-content: start;}
+  .zh_next_btn{font-size:16px; padding:5px 16px;}
 
   input[type='range'].income_range{width: 260px; clear: both; display: block; margin-left: auto; margin-right: auto;}
   .CircleAnimation{bottom:76px; margin-left: -134px;}
   .income_show{width: auto; display: inline-block; font-size: 18px; border-radius: 12px; padding: 10px 16px;}
   .zh_marketing_container h2{font-size: 35px; font-weight: 400; line-height:34px;}
+  .list_p{margin-bottom:0;}
 
 
 

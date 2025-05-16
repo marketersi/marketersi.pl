@@ -26,9 +26,9 @@ const Question8 = ({ handleNext }) => {
 na marketing miesięcznie?
 </h2>
       {/* <p>{formEight?.description_1}</p> */}
-      <p>Im precyzyjniejsza kwota, tym skuteczniejszą<br/>
+      {/* <p>Im precyzyjniejsza kwota, tym skuteczniejszą<br/>
 strategię możemy zaproponować
-</p> 
+</p>  */}
       <p className="range_description">{formEight?.description_2}</p>
       <div className="checkBOxContainer">
         {/* <Row>
