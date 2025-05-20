@@ -18,7 +18,7 @@ i wszystko dopniemy<br/>
 na ostatni guzik.<br/>
 
       </p>
-      <div className="zh_next_btn_container flex justify-center">
+      <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">
         <motion.button
           onClick={handleNext}
           className="zh_next_btn"

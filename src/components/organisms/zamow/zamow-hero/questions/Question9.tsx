@@ -29,8 +29,8 @@ const Question9 = ({ handleNext }) => {
       <h2>Jaki jest Twój cel?Jaki byłby idealny,<br/>
 miesięczny przychód Twojej firmy?
 </h2>
-      <p className="goal_description">Weź pod uwagę aktualne możliwości operacyjne swojej firmy. <br />
-Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
+      <p className="goal_description">Weź pod uwagę aktualne <br className="showmobilebr" />możliwości operacyjne <br className="showmobilebr" />swojej firmy. <br />
+Te informacje pomogą nam <br className="showmobilebr" />dopasować strategię <br className="showmobilebr" />do Twoich potrzeb.
 </p>
 
       <div className="income_show martop30">{rangeValue} zł</div>
@@ -56,7 +56,7 @@ Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
         className="income_range"
       />
 
-      <div className="zh_next_btn_container flex justify-center">
+      <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

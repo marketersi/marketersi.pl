@@ -65,7 +65,7 @@ Twoją sytuację i dobrać najlepsze rozwiązania.
       />
 
 
-      <div className="zh_next_btn_container flex justify-center">
+      <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"

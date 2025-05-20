@@ -41,7 +41,7 @@ i wprowadzić zmiany, które przełożą się na Twoje zyski?
         </Row> */}
          <Row>
          
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('Od razu')}
@@ -51,7 +51,7 @@ i wprowadzić zmiany, które przełożą się na Twoje zyski?
                 <div className="checkbox__body">Od razu</div>
               </label>
             </Col>
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('W ciągu 2 tygodni')}
@@ -61,7 +61,7 @@ i wprowadzić zmiany, które przełożą się na Twoje zyski?
                 <div className="checkbox__body">W ciągu 2 tygodni</div>
               </label>
             </Col>
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('W ciągu 1 miesiąca')}
@@ -71,7 +71,7 @@ i wprowadzić zmiany, które przełożą się na Twoje zyski?
                 <div className="checkbox__body">W ciągu 1 miesiąca</div>
               </label>
             </Col>
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('W ciągu 3 miesięcy')}
@@ -81,7 +81,7 @@ i wprowadzić zmiany, które przełożą się na Twoje zyski?
                 <div className="checkbox__body">W ciągu 3 miesięcy</div>
               </label>
             </Col>
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('W ciągu 6 miesięcy')}
@@ -91,7 +91,7 @@ i wprowadzić zmiany, które przełożą się na Twoje zyski?
                 <div className="checkbox__body">W ciągu 6 miesięcy</div>
               </label>
             </Col>
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('Na razie nieokreślone')}

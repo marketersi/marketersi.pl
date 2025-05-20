@@ -45,14 +45,15 @@ const Question14 = () => {
 
   return (
     <>
-      {showGif && <img src="/assets/congrats.gif" className="congrats_gif" />}
+      {/* {showGif && <img src="/assets/congrats.gif" className="congrats_gif" />} */}
+      {showGif && <div className='congrats_gif'><img src="/assets/congrats.gif" /></div>}
 
       <div className="question_14">
         <h2>Gotowe!</h2>
         <p>Teraz czas na ruch po naszej stronie.<br/>
-Sprawdzimy Twoją sytuację<br/>
-i wrócimy z konkretem.<br/>
-</p>
+          Sprawdzimy Twoją sytuację<br/>
+          i wrócimy z konkretem.<br/>
+          </p>
 
         <h6 className='TitleIconH6'>
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">

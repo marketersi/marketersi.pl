@@ -47,7 +47,7 @@ strategię możemy zaproponować
         </Row> */}
          <Row>
        
-            <Col  sm={6}>
+            <Col xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('0 - 5 000 zł')}
@@ -58,7 +58,7 @@ strategię możemy zaproponować
               </label>
             </Col>
 
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('5 000 - 10 000 zł')}
@@ -69,7 +69,7 @@ strategię możemy zaproponować
               </label>
             </Col>
 
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('10 000 - 30 000 zł')}
@@ -80,7 +80,7 @@ strategię możemy zaproponować
               </label>
             </Col>
 
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('30 000 - 100 000 zł')}
@@ -91,7 +91,7 @@ strategię możemy zaproponować
               </label>
             </Col>
 
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('100 000 - 500 000 ')}
@@ -102,7 +102,7 @@ strategię możemy zaproponować
               </label>
             </Col>
 
-            <Col  sm={6}>
+            <Col  xs={6} sm={6}>
               <label
                 className="checkbox style-d"
                 onClick={() => handleButtonClick('Powyżej 500 000 zł')}

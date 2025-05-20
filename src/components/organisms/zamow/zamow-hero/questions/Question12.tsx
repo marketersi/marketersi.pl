@@ -24,7 +24,7 @@ const Question12 = ({ handleNext }) => {
     <div className="zh_question working_container">
       {/* <h2>Dzięki!<br/>Zostały już tylko 2 pytania.</h2> */}
       <h2>Świetnie<br/>Zostały już tylko 2 pytania.</h2>
-      <p>Podaj e-mail do wysyłki wyników.</p>
+      <p className="Mobilemargin">Podaj e-mail do wysyłki wyników.</p>
       <textarea
         rows={1}
         placeholder="Wpisz tu swoją odpowiedź"

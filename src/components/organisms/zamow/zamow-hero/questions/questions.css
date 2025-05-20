@@ -9,7 +9,7 @@
   line-height: 34px;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom:20px;
   
 }
 .zh_question h2 strong {
@@ -644,19 +644,33 @@ button.zh_preview_btn {
   }
   .zh_question{width:100%; margin:0;}
   .zamow-hero.col{max-width:100%; padding:30px 12px 90px;}
-  .zh_question h2{font-size:30px; line-height:28px; font-weight:500; margin-bottom:30px;}
+  .zh_question h2{font-size:30px; line-height:28px; font-weight:400; margin-bottom:10px;}
   .zamow-hero .FontChangeP{font-size:16px; line-height:22px; font-weight: 300;}
   .zh_question textarea{padding-left:0;}
   .zamow-hero .zh_next_btn_container{justify-content: start;}
   .zh_next_btn{font-size:16px; padding:5px 16px;}
 
   input[type='range'].income_range{width: 260px; clear: both; display: block; margin-left: auto; margin-right: auto;}
-  .CircleAnimation{bottom:76px; margin-left: -134px;}
+  .CircleAnimation{bottom:70px; margin-left: -134px;}
   .income_show{width: auto; display: inline-block; font-size: 18px; border-radius: 12px; padding: 10px 16px;}
-  .zh_marketing_container h2{font-size: 35px; font-weight: 400; line-height:34px;}
-  .list_p{margin-bottom:0;}
+  .zh_marketing_container h2{font-size:30px; font-weight: 400; line-height:26px; color:#000;}
+  .list_p{margin-bottom:0; margin-left:12px;}
+  .list_p li{padding-left:20px;}
+  .zamow-hero .zh_next_btn_container.zh_next_btn_Center{justify-content: center;}
+  p.range_description{margin-bottom:20px !important; font-size: 16px !important; line-height:24px !important;}
+  .zamow-hero p.Mobilemargin{margin-bottom:10px;}
+  .zh_question, .working_container textarea{width:100%;}
 
 
+  .question_14 .TitleIconH6{font-size:16px; line-height:24px;}
+  .question_14 .TitleIconH6 svg{width:18px; height:18px;}
+
+  .checkBOxContainer{padding:0;}
+  .checkbox.style-d{padding:6px 0px 6px 24px;}
+  .checkbox.style-d .checkbox__checkmark{width:24px; height:24px; top: 2px; left:2px;}
+  .checkbox.style-d .checkbox__body{font-size: 11px; margin: 0 0 0 6px;}
+  .checkbox.style-d .checkbox__checkmark:after{left: 10px; top: 2px; width: 8px; height: 15px;}
+  
 
 }
 
@@ -664,4 +678,7 @@ button.zh_preview_btn {
 .congrats_gif {
   position: absolute;
   width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
