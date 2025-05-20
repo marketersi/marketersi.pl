@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 import { motion } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { saveExaminationFormData } from "@/redux/zamow/zamowSlice"; 
@@ -9,6 +9,9 @@ const Question1 = ({ handleNext }) => {
 
   const [inputValue, setInputValue] = useState("");
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [])
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {

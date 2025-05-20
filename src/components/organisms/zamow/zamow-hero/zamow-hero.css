@@ -205,4 +205,18 @@
   .progress-bar-container{height:15px;}
   .back-button{font-size:10px; padding-left:5px;}
   
+
+  .question-step-container {
+  position: relative;
+  height: 300px; /* adjust based on design */
+  overflow: hidden;
+}
+
+.question-step-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 }

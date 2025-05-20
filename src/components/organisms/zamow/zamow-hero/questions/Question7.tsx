@@ -7,6 +7,7 @@ const Question7 = ({ handleNext }) => {
   const { screenData } = useSelector((state) => state.examination);
   const { formSeven } = screenData?.surveyQuestions || {};
 
+  // Start range from 1
   const [rangeValue, setRangeValue] = useState(1);
 
   const handleRangeChange = (e) => {
@@ -25,23 +26,22 @@ const Question7 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      {/* <h2 className="lineheight34px">Jaki jest szacunkowy miesięczny przychód<br/>
-      Twojej firmy generowany dzięki stronie?</h2> */}
+      <h2 className="lineheight34px">
+        Jaki jest szacunkowy miesięczny przychód Twojej firmy?
+      </h2>
 
-     <h2 className="lineheight34px">Jaki jest szacunkowy miesięczny przychód Twojej firmy?
-      </h2> 
-               {/* <h2>{formSeven?.title}</h2> */}
-      <p className="goal_description lineheight34px">Te informacje pozwolą nam dokładnie ocenić<br/>
-Twoją sytuację i dobrać najlepsze rozwiązania.
-</p>
-      {/* <p className="goal_description">{formSeven?.subtitle}</p> */}
-      <p className="range_description lineheight34px">(Wszystkie dane są poufne.)</p>
-      {/* <p className="range_description">{formSeven?.info}</p> */}
-      
+      <p className="goal_description lineheight34px">
+        Te informacje pozwolą nam dokładnie ocenić<br />
+        Twoją sytuację i dobrać najlepsze rozwiązania.
+      </p>
+      <p className="range_description lineheight34px">
+        (Wszystkie dane są poufne.)
+      </p>
 
+      {/* Display selected amount */}
+      <div className="income_show">{rangeValue.toLocaleString("pl-PL")} zł</div>
 
-      <div className="income_show">{rangeValue} zł</div>
-
+      {/* Optional visual cue when starting at 1 zł */}
       {rangeValue === 1 && (
         <>
           <div className="CircleAnimation"></div>
@@ -53,27 +53,26 @@ Twoją sytuację i dobrać najlepsze rozwiązania.
         </>
       )}
 
+      {/* Range input */}
       <input
+        type="range"
         min={1}
         max={100000}
-        type="range"
         step={1}
         value={rangeValue}
         onChange={handleRangeChange}
         className="income_range"
-        
       />
 
-
+      {/* Next button */}
       <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">
         <motion.button
           onClick={handleButtonClick}
           className="zh_next_btn"
           whileHover={{ translateY: 5 }}
         >
-               Dalej
+          Dalej
         </motion.button>
-        {/* <p>Wciśnij Enter</p> */}
       </div>
     </div>
   );
