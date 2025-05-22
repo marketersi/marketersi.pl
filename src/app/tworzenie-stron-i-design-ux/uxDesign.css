@@ -3260,7 +3260,7 @@ section.goodProcess {
 } */
 
 
-.processVideoOne .processVideo{width:690px !important; height: 371px !important; max-width: 100%; display: flex; justify-content: center;}
+.processVideoOne .processVideo{width:690px !important; height: 360px !important; max-width: 100%; display: flex; justify-content: center;}
 .processVideoOne .win video{object-fit: cover;}
 
 
@@ -3613,6 +3613,6 @@ section.goodProcess {
   .topgapestart .processVideo{margin-bottom:10px;}
 
   /* .processVideoOne .win video{width: 335px !important; height: 212px !important;} */
-  .processVideoOne .processVideo{width: 300px !important; height: 178px !important; margin:0 auto 20px;}
+  .processVideoOne .processVideo{width: 300px !important; height: 176px !important; margin:0 auto 20px;}
   .processVideo13{width: 300px !important; height: auto !important; margin: 0 auto 25px;}
 }
