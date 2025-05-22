@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import Select, { components } from "react-select";
@@ -14,7 +14,9 @@ const FormZero = ({ setCurrentComponent }) => {
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+   useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    },[])
   const DropdownIndicator = (props) => {
     const { selectProps } = props;
     const { value } = selectProps;

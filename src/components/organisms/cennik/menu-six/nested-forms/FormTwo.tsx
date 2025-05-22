@@ -1,15 +1,14 @@
 import { savePriceListFormData } from "@/redux/cennik/pricelistSlice";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Modal from "react-modal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 
 const FeedbackSection = ({ setCurrentComponent }) => {
   const { isLoading, screenData } = useSelector((state) => state.priceList);
-  const { formThree } = screenData?.cardMenu?.menuSixth || "";
-  const { modalInfo } = formThree || "";
+  const { formThree } = screenData?.cardMenu?.menuSixth || {};
+  const { modalInfo } = formThree || {};
 
   const [textAreaValue, setTextAreaValue] = useState("");
   const [inputValue, setInputValue] = useState("");
@@ -17,21 +16,24 @@ const FeedbackSection = ({ setCurrentComponent }) => {
 
   const dispatch = useDispatch();
 
-  // Ref for scroll to top
+  // Reference to scroll target
   const topRef = useRef(null);
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // Scroll into view when component loads
+  useEffect(() => {
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
-  // Count the number of letters (excluding spaces) in the textarea and input field
+  // Count non-space characters
   const textAreaLetterCount = textAreaValue.replace(/\s+/g, "").length;
   const inputLetterCount = inputValue.replace(/\s+/g, "").length;
 
   const handleNext = (e) => {
     e.preventDefault();
 
-    // Scroll to top div
+    // Scroll to form top again on button click
     if (topRef.current) {
       topRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -49,6 +51,8 @@ const FeedbackSection = ({ setCurrentComponent }) => {
     }
   };
 
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="feedback_section" style={{ padding: "20px" }}>
       {/* Scroll target */}
@@ -56,9 +60,14 @@ const FeedbackSection = ({ setCurrentComponent }) => {
 
       <form onSubmit={handleNext}>
         <h2 style={{ fontSize: "20px", marginBottom: "10px" }}>
-          <span style={{ color: "#00bbff" }}>Napisz w kilku słowach</span> czym zajmuje się Twój biznes i co jest dla Ciebie ważne?
+          <span style={{ color: "#00bbff" }}>
+            Napisz w kilku słowach
+          </span>{" "}
+          czym zajmuje się Twój biznes i co jest dla Ciebie ważne?
         </h2>
-        <p style={{ fontSize: "14px", marginBottom: "10px" }}>{formThree?.section3_subtitle1}</p>
+        <p style={{ fontSize: "14px", marginBottom: "10px" }}>
+          {formThree?.section3_subtitle1}
+        </p>
 
         <textarea
           rows="5"
@@ -76,8 +85,12 @@ const FeedbackSection = ({ setCurrentComponent }) => {
           }}
         ></textarea>
 
-        <h2 style={{ marginTop: "20px", fontSize: "18px" }}>{formThree?.section3_title_2}</h2>
-        <p style={{ marginTop: "10px", marginBottom: "10px" }}>{formThree?.section3_subtitle2}</p>
+        <h2 style={{ marginTop: "20px", fontSize: "18px" }}>
+          {formThree?.section3_title_2}
+        </h2>
+        <p style={{ marginTop: "10px", marginBottom: "10px" }}>
+          {formThree?.section3_subtitle2}
+        </p>
 
         <input
           type="text"
@@ -113,11 +126,13 @@ const FeedbackSection = ({ setCurrentComponent }) => {
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
-        contentLabel="Example Modal"
+        contentLabel="Validation Modal"
         className="CenikModal"
         overlayClassName="Overlay"
       >
-        <p style={{ fontSize: "16px", marginBottom: "20px" }}>{modalInfo?.modal_info}</p>
+        <p style={{ fontSize: "16px", marginBottom: "20px" }}>
+          {modalInfo?.modal_info}
+        </p>
         <div className="cenikBtnDiv" style={{ textAlign: "right" }}>
           <button
             onClick={closeModal}
@@ -133,7 +148,6 @@ const FeedbackSection = ({ setCurrentComponent }) => {
             {modalInfo?.modal_button1Text}
           </button>
         </div>
-
         <div
           className="close"
           onClick={closeModal}

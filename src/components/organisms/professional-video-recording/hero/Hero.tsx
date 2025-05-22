@@ -127,8 +127,15 @@ const Hero = () => {
   const { heroSection } = screenData;
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [hovered, setHovered] = React.useState(false);
+  const [isMobile, setIsMobile] = React.useState(false);
   const playerRef = React.useRef(null);
   const osClass = useOsClass();
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth <= 768);
+    }
+  }, []);
 
   const handlePlayVideo = () => {
     const iframe = document.querySelector("iframe");
@@ -155,7 +162,11 @@ const Hero = () => {
     >
       <ReactPlayer
         ref={playerRef}
-        url={heroSection?.background_video}
+        url={
+          isMobile
+            ? "https://marketersi.cdn.prismic.io/marketersi/aC8FuydWJ-7kSb33_marketersi2_Video_1-FHD6.5mbps-1-.mp4"
+            : heroSection?.background_video
+        }
         playing={true}
         loop={true}
         muted={!isPlaying}

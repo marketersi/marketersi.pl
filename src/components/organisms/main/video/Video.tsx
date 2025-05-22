@@ -1,37 +1,37 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 import { gsap } from "gsap";
-import { useGSAP } from '@gsap/react';
+import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import style from "./video.module.css";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-// Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Video = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
   const [showCloseBtn, setShowCloseBtn] = useState(false);
   const { brandSection } = screenData;
-
-  const [width, setWidth] = useState('100%');
+  const [width, setWidth] = useState("100%");
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const videoRef = useRef(null);
+  const [videoUrl, setVideoUrl] = useState(null);
+  const osClass = useOsClass();
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setWidth('70%');
+        setWidth("70%");
       } else {
-        setWidth('90%');
+        setWidth("90%");
       }
     };
-
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Initial call to set the width
-
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -40,15 +40,9 @@ const Video = () => {
     video.preload = "auto";
     video.oncanplaythrough = () => setVideoUrl(video.src);
   }, [brandSection?.banner_video]);
-  
-
-  const [isPopupOpen, setPopupOpen] = useState(false);
-  const videoRef = useRef(null);
-  const [videoUrl, setVideoUrl] = useState(null);
 
   useGSAP(() => {
     const element = videoRef.current;
-
     if (element) {
       gsap.fromTo(
         element,
@@ -56,14 +50,13 @@ const Video = () => {
         {
           scale: 2.2,
           skewY: 0,
-          duration:2.5,
+          duration: 2.5,
           ease: "sine.out",
           scrollTrigger: {
             trigger: element,
-            start: "top 100%", // Starts when the top of the element hits 80% of the viewport
+            start: "top 100%",
             end: "top 35%",
-            scrub: 1, // Smooth animation while scrolling
-            
+            scrub: 1,
           },
         }
       );
@@ -71,7 +64,6 @@ const Video = () => {
   }, []);
 
   const openPopup = () => {
-    console.log("callledddddddd")
     setPopupOpen(true);
   };
 
@@ -79,26 +71,22 @@ const Video = () => {
     setPopupOpen(false);
   };
 
-  const osClass = useOsClass();
-
   return (
     <>
       <div className="container">
-        <div
-          className={`${style.mainVideoDiv}`}
-          ref={videoRef}
-        >
+        <div className={`${style.mainVideoDiv}`} ref={videoRef}>
           <div className={`${osClass} bannerVideoMain`}>
-          <ReactPlayer
-    url={videoUrl || brandSection?.banner_video}
-    playing={true}
-    loop={true}
-    muted={true}
-    width="100%"
-    height="auto"
-    pip={false}
-    playsinline
-  />
+            <ReactPlayer
+              url={videoUrl || brandSection?.banner_video}
+              playing
+              loop
+              muted
+              width="100%"
+              height="auto"
+              pip={false}
+              playsinline
+              controls={false}
+            />
             <div className={style.youtubeIcon} onClick={openPopup}>
               <svg
                 className="h-[60%] w-full"
@@ -119,36 +107,40 @@ const Video = () => {
       {isPopupOpen && (
         <div className="popup-overlay" onClick={closePopup}>
           <div className={`popup-content ${osClass}`}>
-            
-
-          <ReactPlayer
-      url={brandSection?.banner_video}
-      playing={true}
-      loop={true}
-      muted={false}
-      width={width}
-      height="auto"
-      className="popupVideo"
-      style={{ borderRadius: "12.7687px", margin: "auto", border: "0", overflow:"hidden"}}
-      pip={false}
-      controls={true}
-      onMouseEnter={() => setShowCloseBtn(true)}
-      onMouseLeave={() => setShowCloseBtn(false)}
-      playsinline
-    />
-             {showCloseBtn && (
-              <>  <button className="close-btn" onClick={closePopup}>
-              X
-            </button>
-            </>
-        
-        )}
-        <div className="closebtn-div" onMouseEnter ={() => {console.log("Hertyugujhgyufgu");setShowCloseBtn(true)}} onMouseLeave={() => setShowCloseBtn(false)}></div>
+            <ReactPlayer
+              url={brandSection?.banner_video}
+              playing
+              loop
+              muted={false}
+              width={width}
+              height="auto"
+              pip={false}
+              controls
+              playsinline
+              style={{
+                borderRadius: "12.7687px",
+                margin: "auto",
+                border: "0",
+                overflow: "hidden",
+              }}
+              onMouseEnter={() => setShowCloseBtn(true)}
+              onMouseLeave={() => setShowCloseBtn(false)}
+            />
+            {showCloseBtn && (
+              <button className="close-btn" onClick={closePopup}>
+                X
+              </button>
+            )}
+            <div
+              className="closebtn-div"
+              onMouseEnter={() => setShowCloseBtn(true)}
+              onMouseLeave={() => setShowCloseBtn(false)}
+            ></div>
           </div>
         </div>
       )}
 
-       <style jsx>{`
+      <style jsx>{`
         .popup-overlay {
           position: fixed;
           top: 0;
@@ -164,84 +156,71 @@ const Video = () => {
 
         .popup-content {
           overflow: auto;
-          position:relative;
+          position: relative;
         }
 
         .close-btn {
           position: absolute;
           top: -8px;
-          right:0.5%;
-          background:transparent;
+          right: 0.5%;
+          background: transparent;
           color: white;
           border: none;
           border-radius: 5px;
-          padding:5px;
+          padding: 5px;
           cursor: pointer;
           font-weight: 500;
-          display:none;
+          display: none;
         }
 
-        
+        .popup-content:hover .close-btn {
+          display: block;
+        }
 
-        .popup-content:hover .close-btn{display:block}
-        
         @media (max-width: 1520px) {
-        .bannerVideoMain{width:495px !important; max-width: 495px !important;}
+          .bannerVideoMain {
+            width: 495px !important;
+            max-width: 495px !important;
+          }
         }
 
         @media (max-width: 600px) {
-          .bannerVideoMain{width: 160px !important; max-width: 160px !important; height:auto; left:0; right:0; transform: translate(0, 0);}
-          .hero_heroVideo__Mgtsk video{display:block;}
-          .popupVideo{border-radius:15px !important; border: 1px solid #fff !important; width: 90% !important;}
-          
-        }
-         .closebtn-div{position: absolute;
-          top: 0px;
-          right:12.5%;
-          background:transparent;
-          color: white;
-          border: block;
-          border-radius: 5px;
-          padding:5px;
-          width:30px;
-          height:30px;
-          cursor: pointer;
-          font-weight: 900;
+          .bannerVideoMain {
+            width: 160px !important;
+            max-width: 160px !important;
+            height: auto;
+            left: 0;
+            right: 0;
+            transform: translate(0, 0);
           }
-
-        /* Default width for mobile view */
-        .video-container {
-          width: 100%;
+          .popupVideo {
+            border-radius: 15px !important;
+            border: 1px solid #fff !important;
+            width: 90% !important;
+          }
         }
-        /* Width for web view (screen width greater than 768px) */
+
+        .closebtn-div {
+          position: absolute;
+          top: 0px;
+          right: 12.5%;
+          background: transparent;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+
         @media (min-width: 768px) {
           .video-container {
             width: 70%;
-            margin: auto; /* Center the video player */
+            margin: auto;
           }
-
-           .close-btn {
-          position: absolute;
-          top: 0px;
-          right:12.5%;
-          background:transparent;
-          color: white;
-          border: none;
-          border-radius: 5px;
-          padding:5px;
-          cursor: pointer;
-          font-weight: 500;
-          display:none;
+          .close-btn {
+            top: 0px;
+            right: 12.5%;
+          }
         }
-
-         
-        }
-
-        
-
       `}</style>
-
-      
     </>
   );
 };
