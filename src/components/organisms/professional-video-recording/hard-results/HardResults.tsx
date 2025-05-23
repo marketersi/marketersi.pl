@@ -19,8 +19,11 @@ const HardResult = () => {
       <Container>
         <div className={style.hardResult}>
           <div className={style.Content}>
-            <h2 className={style.hardMB}>{section4?.title}</h2>
-            <h3 className={style.gradientBG}>- {section4?.subtitle}</h3>
+            {/* <h2 className={style.hardMB}>{section4?.title}</h2> */}
+            <h2>Przekaz,<br/> który działa - </h2>
+            <h3>Wyniki, które mówią <br/>
+               same za siebie</h3>
+            {/* <h3 className={style.gradientBG}>- {section4?.subtitle}</h3> */}
             {/* <img src={section4?.image_url} alt="" className={style.hardImg} /> */}
             <p>{section4?.paragraph_1}</p>
             <p>{section4?.paragraph_2}</p>
@@ -129,8 +132,13 @@ const HardResult = () => {
               playsinline
             /> */}
             <div className={style.fontCustomAdd}>
-              <h3>{section7?.bottom_title}</h3>
-            
+              {/* <h3>{section7?.bottom_title}</h3> */}
+            <h3>
+              Czas działać – <br/>
+              stwórz z nami <br/>
+              wideo, które <br/>
+              robi różnicę
+            </h3>
               <h4 className={style.hardBottomContent}>
                 {section7?.quoted_title}
               </h4>
