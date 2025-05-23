@@ -18,8 +18,11 @@ const HardResult = () => {
       <Container>
         <div className={style.hardResult}>
           <div className={style.Content}>
-            <h2 className={style.hardMB}>{section4?.title}</h2>
-            <h3 className={style.gradientBG}>- {section4?.subtitle}</h3>
+            {/* <h2 className={style.hardMB}>{section4?.title}</h2>
+            <h3 className={style.gradientBG}>- {section4?.subtitle}</h3> */}
+            <h2 className={style.hardMB}>Celujemy w jedno</h2>
+<h3 >konkretne wyniki dla Twojej marki</h3>
+
             {/* <img src={section4?.image_url} alt="" className={style.hardImg} /> */}
             <p>{section4?.paragraph_1}</p>
             <p>{section4?.paragraph_2}</p>
