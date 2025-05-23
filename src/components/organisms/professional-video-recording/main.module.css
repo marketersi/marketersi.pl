@@ -1,11 +1,12 @@
 /* ================================================== enter================================= */
 .enter {
-  padding: 0px 0 10px;
+  padding: 0px 0 30px;
 }
 
 .Content {
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .enter img {
@@ -19,24 +20,25 @@
   text-align: center;
   font-weight: 700;
   color: #333333;
-  margin:70px 0 35px 0;
+  margin: 70px 0 70px 0;
 }
 
 .Content h3 {
-  font-size: 48px;
+  font-size: 50px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   color: #333333;
-  margin: 0 0 70px -50px;
+  margin: 0 0 70px 0;
 }
 
 .Content h4 {
   font-size: 28px;
-  line-height:50px;
+  line-height: 50px;
   font-weight: 600;
   text-align: left;
   color: #333333;
   margin: 0 0 50px 0px;
+  
 }
 
 .Content h4 span {
@@ -71,9 +73,9 @@
 
 /* ================================================== number================================= */
 .numbers {
-  padding: 0px 0 10px;
+  padding: 0px 0 30px;
 }
-
+.numbers h2{margin-top:0;}
 .numbers h2 span {
   font-weight: 800;
   background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
@@ -97,25 +99,25 @@
 
 .gradientBG {
   font-weight: 600;
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 198, 2, 0),
-    var(--brand-blue)
-  );
+  background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #ffc602);
   padding: 0 10px;
   border-radius: 100px;
-  display: inline-block;
+  display:block;
+  /* width: 77%; */
+  margin:20px 0 70px !important;
 }
 
 .hardMB {
   margin-bottom: 10px !important;
 }
 
+.hardResult h2{margin-top:0;}
 .hardResult h4 {
   font-size: 45px;
   text-align: left;
   font-weight: 500;
   color: #333333;
+  font-weight: 50px;
   margin: 0 0 50px 0px;
   line-height: normal;
 }
@@ -136,12 +138,6 @@
 img.hardImg {
   margin: 0 0 50px;
 }
-
-
-.numbersDiv .Content h2{margin-top:-18px;}
-.hardResulth2 .Content h2{margin-top:30px; margin-left: -10px; margin-right: -10px;}
-.hardResulth2 .Content h3{margin-left:-34px; margin-right:-34px; margin-top:20px;}
-.hardResulth2 h4{font-size: 28px; font-weight: 300; line-height: 50px;}
 
 /* ================================================== order================================= */
 .order {
@@ -232,6 +228,10 @@ img.hardImg {
   font-weight: 400;
 }
 
+.ratingNumber p span {
+  font-weight: 600;
+}
+
 .pinkBG {
   padding: 50px 0;
   background-image: linear-gradient(173deg, #f5f5f5 53%, #fbb1b6);
@@ -243,12 +243,14 @@ img.hardImg {
   display: block;
 }
 
-/* .brandingHeading {
-  font-size: 55px !important;
-} */
-.hardResulth2 .customDivCont h2{}
-.fontCustomAdd h3{font-size: 85px; line-height: 77px; font-weight: 700; margin-bottom:40px;}
-.fontCustomAdd h4{text-align: center;}
+.brandingHeading {
+  font-size: 35px !important;
+}
+.fontSmall{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
 
 /* -------------------------------media screen---------------------- */
 @media screen and (max-width: 1024px) {
@@ -296,26 +298,32 @@ img.hardImg {
   }
 }
 
+
+@media screen and (max-width: 991px) {
+  .overflow-div .WidthContent1, .OurClients_Card_Container, .container{padding:0 15px; width: 92vw !important; max-width: 92vw !important; margin-left:auto !important; margin-right:auto !important;}
+  .Content h2{margin-left:0;}
+}
+
+
 @media screen and (max-width: 767px) {
   .Content h2 {
-    font-size: 34px !important;
-    line-height: 34px;
-    font-weight: 600;
-    margin:40px 0;
+    font-size: 30px !important;
+    line-height:26px;
+    font-weight:700;
+    margin: 0 0 40px 0px;
   }
 
   .Content h3 {
     font-size: 20px;
-    margin: 20px 0 40px 0px;
+    margin: 0 0 70px 0px;
   }
-
-  .Content h4{font-weight: 700; font-size: 22px; line-height: 24px;}
-  .numbersDiv .Content h2{margin-top:0;}
-  .numberMB{margin-bottom:40px !important;}
-  
 
   img.hardImg {
     width: 90%;
+  }
+  .pinkBG {
+    padding: 0px 0;
+    
   }
 
   .ratingLogoImg {
@@ -358,9 +366,7 @@ img.hardImg {
   }
 
   .hardResult h4 {
-    font-size: 25px;
-    line-height:34px;
-    margin-top:0;
+    font-size: 28px;
     text-align: center !important;
   }
   .Content p {
@@ -368,20 +374,31 @@ img.hardImg {
     line-height: 32px;
   }
   .hardBottomContent {
-    font-size: 24px !important;
-    line-height:24px !important;
+    font-size: 35px !important;
   }
   .numbers {
-    padding: 0px 0 0px;
+    padding: 0px 0 0;
   }
   .enter {
-    padding: 0px 0 0px;
+    padding: 50px 0 10px;
   }
 
+  .Content h4{
+    font-size: 22px;
+    line-height:24px;
+    font-weight:700;
+    color:#333;
+    text-align: left;
+  }
 
-  .hardResulth2 .Content h2, .hardResulth2 .Content h3{margin-left:0; margin-right:0;}
-  
-  .hardResulth2 .Content h3{margin-top:0; font-size:34px; line-height:34px;}
-  .hardBottomContent h4{font-size: 24px !important; line-height: 24px !important;}
-  
+  .hardResult h4{
+    font-size: 25px;
+    line-height:34px;
+    margin-top:0;
+  }
+
+  .gradientBG{margin-left:0px !important; margin-right:0px !important;}
+
+  .hardResult .Content h3{font-size: 34px; line-height: 34px; font-weight:800; margin-bottom:40px !important;  margin-top:0px !important;}
+
 }

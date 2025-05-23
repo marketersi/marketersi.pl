@@ -29,18 +29,18 @@ const AfterBanner = () => {
     img: "https://images.prismic.io/marketersi/Z-0nyHdAxsiBwOEK_step-3.png?auto=format,compress",
     desc: "Zaczynamy proces łącząc surowy materiał w spójną całość. Poprzez staranny montaż, dopracowane przejścia, efekty wizualne i dźwiękowe tworzymy film, który przemówi do Twoich odbiorców. Każdy detal jest dopracowany, aby rezultat był zgodny z Twoją wizją i wyróżniał Twoją markę."
     },
-    {
-    number: "04",
-    title: "Realizacja zdjęć",
-    img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEJ_step-4.png?auto=format,compress",
-    desc: "Zgrana ekipa, profesjonalny sprzęt i dbałość o szczegóły – to nasza recepta na idealne ujęcia. Pracujemy dynamicznie, ale z pełnym profesjonalizmem, dostarczając materiał, który wyróżni Twoją markę."
-    },
-    {
-    number: "05",
-    title: "Tworzenie scenariusza",
-    img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEI_step-5.png?auto=format,compress",
-    desc: "Na tym etapie zamieniamy pomysły w konkretne kroki. Scenariusz i plan techniczny zapewniają, że realizacja przebiegnie sprawnie, a film będzie przemawiać językiem Twoich odbiorców."
-    }
+    // {
+    // number: "04",
+    // title: "Realizacja zdjęć",
+    // img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEJ_step-4.png?auto=format,compress",
+    // desc: "Zgrana ekipa, profesjonalny sprzęt i dbałość o szczegóły – to nasza recepta na idealne ujęcia. Pracujemy dynamicznie, ale z pełnym profesjonalizmem, dostarczając materiał, który wyróżni Twoją markę."
+    // },
+    // {
+    // number: "05",
+    // title: "Tworzenie scenariusza",
+    // img: "https://images.prismic.io/marketersi/Z-0nx3dAxsiBwOEI_step-5.png?auto=format,compress",
+    // desc: "Na tym etapie zamieniamy pomysły w konkretne kroki. Scenariusz i plan techniczny zapewniają, że realizacja przebiegnie sprawnie, a film będzie przemawiać językiem Twoich odbiorców."
+    // }
     ];
   
 
