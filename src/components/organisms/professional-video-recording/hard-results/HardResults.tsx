@@ -139,7 +139,7 @@ const HardResult = () => {
               wideo, które <br/>
               robi różnicę
             </h3>
-              <h4 className={style.hardBottomContent}>
+              <h4 className={style.hardBottomContent} style={{ textAlign: "center" }}>
                 {section7?.quoted_title}
               </h4>
             </div>

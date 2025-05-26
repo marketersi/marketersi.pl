@@ -130,8 +130,16 @@ const HardResult = () => {
               playsinline
             /> */}
 
-            <h2 className={style.brandingHeading2}>Jesteśmy tu po to, by <br />sprawić, że każdy kadr <br />w Twoim filmie <br />będzie miał znaczenie</h2>
+            <h2 className={style.brandingHeading2}>Jesteśmy tu po to,<br />
+              by sprawić,<br />
+              że każdy kadr<br />
+              w Twoim filmie <br />
+              będzie miał znaczenie
+              </h2>
             <p>Skontaktuj się z nami, aby dowiedzieć się <br />więcej o naszych usługach i umówić się <br />na konsultację.</p>
+              <h4 className={style.hardBottomContent} style={{ textAlign: "center" }}>
+                Marketersi eksperci cytowani są przez:
+              </h4>
             <div className={`mb-3  ${style.ratingLogoImg}`}>
               <Image
                 src={section7?.image_url_1}
