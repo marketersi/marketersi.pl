@@ -60,10 +60,12 @@
 .replies .customer_replies_container{padding-bottom:0; box-shadow:0px 0 16px 1px rgba(0, 0, 0, 0.2);}
 
 
-.bannerflex{display: flex; align-items: center; grid-gap:18px;}
-.customWidth{min-width: 520px;}
-.customWidth2, .customWidth3{width:50%;}
+.bannerflex{display: flex; align-items: center; grid-gap:18px; max-width:1100px; margin:0 auto;}
+.customWidth{min-width:520px;}
+.customWidth2, .customWidth3{width:35%; text-align: center;}
 .customWidth2{order:4;}
+
+
 
 
 

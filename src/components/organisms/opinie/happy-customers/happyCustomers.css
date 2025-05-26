@@ -16,7 +16,7 @@
 .customer_replies_container h1 {
   margin-bottom: 40px;
   font-weight: 500;
-  list-style: 1.2;
+  line-height: 58px;
   font-size: 52px;
 }
 
@@ -33,6 +33,15 @@
 .accordion-container {
   margin: 0 auto;
   max-width: 70%;
+}
+
+span.repliesSPan {
+    background: #00bfff;
+    color: #fff;
+    padding: 2px 19px;
+    line-height: 60px;
+    border-radius: 12px;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 1024px) {

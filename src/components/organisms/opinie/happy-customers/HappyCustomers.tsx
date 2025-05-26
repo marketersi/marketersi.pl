@@ -128,7 +128,8 @@ const HappyCustomers = () => {
       </div>
       <div className="replies">
         <div className="customer_replies_container">
-          <h1>{customerReplies.title}</h1>
+          {/* <h1>{customerReplies.title}</h1> */}
+          <h1><span className="repliesSPan">Odkryj, dlaczego</span> nasi klienci mówią: Marketersi to była najlepsza decyzja!</h1>
           <div>
          
             <Slider {...settings}>

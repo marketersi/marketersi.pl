@@ -68,7 +68,7 @@
 
 .cardReview {
   width:calc(100% - 2px);
-  border:1px solid #d9d9d9;
+  /* border:1px solid #d9d9d9; */
 }
 
 .reviewMainImg {
@@ -729,8 +729,9 @@
 }
 
 .opinionBanner img {
-  width: 90%;
-  height: 80%;
+  width: auto;
+  max-width:100%;
+  height: 210px;
 }
 img.opinionBnnaerImg {
   margin-top: 0px;
