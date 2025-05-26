@@ -135,7 +135,7 @@
 /* ============personal card============= */
 .personalCard {
   background: #f6f6f6;
-  padding: 50px;
+  padding: 50px 26px;
   border-radius: 30px;
   box-shadow: 4px 4px 15px 0px #f6f6f6, 0px 0px 0px 0px #fff,
     2px 2px 2px 0px #fff inset, -2px -2px 2px 0px #c7c7c7 inset;

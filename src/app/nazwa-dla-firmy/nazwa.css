@@ -131,12 +131,27 @@ img.names-custom-image {
 }
 .red-link {
   color:#00bbff;
-  /* text-decoration: underline; */
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
   line-height: 21px;
 }
+
+.red-link .orange-link{
+  position: relative;
+}
+.red-link .orange-link:after{
+  content:'';
+  position:absolute;
+  top:100%; 
+  left:0;
+  right:0;
+  width:100%;
+  border-bottom:2px solid #00bfff;
+}
+
+.red-link:hover .orange-link:after{border-bottom-style: dotted;}
+
 .optonsahgasds{
   font-size: 32px !important;
   font-weight: 400 !important;
@@ -145,7 +160,7 @@ img.names-custom-image {
   margin-bottom: 30px !important;
 }
 .red-link :hover{
-  /* text-decoration: dotted; */
+  text-decoration: dotted;
 }
 .projects-custom-gray-text {
   color: #848484;
