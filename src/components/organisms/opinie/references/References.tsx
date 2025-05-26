@@ -196,8 +196,8 @@ export default function References() {
         <div className={style.opinionContainer}>
           <div className={style.opinionContent}>
             <h2>Budujemy relacje na lata.</h2>
-            <h4>
-              Sprawdź, co mówią <br />o nas firmy, które <br />
+            <h4 style={{textAlign:"center"}}>
+              Sprawdź, co mówią  o nas firmy, które
               nam zaufały.
             </h4>
           </div>
@@ -227,9 +227,9 @@ export default function References() {
             <div className={style.buttonContainer}>
               {shouldShowShowAllButton && (
                 <div onClick={handleShowAll} className={style.showAllbtn}>
-                  Pokaz wszystkie
-                  <div className={style.googlePlay}>
-                    <svg
+                  {/* Pokaz wszystkie */}
+                  {/* <div className={style.googlePlay}> */}
+                    {/* <svg
                       data-name="Layer 1"
                       id="Layer_1"
                       viewBox="0 0 64 64"
@@ -241,8 +241,8 @@ export default function References() {
                         data-name="&lt;Compound Path&gt;"
                         id="_Compound_Path_"
                       />
-                    </svg>
-                  </div>
+                    </svg> */}
+                  {/* </div> */}
                 </div>
               )}
 
