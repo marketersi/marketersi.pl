@@ -125,25 +125,25 @@ const osClass = useOsClass();
             Zamów bezpłatne badanie marketingu – to nic nie kosztuje,<br />
             a może zmienić wiele.
           </p>
-          <div>
-            <motion.button
-              className="FinalBTN"
-              whileHover={{ scale: 0.97 }}
-              whileTap={{ scale: 0.9 }}
-            >
-                  Zamów bezpłatne badanie marketingu
-            </motion.button>
-          </div>
+         <div className="buttonWrapper">
+        <motion.a
+          href="https://marketersi.pl/zamow-bezplatne-badanie"
+          className="FinalBTN bigBtn"
+          whileHover={{ scale: 0.97 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Zamów bezpłatne badanie marketingu
+        </motion.a>
 
-          <div>
-            <motion.button
-              className="FinalBTN"
-              whileHover={{ scale: 0.97 }}
-              whileTap={{ scale: 0.9 }}
-            >
-                  Wróć do strony głównej
-            </motion.button>
-          </div>
+        <motion.a
+          href="/"
+          className="FinalBTN smallBtn"
+          whileHover={{ scale: 0.97 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Wróć do strony głównej
+        </motion.a>
+      </div>
 
         </div>
 
