@@ -1043,15 +1043,17 @@ img.opinionBnnaerImg {
   }
 
   .personallyContainer {
-    margin-top: 350px;
+    margin-top: 280px;
   }
 
   .personallMan {
+    position: absolute;
     display: block;
-    top: -385px;
+    top: -310px;
     z-index: -1;
     width: 100%;
     right: 0;
+    border-radius:20px;
     /* width: -webkit-fill-available; */
   }
 
@@ -1116,9 +1118,10 @@ img.opinionBnnaerImg {
   .showAllbtn{font-size: 14px; gap: 7px;}
   .googlePlay{width: 20px; height: 20px;}
   .googlePlay svg{width:12px; height:12px;}
+  .personallyCard{border-radius:20px;}
   .personallyCard p{font-size: 20px;}
 
-  .reviewLogoImg{margin:8px 15px 0;}
+  .reviewLogoImg{margin:8px auto 0;}
 
   .google h4{margin-bottom:10px; padding-bottom:0;}
   .google .brandBoxOpinie h4{font-size:16px; margin-bottom:0px;}
