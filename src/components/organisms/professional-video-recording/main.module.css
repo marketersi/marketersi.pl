@@ -313,6 +313,8 @@ img.hardImg {
     margin: 0 0 40px 0px;
   }
 
+  .hardResult .Content h2{font-weight:600;}
+
   .Content h3 {
     font-size: 20px;
     margin: 0 0 70px 0px;

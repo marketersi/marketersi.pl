@@ -29,7 +29,7 @@ na marketing miesięcznie?
       {/* <p>Im precyzyjniejsza kwota, tym skuteczniejszą<br/>
 strategię możemy zaproponować
 </p>  */}
-      <p className="range_description">{formEight?.description_2}</p>
+      {/* <p className="range_description">{formEight?.description_2}</p> */}
       <div className="checkBOxContainer">
         {/* <Row>
           {formEight?.selectOptions.map((option, index) => (

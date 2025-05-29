@@ -163,7 +163,7 @@
   .range_description.lineheight34px{font-size:13.5px !important;}
   .goal_description.lineheight34px{margin-bottom:0 !important;}
 
-  .BrRemoveMobile br{display:none;}
+  /* .BrRemoveMobile br{display:none;} */
 
   .input-container {
     margin-top: 50px;

@@ -647,12 +647,7 @@
   color: var(--brand-blue);
 }
 
-.personallMan {
-  /* position: absolute;
-  width: 400px;
-  z-index: 1;
-  left: 0; */
-
+/* .personallMan {
   position: absolute;
   width: 550px;
   z-index: 1;
@@ -661,6 +656,22 @@
   left: auto;
   right: 100%;
   margin-right: -380px;
+} */
+.personallMan {
+  position: relative;
+  width: 550px;
+  z-index: 1;
+  top: 50%;
+  border-radius: 40px;
+  left: 50%;
+  margin-left: -100px;
+  border: 1px solid hsl(0deg 0% 0% / 40%);
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .personallHand {
@@ -751,22 +762,26 @@ img.opinionBnnaerImg {
 
 @media only screen and (max-width: 1600px) {
   .opinionContent h1{margin-left:0; margin-right:0;}
-  .personallMan{width:460px;}
+  .personallMan{width:460px; margin-left:-55px;}
 }
 @media only screen and (max-width: 1200px) {
   .personallMan{
-    width: 340px;
-    margin-right: -300px;
+    width: 320px;
+    margin-left: -16px;
 }
 }
 @media only screen and (max-width: 991px) {
-  .personallMan {
-    position: absolute;
-    width: 400px;
-    z-index: 1;
-    left: 0;
-    display: none;
-  }
+  .personallMan{
+    top:auto;
+    left: auto;
+    margin:0 auto 30px;
+    display: block;
+    -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
 }
 @media only screen and (max-width: 1024px) {
   .opinionContent h1 {
@@ -860,13 +875,18 @@ img.opinionBnnaerImg {
 
 }
 
+@media only screen and (max-width: 991px) {
+  .opinionContent h1{font-size:46px; line-height:56px;}
+  .opinionBanner img{height:160px;}
+}
 
   @media only screen and (max-width: 767px) {
   .emoFace {
     width: 200px;
   }
   .opinionBanner img {
-    width: 70%;
+    width: 60%;
+    height: auto;
     margin-inline: auto;
     display: block;
     margin-top: 20px;
@@ -1043,7 +1063,7 @@ img.opinionBnnaerImg {
   }
   .opinionContent h1{font-size: 22px; line-height:22px; text-align: left; margin-left: 0; margin-right: -15px;}
   .opinionBanner{padding:20px 0 0;}
-  .opinionBanner img{margin-top:0; width:90%;}
+  .opinionBanner img{margin-top:0; width:70%;}
   .job, .teamsContainer, .opinionContainer, .ratingContainer, .personallyContainer{width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important;}
   .opinionContainer{max-width:none;}
   .opinionContainer .slick-slide{padding-right:0;}

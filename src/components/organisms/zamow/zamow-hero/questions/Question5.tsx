@@ -26,7 +26,7 @@ const Question5 = ({ handleNext }) => {
 
       {/* <p className="question_description">{formFive?.listHeading}</p> */}
       <p className="question_description BrRemoveMobile">
-        Możesz napisać krótko, np. “Moja strona nie przyciąga klientów”<br /> - “Nie wiem, jak wyróżnić moją ofertę”<br /> - “Nie wiem, co zmienić, żeby strona działała lepiej”<br /> - itp.
+        Możesz napisać krótko, np. “Moja strona nie przyciąga klientów” <span className="webgap"></span> - “Nie wiem, jak wyróżnić moją ofertę”<br /> - “Nie wiem, co zmienić, żeby strona działała lepiej”<br /> - itp.
       </p> 
       {/* <div className="list_p">
         {formFive?.listItems.map((item, index) => (

@@ -84,5 +84,5 @@ span.repliesSPan {
   .review_container{padding:40px 25px; width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important; margin: 0 auto !important; border-radius:15px; display: grid;}
   .customer_replies_container{width: calc(92vw - 24px) !important; max-width: calc(92vw - 24px) !important;}
   .replies .slick-arrow{display:none !important}
-  .review{padding:50px 0 0;}
+  .review{padding:30px 0 20px;}
 }
