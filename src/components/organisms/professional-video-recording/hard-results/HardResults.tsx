@@ -20,7 +20,7 @@ const HardResult = () => {
         <div className={style.hardResult}>
           <div className={style.Content}>
             {/* <h2 className={style.hardMB}>{section4?.title}</h2> */}
-            <h2>Przekaz,<br/> który działa - </h2>
+            <h2 className={style.hardMB}>Przekaz,<br/> który działa.</h2>
             <h3 className={style.gradientBG}>Wyniki, które mówią <br/>
                same za siebie</h3>
             {/* <h3 className={style.gradientBG}>- {section4?.subtitle}</h3> */}

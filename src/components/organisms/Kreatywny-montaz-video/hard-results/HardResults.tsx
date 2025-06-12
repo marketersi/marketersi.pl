@@ -136,7 +136,7 @@ const HardResult = () => {
               w Twoim filmie <br />
               będzie miał znaczenie
               </h2>
-            <p>Skontaktuj się z nami, aby dowiedzieć się <br />więcej o naszych usługach i umówić się <br />na konsultację.</p>
+            <p className='text-center'>Skontaktuj się z nami, aby dowiedzieć się <br />więcej o naszych usługach i umówić się <br />na konsultację.</p>
               <h4 className={style.hardBottomContent} style={{ textAlign: "center" }}>
                 Marketersi eksperci cytowani są przez:
               </h4>
