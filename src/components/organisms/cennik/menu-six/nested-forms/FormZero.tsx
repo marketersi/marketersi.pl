@@ -60,21 +60,39 @@ const FormZero = ({ setCurrentComponent }) => {
 
   const dispatch = useDispatch();
 
-  const handleButtonClick = () => {
-    let payload;
-    setIsButtonClicked(true);
-    if (!selectedOption) {
-      setTimeout(() => {
-        setIsButtonClicked(false);
-      }, 500);
-    } else {
-      payload = {
-        formZeroDropdownValueOne: selectedOption?.value,
-      };
-      dispatch(savePriceListFormData(payload));
-      setCurrentComponent(1);
-    }
-  };
+  // const handleButtonClick = () => {
+  //   let payload;
+  //   setIsButtonClicked(true);
+  //   if (!selectedOption) {
+  //     setTimeout(() => {
+  //       setIsButtonClicked(false);
+  //     }, 500);
+  //   } else {
+  //     payload = {
+  //       formZeroDropdownValueOne: selectedOption?.value,
+  //     };
+  //     dispatch(savePriceListFormData(payload));
+  //     setCurrentComponent(1);
+  //   }
+  // };
+const handleButtonClick = () => {
+  let payload;
+  setIsButtonClicked(true);
+  if (!selectedOption) {
+    setTimeout(() => {
+      setIsButtonClicked(false);
+    }, 500);
+  } else {
+    // Store scroll position before navigation
+    sessionStorage.setItem("scrollPosition", window.scrollY);
+
+    payload = {
+      formZeroDropdownValueOne: selectedOption?.value,
+    };
+    dispatch(savePriceListFormData(payload));
+    setCurrentComponent(1); // move to SliderSection
+  }
+};
 
   return (
     <div>

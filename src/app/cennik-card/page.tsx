@@ -84,7 +84,11 @@ const PriceListScreen = () => {
         </div>
       ) : (
         <section className="democontainer pb-3 text-center">
-              <h2 className="mt-5 heading-style">{title}</h2>
+              {/* <h2 className="mt-5 heading-style">{title}</h2> */}
+              <h2 className="mt-5 heading-style">Odblokuj Zyski z Marketersi:<br/>
+                  Pierwszy Krok<br/>
+                  ku Wielkim Zmianom
+                  </h2>
               <div className="mt-3">
                 <p className="subheading">
                   {sub_title

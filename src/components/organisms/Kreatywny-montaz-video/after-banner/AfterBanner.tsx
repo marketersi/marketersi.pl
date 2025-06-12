@@ -49,7 +49,7 @@ const AfterBanner = () => {
       {/* <Container> */}
         <div className={style.democontainer}>
           {/* <h1>Kreatywny montaż, <br />który ożywi Twoje Markę</h1> */}
-          <h1>Kreatywny montaż, <br />który ożywi <br className={style.mobileBR} />Twoje Markę</h1>
+          <h1>Kreatywny montaż, <br />który ożywi <br/><br className={style.mobileBR} />Twoje Markę</h1>
    <div className={style.BannerSubTitle}>Przekształcimy Twoje wideo <br className={style.mobileBR} />w potężne <br />narzędzie marketingowe.</div>
           <div className={style.BannerSupSubTitle}>Twój film, nasze profesjonalne wykończenie.</div>
 
