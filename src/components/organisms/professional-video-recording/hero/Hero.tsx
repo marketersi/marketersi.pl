@@ -205,11 +205,11 @@ const Hero = () => {
           <img
             src="/assets/images/Kliknij,-aby-obejrzec-z-dziekiem.png"
             alt="Kliknij, aby obejrzeć z dźwiękiem"
-            style={{
-              width: "130px",  // You can adjust size here if needed
-              height: "auto",
-              maxWidth: "100%",
-            }}
+            // style={{
+            //   width: "130px",  // You can adjust size here if needed
+            //   height: "auto",
+            //   maxWidth: "100%",
+            // }}
           />
         </div>
       )}
