@@ -203,7 +203,7 @@ const Hero = () => {
           }}
         >
           <img
-            src="/assets/images/Kliknij, aby obejrzec z dziekiem.jpg"
+            src="/assets/images/Kliknij,-aby-obejrzec-z-dziekiem.png"
             alt="Kliknij, aby obejrzeć z dźwiękiem"
             style={{
               width: "130px",  // You can adjust size here if needed
