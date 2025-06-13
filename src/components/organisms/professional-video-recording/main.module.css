@@ -97,8 +97,9 @@
   margin: 40px 0 0px;
 }
 
-.gradientBG {
-  font-weight: 600;
+.Content h3.gradientBG {
+  font-size:36px;
+  font-weight: 800;
   background-image: linear-gradient(90deg, rgba(255, 198, 2, 0), #00bbff);
   padding: 0 10px;
   border-radius: 100px;
@@ -112,6 +113,7 @@
 }
 
 .hardResult h2{margin-top:0;}
+/* .hardResult h2.hardMB, .hardResult h3.gradientBG{text-align: left;} */
 .hardResult h4 {
   font-size: 45px;
   text-align: left;
@@ -243,8 +245,10 @@ img.hardImg {
   display: block;
 }
 
-.brandingHeading {
+.Content h2.brandingHeading {
   font-size: 35px !important;
+  line-height:50px;
+ 
 }
 .fontSmall{
   font-size: 60px;
@@ -313,7 +317,8 @@ img.hardImg {
     margin: 0 0 40px 0px;
   }
 
-  .hardResult .Content h2{font-weight:600;}
+  .hardResult .Content h2.hardMB{font-size:42px !important; line-height:40px;}
+  .hardResult .Content h3.gradientBG{font-size:22px; line-height:26px;}
 
   .Content h3 {
     font-size: 20px;

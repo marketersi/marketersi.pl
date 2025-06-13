@@ -9,12 +9,11 @@ const Question7 = ({ handleNext }) => {
 
   // Start range from 1
   const [rangeValue, setRangeValue] = useState(1);
+  const dispatch = useDispatch();
 
   const handleRangeChange = (e) => {
     setRangeValue(Number(e.target.value));
   };
-
-  const dispatch = useDispatch();
 
   const handleButtonClick = () => {
     const payload = {
@@ -27,7 +26,7 @@ const Question7 = ({ handleNext }) => {
   return (
     <div className="zh_question range_container">
       <h2 className="lineheight34px">
-        Jaki jest szacunkowy miesięczny przychód Twojej firmy?
+        Jaki jest szacunkowy miesięczny<br />przychód Twojej firmy?
       </h2>
 
       <p className="goal_description lineheight34px">
@@ -53,16 +52,24 @@ const Question7 = ({ handleNext }) => {
         </>
       )}
 
-      {/* Range input */}
+      {/* Precise slider */}
       <input
         type="range"
         min={1}
-        max={100000}
+        max={20000} // Set max to something practical
         step={1}
         value={rangeValue}
         onChange={handleRangeChange}
+        inputMode="numeric"
         className="income_range"
       />
+
+      {/* Optional scale display */}
+      <div className="range_labels">
+        <span>1 zł</span>
+        <span>{rangeValue.toLocaleString("pl-PL")} zł</span>
+        <span>20 000 zł</span>
+      </div>
 
       {/* Next button */}
       <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">

@@ -39,7 +39,7 @@ const Teams = () => {
             {/* <img src={teams.img_one} alt="" /> */}
           </div>
           <div className={style.teamsCard}>
-            <Row className="align-items-start">
+            <Row className="align-items-center">
               <Col lg={6}>
                 {/* to be deleted */}
                 {/* <img className={style.maleImg} src={teams.img_two} alt="" /> */}

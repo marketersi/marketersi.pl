@@ -549,10 +549,14 @@ button.zh_preview_btn {
 
 
 .circleimage {
-    width: 200px;
-    height: 200px;
+        width: 202px;
+    height: 202px;
     margin: 50px auto 24px;
     border-radius: 50%;
+    border: 1px solid #fff;
+    background: #f0f0f0;
+    overflow: hidden;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.10);
 }
 
 .circleimage img {
@@ -569,10 +573,11 @@ button.zh_preview_btn {
     display: inline-block;
   }
 
-.AuccessWarningbox > span{display: block;}
+.AuccessWarningbox > span{display: block; margin:7px 0;}
+.AuccessWarningbox > span img{margin-right:5px;}
 .successMessageLine{color:#6aa950;}
 .ErrorMessageLine{color:#990000;}
-.BottomSuccessBox p{font-size:35px; line-height:45px; font-weight:300;}
+.BottomSuccessBox p{font-size:28px; line-height:38px; font-weight:300;}
 
 .FinalBTN{margin:10px;
     padding: 11px 18px;

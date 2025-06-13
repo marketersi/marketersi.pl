@@ -50,6 +50,20 @@ const osClass = useOsClass();
     <>
       {/* {showGif && <img src="/assets/congrats.gif" className="congrats_gif" />} */}
       {showGif && <div className='congrats_gif'><img src="/assets/congrats.gif" /></div>}
+   
+    {/* <video
+      controls
+      autoPlay
+      muted
+      loop
+      style={{ width: '100%', maxWidth: '800px' }}
+    >
+      <source
+        src="https://marketersi.cdn.prismic.io/marketersi/aEwR8rNJEFaPX8aY_stars-video.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video> */}
 
       <div className="question_14">
 
@@ -104,14 +118,29 @@ const osClass = useOsClass();
         </h6> */}
 
         <div className='AuccessWarningbox'>
-          <span><span className='successMessageLine'>If yes.</span> Jeśli możemy pomóc – umówimy Cię z ekspertem, który wskaże najlepszą drogę </span>
-          <span><span className='ErrorMessageLine'>If no.</span> Jeśli okaże się, że to nie to – dostaniesz od nas wartościowe wskazówki, które możesz wdrożyć samodzielnie.</span>
+          <span>
+            {/* <span className='successMessageLine'>If yes.</span>  */}
+            <img
+              src="https://images.prismic.io/marketersi/aEwLXbNJEFaPX8VY_Symbols-yes-1-.png?auto=format,compress"
+              alt="Yes"
+            />
+            Jeśli możemy pomóc – umówimy Cię z ekspertem, który wskaże najlepszą drogę 
+          </span>
+
+          <span>
+            {/* <span className='ErrorMessageLine'>If no.</span> */}
+            <img
+              src="https://images.prismic.io/marketersi/aEwLRLNJEFaPX8VU_Symbols-no-1-.png?auto=format,compress"
+              alt="No"
+            />
+            Jeśli okaże się, że to nie to – dostaniesz od nas wartościowe wskazówki, które możesz wdrożyć samodzielnie.
+          </span>
         </div>
 
         <div className='BottomSuccessBox'>
           <div className='circleimage'>
             <img
-              src="https://images.prismic.io/marketersi/aDb1oCdWJ-7kSn2x_Czeklista.png?auto=format,compress"
+              src="https://images.prismic.io/marketersi/aEwPBbNJEFaPX8YJ_rakieta-img.png?auto=format,compress"
               alt="Checklist"
               width={419}
               height={417}

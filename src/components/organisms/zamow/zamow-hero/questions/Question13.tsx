@@ -36,11 +36,11 @@ const Question13 = ({ handleNext }) => {
   return (
     <div className="zh_question working_container thrteenstepDiv">
       <h2>Ostatnie pytanie: <br/> Twój numer telefonu? </h2>
-      <p className="fontweight400">Czasami potrzebujemy krótkiej konsultacji przed badaniem. <br/>
-      </p>
-      <p>Jeśli pojawią się dodatkowe pytania, łatwiej będzie je szybko wyjaśnić.  <br/></p>
-
-      <p>Twój numer posłuży tylko do tego celu.   <br/></p>
+      <p><span className="fontweight400">Czasami potrzebujemy krótkiej konsultacji przed badaniem. </span>
+      <br/>
+      Jeśli pojawią się dodatkowe pytania, łatwiej będzie je szybko wyjaśnić.
+      <br/>
+      Twój numer posłuży tylko do tego celu.</p>
       <textarea
         rows={1}
         placeholder="Wpisz tu swoją odpowiedź"
