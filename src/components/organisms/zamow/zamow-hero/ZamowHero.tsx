@@ -6,53 +6,19 @@ import Questions from "./questions/Questions";
 import { useDispatch, useSelector } from "react-redux";
 import { saveExaminationFormData } from "@/redux/zamow/zamowSlice";
 
-const ZamowHero = () => {
+const ZamowHero = ({ progress, currentQuestion, handleNextQuestion }) => {
   const { isLoading, screenData } = useSelector((state) => state.examination);
   const { heroSection, ratingSection } = screenData || {};
-
-  const [progress, setProgress] = useState(0);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-
-  const totalQuestions = 14;
-  const handleNextQuestion = () => {
-    setProgress((prevProgress) => prevProgress + 100 / totalQuestions);
-    setCurrentQuestion((prevQuestion) => prevQuestion + 1);
-  };
-
-  const handlePreviousQuestion = () => {
-    if (currentQuestion > 0) {
-      setProgress((prevProgress) => prevProgress - 100 / totalQuestions);
-      setCurrentQuestion((prevQuestion) => prevQuestion - 1);
-    }
-  };
 
   return (
     <section>
       <Row>
         <Col className="text-center zamow-hero">
           {progress ? (
-            <>
-              <Questions
-                handleNext={handleNextQuestion}
-                currentQuestion={currentQuestion}
-              />
-              {progress && (
-                <div className="progress-bar-container">
-                  <motion.div
-                    className="progress-bar"
-                    initial={{ width: 0 }}
-                    animate={{ width: `${progress}%` }}
-                    transition={{ duration: 0.5 }}
-                  ></motion.div>{" "}
-                  <button
-                    className="back-button"
-                    onClick={handlePreviousQuestion}
-                  >
-                    COFNIJ
-                  </button>
-                </div>
-              )}
-            </>
+            <Questions
+              handleNext={handleNextQuestion}
+              currentQuestion={currentQuestion}
+            />
           ) : (
             <FormZero
               heroSection={heroSection}
@@ -78,74 +44,71 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {
-   
     const payload = {
       formZeroInputValue: inputValue,
     };
-
     console.log("payload 0 exam ui", payload);
     dispatch(saveExaminationFormData(payload));
     handleNextQuestion();
   };
 
-  const clickButton = ()=>{
-    settoggle(true)
-  }
+  const clickButton = () => {
+    settoggle(true);
+  };
 
   return (
     <>
       <h1>{heroSection?.title}</h1>
-      {/* <p>{heroSection?.info}</p> */}
-       <p className="mbCustom">Odkryj nowe horyzonty rozwoju Twojej firmy <br />W Marketersi oferujemy Ci unikalną możliwość spojrzenia<br/>
-        na Twoją stronę internetową <br className="showmobilebr" />i strategie marketingowe<br/>
+      <p className="mbCustom">
+        Odkryj nowe horyzonty rozwoju Twojej firmy <br />
+        W Marketersi oferujemy Ci unikalną możliwość spojrzenia
+        <br />
+        na Twoją stronę internetową <br className="showmobilebr" />
+        i strategie marketingowe
+        <br />
         z nowej perspektywy
-        </p> 
-      {/* <p style={{ fontSize: "16px" }}>{heroSection?.sub_info}</p> */}
-      <p className="smalltextp">100% poufności – Twoje zgłoszenie jest bezpieczne.</p>
+      </p>
+      <p className="smalltextp">
+        100% poufności – Twoje zgłoszenie jest bezpieczne.
+      </p>
 
-{toggle?
-     <div className="input-container">
-        <input
-          placeholder="Podaj adres swojej strony www."
-          className="zemow-hero-input"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <motion.button
-          className="zamow-hero-btn"
-          whileHover={{ scale: 0.97 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={handleButtonClick}
-        >
-        Start
-        </motion.button>
-
-      
-      </div> 
-:
-      <div className="banner-buttons">
-       
-        <motion.button
-          //className="zamow-hero-btn"
-          className="banner-btn"
-          whileHover={{ scale: 0.97 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={clickButton}
-        >
-         Badanie strony
-        </motion.button>
-
-        <motion.button
-          //className="zamow-hero-btn"
-            className="banner-btn"
-          whileHover={{ scale: 0.97 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={clickButton}
-        >
-        Badanie marketingu
-        </motion.button>
+      {toggle ? (
+        <div className="input-container">
+          <input
+            placeholder="Podaj adres swojej strony www."
+            className="zemow-hero-input"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+          <motion.button
+            className="zamow-hero-btn"
+            whileHover={{ scale: 0.97 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={handleButtonClick}
+          >
+            Start
+          </motion.button>
         </div>
-}
+      ) : (
+        <div className="banner-buttons">
+          <motion.button
+            className="banner-btn"
+            whileHover={{ scale: 0.97 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={clickButton}
+          >
+            Badanie strony
+          </motion.button>
+          <motion.button
+            className="banner-btn"
+            whileHover={{ scale: 0.97 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={clickButton}
+          >
+            Badanie marketingu
+          </motion.button>
+        </div>
+      )}
     </>
   );
 };

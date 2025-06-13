@@ -180,7 +180,7 @@ const Hero = () => {
           onClick={handlePlayVideo}
           style={{
             position: "absolute",
-            top: "50%",
+            top: "85%",
             left: "20px", // align to left with padding
             transform: "translateY(-50%)", // only vertical centering now
             cursor: "pointer",
@@ -193,7 +193,7 @@ const Hero = () => {
             alt="Kliknij, aby obejrzeć z dźwiękiem"
             width={200}
             height={100}
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       )}
