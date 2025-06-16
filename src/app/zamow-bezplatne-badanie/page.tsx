@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import BounceLoader from 'react-spinners/BounceLoader';
 
 const BookExamination = () => {
-  const { isLoading, screenData } = useSelector((state) => state.examination);
+  const { isLoading } = useSelector((state) => state.examination);
   const dispatch = useDispatch();
 
   const [progress, setProgress] = useState(0);
@@ -48,46 +48,43 @@ const BookExamination = () => {
   }
 
   return (
-    <>
-      <div>
-        <div className="bg_sunset"></div>
+    <div>
+      <div className="bg_sunset"></div>
 
-        {/* Progress bar moved here */}
-        {progress > 0 && (
-          <div className="progress-bar-container">
-            <motion.div
-              className="progress-bar"
-              initial={{ width: 0 }}
-              animate={{ width: `${progress}%` }}
-              transition={{ duration: 0.5 }}
-            />
-            <button className="back-button" onClick={handlePreviousQuestion}>
-              COFNIJ
-            </button>
-          </div>
-        )}
-
-        <Container className="zamow-container">
-          <ZamowHero
-            progress={progress}
-            currentQuestion={currentQuestion}
-            handleNextQuestion={handleNextQuestion}
+      {currentQuestion > 0 && (
+        <div className="progress-bar-container">
+          <motion.div
+            className="progress-bar"
+            initial={{ width: 0 }}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.5 }}
           />
-          <CustomerRating />
-          <Results />
-          <Accordion />
-          <div className="btt_btn_container">
-            <motion.button
-              onClick={handleBackToTop}
-              className="btt_btn"
-              whileHover={{ translateY: 5 }}
-            >
-              Wróć na górę
-            </motion.button>
-          </div>
-        </Container>
-      </div>
-    </>
+          <button className="back-button" onClick={handlePreviousQuestion}>
+            COFNIJ
+          </button>
+        </div>
+      )}
+
+      <Container className="zamow-container">
+        <ZamowHero
+          progress={progress}
+          currentQuestion={currentQuestion}
+          handleNextQuestion={handleNextQuestion}
+        />
+        <CustomerRating />
+        <Results />
+        <Accordion />
+        <div className="btt_btn_container">
+          <motion.button
+            onClick={handleBackToTop}
+            className="btt_btn"
+            whileHover={{ translateY: 5 }}
+          >
+            Wróć na górę
+          </motion.button>
+        </div>
+      </Container>
+    </div>
   );
 };
 
