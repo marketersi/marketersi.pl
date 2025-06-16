@@ -58,7 +58,7 @@ const Question13 = ({ handleNext }) => {
           style={{ cursor: !inputValue ? "not-allowed" : "pointer" }}
           disabled={!inputValue}
         >
-              Zatwierdź012
+              Zatwierdź
         </motion.button>
         {/* <p>Wciśnij Enter</p> */}
       </div>
