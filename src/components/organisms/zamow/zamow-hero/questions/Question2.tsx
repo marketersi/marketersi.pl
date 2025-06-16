@@ -23,7 +23,7 @@ const Question2 = ({ handleNext }) => {
   return (
     <div className="zh_question">
       {/* <h2>Nazwa Twojej firmy?</h2>  */}
-       <h2>Jak masz na nazwisko?</h2>  
+        <h2>Jak masz na nazwisko?</h2>  
       <textarea
         rows={1}
         placeholder="Wpisz odpowiedź tutaj"

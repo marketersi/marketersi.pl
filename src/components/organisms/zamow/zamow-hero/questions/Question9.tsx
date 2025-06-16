@@ -83,14 +83,12 @@ const Question9 = ({ handleNext }) => {
   const { screenData } = useSelector((state) => state.examination);
   const { formNine } = screenData?.surveyQuestions || {};
 
-  // Start from 1 instead of 0
   const [rangeValue, setRangeValue] = useState(1);
+  const dispatch = useDispatch();
 
   const handleRangeChange = (event) => {
     setRangeValue(Number(event.target.value));
   };
-
-  const dispatch = useDispatch();
 
   const handleButtonClick = () => {
     const payload = {
@@ -102,18 +100,49 @@ const Question9 = ({ handleNext }) => {
 
   return (
     <div className="zh_question range_container">
-      {/* <h2>{formNine?.title}</h2> */}
-      <h2>Jaki jest Twój cel? Jaki byłby idealny,<br />
+      <style>{`
+        .precise-slider {
+          width: 100%;
+          height: 6px;
+          background: #ddd;
+          appearance: none;
+          border-radius: 5px;
+          outline: none;
+          transition: background 0.3s;
+        }
+
+        .precise-slider::-webkit-slider-thumb {
+          appearance: none;
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          background: #007bff;
+          cursor: pointer;
+          border: none;
+          margin-top: -7px;
+        }
+
+        .precise-slider::-moz-range-thumb {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          background: #007bff;
+          cursor: pointer;
+          border: none;
+        }
+      `}</style>
+
+      <h2>
+        Jaki jest Twój cel? Jaki byłby idealny,
+        <br />
         miesięczny przychód Twojej firmy?
       </h2>
-      {/* <p className="goal_description">
-        Weź pod uwagę aktualne <br className="showmobilebr" />możliwości operacyjne <br className="showmobilebr" />swojej firmy. <br />
-        Te informacje pomogą nam <br className="showmobilebr" />dopasować strategię <br className="showmobilebr" />do Twoich potrzeb.
-      </p> */}
-        <p className="goal_description">
-          Weź pod uwagę aktualne możliwości operacyjne swojej firmy.<br />
-          Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
-        </p>
+
+      <p className="goal_description">
+        Weź pod uwagę aktualne możliwości operacyjne swojej firmy.
+        <br />
+        Te informacje pomogą nam dopasować strategię do Twoich potrzeb.
+      </p>
 
       <div className="income_show martop30">
         {rangeValue.toLocaleString("pl-PL")} zł
@@ -137,7 +166,7 @@ const Question9 = ({ handleNext }) => {
         step={1}
         value={rangeValue}
         onChange={handleRangeChange}
-        className="income_range"
+        className="income_range precise-slider"
       />
 
       <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">

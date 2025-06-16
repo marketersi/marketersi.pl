@@ -1,3 +1,4 @@
+// ZamowHero.tsx
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./zamow-hero.css";
@@ -37,28 +38,45 @@ const ZamowHero = ({ progress, currentQuestion, handleNextQuestion }) => {
 
 export default ZamowHero;
 
+// ---------- FORM ZERO ----------------
 const FormZero = ({ heroSection, handleNextQuestion }) => {
   const [inputValue, setInputValue] = useState("");
-  const [toggle, settoggle] = useState("");
+  const [selection, setSelection] = useState(null); // 'strona' or 'marketing'
 
   const dispatch = useDispatch();
 
   const handleButtonClick = () => {
     const payload = {
       formZeroInputValue: inputValue,
+      formZeroType: selection,
     };
     console.log("payload 0 exam ui", payload);
     dispatch(saveExaminationFormData(payload));
     handleNextQuestion();
   };
 
-  const clickButton = () => {
-    settoggle(true);
+  const clickButton = (type) => {
+    setSelection(type);
   };
+
+  // This function determines the heading based on the selection
+  const getHeading = () => {
+    if (selection === "strona") return "Bezpłatne badanie strony firmowej.";
+    if (selection === "marketing") return "Bezpłatne badanie marketingu firmy.";
+    return heroSection?.title; // Default title if no selection
+  };
+
+  // This function determines the placeholder text based on the selection
+  const getPlaceholder = () => {
+    if (selection === "strona") return "Podaj adres swojej strony www.";
+    if (selection === "marketing") return "Opisz krótko swoją działalność lub działania marketingowe.";
+    return ""; // Default placeholder if no selection
+  };
+
 
   return (
     <>
-      <h1>{heroSection?.title}</h1>
+      <h1>{getHeading()}</h1>
       <p className="mbCustom">
         Odkryj nowe horyzonty rozwoju Twojej firmy <br />
         W Marketersi oferujemy Ci unikalną możliwość spojrzenia
@@ -72,10 +90,10 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
         100% poufności – Twoje zgłoszenie jest bezpieczne.
       </p>
 
-      {toggle ? (
+      {selection ? (
         <div className="input-container">
           <input
-            placeholder="Podaj adres swojej strony www."
+            placeholder={getPlaceholder()}
             className="zemow-hero-input"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
@@ -95,7 +113,7 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
             className="banner-btn"
             whileHover={{ scale: 0.97 }}
             whileTap={{ scale: 0.9 }}
-            onClick={clickButton}
+            onClick={() => clickButton("strona")}
           >
             Badanie strony
           </motion.button>
@@ -103,7 +121,7 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
             className="banner-btn"
             whileHover={{ scale: 0.97 }}
             whileTap={{ scale: 0.9 }}
-            onClick={clickButton}
+            onClick={() => clickButton("marketing")}
           >
             Badanie marketingu
           </motion.button>

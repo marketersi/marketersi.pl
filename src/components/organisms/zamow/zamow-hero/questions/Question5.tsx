@@ -49,7 +49,7 @@ const Question5 = ({ handleNext }) => {
       </div> */}
 
         {/* <ul className="list_p">
-       
+        
           <li><p>“Nie wiem, jak wyróżnić moją ofertę”</p></li>
           <li><p>“Nie wiem, co zmienić, żeby strona działała lepiej”</p></li>
           <li><p>itp.</p></li>
@@ -62,7 +62,7 @@ const Question5 = ({ handleNext }) => {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
- 
+   
       <div className="zh_next_btn_container flex justify-center">
         <motion.button
           onClick={handleButtonClick}
