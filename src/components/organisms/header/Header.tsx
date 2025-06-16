@@ -272,7 +272,7 @@ const Header = () => {
               </li>
               <li onClick={handleMenuItemClick}>
                 <Link onClick={handleMenuItemClick} href="/Kim-jestesmy">
-                  Kim jesteśmy
+                  Kim jesteśmy ?
                 </Link>
               </li>
               <li onClick={handleMenuItemClick}>

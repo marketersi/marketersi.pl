@@ -76,7 +76,7 @@ const ContactForm = () => {
       <div className=" small_forms d-sm-flex gap-1">
         <input
           required
-          placeholder="Imię7"
+          placeholder="Imię"
           className=" form_inputs"
           {...register('name', { required: true })}
         />

@@ -180,9 +180,9 @@ const Hero = () => {
           onClick={handlePlayVideo}
           style={{
             position: "absolute",
-            top: "85%",
+            bottom: "20px",
             left: "20px", // align to left with padding
-            transform: "translateY(-50%)", // only vertical centering now
+            //transform: "translateY(-50%)", // only vertical centering now
             cursor: "pointer",
             zIndex: 10,
             width: "180px", // slightly smaller for better fit

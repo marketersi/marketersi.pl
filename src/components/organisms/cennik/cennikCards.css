@@ -385,7 +385,7 @@ input[type='range']:focus::-webkit-slider-thumb {
   font-size: 16px;
   color: #333;
   line-height: 24px;
-  font-weight: 400;;
+  font-weight: 400;
 }
 .radio-boxdiv h3 strong{
   margin-right: 5px;
@@ -393,6 +393,7 @@ input[type='range']:focus::-webkit-slider-thumb {
   color: #333;
   line-height: 24px;
   font-weight: 700;
+  display: inline-block;
 }
 .radio-container input[type="radio"] {
   margin-right: 10px;

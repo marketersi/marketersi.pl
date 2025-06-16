@@ -1,7 +1,7 @@
 .cennik-modal-close {
   position: absolute !important;
-  top: 10px !important;
-  right: 20px !important;
+  top: -10px !important;
+  right: -18px !important;
   background-color: transparent !important;
   border: none !important;
   font-size: 25px !important;
@@ -51,6 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   
 }
 .ReactModal__Overlay{

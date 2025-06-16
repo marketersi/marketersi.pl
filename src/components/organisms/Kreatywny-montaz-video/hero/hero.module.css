@@ -185,6 +185,8 @@
   top: 0;
 }
 
+.heroSection video{object-fit: cover;}
+
 .orangeBG img {
   margin: -50px 0 0 570px;
   opacity: 0.5;

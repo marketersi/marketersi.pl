@@ -54,7 +54,10 @@ const CalculatorScreen = () => {
           <Row className="second-row MTBigSpace2">
             <Col className="text-center p-sm-5 p-4">
               <h1>
-                {screenData?.second_heading &&
+                Jak znacząco<br/>
+                zwiększyć zyski <br/>
+                Twojej firmy?
+                {/* {screenData?.second_heading &&
                   screenData?.second_heading.split(' ').slice(0, 5).join(' ')} 
 
                   &nbsp;
@@ -62,7 +65,7 @@ const CalculatorScreen = () => {
                 <span>
                   {screenData?.second_heading &&
                     screenData?.second_heading.split(' ').slice(5).join(' ')}
-                </span>
+                </span> */}
               </h1>
               <div className="calculator_container" style={{ margin: 'auto' }}>
                 <p className="mt-5">{screenData?.first_paragraph}</p>
