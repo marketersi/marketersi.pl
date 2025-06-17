@@ -568,6 +568,9 @@ section.projects-gray-opinion-4 {
 .iglarki-section-main-header.mbrediuce{padding-bottom:40px;}
 .names-client-name.mbrediuce2{margin-bottom: 0px;}
 
+.logo-form-container{position: relative;}
+button.formModalCloseBtn{top:-14px; right:-30px;}
+
 /* ------------------------------------media screen------------------------------- */
 @media only screen and (max-width: 1520px) {
   .nazwa-heading{font-size:26px;}

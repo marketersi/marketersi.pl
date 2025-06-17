@@ -1818,6 +1818,10 @@ img.strategyImg {
 
 .Price_Card img.price-card-title-image{margin-bottom:-58px;}
 .mobiledesignchange .Analysis3_GridItemNumber{line-height: 97px; margin-bottom: -48px; color: #00c0fe;}
+
+.logo-form-container{position: relative;}
+button.formModalCloseBtn{top:-14px; right:-30px;}
+
 /* -----------------------------------------media screen ------------------------------------------------- */
 @media(max-width:1500px)
 {

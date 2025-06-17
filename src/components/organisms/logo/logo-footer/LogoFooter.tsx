@@ -3,13 +3,11 @@ import Link from 'next/link';
 import './logo-footer.css';
 
 const LogoFooter = ({ openModal }) => {
-  const buttonsData = [
-    { id: 1, label: '1', content: 'Co zyskam?' },
-    { id: 2, label: '2', content: 'Jak to wygląda?' },
-    
-    { id: 3, label: '3', content: 'Przykładowe realizacje' },
-  ];
-
+const buttonsData = [
+  { id: 1, label: '1', content: 'Co zyskam?' },
+  { id: 2, label: '2', content: 'Jak to wygląda?' },
+  { id: 4, label: '3', content: 'Przykładowe realizacje' }, // 🔁 id: 4, not 3!
+];
   const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonClick = (id) => {
@@ -21,12 +19,19 @@ const LogoFooter = ({ openModal }) => {
       <div className="nazwa_footer_bottom">
         <div className="nazwa_footer_bottom_left">
           {buttonsData.map((button) => (
+            // <Link
+            //   key={button.id}
+            //   href={`#sec${button.id}`}
+            //   className={activeButton === button.id ? 'activeLink' : ''}
+            //   onClick={() => handleButtonClick(button.id)}
+            // >
             <Link
-              key={button.id}
-              href={`#sec${button.id}`}
-              className={activeButton === button.id ? 'activeLink' : ''}
-              onClick={() => handleButtonClick(button.id)}
-            >
+                key={button.id}
+                href={`#sec${button.id}`}  // ✅ sec4 पर भेजेगा, जो StepByStep का id है
+                className={activeButton === button.id ? 'activeLink' : ''}
+                onClick={() => handleButtonClick(button.id)}
+              >
+
               <button className={activeButton === button.id ? 'activeButton' : ''}>
                 {button.label}
               </button>

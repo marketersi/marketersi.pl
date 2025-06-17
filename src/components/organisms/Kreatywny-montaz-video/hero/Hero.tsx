@@ -168,7 +168,7 @@ const Hero = () => {
         loop
         muted={muted} // controlled mute state
         width="100%"
-        height="auto"
+        height="100%"
         className="react-player"
         pip={false}
         playsinline

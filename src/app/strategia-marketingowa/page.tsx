@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import Analysis from '../../components/organisms/strategia-marketingowa/Analysis';
 import AnswerAll from '../../components/organisms/strategia-marketingowa/AnswerAll';
 import Branding from '../../components/organisms/strategia-marketingowa/Branding';
@@ -9,7 +9,6 @@ import MainContentOne from '../../components/organisms/strategia-marketingowa/Ma
 import MainContentTwo from '../../components/organisms/strategia-marketingowa/MainContentTwo';
 import MainHeading from '../../components/organisms/strategia-marketingowa/MainHeading';
 import MainNumber from '../../components/organisms/strategia-marketingowa/MainNumber';
-// import OurClients from "../../components/organisms/strategia-marketingowa/OurClients";
 import Price from '../../components/organisms/strategia-marketingowa/Price';
 import QuoteOne from '../../components/organisms/strategia-marketingowa/QuoteOne';
 import QuoteTwo from '../../components/organisms/strategia-marketingowa/QuoteTwo';
@@ -20,20 +19,19 @@ import StrategyAction from '../../components/organisms/strategia-marketingowa/St
 import Testimonial from '../../components/organisms/strategia-marketingowa/Testimonial';
 import WhatRecieve from '../../components/organisms/strategia-marketingowa/WhatRecieve';
 import YesAccordion from '../../components/organisms/strategia-marketingowa/accordion/YesAccordion';
-import { useEffect } from 'react';
+import OurClients from '../../components/organisms/main/ourclients/OurClients';
 import { useDispatch, useSelector } from 'react-redux';
 import { FETCH_STRATEGY_SCREEN_DATA } from '@/redux/strategia/strategyAction';
-import OurClients from '../../components/organisms/main/ourclients/OurClients';
-import './strategiamarketingowa.css';
 import { FETCH_HOME_SCREEN_DATA } from '@/redux/home/homeAction';
 import { FETCH_PRICELIST_SCREEN_DATA } from '@/redux/cennik/pricelistAction';
-import BounceLoader from 'react-spinners/BounceLoader';
 import { FETCH_SALES_SCREEN_DATA } from '@/redux/tresci/salescontentAction';
-
+import BounceLoader from 'react-spinners/BounceLoader';
+import './strategiamarketingowa.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const StrategiaMarketingowa = () => {
-  const { isLoading, screenData } = useSelector((state) => state.strategy);
-
+  const { isLoading } = useSelector((state) => state.strategy);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -42,9 +40,6 @@ const StrategiaMarketingowa = () => {
     dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
     dispatch({ type: FETCH_SALES_SCREEN_DATA });
   }, [dispatch]);
-
-   
-
 
   if (isLoading)
     return (
@@ -55,45 +50,26 @@ const StrategiaMarketingowa = () => {
 
   return (
     <>
+      <ToastContainer />
       <div>
-        <MainHeading/>
-
+        <MainHeading />
         <MainContentOne />
-
         <MainNumber />
-
         <MainContentTwo />
-
         <ResultTable />
-
         <Strategy />
-
         <Testimonial />
-
         <ResultMax />
-
         <Analysis />
-
         <WhatRecieve />
-
         <ImageAdvantage />
-
         <InviteCustomer />
-
         <QuoteOne />
-
-        
-
         <QuoteTwo />
-
         <OurClients />
-
         <Price />
-
         <StrategyAction />
-
         <AnswerAll />
-
         <YesAccordion />
       </div>
     </>
