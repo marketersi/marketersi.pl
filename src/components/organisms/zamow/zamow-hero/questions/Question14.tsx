@@ -49,21 +49,23 @@ const osClass = useOsClass();
   return (
     <>
       {/* {showGif && <img src="/assets/congrats.gif" className="congrats_gif" />} */}
-      {showGif && <div className='congrats_gif'><img src="/assets/congrats.gif" /></div>}
-   
-    {/* <video
-      controls
-      autoPlay
-      muted
-      loop
-      style={{ width: '100%', maxWidth: '800px' }}
-    >
-      <source
-        src="https://marketersi.cdn.prismic.io/marketersi/aEwR8rNJEFaPX8aY_stars-video.mp4"
-        type="video/mp4"
-      />
-      Your browser does not support the video tag.
-    </video> */}
+      {showGif && 
+        <div className='thanksvideo'>
+          <video
+            // controls
+            autoPlay
+            muted
+            loop
+            style={{ width: '100%', maxWidth: '800px' }}
+          >
+            <source
+              // src="https://marketersi.cdn.prismic.io/marketersi/aEwR8rNJEFaPX8aY_stars-video.mp4"
+              src="https://marketersi.cdn.prismic.io/marketersi/aFKQI7NJEFaPYDza_thanksimageNew.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      }
 
       <div className="question_14">
 

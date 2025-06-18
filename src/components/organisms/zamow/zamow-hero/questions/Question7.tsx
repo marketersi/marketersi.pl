@@ -53,23 +53,23 @@ const Question7 = ({ handleNext }) => {
       )}
 
       {/* Precise slider */}
+    {/* Range input */}
       <input
         type="range"
         min={1}
-        max={20000} // Set max to something practical
+        max={100000}
         step={1}
         value={rangeValue}
         onChange={handleRangeChange}
-        inputMode="numeric"
         className="income_range"
       />
 
-      {/* Optional scale display */}
+      {/* Optional scale display
       <div className="range_labels">
         <span>1 zł</span>
         <span>{rangeValue.toLocaleString("pl-PL")} zł</span>
         <span>20 000 zł</span>
-      </div>
+      </div> */}
 
       {/* Next button */}
       <div className="zh_next_btn_container flex justify-center zh_next_btn_Center">
