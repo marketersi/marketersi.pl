@@ -569,7 +569,7 @@ section.projects-gray-opinion-4 {
 .names-client-name.mbrediuce2{margin-bottom: 0px;}
 
 .logo-form-container{position: relative;}
-button.formModalCloseBtn{top:-14px; right:-30px;}
+/* button.formModalCloseBtn{top:-14px; right:-30px;} */
 
 /* ------------------------------------media screen------------------------------- */
 @media only screen and (max-width: 1520px) {
@@ -925,11 +925,11 @@ button.formModalCloseBtn{top:-14px; right:-30px;}
   .sendQuote h2 {
     font-size: 24px;
   }
-  button.formModalCloseBtn {
+  /* button.formModalCloseBtn {
     color: black;
     top: 25px;
     right: 15px;
-  }
+  } */
   .quoteBtn {
     flex-direction: column;
     gap: 20px;
@@ -1114,4 +1114,6 @@ button.formModalCloseBtn{top:-14px; right:-30px;}
 
   .nazwa-heading{font-size:20px !important; line-height:30px !important;}
   .optonsahgasds{font-family:"Poppins", sans-serif !important;}
+
+  .sendQuote.sentquote-form{width:100%;}
 }

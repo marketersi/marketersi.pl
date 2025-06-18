@@ -620,7 +620,9 @@ input[type='range']:focus::-webkit-slider-thumb {
     width: 100%;
   }
   .form2Modal {
-    width: 100% !important;
+    width: 85% !important;
+    border-radius:12px !important;
+    padding:30px 15px;
   }
 }
 

@@ -721,9 +721,9 @@ video {
   color: #00bbff;
 }
 .win video {
-  -webkit-filter: contrast(0.999);
-  filter: contrast(0.999);
-  display: block;
+  -webkit-filter:none;
+  filter:none;
+  display: block !important;
 }
 .windos video{
   margin-left: -30px;
@@ -832,5 +832,8 @@ video {
 
   .brandImgBtn{padding:0;}
   .brandSlide{margin-bottom:40px;}
+
+
+    .container .container{padding:0; width:100% !important; max-width:100% !important; margin: 0 auto !important;}
 }
 

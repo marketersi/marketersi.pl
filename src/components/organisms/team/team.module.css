@@ -525,6 +525,8 @@ text-align: center;
 
 .peopleVideo {
   position: relative;
+  max-width:900px;
+  margin:0 auto;
 }
 
 .peopleVideo svg {
@@ -548,7 +550,7 @@ text-align: center;
   /* background: #00000069; */
   /* padding: 25% 0 0; */
   z-index: 0;
-  padding: 0px 0 60px;
+  padding: 30px 0 60px;
 }
 
 .peopleVideoContent .projectBtn {
@@ -1089,6 +1091,7 @@ text-align: center;
   .personalCard h4, .caringCard h4, .caringCard p, .cultureCard h2, .cultureCard h3{font-size:22px; line-height:32px;}
   .creative .creative h2{margin-top:0;}
   .caring .cartRow{max-width:100%;}
+  .caring .cartRow > div{padding:0;}
   .caringCard{width: 100%; margin: 0 0 30px;}
   .caring{padding-bottom:0;}
   .teamContent1{margin-top:15px;}
@@ -1101,7 +1104,6 @@ text-align: center;
   .freePara{margin-top:30px !important;}
   .customersPara{margin-bottom:30px !important;}
   .cultureCard{margin:82px auto 30px;}
-  .caring .cartRow .col-lg-4{padding:0;}
   .OurClients.WidthContent .OurClients_Card_Two{margin-bottom:30px !important;}
   .personalCard{margin-bottom:0;}
   .cardDataSpace{margin-top:30px;}
@@ -1116,5 +1118,6 @@ text-align: center;
   .topmobilespace2{padding-top:25px;}
   .mobilelefttext{text-align: left !important;}
   .topmobilespace3{margin-top:50px !important;}
+  .peopleVideoContent {padding-top:20px;}
   
 }

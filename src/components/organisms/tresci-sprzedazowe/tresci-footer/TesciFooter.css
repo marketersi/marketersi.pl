@@ -68,7 +68,7 @@ a.activeLink {
   font-size: 26px;
 }
 .logo-form-container {
-  width: 750px;
+  /* width: 750px; */
   margin: 0 auto;
   /* background: gray; */
   position: relative;
@@ -100,4 +100,6 @@ a.activeLink {
   .tersci_footer_bottom_btn {
     font-size: 18px;
   }
+
+  .logo-form-container {width:100%;}
 }

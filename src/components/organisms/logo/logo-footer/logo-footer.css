@@ -99,8 +99,12 @@ button.nazwa_footer_bottom_Offer {
   font-size: 26px;
 }
 .logo-form-container {
-  width: 750px;
+  /* width: 750px; */
   margin: 0 auto;
   /* background: gray; */
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-form-container {width:100%;}
 }
