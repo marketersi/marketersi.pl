@@ -1,5 +1,7 @@
 'use client';
+
 import React, { useEffect } from 'react';
+import 'react-toastify/dist/ReactToastify.css'; // REQUIRED
 import NazwaHero from '@/components/organisms/nazwa/hero/Hero';
 import Anatomy from '@/components/organisms/nazwa/anatomy/Anatomy';
 import AnatomyGuide from '@/components/organisms/nazwa/anatomy/AnatomyGuide';
@@ -21,7 +23,6 @@ const NazwaDlaFirmy = () => {
   const { launch_essentials, faq } = screenData || {};
   const { accordion } = faq || {};
 
-  console.log('nazwaDlaFirmy acc', accordion);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,28 +30,19 @@ const NazwaDlaFirmy = () => {
     dispatch({ type: FETCH_SALES_SCREEN_DATA });
   }, [dispatch]);
 
-  
-
   return (
     <>
       <NazwaHero />
-
       <Anatomy />
-
       <AnatomyGuide />
-
       <OptionBox2 optionBox2={launch_essentials} />
-
       <LaunchEssentials />
-
       <LogoAccordion items={accordion} title={faq?.title} image={faq?.image} />
-
       <ProjectValue />
-
       <ImplementationExamples />
-
       <NazwaFooter />
       
+      {/* ToastContainer for toast messages */}
       <ToastContainer />
     </>
   );
