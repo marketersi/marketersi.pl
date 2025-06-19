@@ -111,7 +111,7 @@ const GoodProcess = () => {
         ))}
       </div>
 
-      {/* GoodProcess Content */}
+      GoodProcess Content
       <div className="numberOne">
         <div className="one numberimage">
           <div className="number">
@@ -123,14 +123,34 @@ const GoodProcess = () => {
         </div>
         <div className="process1 processVideoOne">
           <div className={`one ${osClass}`}>
-            <ReactPlayer
+            {/* <ReactPlayer
               url={stage_1?.video_url}
               playing
               loop
               muted
               className="processVideo"
               playsInline
-            />
+            /> */}
+            {typeof window !== 'undefined' && /iPhone|iPad|iPod/i.test(navigator.userAgent) ? (
+                <video
+                  src={stage_1?.video_url}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  style={{ width: '100%' }}
+                />
+              ) : (
+                <ReactPlayer
+                  url={stage_1?.video_url}
+                  playing
+                  loop
+                  muted
+                  className="processVideo"
+                  playsInline
+                />
+              )}
+
             <h3>{stage_1?.title}</h3>
             <p className="subtitle">{stage_1?.subtitle}</p>
             <p>{stage_1?.description}</p>

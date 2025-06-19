@@ -341,6 +341,7 @@
 // };
 
 // export default Form;
+
 'use client';
 
 import React, { useEffect } from 'react';
@@ -373,15 +374,24 @@ const Form = () => {
       from_phone: data.phone,
     };
 
-    emailjs
-      .send(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
+    // emailjs
+    //   .send(
+    //     process.env.SERVICE_ID,
+    //     process.env.TEMPLATE_ID,
+    //     templateParams,
+    //     {
+    //       publicKey: process.env.PUBLIC_KEY,
+    //     }
+    //   )
+    emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         templateParams,
         {
-          publicKey: process.env.PUBLIC_KEY,
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
         }
       )
+
       .then(() => {
         toast.success(
           'Dziękujemy za wypełnienie formularza. Skontaktujemy się z Tobą w ciągu 24 godzin w dniach roboczych (od poniedziałku do piątku).'
