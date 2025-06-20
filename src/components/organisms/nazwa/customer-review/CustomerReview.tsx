@@ -71,54 +71,28 @@ const CustomerReview = () => {
   console.log(implementation); // You might want to remove this console.log in production
 
   const [isModal, setIsModal] = useState(false);
-
-  // Function to open the modal and push a state to browser history
   const openModal = () => {
     setIsModal(true);
-    // Push a new state to the history when the modal opens.
-    // This allows us to intercept the back button and close the modal.
-    // The URL remains the same (window.location.pathname) to avoid actual navigation.
     window.history.pushState({ modalOpen: true }, '', window.location.pathname);
   };
-
-  // Function to close the modal
   const handleModalClose = () => {
     setIsModal(false);
-    // Optional: If you want to explicitly go back in history when the modal is closed
-    // manually (e.g., by clicking the 'X' button inside the modal), you can uncomment
-    // the following lines. However, be cautious with this as it can interfere with
-    // natural browser navigation. The popstate listener below usually suffices.
-    // if (window.history.state && window.history.state.modalOpen) {
-    //   window.history.back();
-    // }
   };
-
-  // useEffect hook to manage browser history for the modal
   useEffect(() => {
-    // This function handles the 'popstate' event, which fires when
-    // the active history entry changes (e.g., user clicks browser's back/forward button).
     const handlePopState = (event) => {
-      // Check if the state associated with the history entry contains our custom 'modalOpen' flag.
       if (event.state && event.state.modalOpen) {
         setIsModal(false); // Close the modal if our specific state is found
       } else if (isModal) {
-        // If the modal is open but the popstate event isn't for our modal state,
-        // it means the user clicked back to a state before the modal was opened.
-        // In this scenario, if the modal is currently open, we should still close it.
+       
         setIsModal(false);
       }
     };
 
-    // Add the 'popstate' event listener when the component mounts
     window.addEventListener('popstate', handlePopState);
-
-    // Return a cleanup function to remove the event listener when the
-    // component unmounts or before the effect re-runs (if dependencies change).
     return () => {
       window.removeEventListener('popstate', handlePopState);
     };
-  }, [isModal]); // Dependency array: Effect re-runs if 'isModal' state changes,
-                  // ensuring 'handlePopState' always has access to the latest 'isModal' value.
+  }, [isModal]); 
 
   return (
     <section className="projects-gray-opinion-1">

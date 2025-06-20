@@ -1,3 +1,4 @@
+// ResultTable.tsx
 import { useState, useEffect } from "react";
 import SurveyModal from "./SurveyModal";
 import Image from "next/image";
@@ -8,29 +9,33 @@ export default function ResultTable() {
   const { ResultTable } = screenData;
 
   const [showModal, setShowModal] = useState(false);
+
   const handleOpenModal = () => {
     setShowModal(true);
+    // Push a new state to the history when the modal opens
+    // This allows the back button to trigger a popstate event that we can listen for
+    window.history.pushState({ modalOpen: true }, '', window.location.pathname);
   };
+
   const handleCloseModal = () => {
     setShowModal(false);
   };
 
-// Prevent browser back button when modal is open
-useEffect(() => {
-  if (showModal) {
-    const handleBackButton = (event) => {
-      event.preventDefault();
-      window.history.pushState(null, null, window.location.href);
+  // Listen for popstate events to close the modal when the back button is pressed
+  useEffect(() => {
+    const handlePopState = (event) => {
+      // Check if the state indicates the modal was open (or simply close if any popstate occurs when modal is visible)
+      if (showModal) {
+        handleCloseModal();
+      }
     };
 
-    window.history.pushState(null, null, window.location.href); // Add a new history state
-    window.addEventListener("popstate", handleBackButton);
+    window.addEventListener("popstate", handlePopState);
 
     return () => {
-      window.removeEventListener("popstate", handleBackButton); // Clean up on modal close
+      window.removeEventListener("popstate", handlePopState);
     };
-  }
-}, [showModal]);
+  }, [showModal]); // Dependency on showModal to re-attach listener if showModal changes
 
   const options = [
     { value: "chocolate", label: "Chocolate" },
