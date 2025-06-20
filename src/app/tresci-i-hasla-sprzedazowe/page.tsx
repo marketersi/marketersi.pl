@@ -1,6 +1,7 @@
 "use client";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FETCH_SALES_SCREEN_DATA } from "@/redux/tresci/salescontentAction";
 import Concept366 from "@/components/organisms/tresci-sprzedazowe/366-concept/Concept366";
