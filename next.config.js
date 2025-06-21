@@ -2,6 +2,7 @@
 const nextConfig = {
   experimental: {
     missingSuspenseWithCSRBailout: false,
+    scrollRestoration: true,
   },
   output: "export",
   env: {
