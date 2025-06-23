@@ -1,3 +1,95 @@
+// 'use client';
+// import React, { useEffect, useState } from 'react';
+// import ZamowHero from '@/components/organisms/zamow/zamow-hero/ZamowHero';
+// import CustomerRating from '@/components/organisms/zamow/customer-rating/CustomerRating';
+// import Accordion from '@/components/organisms/zamow/accordion/Accordion';
+// import { Container } from 'react-bootstrap';
+// import Results from '@/components/organisms/zamow/results/Results';
+// import './zamow.css';
+// import { motion } from 'framer-motion';
+// import { FETCH_EXAMINATION_SCREEN_DATA } from '@/redux/zamow/zamowAction';
+// import { useDispatch, useSelector } from 'react-redux';
+// import BounceLoader from 'react-spinners/BounceLoader';
+
+// const BookExamination = () => {
+//   const { isLoading } = useSelector((state) => state.examination);
+//   const dispatch = useDispatch();
+
+//   const [progress, setProgress] = useState(0);
+//   const [currentQuestion, setCurrentQuestion] = useState(0);
+//   const totalQuestions = 14;
+
+//   useEffect(() => {
+//     dispatch({ type: FETCH_EXAMINATION_SCREEN_DATA });
+//   }, [dispatch]);
+
+//   const handleNextQuestion = () => {
+//     setProgress((prev) => prev + 100 / totalQuestions);
+//     setCurrentQuestion((prev) => prev + 1);
+//   };
+
+//   const handlePreviousQuestion = () => {
+//     if (currentQuestion > 0) {
+//       setProgress((prev) => prev - 100 / totalQuestions);
+//       setCurrentQuestion((prev) => prev - 1);
+//     }
+//   };
+
+//   const handleBackToTop = () => {
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+//   };
+
+//   if (isLoading) {
+//     return (
+//       <div className="loader-container">
+//         <BounceLoader color="#00bfff" size={50} />
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div>
+//       <div className="bg_sunset"></div>
+
+//       {currentQuestion > 0 && (
+//         <div className="progress-bar-container">
+//           <motion.div
+//             className="progress-bar"
+//             initial={{ width: 0 }}
+//             animate={{ width: `${progress}%` }}
+//             transition={{ duration: 0.5 }}
+//           />
+//           <button className="back-button" onClick={handlePreviousQuestion}>
+//             COFNIJ
+//           </button>
+//         </div>
+//       )}
+
+//       <Container className="zamow-container">
+//         <ZamowHero
+//           progress={progress}
+//           currentQuestion={currentQuestion}
+//           handleNextQuestion={handleNextQuestion}
+//         />
+//         <CustomerRating />
+//         <Results />
+//         <Accordion />
+//         <div className="btt_btn_container">
+//           <motion.button
+//             onClick={handleBackToTop}
+//             className="btt_btn"
+//             whileHover={{ translateY: 5 }}
+//           >
+//             Wróć na górę
+//           </motion.button>
+//         </div>
+//       </Container>
+//     </div>
+//   );
+// };
+
+// export default BookExamination;
+// page.tsx
 'use client';
 import React, { useEffect, useState } from 'react';
 import ZamowHero from '@/components/organisms/zamow/zamow-hero/ZamowHero';
@@ -21,17 +113,29 @@ const BookExamination = () => {
 
   useEffect(() => {
     dispatch({ type: FETCH_EXAMINATION_SCREEN_DATA });
-  }, [dispatch]);
+    window.history.replaceState({ question: 0 }, '');
+
+    const handlePopState = (event) => {
+      if (event.state && typeof event.state.question === 'number') {
+        setCurrentQuestion(event.state.question);
+        setProgress((event.state.question / totalQuestions) * 100);
+      } else if (event.state === null) {
+        setCurrentQuestion(0);
+        setProgress(0);
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [dispatch, totalQuestions]); // Dependencies for useEffect
 
   const handleNextQuestion = () => {
-    setProgress((prev) => prev + 100 / totalQuestions);
-    setCurrentQuestion((prev) => prev + 1);
-  };
-
-  const handlePreviousQuestion = () => {
-    if (currentQuestion > 0) {
-      setProgress((prev) => prev - 100 / totalQuestions);
-      setCurrentQuestion((prev) => prev - 1);
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion <= totalQuestions) {
+      setCurrentQuestion(nextQuestion);
+      setProgress((nextQuestion / totalQuestions) * 100);
+      window.history.pushState({ question: nextQuestion }, '', `?q=${nextQuestion}`);
     }
   };
 
@@ -59,7 +163,7 @@ const BookExamination = () => {
             animate={{ width: `${progress}%` }}
             transition={{ duration: 0.5 }}
           />
-          <button className="back-button" onClick={handlePreviousQuestion}>
+          <button className="back-button" onClick={() => window.history.back()}>
             COFNIJ
           </button>
         </div>
@@ -67,7 +171,7 @@ const BookExamination = () => {
 
       <Container className="zamow-container">
         <ZamowHero
-          progress={progress}
+          progress={progress} // Progress is managed internally, but passed for consistency
           currentQuestion={currentQuestion}
           handleNextQuestion={handleNextQuestion}
         />
@@ -79,6 +183,7 @@ const BookExamination = () => {
             onClick={handleBackToTop}
             className="btt_btn"
             whileHover={{ translateY: 5 }}
+            whileTap={{ scale: 0.9 }}
           >
             Wróć na górę
           </motion.button>

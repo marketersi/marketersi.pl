@@ -131,6 +131,7 @@
 //   );
 // };
 
+// ZamowHero.js
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./zamow-hero.css";
@@ -183,7 +184,7 @@ const FormZero = ({ heroSection, handleNextQuestion }) => {
       formZeroType: selection,
     };
     dispatch(saveExaminationFormData(payload));
-    handleNextQuestion();
+    handleNextQuestion(); // This will now trigger the pushState in BookExamination
   };
 
   const clickButton = (type) => {
