@@ -111,13 +111,9 @@ const HomeScreen = () => {
 
   useEffect(() => {
     console.log("Home Page Test....");
-    // Disable browser's scroll restoration when the component mounts
-    // This ensures the browser doesn't try to restore the previous scroll position
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
     }
-    // Then, manually scroll to the top
-    window.scrollTo(0, 0);
   }, []); // Empty dependency array means it runs once on mount
 
   useEffect(() => {

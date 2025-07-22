@@ -15,7 +15,7 @@ const FormZero = ({ setCurrentComponent }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
    useEffect(()=>{
-        window.scrollTo({ top: 0, behavior: "smooth" })
+      window.scrollTo({ top: 0, behavior: "smooth" })
     },[])
   const DropdownIndicator = (props) => {
     const { selectProps } = props;

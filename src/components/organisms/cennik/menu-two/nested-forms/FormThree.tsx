@@ -254,9 +254,10 @@ import { SUBMIT_MENU_STOR_FORM } from "@/redux/cennik/pricelistAction";
 import { clearPriceListFormData } from "@/redux/cennik/pricelistSlice";
 
 const FormThree = ({ form }) => {
-  const { formData, isMenuSubmitSuccess, isMenuSubmitFail } = useSelector(
+  const { formData, isMenuSubmitSuccess } = useSelector(
     (state) => state.priceList
   );
+
   const [isButtonClicked, setIsButtonClicked] = useState(false);
   const [hasValidationError, setHasValidationError] = useState(false);
   const [name, setName] = useState("");
@@ -282,7 +283,7 @@ const FormThree = ({ form }) => {
       prlist_menu2_dropdown_1_id: formData?.formZeroDropdownValueOne,
       prlist_menu2_dropdown_2_id: formData?.formZeroDropdownValueTwo,
       prlist_menu2_dropdown_3_id: formData?.formOneDropdownValueOne,
-      prlist_menu2_dropdown_4_id: formData?.formOneDropdownValueOne, // Typo in original code? Should this be formOneDropdownValueTwo?
+      prlist_menu2_dropdown_4_id: formData?.formOneDropdownValueTwo, // ✅ fixed typo here
       section3_textarea: formData?.formTwoTextAreaValue,
       section4_name: name,
       section4_email: email,
@@ -290,7 +291,6 @@ const FormThree = ({ form }) => {
     };
 
     console.log("menu 2 payload", payload);
-
     dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
 
     setName("");
@@ -300,10 +300,8 @@ const FormThree = ({ form }) => {
 
   useEffect(() => {
     if (isMenuSubmitSuccess) {
-      setTimeout(() => {
-        router.push("/dziekujemy");
-        dispatch(clearPriceListFormData());
-      }, 500); // Optional delay for better UX
+      router.push("/dziekujemy"); // ✅ instant redirect
+      dispatch(clearPriceListFormData());
     }
   }, [isMenuSubmitSuccess, dispatch, router]);
 
@@ -314,7 +312,7 @@ const FormThree = ({ form }) => {
 
   return (
     <div className="componentThree_section">
-      <h2 className={hasValidationError ? "" : ""}>
+      <h2 className={hasValidationError ? "error" : ""}>
         {form?.section_4_title}
       </h2>
       <p>Podaj swoje dane, aby otrzymać dopasowaną ofertę.</p>

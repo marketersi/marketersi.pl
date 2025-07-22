@@ -63,7 +63,7 @@ const Question1 = ({ handleNext }) => {
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+   window.scrollTo({ top: 0, behavior: "smooth" });
   }, [])
   const dispatch = useDispatch();
 

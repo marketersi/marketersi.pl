@@ -42,18 +42,36 @@
 //       section4_phone: phone,
 //     };
 
+//     // Dispatch the form submission action
 //     dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
+
+//     // IMPORTANT CHANGE: Redirect immediately after dispatching the action
+//     // This makes the transition feel instant to the user.
+//     router.push("/dziekujemy");
+
+//     // IMPORTANT CHANGE: Clear the local form state immediately here
+//     // as the user is already being redirected.
 //     setName("");
 //     setEmail("");
 //     setPhone("");
+
+//     // IMPORTANT CHANGE: Also clear the Redux form data immediately
+//     // since we are optimistically redirecting.
+//     dispatch(clearPriceListFormData());
 //   };
 
+//   // The useEffect for success/fail is now primarily for potential error handling
+//   // or if you had follow-up actions that absolutely *must* wait for server confirmation.
+//   // For immediate redirect, this useEffect won't be responsible for navigation anymore.
 //   useEffect(() => {
-//     if (isMenuSubmitSuccess) {
-//       router.push("/dziekujemy");
-//       dispatch(clearPriceListFormData());
+//     if (isMenuSubmitFail) {
+//       // You might want to add error handling here, e.g., a toast notification
+//       // that the submission failed, or redirect back if the thank you page
+//       // needs to be dynamic based on success.
+//       console.error("Form submission failed!");
+//       // Example: router.push("/error-page"); or display a message
 //     }
-//   }, [isMenuSubmitSuccess, isMenuSubmitFail]);
+//   }, [isMenuSubmitFail]); // Only dependency needed now is for failure
 
 //   const isValidEmail = (email) => {
 //     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -129,6 +147,7 @@
 // };
 
 // export default UserInfoForm;
+
 import { SUBMIT_MENU_STOR_FORM } from "@/redux/cennik/pricelistAction";
 import { clearPriceListFormData } from "@/redux/cennik/pricelistSlice";
 import { useRouter } from "next/navigation";
@@ -173,22 +192,36 @@ const UserInfoForm = ({ formFour }) => {
       section4_phone: phone,
     };
 
+    // Dispatch the form submission action
     dispatch({ type: SUBMIT_MENU_STOR_FORM, payload });
-    // **IMPORTANT:** Remove setName, setEmail, setPhone from here.
-    // **ये अब useEffect में clear होंगे जब सबमिशन सफल होगा।**
+
+    // IMPORTANT CHANGE: Redirect immediately after dispatching the action
+    // This makes the transition feel instant to the user.
+    router.push("/dziekujemy");
+
+    // IMPORTANT CHANGE: Clear the local form state immediately here
+    // as the user is already being redirected.
+    setName("");
+    setEmail("");
+    setPhone("");
+
+    // IMPORTANT CHANGE: Also clear the Redux form data immediately
+    // since we are optimistically redirecting.
+    dispatch(clearPriceListFormData());
   };
 
+  // The useEffect for success/fail is now primarily for potential error handling
+  // or if you had follow-up actions that absolutely *must* wait for server confirmation.
+  // For immediate redirect, this useEffect won't be responsible for navigation anymore.
   useEffect(() => {
-    if (isMenuSubmitSuccess) {
-      // **Only clear local state AFTER successful submission**
-      // **सफल सबमिशन के बाद ही लोकल स्टेट को खाली करें**
-      setName("");
-      setEmail("");
-      setPhone("");
-      router.push("/dziekujemy");
-      dispatch(clearPriceListFormData());
+    if (isMenuSubmitFail) {
+      // You might want to add error handling here, e.g., a toast notification
+      // that the submission failed, or redirect back if the thank you page
+      // needs to be dynamic based on success.
+      console.error("Form submission failed!");
+      // Example: router.push("/error-page"); or display a message
     }
-  }, [isMenuSubmitSuccess, isMenuSubmitFail, dispatch, router]); // Added dispatch and router to dependencies
+  }, [isMenuSubmitFail]); // Only dependency needed now is for failure
 
   const isValidEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

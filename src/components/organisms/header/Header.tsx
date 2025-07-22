@@ -137,7 +137,7 @@ const Header = () => {
                 <Nav className="d-flex align-items-center flex-nowrap">
                   <Nav.Link className={style.navRightMenu}>
                     <Link href="/Kim-jestesmy">
-                      Kim <br /> jesteśmy ?
+                      Kim <br /> jesteśmy?
                     </Link>
                   </Nav.Link>
                   <Nav.Link className={style.navRightMenu}>
@@ -272,7 +272,7 @@ const Header = () => {
               </li>
               <li onClick={handleMenuItemClick}>
                 <Link onClick={handleMenuItemClick} href="/Kim-jestesmy">
-                  Kim jesteśmy ?
+                  Kim jesteśmy?
                 </Link>
               </li>
               <li onClick={handleMenuItemClick}>
