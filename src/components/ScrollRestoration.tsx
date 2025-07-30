@@ -13,11 +13,11 @@ const ScrollRestoration = () => {
 
     window.history.scrollRestoration = "manual";
 
-    const saveScrollPos = (url) => {
+    const saveScrollPos = (url:string) => {
       scrollPositions.set(url, { x: window.scrollX, y: window.scrollY });
     };
 
-    const restoreScrollPos = (url) => {
+    const restoreScrollPos = (url:string) => {
       const pos = scrollPositions.get(url);
       if (pos) {
         window.scrollTo(pos.x, pos.y);
@@ -26,11 +26,11 @@ const ScrollRestoration = () => {
       }
     };
 
-    const handleRouteChangeStart = (url) => {
+    const handleRouteChangeStart = (url:string) => {
       saveScrollPos(router.asPath);
     };
 
-    const handleRouteChangeComplete = (url) => {
+    const handleRouteChangeComplete = (url:string) => {
       restoreScrollPos(url);
     };
 
