@@ -2,7 +2,6 @@
 
 import React, { useRef } from "react";
 import dynamic from "next/dynamic";
-
 import { Row, Col, Image, Container } from "react-bootstrap";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 import Link from "next/link";

@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import style from '../main.module.css';
 import Link from 'next/link';
+import ScrollManager from '@/app/ScrollManager';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import Stars from '@/components/molecules/Ratings';
@@ -14,6 +15,7 @@ const Order = () => {
   return (
     <div className={style.pinkBG}>
       <Container>
+        <ScrollManager/>
         <div className={style.order}>
           <div className={style.orderContent}>
             <h2>{ratingSection?.main_title}</h2>

@@ -7,6 +7,7 @@ import Header from "@/components/organisms/header/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "@/components/organisms/footer/Footer";
 import { Provider } from "react-redux";
+import ScrollManager from "./ScrollManager";
 import store from "@/store/store";
 import { useEffect, useState } from "react";
 import BounceLoader from 'react-spinners/BounceLoader';
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body className={inter.className}>
+      <ScrollManager/>
       {loading ? (
         <div className="loader-container">
         <BounceLoader color="#00bfff" size={50} />

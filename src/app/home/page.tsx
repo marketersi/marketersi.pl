@@ -109,16 +109,21 @@ const HomeScreen = () => {
     console.log("home screen data from UI => ", screenData);
   }
 
-  useEffect(() => {
-    console.log("Home Page Test....");
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-  }, []); // Empty dependency array means it runs once on mount
+  // useEffect(() => {
+  //   console.log("Home Page Test....");
+  //   if ('scrollRestoration' in history) {
+  //     history.scrollRestoration = 'manual';
+  //   }
+  // }, []); // Empty dependency array means it runs once on mount
 
   useEffect(() => {
-    dispatch({ type: FETCH_HOME_SCREEN_DATA });
-  }, [dispatch]);
+    if (!screenData || Object.keys(screenData).length === 0) {
+     dispatch({ type: FETCH_HOME_SCREEN_DATA });
+    }
+  }, [screenData, dispatch]);
+  // useEffect(() => {
+  //   dispatch({ type: FETCH_HOME_SCREEN_DATA });
+  // }, [dispatch]);
 
   return (
     <>

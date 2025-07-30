@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import style from "./footer.module.css";
+import ScrollManager from "@/app/ScrollManager";
 import Link from "next/link";
 
 const Footer = () => {
@@ -10,6 +11,7 @@ const Footer = () => {
     <div>
       <div className={style.footer}>
         <Container fluid>
+          <ScrollManager/>
           <div className={style.footerRow}>
             <div className={style.footerCol}>
               <div className={style.footerLogo}>
