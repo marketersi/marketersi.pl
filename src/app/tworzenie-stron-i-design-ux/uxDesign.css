@@ -3154,9 +3154,6 @@ section.goodProcess {
   font-weight: 400;
 }
 
-.processVideo {
-  margin-left: -90px;
-}
 
 .number {
  display: flex; 
@@ -3564,7 +3561,7 @@ section.goodProcess {
   .number{max-width:80px; margin:0 auto 0; display: none;}
   .number img{max-width:100%;}
   .circleBox{display: none;}
-  .processVideo{height: 190px !important;}
+  
   /* .goodProcess h3{font-size:30px; line-height:26px; font-weight:700; margin-top:15px; margin-bottom:10px; text-align: center;} */
   #videoSection > :nth-child(1) h2{margin-bottom:25px;}
   .goodProcess .subtitle, .goodProcess h3{font-size:22px; line-height:32px; font-weight:300; text-align: center; margin-top:5px; margin-bottom:10px;}

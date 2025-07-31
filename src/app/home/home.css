@@ -221,7 +221,12 @@
 .webcentertext h4{text-align: center;}
 h4.webcentertext{text-align: center;}
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 991px) {
+  .HomeMobileVideo{height:650px !important;}
+}
+@media screen and (max-width: 767px) {
+  .HomeMobileVideo{height:500px !important;}
+
   .bannerVideoMain{
     position: relative;
     width: 80vw!important;
@@ -231,5 +236,6 @@ h4.webcentertext{text-align: center;}
 
 @media screen and (max-width:600px){
   .mobile-helmet .main_contentFont__BG7kb, .mobile-center.main_hardBottomContent__0Begz{text-align: center !important;}
+  .HomeMobileVideo{height:300px !important;}
   
 }

@@ -156,8 +156,10 @@ const GoodProcess = () => {
               muted
               className="processVideo"
               playsInline
+              width="360px"
+              height="360px"
             />
-            <h3>{stage_2?.title}</h3>
+            <h3>{stage_2?.title}0</h3>
             <p className="subtitle">{stage_2?.subtitle}</p>
             <p>{stage_2?.description}</p>
           </div>

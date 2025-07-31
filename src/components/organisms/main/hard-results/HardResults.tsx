@@ -115,14 +115,15 @@ const Entrepreneur = () => {
           <div className={`{style.videoContainer}`}>
             <div className={osClass}>
               <ReactPlayer
-                  url={section7?.video_url_1 || "https://marketersi.cdn.prismic.io/marketersi/aItYwKTt2nPbZmiT_Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2--1--1--1-.mp4"}
+                  url={section7?.video_url_1 || "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"}
                   playing={true}
                   loop={true}
                   width="100%"
-                  height="auto"
+                  height="850px"
                   muted={true}
                   pip={false}
                   playsinline
+                  className="HomeMobileVideo"
                 />
             </div>
           </div>

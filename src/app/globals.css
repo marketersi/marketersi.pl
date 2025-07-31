@@ -535,9 +535,9 @@ body{
 }
 
 
+.ReactModal__Overlay{z-index:9999; overflow-y: auto;}
+
 /* ------------------media screen ---------------------------------------------------- */
-
-
 
 
 @media only screen and (max-width: 1024px) {
@@ -570,6 +570,13 @@ body{
     margin-top: -220px;
   }
 }
+
+
+@media (max-width: 991px){
+  .ReactModal__Overlay{align-items: start !important;}
+  .ReactModal__Overlay .form2Modal{margin-bottom:20px !important;}
+}
+
 @media only screen and (max-width: 767px) {
   .OurClients_Slide_Container {
     display: grid !important;
