@@ -68,11 +68,11 @@ const IgnoreSites = () => {
   const router = useRouter();
 
   // Determine if the modal should be open based on the URL search param
-  const isModalOpen = searchParams.get("uxModal") === "open";
+  const isModalOpen = searchParams.get("ModelB") === "open";
 
   const openModal = () => {
     // Add 'uxModal=open' to the URL without reloading the page
-    router.push("?uxModal=open", { scroll: false });
+    router.push("?ModelB=open", { scroll: false });
   };
 
   const closeModal = () => {

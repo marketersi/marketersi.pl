@@ -122,7 +122,7 @@ const SliderForm = ({ setCurrentComponent, formTwo }: any) => {
           {formTwo?.section2_subtitle}
         </p>
         <div className="radio-container">
-          {rangeArray.map((range, index) => (
+          {Array.isArray(rangeArray) && rangeArray.map((range, index) => (
             <label key={index} className="custom-radio">
               <input
                 type="radio"

@@ -89,17 +89,17 @@ const UxBanner = () => {
   const osClass = useOsClass();
 
   // Check if the modal should be open based on a URL query parameter
-  const isModalOpen = searchParams.get("uxModal") === "open";
+  const isModalOpen = searchParams.get("ModalA") === "open";
 
   const openModal = () => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
-    newSearchParams.set("uxModal", "open");
+    newSearchParams.set("ModalA", "open");
     router.push(`?${newSearchParams.toString()}`, undefined, { shallow: true });
   };
 
   const closeModal = () => {
     const newSearchParams = new URLSearchParams(searchParams.toString());
-    newSearchParams.delete("uxModal"); // Remove the 'uxModal' parameter
+    newSearchParams.delete("ModalA"); // Remove the 'uxModal' parameter
     router.push(`?${newSearchParams.toString()}`, undefined, { shallow: true });
   };
 
