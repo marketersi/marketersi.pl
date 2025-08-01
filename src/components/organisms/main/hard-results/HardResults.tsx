@@ -1,319 +1,72 @@
-// "use client";
-
-// import React from "react";
-// import style from "../main.module.css";
-// import dynamic from 'next/dynamic';
-
-// const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
-// import { Container, Image, Row, Col } from "react-bootstrap";
-// import { useSelector } from "react-redux";
-// import useOsClass from "@/components/molecules/useOsClass";
-
-// const Entrepreneur = () => {
-//   const { isLoading, screenData } = useSelector((state) => state.home);
-//   const imageswithdescription = screenData?.imageswithdescription;
-//   const { section4, section5, section6, section7 } =
-//     imageswithdescription || {};
-
-//     console.log(section6 , 'section5section5')
-//   const osClass = useOsClass();
-//   return (
-//     <div>
-//       <Container>
-//         <div className={style.hardResult}>
-//           <div className={style.Content}>
-//             <h2 className={style.hardMB}>{section4?.title}</h2>
-//             <h3 className={style.gradientBG}> {section4?.subtitle}</h3>
-//             {/* <img src={section4?.image_url} alt="" className={style.hardImg} /> */}
-//             <p>{section4?.paragraph_1}</p>
-//             <p>{section4?.paragraph_2}</p>
-//           </div>
-
-//           <Row className="mb-3">
-
-//           <Col lg={12}>
-//           <div className={`${style.MobileCenter} webcentertext`}>
-//             <h4
-//               dangerouslySetInnerHTML={{
-//                 __html: section5?.quote
-//                   ?.replace("produkt,", "produkt,<br />")
-//                   .replace("pokochali,", "pokochali,<br />")
-//                   .replace("wie.", "wie.<br /><br />")
-//                   .replace("ofertę,", "ofertę,<br />")  
-//                   .replace("zauważy,", "zauważy,<br />")  
-//                   .replace("zmieni.", "zmieni.<br /><br />")
-            
-//                   // Remove all <br /> tags if needed
-                  
-//               }}
-//             />
-//             </div>
-//           </Col>
-
-
-
-
-//             <Col lg={12} className={osClass}>
-//               <ReactPlayer
-//                 url={section5?.video_url}
-//                 playing={true}
-//                 loop={true}
-//                 width="99%"
-//                 height="auto"
-//                 muted={true}
-//                 pip={false}
-//                 playsinline
-//                 style={{ margin: "20px auto 0" }}
-//               />
-//             </Col>
-//           </Row>
-//           <div className={style.Content}>
-//             <p>{section5?.paragraph_1}</p>
-//             <p>{section5?.paragraph_2}</p>
-//           </div>
-//         </div>
-
-//         <Row className="helmet mb-md-0 mb-sm-2">
-//           <Col lg={12} className={osClass}>
-
-       
-//            <div className={style.helmetVideo}>
-//             <ReactPlayer
-//               url={section6?.video_url}
-//               playing={true}
-//               loop={true}
-//               //width="100%"
-//               muted={true}
-//               pip={false}
-//               playsinline
-//               //className="helmetVideo"
-//               //style={{height:'810px'}}
-//             />
-
-//              </div>
-//           </Col>
-//         </Row>
-//         {/* MobileCenter */}
-//         <div className={style.hardResult}>
-//           <Row className="helmet mb-md-5 mb-sm-2">
-//             <Col lg={12}>
-//               <div className={`${style.MobileCenter} webcentertext`}>
-//                 <h4 className={style.contentFont}>{section6?.quote}</h4>
-//               </div>
-         
-//             </Col>
-//           </Row>
-
-//           <div className={style.Content}>
-//             <p>
-//               <span>{section6?.subtitle}</span> <br />
-//               {section6?.paragraph_1}
-//             </p>
-//             <p>{section6?.paragraph_2}</p>
-//             <p>{section6?.paragraph_3}</p>
-//           </div>
-//           <div className={`{style.videoContainer}`}>
-//             <div className={osClass}>
-//               {/* <ReactPlayer
-//                   url={section7?.video_url_1 || "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"}
-//                   playing={true}
-//                   loop={true}
-//                   width="100%"
-//                   height="850px"
-//                   muted={true}
-//                   pip={false}
-//                   playsinline
-//                   className="HomeMobileVideo"
-//                 /> */}
-//                 export default function MobileVideoPlayer({ videoUrl }) {
-//                       const [isiOS, setIsiOS] = useState(false);
-                    
-//                       useEffect(() => {
-//                         const ua = navigator.userAgent;
-//                         setIsiOS(/iPad|iPhone|iPod/.test(ua));
-//                       }, []);
-                    
-//                       const videoSource =
-//                         videoUrl ||
-//                         "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4";
-                    
-//                       return (
-//                     <div className="HomeMobileVideo" style={{ width: "100%", height: "850px" }}>
-//                     <video
-//                             src={videoSource}
-//                             autoPlay
-//                             loop
-//                             muted
-//                             playsInline
-//                             controls={false}
-//                             style={{ width: "100%", height: "100%", objectFit: "cover" }}
-//                           />
-//                     </div>
-//                       );
-//                     }
-//             </div>
-//           </div>
-
-//           <div className={style.Content}>
-//             <h2 className={style.brandingHeading}>{section7?.title}</h2>
-//             <p>{section7?.paragraph_1}</p>
-//             {/* <ReactPlayer
-//              url={section7?.video_url_3}
-//              playing={true}
-//              loop={true}
-//              width="100%"
-//              height="auto"
-//              muted={true}
-//              pip={false}
-//              playsinline
-//            /> */}
-//             {/* to be added an image and the above video to be removed */}
-//           </div>
-
-//           <div className={style.videoContainer}>
-//             <img src={section7?.video_url_3} className={style.girlImage} />
-//           </div>
-
-//           <div className={style.Content}>
-//             <p>{section7?.paragraph_2}</p>
-//             <p>{section7?.paragraph_3}</p>
-//             {/* <ReactPlayer
-//               url={section7?.video_url_4}
-//               playing={true}
-//               loop={true}
-//               width="100%"
-//               height="auto"
-//               muted={true}
-//               pip={false}
-//               playsinline
-//             /> */}
-//             <p>{section7?.paragraph_4}</p>
-//             {/* <ReactPlayer
-//               url={section7?.video_url_5}
-//               playing={true}
-//               loop={true}
-//               width="100%"
-//               height="auto"
-//               muted={true}
-//               pip={false}
-//               playsinline
-//             /> */}
-//             <h6 className={style.fontSmall}>{section7?.bottom_title}</h6>
-//             <h4 className={`${style.hardBottomContent} mobile-center webcentertext`} >
-//               {section7?.quoted_title}
-//             </h4>
-//             <div className={`${style.ratingLogoImg}`}>
-//               <Image
-//                 src={section7?.image_url_1}
-//                 alt="rating image"
-//                 width="100%"
-//                 height="auto"
-//               />
-//               {/* <Image
-//                 src={section7?.image_url_2}
-//                 alt="rating image"
-//                 width="auto"
-//                 height="auto"
-//               /> */}
-//             </div>
-//           </div>
-//         </div>
-//       </Container>
-//     </div>
-//   );
-// };
-
-// export default Entrepreneur;
-
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "../main.module.css";
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { Container, Image, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import useOsClass from "@/components/molecules/useOsClass";
 
-// ✅ Extracted MobileVideoPlayer component
-function MobileVideoPlayer({ videoUrl }) {
-  const [isiOS, setIsiOS] = useState(false);
-
-  useEffect(() => {
-    const ua = navigator.userAgent;
-    setIsiOS(/iPad|iPhone|iPod/.test(ua));
-  }, []);
-
-  const videoSource =
-    videoUrl ||
-    "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4";
-
-  return (
-    <div className="HomeMobileVideo" style={{ width: "100%", height: "850px" }}>
-      <video
-        src={videoSource}
-        autoPlay
-        loop
-        muted
-        playsInline
-        controls={false}
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
-    </div>
-  );
-}
-
 const Entrepreneur = () => {
   const { isLoading, screenData } = useSelector((state) => state.home);
   const imageswithdescription = screenData?.imageswithdescription;
-  const { section4, section5, section6, section7 } = imageswithdescription || {};
+  const { section4, section5, section6, section7 } =
+    imageswithdescription || {};
 
+    console.log(section6 , 'section5section5')
   const osClass = useOsClass();
-
   return (
     <div>
       <Container>
         <div className={style.hardResult}>
           <div className={style.Content}>
             <h2 className={style.hardMB}>{section4?.title}</h2>
-            <h3 className={style.gradientBG}>{section4?.subtitle}</h3>
+            <h3 className={style.gradientBG}> {section4?.subtitle}</h3>
+            {/* <img src={section4?.image_url} alt="" className={style.hardImg} /> */}
             <p>{section4?.paragraph_1}</p>
             <p>{section4?.paragraph_2}</p>
           </div>
 
           <Row className="mb-3">
-            <Col lg={12}>
-              <div className={`${style.MobileCenter} webcentertext`}>
-                <h4
-                  dangerouslySetInnerHTML={{
-                    __html: section5?.quote
-                      ?.replace("produkt,", "produkt,<br />")
-                      .replace("pokochali,", "pokochali,<br />")
-                      .replace("wie.", "wie.<br /><br />")
-                      .replace("ofertę,", "ofertę,<br />")
-                      .replace("zauważy,", "zauważy,<br />")
-                      .replace("zmieni.", "zmieni.<br /><br />"),
-                  }}
-                />
-              </div>
-            </Col>
+
+          <Col lg={12}>
+          <div className={`${style.MobileCenter} webcentertext`}>
+            <h4
+              dangerouslySetInnerHTML={{
+                __html: section5?.quote
+                  ?.replace("produkt,", "produkt,<br />")
+                  .replace("pokochali,", "pokochali,<br />")
+                  .replace("wie.", "wie.<br /><br />")
+                  .replace("ofertę,", "ofertę,<br />")  
+                  .replace("zauważy,", "zauważy,<br />")  
+                  .replace("zmieni.", "zmieni.<br /><br />")
+            
+                  // Remove all <br /> tags if needed
+                  
+              }}
+            />
+            </div>
+          </Col>
+
+
+
 
             <Col lg={12} className={osClass}>
               <ReactPlayer
                 url={section5?.video_url}
-                playing
-                loop
+                playing={true}
+                loop={true}
                 width="99%"
                 height="auto"
-                muted
+                muted={true}
                 pip={false}
                 playsinline
                 style={{ margin: "20px auto 0" }}
               />
             </Col>
           </Row>
-
           <div className={style.Content}>
             <p>{section5?.paragraph_1}</p>
             <p>{section5?.paragraph_2}</p>
@@ -322,25 +75,32 @@ const Entrepreneur = () => {
 
         <Row className="helmet mb-md-0 mb-sm-2">
           <Col lg={12} className={osClass}>
-            <div className={style.helmetVideo}>
-              <ReactPlayer
-                url={section6?.video_url}
-                playing
-                loop
-                muted
-                pip={false}
-                playsinline
-              />
-            </div>
+
+       
+           <div className={style.helmetVideo}>
+            <ReactPlayer
+              url={section6?.video_url}
+              playing={true}
+              loop={true}
+              //width="100%"
+              muted={true}
+              pip={false}
+              playsinline
+              //className="helmetVideo"
+              //style={{height:'810px'}}
+            />
+
+             </div>
           </Col>
         </Row>
-
+        {/* MobileCenter */}
         <div className={style.hardResult}>
           <Row className="helmet mb-md-5 mb-sm-2">
             <Col lg={12}>
               <div className={`${style.MobileCenter} webcentertext`}>
                 <h4 className={style.contentFont}>{section6?.quote}</h4>
               </div>
+         
             </Col>
           </Row>
 
@@ -352,37 +112,83 @@ const Entrepreneur = () => {
             <p>{section6?.paragraph_2}</p>
             <p>{section6?.paragraph_3}</p>
           </div>
-
-          <div className={style.videoContainer}>
+          <div className={`{style.videoContainer}`}>
             <div className={osClass}>
-              <MobileVideoPlayer videoUrl={section7?.video_url_1} />
+              <ReactPlayer
+                  url={section7?.video_url_1 || "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"}
+                  playing={true}
+                  loop={true}
+                  width="100%"
+                  height="850px"
+                  muted={true}
+                  pip={false}
+                  playsinline
+                  className="HomeMobileVideo"
+                />
             </div>
           </div>
 
           <div className={style.Content}>
             <h2 className={style.brandingHeading}>{section7?.title}</h2>
             <p>{section7?.paragraph_1}</p>
+            {/* <ReactPlayer
+             url={section7?.video_url_3}
+             playing={true}
+             loop={true}
+             width="100%"
+             height="auto"
+             muted={true}
+             pip={false}
+             playsinline
+           /> */}
+            {/* to be added an image and the above video to be removed */}
           </div>
 
           <div className={style.videoContainer}>
-            <img src={section7?.video_url_3} className={style.girlImage} alt="Visual" />
+            <img src={section7?.video_url_3} className={style.girlImage} />
           </div>
 
           <div className={style.Content}>
             <p>{section7?.paragraph_2}</p>
             <p>{section7?.paragraph_3}</p>
+            {/* <ReactPlayer
+              url={section7?.video_url_4}
+              playing={true}
+              loop={true}
+              width="100%"
+              height="auto"
+              muted={true}
+              pip={false}
+              playsinline
+            /> */}
             <p>{section7?.paragraph_4}</p>
+            {/* <ReactPlayer
+              url={section7?.video_url_5}
+              playing={true}
+              loop={true}
+              width="100%"
+              height="auto"
+              muted={true}
+              pip={false}
+              playsinline
+            /> */}
             <h6 className={style.fontSmall}>{section7?.bottom_title}</h6>
-            <h4 className={`${style.hardBottomContent} mobile-center webcentertext`}>
+            <h4 className={`${style.hardBottomContent} mobile-center webcentertext`} >
               {section7?.quoted_title}
             </h4>
-            <div className={style.ratingLogoImg}>
+            <div className={`${style.ratingLogoImg}`}>
               <Image
                 src={section7?.image_url_1}
                 alt="rating image"
                 width="100%"
                 height="auto"
               />
+              {/* <Image
+                src={section7?.image_url_2}
+                alt="rating image"
+                width="auto"
+                height="auto"
+              /> */}
             </div>
           </div>
         </div>
