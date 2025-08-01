@@ -3,7 +3,7 @@
 import React from "react";
 import style from "../main.module.css";
 import dynamic from 'next/dynamic';
-
+const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 import { Container, Image, Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
@@ -124,17 +124,31 @@ const Entrepreneur = () => {
                   pip={false}
                   playsinline
                   className="HomeMobileVideo"
-                /> */}
-<video
-                  src="https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
-                  className="HomeMobileVideo"
                 />
- 
+                 */}
+                 {isiOS ? (
+            <video
+                src={section7?.video_url_1 || "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                style={{ width: '100%', height: '850px' }}
+              />
+            ) : (
+            <ReactPlayer
+                url={section7?.video_url_1 || "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"}
+                playing={true}
+                loop={true}
+                width="100%"
+                height="850px"
+                muted={true}
+                pip={false}
+                playsinline
+                className="HomeMobileVideo"
+              />
+            )}
             </div>
           </div>
 

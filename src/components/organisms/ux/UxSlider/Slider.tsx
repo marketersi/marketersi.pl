@@ -68,7 +68,7 @@ const CoverFlowSlider = () => {
       </div>
     );
   })}
-</Slider>;
+</Slider>
     </div>
   );
 };
