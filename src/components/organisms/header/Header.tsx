@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Col, Row, Image, Nav } from "react-bootstrap";
 import style from "./header.module.css";
 import HeaderDropDown1 from "./HeaderDropDown1";
+import ScrollManager from "@/app/ScrollManager";
 import HeaderDropDown2 from "./HeaderDropDown2";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -79,6 +80,7 @@ const Header = () => {
       >
         <div className={style.hover}></div>
         <div className={style.navigation}>
+          <ScrollManager/>
           <Row className="align-items-center w-100">
             <Col sm={4}>
               <div className={style.leftNav}>

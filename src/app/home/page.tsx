@@ -85,6 +85,7 @@ import Video from "@/components/organisms/main/video/Video";
 import OurClients from "@/components/organisms/main/ourclients/OurClients";
 import { useDispatch, useSelector } from "react-redux";
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
+import ScrollManager from "../ScrollManager";
 import BounceLoader from "react-spinners/BounceLoader";
 import "./home.css";
 import { Provider } from 'react-redux';
@@ -134,6 +135,7 @@ const HomeScreen = () => {
       ) : (
         <div>
           <Provider store={store}>
+            <ScrollManager/>
             <div className="overflow-fulldiv">
               <Hero />
               <Video />
