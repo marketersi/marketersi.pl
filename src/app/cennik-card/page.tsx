@@ -24,10 +24,17 @@ const PriceListScreen = () => {
 
   const dispatch = useDispatch();
 
+  // useEffect(() => {
+  //   dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
+  //   dispatch(clearPriceListFormData());
+  // }, [dispatch]);
+
   useEffect(() => {
-    dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
-    dispatch(clearPriceListFormData());
-  }, [dispatch]);
+        if (!screenData || Object.keys(screenData).length === 0) {
+         dispatch({ type: FETCH_PRICELIST_SCREEN_DATA });
+         dispatch(clearPriceListFormData());
+        }
+      }, [screenData, dispatch]);
 
   const handleBtnClick = (value) => {
     setIsRed(value);

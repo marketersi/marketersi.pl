@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FETCH_VIDEO_RECORDING_SCREEN_DATA } from '@/redux/profesjonalne-nagrywanie-filmow/videoRecordingAction';
 import BounceLoader from 'react-spinners/BounceLoader';
+import ScrollManager from '../ScrollManager';
 import Hero from '@/components/organisms/professional-video-recording/hero/Hero';
 import Video from '@/components/organisms/professional-video-recording/video/Video';
 import RatingCaption from '@/components/organisms/professional-video-recording/rating-captions/RatingCaption';
@@ -14,6 +15,8 @@ import HardResult from '@/components/organisms/professional-video-recording/hard
 //import Order from '@/components/organisms/professional-video-recording/order/Order';
 //import Order from '@/components/organisms/main/order/Order';
 import Order from '@/components/organisms/main/order/Order';
+import { Provider } from 'react-redux';
+import store from "@/store/store";
 import AfterBanner from '@/components/organisms/professional-video-recording/after-banner/AfterBanner';
 import CennikCard from '../cennik-card/page'
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
@@ -26,13 +29,25 @@ const ProfessionalVideoRecording = () => {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch({ type: FETCH_VIDEO_RECORDING_SCREEN_DATA });
-  }, [dispatch]);
+    // useEffect(() => {
+    //   if (!screenData || Object.keys(screenData).length === 0) {
+    //    dispatch({ type: FETCH_HOME_SCREEN_DATA });
+    //   dispatch({ type: FETCH_VIDEO_RECORDING_SCREEN_DATA });
+    //   }
+    // }, [screenData, dispatch]);
+ useEffect(() => {
+      if (!screenData || Object.keys(screenData).length === 0) {
+       dispatch({ type: FETCH_VIDEO_RECORDING_SCREEN_DATA });
+       dispatch({ type: FETCH_HOME_SCREEN_DATA });
+      }
+    }, [screenData, dispatch]);
+  // useEffect(() => {
+  //   dispatch({ type: FETCH_VIDEO_RECORDING_SCREEN_DATA });
+  // }, [dispatch]);
 
-  useEffect(() => {
-    dispatch({ type: FETCH_HOME_SCREEN_DATA });
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch({ type: FETCH_HOME_SCREEN_DATA });
+  // }, [dispatch]);
 
   if (isLoading) {
     return (
@@ -44,6 +59,8 @@ const ProfessionalVideoRecording = () => {
 
   return (
     <>
+    <Provider store={store}>
+    <ScrollManager/>
       <Hero />
             <AfterBanner /> 
            <CennikCard/>
@@ -55,6 +72,7 @@ const ProfessionalVideoRecording = () => {
       <Numbers />
       <HardResult />
       <Order />
+      </Provider>
     </>
   );
 };

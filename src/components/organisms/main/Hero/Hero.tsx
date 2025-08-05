@@ -66,6 +66,14 @@ const Hero = () => {
     }
   }, [controls, inView]);
 
+  function Sc(){
+    console.log("------------677------------")
+     window.scrollTo({
+  top: 19515,
+  behavior: 'smooth',
+});
+  }
+
   return (
     <div>
       <div className={style.HerVideoOverlay}></div>
@@ -176,11 +184,14 @@ key={new Date().toISOString()}
             <p>{heroSection?.description}</p>
           </div>
           <div className={style.heroBtn}>
+            <span onClick={Sc}>Umów konsultację</span>
+
+
             <Link href="/cennik">
               <button>Wyceń usługę</button>
             </Link>
             <Link href="/konsultacja-marketingu" className={style.umow}>
-              <span>Umów konsultację</span>
+              <span onClick={Sc}>Umów konsultację</span>
               {/* <motion.div
                 className={style.heroPlay}
                 initial="initial"
