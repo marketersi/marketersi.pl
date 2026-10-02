@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { POST_CONTACT } from '@/redux/kontakt/contactActions';
 
 import emailjs from '@emailjs/browser';
+import { track } from '@/components/analytics/track';
 import dotenv from 'dotenv';
 import { toast } from 'react-toastify';
 dotenv.config();
@@ -43,6 +44,7 @@ const ContactForm = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          track('generate_lead', { form_name: 'kontakt_email', page_path: window.location.pathname });
           toast.success(
             'Dziękujemy za wypełnienie formularza. Skontaktujemy się z Tobą w ciągu 24 godzin w dniach roboczych (od poniedziałku do piątku).'
           );

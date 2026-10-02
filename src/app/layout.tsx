@@ -8,6 +8,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "@/components/organisms/footer/Footer";
 import { Provider } from "react-redux";
 import ScrollManager from "./ScrollManager";
+import Analytics from "@/components/analytics/Analytics";
+import CookieBanner from "@/components/analytics/CookieBanner";
 import store from "@/store/store";
 import { useEffect, useState } from "react";
 import BounceLoader from 'react-spinners/BounceLoader';
@@ -38,8 +40,13 @@ export default function RootLayout({
     return () => clearTimeout(timer); // Cleanup timeout
   }, []);
   return (
-    <html lang="en">
+    <html lang="pl">
+    <head>
+      <title>marketersi.pl | Więcej klientów dla małych firm</title>
+      <meta name="description" content="Strona, Google i AI w praktyce małych firm. Sprawdzamy, gdzie Twoja firma traci klientów, i naprawiamy to." />
+    </head>
     <body className={inter.className}>
+      <Analytics />
       <ScrollManager/>
       {loading ? (
         <div className="loader-container">
@@ -52,6 +59,7 @@ export default function RootLayout({
             {children}
           </Provider>
           <Footer />
+          <CookieBanner />
         </>
       )}
     </body>
