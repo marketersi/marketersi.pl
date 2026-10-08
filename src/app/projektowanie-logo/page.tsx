@@ -212,7 +212,7 @@ const LogoDesignScreen = () => {
       <LogoAccordion items={accordionData} title={title} image={description} />
       <ProjectValue openModal={openModal} />
       {/* ukryte: cudze opinie/realizacje */}
-      <StepByStep />
+      {/* ukryte: cudze realizacje */}
       <section className="logo-stef mb-4">
         {/* ukryte: cudze opinie/realizacje */}
         {/* ukryte: cudze opinie/realizacje */}

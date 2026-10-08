@@ -22,9 +22,7 @@ export default function QuoteTwo() {
           }}
         />
       </div> */}
-      <div className="clientReviewHeading">
-        <h2>{quoteTwo?.title_2}</h2>
-      </div>
+      {/* ukryte: naglowek cudzych opinii */}
     </div>
   );
 }

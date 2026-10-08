@@ -161,10 +161,6 @@ const ZamowHero = ({ currentQuestion, handleNextQuestion }) => {
           )}
         </Col>
       </Row>
-      <div className="line-container">
-        <p className="mb-0 small">{ratingSection?.label} :</p>
-        <div className="line"></div>
-      </div>
     </section>
   );
 };
