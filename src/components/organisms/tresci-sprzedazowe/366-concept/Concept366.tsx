@@ -20,7 +20,7 @@ const Concept366 = () => {
             src={projectSection4?.logo_image}
             className="smaller-logos"
             title="Przykład realizacji przez agencję reklamową dla klienta"
-            alt="Reklama dla klienta Owocnych"
+            alt="Reklama dla klienta marketersi"
           />
         </div> */}
 
@@ -61,7 +61,7 @@ const Concept366 = () => {
         {/* <div className="copywriter-text-center copywriter-rwd-mtb-40">
           <img
             src={projectSection4?.image_1}
-            title="Copywriterzy Owocnych przygotowali hasła reklamowe"
+            title="Copywriterzy marketersi przygotowali hasła reklamowe"
             alt="Przykład realizacji tekstów reklamowych dla klienta"
             layout="responsive"
             style={{maxWidth:"1000px", width:"100%", margin: "50px auto 0"}}
@@ -71,7 +71,7 @@ const Concept366 = () => {
         {/* <div className="copywriter-text-center copywriter-standard-mtb-40">
           <img
             src={projectSection4?.image_2}
-            title="Hasło reklamowe dla klienta Owocnych"
+            title="Hasło reklamowe dla klienta marketersi"
             alt="Jeden z tekstów reklamowych na strony internetowe"
             layout="responsive"
           />
@@ -90,7 +90,7 @@ const Concept366 = () => {
         {/* <div className="copywriter-text-center">
           <img
             src={projectSection4?.image_3}
-            title="Zrealizowane teksty reklamowe dla klienta Owocnych"
+            title="Zrealizowane teksty reklamowe dla klienta marketersi"
             alt="Content marketing - przykład"
             layout="responsive"
           />
@@ -125,7 +125,7 @@ const Concept366 = () => {
         {/* <div className="copywriter-text-center copywriter-standard-mt-40">
           <img
             src={projectSection5?.logo_image}
-            title="Własna firma - współpraca z agencją reklamową Owocni"
+            title="Własna firma - współpraca z agencją reklamową marketersi"
             alt="Slogany reklamowe przykład współpracy"
           />
         </div> */}

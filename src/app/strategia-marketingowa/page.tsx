@@ -56,9 +56,9 @@ const StrategiaMarketingowa = () => {
         <MainContentOne />
         <MainNumber />
         <MainContentTwo />
-        <ResultTable />
+        {/* ukryte: cudze opinie/realizacje */}
         <Strategy />
-        <Testimonial />
+        {/* ukryte: cudze opinie/realizacje */}
         <ResultMax />
         <Analysis />
         <WhatRecieve />
@@ -66,7 +66,7 @@ const StrategiaMarketingowa = () => {
         <InviteCustomer />
         <QuoteOne />
         <QuoteTwo />
-        <OurClients />
+        {/* ukryte: cudze opinie/realizacje */}
         <Price />
         <StrategyAction />
         <AnswerAll />

@@ -175,7 +175,7 @@ const BookExamination = () => {
           currentQuestion={currentQuestion}
           handleNextQuestion={handleNextQuestion}
         />
-        <CustomerRating />
+        {/* ukryte: cudze opinie/realizacje */}
         <Results />
         <Accordion />
         <div className="btt_btn_container">

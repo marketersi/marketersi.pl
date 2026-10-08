@@ -24,7 +24,7 @@ const ImplementationEx7 = () => {
       {/* <div className="naming-seo-img">
         <img
           src={example5?.image}
-          title="Logo firmy Star finance jako przykład tego jak pracują Owocni"
+          title="Logo firmy Star finance jako przykład tego jak pracują marketersi"
           alt="Nazwa dla nowej firmy na przykładzie Star finance"
         />
       </div> */}

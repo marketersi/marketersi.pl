@@ -46,12 +46,7 @@ const AnatomyGuide = () => {
                     {anatomy_guide?.paragraph4}
                   </p>
 
-                  <img
-                    className="projects-logotypy-prasa custom-bottom-margin2 widthsmaller"
-                    src={anatomy_guide?.banner_url}
-                    title="Logotypy prasy, opinie o firmie Owocni"
-                    alt="Jak nazwać firmę? Prasa o naszych efektach"
-                  />
+                  {/* ukryte: logotypy prasy */}
                   {/* to be deleted */}
                   <p className="projects-mq-book-fix projects-custom-gray-text projects-hide-810 text-center PDF-d-book">
                  <p> Pobierz darmowy egzemplarz</p>
@@ -70,12 +65,7 @@ const AnatomyGuide = () => {
                   </p>
                 </div>
                 <div className="col-lg-6 projects-lprasa-container p-0">
-                  <img
-                    className="projects-logotypy-prasa custom-bottom-margin2"
-                    src={anatomy_guide?.brand_url}
-                    title="Książka o tym jak nazwać firmę"
-                    alt="Książka przydatna przy tworzeniu nazwy"
-                  />
+                  {/* ukryte: logotypy prasy */}
                  
                 </div>
               </div>

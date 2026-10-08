@@ -34,7 +34,7 @@ const Team = () => {
       <TeamComponents.Support />
       {/* to be deleted */}
       {/* <TeamComponents.ImageSlider /> */}
-      <OurClients />
+      {/* ukryte: cudze opinie/realizacje */}
       <section className={`{style.Customers} WidthContent1`}>
         <div className={`${style.teamContent}`}>
           <p className={`{style.customersPara}`} >

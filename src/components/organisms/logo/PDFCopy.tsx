@@ -45,7 +45,7 @@ const PDFCopy = () => {
                 <img
                   src={image}
                   className="projects-ksiazka-projektowanie-logo"
-                  alt="Zdjęcie okładki książki Owocnych"
+                  alt="Zdjęcie okładki książki marketersi"
                   title="Księga znaku przedstawiająca projektowanie logo"
                 />
               )}

@@ -39,7 +39,7 @@ const NazwaDlaFirmy = () => {
       <LaunchEssentials />
       <LogoAccordion items={accordion} title={faq?.title} image={faq?.image} />
       <ProjectValue />
-      <ImplementationExamples />
+      {/* ukryte: cudze opinie/realizacje */}
       <NazwaFooter />
       
       {/* ToastContainer for toast messages */}

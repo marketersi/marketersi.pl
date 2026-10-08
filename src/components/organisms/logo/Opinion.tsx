@@ -19,7 +19,7 @@ const Opinion = () => {
                       src={image}
                       className="opinion-box-inside-image"
                       alt="Grafik logo przy pracy"
-                      title="Grafik logo Jakub z Owocnych"
+                      title="Grafik logo Jakub z marketersi"
                     />
                   )}
                 </div>

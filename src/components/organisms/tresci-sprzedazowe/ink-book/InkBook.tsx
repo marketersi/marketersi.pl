@@ -19,7 +19,7 @@ const InkBook = () => {
         {/* <div className="copywriter-text-center copywriter-standard-mt-80">
           <img
             src={projectSection8?.logo_image}
-            title="Logo klienta agencji Owocni"
+            title="Logo klienta agencji marketersi"
             alt="Copywriting cena opracowania materiałów reklamowych"
           />
         </div> */}
@@ -50,7 +50,7 @@ const InkBook = () => {
           <img
             src={projectSection8?.bannar_image_1}
             title="Content marketing dla firmy Moko"
-            alt="Przykładowe teksty reklamowe dla klienta Owocnych"
+            alt="Przykładowe teksty reklamowe dla klienta marketersi"
             className="lingu"
           />
         </div>

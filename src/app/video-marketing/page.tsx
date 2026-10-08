@@ -67,7 +67,7 @@ const ProfessionalVideoRecording = () => {
       {/* <Video /> */}
       <RatingCaption />
       {/* <MarkSide /> */}
-      <OurClients />
+      {/* ukryte: cudze opinie/realizacje */}
       <Entrepreneur />
       <Numbers />
       <HardResult />

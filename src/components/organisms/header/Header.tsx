@@ -323,11 +323,7 @@ const Header = () => {
                   )}
                 </div>
               </li>
-              <li>
-                <Link onClick={handleMenuItemClick} href="/marketersi-opinie">
-                  Klienci i opinie
-                </Link>
-              </li>
+
               <li>
                 <Link onClick={handleMenuItemClick} href="/cennik">
                   Cennik

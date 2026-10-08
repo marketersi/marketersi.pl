@@ -40,7 +40,7 @@ const Section5 = () => {
             <div className="col-lg-6 copywriter-text-right">
               <img
                 src={steps?.image_1}
-                title="Teksty reklamowe Owocnych to gwarancja sukcesu"
+                title="Teksty reklamowe marketersi to gwarancja sukcesu"
                 alt="Marketing, który osiąga zamierzony cel"
                 style={{ width: "100%", height: "auto" }}
               />
@@ -139,8 +139,8 @@ const Section5 = () => {
               <img
                 className="copywriter-ksiazka-img copywriter-rwd-mtb-40"
                 src={knowMoreSection?.bannar_image}
-                title="Przewodnik Owocnych, który tłumaczy, jak napisać tekst"
-                alt="Książka, którą przygotowali copywriterzy Owocnych"
+                title="Przewodnik marketersi, który tłumaczy, jak napisać tekst"
+                alt="Książka, którą przygotowali copywriterzy marketersi"
               />
             </div>
           </div>

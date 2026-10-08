@@ -205,24 +205,24 @@ const LogoDesignScreen = () => {
       <LogoBanner openModal={openModal} />
       {/* <SampleLogo /> */}
       <GoodBusiness />
-      <PDFCopy />
-      <Opinion />
+      {/* ukryte: przewodnik i prasa nie marketersi */}
+      {/* ukryte: cudze opinie/realizacje */}
       <Receive />
       <Guarantee openModal={openModal} />
       <LogoAccordion items={accordionData} title={title} image={description} />
       <ProjectValue openModal={openModal} />
-      <Gallery openModal={openModal} />
+      {/* ukryte: cudze opinie/realizacje */}
       <StepByStep />
       <section className="logo-stef mb-4">
-        <FreeShops />
-        <Enexo />
-        <Daco />
-        <Aico />
-        <ZooGarden />
-        <Construction />
-        <Restaurant />
-        <Park />
-        <Lex />
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
+        {/* ukryte: cudze opinie/realizacje */}
       </section>
       {/* <GPN /> */}
       {/* <NewCompany /> */}

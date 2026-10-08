@@ -38,7 +38,7 @@ const Motus = () => {
           <img
             src={projectSection2?.bannar_image}
             title="Copywriter oferta kreowania tekstów na strony internetowe"
-            alt="Slogany reklamowe przygotowane przez Owocnych"
+            alt="Slogany reklamowe przygotowane przez marketersi"
           />
         </div>
 
@@ -87,7 +87,7 @@ const Motus = () => {
             className="copywriter-seo-img-dnone"
             src={projectSection2?.bottom_bannar_image}
             title="Przykład fotografii reklamowej to również content marketing"
-            alt="Realizacja fotografii reklamowej dla klienta Owocnych"
+            alt="Realizacja fotografii reklamowej dla klienta marketersi"
           />
         </div>
 
@@ -121,7 +121,7 @@ const Motus = () => {
         <div className="copywriter-text-center copywriter-rwd-mtb-40">
           <img
             src={projectSection3?.bannar_image}
-            title="Przykład tekstów reklamowych dla klienta Owocnych"
+            title="Przykład tekstów reklamowych dla klienta marketersi"
             alt="Teksty reklamowe dla kancelarii prawniczej"
           />
         </div>

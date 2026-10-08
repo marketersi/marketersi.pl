@@ -65,7 +65,7 @@ const ThanksMessage = () => {
           współpracy z nami.
         </h5>
 
-        <button onClick={handleGoToOpinie}>Poznaj opinie klientów</button>
+        
       </div>
     </div>
   );

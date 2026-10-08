@@ -37,7 +37,7 @@ const BookExamination = () => {
         <div className="bg_sunset"></div>
         <Container className="zamow-container">
           <ZamowHero />
-          <CustomerRating />
+          {/* ukryte: cudze opinie/realizacje */}
           <Results />
           <Accordion />
           <div className="btt_btn_container">

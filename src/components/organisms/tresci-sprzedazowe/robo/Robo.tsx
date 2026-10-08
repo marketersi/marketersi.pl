@@ -49,7 +49,7 @@ const Robo = () => {
           <img
             className="copywriter-seo-img-dnone"
             src={projectSection6?.bannar_image_2}
-            title="Przygotowane przez Owocnych slogany reklamowe"
+            title="Przygotowane przez marketersi slogany reklamowe"
             alt="Reklama dla klienta agencji"
           />
 
@@ -60,7 +60,7 @@ const Robo = () => {
           <img
             className="copywriter-roboty-img-810"
             src={projectSection6?.bannar_image_2}
-            title="Przygotowane przez Owocnych slogany reklamowe"
+            title="Przygotowane przez marketersi slogany reklamowe"
             alt="Reklama dla klienta agencji"
           />
         </div> */}

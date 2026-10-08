@@ -82,13 +82,13 @@ const Sales = () => {
       {/* <Orange /> */}
       {/* <Motus /> */}
       {/* <OptionBox2 optionBox2={customerReview} /> */}
-      <Concept366 />
-      <OptionBox2 optionBox2={customerReview3} />
-      <Robo />
-      <Mako />
-      <OptionBox2 optionBox2={customerReview4} />
-      <InkBook />
-      <OptionBox2 optionBox2={customerReview} />
+      {/* ukryte: cudze opinie/realizacje */}
+      {/* ukryte: cudze opinie */}
+      {/* ukryte: cudze opinie/realizacje */}
+      {/* ukryte: cudze opinie/realizacje */}
+      {/* ukryte: cudze opinie */}
+      {/* ukryte: cudze opinie/realizacje */}
+      {/* ukryte: cudze opinie */}
       {/* <Profit /> */}
       <section className="black-sec-form">
         <div className="copywriter-ending-1 text-center mobilechangeFont">

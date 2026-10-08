@@ -20,7 +20,7 @@ const Mako = () => {
           <img
             src={projectSection7?.logo_image}
             title="Copywriting cennik i przykłady stworzonych haseł"
-            alt="Marketing Owocnych zrealizowane przykłady"
+            alt="Marketing marketersi zrealizowane przykłady"
           />
         </div> */}
 
@@ -98,7 +98,7 @@ const Mako = () => {
             src={projectSection7?.bckgrnd_image_2}
             className="copywriter-seo-img-dnone"
             title="Tworzenie haseł reklamowych na przykładzie Mako"
-            alt="Przykłądowa realizacja agencji Owocni"
+            alt="Przykłądowa realizacja agencji marketersi"
           />
         </div> */}
 

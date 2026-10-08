@@ -143,7 +143,7 @@ const HomeScreen = () => {
             </div>
 
             <MarkSide />
-            <OurClients />
+            {/* ukryte: cudze opinie/realizacje */}
             <Entrepreneur />
             <Numbers />
             <HardResult />

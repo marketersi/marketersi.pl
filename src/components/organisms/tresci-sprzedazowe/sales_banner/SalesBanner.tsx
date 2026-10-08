@@ -54,7 +54,7 @@
 //               style={{ maxWidth: '100%' }}
 //               src={heroSection?.image}
 //               className=""
-//               title="Owocni wiedzą, jak się pisze teksty na stronę"
+//               title="marketersi wiedzą, jak się pisze teksty na stronę"
 //               alt="Uśmiechnięci copywriterzy"
 //             /> */}
 //                 <ReactPlayer

@@ -39,7 +39,7 @@ const MarketingConsulting = () => {
         <PricingOption />
         <StandOut />
         <SelectedProjects />
-        <CustomersReview />
+        {/* ukryte: cudze opinie/realizacje */}
         <WhatToExpect />
       </div>
       {/* )} */}

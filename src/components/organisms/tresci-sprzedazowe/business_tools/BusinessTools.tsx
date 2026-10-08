@@ -31,7 +31,7 @@ const BusinessTools = () => {
               <img
                 src={buisnessToolsSection?.image_1}
                 title="Pisanie tekstów oferty handlowej"
-                alt="Owocni to numer 1 jeśli chodzi o skuteczny copywriting"
+                alt="marketersi to numer 1 jeśli chodzi o skuteczny copywriting"
                 className="businessToolImage"
               />
             </div>
@@ -62,7 +62,7 @@ const BusinessTools = () => {
               <img
                 src={buisnessToolsSection?.image_3}
                 title="Usługi copywriterskie obejmują treści reklamowe"
-                alt="Lekkie pióro to cecha charakterystyczna Owocnych"
+                alt="Lekkie pióro to cecha charakterystyczna marketersi"
                 className="businessToolImage"
               />
             </div>

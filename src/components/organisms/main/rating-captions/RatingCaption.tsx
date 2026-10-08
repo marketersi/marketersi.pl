@@ -10,36 +10,7 @@ const RatingCaption = () => {
   return (
     <div className={style.rating}>
       <Container className="">
-        <div className={style.ratingImg}>
-          <Image
-            src={brandSection?.brand_image1}
-            alt="rating image"
-            width="auto"
-            height="auto"
-            className={style.desktop}
-          />
-          <Image
-            src={brandSection?.brand_image2}
-            alt="rating image"
-            width={300}
-            height="auto"
-            className={style.desktop}
-          />
-          <Image
-            src={brandSection?.brand_image2}
-            alt="rating image"
-            width={300}
-            height="auto"
-            className={style.mobile}
-          />
-          <Image
-            src={brandSection?.brand_image1}
-            alt="rating image"
-            width="auto"
-            height="auto"
-            className={style.mobile}
-          />
-        </div>
+        {/* ukryte: oceny i loga */}
 
         <div className={style.ratingMainImg}>
           <Image
@@ -50,20 +21,7 @@ const RatingCaption = () => {
           />
           <p><span>{brandSection?.banner_text}</span></p>
         </div>
-        <div className={style.ratingLogoImg}>
-          <Image
-            src={brandSection?.brand_logo1}
-            alt="rating image"
-            width="auto"
-            height="auto"
-          />
-          {/* <Image
-            src={brandSection?.brand_logo2}
-            alt="rating image"
-            width="auto"
-            height="auto"-
-          /> */}
-        </div>
+        {/* ukryte: oceny i loga */}
         <div className={style.ratingCOntent}>
           <h2>{companySection?.main_title}</h2>
           <p>{companySection?.subtitle1}</p>

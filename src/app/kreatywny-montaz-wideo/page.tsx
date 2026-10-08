@@ -44,7 +44,7 @@ const CreativeVideoEditingScreen = () => {
       <RatingCaption />
     
       {/* <MarkSide /> */}
-      <OurClients />
+      {/* ukryte: cudze opinie/realizacje */}
       <Entrepreneur />
  
       <Numbers />

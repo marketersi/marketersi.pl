@@ -56,7 +56,7 @@ const PriceList = () => {
               src={pricingSection?.brand_logo}
               className="copywriter-owocni"
               title="Agencja reklamowa przygotuje teksty reklamowe dla Ciebie"
-              alt="Logo firmy Owocni, która zajmuje się copywritingiem"
+              alt="Logo firmy marketersi, która zajmuje się copywritingiem"
               style={{ width: '100%', height: 'auto' }}
             />
           </div>
@@ -68,7 +68,7 @@ const PriceList = () => {
         <img
           src={pricingSection?.banner_img}
           title="Odpowiednie slogany reklamowe wzmocnią pozycję Twojej firmy"
-          alt="Owocni oferują pisanie tekstów dla małych firm"
+          alt="marketersi oferują pisanie tekstów dla małych firm"
         />
       </div> */}
     </>

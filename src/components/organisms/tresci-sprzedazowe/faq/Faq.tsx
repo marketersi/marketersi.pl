@@ -33,7 +33,7 @@ const Faq: React.FC<AccordionProps> = ({ faq }) => {
       <div className="copywriter-text-center copywriter-standard-mtb-40">
         <img
           src={faq?.image}
-          title="Owocni oferują usługi copywriterskie"
+          title="marketersi oferują usługi copywriterskie"
           alt="Reklama, której powiesz tak"
         />
       </div>
