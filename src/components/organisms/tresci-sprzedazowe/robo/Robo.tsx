@@ -11,7 +11,7 @@ const Robo = () => {
     <>
       <section className="thematic-section">
         {/* <img
-          src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           className="projects-bow-2"
           alt=""
         /> */}
@@ -98,7 +98,7 @@ const Robo = () => {
         
         {/* 
         <img
-          src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           alt=""
           className="projects-rotate-bow projects-bow-1"
         /> */}

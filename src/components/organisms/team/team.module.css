@@ -478,14 +478,14 @@ text-align: center;
 }
 
 .cardCup {
-  /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fkubek.0bdf398c.jpg&w=640&q=75); */
+  /* background-image: none; */
   background-repeat: no-repeat;
   background-position: 135% 0px;
   
 }
 
 .hardWorkBG {
-  /* background-image: url(https://owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Forange2.57315754.jpg&w=640&q=75); */
+  /* background-image: none; */
   background-repeat: no-repeat;
   background-position: -250px 160px;
   padding: 0px 0 2px;

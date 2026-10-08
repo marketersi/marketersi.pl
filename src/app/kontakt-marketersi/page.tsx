@@ -152,6 +152,7 @@ const osClass = useOsClass();
                     </div>
                   </div>
 
+                  {contact_us?.vat_id || contact_us?.regon || contact_us?.kawka || contact_us?.co_work ? (
                   <div className="botum_contents">
                     <div className="orders_number">
                       {" "}
@@ -167,6 +168,7 @@ const osClass = useOsClass();
                       {contact_us?.co_work}
                     </div>
                   </div>
+                  ) : null}
                   </div>
 
                 </div>

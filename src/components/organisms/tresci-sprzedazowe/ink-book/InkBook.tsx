@@ -11,7 +11,7 @@ const InkBook = () => {
     <>
       <section className="thematic-section copywriter-standard-pb-80">
         {/* <img
-          src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           className="projects-bow-2"
           alt=""
         /> */}

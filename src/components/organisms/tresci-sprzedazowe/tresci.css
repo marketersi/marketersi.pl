@@ -182,7 +182,7 @@ contact-inputs textarea {
   right: 0;
   width: 60px;
   height: 70px;
-  background: url(https://form2020.owocni.pl/img/shield.svg) no-repeat;
+  background: none no-repeat;
 }
 
 .contact-submit-button-shield:after {
@@ -191,7 +191,7 @@ contact-inputs textarea {
   right: 10px;
   width: 30px;
   height: 30px;
-  background: url(https://form2020.owocni.pl/img/check.svg) no-repeat;
+  background: none no-repeat;
   content: "";
   background-size: 100%;
 }
@@ -358,7 +358,7 @@ contact-inputs textarea {
 }
 
 .copywriter-bg-16 {
-  background-image: url(https://cdn.owocni.pl/img/single-copywriter/Pisanie-tekstow-reklamowych.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   height: 1422px;
@@ -453,7 +453,7 @@ contact-inputs textarea {
   height: 620px;
   position: absolute;
   right: -175px;
-  background-image: url(https://cdn.owocni.pl/img/single-copywriter/Teksty-reklamowe-roboty3.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   top: -113px;
@@ -510,7 +510,7 @@ contact-inputs textarea {
   height: 620px;
   position: absolute;
   right: -315px;
-  background-image: url(https://cdn.owocni.pl/img/single-copywriter/Content-marketing-MAKO.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   top: -80px;
@@ -535,7 +535,7 @@ contact-inputs textarea {
 }
 
 .mako-big-img {
-  background-image: url(https://cdn.owocni.pl/img/single-copywriter/seo-images/Pisanie-tekstow-reklamowych-MAKO.jpg);
+  background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   height: 1638px;

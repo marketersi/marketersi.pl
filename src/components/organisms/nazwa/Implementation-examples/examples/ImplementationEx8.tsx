@@ -58,7 +58,7 @@ const ImplementationEx8 = () => {
           alt="Przykład zaprojektowanej nowej nazwy na kartkach"
         />
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/kampanie-reklamowe-victoria-coburg.jpg"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           title="Dobra nazwa dla firmy na przykładzie Victoria Coburg"
           alt="Tworzenie nazw firm na przykładzie Victoria Coburg"
         />

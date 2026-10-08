@@ -844,3 +844,8 @@ video {
     .container .container{padding:0; width:100% !important; max-width:100% !important; margin: 0 auto !important;}
 }
 
+
+/* SEO etap 1 (8.10.2026): ukrywa zdjęcia usunięte filtrem oczyscTresci.ts */
+img[src^="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw"] {
+  display: none !important;
+}

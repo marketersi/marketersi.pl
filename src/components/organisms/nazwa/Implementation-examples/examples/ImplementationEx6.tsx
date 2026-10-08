@@ -20,7 +20,7 @@ const ImplementationEx6 = () => {
 
       <div className="naming-seo-img">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/tworzenie-nazw-marek-lensen.jpg"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           title="Tworzenie nazw - przykład  Lensen"
           alt="Projektowanie logo na przykładzie Lensen"
         />
@@ -67,7 +67,7 @@ const ImplementationEx6 = () => {
 
       <div className="naming-seo-img">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/prima-haus-znak-towarowy.jpg"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           title="Znak towarowy dla firmy Prima Haus"
           alt="Znak towarowy - propozycja dla Prima Haus"
         />
@@ -125,7 +125,7 @@ const ImplementationEx6 = () => {
 
       <div className="naming-seo-img">
         <img
-          src="https://cdn.owocni.pl/img/single-projektowanie-nazw/seo-images/tworzenie-nazw-firm-firmometr.jpg"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           title="Firmometr - czyli  jak się zabrać za tworzenie nazw firm"
           alt="Tworzenie nazw marek na przykładzie Firmometr"
         />

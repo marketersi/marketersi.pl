@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /dziekujemy
+
+Sitemap: https://www.marketersi.pl/sitemap.xml

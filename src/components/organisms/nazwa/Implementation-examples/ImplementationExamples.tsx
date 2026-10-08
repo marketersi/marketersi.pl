@@ -58,14 +58,14 @@ const ImplementationExamples = () => {
 
       {/* Curved Image */}
       {/* <img
-        src="https://cdn.owocni.pl/img/single-projektowanie-nazw/luk-purple.png"
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
         className="cname-big-mtop-2 projects-bow-1"
         alt=""
       ></img> */}
 
       {/* <ImplementationEx7 /> */}
       {/* <img
-        src="https://cdn.owocni.pl/img/single-projektowanie-nazw/luk-black.png"
+        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
         className="projects-bow-1 names-bow-bgcolor-purple"
         style={{ marginTop: '-127px' }}
         alt=""
