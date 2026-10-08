@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "marketersi.pl" }],
+      "destination": "https://www.marketersi.pl/:path*",
+      "permanent": true
+    },
+    { "source": "/marketersi-opinie", "destination": "/", "permanent": true },
+    { "source": "/Zespol", "destination": "/Kim-jestesmy", "permanent": true }
+  ]
+}

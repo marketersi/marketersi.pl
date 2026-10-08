@@ -11,17 +11,21 @@ const Results = () => {
   return (
     <section className="results-section">
       {/* <h2 className="result-title">{ResearchResult?.title}</h2> */}
-      <h2 className="result-title">Realne rezultaty</h2>
-      <p className="result-subtitle">{ResearchResult?.sub_title}</p>
-      <Row>
-        {PercentageCard?.map((e, i) => {
-          return (
-            <Col lg={3} sm={6} key={i}>
-              <ResultsCard {...e} />
-            </Col>
-          );
-        })}
-      </Row>
+      {PercentageCard && PercentageCard.length > 0 ? (
+        <>
+          <h2 className="result-title">Realne rezultaty</h2>
+          <p className="result-subtitle">{ResearchResult?.sub_title}</p>
+          <Row>
+            {PercentageCard.map((e, i) => {
+              return (
+                <Col lg={3} sm={6} key={i}>
+                  <ResultsCard {...e} />
+                </Col>
+              );
+            })}
+          </Row>
+        </>
+      ) : null}
 
       <div className="text-center free-test">
         {/* <h2>{howTestWorks?.title}</h2> */}
@@ -46,7 +50,7 @@ const Results = () => {
           
           <p>Badanie jest w 100% darmowe i poufne.</p>
 
-          <p>Sprawdź, jak możemy Ci pomóc. Nasi eksperci oferują rozwiązania oparte na dogłębnej wiedzy i doświadczeniu, które są doceniane przez liderów branży i prestiżowe media.
+          <p>Sprawdzamy też to, czego zwykły audyt nie widzi: Twoją wizytówkę Google, opinie i to, co o Twojej firmie mówią odpowiedzi AI, takie jak ChatGPT i Przegląd od AI w Google.
           </p>
         </div>
       </div>

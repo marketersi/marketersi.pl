@@ -13,7 +13,7 @@ const NazwaSlider = () => {
      <div>
       <section className="thematic-nr-section thematic-bg-section copywriter-ending-white-bg copywriter-standard-pt-40">
         {/* <img
-          src="https://cdn.owocni.pl/img/copywriting-main-img/bg-black-top.png"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           alt="Image"
           className="white-bg"
         /> */}

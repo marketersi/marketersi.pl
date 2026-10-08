@@ -79,6 +79,10 @@ const ContactMap = () => {
     handleShowFeedback(provincesArray[index]);
   };
 
+  // SEO etap 1: mapa pokazywała wyłącznie opinie klientów Owocnych.
+  // Bez własnych opinii w panelu sekcja się nie wyświetla.
+  if (!feedback || feedback.length === 0) return null;
+
   return (
     <div className="map_container">
       <div className="MapContainerInner">

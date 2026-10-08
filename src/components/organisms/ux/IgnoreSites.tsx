@@ -5,7 +5,7 @@
 
 // const IgnoreSitesData = {
 //   image:
-//     "https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.webp",
+//     "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
 //   title: "Ludzie ignorują strony, które ignorują ludzi...",
 //   description1: "descriptions",
 //   description2: "descriptions",

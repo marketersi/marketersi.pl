@@ -195,7 +195,7 @@ const Concept366 = () => {
         </div> */}
         {/* 
         <img
-          src="https://cdn.owocni.pl/img/single-copywriter/luk.png"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
           alt=""
           className="projects-rotate-bow projects-bow-1"
           layout="responsive"

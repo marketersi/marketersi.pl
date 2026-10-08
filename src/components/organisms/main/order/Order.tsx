@@ -58,6 +58,7 @@ const Order = () => {
               width="auto"
               height="auto"
             />
+            {ratingSection?.subtitle_2 && ratingSection?.rating_no ? (
             <div className={style.ratingContent}>
               <p>{ratingSection?.subtitle_2}</p>
               <div className={style.rating}>
@@ -71,6 +72,7 @@ const Order = () => {
                 </div>
               </div>
             </div>
+            ) : null}
           </div>
         </div>
       </Container>

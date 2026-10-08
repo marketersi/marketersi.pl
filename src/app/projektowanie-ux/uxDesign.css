@@ -1262,7 +1262,7 @@ h6 {
 }
 
 #maciej .contentText .btn-neon .light:after {
-  background-image: url("https://propozycje.owocni.pl/ux/CTA-Makieta-UX-Swiatlo.dde9f5cf.png");
+  background-image: none;
   content: "";
   width: 916px;
   height: 615px;

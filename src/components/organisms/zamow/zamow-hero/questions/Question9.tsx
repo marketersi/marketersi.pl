@@ -40,7 +40,7 @@
 //           <div className="CircleAnimation"></div>
 //           <img
 //             className="tri_arrow"
-//             // src="https://badanie.owocni.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhand.2faecaee.png&w=256&q=75"
+//             // src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 //             src="https://images.prismic.io/marketersi/aAtQ4_IqRLdaBm2v_preze2.png?auto=format,compress"
 //             alt=""
 //           />
