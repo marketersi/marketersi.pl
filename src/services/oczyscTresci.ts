@@ -58,9 +58,13 @@ export function oczyscOdpowiedz(url: string, body: any): any {
     ustaw(
       d,
       ["heroSection", "subtitle"],
-      "Sprawdzamy, gdzie Twoja firma traci klientów: na stronie, w wizytówce Google i w odpowiedziach AI. Potem to naprawiamy."
+      "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI."
     );
-    ustaw(d, ["heroSection", "description"], "Zacznij od bezpłatnego badania widoczności.");
+    ustaw(
+      d,
+      ["heroSection", "description"],
+      "Umów konsultację i sprawdź, jak możemy włączyć TURBO w Twojej firmie przy niskich kosztach."
+    );
     // "ZNAKOMITY w rankingach satysfakcji" i ocena 5/5 bez źródła
     ustaw(d, ["ratingSection", "subtitle_2"], "");
     ustaw(d, ["ratingSection", "rating_no"], null);
