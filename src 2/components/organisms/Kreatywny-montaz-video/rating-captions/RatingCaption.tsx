@@ -1,0 +1,43 @@
+import React from 'react';
+import style from './rating.module.css';
+import { Container, Image } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+
+const RatingCaption = () => {
+  const { screenData } = useSelector((state) => state.videoEditing);
+  const { brandSection, companySection } = screenData;
+
+  return (
+    <div className={style.rating}>
+      <Container className='democontainer'>
+        {/* {/* ukryte: oceny i loga */} */}
+
+        {/* <div className={style.ratingMainImg}>
+          <Image
+            src={brandSection?.banner_image}
+            alt="rating image"
+            width={500}
+            height={300}
+          />
+          <p>
+            <span>{brandSection?.banner_text}</span>
+          </p>
+        </div> */}
+        {/* {/* ukryte: oceny i loga */} */}
+        <div className={style.ratingCOntent}>
+          {/* <h2>{companySection?.main_title}</h2> */}
+          {/* <h2>Wyobraź sobie wideo, <br />któremówi więcej  <br />niż słowa...</h2> */}
+          <h2>Wyobraź sobie<br/>
+            wideo, które<br/>
+            mówi więcej<br/>
+            niż słowa...
+            </h2>
+          <p>{companySection?.subtitle1}</p>
+          <p>{companySection?.subtitle2}</p>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default RatingCaption;
