@@ -26,12 +26,12 @@ const ContactScreen = () => {
 
   const reversedProject = project?.slice().reverse();
 
+  // 8.10.2026: usunięte odznaki "100% projektów na czas" i "TOP 10 Poland"
+  // (first_image, second_image) jako twierdzenia bez pokrycia.
   const brandImagesArray = [
-    contact_us?.first_image,
-    contact_us?.second_image,
     contact_us?.third_image,
     contact_us?.fourth_image,
-  ];
+  ].filter(Boolean);
 
   const dispatch = useDispatch();
   const router = useRouter();
