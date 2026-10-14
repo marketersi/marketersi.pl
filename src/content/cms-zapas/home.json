@@ -1,0 +1,452 @@
+{
+ "status": true,
+ "data": {
+  "heroSection": {
+   "id": 1,
+   "title": "AGENCJA MARKETINGOWA, która przekształca Wizje w Sukcesy",
+   "subtitle": "Tworzymy rozwiązania, które żyją i rozwijają się razem z Twoją firmą.",
+   "description": "Z Marketersi jest skutecznie. \r\n   100% projektów na czas.",
+   "image_left1": "https://images.prismic.io/marketersi/e2e0dc58-c436-44ba-a6b6-bbf29bc5d869_Ania-Owocni.avif?auto=compress,format",
+   "image_left2": "https://images.prismic.io/marketersi/286af526-1f16-4901-897e-0871b15d8d66_Fredi-Owocni.avif?auto=compress,format",
+   "image_right1": "https://images.prismic.io/marketersi/cfaed492-69c9-4d20-a964-514d729fec61_Gandalf-Owocni.avif?auto=compress,format",
+   "image_right2": "https://images.prismic.io/marketersi/5930f660-e5ea-4531-b145-6209d7e99d5b_Strony-Owocni.avif?auto=compress,format",
+   "background_video": "https://marketersi.cdn.prismic.io/marketersi/Z9Ay2BsAHJWomVI6_Projektagencjatwarzev1-1-.mov",
+   "mobile_video": "https://marketersi.cdn.prismic.io/marketersi/Z8GQiZ7c43Q3gXQO_Z01VxpbqstJ977yM_Videoshading--latest.mp4",
+   "created_at": "2024-01-25T09:21:10.000000Z",
+   "updated_at": "2025-03-11T12:56:08.000000Z"
+  },
+  "brandSection": {
+   "banner_video": "https://marketersi.cdn.prismic.io/marketersi/Z3zMopbqstJ99Gc4_MARKETERSI-16-9-2-.mp4",
+   "banner_text": "Marketersi wybrały firmy, które osiągają sukcesy:",
+   "brand_logo2": "https://images.prismic.io/marketersi/91884eaf-8a50-4084-9883-e70a5f39ea5d_logo-B.avif?auto=compress,format",
+   "brand_logo1": "https://images.prismic.io/marketersi/ZokkdB5LeNNTw2NJ_Marketersi-1.png?auto=format,compress",
+   "banner_image": "https://images.prismic.io/marketersi/Z5xfPZbqstJ9-EjF_cropped-Zo4vIx5LeNNTw-kU_5.avif?auto=format,compress",
+   "brand_image2": "https://images.prismic.io/marketersi/ZpDADx5LeNNTxFUN_100-1-.png?auto=format,compress",
+   "brand_image1": "https://images.prismic.io/marketersi/Zp4VWx5LeNNTxVqL_Marketersi-2.png?auto=format,compress"
+  },
+  "companySection": {
+   "image_3": "https://images.prismic.io/marketersi/Z5n8o5bqstJ99-tN_cropped-Z2Fwl5bqstJ98mRV_cropped-Zs6_QkaF0TcGJcys_qwerdx-3-.avif?auto=format,compress",
+   "image_2": "https://marketersi.cdn.prismic.io/marketersi/ZjTS_0MTzAJOChFQ_Animation-1-2.mp4",
+   "image_1": "https://images.prismic.io/marketersi/Z5xjFJbqstJ9-EkV_cropped-ZqJBjR5LeNNTxfas_Untitleddesign-2--1--1-.avif?auto=format,compress",
+   "subtitle2": "Zobacz, jak nasze dedykowane podejście może odmienić oblicze Twojego biznesu. Skuteczność i prestiż Twojej marki rozwiniesz na nowy wyższy poziom z Marketersi.",
+   "subtitle1": "W Marketersi nie tylko budujemy skutecznie rozwiązania – kreujemy historie, które rezonują z Twoimi odbiorcami na długo.",
+   "main_title": "DROGI PRZEDSIĘBIORCO!"
+  },
+  "companyCard": [
+   {
+    "id": 4,
+    "main_title": "BĄDŹ widoczny",
+    "subtitle": "Twój biznes zasługuje na to, by być zauważonym. Z Marketersi stworzysz markę, która przyciągnie klientów i zainspiruje ich do działania.",
+    "created_at": "2024-01-30T09:54:10.000000Z",
+    "updated_at": "2024-09-11T10:52:56.000000Z"
+   },
+   {
+    "id": 3,
+    "main_title": "ZOSTAŃ zapamiętany",
+    "subtitle": "Niezapomniane doświadczenia to klucz do długotrwałego sukcesu. Nasze rozwiązania zapewniają cyfrową obecność, która nie tylko przyciąga, ale i zostaje na długo w pamięci klientów.",
+    "created_at": "2024-01-30T06:41:34.000000Z",
+    "updated_at": "2024-09-11T10:53:19.000000Z"
+   },
+   {
+    "id": 2,
+    "main_title": "ODBLOKUJ zyski",
+    "subtitle": "Twój biznes to inwestycja. Pokażemy Ci, jak uzyskać optymalny zwrot z inwestycji – od kampanii Google po strategię w mediach społecznościowych. Z nami każda złotówka przynosi wartość.",
+    "created_at": "2024-01-30T06:15:46.000000Z",
+    "updated_at": "2024-09-11T10:53:33.000000Z"
+   }
+  ],
+  "ratingSection": {
+   "rating_no": "5",
+   "subtitle_2": "Klienci nas doceniają. Nasz serwis uznany za ZNAKOMITY w najnowszych rankingach satysfakcji.\"",
+   "image_url": "https://images.prismic.io/marketersi/Zs2kJ0aF0TcGJa3B_naukowiec.png?auto=format,compress",
+   "subtitle_1": "Nasi eksperci wskażą proste usprawnienia, po wprowadzeniu których przyciągniesz więcej ruchu i zwiększysz sprzedaż.",
+   "main_title": "Zamów bezpłatne badanie strony lub marketingu i zamień odwiedzających w lojalnych klientów!"
+  },
+  "imageswithdescription": {
+   "section1": {
+    "paragraph_9": "Jesteśmy agencją marketingową skoncentrowaną na zwrocie z inwestycji (ROI). Tworzymy zautomatyzowane kampanie pozyskiwania nowych klientów dla firm działających w wielu krajach i różnych branżach.",
+    "paragraph_8": "Skupiamy się na tym, co ważne: Twoim maksymalnym zwrocie z inwestycji.\r\nEfektach, które od razu zauważysz.",
+    "paragraph_7": "Z Marketersi pracujesz efektywnie, a nie ciężej. Nasze strategie przynoszą wymierne rezultaty – eliminujemy niepotrzebne koszty i marnowanie czasu.",
+    "paragraph_6": "Wyobraź sobie marketing, który działa jak dobrze naoliwiona maszyna.\r\nTworzymy kampanie, które skutecznie wspierają rozwój Twojego biznesu, dając Ci czas na to, co najważniejsze.",
+    "paragraph_5": "Czytasz to, bo wiesz, że Twój biznes zasługuje na więcej.\r\nWiesz, że kluczem do sukcesu jest strategia, a nie przypadkowe działania.\r\nMasz dość prób i błędów? Jesteś we właściwym miejscu.",
+    "paragraph_4": "Działając na wielu frontach, łatwo się pogubić. Zamiast efektów, pojawia się zmęczenie i frustracja.",
+    "subtitle_2": "No i jeszcze ta sztuczna inteligencja – jak ją wykorzystać?",
+    "paragraph_3": "Opcji jest mnóstwo, ale czasu – coraz mniej.",
+    "paragraph_2": "Zastanawiasz się, co zadziała najlepiej? Social media? Google Ads? A może YouTube?",
+    "paragraph_1": "Konkurencja nieustannie puka do drzwi Twoich klientów.",
+    "subtitle_1": "Twój biznes ma ogromny potencjał, a Ty wkładasz w niego całe serce. Ale czy czasem masz wrażenie, że brakuje Ci wsparcia, by osiągnąć pełnię możliwości?",
+    "title": "Zautomatyzowany marketing, który działa",
+    "image_url": "https://marketersi.cdn.prismic.io/marketersi/ZnACaZm069VX1zNe_ad_guy-17.mp4"
+   },
+   "section2": {
+    "paragraph_4": "Twój zysk to nasz priorytet. Optymalizujemy każdą kampanię tak, aby każda złotówka przyniosła maksymalny zwrot. Twój sukces to nasz sukces – każda inwestowana złotówka ma pomnażać się wielokrotnie. Chcesz wiedzieć, jak to robimy?",
+    "paragraph_3": "Nie obiecujemy cudów – skupiamy się na wynikach, które mają realny wpływ na Twój biznes.  Liczby mówią same za siebie – efekty naszych działań poczujesz od razu.\r\nTo nie magia – to marketing oparty na analizie, wiedzy i pełnym zaangażowaniu.",
+    "paragraph_2": "Bez wymówek – tylko skuteczne rozwiązania, które od razu przekładają się na zyski. Zapomnij o skomplikowanych skrótach CTR, CPC, CPM – to tylko narzędzia.",
+    "paragraph_1": "Nasze podejście jest proste – liczą się tylko wyniki! Inwestujesz w marketing, ale co z tego masz? Każda wydana złotówka w Marketersi jest inwestowana w Twój rozwój.",
+    "line_3": "-  Jakie zyski przynosi każda wydana złotówka?",
+    "line_2": "-  Czy Twoi klienci wydają więcej?",
+    "line_1": "- Ilu nowych klientów pozyskałeś?",
+    "subtitle": "My skupiamy się na tym, co naprawdę liczy się dla Ciebie.",
+    "title": "Dlaczego nasze rozwiązania działają lepiej?"
+   },
+   "section3": {
+    "paragraph_6": "Marketing z Marketersi to inwestycja, która buduje Twoją przewagę na rynku. Naszym celem są realne zyski i szybkie efekty. Wykorzystaj potencjał swojego biznesu. Odblokuj swoje zyski z Marketersi.",
+    "paragraph_5": "Nie działamy według utartych schematów. Twój biznes zasługuje na więcej – na rozwiązania, które przynoszą trwałe efekty. Zawsze stawiamy na rozwiązania, które przynoszą efekty tu i teraz.",
+    "paragraph_4": "Nie chodzi o to, jakie narzędzia wybierasz, ale jak skutecznie potrafisz je wykorzystać. My robimy to najlepiej. Dla nas liczy się jedno – jak najwięcej z każdej wydanej złotówki.",
+    "paragraph_3": "Zanim zaczniemy działać, dokładnie analizujemy dane, by precyzyjnie dobrać rozwiązania, które przyniosą maksymalne zyski. Nie tracimy Twojego czasu ani pieniędzy na strzały w ciemno – wybieramy strategie, które już na starcie dają efekty.",
+    "paragraph_2": "W Marketersi wiemy, że Twój biznes potrzebuje strategii, która działa w pełni, a nie tylko w jednym miejscu. Nie tylko wierzymy w wyniki – my je dostarczamy.",
+    "paragraph_1": "Zazwyczaj agencje reklamowe ograniczają się wyłącznie do jednego rozwiązania – do social mediów, do Google Ads lub do SEO. Ale Twój biznes potrzebuje czegoś więcej, czegoś, co naprawdę działa.",
+    "video_url": "https://marketersi.cdn.prismic.io/marketersi/ZmAwZpm069VX1eJq_driving_guy-05.mp4"
+   },
+   "section4": {
+    "paragraph_2": "To strategia, która trafia w sedno i mówi językiem Twoich klientów.",
+    "paragraph_1": "Dla nas dobra kampania to nie tylko ładne obrazki i fajne hasła.",
+    "image_url": "https://marketersi.cdn.prismic.io/marketersi/a1097cff-df3d-4570-ae4f-c4f3bff699fa_name.svg",
+    "subtitle": "tu i teraz, sukces na długo",
+    "title": "Wyniki"
+   },
+   "section5": {
+    "paragraph_2": "Tworzymy kampanie, które angażują, inspirują do działania i budują lojalność. Nasz cel? Twoje zyski. Nasza codzienność? Wyniki, które widać od razu.",
+    "paragraph_1": "W Marketersi nie liczymy na przypadek..  Wszystko, co robimy, jest oparte na twardych danych i precyzyjnych analizach. Zamiast zgadywać, działamy – szybkie decyzje, konkretne kroki, realne wyniki.",
+    "video_url": "https://marketersi.cdn.prismic.io/marketersi/Zk8HrCol0Zci9YYG_Guy_with_books_23.mp4",
+    "quote": "Wyobraź sobie, że masz produkt   </br> który wszyscy by pokochali  </br> ale… nikt o nim nie wie.  Możesz mieć najlepszą oferte, </br>  ale jeśli nikt jej nie zauważy </br> nic się nie zmieni.  Nie chodzi o to by być  obecnym na rynku.  Chodzi o to by być zauważonym."
+   },
+   "section6": {
+    "paragraph_3": "Firmy, które się wyróżniają, zawsze wygrywają z tymi, które idą na skróty.\r\nŚwiadoma marka nie tylko istnieje na rynku – ona dominuje. Z nami zyskasz przewagę nad konkurencją.",
+    "paragraph_2": "W Marketersi stawiamy na testy A/B, które pokazują, co naprawdę działa.\r\nProjektujemy doświadczenie, które zachęca klientów do działania od pierwszej chwili.  Dlaczego? Bo zaufanie buduje się już od pierwszego kliknięcia.",
+    "paragraph_1": "Ale konwersja to coś więcej niż tylko szybciej ładująca się strona. To precyzyjne, przemyślane testowanie każdej strategii. Każdy krok, każdy element strony, każda wiadomość – to wszystko ma znaczenie.",
+    "subtitle": "Poprawiając konwersję zwiększysz zyski bez zwiększania budżetu.",
+    "quote": "Chcesz podwoić liczbę zamówień, nie wydając więcej na reklamy? Kluczem do sukcesu jest optymalizacja konwersji.",
+    "video_url": "https://marketersi.cdn.prismic.io/marketersi/Z7ww857c43Q3gHPB_animation-video.mp4"
+   },
+   "section7": {
+    "image_url_2": "https://images.prismic.io/marketersi/70316ac3-4e2b-4f8d-8554-14c3af6019c6_logo-B.avif?auto=compress,format",
+    "image_url_1": "https://images.prismic.io/marketersi/ZokkdB5LeNNTw2NJ_Marketersi-1.png?auto=format,compress",
+    "quoted_title": "O Marketersi pisze branża:",
+    "bottom_title": "Nasze działania i kampanie są doceniane przez największe branżowe media. Gdy wiesz, co przynosi sukces, nie musisz zgadywać – po prostu działasz.",
+    "video_url_5": "https://prismic-io.s3.amazonaws.com/marketersi/0ad6666a-b98f-4d18-9120-a3f4f80e9fec_Bajkowe_strony_internetowe_guzhlz.webm",
+    "paragraph_4": "Nasze podejście? Proste. Zamiast ślepych strzałów i ogólników, dostarczamy precyzyjnie zaplanowane działania oparte na analizie. Testujemy, dopracowujemy i optymalizujemy każdą kampanię, aż osiągniemy najlepsze możliwe rezultaty.",
+    "video_url_4": "https://prismic-io.s3.amazonaws.com/marketersi/711f4aaa-64f8-48b3-aca5-370ff47f0ff3_Zagraniczna_agencja_reklamowa_qbn7wq.webm",
+    "paragraph_3": "Nie obiecujemy cudów, a efekty. Każdy projekt to misja, w której liczy się precyzja, efektywność i wyniki tu i teraz. Nasze kampanie nie generują kosztów, a zyski. Tworzymy strategie, które od pierwszego dnia zaczynają pracować na Twoją przewagę rynkową.",
+    "paragraph_2": "Jesteśmy Marketersi. Nasze wyniki opieramy na danych i wiedzy, którą zdobyliśmy, pracując z dziesiątkami firm w Polsce i za granicą. Nasze kampanie przyniosły miliony złotych przychodów naszym klientom. Dlaczego? Bo wiemy, co działa.",
+    "video_url_3": "https://images.prismic.io/marketersi/ZpYbNx5LeNNTxLar_wizerunkowaprzewaga-3.png?auto=format,compress",
+    "video_url_2": "https://images.prismic.io/marketersi/ZpYbNx5LeNNTxLar_wizerunkowaprzewaga-3.png?auto=format,compress",
+    "paragraph_1": "W Marketersi, pomagamy tej opowieści rozbrzmieć poprzez rozwiązania, które nie tylko odzwierciedlają Twoją wizję, generują realne wyniki, ale również przyciągają, inspirują i angażują.",
+    "title": "Twoja marka to więcej niż biznes – to historia, która może inspirować i angażować Twoich klientów.",
+    "video_url_1": "https://marketersi.cdn.prismic.io/marketersi/Z8qZZRsAHJWomNqL_Zulk2bVsGrYSvbNp_ZjIQfEMTzAJOCdrt_MariaBilal2-1--2-.mp4"
+   }
+  },
+  "ClientReviews": {
+   "SliderImages": {
+    "row1": [
+     {
+      "id": 1,
+      "type": "row_1_image_url_1",
+      "message": "https://images.prismic.io/marketersi/ZoDc_R5LeNNTwp5M_1.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:20:46.000000Z"
+     },
+     {
+      "id": 2,
+      "type": "row_1_image_url_2",
+      "message": "https://images.prismic.io/marketersi/ZoDc_h5LeNNTwp5N_2.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 3,
+      "type": "row_1_image_url_3",
+      "message": "https://images.prismic.io/marketersi/ZoDc_x5LeNNTwp5O_3.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 4,
+      "type": "row_1_image_url_4",
+      "message": "https://images.prismic.io/marketersi/ZoDdAB5LeNNTwp5P_4.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 5,
+      "type": "row_1_image_url_5",
+      "message": "https://images.prismic.io/marketersi/ZoDdAR5LeNNTwp5Q_5.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 6,
+      "type": "row_1_image_url_6",
+      "message": "https://images.prismic.io/marketersi/ZoDdAh5LeNNTwp5R_6.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 7,
+      "type": "row_1_image_url_7",
+      "message": "https://images.prismic.io/marketersi/ZoDc8B5LeNNTwp4__17.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T06:34:32.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     },
+     {
+      "id": 8,
+      "type": "row_1_image_url_8",
+      "message": "https://images.prismic.io/marketersi/ZoDc_B5LeNNTwp5L_25.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     }
+    ],
+    "row2": [
+     {
+      "id": 9,
+      "type": "row_2_image_url_1",
+      "message": "https://images.prismic.io/marketersi/ZoDdAh5LeNNTwp5R_6.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     },
+     {
+      "id": 10,
+      "type": "row_2_image_url_2",
+      "message": "https://images.prismic.io/marketersi/ZoDdAR5LeNNTwp5Q_5.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     },
+     {
+      "id": 11,
+      "type": "row_2_image_url_3",
+      "message": "https://images.prismic.io/marketersi/ZoDc-R5LeNNTwp5I_8.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:33:37.000000Z"
+     },
+     {
+      "id": 12,
+      "type": "row_2_image_url_4",
+      "message": "https://images.prismic.io/marketersi/ZoDc_x5LeNNTwp5O_3.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     },
+     {
+      "id": 13,
+      "type": "row_2_image_url_5",
+      "message": "https://images.prismic.io/marketersi/ZoDc-x5LeNNTwp5K_14.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     },
+     {
+      "id": 14,
+      "type": "row_2_image_url_6",
+      "message": "https://images.prismic.io/marketersi/ZoDc9R5LeNNTwp5E_22.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:28:35.000000Z"
+     },
+     {
+      "id": 15,
+      "type": "row_2_image_url_7",
+      "message": "https://images.prismic.io/marketersi/ZoDc8h5LeNNTwp5B_19.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:30:46.000000Z"
+     },
+     {
+      "id": 16,
+      "type": "row_2_image_url_8",
+      "message": "https://images.prismic.io/marketersi/ZoDc7x5LeNNTwp4-_16.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:30:46.000000Z"
+     }
+    ],
+    "row3": [
+     {
+      "id": 17,
+      "type": "row_3_image_url_1",
+      "message": "https://images.prismic.io/marketersi/ZoDc6h5LeNNTwp45_9.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 18,
+      "type": "row_3_image_url_2",
+      "message": "https://images.prismic.io/marketersi/ZoDc7B5LeNNTwp47_11.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:29.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 19,
+      "type": "row_3_image_url_3",
+      "message": "https://images.prismic.io/marketersi/ZoDc7R5LeNNTwp48_12.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 20,
+      "type": "row_3_image_url_4",
+      "message": "https://images.prismic.io/marketersi/ZoDc7h5LeNNTwp49_15.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 21,
+      "type": "row_3_image_url_5",
+      "message": "https://images.prismic.io/marketersi/ZoDc7x5LeNNTwp4-_16.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 22,
+      "type": "row_3_image_url_6",
+      "message": "https://images.prismic.io/marketersi/ZoDc7B5LeNNTwp47_11.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-08-01T11:33:16.000000Z"
+     },
+     {
+      "id": 23,
+      "type": "row_3_image_url_7",
+      "message": "https://images.prismic.io/marketersi/ZoDc6x5LeNNTwp46_10.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 24,
+      "type": "row_3_image_url_8",
+      "message": "https://images.prismic.io/marketersi/ZoDc7R5LeNNTwp48_12.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-08-01T11:36:42.000000Z"
+     }
+    ],
+    "row4": [
+     {
+      "id": 25,
+      "type": "row_4_image_url_1",
+      "message": "https://images.prismic.io/marketersi/ZoDc8h5LeNNTwp5B_19.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 26,
+      "type": "row_4_image_url_2",
+      "message": "https://images.prismic.io/marketersi/ZoDc8x5LeNNTwp5C_20.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 27,
+      "type": "row_4_image_url_3",
+      "message": "https://images.prismic.io/marketersi/ZoDc9B5LeNNTwp5D_21.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:41.000000Z"
+     },
+     {
+      "id": 28,
+      "type": "row_4_image_url_4",
+      "message": "https://images.prismic.io/marketersi/ZoDc9R5LeNNTwp5E_22.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:42.000000Z"
+     },
+     {
+      "id": 29,
+      "type": "row_4_image_url_5",
+      "message": "https://images.prismic.io/marketersi/ZoDc9h5LeNNTwp5F_23.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:42.000000Z"
+     },
+     {
+      "id": 30,
+      "type": "row_4_image_url_6",
+      "message": "https://images.prismic.io/marketersi/ZoDc9x5LeNNTwp5G_24.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:42.000000Z"
+     },
+     {
+      "id": 31,
+      "type": "row_4_image_url_7",
+      "message": "https://images.prismic.io/marketersi/ZoDc-B5LeNNTwp5H_26.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-06-30T04:25:42.000000Z"
+     },
+     {
+      "id": 32,
+      "type": "row_4_image_url_8",
+      "message": "https://images.prismic.io/marketersi/ZoDc-R5LeNNTwp5I_8.png?auto=format,compress",
+      "status": "Active",
+      "created_at": "2024-02-02T07:04:30.000000Z",
+      "updated_at": "2024-10-10T11:14:29.000000Z"
+     }
+    ]
+   },
+   "RatingCard": {
+    "rating_description": "100% projektów zrealizowanych na czas. Zawsze dotrzymujemy terminów, zapewniając najwyższą jakość realizacji – to nasza gwarancja.",
+    "rating_image": "https://images.prismic.io/marketersi/ZpDADx5LeNNTxFUN_100-1-.png?auto=format,compress",
+    "left_animated_image": "https://images.prismic.io/marketersi/23f830aa-fc02-429c-9295-c27ced825dd2_bottom.avif?auto=compress,format"
+   },
+   "ClientFeedback": [
+    {
+     "id": 3,
+     "image_url": "https://images.prismic.io/marketersi/Zs1ujEaF0TcGJaXu_qwerty.jpg?auto=format,compress",
+     "review": "„Współpraca zmieniła nasz biznes! Sprzedaż wzrosła, a klienci są zachwyceni nazwą. To było najlepsze, co mogłyśmy zrobić dla naszej marki!”",
+     "video_url": "https://images.prismic.io/marketersi/Z1_G55bqstJ98hqp_ZrHFV0aF0TcGIs_p_Marketersi-2-1--2-.avif?auto=format,compress",
+     "client_name": "Judyta Parczewska",
+     "client_designation": "organiczne ubranka i zabawki",
+     "rating": 5,
+     "created_at": "2024-02-02T08:38:35.000000Z",
+     "updated_at": "2024-12-16T06:22:25.000000Z"
+    },
+    {
+     "id": 2,
+     "image_url": "https://images.prismic.io/marketersi/Zswxz0aF0TcGJYm-_Marketersi-3.png?auto=format,compress",
+     "review": "„Nie tylko 40% wzrost sprzedaży, ale także ogromne zainteresowanie nowymi produktami. Ta strategia działa lepiej, niż się spodziewaliśmy!”",
+     "video_url": "https://images.prismic.io/marketersi/ZrHFWEaF0TcGIs_q_Marketersi-4-1-.jpg?auto=format,compress",
+     "client_name": "Magdalena Wiśniewska",
+     "client_designation": "sklep internetowy z eko żywnością",
+     "rating": 5,
+     "created_at": "2024-02-02T08:38:20.000000Z",
+     "updated_at": "2024-09-16T13:10:13.000000Z"
+    },
+    {
+     "id": 1,
+     "image_url": "https://images.prismic.io/marketersi/Zu0qh7VsGrYSvnJm_MichalZielinski.png?auto=format,compress",
+     "review": "„Od pierwszego miesiąca widzieliśmy wyniki. Zamówienia wzrosły o 30%, a marketing kosztował mniej. To była świetna decyzja!”",
+     "video_url": "https://images.prismic.io/marketersi/Z7SBSJ7c43Q3f6fl_Zswr4kaF0TcGJYki_3rdslide-Marketersi-6.jpg?auto=format%2Ccompress&h=186&dpr=1.5",
+     "client_name": "Michał Zieliński",
+     "client_designation": "firma transportowo-spedycyjna",
+     "rating": 5,
+     "created_at": "2024-02-02T08:26:52.000000Z",
+     "updated_at": "2025-02-19T13:18:09.000000Z"
+    }
+   ],
+   "FeedbackSummary": {
+    "description": "Zawsze dotrzymujemy terminów, zapewniając najwyższą jakość realizacji– to nasza gwarancja.",
+    "title": "100% projektów zrealizowanych na czas."
+   }
+  }
+ }
+}
