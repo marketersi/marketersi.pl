@@ -19,7 +19,8 @@ const HeaderDropDown2 = () => {
             </Col> */}
             <Col sm={4}>
               <div className={style.headerMenu}>
-                <h3>Narzędzia</h3>
+                <h3>Narzędzia i poradniki</h3>
+                <Link href="/poradniki">Poradniki dla małych firm</Link>
                 <Link href="/policz-czy-ci-sie-to-oplaca">
                   Policz czy Ci się to opłaca?
                 </Link>

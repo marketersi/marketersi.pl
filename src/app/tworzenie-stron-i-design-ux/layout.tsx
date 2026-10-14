@@ -1,8 +1,8 @@
 import { strona } from "../meta";
 
 export const metadata = strona(
-  "Strona internetowa dla firmy, która przynosi klientów",
-  "Projektujemy strony dla małych firm: szybkie na telefonie, widoczne w Google i czytelne dla AI. Zacznij od bezpłatnego badania.",
+  "Strony internetowe dla małych firm i design UX",
+  "Tworzenie stron internetowych i design UX dla małych firm. Uporządkuj ofertę, ułatw klientom kontakt i zapytaj Marketersi o wycenę strony.",
   "/tworzenie-stron-i-design-ux"
 );
 

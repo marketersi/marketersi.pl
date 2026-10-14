@@ -10,7 +10,7 @@ const homeSlice = createSlice({
   reducers: {
     // Action when starting to fetch home screen data
     fetchHomeScreenStart: (state) => {
-      state.isLoading = true;
+      state.isLoading = Object.keys(state.screenData).length === 0;
     },
 
     // Action when fetching home screen data is successful
@@ -23,7 +23,7 @@ const homeSlice = createSlice({
     // Action when fetching home screen data is successful
     fetchHomeScreenFail: (state) => {
       state.isLoading = false;
-      state.isError = true;
+      state.isError = Object.keys(state.screenData).length === 0;
     },
   },
 });

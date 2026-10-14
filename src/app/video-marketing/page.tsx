@@ -15,8 +15,6 @@ import HardResult from '@/components/organisms/professional-video-recording/hard
 //import Order from '@/components/organisms/professional-video-recording/order/Order';
 //import Order from '@/components/organisms/main/order/Order';
 import Order from '@/components/organisms/main/order/Order';
-import { Provider } from 'react-redux';
-import store from "@/store/store";
 import AfterBanner from '@/components/organisms/professional-video-recording/after-banner/AfterBanner';
 import CennikCard from '../cennik-card/page'
 import { FETCH_HOME_SCREEN_DATA } from "@/redux/home/homeAction";
@@ -59,7 +57,7 @@ const ProfessionalVideoRecording = () => {
 
   return (
     <>
-    <Provider store={store}>
+
     <ScrollManager/>
       <Hero />
             <AfterBanner /> 
@@ -72,7 +70,7 @@ const ProfessionalVideoRecording = () => {
       <Numbers />
       <HardResult />
       <Order />
-      </Provider>
+
     </>
   );
 };

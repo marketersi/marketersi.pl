@@ -4,6 +4,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Powloka from "./Powloka";
 import { ADRES } from "./meta";
+import { getPublicContent } from "@/services/publicContent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +59,8 @@ const daneStrukturalne = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const content = await getPublicContent();
   return (
     <html lang="pl">
       <body className={inter.className}>
@@ -66,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(daneStrukturalne) }}
         />
-        <Powloka>{children}</Powloka>
+        <Powloka content={content}>{children}</Powloka>
       </body>
     </html>
   );

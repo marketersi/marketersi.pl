@@ -58,12 +58,12 @@ export function oczyscOdpowiedz(url: string, body: any): any {
     ustaw(
       d,
       ["heroSection", "subtitle"],
-      "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI."
+      "Strona, oferta i widoczność, które ułatwiają klientom kontakt."
     );
     ustaw(
       d,
       ["heroSection", "description"],
-      "Umów konsultację i sprawdź, jak możemy włączyć TURBO w Twojej firmie przy niskich kosztach."
+      "Pomagamy małym firmom uporządkować marketing. Sprawdź swoją widoczność i wybierz działania dopasowane do Twojej oferty."
     );
     // "ZNAKOMITY w rankingach satysfakcji" i ocena 5/5 bez źródła
     ustaw(d, ["ratingSection", "subtitle_2"], "");

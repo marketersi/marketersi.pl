@@ -185,7 +185,7 @@ const GoodProcess = () => {
         </div>
       </div>
 
-      <h1 className="afterImage">Przykłady <br /> Realizacji</h1>
+      <h2 className="afterImage">Przykłady <br /> Realizacji</h2>
     </section>
   );
 };

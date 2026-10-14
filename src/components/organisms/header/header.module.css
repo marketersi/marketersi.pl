@@ -377,6 +377,13 @@
 .blackMenu .headerLeftBtn {
   border-color: var(--brand-blue);
 }
+.navbar.blackMenu,
+.mobileHeader.blackMenu {
+  background: #102734;
+}
+.navbar.blackMenu:hover {
+  background: white;
+}
 .blackMenu .headerLeftBtn a {
   color: white;
 }
