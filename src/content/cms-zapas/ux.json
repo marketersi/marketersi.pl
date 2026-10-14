@@ -1,0 +1,270 @@
+{
+ "status": true,
+ "data": {
+  "HeroSection": {
+   "description2": "Przemień swoją wizję w realne wyniki.",
+   "description1": "Tworzymy strony i design UX, które przekładają się na sukces.",
+   "video_url": "https://marketersi.cdn.prismic.io/marketersi/ZvUKfrVsGrYSwBJR_0926.mp4",
+   "animated_text": "Animated Text UX",
+   "styled_title": "UX",
+   "title2": "z Marketersi.",
+   "title1": "Tworzenie stron i design UX"
+  },
+  "CounterData": [
+   {
+    "id": 4,
+    "image": "https://images.prismic.io/marketersi/ZqzKQ0aF0TcGIpc4_ux-number-1.jpg?auto=format,compress",
+    "description": "94% pierwszych wrażeń na stronie internetowej jest związanych z jej wyglądem. Design ma kluczowe znaczenie dla zbudowania najlepszego pierwszego wrażenia i zaufania Twoich klientów.",
+    "created_at": "2024-03-19T06:50:11.000000Z",
+    "updated_at": "2024-10-09T08:26:26.000000Z"
+   },
+   {
+    "id": 3,
+    "image": "https://images.prismic.io/marketersi/ZqzKREaF0TcGIpc5_ux-number-2.jpg?auto=format,compress",
+    "description": "Skrócenie czasu ładowania strony o 1 sekundę może zwiększyć konwersje o 7%. Każda sekunda ma znaczenie w zachęcaniu użytkowników do pozostania na stronie i dokonania zakupów.",
+    "created_at": "2024-03-19T06:49:33.000000Z",
+    "updated_at": "2024-09-10T12:58:04.000000Z"
+   },
+   {
+    "id": 2,
+    "image": "https://images.prismic.io/marketersi/ZqzKREaF0TcGIpc6_ux-number-3.jpg?auto=format,compress",
+    "description": "Strony zoptymalizowane pod kątem SEO mogą zwiększyć ruch organiczny nawet 2,5 razy. Lepsza widoczność w wynikach wyszukiwania przyciąga więcej zainteresowanych klientów.",
+    "created_at": "2024-02-19T10:25:47.000000Z",
+    "updated_at": "2024-10-09T08:20:53.000000Z"
+   },
+   {
+    "id": 1,
+    "image": "https://images.prismic.io/marketersi/ZqzKQkaF0TcGIpc3_ux-number-4.jpg?auto=format,compress",
+    "description": "Poprawa doświadczenia użytkownika jest opłacalna, ponieważ inwestycje w UX mogą przynieść zwrot z inwestycji (ROI) wynoszący nawet 100$ za każdy wydany 1$.",
+    "created_at": "2024-02-19T10:24:07.000000Z",
+    "updated_at": "2024-10-09T08:27:24.000000Z"
+   }
+  ],
+  "CompetitionData": {
+   "compt_animated_Number": "95",
+   "compt_animated_Text": "Spotify",
+   "compt_description3": "Nasze podejście oparte jest na głębokiej analizie i zrozumieniu potrzeb Twoich klientów oraz rynku, aby każdy element strony pracował na Twój sukces.",
+   "compt_description2": "To przede wszystkim budowanie intuicyjnych, efektywnych rozwiązań, które zwiększają konwersję i poprawiają doświadczenie użytkownika.",
+   "compt_description1": "Projektowanie UX w Marketersi to nie tylko tworzenie pięknych stron.",
+   "compt_image": "https://images.prismic.io/marketersi/Z30VlpbqstJ99HdO_cropped-Z30TypbqstJ99HYz_Podkreslenie1.avif?auto=format,compress",
+   "compt_title": "Wychodzimy poza utarte ścieżki"
+  },
+  "IgnoreSites": {
+   "descript2": "Z Marketersi, Twoja strona nie będzie tylko „inną” – będzie lepsza.",
+   "descript1": "W świecie, gdzie uwaga jest na wagę złota, walczymy o nią dla Ciebie. Nie idziemy na kompromisy i zamiast klonów, oferujemy rozwiązania, które naprawdę wyróżniają się na tle konkurencji.",
+   "title": "Przekraczamy Granice Konwencji",
+   "image": "https://propozycje.owocni.pl/ux/Maciej-Projektant-UX-Designer.5591062d.webp"
+  },
+  "Systematically": {
+   "image": "https://images.prismic.io/marketersi/Zo0Ydh5LeNNTw7xT_Marketersi-2.png?auto=format,compress",
+   "title": "To Twoi Klienci są w Centrum Naszej Uwagi",
+   "subtitle": "Najważniejszy jesteś Ty i Twoi klienci. W Marketersi każdy projekt zaczynamy od postawienia na pierwszym miejscu ludzi, dla których tworzymy.",
+   "description": "To podejście pozwala nam kreować rozwiązania, które nie tylko przyciągają uwagę, ale stają się nieodzowną częścią życia użytkowników, oferując im wartość i rozwiązania dopasowane do ich indywidualnych potrzeb i oczekiwań.",
+   "right_image": "https://images.prismic.io/marketersi/ZjDG1d3JpQ5PTQ-O_Projektantka-UX.ae39040d.png?auto=format,compress"
+  },
+  "UX-Video": {
+   "title": "Gwarancja Satysfakcji",
+   "paragraph_1": "Tworzymy interakcje, które wzbudzą zainteresowanie i sprawią, że Twoi klienci naturalnie dotrą do zakupu odkrywając Twoją ofertę krok po kroku, z pełnym zaangażowaniem.",
+   "paragraph_2": "Z nami kontakt nie kończy się na jednym kliknięciu. Nasze strategie pozwalają Ci pozostać w umysłach klientów na dłużej, abyś zawsze miał szansę na nawiązanie współpracy.",
+   "Videotab": [
+    {
+     "id": 1,
+     "video": "https://propozycje.owocni.pl/ux/UX-JEDEN.4766b5b5.mp4",
+     "title": "CELE KLIENTÓW I UŻYTKONIKÓW",
+     "created_at": "2024-02-20T10:31:13.000000Z",
+     "updated_at": "2024-03-19T09:36:15.000000Z"
+    },
+    {
+     "id": 2,
+     "video": "https://propozycje.owocni.pl/ux/UX-DWA.917254d4.mp4",
+     "title": "REZULTATY SĄ TUTAJ",
+     "created_at": "2024-02-20T10:31:56.000000Z",
+     "updated_at": "2024-03-19T09:36:29.000000Z"
+    },
+    {
+     "id": 3,
+     "video": "https://propozycje.owocni.pl/ux/UX-TRZY.54e91b3f.mp4",
+     "title": "TWOJE CELE BIZNESOWE",
+     "created_at": "2024-02-20T10:32:52.000000Z",
+     "updated_at": "2024-03-19T09:36:42.000000Z"
+    }
+   ],
+   "image_1": "http://Image-1/UXinfoSection",
+   "image_2": "http://Image-2/UXinfoSection",
+   "image_3": "http://Image-3/UXinfoSection",
+   "image_4": "http://Image-4/UXinfoSection",
+   "image_5": "http://Image-5/UXinfoSection",
+   "paragraph_3": "Obiecujemy nie tylko piękno formy, ale przede wszystkim rezultaty.",
+   "paragraph_4": "Jeśli Twoja strona nie przyniesie oczekiwanych wyników – zwrócimy Ci 100% inwestycji.",
+   "paragraph_5": "Taka jest nasza pewność skuteczności.",
+   "button_text": "Otrzymaj wycenę bez zobowiązań"
+  },
+  "GoodProcess": {
+   "title": "Proces Tworzenia Stron i Designu UX w Marketersi",
+   "paragraph": "Jak tworzymy prototyp, który napędzi wydajność Twojej strony?",
+   "Stages": {
+    "stage_1": {
+     "id": 1,
+     "number": "1",
+     "video_url": "https://marketersi.cdn.prismic.io/marketersi/aItUTqTt2nPbZmgT_aDAUHydWJ-7kSeJq_Latest_Video-online-video-cutter.com--1-.mp4",
+     "title": "Badanie i Analiza",
+     "subtitle": "Zaczynamy od dogłębnego badania rynku, konkurencji i potrzeb Twoich klientów.",
+     "description": "Odkrywamy unikalne szanse i wyzwania, co pozwala nam stworzyć stronę, która idealnie odpowiada na potrzeby Twojej grupy docelowej.",
+     "created_at": "2024-02-20T08:46:21.000000Z",
+     "updated_at": "2025-07-31T11:47:22.000000Z"
+    },
+    "stage_2": {
+     "id": 2,
+     "number": "2",
+     "video_url": "https://marketersi.cdn.prismic.io/marketersi/aBxFTydWJ-7kRvEe_671f55ba-f0db-4a93-ad14-deeb122ebfd3_restream.mp4",
+     "title": "Rozwój Korzyści",
+     "subtitle": "Ustalamy cele Twojego biznesu i opracowujemy propozycję wartości, która nie ma sobie równych.",
+     "description": "Każda propozycja jest precyzyjnie dopasowana do Twojego biznesu i potrzeb Twoich klientów, co sprawia, że Twoja oferta wyróżnia się na tle konkurencji i przyciąga uwagę odbiorców.",
+     "created_at": "2024-02-20T08:47:31.000000Z",
+     "updated_at": "2025-05-08T05:47:20.000000Z"
+    },
+    "stage_3": {
+     "id": 3,
+     "number": "3",
+     "video_url": "https://images.prismic.io/marketersi/Z8gUIhsAHJWomIVJ_tak-tak.png?auto=format,compress",
+     "title": "Projektowanie i Prototypowanie",
+     "subtitle": "Tworzymy prototypy i makiety.",
+     "description": "Każdy prototyp jest testowany i dopracowywany, aby Twoja strona działała na najwyższym poziomie od samego początku.",
+     "created_at": "2024-02-20T08:48:16.000000Z",
+     "updated_at": "2025-03-05T09:07:02.000000Z"
+    }
+   }
+  },
+  "websites": {
+   "title": "PROTOTYPE STRONY",
+   "image_1": "https://images.prismic.io/marketersi/ZkrbRCol0Zci9RaX_Makieta-UX-strony.png?auto=format,compress",
+   "image_2": "https://images.prismic.io/marketersi/ZkczCCol0Zci9PNj_Untitleddesign-8-.png?auto=format,compress",
+   "subtitle": "Website Section Subtitle"
+  },
+  "slider": {
+   "images": [
+    {
+     "id": 3,
+     "Image": "https://images.prismic.io/marketersi/Z35qH5bqstJ99Kur_zszywanki-pl.png?auto=format,compress",
+     "image_link": "https://zszywanki.pl/",
+     "created_at": "2024-02-20T07:15:12.000000Z",
+     "updated_at": "2025-01-08T13:16:46.000000Z"
+    },
+    {
+     "id": 2,
+     "Image": "https://images.prismic.io/marketersi/Z35qFJbqstJ99Kuo_ekowita-pl.png?auto=format,compress",
+     "image_link": "https://ekowita.pl/",
+     "created_at": "2024-02-20T07:15:04.000000Z",
+     "updated_at": "2025-01-08T13:15:59.000000Z"
+    },
+    {
+     "id": 1,
+     "Image": "https://images.prismic.io/marketersi/Z35qI5bqstJ99Kus_avron-pl.png?auto=format,compress",
+     "image_link": "https://avron.pl/",
+     "created_at": "2024-02-20T07:14:55.000000Z",
+     "updated_at": "2025-01-08T13:14:59.000000Z"
+    }
+   ]
+  },
+  "executive": {
+   "title": "Makieta UX: Klucz do Twojego Sukcesu",
+   "paragraph_1": "Przekształć swoją obecność online dzięki przemyślanej architekturze informacji i intuicyjnym rozwiązaniom UX.",
+   "paragraph_2": "Z Marketersi, Twoja oferta stanie się nie tylko widoczna, ale przede wszystkim pożądana przez Twoich klientów, a to przecież o to nam chodzi.",
+   "paragraph_3": "Zapraszamy do kontaktu.",
+   "paragraph_4": "Wyślij nam zapytanie, a my przedstawimy Ci jak możemy wspólnie osiągnąć sukces. Dokładnie zapoznamy się z Twoimi pytania, by udzielić odpowiedzi czy to jest możliwe w Twoim indywidualnym przypadku, zanim zaczniesz wydawać swoje pieniądze i poświęcać swój czas.",
+   "video_url": "https://propozycje.owocni.pl/ux/Co-otrzymam.3d0d4083.mp4"
+  },
+  "FAQ": {
+   "FAQTitle": {
+    "title": "Odpowiedź jest zawsze jedna: TAK!"
+   },
+   "FAQCard": [
+    {
+     "id": 6,
+     "question": "Czy mogę liczyć na pełną satysfakcję z projektu?",
+     "answer": "<p><b>TAK.</b> Dla nas liczy się Twój sukces, dlatego dopracowujemy każdy detal aż do momentu, w którym powiesz 'To jest to!'.</p>                 <p>Masz pełną swobodę, by przemyśleć każdą propozycję.</p>",
+     "created_at": "2024-03-21T09:46:09.000000Z",
+     "updated_at": "2025-01-10T09:32:57.000000Z"
+    },
+    {
+     "id": 5,
+     "question": "Czy macie możliwość pokazania przykładowego prototypu UX?",
+     "answer": "<p><b>TAK z przyjemnością. </b> Wystarczy, że wyślesz nam kilka szczegółów o swoim projekcie, korzystając z formularza kontaktowego, lub napisz bezpośrednio na:</p> <a class=\"mailidys\" href=\"mailto:-studio@marketersi.pl\">studio@marketersi.pl.</a> <p>Dobierzemy dla Ciebie odpowiedni przykład z naszego portfolio.</p>",
+     "created_at": "2024-03-21T09:45:53.000000Z",
+     "updated_at": "2025-01-10T09:40:09.000000Z"
+    },
+    {
+     "id": 4,
+     "question": "Czy analizujecie wszystkie potencjalne źródła ruchu na stronie?",
+     "answer": "<p><b>TAK.</b> Każde źródło ruchu ma kluczowe znaczenie w optymalizacji konwersji.</p> <p>Aby strona była skuteczna, musi być idealnie dostosowana do rzeczywistych zachowań użytkowników, niezależnie od tego, skąd pochodzą.</p>",
+     "created_at": "2024-03-21T09:45:33.000000Z",
+     "updated_at": "2025-01-10T09:32:39.000000Z"
+    },
+    {
+     "id": 3,
+     "question": "Jaki jest czas realizacji? Czy możemy zrobić szybki projekt?",
+     "answer": "<p><b>TAK.</b> Jeśli Twój model biznesowy jest dobrze określony stworzenie makiety może potrwać od tygodnia do dwóch tygodni roboczych. </p> <p>Kolejnym etapem jest przygotowanie materiałów tekstowych oraz projektów graficznych, co zajmuje od 2 do 3 tygodni roboczych, w zależności od poziomu szczegółowości projektu.</p>",
+     "created_at": "2024-03-21T09:45:18.000000Z",
+     "updated_at": "2025-01-10T09:32:30.000000Z"
+    },
+    {
+     "id": 2,
+     "question": "Jak przebiega współpraca? Czy mogę liczyć, że wszystko zostanie zrealizowane bez mojego dużego zaangażowania?",
+     "answer": "<p><b>TAK.</b>  Na początku dokładnie definiujemy cele projektu i kluczowe wytyczne, które chcemy osiągnąć za pomocą Twojej strony. Ustalamy jasne wskaźniki sukcesu, aby monitorować postępy na każdym etapie.  </p> <p>Po doprecyzowaniu szczegółów, przechodzimy do ustalenia najlepszej strategii realizacji tych celów. Jeżeli Twój model biznesowy jest dobrze ustrukturyzowany, całość tego etapu nie powinna potrwać dłużej niż 7 dni roboczych.</p> <p>Po ustaleniu kluczowych kwestii, w większości przypadków możemy działać samodzielnie, kontaktując się tylko po to, by uzyskać Twoją akceptację na poszczególnych etapach projektu.</p>",
+     "created_at": "2024-02-19T10:44:46.000000Z",
+     "updated_at": "2025-01-10T09:32:21.000000Z"
+    },
+    {
+     "id": 1,
+     "question": "Czy możemy współpracować przez komunikatory?",
+     "answer": "<p><b>TAK.</b> Wiemy, że każdy klient ma swoje preferencje w sposobie pracy, dlatego oferujemy różne formy komunikacji – od maila, przez telefon, po wideokonferencje na platformach takich jak Zoom czy Skype. Staramy się być elastyczni i dopasować do Twojego stylu pracy. </p> <p>Jedynym wymogiem jest, aby wszystkie osoby decyzyjne były obecne przy kluczowych ustaleniach projektowych, by uniknąć nieporozumień. </p> <p>Pierwsze spotkanie najczęściej odbywa się telefonicznie lub w ramach wideokonferencji, a dalsze ustalenia dotyczące projektu możemy prowadzić mailowo – zgodnie z Twoimi preferencjami.</p>",
+     "created_at": "2024-02-19T10:12:39.000000Z",
+     "updated_at": "2025-01-10T09:32:12.000000Z"
+    }
+   ]
+  },
+  "complex": {
+   "title": "Czym  dla nas jest Projektowanie UX?",
+   "paragraph_1": "Wyobraź sobie, że wchodzisz do domu, który rozważasz do kupienia, wynajęcia lub w którym planujesz spędzić jakiś czas. Pierwsze wrażenie, sposób, w jaki przestrzeń została zaprojektowana, jak się w niej poruszasz, gdzie spędzasz czas – wszystko to ma ogromne znaczenie.",
+   "paragraph_2": "Projektowanie UX to jak architektura Twojego cyfrowego domu. Decyduje o tym, jak łatwo i przyjemnie użytkownicy odnajdą to, czego szukają, oraz jak pozytywne będzie ich pierwsze i każde kolejne wrażenie.",
+   "paragraph_3": "Właśnie dlatego projektowanie UX jest tak ważne – tworzy fundamenty doświadczeń, które zapadają w pamięć i zachęcają do dalszego odkrywania Twojej oferty.",
+   "animated_text_1": "ani1",
+   "animated_text_2": "ani2",
+   "animated_text_3": "ani3"
+  },
+  "market": {
+   "cardOne": {
+    "title": "Jak zainteresować ludzi?",
+    "image": "https://images.prismic.io/marketersi/ZvU_x7VsGrYSwByh_Marketersi-a1.PNG?auto=format,compress",
+    "back_title": "Każde opóźnienie ładowania strony o sekundę może kosztować firmę nawet 400$ miesięcznie w utraconych konwersjach. Strony działające wolno zniechęcają, co prowadzi do wyższych wskaźników porzucenia.",
+    "back_image": "https://propozycje.owocni.pl/ux/Marketer-Back.5961d2f3.webp",
+    "text": "Marketing",
+    "back_image_2": "https://images.prismic.io/marketersi/ZkWajSol0Zci9L8Y_circal-4-.webp?auto=format,compres"
+   },
+   "cardTwo": {
+    "title": "Jak przękonać klientow?",
+    "image": "https://images.prismic.io/marketersi/ZvU_yrVsGrYSwByi_Marketersi-a2.PNG?auto=format,compress",
+    "back_title": "Dobrze zaprojektowany UX nie tylko przyciąga nowych klientów, ale także sprawia, że firmy widzą 2x większy wzrost lojalności klientów – użytkownicy wracają, ponieważ łatwo się po stronie poruszać.",
+    "back_image": "https://propozycje.owocni.pl/ux/Handlowiec-Back.14c4f7d8.webp",
+    "text": "Handlowiec",
+    "back_image_2": "https://images.prismic.io/marketersi/ZkWajCol0Zci9L8X_circal-3-.webp?auto=format,compress"
+   },
+   "cardThree": {
+    "title": "Jak obniżyć koszty?",
+    "image": "https://images.prismic.io/marketersi/ZvU_zbVsGrYSwByj_Marketersi-a3.PNG?auto=format,compress",
+    "back_title": "Personalizacja treści w UX może zwiększyć użytkowników i ich zaangażowanie 3x mocniej, sprawiając, że klienci czują, że strona jest stworzona specjalnie dla nich, co prowadzi do większej liczby powrotów.",
+    "back_image": "https://propozycje.owocni.pl/ux/Wlasciciel-Back.1b7da54d.webp",
+    "text": "Właściciel",
+    "back_image_2": "https://images.prismic.io/marketersi/ZkWakCol0Zci9L8Z_circal-1-.webp?auto=format,compress"
+   },
+   "cardFour": {
+    "title": "Jaka firma jest najlepsza?",
+    "image": "https://images.prismic.io/marketersi/ZvU_wrVsGrYSwByf_Marketersi-a4.PNG?auto=format,compress",
+    "back_title": "Badania wykazują, że aż 42% użytkowników nie powróci na stronę, jeśli nie spełnia ona ich oczekiwań w zakresie łatwości użytkowania i intuicyjności. Inwestycja w UX to inwestycja w lojalność nowych i obecnych klientów.",
+    "back_image": "https://propozycje.owocni.pl/ux/Klient-Back.fc7ec369.webp",
+    "text": "Klient",
+    "back_image_2": "https://images.prismic.io/marketersi/ZkWaiyol0Zci9L8W_circal-2-.webp?auto=format,compress"
+   }
+  }
+ }
+}
