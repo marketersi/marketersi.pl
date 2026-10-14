@@ -15,7 +15,6 @@ import $ from "jquery"; // Import jQuery
 const Hero = () => {
   const { screenData } = useSelector((state: RootState) => state.home);
 
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const { heroSection } = screenData;
   console.log(heroSection, "heroSection");
 
@@ -30,15 +29,6 @@ const Hero = () => {
     visible: { opacity: 1, x: 0, y: 0, transition: { duration: 2 } },
     hidden: { opacity: 0.5, x: 200, y: 200, transition: { duration: 2 } },
   };
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   useEffect(() => {
     // Ensure jQuery selects the element correctly and triggers play
@@ -66,16 +56,8 @@ const Hero = () => {
     }
   }, [controls, inView]);
 
-  function Sc(){
-    console.log("------------677------------")
-     window.scrollTo({
-  top: 19515,
-  behavior: 'smooth',
-});
-  }
-
   return (
-    <div>
+    <div className={style.heroRoot}>
       <div className={style.HerVideoOverlay}></div>
       {/* <ReactPlayer
         url={heroSection?.background_video}
@@ -184,14 +166,13 @@ key={new Date().toISOString()}
             <p>{heroSection?.description}</p>
           </div>
           <div className={style.heroBtn}>
-            <span onClick={Sc}>Umów konsultację</span>
 
 
             <Link href="/cennik">
               <button>Wyceń usługę</button>
             </Link>
             <Link href="/konsultacja-marketingu" className={style.umow}>
-              <span onClick={Sc}>Umów konsultację</span>
+              <span>Umów konsultację</span>
               {/* <motion.div
                 className={style.heroPlay}
                 initial="initial"

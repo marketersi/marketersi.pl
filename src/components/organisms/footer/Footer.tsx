@@ -18,7 +18,7 @@ const Footer = () => {
               <div className={style.footerLogo}>
                 <Image
                   src="https://images.prismic.io/marketersi/Zn0rnpbWFbowe74p_Marketersi-logo.png?auto=format,compress"
-                  alt="My Image"
+                  alt="Marketersi"
                   width="100%"
                   height="auto"
                 />
@@ -26,7 +26,7 @@ const Footer = () => {
               <div className={style.footerBrandLogo}>
                 <Image
                   src="https://images.prismic.io/marketersi/ZvEEw7VsGrYSvqPY_Footer-brand-logo.png?auto=format,compress"
-                  alt="My Image"
+                  alt=""
                   width="100%"
                   height="auto"
                 />
@@ -87,6 +87,7 @@ const Footer = () => {
                 <Col sm={9}>
                   <div className={style.footerRightMenu}>
                     <h3>Przydatne rzeczy</h3>
+                    <Link href="/poradniki">Poradniki dla małych firm</Link>
                     <Link href="/policz-czy-ci-sie-to-oplaca">
                       Policz czy Ci się to opłaca?
                     </Link>

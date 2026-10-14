@@ -1,0 +1,30 @@
+.page { background: #fff; color: #17283b; padding: 70px 24px 90px; }
+.wrap { max-width: 1100px; margin: 0 auto; }
+.page h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.12; font-weight: 800; max-width: 880px; margin: 24px 0; color: #17283b; }
+.page h2 { font-size: clamp(1.5rem, 2.8vw, 2rem); line-height: 1.25; color: #17283b; margin: 0 0 20px; font-weight: 750; }
+.page h3 { font-size: 1.35rem; line-height: 1.35; }
+.page a { color: #006d92; text-decoration: underline; text-underline-offset: .2em; }
+.page a:hover { color: #003c59; }
+.page a:focus-visible { outline: 3px solid #005e80; outline-offset: 5px; }
+.eyebrow { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 750; color: #006d92; }
+.lead { font-size: 1.25rem; line-height: 1.7; max-width: 800px; }
+.breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; font-size: .9rem; padding: 0; list-style: none; }
+.meta { font-size: .9rem; color: #516071; margin: 20px 0 32px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 32px 0; }
+.card { padding: 30px; border: 1px solid #c7dbe3; border-radius: 20px; background: #f3f9fc; }
+.card p { line-height: 1.7; }
+.article { max-width: 800px; }
+.article section { padding-top: 38px; scroll-margin-top: 110px; }
+.article p, .article li { font-size: 1.08rem; line-height: 1.85; }
+.article li { margin: 10px 0; }
+.toc { background: #eef7fb; border-radius: 16px; padding: 24px 30px; margin: 30px 0 8px; }
+.toc ol { padding-left: 22px; margin: 0; }
+.article :global(.table-wrap) { overflow-x: auto; margin: 24px 0; }
+.article table { width: 100%; min-width: 480px; border-collapse: collapse; line-height: 1.6; }
+.article th, .article td { border: 1px solid #b7cbd5; text-align: left; vertical-align: top; padding: 14px; }
+.article thead { background: #eef7fb; }
+.cta { border-top: 2px solid #c5e6f2; margin-top: 48px; padding-top: 32px; }
+.cta .button { display: inline-block; background: #006d92; color: white; padding: 14px 24px; border-radius: 30px; text-decoration: none; font-weight: 650; }
+.cta .button:hover { background: #00465f; }
+.related { margin-top: 48px; }
+@media (max-width: 650px) { .grid { grid-template-columns: 1fr; } .page { padding: 36px 20px 60px; } .card { padding: 24px; } .article p, .article li { font-size: 1rem; } }

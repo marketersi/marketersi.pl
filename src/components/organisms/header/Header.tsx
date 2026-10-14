@@ -26,7 +26,7 @@ const Header = () => {
   console.log("pathname ===>", pathname);
 
   // switch - if-else condition to check the screen name from path
-  const screenName = pathname.split("/").pop();
+  const screenName = pathname.split("/").filter(Boolean).pop() || "";
   console.log("screenName ===>", screenName);
 
   const specialScreens = ["", "Zespol"];
@@ -131,20 +131,20 @@ const Header = () => {
             </Col>
             <Col sm={4}>
               <Link href="/">
-                <LottieAnimation isHovered={isHovered} />
+                <LottieAnimation isHovered={isHovered || pathname.startsWith("/poradniki")} />
               </Link>
             </Col>
             <Col sm={4}>
               <div className={style.rightNav}>
                 <Nav className="d-flex align-items-center flex-nowrap">
-                  <Nav.Link className={style.navRightMenu}>
+                  <Nav.Item className={`${style.navRightMenu} nav-link`}>
                     <Link href="/Kim-jestesmy">
                       Kim <br /> jesteśmy?
                     </Link>
-                  </Nav.Link>
-                  <Nav.Link className={style.navRightMenu}>
+                  </Nav.Item>
+                  <Nav.Item className={`${style.navRightMenu} nav-link`}>
                     <Link href="/kontakt-marketersi">Kontakt</Link>
-                  </Nav.Link>
+                  </Nav.Item>
                 </Nav>
                 <Button className={style.headerRightBtn}>
                   <Link href="/zamow-bezplatne-badanie">
@@ -171,7 +171,7 @@ const Header = () => {
           </Button>
           <div className={style.mobileLogo}>
             <Link href="/">
-              <LottieAnimation />
+              <LottieAnimation isHovered={pathname.startsWith("/poradniki")} />
               {/* <Image
                 src="https://images.prismic.io/marketersi/984f6871-6a21-41ee-b875-ebac79cfec29_marketersi_logo.png?auto=compress,format"
                 alt="My Image"
@@ -299,6 +299,7 @@ const Header = () => {
                   </button>
                   {isOpen2 && (
                     <div className="dropdown-content">
+                      <div className={style.menuItem}><Link onClick={handleMenuItemClick} href="/poradniki">Poradniki dla małych firm</Link></div>
                       <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
