@@ -27,7 +27,7 @@ const UxBanner = () => {
           <div className="row m-0">
             <div className="col-xl-5 col-xxl-6">
               <h1 className="titleHead">
-                Strony internetowe <br /> dla małych firm <br /> i design UX.
+                Strona internetowa <br /> dla firmy, która <br /> przynosi klientów.
               </h1>
               <p className="subitle">
                 Pomóż klientowi zrozumieć ofertę i łatwo się z Tobą skontaktować.
