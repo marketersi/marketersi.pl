@@ -54,11 +54,11 @@ export function oczyscOdpowiedz(url: string, body: any): any {
 
   // Strona główna
   if (url.includes("get-home-screen-setting")) {
-    ustaw(d, ["heroSection", "title"], "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI.");
+    ustaw(d, ["heroSection", "title"], "Włącz TURBO w swojej firmie.");
     ustaw(
       d,
       ["heroSection", "subtitle"],
-      "Włącz TURBO w swojej firmie."
+      "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI."
     );
     ustaw(
       d,
