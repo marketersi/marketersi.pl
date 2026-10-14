@@ -1,7 +1,7 @@
 import { strona } from "../meta";
 
 export const metadata = strona(
-  "Więcej klientów z Google i AI dla małych firm",
+  "AI nie zastąpi ludzi. Włącz TURBO w swojej firmie",
   "Sprawdzamy, gdzie Twoja firma traci klientów: na stronie, w wizytówce Google i w odpowiedziach AI.",
   "/", { indeksuj: false }
 );

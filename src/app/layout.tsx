@@ -8,9 +8,9 @@ import { getPublicContent } from "@/services/publicContent";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const TYTUL = "Marketersi: więcej klientów z Google i AI dla małych firm";
+const TYTUL = "Marketersi: strony, Google i AI dla małych firm. Włącz TURBO";
 const OPIS =
-  "Sprawdzamy, gdzie Twoja firma traci klientów: na stronie, w wizytówce Google i w odpowiedziach AI. Zacznij od bezpłatnego badania widoczności.";
+  "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI. Pomagamy małym firmom wdrożyć AI, stronę i widoczność w Google. Umów konsultację.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(ADRES),
