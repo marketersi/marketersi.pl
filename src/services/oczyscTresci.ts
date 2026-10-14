@@ -54,16 +54,16 @@ export function oczyscOdpowiedz(url: string, body: any): any {
 
   // Strona główna
   if (url.includes("get-home-screen-setting")) {
-    ustaw(d, ["heroSection", "title"], "Więcej klientów z Google i AI dla małych firm");
+    ustaw(d, ["heroSection", "title"], "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI.");
     ustaw(
       d,
       ["heroSection", "subtitle"],
-      "AI nie zastąpi ludzi, ale ludzie z AI zastąpią tych bez AI."
+      "Włącz TURBO w swojej firmie."
     );
     ustaw(
       d,
       ["heroSection", "description"],
-      "Umów konsultację i sprawdź, jak możemy włączyć TURBO w Twojej firmie przy niskich kosztach."
+      "Umów konsultację i sprawdź, jak zrobić to przy niskich kosztach."
     );
     // "ZNAKOMITY w rankingach satysfakcji" i ocena 5/5 bez źródła
     ustaw(d, ["ratingSection", "subtitle_2"], "");
