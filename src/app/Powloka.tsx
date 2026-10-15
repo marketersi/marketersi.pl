@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import ScrollManager from "./ScrollManager";
 import Analytics from "@/components/analytics/Analytics";
 import CookieBanner from "@/components/analytics/CookieBanner";
+import Clarity from "@/components/analytics/Clarity";
 import { useRef } from "react";
 import { makeStore, type AppStore, type InitialContent } from "@/store/store";
 
@@ -17,6 +18,7 @@ export default function Powloka({ children, content }: { children: React.ReactNo
   return (
     <>
       <Analytics />
+      <Clarity />
       <ScrollManager />
       <Header />
       <Provider store={store.current}>{children}</Provider>

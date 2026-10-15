@@ -20,6 +20,7 @@ export default function CookieBanner() {
       ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v,
     });
     window.dataLayer?.push({ event: zgoda ? "zgoda_tak" : "zgoda_nie" });
+    if (zgoda) window.dispatchEvent(new Event("mk-zgoda-tak"));
     setShow(false);
   };
 
@@ -32,7 +33,8 @@ export default function CookieBanner() {
       boxShadow: "0 8px 30px rgba(0,0,0,.18)", fontSize: 14, lineHeight: 1.45,
     }}>
       <div style={{ marginBottom: 12 }}>
-        Używamy plików cookies, żeby sprawdzać, skąd przychodzą odwiedzający i które strony działają.
+        Używamy plików cookies, żeby sprawdzać, skąd przychodzą odwiedzający, które strony działają
+        i jak korzysta się ze strony (Google Analytics, Microsoft Clarity).
         Bez Twojej zgody zbieramy tylko anonimowe, zbiorcze dane.
       </div>
       <div style={{ display: "flex", gap: 8, justifyContent: "flex-end", flexWrap: "wrap" }}>
