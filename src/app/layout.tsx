@@ -40,7 +40,10 @@ const daneStrukturalne = {
       email: "studio@marketersi.pl",
       description: OPIS,
       areaServed: { "@type": "Country", name: "Polska" },
+      founder: { "@type": "Person", name: "Michał Klamkowski" },
+      address: { "@type": "PostalAddress", addressLocality: "Warszawa", addressCountry: "PL" },
       knowsAbout: [
+        "asystent AI do odbierania telefonów",
         "widoczność firmy w Google",
         "Profil Firmy w Google",
         "widoczność w odpowiedziach AI",

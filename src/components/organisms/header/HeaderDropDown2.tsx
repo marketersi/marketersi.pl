@@ -21,6 +21,12 @@ const HeaderDropDown2 = () => {
               <div className={style.headerMenu}>
                 <h3>Narzędzia i poradniki</h3>
                 <Link href="/poradniki">Poradniki dla małych firm</Link>
+                <Link href="/poradniki/ile-kosztuje-strona-internetowa">
+                  Ile kosztuje strona internetowa?
+                </Link>
+                <Link href="/poradniki/ile-telefonow-nie-odbiera-twoja-firma">
+                  Ile telefonów nie odbiera Twoja firma?
+                </Link>
                 <Link href="/policz-czy-ci-sie-to-oplaca">
                   Policz czy Ci się to opłaca?
                 </Link>

@@ -4,7 +4,7 @@ import { createRequire } from 'node:module';
 import ts from 'typescript';
 
 const origin = 'https://www.marketersi.pl';
-const pages = ['/', '/tworzenie-stron-i-design-ux', '/poradniki', '/poradniki/co-powinna-zawierac-strona-malej-firmy', '/poradniki/dlaczego-strona-nie-pozyskuje-klientow'];
+const pages = ['/', '/tworzenie-stron-i-design-ux', '/asystent-ai-do-odbierania-telefonow', '/test-za-0-zl', '/wizytowka-google', '/poradniki', '/poradniki/co-powinna-zawierac-strona-malej-firmy', '/poradniki/dlaczego-strona-nie-pozyskuje-klientow', '/poradniki/ile-kosztuje-strona-internetowa', '/poradniki/ile-telefonow-nie-odbiera-twoja-firma'];
 const outputFile = path => `out/${path === '/' ? 'index' : path.slice(1)}.html`;
 const titles = new Set();
 for (const path of pages) {
@@ -22,6 +22,10 @@ for (const path of pages) {
     assert(existsSync(outputFile(href)), `${path}: broken internal link ${href}`);
   }
   const schemas = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap(m=>JSON.parse(m[1])['@graph'] || []);
+  if (['/asystent-ai-do-odbierania-telefonow', '/test-za-0-zl', '/wizytowka-google'].includes(path)) {
+    assert(schemas.some(s=>s['@type']==='Service' && s.url===origin+path), `${path}: service schema`);
+    assert(schemas.some(s=>s['@type']==='FAQPage' && s.mainEntity?.length>=3), `${path}: FAQ schema`);
+  }
   if (path.startsWith('/poradniki/')) {
     assert(schemas.some(s=>s['@type']==='BlogPosting' && s.url===origin+path), `${path}: article schema`);
     assert(schemas.some(s=>s['@type']==='BreadcrumbList'), `${path}: breadcrumbs`);

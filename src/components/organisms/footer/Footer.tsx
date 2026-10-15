@@ -37,6 +37,10 @@ const Footer = () => {
                 <Col sm={4} xs={6}>
                   <div className={style.footerRightMenu}>
                     <h3>BĄDŹ widoczny</h3>
+                    <Link href="/asystent-ai-do-odbierania-telefonow">
+                      Asystent AI do odbierania telefonów
+                    </Link>
+                    <Link href="/wizytowka-google">Wizytówka Google</Link>
                     <Link href="/tworzenie-stron-i-design-ux">
                       Tworzenie stron i design UX
                     </Link>
@@ -87,6 +91,7 @@ const Footer = () => {
                 <Col sm={9}>
                   <div className={style.footerRightMenu}>
                     <h3>Przydatne rzeczy</h3>
+                    <Link href="/test-za-0-zl">Test za 0 zł: ile telefonów ginie</Link>
                     <Link href="/poradniki">Poradniki dla małych firm</Link>
                     <Link href="/policz-czy-ci-sie-to-oplaca">
                       Policz czy Ci się to opłaca?
