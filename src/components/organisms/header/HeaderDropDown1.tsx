@@ -45,6 +45,16 @@ const HeaderDropDown1 = () => {
             </Col>
           </Row>
           <Row className="mt-4">
+            <Col sm={4}>
+              <div className={style.headerMenu}>
+                <h3>ŻADNE zapytanie nie ginie</h3>
+                <Link href="/asystent-ai-do-odbierania-telefonow">
+                  Asystent AI do odbierania telefonów
+                </Link>
+                <Link href="/wizytowka-google">Wizytówka Google w abonamencie</Link>
+                <Link href="/test-za-0-zl">Test za 0 zł: ile telefonów ginie</Link>
+              </div>
+            </Col>
             {/* <Col sm={4}>
               <div className={style.headerMenu}>
                 <h3>Wydajny marketing</h3>

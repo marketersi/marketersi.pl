@@ -28,3 +28,18 @@
 .cta .button:hover { background: #00465f; }
 .related { margin-top: 48px; }
 @media (max-width: 650px) { .grid { grid-template-columns: 1fr; } .page { padding: 36px 20px 60px; } .card { padding: 24px; } .article p, .article li { font-size: 1rem; } }
+
+/* Strony oferty: asystent AI, test za 0 zł, wizytówka Google (15.10.2026) */
+.odpowiedz { background: #eef7fb; border-left: 5px solid #006d92; border-radius: 0 16px 16px 0; padding: 22px 28px; margin: 28px 0; max-width: 800px; }
+.odpowiedz p { margin: 0; font-size: 1.12rem; line-height: 1.75; }
+.kroki { counter-reset: krok; list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; max-width: 800px; }
+.kroki li { counter-increment: krok; position: relative; padding: 18px 20px 18px 72px; border: 1px solid #c7dbe3; border-radius: 16px; line-height: 1.7; }
+.kroki li::before { content: counter(krok); position: absolute; left: 20px; top: 16px; width: 36px; height: 36px; border-radius: 50%; background: #006d92; color: #fff; font-weight: 750; display: flex; align-items: center; justify-content: center; }
+.faq { max-width: 800px; margin: 24px 0; }
+.faq details { border-bottom: 1px solid #c7dbe3; padding: 14px 0; }
+.faq summary { font-weight: 700; font-size: 1.08rem; cursor: pointer; line-height: 1.5; }
+.faq details p { margin: 12px 0 0; line-height: 1.75; }
+.cena { border: 2px solid #006d92; border-radius: 20px; padding: 28px 32px; margin: 32px 0; max-width: 800px; background: #fff; }
+.cena strong { font-size: 1.6rem; color: #006d92; }
+.dwie { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 24px 0; }
+@media (max-width: 650px) { .dwie { grid-template-columns: 1fr; } .kroki li { padding-left: 64px; } .cena { padding: 22px; } }

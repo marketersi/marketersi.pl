@@ -200,6 +200,16 @@ const Header = () => {
                   {isOpen && (
                     <div className="dropdown-content">
                       <div className={style.menuItem}>
+                        <Link onClick={handleMenuItemClick} href="/asystent-ai-do-odbierania-telefonow">
+                          Asystent AI do odbierania telefonów
+                        </Link>
+                      </div>
+                      <div className={style.menuItem}>
+                        <Link onClick={handleMenuItemClick} href="/wizytowka-google">
+                          Wizytówka Google w abonamencie
+                        </Link>
+                      </div>
+                      <div className={style.menuItem}>
                         <Link
                           onClick={handleMenuItemClick}
                           href="/tworzenie-stron-i-design-ux"
@@ -299,6 +309,7 @@ const Header = () => {
                   </button>
                   {isOpen2 && (
                     <div className="dropdown-content">
+                      <div className={style.menuItem}><Link onClick={handleMenuItemClick} href="/test-za-0-zl">Test za 0 zł: ile telefonów ginie</Link></div>
                       <div className={style.menuItem}><Link onClick={handleMenuItemClick} href="/poradniki">Poradniki dla małych firm</Link></div>
                       <div className={style.menuItem}>
                         <Link

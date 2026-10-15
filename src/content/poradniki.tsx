@@ -8,7 +8,14 @@ export type Poradnik = {
   intro: string;
   sections: { id: string; title: string; body: ReactNode }[];
   sources: { title: string; url: string }[];
+  data?: string; // data publikacji, domyślnie DATA_PUBLIKACJI
 };
+
+const MIESIACE = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
+export function dataSlownie(iso: string) {
+  const [r, m, d] = iso.split("-").map(Number);
+  return `${d} ${MIESIACE[m - 1]} ${r}`;
+}
 
 export const DATA_PUBLIKACJI = "2026-10-14";
 export const poradniki: Poradnik[] = [
@@ -91,6 +98,120 @@ export const poradniki: Poradnik[] = [
     sources: [
       { title: "Google Search Console: raport skuteczności", url: "https://support.google.com/webmasters/answer/7576553?hl=pl" },
       { title: "Google Search Console: raport indeksowania stron", url: "https://support.google.com/webmasters/answer/7440203?hl=pl" },
+    ],
+  },
+  {
+    slug: "ile-kosztuje-strona-internetowa",
+    data: "2026-10-15",
+    title: "Ile kosztuje strona internetowa dla firmy w 2026 roku?",
+    description: "Widełki cen stron internetowych w Polsce: kreator, freelancer, agencja, sklep. Co wchodzi w cenę, co płacisz co roku i kiedy strona nie pomoże, bo ginie telefon.",
+    intro: "Strona internetowa dla małej firmy kosztuje od kilkudziesięciu złotych miesięcznie w kreatorze do kilku tysięcy złotych za projekt u wykonawcy. Prosta strona firmowa do 5 lub 7 podstron u polskich wykonawców kosztuje najczęściej od 3 000 do 7 000 zł netto, sklep internetowy od około 4 500 zł, a do tego dochodzą stałe koszty domeny, hostingu i utrzymania. Poniżej liczby ze źródłami, z datą, i lista pytań, które warto zadać przed zapłaceniem.",
+    sections: [
+      { id: "widelki", title: "1. Widełki cen w Polsce (ze źródłami)", body: <>
+        <p>Ceny poniżej pochodzą z publicznych zestawień i są orientacyjne. Zawsze sprawdź datę: cennik z 2023 roku i z 2026 roku to inne realia, bo w międzyczasie weszły kreatory z AI.</p>
+        <div className="table-wrap"><table><thead><tr><th scope="col">Rodzaj strony</th><th scope="col">Cena</th><th scope="col">Źródło i data</th></tr></thead><tbody>
+          <tr><th scope="row">Kreator stron (Wix, Hostinger, WordPress.com, Squarespace)</th><td>około 10 do 100 zł miesięcznie, robisz sam</td><td>Hostinger, aktualizacja styczeń 2026 (ceny przeliczone z USD)</td></tr>
+          <tr><th scope="row">Landing page lub strona one page</th><td>1 500 do 2 500 zł netto</td><td>KB.pl, cennik 2023</td></tr>
+          <tr><th scope="row">Strona firmowa do 5 lub 7 podstron</th><td>5 000 do 7 000 zł, średnio 6 000 zł</td><td>CenaUslug.pl, 8 ofert, czerwiec 2026</td></tr>
+          <tr><th scope="row">Strona firmowa (szerszy przegląd)</th><td>od około 3 000 zł do około 7 000 zł netto, złożone projekty więcej</td><td>KB.pl, cennik 2023</td></tr>
+          <tr><th scope="row">Sklep internetowy</th><td>od około 4 500 zł; większe sklepy 9 000 do 15 000 zł i więcej</td><td>KB.pl, cennik 2023</td></tr>
+          <tr><th scope="row">Dodatki: formularz, galeria, czat, baner cookie</th><td>od 350 do 700 zł za element</td><td>CenaUslug.pl, czerwiec 2026</td></tr>
+        </tbody></table></div>
+        <p>Wniosek: różnica między kreatorem za 50 zł miesięcznie a wykonawcą za 6 000 zł to nie jest różnica w „ładności”. To różnica w tym, kto odpowiada za treść, układ, szybkość na telefonie i to, czy strona prowadzi klienta do kontaktu.</p>
+      </> },
+      { id: "co-w-cenie", title: "2. Co wchodzi w cenę, a co jest osobno", body: <>
+        <p>W ofertach wykonawców zwykle jest projekt graficzny, wdrożenie, podstawowa optymalizacja i krótkie szkolenie. Osobno płacisz za:</p>
+        <ul>
+          <li><strong>Domenę:</strong> adres .pl to zwykle kilkadziesiąt złotych rocznie po pierwszym roku promocyjnym.</li>
+          <li><strong>Hosting:</strong> współdzielony od około 10 do 60 zł miesięcznie; serwer VPS drożej (Hostinger, 2026).</li>
+          <li><strong>Teksty i zdjęcia:</strong> wielu wykonawców zakłada, że dostarczysz je sam. To najczęstszy powód, dla którego strona „za 6 000 zł” stoi pół roku niedokończona.</li>
+          <li><strong>Utrzymanie:</strong> aktualizacje, kopie zapasowe, drobne poprawki. Samodzielnie prawie zero, u zewnętrznej firmy od około 200 do ponad 1 000 zł miesięcznie (Hostinger, 2026).</li>
+          <li><strong>Regulamin i polityka prywatności, baner cookie:</strong> od 350 do 600 zł jako osobna pozycja (CenaUslug.pl, 2026).</li>
+        </ul>
+        <p>Przed podpisaniem poproś o jedną listę: co jest w cenie, co jest co roku, kto ma dostęp do domeny i hostingu po zakończeniu współpracy. Jeśli wykonawca rejestruje domenę na siebie, odmów.</p>
+      </> },
+      { id: "kreator-czy-wykonawca", title: "3. Kreator, freelancer czy agencja", body: <>
+        <div className="table-wrap"><table><thead><tr><th scope="col">Opcja</th><th scope="col">Kiedy ma sens</th><th scope="col">Ryzyko</th></tr></thead><tbody>
+          <tr><th scope="row">Kreator z AI, sam</th><td>Firma jednoosobowa, prosta oferta, brak budżetu, potrzebujesz strony w weekend</td><td>Szablonowe teksty, brak pomiaru zapytań, strona, której nikt nie poprawia</td></tr>
+          <tr><th scope="row">Freelancer</th><td>Prosta strona firmowa, jasny zakres, masz własne teksty i zdjęcia</td><td>Zależność od jednej osoby; sprawdź, kto obsłuży stronę za rok</td></tr>
+          <tr><th scope="row">Agencja</th><td>Potrzebujesz treści, zdjęć, widoczności w Google i pomiaru w jednym</td><td>Wyższa cena; wymagaj listy, co dokładnie dostajesz, nie „kompleksowej obsługi”</td></tr>
+        </tbody></table></div>
+        <p>Nie ma złej opcji. Zła jest tylko strona, która nie ma jednego zadania: doprowadzić klienta do telefonu lub formularza. Listę elementów, które powinna mieć strona firmy usługowej, znajdziesz w poradniku <Link href="/poradniki/co-powinna-zawierac-strona-malej-firmy">co powinna zawierać strona małej firmy</Link>.</p>
+      </> },
+      { id: "pytania", title: "4. Pięć pytań do wykonawcy przed zapłatą", body: <>
+        <ol>
+          <li>Kto pisze teksty i skąd będą zdjęcia? Jeśli ja, to ile czasu to zajmie i co się stanie, gdy ich nie dostarczę na czas?</li>
+          <li>Jak sprawdzę, że strona działa dobrze na telefonie? Poproś o wynik testu szybkości dla wersji mobilnej.</li>
+          <li>Jak policzę zapytania ze strony: kliknięcia w telefon, wysłane formularze? Kto to ustawi?</li>
+          <li>Co jest co roku i ile to kosztuje: domena, hosting, utrzymanie, licencje wtyczek?</li>
+          <li>Co dostanę, gdy zakończymy współpracę: dostęp do domeny, hostingu, plików i treści?</li>
+        </ol>
+      </> },
+      { id: "telefon", title: "5. Strona nie pomoże, jeśli nikt nie odbiera telefonu", body: <>
+        <p>Strona za 6 000 zł ma jedno zadanie: sprawić, że klient zadzwoni. W jedynym polskim badaniu tego zjawiska 34% firm z pierwszej strony Google nie odebrało telefonu od potencjalnego klienta, a 60% zapytań przychodziło z telefonów komórkowych (Fachowcy.pl, 400 firm, 2016). Zanim zapłacisz za stronę, sprawdź, ile połączeń ginie dziś. Robimy to bezpłatnie: <Link href="/test-za-0-zl">test za 0 zł</Link>. Jeśli giną po godzinach, tańszy od nowej strony jest <Link href="/asystent-ai-do-odbierania-telefonow">asystent AI, który odbiera telefony</Link>.</p>
+        <p>Jeśli po teście okaże się, że strona jest potrzebna, zobacz, jak podchodzimy do <Link href="/tworzenie-stron-i-design-ux">tworzenia stron, które przynoszą klientów</Link>.</p>
+      </> },
+    ],
+    sources: [
+      { title: "CenaUslug.pl: cennik tworzenia firmowych stron internetowych 2026 (8 ofert, aktualizacja 4.06.2026)", url: "https://cenauslug.pl/firma-i-biuro/stworzenie-firmowej-strony-internetowej-do-5-podstron" },
+      { title: "KB.pl: cennik stron internetowych (tabele 2023)", url: "https://kb.pl/ceny/uslugi-biznesowe/cennik-stron-internetowych-sprawdzamy-ile-kosztuje-zrobienie-strony/" },
+      { title: "Hostinger: ile kosztuje stworzenie strony internetowej w 2026 roku (aktualizacja 16.01.2026)", url: "https://www.hostinger.com/pl/tutoriale/?p=487" },
+      { title: "BiznesRadar za Fachowcy.pl Ventures: ponad 30% firm nie odbiera połączeń od klientów (30.11.2016)", url: "https://www.biznesradar.pl/a/12517,fachowcy-pl-ponad-30-firm-nie-odbiera-polaczen-telefonicznych-od-klientow" },
+    ],
+  },
+  {
+    slug: "ile-telefonow-nie-odbiera-twoja-firma",
+    data: "2026-10-15",
+    title: "Ile telefonów od klientów nie odbiera Twoja firma? Jak to zmierzyć",
+    description: "Nieodebrane połączenia to najdroższa dziura w małej firmie. Co mówią dane, jak samemu zmierzyć straty w tydzień i co zrobić, gdy telefon dzwoni po godzinach.",
+    intro: "Nieodebrany telefon od klienta to zwykle utracone zlecenie: klient dzwoni do następnej firmy z listy w Google. Jedyne polskie badanie tego zjawiska pokazało, że 34% firm z pierwszej strony Google nie odebrało połączenia od potencjalnego klienta. Ten poradnik pokazuje, jak w tydzień sprawdzić, jak jest u Ciebie, i co z tym zrobić bez zatrudniania dodatkowej osoby.",
+    sections: [
+      { id: "dane", title: "1. Co wiadomo o nieodebranych telefonach w małych firmach", body: <>
+        <p>W listopadzie 2016 roku Fachowcy.pl Ventures sprawdziło 400 firm z 20 branż w 5 miastach, wybranych z pierwszej dziesiątki wyników Google. Wyniki:</p>
+        <ul>
+          <li>34% firm nie odebrało telefonu od potencjalnego klienta,</li>
+          <li>55% wizytówek w Google nie miało numeru telefonu,</li>
+          <li>60% zapytań pochodziło z telefonów komórkowych, a 45% stron z pierwszej dziesiątki nie działało poprawnie na telefonie.</li>
+        </ul>
+        <p>To dane sprzed dekady i nikt ich w Polsce nie powtórzył w podobnej skali. Nowsze liczby krążące w internecie pochodzą zwykle z materiałów dostawców voicebotów i nie mają podanej metody. Dlatego zbieramy własne dane: w <Link href="/test-za-0-zl">teście za 0 zł</Link> dzwonimy do firm, które się zgłoszą, i zapisujemy wynik. Zbiorcze wyniki, bez nazw firm, będziemy dopisywać w tym poradniku.</p>
+      </> },
+      { id: "ile-kosztuje", title: "2. Ile kosztuje jedno nieodebrane połączenie", body: <>
+        <p>Policz na własnych liczbach, nie na cudzych. Potrzebujesz trzech wartości: ile połączeń od nowych klientów przychodzi tygodniowo, jaka część rozmów kończy się zleceniem, ile średnio zarabiasz na zleceniu.</p>
+        <div className="table-wrap"><table><thead><tr><th scope="col">Przykład (firma remontowa)</th><th scope="col">Wartość</th></tr></thead><tbody>
+          <tr><th scope="row">Połączenia od nowych klientów tygodniowo</th><td>15</td></tr>
+          <tr><th scope="row">Nieodebrane i bez oddzwonienia tego dnia</th><td>5 (jedna trzecia, jak w badaniu)</td></tr>
+          <tr><th scope="row">Rozmowy kończące się zleceniem</th><td>1 na 4</td></tr>
+          <tr><th scope="row">Średni zysk ze zlecenia</th><td>1 500 zł</td></tr>
+          <tr><th scope="row">Strata tygodniowo</th><td>5 × 1/4 × 1 500 zł = około 1 900 zł</td></tr>
+        </tbody></table></div>
+        <p>To przykład rachunku, nie wynik badania. Wstaw swoje liczby. Jeśli nie znasz liczby nieodebranych, to jest pierwsza rzecz do zmierzenia; większość telefonów pokazuje ją w historii połączeń.</p>
+      </> },
+      { id: "pomiar", title: "3. Jak zmierzyć to samemu w tydzień", body: <>
+        <ol>
+          <li><strong>Historia połączeń.</strong> Przez 7 dni codziennie wieczorem zapisz: ile połączeń przyszło, ile nieodebranych, do ilu oddzwoniłeś i po jakim czasie.</li>
+          <li><strong>Pory.</strong> Zaznacz, o której przychodzą nieodebrane. U większości firm usługowych skupiają się w trzech porach: rano przed 9:00, w porze obiadu i po 17:00.</li>
+          <li><strong>Próba z zewnątrz.</strong> Poproś znajomego, żeby zadzwonił trzy razy jak klient, w tym raz po godzinach. Niech zapisze, po ilu sygnałach ktoś odebrał i czy dostał odpowiedź na pytanie.</li>
+          <li><strong>Wizytówka i strona.</strong> Sprawdź, czy numer w Google jest poprawny i czy na stronie na telefonie da się kliknąć „Zadzwoń”. Jeśli nie, część klientów ginie, zanim telefon zadzwoni.</li>
+        </ol>
+        <p>Jeśli wolisz, żebyśmy zrobili to za Ciebie, zgłoś firmę do <Link href="/test-za-0-zl">testu za 0 zł</Link>. Dostaniesz tabelę z datami i godzinami.</p>
+      </> },
+      { id: "co-zrobic", title: "4. Co zrobić z nieodebranymi połączeniami", body: <>
+        <p>Rozwiązanie zależy od tego, kiedy połączenia giną.</p>
+        <div className="table-wrap"><table><thead><tr><th scope="col">Kiedy giną</th><th scope="col">Co działa</th><th scope="col">Koszt</th></tr></thead><tbody>
+          <tr><th scope="row">W godzinach pracy, bo masz zajęte ręce</th><td>Automatyczny SMS po nieodebranym („Oddzwonię do 16:00”) i stała pora oddzwaniania</td><td>Zwykle w cenie operatora lub kilka złotych miesięcznie</td></tr>
+          <tr><th scope="row">Po godzinach i w weekendy</th><td>Asystent AI, który odbiera, spisuje sprawę i wysyła SMS; klient wie, kiedy oddzwonisz</td><td>Stała opłata miesięczna, mniejsza niż etat</td></tr>
+          <tr><th scope="row">Cały czas, bo nie ma kto odbierać</th><td>Osoba do obsługi telefonu lub zewnętrzna recepcja; AI jako pierwsza linia</td><td>Od kilkuset złotych miesięcznie w górę</td></tr>
+          <tr><th scope="row">Klienci nie dzwonią w ogóle</th><td>Problem leży wcześniej: wizytówka Google, strona, opinie</td><td>Zacznij od bezpłatnego badania widoczności</td></tr>
+        </tbody></table></div>
+        <p>Najtańsza poprawka od razu: oddzwaniaj na każde nieodebrane tego samego dnia i napisz na stronie oraz w wizytówce, w jakich godzinach odbierasz. Klient, który wie, czego się spodziewać, częściej poczeka.</p>
+      </> },
+      { id: "dalej", title: "5. Co dalej", body: <>
+        <p>Jeśli połączenia giną po godzinach, zobacz, jak działa <Link href="/asystent-ai-do-odbierania-telefonow">asystent AI do odbierania telefonów</Link>. Jeśli klienci nie znajdują firmy w Google, zobacz <Link href="/wizytowka-google">prowadzenie wizytówki Google</Link>. Jeśli strona ma ruch, ale nikt nie dzwoni, przeczytaj <Link href="/poradniki/dlaczego-strona-nie-pozyskuje-klientow">dlaczego strona nie pozyskuje klientów</Link>.</p>
+      </> },
+    ],
+    sources: [
+      { title: "BiznesRadar za Fachowcy.pl Ventures: ponad 30% firm nie odbiera połączeń od klientów (30.11.2016)", url: "https://www.biznesradar.pl/a/12517,fachowcy-pl-ponad-30-firm-nie-odbiera-polaczen-telefonicznych-od-klientow" },
+      { title: "Google: jak dodać numer telefonu i godziny w Profilu Firmy", url: "https://support.google.com/business/answer/3038177?hl=pl" },
     ],
   },
 ];

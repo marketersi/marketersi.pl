@@ -1,0 +1,21 @@
+# Po każdej publikacji na main zgłasza adresy z sitemap.xml do IndexNow (Bing, Yandex, Seznam i partnerzy).
+# Google nie obsługuje IndexNow; tam działa sitemap w Search Console. Klucz: public/d7844d0e2985de98bc0c94426f69abb8.txt.
+name: IndexNow
+on:
+  push:
+    branches: [main]
+    paths: ["public/sitemap.xml", "src/**"]
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Poczekaj na publikację w Vercel
+        run: sleep 240
+      - name: Zgłoś adresy do IndexNow
+        run: |
+          URLS=$(grep -o '<loc>[^<]*</loc>' public/sitemap.xml | sed 's/<[^>]*>//g' | sed 's/.*/"&"/' | paste -sd, -)
+          curl -sS -o /dev/null -w "IndexNow: %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"www.marketersi.pl\",\"key\":\"d7844d0e2985de98bc0c94426f69abb8\",\"keyLocation\":\"https://www.marketersi.pl/d7844d0e2985de98bc0c94426f69abb8.txt\",\"urlList\":[$URLS]}"
