@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ADRES, strona } from "@/app/meta";
 import { poradniki, DATA_PUBLIKACJI, dataSlownie } from "@/content/poradniki";
 import styles from "../poradniki.module.css";
+import { Faq } from "@/components/seo/Oferta";
 
 type Props = { params: { slug: string } };
 export function generateStaticParams() { return poradniki.map(({ slug }) => ({ slug })); }
@@ -31,6 +32,8 @@ export default function PoradnikPage({ params }: Props) {
       { "@type": "ListItem", position: 2, name: "Poradniki", item: `${ADRES}/poradniki` },
       { "@type": "ListItem", position: 3, name: p.title, item: url },
     ] },
+    ...(p.faq?.length ? [{ "@type": "FAQPage", "@id": `${url}#faq`, mainEntity: p.faq.map(f => ({
+      "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }] : []),
   ] };
   return <main className={styles.page}><div className={styles.wrap}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemat).replace(/</g, "\\u003c") }} />
@@ -40,6 +43,7 @@ export default function PoradnikPage({ params }: Props) {
       <p className={styles.lead}>{p.intro}</p>
       <nav aria-label="Spis treści" className={styles.toc}><h2>W tym poradniku</h2><ol>{p.sections.map(s => <li key={s.id}><a href={`#${s.id}`}>{s.title.replace(/^\d\. /, "")}</a></li>)}</ol></nav>
       {p.sections.map(s => <section key={s.id} id={s.id}><h2>{s.title}</h2>{s.body}</section>)}
+      {p.faq?.length ? <section id="pytania"><h2>Najczęstsze pytania</h2><Faq pytania={p.faq} /></section> : null}
       <section><h2>Źródła i dalsza lektura</h2><ul>{p.sources.map(s => <li key={s.url}><a href={s.url}>{s.title}</a></li>)}</ul></section>
       <aside className={styles.cta}><h2>Sprawdź swoją stronę z Marketersi</h2><p>Zacznij od opisu firmy i problemu, który chcesz rozwiązać.</p><Link className={styles.button} href="/zamow-bezplatne-badanie">Zamów bezpłatne badanie</Link></aside>
     </article>

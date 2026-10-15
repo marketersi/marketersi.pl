@@ -1,4 +1,5 @@
 import { strona } from "../meta";
+import BadanieSeo from "@/components/seo/BadanieSeo";
 
 export const metadata = strona(
   "Bezpłatne badanie widoczności firmy w Google i AI",
@@ -7,5 +8,5 @@ export const metadata = strona(
 );
 
 export default function Uklad({ children }: { children: React.ReactNode }) {
-  return children;
+  return <>{children}<BadanieSeo /></>;
 }
