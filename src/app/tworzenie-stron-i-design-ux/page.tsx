@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "./uxDesign.css";
 import UxBanner from "@/components/organisms/ux/UxBanner";
+import UxSeo from "@/components/seo/UxSeo";
 import Counter from "@/components/organisms/ux/Counter";
 import Competitions from "@/components/organisms/ux/Competitions";
 import Market from "@/components/organisms/ux/Market";
@@ -39,6 +40,7 @@ const UXDesignScreen = () => {
   return (
     <>
       <UxBanner />
+      <UxSeo />
       <Counter />
       <Competitions />
       <Market />

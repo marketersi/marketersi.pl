@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import type { Pytanie } from "@/components/seo/Oferta";
 
 export type Poradnik = {
   slug: string;
@@ -9,6 +10,7 @@ export type Poradnik = {
   sections: { id: string; title: string; body: ReactNode }[];
   sources: { title: string; url: string }[];
   data?: string; // data publikacji, domyślnie DATA_PUBLIKACJI
+  faq?: Pytanie[];
 };
 
 const MIESIACE = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
@@ -56,6 +58,12 @@ export const poradniki: Poradnik[] = [
         <p>Gdy strona już działa, a nie przynosi rozmów, przejdź do poradnika: <Link href="/poradniki/dlaczego-strona-nie-pozyskuje-klientow">dlaczego strona nie pozyskuje klientów</Link>. Jeśli planujesz nową witrynę lub przebudowę, zobacz <Link href="/tworzenie-stron-i-design-ux">tworzenie stron internetowych i design UX</Link>.</p>
       </> },
     ],
+    faq: [
+      { q: "Ile podstron powinna mieć strona małej firmy?", a: "Tyle, ile jest usług wymagających osobnego wyjaśnienia, plus strona główna, o firmie i kontakt. Dla firmy z 2 lub 3 usługami to zwykle od 4 do 7 podstron. Nie twórz podstron tylko po to, żeby powtórzyć nazwę miasta." },
+      { q: "Co musi być na pierwszym ekranie strony firmowej?", a: "Nazwa usługi, dla kogo jest, obszar działania i jeden wyraźny krok: telefon albo prośba o wycenę. Klient na telefonie powinien to zobaczyć bez przewijania." },
+      { q: "Czy strona firmowa musi mieć ceny?", a: "Nie musi, ale powinna wyjaśniać, od czego zależy cena i czego potrzebujesz do wyceny. Cena „od” ma sens tylko wtedy, gdy jasno opisujesz, co klient za nią dostaje." },
+      { q: "Jak sprawdzić, czy strona działa na telefonie?", a: "Otwórz każdą ważną podstronę na własnym telefonie, kliknij przycisk telefonu i wyślij próbny formularz. Sprawdź też, czy wiadomość faktycznie dotarła do firmy, a nie tylko czy pojawił się komunikat „wysłano”." },
+    ],
     sources: [{ title: "Google: tworzenie przydatnych i rzetelnych treści", url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pl" }],
   },
   {
@@ -94,6 +102,12 @@ export const poradniki: Poradnik[] = [
         <p>Utwórz kartę zmiany: adres strony, obserwacja, hipoteza, poprawka, data publikacji i miara wyniku. Przykład: „Użytkownicy nie widzą, jaki region obsługujemy; dodajemy obszar pracy do opisu usługi; sprawdzamy udział zapytań z właściwej lokalizacji”. Nie traktuj samej korelacji po wdrożeniu jako dowodu przyczyny.</p>
         <p>Nie ma jednego terminu ani liczby wizyt, po których każda firma może wiarygodnie ocenić wynik. Przy małym ruchu zacznij od testów działania i rozmów z odbiorcami. Jeśli potrzebujesz pomocy w ustaleniu kolejności, <Link href="/zamow-bezplatne-badanie">zamów bezpłatne badanie</Link> albo sprawdź zakres <Link href="/konsultacja-marketingu">konsultacji marketingowej</Link>.</p>
       </> },
+    ],
+    faq: [
+      { q: "Dlaczego mam ruch na stronie, a nie mam zapytań?", a: "Najczęstsze powody to ruch z niewłaściwych zapytań, niejasna oferta na pierwszym ekranie, utrudniony kontakt na telefonie albo błąd pomiaru, przez który zapytania są, ale ich nie widać. Sprawdzaj w tej kolejności." },
+      { q: "Jak sprawdzić, czy Google w ogóle pokazuje moją stronę?", a: "W Google Search Console w raporcie Skuteczność zobaczysz wyświetlenia, kliknięcia i zapytania, a w raporcie Strony, które adresy są zindeksowane. Bez Search Console nie da się tego rzetelnie ocenić." },
+      { q: "Czy nowa strona rozwiąże problem braku klientów?", a: "Tylko wtedy, gdy problem leży w stronie. Jeśli klienci dzwonią, a nikt nie odbiera, albo firmy nie ma w Mapach Google, nowa strona niczego nie zmieni. Najpierw zmierz, gdzie urywa się droga klienta." },
+      { q: "Po jakim czasie ocenić efekt poprawek?", a: "Nie ma jednego terminu. Przy małym ruchu oceniaj najpierw działanie (czy telefon i formularz działają, czy oferta jest zrozumiała), a dane z Search Console porównuj po 4 do 8 tygodniach." },
     ],
     sources: [
       { title: "Google Search Console: raport skuteczności", url: "https://support.google.com/webmasters/answer/7576553?hl=pl" },
@@ -152,6 +166,13 @@ export const poradniki: Poradnik[] = [
         <p>Jeśli po teście okaże się, że strona jest potrzebna, zobacz, jak podchodzimy do <Link href="/tworzenie-stron-i-design-ux">tworzenia stron, które przynoszą klientów</Link>.</p>
       </> },
     ],
+    faq: [
+      { q: "Ile kosztuje prosta strona internetowa dla firmy?", a: "U polskich wykonawców prosta strona firmowa do 5 lub 7 podstron kosztuje najczęściej od 5 000 do 7 000 zł (CenaUslug.pl, czerwiec 2026), w szerszych zestawieniach od około 3 000 zł netto (KB.pl). Strona one page to około 1 500 do 2 500 zł netto." },
+      { q: "Ile kosztuje utrzymanie strony rocznie?", a: "Domena .pl to zwykle kilkadziesiąt złotych rocznie, hosting współdzielony około 10 do 60 zł miesięcznie. Utrzymanie przez zewnętrzną firmę kosztuje od około 200 do ponad 1 000 zł miesięcznie (Hostinger, 2026)." },
+      { q: "Czy strona z kreatora AI wystarczy?", a: "Dla jednoosobowej firmy z prostą ofertą często tak, koszt to kilkadziesiąt złotych miesięcznie. Ryzyko to szablonowe teksty, brak pomiaru zapytań i strona, której nikt nie poprawia." },
+      { q: "Ile kosztuje sklep internetowy?", a: "Od około 4 500 zł za prosty sklep do 9 000 do 15 000 zł i więcej za większy (KB.pl). Do tego płatności, integracje i obsługa zamówień." },
+      { q: "Za co płacić najpierw: stronę czy widoczność w Google?", a: "Jeśli obsługujesz klientów z okolicy, najszybciej działa uzupełniona wizytówka Google, która jest bezpłatna. Strona ma sens, gdy klient chce porównać ofertę albo wysłać zapytanie." },
+    ],
     sources: [
       { title: "CenaUslug.pl: cennik tworzenia firmowych stron internetowych 2026 (8 ofert, aktualizacja 4.06.2026)", url: "https://cenauslug.pl/firma-i-biuro/stworzenie-firmowej-strony-internetowej-do-5-podstron" },
       { title: "KB.pl: cennik stron internetowych (tabele 2023)", url: "https://kb.pl/ceny/uslugi-biznesowe/cennik-stron-internetowych-sprawdzamy-ile-kosztuje-zrobienie-strony/" },
@@ -209,9 +230,66 @@ export const poradniki: Poradnik[] = [
         <p>Jeśli połączenia giną po godzinach, zobacz, jak działa <Link href="/asystent-ai-do-odbierania-telefonow">asystent AI do odbierania telefonów</Link>. Jeśli klienci nie znajdują firmy w Google, zobacz <Link href="/wizytowka-google">prowadzenie wizytówki Google</Link>. Jeśli strona ma ruch, ale nikt nie dzwoni, przeczytaj <Link href="/poradniki/dlaczego-strona-nie-pozyskuje-klientow">dlaczego strona nie pozyskuje klientów</Link>.</p>
       </> },
     ],
+    faq: [
+      { q: "Ile firm nie odbiera telefonów od klientów?", a: "W badaniu Fachowcy.pl Ventures z 2016 roku 34% z 400 firm z pierwszej strony Google nie odebrało telefonu od potencjalnego klienta. Nowszych polskich danych w tej skali nie ma; zbieramy je w teście za 0 zł." },
+      { q: "Jak policzyć, ile tracę na nieodebranych telefonach?", a: "Pomnóż liczbę nieodebranych połączeń od nowych klientów w tygodniu przez odsetek rozmów kończących się zleceniem i przez średni zysk ze zlecenia. Przykład: 5 × 1/4 × 1 500 zł to około 1 900 zł tygodniowo." },
+      { q: "Co zrobić z telefonami po godzinach pracy?", a: "Najprościej: automatyczny SMS z informacją, kiedy oddzwonisz. Lepiej: asystent AI, który odbiera, spisuje sprawę i wysyła Ci SMS. Najdrożej: osoba lub zewnętrzna recepcja." },
+      { q: "Czy klienci czekają na oddzwonienie?", a: "Część tak, zwłaszcza gdy wiedzą, kiedy oddzwonisz. Dlatego oddzwaniaj tego samego dnia i podaj godziny odbierania na stronie i w wizytówce Google." },
+    ],
     sources: [
       { title: "BiznesRadar za Fachowcy.pl Ventures: ponad 30% firm nie odbiera połączeń od klientów (30.11.2016)", url: "https://www.biznesradar.pl/a/12517,fachowcy-pl-ponad-30-firm-nie-odbiera-polaczen-telefonicznych-od-klientow" },
       { title: "Google: jak dodać numer telefonu i godziny w Profilu Firmy", url: "https://support.google.com/business/answer/3038177?hl=pl" },
+    ],
+  },
+  {
+    slug: "strona-internetowa-dla-firmy-budowlanej",
+    data: "2026-10-15",
+    title: "Strona internetowa dla firmy budowlanej: co musi mieć, żeby dzwonili klienci",
+    description: "Co powinna zawierać strona firmy budowlanej lub remontowej: zakres prac, obszar, realizacje ze zdjęciami, telefon na komórce, wycena. Lista kontrolna i najczęstsze błędy.",
+    intro: "Strona firmy budowlanej ma przekonać inwestora do jednego telefonu albo prośby o wycenę. Klient sprawdza na niej trzy rzeczy: czy robicie taki zakres prac, czy dojeżdżacie w jego okolicę i czy wasze realizacje wyglądają solidnie. Jeśli którejś z tych odpowiedzi nie znajdzie w kilka sekund na telefonie, dzwoni do następnej firmy z Google.",
+    sections: [
+      { id: "zakres", title: "1. Zakres prac i obszar na pierwszym ekranie", body: <>
+        <p>Napisz wprost, co budujecie lub remontujecie i gdzie. Przykład konstrukcji: „Budowa domów jednorodzinnych w stanie surowym i pod klucz, powiat piaseczyński i południowa Warszawa”. To przykład komunikatu, nie opis konkretnej firmy. Hasło „Kompleksowe usługi budowlane” nie mówi klientowi, czy zajmujecie się jego łazienką, czy halą magazynową.</p>
+        <p>Każdy główny rodzaj prac (stan surowy, wykończenia, dachy, elewacje, instalacje) dostaje osobną podstronę z zakresem, przebiegiem współpracy i informacją, czego potrzebujecie do wyceny: projektu, wymiarów, zdjęć, adresu.</p>
+      </> },
+      { id: "realizacje", title: "2. Realizacje, które da się sprawdzić", body: <>
+        <p>W budowlance zdjęcia własnych realizacji są ważniejsze niż jakikolwiek tekst. Podpisz każde: rodzaj prac, miejscowość, rok, czas realizacji. Zdjęcia z banku zdjęć klient rozpozna od razu i stracisz wiarygodność.</p>
+        <ul>
+          <li>Pokaż etapy, nie tylko efekt końcowy: fundamenty, zbrojenie, instalacje przed zakryciem. To dowód, że robicie porządnie także to, czego potem nie widać.</li>
+          <li>Opinie publikuj z imieniem i miejscowością, za zgodą klienta. Najlepiej podlinkuj do opinii w Google.</li>
+          <li>Uprawnienia budowlane, ubezpieczenie OC i gwarancję pokaż tylko wtedy, gdy rzeczywiście je masz, z numerem lub zakresem.</li>
+        </ul>
+      </> },
+      { id: "telefon", title: "3. Telefon i wycena na komórce", body: <>
+        <p>Inwestor szuka wykonawcy najczęściej na telefonie, wieczorem albo w weekend. Przycisk „Zadzwoń” musi być widoczny bez przewijania i otwierać wybieranie numeru. Formularz wyceny powinien mieć kilka pól: rodzaj prac, miejscowość, termin, telefon i możliwość dodania zdjęć lub projektu.</p>
+        <p>Większość właścicieli firm budowlanych jest w ciągu dnia na budowie i nie odbiera. Jeśli tak jest u Ciebie, strona przyprowadzi klientów, którzy i tak trafią na pocztę głosową. Sprawdź to, zanim zapłacisz za stronę: <Link href="/test-za-0-zl">test za 0 zł</Link> pokaże, ile połączeń ginie, a <Link href="/asystent-ai-do-odbierania-telefonow">asystent AI</Link> może odbierać je, gdy jesteś na budowie.</p>
+      </> },
+      { id: "google", title: "4. Wizytówka Google ważniejsza niż strona", body: <>
+        <p>Na zapytania typu „firma budowlana Piaseczno” Google pokazuje najpierw mapę z wizytówkami, a dopiero pod nią strony. Uzupełniony Profil Firmy w Google ze zdjęciami realizacji i opiniami często przynosi więcej telefonów niż sama strona. Strona i wizytówka powinny mieć tę samą nazwę, adres, telefon i obszar działania.</p>
+        <p>Jeśli nie masz czasu tego prowadzić, zobacz <Link href="/wizytowka-google">prowadzenie wizytówki Google w abonamencie</Link>.</p>
+      </> },
+      { id: "lista", title: "5. Lista kontrolna przed publikacją", body: <>
+        <ol>
+          <li>Czy na telefonie w pierwszym ekranie widać rodzaj prac, obszar i przycisk telefonu?</li>
+          <li>Czy każdy główny rodzaj prac ma swoją podstronę z informacją, czego potrzebujecie do wyceny?</li>
+          <li>Czy realizacje to własne zdjęcia z podpisem: co, gdzie, kiedy?</li>
+          <li>Czy formularz pozwala dodać zdjęcia lub projekt i czy zgłoszenie dociera do właściwej osoby?</li>
+          <li>Czy nazwa, telefon i obszar są takie same na stronie i w wizytówce Google?</li>
+          <li>Czy wiesz, ile osób kliknęło telefon i wysłało formularz w ostatnim miesiącu?</li>
+        </ol>
+        <p>Pełniejszą listę dla każdej branży znajdziesz w poradniku <Link href="/poradniki/co-powinna-zawierac-strona-malej-firmy">co powinna zawierać strona małej firmy</Link>, a ceny ze źródłami w poradniku <Link href="/poradniki/ile-kosztuje-strona-internetowa">ile kosztuje strona internetowa</Link>.</p>
+      </> },
+    ],
+    faq: [
+      { q: "Ile kosztuje strona internetowa dla firmy budowlanej?", a: "Tyle co inne strony firmowe: najczęściej od 3 000 do 7 000 zł netto za stronę do kilku podstron u polskich wykonawców (KB.pl, CenaUslug.pl 2026). Więcej kosztuje rozbudowana galeria realizacji, kalkulator lub wersje językowe." },
+      { q: "Czy firma budowlana potrzebuje strony, skoro ma wizytówkę Google?", a: "Wizytówka przynosi pierwsze telefony z okolicy. Strona jest potrzebna, gdy inwestor chce obejrzeć realizacje, porównać zakres prac i wysłać projekt do wyceny, czyli przy większych zleceniach." },
+      { q: "Jakie zdjęcia dać na stronę firmy budowlanej?", a: "Tylko własne, z podpisem: rodzaj prac, miejscowość, rok. Najlepiej także etapy budowy, nie tylko efekt końcowy. Zdjęcia z banków zdjęć obniżają wiarygodność." },
+      { q: "Co zrobić, gdy nie mam czasu odbierać telefonów na budowie?", a: "Ustaw automatyczny SMS po nieodebranym połączeniu i oddzwaniaj tego samego dnia. Jeśli telefonów jest dużo, asystent AI może je odbierać, spisywać sprawę i wysyłać Ci SMS." },
+    ],
+    sources: [
+      { title: "Google: Profil Firmy w Google, wskazówki dotyczące poprawy pozycji w wynikach lokalnych", url: "https://support.google.com/business/answer/7091?hl=pl" },
+      { title: "Google: tworzenie przydatnych i rzetelnych treści", url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=pl" },
+      { title: "CenaUslug.pl: cennik tworzenia firmowych stron internetowych 2026", url: "https://cenauslug.pl/firma-i-biuro/stworzenie-firmowej-strony-internetowej-do-5-podstron" },
     ],
   },
 ];
