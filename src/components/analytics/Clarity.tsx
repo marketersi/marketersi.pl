@@ -5,7 +5,7 @@ import { useEffect } from "react";
 // Microsoft Clarity (nagrania sesji i heatmapy), 15.10.2026.
 // Ładuje się tylko po zgodzie na cookies (mk_zgoda = "tak"), także gdy zgoda padnie w trakcie wizyty.
 // ID projektu: zmienna NEXT_PUBLIC_CLARITY_ID w Vercel albo stała poniżej. Pusty ID = Clarity wyłączone.
-const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "";
+const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "yy5s8jnxh1";
 
 declare global {
   interface Window { clarity?: (...args: unknown[]) => void }
