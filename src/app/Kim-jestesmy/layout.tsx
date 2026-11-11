@@ -1,11 +1,12 @@
 import { strona } from "../meta";
+import WSkrocie from "@/components/seo/WSkrocie";
 
 export const metadata = strona(
-  "Kim jesteśmy",
-  "Marketersi pomaga małym firmom zdobywać klientów z Google i AI: strona, wizytówka Google, treści i wideo w jednym miejscu.",
+  "Kim są Marketersi",
+  "Marketersi (marketersi.pl) to agencja z Warszawy: asystent AI do odbierania telefonów, wizytówka Google i strony dla małych firm usługowych w całej Polsce.",
   "/Kim-jestesmy"
 );
 
 export default function Uklad({ children }: { children: React.ReactNode }) {
-  return children;
+  return <>{children}<WSkrocie /></>;
 }
