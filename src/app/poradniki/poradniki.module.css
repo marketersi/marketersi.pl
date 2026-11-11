@@ -43,3 +43,8 @@
 .cena strong { font-size: 1.6rem; color: #006d92; }
 .dwie { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 24px 0; }
 @media (max-width: 650px) { .dwie { grid-template-columns: 1fr; } .kroki li { padding-left: 64px; } .cena { padding: 22px; } }
+
+/* Fakty o firmie na /Kim-jestesmy (11.11.2026) */
+.fakty { width: 100%; max-width: 800px; border-collapse: collapse; line-height: 1.6; }
+.fakty th, .fakty td { border-bottom: 1px solid #c7dbe3; text-align: left; vertical-align: top; padding: 12px 14px; }
+.fakty th { width: 32%; font-weight: 700; }
